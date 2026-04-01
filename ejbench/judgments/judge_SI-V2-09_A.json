@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-09",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Gets exactly $5,158 through correct month-by-month computation matching the ground truth; goes one level beyond surface by noting the payment can never overcome interest+fee but explores no second-order effects; proceeds linearly without questioning assumptions or potential misinterpretations of the problem setup; shows all intermediate steps in a table but never cross-checks from a different angle or tests boundary conditions; states the answer with full confidence and never acknowledges interpretation ambiguities (e.g., rounding during months, exact timing semantics); never considers alternative interpretations of fee application order or timing rules; full table with every intermediate value allows complete reproduction of the derivation by any third party",
+  "timestamp": "2026-03-23T02:19:37.151786+00:00"
+}

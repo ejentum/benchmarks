@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-21",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6,
+  "injection_composite": 0.5556,
+  "brief_justification": "Correct answer of Year 16 with valid arithmetic tracing all three phases; Goes beyond surface by identifying and separately modeling each threshold-triggered phase transition; Explicitly checks boundary condition at Year 13 ('still ≥ 400,000, so recharge stays 40,000'), showing targeted self-monitoring; Verifies phase boundaries but does not re-derive from a different angle or test edge case of exactly 600,000; Presents answer with confidence and no acknowledgment of the ambiguity at the 600,000 boundary or rounding assumptions; Considers only sequential simulation with no alternative modeling approach; Full year-by-year tables for all three phases make the chain fully reproducible; Response does not assume unlimited water and correctly models depletion, avoiding the anti-pattern, but never explicitly names or addresses it; Avoids resource_infinity_assumption and limit_blindness (checks phase boundaries), but does not explicitly call out suppressed failure modes; Response is entirely linear despite topology specifying FORK branches, meta-cognitive M-nodes, and game-theoretic gates — no topology structure is visible in the reasoning path",
+  "timestamp": "2026-03-23T03:28:06.646018+00:00"
+}

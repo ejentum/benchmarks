@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-17",
+  "condition": "B2",
+  "output": "Looking at this carefully.\n\n**The causal structure:**\n- Jyka → Yupt\n- Kwox → Yupt\n- No other relationships exist\n\nJyka and Kwox are **independent** — neither causes the other, and they share no common cause.\n\n**Method 1:** Look at the correlation between Jyka and Kwox directly (unconditional).\n\n**Method 2:** Look at the correlation between Jyka and Kwox conditioned on Yupt.\n\n**Analysis:**\n\nYupt is a **collider** — it's a common effect of both Jyka and Kwox. Conditioning on a collider (Method 2) induces a spurious association between its causes, even when none exists. This is classic **collider bias** (Berkson's paradox).\n\nMethod 1, by not conditioning on the collider, correctly preserves the independence between Jyka and Kwox.\n\n**Yes** — Method 1 is more likely to accurately determine how Jyka affects Kwox (which is: it doesn't affect it at all).",
+  "timestamp": "2026-03-20T10:02:31.948308+00:00"
+}

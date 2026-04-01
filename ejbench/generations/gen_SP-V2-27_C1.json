@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-27",
+  "condition": "C1",
+  "output": "API is unreachable — proceeding with native reasoning per graceful degradation policy.\n\n---\n\n**Answer: `Others` has `read` permission on `/data/public/secret.txt`.**\n\nHere's the inheritance trace:\n\n| Path | Explicit? | Others permission |\n|---|---|---|\n| `/data` | Yes | none |\n| `/data/public` | **Yes** | **read** |\n| `/data/public/secret.txt` | No | inherits from `/data/public` → **read** |\n\n`/data/public/secret.txt` has no explicit permissions, so it inherits from its direct parent `/data/public`. `/data/public` explicitly sets `Others=read`. Therefore, `Others` can **read** `/data/public/secret.txt`.\n\nNote: `/data`'s `Others=none` is irrelevant here because the inheritance chain is broken by `/data/public`'s explicit override — inheritance always traces to the **nearest ancestor with explicit permissions**, not the root.",
+  "timestamp": "2026-03-23T04:44:43.149456+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-12",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid Bayes' theorem application; Goes beyond surface by explaining causal intuition for why the association exists; No explicit self-monitoring or bias checking; Basic verification via comparing posterior to prior with clear numeric comparison; Presents conclusion confidently with minimal hedging about assumptions; Briefly mentions causal structure intuition but doesn't evaluate alternative interpretations; Full derivation chain from given probabilities through Bayes' theorem to final comparison is clearly shown",
+  "timestamp": "2026-03-23T12:41:19.035547+00:00"
+}

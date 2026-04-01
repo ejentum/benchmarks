@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-11",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 14 with valid step-by-step modeling of deletion and generation; goes one level deeper than stating a formula by modeling the two-step mechanism per day in a table, but doesn't explore compounding dynamics or edge cases; rechecks each row implicitly through the table structure but never reflects on the reasoning method or potential misinterpretations; shows intermediate values that allow row-by-row checking but performs no explicit sanity check or re-derivation from a different angle; presents conclusions without uncertainty or acknowledgment of modeling assumptions (e.g., that deletion happens before generation); considers only the single modeling approach with no discussion of alternative interpretations; every derivation is shown in the table with sufficient detail that a third party could reproduce the full chain.",
+  "timestamp": "2026-03-23T02:20:39.368592+00:00"
+}

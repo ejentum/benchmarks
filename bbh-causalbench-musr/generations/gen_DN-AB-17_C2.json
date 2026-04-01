@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-17",
+  "condition": "C2",
+  "output": "**(B)** is the correct answer.\n\nAll three exploit the same structural asymmetry: **subsidize one side to build a captive base, then extract from the side with fewer alternatives.**\n\n- **Razor-and-blade:** Subsidize the handle (adoption) → proprietary blade fit creates switching costs → captive consumable purchases.\n- **Freemium:** Subsidize basic users (adoption) → data/workflow lock-in raises switching costs → extract from power users who can't easily leave.\n- **Academic publishing:** Subsidize author submission (adoption) → prestige/tenure requirements lock in both authors and readers → extract from libraries that *must* provide access.\n\nThe other options each capture only a surface feature. (A) gets \"loss leader\" right for razors but misses the two-sided structure. (C) is factually wrong — razors aren't subscriptions. (D) describes a tactic, not the underlying mechanism.\n\nThe deeper pattern is a **two-sided market with asymmetric lock-in**: one side is subsidized to grow the network, the other side faces high switching costs and gets monetized.",
+  "timestamp": "2026-03-20T17:53:14.009629+00:00"
+}

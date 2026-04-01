@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-01",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: structural_isomorphism_mapping; cross_domain_pattern_transfer; analogy_validation\nSuppress: surface_similarity_bias; domain_lock\n[END REASONING CONTEXT]\n\nThe answer is **wave**.\n\nAll three systems describe a disturbance that propagates through a medium while the medium's constituent parts remain essentially stationary:\n\n- **Sand dune**: the *shape* migrates; individual grains only shift locally.\n- **Stadium wave**: the *ripple* travels around the arena; each person stays in their seat.\n- **Nerve impulse**: the *depolarization front* propagates along the axon; ions only move across the local membrane.\n\nIn each case, it is **energy and pattern** — not matter — that travels. That is the defining property of a **wave**.",
+  "timestamp": "2026-03-22T21:10:47.625916+00:00"
+}

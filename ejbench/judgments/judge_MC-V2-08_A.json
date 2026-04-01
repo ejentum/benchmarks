@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-08",
+  "condition": "A",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 0,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Mentions fallacy of composition but demotes it, centering the response on 'extrapolation fallacy' as the primary — partially correct but misidentifies the main structural fallacy; analyzes premises individually, explains why subtask benchmarks don't imply job replacement, and examines second/third-order implications like what jobs actually entail; uses 'but more precisely' as a minor self-correction but never names or monitors its own reasoning biases or method; no counterfactual checks, boundary tests, or re-derivations from an alternative angle are attempted; acknowledges multiple applicable fallacies, implicitly admitting uncertainty about which is primary, but doesn't formally state confidence levels or identify what would change the conclusion; names fallacy of composition, hasty generalization, extrapolation fallacy, and non sequitur — briefly addresses each but doesn't systematically argue why one supersedes the others; traces each premise to its failure mode and explains the logical gap between subtask performance and job replacement, though the derivation of why the primary label applies to one fallacy over another is missing.",
+  "timestamp": "2026-03-23T02:29:04.020863+00:00"
+}

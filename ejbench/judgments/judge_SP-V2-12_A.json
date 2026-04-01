@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-12",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer with fully valid mandatory-access-control reasoning; goes three levels deep — label inheritance, systemic model-collapse risk if subjective overrides were allowed, and correct remediation path; no explicit reflection on reasoning method or named biases, just linear confident delivery; walks through the logical chain but applies no counterfactual or boundary tests (e.g., what if aggregation crossed a formal declassification gate?); correctly frames everything as 'under strict enforcement' and implicitly acknowledges the employee's argument as an alternative interpretation worth engaging, though confidence is uniform with no stated uncertainty levels; the aggregation-argument counter-case is directly engaged and rejected with a specific systemic reason, though no other alternatives are explored; every conclusion (label inheritance, write-down definition, policy outcome) traces to an explicit derivation step a third party could reproduce without external context.",
+  "timestamp": "2026-03-23T02:59:33.354954+00:00"
+}

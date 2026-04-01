@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-13",
+  "condition": "C1",
+  "output": "## Analysis\n\nThe causal graph:\n\n```\nHwax ──→ Kraz ──→ Rukz\n  │                 ↑\n  └──→ Pexu ───────┘\n```\n\n**Yes, this intervention decreases the likelihood of Rukz.**\n\nHere's why:\n\nUnder normal conditions, Hwax influences Rukz through **two independent pathways**:\n1. Hwax → Kraz → Rukz\n2. Hwax → Pexu → Rukz\n\nThe intervention **do(Pexu = absent)** severs the Hwax → Pexu edge, eliminating pathway 2. This is equivalent to removing one of Rukz's direct causes.\n\nSince Rukz depends on both Kraz and Pexu as causal inputs, and we've cut Pexu out while preserving only the Kraz channel, Rukz now receives causal influence from only one pathway instead of two. With one fewer positive contributing cause, the probability of Rukz occurring is strictly lower than when both pathways are active — assuming the problem's \"direct effect\" relationships are positive contributions (the standard reading when no direction is specified and no other factors exist).\n\n**Key point:** This holds precisely *because* the problem stipulates a self-contained world with no unmentioned factors. There are no hidden compensatory mechanisms that could offset the lost Pexu → Rukz contribution.",
+  "timestamp": "2026-03-20T10:38:54.669519+00:00"
+}

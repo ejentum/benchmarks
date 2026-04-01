@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-10",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer (inspection area) with valid causal chain; goes one level beyond surface by distinguishing the coin's path from the magnifying glass's return path, but doesn't explore deeper implications; no explicit reflection on reasoning method or bias—proceeds linearly without questioning approach; implicitly verifies by checking what was and wasn't moved back (glass vs. coin), providing a contrast check; uses 'most likely' appropriately but offers no structured confidence analysis or identification of what would change the answer; never considers alternative locations such as the excavation pit, Tom's hands, or the kit as competing hypotheses; every conclusion traces to an explicit numbered derivation that a third party could fully reproduce from the response alone",
+  "timestamp": "2026-03-23T10:03:49.692672+00:00"
+}

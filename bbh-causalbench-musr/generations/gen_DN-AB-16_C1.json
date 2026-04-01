@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-16",
+  "condition": "C1",
+  "output": "**C**\n\nThe question asks which is \"most structurally accurate,\" meaning it's testing whether you can see past the two competing frames and recognize that the legal structure itself is the issue.\n\n- **A and B** each assume existing copyright categories already map cleanly onto AI training. They don't — fair use factors (purpose, amount, market effect) were designed for cases where a human repurposes a work into a new human-authored work, and infringement doctrine assumes copying *for distribution or display*.\n- **D** sounds pragmatic but reduces the structural question to an empirical test (can it reproduce passages?) without addressing whether *training itself* is a cognizable use under copyright law.\n- **C** identifies the actual structural gap: \"learning from\" a work is a novel category of use that the existing doctrine wasn't built to handle. The real legal question isn't which side of an old line this falls on — it's that the line was drawn for a different landscape entirely.",
+  "timestamp": "2026-03-20T17:42:27.824579+00:00"
+}

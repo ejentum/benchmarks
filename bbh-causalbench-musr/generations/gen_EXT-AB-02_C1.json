@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-02",
+  "condition": "C1",
+  "output": "Let me work through this step by step.\n\n**Given facts:**\n1. Ada finished above Eli.\n2. Amy finished below Mel.\n3. Ada finished second.\n4. Mel finished below Eli.\n\n**From fact 3:** Ada = 2nd.\n\n**From fact 1:** Ada above Eli → Eli is below 2nd, so Eli ∈ {3, 4, 5}.\n\n**From fact 4:** Mel below Eli → Mel is below Eli, so if Eli = 3, Mel ∈ {4, 5}; etc.\n\n**From fact 2:** Amy below Mel → Amy is below Mel.\n\n**Building the chain:** Ada(2) > Eli > Mel > Amy\n\n- Eli = 3, Mel = 4, Amy = 5\n- That leaves **Joe = 1st**.\n\nThe answer is **(D) Joe finished first**.",
+  "timestamp": "2026-03-20T10:45:58.947067+00:00"
+}

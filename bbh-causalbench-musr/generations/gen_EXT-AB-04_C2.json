@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-04",
+  "condition": "C2",
+  "output": "## Solving Step by Step\n\n**Constraints:**\n1. Gray is right of Orange: O … Gr\n2. Green is 2nd from right (position 4)\n3. Brown is right of White: W … B\n4. Brown is left of Orange: B … O\n\n**Chaining 3 → 4 → 1:** W … B … O … Gr\n\nThat gives a relative order of four books. Green is fixed at position 4.\n\n**Placing into positions 1–5:**\n\n| Pos 1 | Pos 2 | Pos 3 | Pos 4 | Pos 5 |\n|-------|-------|-------|-------|-------|\n| White | Brown | Orange | Green | Gray |\n\nAll constraints satisfied:\n- Gray (5) right of Orange (3) ✓\n- Green is 2nd from right (pos 4) ✓\n- Brown (2) right of White (1) ✓\n- Brown (2) left of Orange (3) ✓\n\n**The answer is (D) The gray book is the rightmost.**",
+  "timestamp": "2026-03-20T11:05:45.418849+00:00"
+}

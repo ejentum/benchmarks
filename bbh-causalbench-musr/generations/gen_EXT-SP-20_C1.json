@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-20",
+  "condition": "C1",
+  "output": "The desk.\n\nFred placed the book he wanted to borrow onto the desk, and Simon was present in the study (admiring the painting on the opposite wall) but not watching Fred do this. However, the question asks where Simon would **most likely look** — and Simon knows the book's original location was the **shelf**.\n\nBut considering the full sequence: Simon would look on the **shelf** first, since that's where the book has always been kept and he has no reason to know Fred moved it to the desk.\n\n**Answer: The shelf.**",
+  "timestamp": "2026-03-20T10:38:44.528309+00:00"
+}

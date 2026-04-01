@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-02",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (B) with valid reasoning; goes one level beyond surface by constructing a full schedule table showing all time slots; no explicit self-monitoring or bias checking; verifies by showing all other slots are occupied and field closes after 10pm; presents answer with certainty, no uncertainty acknowledged; implicitly rejects alternatives by showing they're occupied but doesn't explicitly discuss why each option fails; full derivation trail with clear table showing every time slot and its status.",
+  "timestamp": "2026-03-23T13:10:45.239787+00:00"
+}

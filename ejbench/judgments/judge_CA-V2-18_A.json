@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-18",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Arrives at correct answer (B) with valid reasoning about volume-driven correlation and normalization; goes one level beyond surface by explaining the inversion when normalizing by post count, but does not trace second-order effects or mechanistic detail; no reflection on reasoning process, biases, or assumption-checking; no counterfactual tests, boundary checks, or re-derivation from a different angle are performed; presents conclusion as certain with no acknowledgment of model assumptions or conditions under which it might fail; options A, C, and D are never mentioned or evaluated, only the chosen answer is argued; reasoning chain is brief with some implicit steps, enough to partially follow but insufficient for full reproduction without external context",
+  "timestamp": "2026-03-23T02:36:28.791437+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-09",
+  "condition": "C1",
+  "output": "**No.**\n\nFrom the given probabilities:\n\n- P(large feet | college degree or higher) = 10% / 36% ≈ **27.8%**\n- P(large feet | high school or lower) = 43% / 64% ≈ **67.2%**\n\nObserving college degree or higher is associated with a **smaller** chance of large feet, not a larger one.",
+  "timestamp": "2026-03-20T10:37:30.295019+00:00"
+}

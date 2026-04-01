@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-06",
+  "condition": "C1",
+  "output": "The answer is **(B) 7am to 9am**.\n\nHannah's known schedule:\n\n- **5am–7am**: On a rooftop (seen by Richard)\n- **9am–7pm**: At the cafe (seen by Ashley)\n- **7pm–8pm**: Near the Leaning Tower of Pisa (seen by Jennifer)\n- **After 8pm**: Beach closed\n\nThe only open window is **7am to 9am**.",
+  "timestamp": "2026-03-20T10:16:06.383164+00:00"
+}

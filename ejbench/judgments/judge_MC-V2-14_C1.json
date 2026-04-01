@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-14",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.7333,
+  "injection_composite": 0.7778,
+  "brief_justification": "Arrives at exactly 50% with valid step-by-step derivation via total probability and Bayes' theorem; goes one level beyond surface by explaining the volume-vs-defect-rate cancellation effect but stops short of third-order implications; explicitly flags the causal-vs-posterior framing risk and performs an inverse hypothesis check, showing process awareness; verifies by confirming P(A|D)+P(B|D)=1 but does not re-derive from a second angle or test boundary conditions; presents the result cleanly with explanation of the non-obvious cancellation but does not state confidence levels or identify what inputs would break the 50/50 result; mentions the two competing forces (volume vs defect rate) as implicit alternatives but does not formally enumerate or reject other approaches; every intermediate value is shown (0.021+0.021=0.042, then 0.021/0.042) and a third party could reproduce in full; avoids the anti-pattern of leaving the prior unchanged—properly multiplies plant share by defect rate—but does not explicitly name or explain the failure mode being avoided; zero evidence of suppressed failure modes (population-level frequencies used correctly, posterior updated, both hypotheses evaluated) and correlation-causation confusion is explicitly called out; follows the PRIOR→evidence→LR→Bayes→posterior structure but does not execute the M1 primacy-bias check or the G1/G2 sufficiency gates from the topology.",
+  "timestamp": "2026-03-23T04:49:44.820285+00:00"
+}

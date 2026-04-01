@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-22",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Agent selects C and explicitly dismisses the correct answer D, mischaracterizing D as addressing a 'different question' rather than recognizing it as the deeper flaw in the argument's premise; agent performs multi-level analysis including conversion rate calculations, compounding effects, and option-by-option breakdown going well beyond surface observation; a footnote catching the >100% conversion rate shows some process awareness, but no explicit naming of cognitive biases or mid-analysis course-correction; agent re-derives numbers from first principles and catches a data inconsistency (>100% rate), constituting meaningful but not exhaustive verification; agent presents its conclusion with high confidence and provides no structured uncertainty framing or acknowledgment that its rejection of D could be contested; all four answer choices are evaluated with specific, articulated reasons for acceptance or rejection; every claim is traced to an explicit numerical derivation with a reproducible table and footnoted caveat, enabling full third-party reconstruction.",
+  "timestamp": "2026-03-23T02:39:40.271224+00:00"
+}

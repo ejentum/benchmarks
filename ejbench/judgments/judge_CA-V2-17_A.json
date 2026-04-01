@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-17",
+  "condition": "A",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Leads with the correct answer 'healthy user bias' but immediately undermines it by claiming 'the most specific term is immortal time bias,' creating a contradictory answer that is only partially correct; explores multiple epidemiological frameworks (immortal time bias, sick quitter bias, collider-stratifier bias) going beyond the surface but without tracing causal mechanisms or second-order effects; no explicit monitoring of its own reasoning process or acknowledgment that it is shifting its own answer mid-response; no verification step of any kind — just successive assertion of labels; presents multiple competing terms without stating confidence or acknowledging the contradiction between naming healthy user bias first and then calling a different term 'more specific'; mentions several alternative framings (sick quitter bias, collider bias, selection bias) but does not systematically compare or reject them with specific criteria; shows reasoning for each term individually but does not derive why one label is definitively more accurate than another, leaving the chain incomplete.",
+  "timestamp": "2026-03-23T02:35:48.912204+00:00"
+}

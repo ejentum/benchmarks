@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-18",
+  "condition": "C2",
+  "output": "**(B)** is correct.\n\nThe doctor's reasoning is unsound on multiple levels:\n\n1. **Sample size trumps journal prestige.** Trial 2 has 4x the patients, giving it far more statistical power. A non-significant result in a large trial is more informative than a significant result in a small one.\n\n2. **Publication bias.** Manufacturer-funded trials systematically overestimate effect sizes. This is well-documented — positive results get published, negative ones don't.\n\n3. **The p-values tell the real story.** Trial 1's p=0.03 in 500 patients looks impressive until a 2,000-patient replication finds only a 2% effect with p=0.4. The large trial's failure to replicate effectively deflates the original finding — the small trial likely captured noise or was optimized for a positive result.\n\n4. **Independent replication is the gold standard.** The entire point of replication is to check whether an effect is real. When an independent, better-powered study fails to replicate, that *is* the answer.\n\nOption (C) — \"the truth is somewhere in between\" — is a false compromise. A 15% effect that collapses to 2% (indistinguishable from zero) on replication isn't evidence of a moderate effect. It's evidence the original was inflated.",
+  "timestamp": "2026-03-20T17:57:54.761375+00:00"
+}

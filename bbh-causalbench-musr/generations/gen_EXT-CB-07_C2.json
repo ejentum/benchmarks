@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-07",
+  "condition": "C2",
+  "output": "**Yes**, infant mortality would be high.\n\nHere's the step-through given the stated causal rules and the observation that health is poor (H=0):\n\n**Intervene:** Set smoking mother (S=1).\n\n1. **Birth weight:** B = S OR H = 1 OR 0 = **1 (normal)**\n2. **Infant mortality:** M = S OR H OR B = 1 OR 0 OR 1 = **1 (high)**\n\nSmoking alone is sufficient to produce both normal birth weight and high infant mortality through the OR gates, regardless of the poor health condition.",
+  "timestamp": "2026-03-20T10:57:36.433450+00:00"
+}

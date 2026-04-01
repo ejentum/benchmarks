@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-09",
+  "condition": "A",
+  "output": "**Yes.**\n\nA typical person would answer **Yes** — Benni's fertilization caused the plants to dry out.\n\nThe reasoning is straightforward from a folk-causal perspective: Tom explicitly instructed both gardeners to use only A X200R. Alex followed the instructions. Benni deviated by using B Y33R instead. The plants dried out specifically in beds where both chemicals were applied together — which only happened because Benni introduced the second chemical. If Benni had followed instructions, no bed would have received two different fertilizers, and the drying wouldn't have occurred.\n\nBenni's action is the clear norm-violating, counterfactual-difference-making cause: but for Benni using B Y33R, the plants would not have dried out.",
+  "timestamp": "2026-03-20T09:16:42.565637+00:00"
+}

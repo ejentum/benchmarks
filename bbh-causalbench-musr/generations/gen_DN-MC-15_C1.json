@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-15",
+  "condition": "C1",
+  "output": "**(B).**\n\nThe core flaw is the **missing counterfactual baseline**. \"10% of my picks became unicorns\" sounds impressive until you ask: *what would have happened with random selection from the same deal flow?*\n\nIf the base rate of unicorn outcomes among fundable startups in that era/sector is also ~10%, the VC's \"selection\" added nothing — they performed at the rate you'd expect from throwing darts. To demonstrate skill, you need to show your hit rate **exceeds** the relevant baseline.\n\nThe other options touch adjacent issues but miss the fundamental problem:\n\n- **(A)** judges 10% in a vacuum — but 10% could be extraordinary or mediocre depending on the baseline.\n- **(C)** and **(D)** raise sample size and luck, which are real concerns, but even with a massive sample and statistical significance, the claim is hollow without a baseline comparison. You'd just have a very precise measurement of... the base rate.\n\nThis is a specific instance of a general reasoning error: **treating an outcome rate as evidence of skill without comparing it to what would happen absent that skill.**",
+  "timestamp": "2026-03-20T17:46:57.776649+00:00"
+}

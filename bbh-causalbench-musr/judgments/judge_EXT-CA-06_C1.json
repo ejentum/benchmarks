@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-06",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1
+  },
+  "composite_score": 0.2381,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with brief justification about luck vs intention; Surface-level reasoning — states the conclusion with one supporting reason but no deeper analysis of intentionality frameworks; No self-monitoring of reasoning process; No verification or counterfactual checks; No acknowledgment of uncertainty or competing intuitions; No alternative viewpoints considered (e.g., some might argue intent was present since he aimed); Minimal derivation — gives the answer and one reason but no structured reasoning chain",
+  "timestamp": "2026-03-23T12:49:05.551818+00:00"
+}

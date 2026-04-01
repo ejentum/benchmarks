@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-06",
+  "condition": "A",
+  "output": "**Linear chain (A→B→C→D):**\n\nEach hop adds 50ms, and there are 3 hops: 50 + 50 + 50 = **150ms** minimum lag at Node D.\n\n**Star topology (A→B, A→C, A→D in parallel):**\n\nD receives directly from A in a single hop: **50ms** lag.\n\n**Difference:** 150ms − 50ms = 100ms.\n\n**Yes**, the star topology reduces Node D's replication lag by **100ms**, which is more than 50ms.",
+  "timestamp": "2026-03-22T16:33:54.387465+00:00"
+}

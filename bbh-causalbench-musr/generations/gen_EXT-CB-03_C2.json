@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-03",
+  "condition": "C2",
+  "output": "**Yes.** The chance of black hair is larger when observing college degree or higher.\n\n**Computation:**\n\n- P(black hair | college+) = P(college+ ∧ black hair) / P(college+) = 18% / 45% = **40.0%**\n- P(black hair | high school−) = P(high school− ∧ black hair) / P(high school−) = 17% / 55% ≈ **30.9%**\n\n40.0% > 30.9%, so observing college degree or higher is associated with a higher probability of black hair.\n\nSince the causal structure is a simple chain (Education → Skill → Black hair) with no confounders or backdoor paths, the conditional probabilities here also reflect the causal direction: higher education increases skill, which in turn increases the probability of black hair.",
+  "timestamp": "2026-03-20T10:55:59.020405+00:00"
+}

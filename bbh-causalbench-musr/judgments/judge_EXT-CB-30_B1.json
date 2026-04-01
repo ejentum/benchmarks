@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-30",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.9048,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning; Multi-level analysis tracing both actual and counterfactual worlds through the DAG with second-order effects; Some self-monitoring via reasoning injection suppression signals but no explicit bias-checking mid-analysis; Strong verification by checking both worlds and identifying the self-defeating condition; Presents conclusions clearly but doesn't explicitly flag assumptions about default BP values; Systematically evaluates both worlds and explains why neither produces a healthy heart; Complete derivation trail with DAG, tables, and step-by-step reasoning that is fully reproducible",
+  "timestamp": "2026-03-23T11:22:40.333455+00:00"
+}

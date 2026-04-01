@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-21",
+  "condition": "C1",
+  "output": "**No. Method 2 is more correct.**\n\nIn this world, respiratory issues and broken bones are independent causes that both affect hospitalization status. There is no direct or indirect causal path from respiratory issues to broken bones.\n\nMethod 1 conditions on hospitalization status — a common effect (collider) of both respiratory issues and broken bones. Conditioning on a collider opens a spurious association between its two causes, making it appear as though respiratory issues and broken bones are related when they are not.\n\nMethod 2 looks at the direct correlation without conditioning on the collider, which correctly reflects that respiratory issues has no causal effect on broken bones.",
+  "timestamp": "2026-03-20T10:42:39.424139+00:00"
+}

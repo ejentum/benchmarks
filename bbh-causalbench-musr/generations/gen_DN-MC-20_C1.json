@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-20",
+  "condition": "C1",
+  "output": "**The answer is (B).**\n\nThis is a textbook case of **confirmation bias compounded by a missing counterfactual**. The manager only evaluated candidates they already selected — all from top-10 universities — so they never observed how non-top-10 graduates would have performed. The 5 successful hires don't validate the university filter; they validate the manager's own selection process, which was already biased toward that criterion.\n\nThe other options identify real but secondary concerns. (B) identifies the core structural flaw: you can't claim X causes Y when your own biased filtering ensured you only ever tested X.",
+  "timestamp": "2026-03-20T17:48:02.798902+00:00"
+}

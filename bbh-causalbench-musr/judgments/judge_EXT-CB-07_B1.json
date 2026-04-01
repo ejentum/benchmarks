@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-07",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid causal reasoning through both direct and mediated paths; Multi-level analysis tracing through DAG structure, interventional distribution, and both causal pathways; Some self-monitoring via the injected reasoning context suppressing observational-to-causal leaps, and explicit use of do-calculus framing; Basic verification by checking both rules independently and confirming OR logic evaluations; Acknowledges the distinction between intervention and observation and notes poor health is irrelevant, showing some epistemic awareness; Mentions both causal paths but doesn't systematically consider the counterfactual baseline (nonsmoking) for comparison; Full audit trail with explicit step-by-step derivation from DAG to rules to truth values to conclusion",
+  "timestamp": "2026-03-23T11:06:43.380898+00:00"
+}

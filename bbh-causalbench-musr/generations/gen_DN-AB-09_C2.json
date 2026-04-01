@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-09",
+  "condition": "C2",
+  "output": "**(B)** — All three are textbook examples of the **sunk cost fallacy**.\n\nIn each case, the decision-maker is letting **irrecoverable past costs** (money lost, money spent, lives lost) drive a *forward-looking* decision, when rationally only **future expected value** should matter:\n\n1. The $500 is gone regardless — the correct question is \"given my current bankroll and the odds, should I play the next hand?\"\n2. The $10M is spent regardless — the correct question is \"given what we know now, will *additional* investment yield positive returns?\"\n3. The fallen soldiers cannot be brought back — the correct question is \"will continuing the war produce better outcomes than stopping?\"\n\nThe other options miss the mark:\n- **(A)** is vaguely true but doesn't identify *why* — it's the mechanism that matters.\n- **(C)** confuses irrational escalation of commitment with persistence toward a sound goal.\n- **(D)** is a non-sequitur — better upfront risk assessment wouldn't fix the reasoning error that occurs *after* costs are sunk.",
+  "timestamp": "2026-03-20T17:51:15.958046+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-01",
+  "condition": "B1",
+  "output": "**The answer is (B).**\n\nThe analyst's repeated misses on Amazon, Netflix, and Tesla aren't random errors — they reveal a systematic blind spot: their framework treats cash burn and lack of near-term profitability as terminal signals, when in certain cases these are deliberate strategic choices (investing in scale, network effects, or market lock-in).\n\n- **(A)** is tempting but wrong. Past failures absolutely *can* invalidate current reasoning — not the data points, but the **framework** interpreting them. If the same lens keeps producing false negatives on the same category of company, the lens is miscalibrated.\n- **(C)** is an overreaction. The analyst isn't always wrong — they likely get traditional businesses right. The problem is specific, not global.\n- **(D)** is just the opposite error. Blindly inverting a flawed heuristic is still not reasoning.\n\n**(B)** is the calibrated response: keep the analysis, but add an explicit check — \"Does this company fit the pattern of deliberate short-term loss for long-term dominance?\" If yes, the standard cash-burn framework doesn't apply cleanly, and the analyst needs different tools (TAM trajectory, unit economics trends, competitive moats) to evaluate it.",
+  "timestamp": "2026-03-20T17:20:39.312184+00:00"
+}

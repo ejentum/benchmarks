@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-15",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.1429,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (desk instead of shelf) but reasoning about Fred's action is coherent; Surface-level analysis tracking only the last physical location of the book; No self-monitoring or questioning of the theory-of-mind aspect; No verification or sanity check against Maria's knowledge state; Presents answer as certain with no acknowledgment that Maria wasn't present when Fred moved the book; No consideration of Maria's perspective or the original shelf location; Shows one derivation step (Fred moved book to desk) but fails to trace Maria's epistemic state",
+  "timestamp": "2026-03-23T12:44:59.137921+00:00"
+}

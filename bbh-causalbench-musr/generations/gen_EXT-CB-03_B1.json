@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-03",
+  "condition": "B1",
+  "output": "**Yes.**\n\nFrom the given joint probabilities:\n\n- P(black hair | high school or lower) = 17% / 55% ≈ **30.9%**\n- P(black hair | college or higher) = 18% / 45% = **40.0%**\n\nThe chance of black hair is larger when observing college degree or higher (40.0% vs 30.9%).",
+  "timestamp": "2026-03-20T09:35:49.610288+00:00"
+}

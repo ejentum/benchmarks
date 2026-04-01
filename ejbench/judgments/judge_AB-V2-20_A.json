@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-20",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies 'Higher' with valid reasoning that the third description is more general/mathematical than the engineer's; constructs a full three-level abstraction ladder and explains the specificity-vs-generality tradeoff at multiple levels; proceeds linearly with no named biases, assumption checks, or course-corrections; constructs an abstraction ladder that implicitly cross-checks placement but applies no explicit counterfactual or boundary-condition test; presents conclusion confidently without acknowledging uncertainty or what evidence could flip the answer; never considers whether the third description might be at the same level or lower—goes straight to 'Higher'; every conclusion is explicitly derived with traceable steps (class-of-failure argument, one-instance subsumption, abstraction ladder), fully reproducible by a third party.",
+  "timestamp": "2026-03-23T02:29:32.061036+00:00"
+}

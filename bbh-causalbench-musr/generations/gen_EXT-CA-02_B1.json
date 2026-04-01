@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-02",
+  "condition": "B1",
+  "output": "This is a philosophical/psychological question about how ordinary people reason about causation — specifically about causal overdetermination (two independently sufficient causes).\n\n**A typical person would answer: Yes.**\n\nMost people would say Mr. Wallace's involvement in the crime life **did** cause his death. The reasoning an ordinary person would use:\n\n- His crime lifestyle is what put him in the situation where *both* an associate wanted to poison him *and* a rival's associate wanted to kill him by running him off the road.\n- Both the poisoning and the car explosion were direct consequences of his position in organized crime.\n- Even though the immediate/proximal cause was the car explosion (per the coroner — fatal burns), a typical person would see the \"crime life\" as the broader background cause that made both lethal events possible.\n\nOrdinary causal reasoning tends to favor **distal, explanatory causes** for questions framed at this level of abstraction (\"the crime life\" rather than \"the poison\" or \"the explosion\"). People naturally think: \"If he weren't in organized crime, none of this would have happened\" — a straightforward counterfactual judgment.",
+  "timestamp": "2026-03-20T09:32:42.964577+00:00"
+}

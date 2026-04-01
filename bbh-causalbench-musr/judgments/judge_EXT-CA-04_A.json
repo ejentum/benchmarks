@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CA-04",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (No) and correctly identifies the Knobe/side-effect effect as the mechanism; goes one level beyond surface by explaining the folk-psychology mechanism and noting the positive-side-effect case resists intentionality attribution, but does not trace second-order effects like why the asymmetry exists or what cognitive heuristics drive it; no explicit monitoring of its own reasoning process, no named biases, no course-correction; no verification attempted — no counterfactual test, no boundary condition check, no re-derivation from a different angle; uses hedging language ('most people resist') appropriately without structured uncertainty analysis or confidence levels; mentions the negative-version contrast as a relevant alternative framing and briefly explains why it differs, but does not evaluate other possible explanations for the No answer; reasoning chain is mostly reproducible — names the phenomenon, states the board's explicit disavowal, concludes folk intuition treats the outcome as a byproduct — but skips the intermediate step of how 'knowing but not intending' maps to typical intentionality judgments.",
+  "timestamp": "2026-03-23T09:35:05.468020+00:00"
+}

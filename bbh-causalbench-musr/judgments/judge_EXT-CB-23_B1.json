@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-23",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes, 53.75%) with valid law of total probability calculation; Goes beyond surface by noting the counterintuitive relationship between waking late and higher on-time rate, offering a plausible causal explanation involving traffic; No explicit self-monitoring of reasoning process or bias checks; Mentions the result is above 50% as implicit verification but does not cross-check from another angle; Acknowledges the counterintuitive nature and offers a speculative explanation with appropriate hedging ('likely', 'may'); Considers the role of traffic as an alternative causal explanation for the surprising conditional probabilities; Full derivation chain shown from inputs through multiplication to final answer, fully reproducible",
+  "timestamp": "2026-03-23T11:18:26.837618+00:00"
+}

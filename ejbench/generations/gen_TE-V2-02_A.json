@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-02",
+  "condition": "A",
+  "output": "**Yes.** The Day 21 evaluation is premature — it falls before the earliest possible sale.\n\nTrace the minimum lag chain:\n\n| Metric | Minimum lag | Earliest possible day |\n|---|---|---|\n| Traffic | +1 day | Day 2 |\n| Email signups | +7 days after traffic | Day 9 |\n| **Sales conversions** | +14 days after signups | **Day 23** |\n| Referrals | +30 days after sales | Day 53 |\n\nThe **shortest possible path** from campaign launch to a sale is **1 + 7 + 14 = 22 days**, meaning the first conversion can't appear until **Day 23 at the earliest**.\n\nThe evaluation on Day 21 is 2 days too early to observe even a single sale from this campaign. The CMO's \"zero sales\" observation is **guaranteed by the lag structure**, not diagnostic of campaign performance. The marketing director is correct.\n\n**What Day 21 data *can* tell you:**\n- Traffic (fully matured — all 1-3 day lags have elapsed)\n- Email signups (partially matured — signups from early traffic are visible)\n\nThese are the leading indicators that should inform the Day 21 decision, not sales.",
+  "timestamp": "2026-03-22T16:17:43.805741+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-22",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.7,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at exactly 36.7 kWh via correct compound decay formula with valid derivation; goes one level beyond surface by explaining why linear fails and deriving the exponential model, but stops there; identifies the flat_confidence_propagation trap and uses it to frame the answer, showing some process awareness; verifies computation using logarithm re-derivation (e^(200·ln(0.995))) as a cross-check; acknowledges the technician's model as an assumption and contrasts it with the correct one, but doesn't state confidence intervals or what would change the conclusion; explicitly contrasts the linear model against compound decay and explains rejection of the linear interpretation; every step is shown — formula, substitution, log computation, final multiplication — fully reproducible; the provided injection's [NEGATIVE GATE] concerns drone battery feasibility checks, not mathematical modeling — agent avoids the anti-pattern but engages a different injection context entirely, not the one provided; the provided Suppress terms target 'assumed_capability' and 'capability_claim_without_feasibility_check,' which are irrelevant to this math problem — agent avoids them trivially but addresses a different suppress set entirely; the provided topology is a multi-branch feasibility-checking DAG with gates and M-nodes, none of which appear in the agent's response, which proceeds linearly through the math.",
+  "timestamp": "2026-03-23T03:28:51.539783+00:00"
+}

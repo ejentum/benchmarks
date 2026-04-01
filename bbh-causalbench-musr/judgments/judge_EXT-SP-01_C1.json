@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-01",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 0,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0
+  },
+  "composite_score": 0.0476,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) but final position is wrong: correct is (-6, -3) not (-6, 3), so partial credit; No reasoning shown in the response; No self-monitoring evident; No verification performed; No uncertainty acknowledged; No alternatives considered; No derivation trail shown, just asserts a final position",
+  "timestamp": "2026-03-23T13:16:48.750120+00:00"
+}

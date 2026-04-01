@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-20",
+  "condition": "B2",
+  "output": "## Analysis\n\n**Causal Structure:**\n- Yupt → Jyka\n- Yupt → Kwox\n- Jyka → Kwox\n\n**Key distinction: intervention vs. observation.** The phrase \"intervention guarantees kwox is not occurring\" means **do(Kwox = 0)**, which *severs all incoming causal arrows* to Kwox. This is not the same as *observing* Kwox = 0.\n\n**Under do(Kwox = 0):**\n- The arrow Yupt → Kwox is cut\n- The arrow Jyka → Kwox is cut\n- The arrows Yupt → Jyka remain intact\n\nSince Kwox is a **descendant** of Jyka, intervening on it cannot propagate information backwards to Jyka. There is no \"explaining away\" or collider conditioning here — the intervention simply fixes Kwox's value without affecting upstream variables.\n\nTherefore:\n\n**P(Jyka | do(Kwox = 0)) = P(Jyka)**\n\nYupt is the only stated cause of Jyka, and P(Yupt) = 11%. With such a low probability for Jyka's sole cause, the marginal probability of Jyka is low regardless of the strength of the Yupt → Jyka effect (it's at most 11% if Yupt guarantees Jyka, and even lower otherwise).\n\n**No, it is not likely that Jyka is present.** The intervention on the downstream variable Kwox has no effect on Jyka's probability, and Jyka's only cause (Yupt) occurs just 11% of the time.",
+  "timestamp": "2026-03-20T10:04:39.868784+00:00"
+}

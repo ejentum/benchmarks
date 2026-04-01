@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-27",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correctness: agent's conclusion ('unsupported/significantly overstated') directly matches the ground truth 'largely discredited' with accurate supporting claims; Reasoning depth: multi-level analysis covers methodology, replication failure, archival revelations, and second-order distinction between SPE specifically vs. situationist thesis broadly; Self-monitoring: no explicit reflection on own reasoning process or named biases — proceeds linearly without questioning its evaluative stance; Verification: cites three named studies with specific years and findings that independently corroborate the critique from different angles; Epistemic honesty: clearly separates 'SPE proves X' from 'situationist thesis has other support,' distinguishes 'suggests' from 'proves,' and identifies what would be a valid vs. invalid claim; Alternative consideration: acknowledges the situationist thesis has legitimate support elsewhere but does not engage SPE defenders or consider whether the study retains any residual evidential value; Audit trail: every critique traces to a named mechanism or study with date and researcher, sufficient for a third party to independently verify the reasoning chain.",
+  "timestamp": "2026-03-23T02:51:23.621503+00:00"
+}

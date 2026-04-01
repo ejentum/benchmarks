@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-04",
+  "condition": "A",
+  "output": "A typical person would answer: **Yes**.\n\nThis is the well-known **Knobe Effect** (side-effect effect) from experimental philosophy. However, this version is the **help** case, where most studies show people tend to answer **No** — they say the board did *not* intentionally help the environment because the board explicitly disclaimed any concern for it.\n\nLet me correct myself: A typical person would answer: **No**.\n\nThe asymmetry is the key finding: when the side effect is *harmful*, people say it was intentional; when the side effect is *helpful* (as here), people say it was **not** intentional. The board explicitly said they don't care about the environment, so most people judge the helpful side effect as unintentional.",
+  "timestamp": "2026-03-20T09:15:27.025010+00:00"
+}

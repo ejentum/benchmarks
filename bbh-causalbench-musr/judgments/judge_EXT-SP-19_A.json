@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-19",
+  "condition": "A",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.0952,
+  "injection_composite": null,
+  "brief_justification": "Answers 'chart table' but correct answer is 'personal bag' — Jack moved the logbook to his personal bag, so Mike would look there; Surface-level reasoning that stops at the early part of the story without tracking object movement; No self-monitoring or questioning of whether the logbook moved after being found on the chart table; No verification against later story events; Presents answer as certain with no hedging; No alternative locations considered; Cites one quote but fails to trace the full chain of object relocations",
+  "timestamp": "2026-03-23T10:35:28.464710+00:00"
+}

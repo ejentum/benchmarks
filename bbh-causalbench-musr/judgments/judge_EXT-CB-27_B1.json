@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-27",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning; Multi-level analysis tracing DAG structure, interventional vs observational distributions, and counterfactual reasoning; Some self-monitoring via suppression signals and identifying no backdoor paths; Basic verification by computing both probabilities and confirming direction; Acknowledges root-node assumption but doesn't deeply explore uncertainty; Doesn't systematically consider alternative interpretations of the question; Full derivation chain from DAG to interventional distributions to counterfactual conclusion is reproducible",
+  "timestamp": "2026-03-23T11:20:54.564563+00:00"
+}

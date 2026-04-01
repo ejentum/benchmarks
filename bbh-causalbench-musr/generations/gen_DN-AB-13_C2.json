@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-13",
+  "condition": "C2",
+  "output": "**(B)**.\n\nThe common structure is: **open ingestion + layered review-and-revert**. All four systems solve the same design problem — how to maximize input volume without sacrificing quality — using the same mechanism:\n\n1. **Low barrier to entry** (anyone can contribute)\n2. **Progressive filtering** (review layers catch errors after the fact)\n3. **Cheap reversion** (undoing bad input costs less than gatekeeping all input upfront)\n\nThe other options capture surface traits but miss the structural pattern. (A) is too vague — a Slack channel is collaborative but lacks the revert mechanism. (C) is wrong — Wikipedia explicitly doesn't require experts. (D) confuses motivation with mechanism.",
+  "timestamp": "2026-03-20T17:52:10.899157+00:00"
+}

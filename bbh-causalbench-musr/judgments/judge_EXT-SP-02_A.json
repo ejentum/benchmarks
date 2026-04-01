@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-02",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (Yes) with valid coordinate tracing; only traces the single required path with no exploration of why the geometry works or second-order implications; proceeds linearly with no reflection on method, bias checks, or course corrections; confirms the final coordinate equals the starting point with a checkmark but applies no alternative derivation or boundary test; assumes a starting direction (North) without acknowledging that assumption or noting it doesn't affect the result; considers only the one obvious step-by-step approach with no mention of alternatives; every step is shown with explicit coordinates, fully reproducible by a third party",
+  "timestamp": "2026-03-23T09:48:13.705647+00:00"
+}

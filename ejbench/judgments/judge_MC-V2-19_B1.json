@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-19",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.8333,
+  "injection_composite": 0.7778,
+  "brief_justification": "Agent correctly identifies 'employment unchanged' as the critical unstated assumption with valid derivation from the arithmetic; agent traces second-order employer responses (hours cuts, layoffs, automation) and explains why the assumption is load-bearing versus others; agent notes 'amplify/suppress' signals and distinguishes this assumption from alternatives but does not explicitly reflect on its own reasoning biases mid-analysis; agent verifies by showing the mathematical breakdown when hours change, though stops short of boundary-condition testing; agent acknowledges 'other assumptions exist' (price effects) but does not provide structured confidence levels or flag what would flip the conclusion; agent explicitly names the price-level alternative and explains why it is less critical than the employment assumption; premises P1–P4 → C are laid out in a table with the hidden premise precisely located, fully reproducible; agent avoids accepting the argument's premises uncritically and reconstructs from the arithmetic up, but does not explicitly name the negative gate pattern; neither suppressed failure mode (inherited belief acceptance or stacking unverified assumptions) appears in the response; agent follows decompose→test→flag topology but does not explicitly execute the axiom/derived gate or the saturation-exit MOD shown in the topology.",
+  "timestamp": "2026-03-23T03:47:42.464783+00:00"
+}

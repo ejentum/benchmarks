@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-09",
+  "condition": "C2",
+  "output": "**Yes.**\n\nA typical person would answer **Yes** — Benni's fertilization caused the plants to dry out.\n\nThis is a well-studied pattern in causal cognition research. Both fertilizers were jointly necessary for the damage (it was the *combination* that dried the plants), so in a strict causal sense, Alex's fertilization was equally necessary. However, people overwhelmingly attribute causation to Benni because:\n\n1. **Norm violation**: Benni deviated from Tom's explicit instruction to use only A X200R. Alex followed the rules. When one contributing cause involves a norm violation and the other doesn't, people single out the norm-violating action as \"the cause.\"\n\n2. **Abnormality bias**: Benni's use of B Y33R was the unexpected, abnormal element in the situation. Alex did what was supposed to happen. People tend to identify the abnormal condition as causal over the \"background\" or expected condition.\n\nThis is known as the **norm effect** in causal judgment (studied by Hitchcock, Knobe, and others). Even though removing *either* fertilizer would have prevented the damage, typical people judge the norm-violating contributor as the cause and largely excuse the norm-conforming one.",
+  "timestamp": "2026-03-20T10:54:16.439634+00:00"
+}

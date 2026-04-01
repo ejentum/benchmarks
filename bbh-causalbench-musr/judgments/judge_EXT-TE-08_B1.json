@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-08",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (C) with valid reasoning; goes one level beyond surface by mapping all time slots into a table to find the gap; minimal self-monitoring via the injected suppress/amplify context but no explicit reflection on reasoning process; mentions finding the gap but doesn't verify against other options; no explicit uncertainty acknowledgment; doesn't explicitly evaluate why other options are wrong; full derivation trail shown with table and gap identification making it fully reproducible",
+  "timestamp": "2026-03-23T10:57:33.073621+00:00"
+}

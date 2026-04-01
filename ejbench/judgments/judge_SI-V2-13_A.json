@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-13",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.3333,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer ($375) using the valid DWL triangle formula; only applies the surface formula without explaining why DWL forms a triangle or tracing welfare distribution effects; no reflection on reasoning method or assumptions made; no sanity check, counterfactual, or re-derivation from supply/demand curves directly; presents the answer as certain with no acknowledgment of assumptions (e.g., linearity, no other distortions); considers only the standard triangle formula with no mention of alternative calculation approaches; shows the arithmetic chain clearly enough to reproduce but omits the geometric derivation justifying the formula's applicability.",
+  "timestamp": "2026-03-23T02:23:26.290389+00:00"
+}

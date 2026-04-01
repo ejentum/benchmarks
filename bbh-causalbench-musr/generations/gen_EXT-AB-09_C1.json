@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-09",
+  "condition": "C1",
+  "output": "**No**, Lorine does not tell the truth.\n\nHere's the chain:\n\n1. **Christie** tells the truth (given).\n2. **Ka** says Christie tells the truth → that's correct, so **Ka tells the truth**.\n3. **Delbert** says Ka lies → that's wrong, so **Delbert lies**.\n4. **Leda** says Delbert tells the truth → that's wrong, so **Leda lies**.\n5. **Lorine** says Leda tells the truth → that's wrong, so **Lorine lies**.",
+  "timestamp": "2026-03-20T10:47:29.933995+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-03",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer (0,0) with valid coordinate tracking; goes beyond surface by showing each incremental position change in a structured table but doesn't explore second-order implications; rechecks via table layout but doesn't name potential confusion points like left/right inversion or direction ambiguity; the table itself serves as basic verification confirming the final position matches the start; states the answer confidently without acknowledging the 'always face forward' assumption or noting what would change the result; considers only one interpretation of the instructions with no alternatives evaluated; every step is explicitly shown with coordinates, fully reproducible by a third party",
+  "timestamp": "2026-03-23T09:50:23.862827+00:00"
+}

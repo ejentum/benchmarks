@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-16",
+  "condition": "B2",
+  "output": "**(B)**\n\nThe scenario describes a classic **cobra effect** — a well-intentioned intervention that worsens the problem it targets, through a specific causal chain:\n\n1. **Remove filter** → volume increases 35%\n2. **Capacity constant** → time per application drops\n3. **Time pressure** → reviewers default to fast heuristics\n4. **Fast heuristics** = school name recognition, activity list length, essay surface quality\n5. **All three correlate more tightly with family wealth** than standardized test scores do (test prep is purchasable, but so are private schools, travel sports, and essay consultants — and the latter are *less visible* as purchased advantages)\n\nThe key insight: standardized tests are *legibly* correlated with SES, which makes them easy to criticize. The replacement signals are *illegibly* correlated with SES, which makes the stratification harder to detect and harder to correct. You've traded a measurable bias for an opaque one, under conditions (time pressure, volume increase) that amplify rather than mitigate the substitution.\n\nThis is a systems-thinking question about **second-order effects** and **proxy substitution under constraint**.",
+  "timestamp": "2026-03-20T17:33:09.168319+00:00"
+}

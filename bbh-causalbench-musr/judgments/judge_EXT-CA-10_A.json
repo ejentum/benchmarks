@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CA-10",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2381,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (Yes vs. correct No), though the causal-chain logic is not entirely incoherent; Only surface-level causal chain stated — no exploration of moral responsibility vs. physical causation, counterfactuals, or how 'typical person' intuitions about helpful intermediaries work; No questioning of own framing, no pause to consider whether 'typical person' intuition might run opposite to the stated conclusion; No counterfactual check, no boundary-condition test (e.g., 'would people blame a good samaritan?'), no sanity check against the correct answer direction; Conclusion stated with confidence, no acknowledgment that causal attribution in intervening-actor scenarios is contested or that the 'helpful neighbor' framing commonly shifts intuitions; Drunk driver is mentioned as 'also a cause' but the agent never seriously evaluates why a typical person might exonerate the neighbor (he was helping, not creating risk), leaving the No answer unexplored; Causal chain is shown (neighbor drove → car hit → son hurt) but the derivation of why this reflects 'typical person' reasoning — rather than expert legal/philosophical causation — is asserted without grounding.",
+  "timestamp": "2026-03-23T09:45:54.615737+00:00"
+}

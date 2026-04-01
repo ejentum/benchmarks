@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-09",
+  "condition": "A",
+  "output": "## Crew Assignment\n\n- **Alex → Engineer**: He holds a Naval Engineering degree, regularly solves complex technical problems on the yacht, and genuinely loves working on vessels. He's the clear fit.\n\n- **Donnie → Deckhand**: He has direct experience as a deckhand on other ships, excels at rigging, safety procedures, and maintenance — the core deckhand duties.\n\n- **Emily → Neither role (hospitality/people-facing duties)**: She struggles with technical diagrams, lacks enthusiasm for deckhand work, and explicitly prefers people-oriented tasks. Forcing her into either role would reduce efficiency.\n\n**Why this works:**\n- Each person is matched to their strongest skills and experience.\n- Alex and Donnie have strong rapport and work well together under pressure, which matters when engineer and deckhand must coordinate.\n- Emily's interpersonal friction with both men is minimized by keeping her in a separate role rather than forcing close operational collaboration.\n- No critical role is staffed by someone underqualified or unmotivated.",
+  "timestamp": "2026-03-20T09:23:25.860764+00:00"
+}

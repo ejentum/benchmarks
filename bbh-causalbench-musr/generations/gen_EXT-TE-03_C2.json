@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-03",
+  "condition": "C2",
+  "output": "The answer is **(A) 2pm to 7pm**.\n\nBetty's schedule accounts for every other time slot:\n- 8am–10am: deli\n- 10am–1pm: electronic store\n- 1pm–2pm: Eiffel Tower\n- 7pm–10pm: cafe\n\nThe only gap is **2pm to 7pm**.",
+  "timestamp": "2026-03-20T10:52:28.538941+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-16",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies B with valid structural mapping across all analogy components; constructs a multi-level isomorphism (algorithm→process, perceptual model→cultural salience, irreversibility→forgetting, structure→narrative arc) going well beyond surface identification; proceeds linearly without naming potential biases or questioning whether the analogy itself might be underdetermined; verifies by falsifying all three alternatives with specific structural reasons (super-resolution, lossless, adversarial manipulation), functioning as counterfactual checks; presents the structural mapping as certain without acknowledging that 'collective memory' is itself a contested theoretical construct or that the analogy has limits; systematically evaluates A, C, and D with distinct rejection reasons tied to specific properties of the compression model; every conclusion traces to an explicit derivation step in the structural mapping, fully reproducible by a third party.",
+  "timestamp": "2026-03-23T02:26:40.077822+00:00"
+}

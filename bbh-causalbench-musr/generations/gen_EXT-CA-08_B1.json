@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-08",
+  "condition": "B1",
+  "output": "A typical person would answer: **No**.\n\nThe repairman's framing sets up Daniel's login as insufficient on its own — the computer only crashes when *two* people are logged on simultaneously. Since Claire was also logged on, and her usage is the normal/expected baseline (it's her computer for schoolwork), most people view Daniel's action as a contributing factor but not *the* cause in isolation. The repairman's phrasing (\"I still don't see quite why\") reinforces that Daniel alone doesn't explain the crash.\n\nHowever, there's a strong competing intuition: Daniel was told not to log on, making his action the *norm-violating* one. Research on causal judgment (e.g., Knobe, Hitchcock) shows people tend to assign causation to the norm-violating agent. So many people would actually say **Yes** — Daniel caused it, because he did the thing he wasn't supposed to do.\n\nThe most common answer in experimental studies of this type of scenario is **Yes** — the norm-violating actor (Daniel) is judged as the cause. A typical person focuses on \"Daniel was told not to, he did it anyway, so he caused the crash.\"",
+  "timestamp": "2026-03-20T09:34:04.401362+00:00"
+}

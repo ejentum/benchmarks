@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-14",
+  "condition": "C2",
+  "output": "**(C)** is the most structurally accurate answer.\n\nThis mirrors the real legal history (notably *Bernstein v. U.S. DOJ*, where the court ruled that **source code** is protected speech under the First Amendment, while the government maintained export controls on **compiled/operational** cryptographic products).\n\nThe key insight: **the same mathematics changes category depending on its instantiation.**\n\n- **Algorithm on a whiteboard or in a published paper** → expression, speech. It communicates ideas. Restricting it is prior restraint on mathematical discourse.\n- **Algorithm compiled into an operational tool** (e.g., embedded in a weapons system, deployed as a covert communications platform) → functional artifact with dual-use capability. It *does* something in the world beyond communicating an idea.\n\n(A) and (B) each collapse a genuinely dual-natured thing into one side. (D) dodges the question. (C) recognizes that categorization is *form-dependent* — which is exactly what the courts eventually landed on in practice.",
+  "timestamp": "2026-03-20T17:52:28.947850+00:00"
+}

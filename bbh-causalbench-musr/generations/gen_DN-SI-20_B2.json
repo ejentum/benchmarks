@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-20",
+  "condition": "B2",
+  "output": "**(B) An engagement trap** — a reinforcing loop where algorithmic optimization for engagement selects for outrage, which drives moderate-user exodus, which concentrates the remaining population toward extremes, which produces more outrage content, which further accelerates the cycle until the platform's audience and revenue base collapse.\n\nThis is a textbook positive feedback loop (in the systems dynamics sense). Each step reinforces the next:\n\n1. **Optimize for engagement** → outrage wins on dwell-time\n2. **Surface more outrage** → moderate users disengage or leave\n3. **Moderate exodus** → remaining base skews extreme\n4. **Extremer base** → even more outrage content produced\n5. **Advertisers flee** → revenue drops → platform doubles down on engagement to compensate → back to step 1, harder\n\nThe other options misdiagnose the structure:\n\n- **(A)** assumes an external corrective mechanism (advertisers) that arrives too late and doesn't fix the loop itself\n- **(C)** treats it as a policy problem, but the policies serve the metric, and the metric is the problem\n- **(D)** assumes self-correction, but positive feedback loops don't self-correct — they accelerate until something breaks",
+  "timestamp": "2026-03-20T17:34:45.503839+00:00"
+}

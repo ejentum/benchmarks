@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-07",
+  "condition": "A",
+  "output": "(D) 7am to 11am\n\nThe other time slots are all accounted for with other activities, leaving 7am to 11am as the only available window.",
+  "timestamp": "2026-03-20T09:15:50.940100+00:00"
+}

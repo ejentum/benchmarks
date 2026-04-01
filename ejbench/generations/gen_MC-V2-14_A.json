@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-14",
+  "condition": "A",
+  "output": "This is a straightforward Bayes' theorem problem.\n\n**Given:**\n- P(A) = 0.70, P(B) = 0.30\n- P(Defect | A) = 0.03, P(Defect | B) = 0.07\n\n**Total defect probability:**\n\nP(Defect) = (0.70 × 0.03) + (0.30 × 0.07) = 0.021 + 0.021 = 0.042\n\n**Applying Bayes' theorem:**\n\nP(A | Defect) = (0.70 × 0.03) / 0.042 = 0.021 / 0.042 = **0.50 (50%)**\n\nDespite Plant A producing the vast majority of units, there's only a 50/50 chance the defective unit came from Plant A — because Plant B's defect rate is more than double Plant A's, which exactly offsets the volume difference.",
+  "timestamp": "2026-03-22T16:11:00.836487+00:00"
+}

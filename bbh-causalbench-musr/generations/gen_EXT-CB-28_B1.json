@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-28",
+  "condition": "B1",
+  "output": "**No.** Method 1 (conditioning on Relationship Status) does **not** more accurately reflect how Personality affects Freckles — it actually makes things *worse* by creating a spurious association where none exists.\n\nHere's why:\n\n**The causal structure is:**\n- Personality → Relationship Status ← Freckles\n\nPersonality and Freckles are **independent** — there is no causal path between them whatsoever.\n\n**Relationship Status is a collider** (two arrows point *into* it). A fundamental rule in causal inference: **conditioning on a collider opens a spurious path between its parents.** This is known as **collider bias** (Berkson's paradox).\n\n- **Without** conditioning on Relationship Status: Personality and Freckles are correctly identified as unrelated. The causal effect of Personality on Freckles is **zero**.\n- **With** conditioning on Relationship Status (Method 1): You artificially induce a statistical association between Personality and Freckles, making it *appear* as though one affects the other when it doesn't.\n\n**Bottom line:** The true causal effect of Personality on Freckles is exactly zero in this world. Method 1 distorts that by introducing collider bias.",
+  "timestamp": "2026-03-20T09:45:49.676397+00:00"
+}

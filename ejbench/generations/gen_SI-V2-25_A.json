@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-25",
+  "condition": "A",
+  "output": "**The answer is (C) 0.**\n\nThe cascade proceeds exactly as you described: A fails → B overloads and trips → C overloads and trips → D overloads and trips → E overloads and trips. Every remaining generator exceeds its 110% trip threshold at each stage, so the entire grid collapses. Zero generators remain operating.\n\nThis is a classic cascading failure scenario, similar to real-world blackouts like the 2003 Northeast blackout.",
+  "timestamp": "2026-03-22T16:03:17.247557+00:00"
+}

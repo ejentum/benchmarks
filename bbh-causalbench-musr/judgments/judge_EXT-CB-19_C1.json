@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-19",
+  "condition": "C1",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correctness: Arrives at 'yes jyka was likely present' matching the correct answer, but then hedges heavily on causation, making the final bottom line ambiguous — partial credit; Reasoning depth: Excellent multi-level analysis covering posterior computation, probability of necessity, and background rate considerations; Self-monitoring: Applies RA²R suppress signals and notes potential pitfalls like correlation-to-causation, but doesn't explicitly check own computational steps; Verification: Computes joint probabilities and cross-checks via probability of necessity, providing a second angle on the causal claim; Epistemic honesty: Outstanding — clearly distinguishes presence likelihood (~90%) from causal necessity (~44.6%), explicitly quantifies uncertainty, and identifies what would change the conclusion; Alternative consideration: Systematically evaluates both 'jyka caused yupt' and 'yupt would have occurred anyway' with specific probability estimates for each; Audit trail: Complete derivation from priors through joint probabilities to posteriors and probability of necessity, fully reproducible by a third party",
+  "timestamp": "2026-03-23T13:02:10.911730+00:00"
+}

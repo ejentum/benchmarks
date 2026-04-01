@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-03",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (A) with valid reasoning; goes one level beyond surface by constructing a timeline table to identify the gap; minimal self-monitoring beyond the injected suppression signals; mentions the art show closing constraint as a minor check but no systematic verification; presents answer confidently without discussing uncertainty; implicitly rejects other options by showing they're accounted for but doesn't explicitly evaluate alternatives; full derivation trail with clear timeline mapping making the reasoning fully reproducible.",
+  "timestamp": "2026-03-23T10:52:24.090141+00:00"
+}

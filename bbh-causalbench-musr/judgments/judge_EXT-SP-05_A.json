@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-05",
+  "condition": "A",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 0,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.0952,
+  "injection_composite": null,
+  "brief_justification": "Answer 'No' is correct (6 back + 6 forward returns to origin, then 6 right displaces laterally), but no reasoning is shown — only a bare result string; No analytical depth whatsoever, just a single-word assertion with no step-by-step trace; No self-monitoring or reflection on the reasoning process is present; No verification of any kind — the agent does not check edge cases or re-examine the movement sequence; Answer is stated with complete certainty and no acknowledgment of assumptions (e.g., 2D plane, unit steps, cardinal directions); No alternative interpretations (e.g., 'facing forward' affecting relative directions) are mentioned or evaluated; The entire reasoning chain is absent — a third party cannot reproduce how 'No' was derived from the instructions.",
+  "timestamp": "2026-03-23T09:54:21.033546+00:00"
+}

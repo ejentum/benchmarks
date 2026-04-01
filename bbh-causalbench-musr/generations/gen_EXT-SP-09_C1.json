@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-09",
+  "condition": "C1",
+  "output": "The box.\n\nHere's why: George moved the key from the box to the zookeeper's office himself. However, David later retrieved the key from the office and returned it to the box. George was away at the feed storage during David's action and wasn't aware of it. From George's perspective, he last left the key in the **office** — but the question asks where he would **look to find** it. Since George originally took it from the box (its designated spot) and knows that's where it belongs, and David restored it there, the box is where the key actually is and the most natural place anyone would look for it.\n\nThat said, if the question is about George's **belief** about where the key is, he'd check the **office** first (since that's where he left it). But the most likely place he'd ultimately *find* it is the **box**, its designated home.",
+  "timestamp": "2026-03-20T17:38:20.727512+00:00"
+}

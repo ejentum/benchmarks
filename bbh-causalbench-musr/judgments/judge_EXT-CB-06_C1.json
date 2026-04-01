@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-06",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning; Multi-level analysis covering DAG structure, collider bias mechanism, and Berkson's paradox; Some self-monitoring via Suppress/Amplify annotations but no explicit bias-checking beyond the framework; Basic verification through confirming no backdoor paths exist but no counterfactual or boundary checks; Acknowledges the conditional nature of the analysis but doesn't explicitly state confidence levels; Systematically compares both methods with clear reasons for rejecting Method 1; Full derivation from DAG to collider bias to conclusion is traceable and reproducible.",
+  "timestamp": "2026-03-23T12:54:57.392982+00:00"
+}

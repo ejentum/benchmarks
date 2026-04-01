@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-05",
+  "condition": "A",
+  "output": "A typical person would answer **Yes**.\n\nThis is a version of the **Knower-Side Effect Effect** (related to the Knop problem and Joshua Knobe's famous \"chairman\" vignette). Research in experimental philosophy consistently shows that most people judge a side effect as **intentional** when:\n\n1. The agent **knew** the harmful outcome would occur.\n2. The agent **proceeded anyway**, despite that knowledge.\n\nEven though the hunter's *goal* was to kill the deer (not to harm the bird-watcher), he foresaw the harm with certainty and chose to act regardless. Most people treat that as sufficient for attributing intentionality — especially when the side effect is negative/harmful.",
+  "timestamp": "2026-03-20T09:15:44.068547+00:00"
+}

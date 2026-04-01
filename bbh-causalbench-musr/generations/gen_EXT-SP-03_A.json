@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-03",
+  "condition": "A",
+  "output": "**No**\n\nLet me trace the movements:\n\n- **Right/Left axis:** 6 right − 10 left + 4 right = **0** (back to start)\n- **Forward/Back axis:** 1 forward + 8 forward − 9 backward = **0** (back to start)\n\nYou end at the starting point positionally, **but** the instruction says \"Always face forward\" — and you still face forward at the end. The question is whether you return to the starting point, and positionally you do.\n\nWait — let me recount: 1 forward + 8 forward = 9 forward, minus 9 backward = 0. And 6 right - 10 left + 4 right = 0.\n\nYou **do** return to the starting point. The answer is **Yes**.",
+  "timestamp": "2026-03-20T09:17:06.259698+00:00"
+}

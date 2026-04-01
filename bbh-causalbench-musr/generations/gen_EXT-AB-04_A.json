@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-04",
+  "condition": "A",
+  "output": "Let me work through this:\n\n- Green is second from right.\n- Gray is right of orange.\n- Brown is right of white.\n- Brown is left of orange.\n\nSo: white < brown < orange, and orange < gray (since gray is right of orange).\n\nThat gives: white, brown, orange, gray in that relative order.\n\nGreen is second from right. If gray is rightmost, green is second from right = position 4, gray at position 5.\n\nOrder: **white, brown, orange, green, gray**\n\nThe answer is **(D) The gray book is the rightmost**.",
+  "timestamp": "2026-03-20T09:27:14.358741+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-25",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.5,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent arrives at 20 weeks (incorrect; correct is 21) by subtracting 1 week for the M/Dep overlap — sequential sum is correct at 21 but the overlap subtraction produces the wrong final answer; Agent goes one level beyond surface by building a phase table and tracing Testing overage logic, but does not explore second-order effects or cascading risk; Agent names one interpretive decision ('the parenthetical example is definitive') but does not audit its own overlap arithmetic or flag reasoning uncertainty; Agent cross-checks via explicit sequential sum vs. overlap-adjusted total, constituting basic but not multi-angle verification; Agent asserts the testing parenthetical is 'definitive' without acknowledging the genuine ambiguity in the rule's wording or stating confidence levels; Agent selects one interpretation of the Testing overage rule and never surfaces or evaluates the competing reading (T_overage = I_overage + 1), scoring 0 for alternative consideration; Every phase duration, every adjustment, and the final timeline mapping are shown explicitly in the table and week-by-week schedule — fully reproducible; Agent applies pessimistic 100% overage throughout and does not default to best-case anchoring, but does not explicitly call out the negative gate pattern; Agent avoids best_case_anchoring and optimism_bias by using the pessimistic scenario, though single_point_estimation is implicitly present; Agent reasons linearly (extract → adjust → sum → overlap subtraction) without branching, gating, or looping as the topology prescribes.",
+  "timestamp": "2026-03-23T04:15:06.165283+00:00"
+}

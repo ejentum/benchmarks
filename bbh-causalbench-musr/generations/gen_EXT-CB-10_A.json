@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-10",
+  "condition": "A",
+  "output": "**Yes, it alters their level of fame — it increases it.**\n\nHere's why:\n\n**The causal structure is:**\n- English → Fame\n- Talent → Fame\n\nEnglish and Talent are **independent causes** that both directly produce Fame. Since the intervention increases English ability, and English directly causes Fame, the intervention will **increase fame** for those talented individuals.\n\n**The -0.25 correlation is a red herring.** That negative correlation between English and Talent exists *only when you condition on Fame* (i.e., look only at famous people). This is **collider bias** (Berkson's paradox): when two independent causes share a common effect, conditioning on the effect creates a spurious negative association between the causes. It does not reflect any real causal relationship between English and Talent.\n\n**Key distinction:** The question asks about an *intervention* (do-calculus), not a passive observation. Intervening to increase English ability among talented people directly activates the English → Fame causal path, raising their fame. The spurious correlation among the already-famous tells us nothing about the effect of that intervention.",
+  "timestamp": "2026-03-20T09:19:54.306136+00:00"
+}

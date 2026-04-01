@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-27",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.8,
+  "injection_composite": 0.6667,
+  "brief_justification": "Correctly identifies the rate-volume arithmetic identity and selection bias mechanism resolving the apparent contradiction; goes three levels deep — math identity, causal mechanism (selection filter removal), and policy cost-benefit tradeoffs; some self-monitoring shown when flagging the length-of-stay correlation but no explicit naming of reasoning biases in own process; explicit numerical table derivation with cross-check '3× × 0.4× = 1.2×' constitutes strong verification; acknowledges correlation ≠ causation for length of stay but does not state confidence levels or specify what evidence would overturn conclusions; addresses the misleading framing of metric 3 vs metric 2 but does not enumerate and reject alternative explanations for the yield drop; every step traces back to an explicit derivation a third party could reproduce without external context; explicitly flags the causation trap ('was this caused by the X-rays, or by other concurrent changes? correlation ≠ causation') matching the negative gate's anti-pattern; avoids both suppressed failure modes (observational causation inference, correlation-to-causation leap) but does not explicitly name them by label; reasoning is largely linear — explains paradox → math → mechanism → policy — without visible branching gates or loops reflecting the topology's conditional paths.",
+  "timestamp": "2026-03-23T03:53:49.942510+00:00"
+}

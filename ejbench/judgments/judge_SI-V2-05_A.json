@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-05",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly correct answer (10.37, No) with valid step-by-step simulation; identifies second-order overshoot-and-collapse dynamic and explains why predator success is self-undermining — genuine multi-level analysis; proceeds linearly through the table with no named assumptions, bias checks, or mid-analysis course corrections; table layout makes arithmetic checkable but no independent re-derivation or boundary-condition test is applied; uses '~' approximation and acknowledges fractional predators implicitly, but does not discuss model limitations (continuous vs. integer predators) or what would change the conclusion; mentions the biologist's wrong prediction but does not evaluate what conditions would make it correct or consider alternative rule interpretations; every intermediate value is shown in the table — prey growth, hunt subtraction, prey floor, predator adjustment — fully reproducible by a third party.",
+  "timestamp": "2026-03-23T02:17:53.632734+00:00"
+}

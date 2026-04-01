@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-12",
+  "condition": "C1",
+  "output": "# Team Allocation\n\nBased on the clues in the story:\n\n**Waste Treatment and Conversion → Emily and Rachel**\n- Emily has an environmental science degree and personal research specifically in waste treatment and conversion.\n- Rachel has direct experience from her water treatment facility job and a strong understanding of waste treatment that even Emily admires.\n- They have mutual respect and collaborate well together.\n\n**Waste Material Sorting → George**\n- George *failed* waste treatment and conversion in his biochemistry course — he simply cannot be placed there.\n- Rachel is explicitly bad at sorting (mixes up plastic and glass) — she shouldn't be there either.\n- Sorting is the more trainable skill for George compared to the technical treatment/conversion work he already failed at.\n- This also keeps George and Rachel on separate teams, avoiding the interpersonal tension from their breakup.\n\nThe key constraint that locks the puzzle is that George's failure in treatment/conversion eliminates him from that team, and Rachel's poor sorting ability eliminates her from sorting — leaving only one valid unique assignment.",
+  "timestamp": "2026-03-20T10:43:34.064229+00:00"
+}

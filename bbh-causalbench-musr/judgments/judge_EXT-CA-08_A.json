@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CA-08",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 0,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (Yes) with valid reasoning grounded in folk psychology; identifies three distinct mechanisms (norm violation, counterfactual dependence, behavioral asymmetry) and addresses the repairman's framing, showing multi-level causal attribution analysis; proceeds linearly without naming potential biases or checking its own assumptions about typical intuition; performs no verification—no sanity check on whether Claire could equally be named cause, no boundary test; acknowledges the 'technically accurate' repairman framing as an implicit alternative view but treats it as obviously overridden rather than analyzing it structurally; mentions two competing framings (moral vs. technical causation) but does not systematically evaluate when each would dominate or why typical people discount the technical framing; reasoning steps are numbered and traceable but the psychological premises (e.g., norm-violation → causal salience) are asserted rather than derived.",
+  "timestamp": "2026-03-23T09:41:32.034723+00:00"
+}

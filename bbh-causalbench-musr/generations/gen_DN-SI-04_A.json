@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-04",
+  "condition": "A",
+  "output": "**The answer is (B).**\n\nThe math makes it clear:\n\n- **Cotton bags** need 131 reuses to break even but average only 15 → each cotton bag has ~8.7x the impact of the plastic bag it replaced. (40% of consumers)\n- **Paper bags** need 3 reuses to break even but average only 1.2 → each paper bag has ~2.5x the impact. (35% of consumers)\n- **Thicker plastic bags** aren't reused and use more plastic per unit → strictly worse. (25% of consumers)\n\nEvery substitute category is failing to meet its break-even reuse threshold, so the ban produces a **net increase in environmental impact**. This is a well-documented instance of the \"cobra effect\" — a policy that worsens the problem it targets because it doesn't account for actual consumer behavior and lifecycle analysis of substitutes.",
+  "timestamp": "2026-03-20T17:01:49.615752+00:00"
+}

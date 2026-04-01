@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-11",
+  "condition": "A",
+  "output": "**(B)** is the correct answer.\n\nThis is the **post hoc ergo propter hoc** fallacy — \"after this, therefore because of this.\" The PM observes a temporal sequence (feature launched Monday → revenue up Tuesday) and concludes causation, without ruling out confounds like weekly seasonality, concurrent marketing campaigns, or normal daily variance.\n\nOptions A and C identify real concerns but they're *consequences* of the core flaw, not the flaw itself. Option D is a product strategy opinion, not a reasoning error.",
+  "timestamp": "2026-03-20T17:10:22.548672+00:00"
+}

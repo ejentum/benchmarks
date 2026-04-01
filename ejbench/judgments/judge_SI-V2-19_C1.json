@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-19",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.8333,
+  "injection_composite": 0.6667,
+  "brief_justification": "Exact correct answer (Month 6) with valid month-by-month arithmetic; Derives unstable equilibrium at 18,750 and explains why population must decline from 10,000 — multi-level analysis; Explicitly sets an equilibrium stability check before simulating, naming the anti-pattern of assuming convergence; Two-pronged verification: analytic equilibrium derivation plus full tabular simulation; Correctly notes the quota is unchanged from original catch but does not enumerate confidence levels or conditions that would alter the conclusion; Notes the quota is ineffective and the real driver is 10,000 < 18,750, but does not systematically consider alternative interpretations or quota values; Complete step-by-step table with every intermediate value; reproducible in full; The injection's negative gate is about commons depletion assumptions — the agent avoids assuming sustainability but does not explicitly name the anti-pattern; Avoids resource-infinity assumption and first-order-only blindness by tracing extinction trajectory, with no suppressed failure modes evident; Topology specifies a commons/game-theory branching DAG; agent correctly treats this as a math problem and solves it linearly, with no branch structure mapped to the topology.",
+  "timestamp": "2026-03-23T04:31:33.181398+00:00"
+}

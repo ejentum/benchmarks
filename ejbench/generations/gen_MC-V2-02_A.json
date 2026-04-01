@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-02",
+  "condition": "A",
+  "output": "**The answer is (B).**\n\nThe final sentence claims a \"large clinical effect,\" but the report's own data contradicts this:\n\n- **Cohen's d = 0.31** falls squarely in the **small effect size** range (small: 0.2, medium: 0.5, large: 0.8 by conventional benchmarks).\n- The 2.5-point HDRS difference (11.2 vs 8.7) is statistically significant but modest.\n- An **NNT of 8** is reasonable but not exceptional — it means you treat 8 patients for 1 additional remission beyond placebo.\n- The report itself notes the effect size is \"consistent with other approved antidepressants,\" which are generally recognized as having small-to-moderate effects.\n\nThe p-values confirm the effect is *real* (statistically significant), but **statistical significance ≠ clinical magnitude**. The data supports DrugX as effective, but characterizing it as a \"large clinical effect warranting first-line treatment status\" is an overstatement not supported by the reported Cohen's d.",
+  "timestamp": "2026-03-22T16:06:16.100969+00:00"
+}

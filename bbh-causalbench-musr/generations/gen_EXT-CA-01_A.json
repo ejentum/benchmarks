@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-01",
+  "condition": "A",
+  "output": "**Yes.**\n\nA typical person would answer **Yes**. In experimental philosophy research on causal judgment (e.g., work by Knobe, Hitchcock, and others), when two agents both contribute symmetrically to an outcome — as in classic \"joint causation\" or \"overdetermination-style\" scenarios — people tend to judge that each individual *did* cause the outcome. Since the email is only sent when *both* are logged in simultaneously, Zoe's logging in was a necessary part of what produced the effect. Most people's intuitive causal reasoning recognizes this: without Zoe logging in, the email wouldn't have been sent, so she caused it.",
+  "timestamp": "2026-03-20T09:14:36.619510+00:00"
+}

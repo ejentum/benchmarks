@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-30",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning through both actual and counterfactual worlds; Multi-level analysis tracing causal chain through sister→BP→heart and identifying mutual exclusivity of conditions; Some implicit self-monitoring in structured step-by-step approach but no explicit bias checking; Basic verification through examining both worlds and confirming consistency, plus noting the mutual exclusivity as a sanity check; Acknowledges the closed-world assumption but doesn't explicitly discuss uncertainty about default BP or heart values; Identifies the key alternative (high BP without sister) and explains why it fails, but doesn't systematically consider other possible interpretations; Complete derivation trail from causal graph through both worlds to conclusion, fully reproducible",
+  "timestamp": "2026-03-23T10:49:08.163665+00:00"
+}

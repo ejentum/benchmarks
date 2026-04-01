@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-14",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies (A) with valid reasoning grounded in distributed systems theory; traces second-order effects through transport-layer vs. processing-semantic distinction and invokes the Two Generals Problem as a foundational constraint; proceeds linearly without naming potential biases or questioning its own framing at any point; eliminates alternatives systematically, which serves as implicit verification, but does not perform a counterfactual or boundary-condition check; acknowledges option C is 'close' showing nuanced confidence gradation, but does not explicitly state what evidence would overturn the conclusion; evaluates all four options and gives specific rejection reasons for each; derivation chain is fully traceable — principle stated, mechanism decomposed into two steps, each distractor addressed with specific reasoning.",
+  "timestamp": "2026-03-23T03:00:44.834280+00:00"
+}

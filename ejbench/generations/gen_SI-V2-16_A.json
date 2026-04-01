@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-16",
+  "condition": "A",
+  "output": "Let me work through this step by step.\n\n**Initial conditions:** Prey(0) = 60, Pred(0) = 25\n\n**Equations:**\n- Prey(t+1) = Prey(t) × (1 + 0.5 - 0.01 × Pred(t))\n- Pred(t+1) = Pred(t) × (1 - 0.3 + 0.005 × Prey(t))\n\n**Step 1:**\n- Prey(1) = 60 × (1 + 0.5 - 0.01×25) = 60 × 1.25 = **75**\n- Pred(1) = 25 × (1 - 0.3 + 0.005×60) = 25 × 1.0 = **25**\n\n**Step 2:**\n- Prey(2) = 75 × (1 + 0.5 - 0.01×25) = 75 × 1.25 = **93.75**\n- Pred(2) = 25 × (1 - 0.3 + 0.005×75) = 25 × 1.075 = **26.875**\n\n**Step 3:**\n- Prey(3) = 93.75 × (1 + 0.5 - 0.01×26.875) = 93.75 × 1.23125 = **115.43...**\n- Pred(3) = 26.875 × (1 - 0.3 + 0.005×93.75) = 26.875 × 1.16875 ≈ 31.41\n\n**Prey(3) ≈ 115**\n\nThe answer is **(C) 115**.\n\nThe key insight: with predators halved but prey at equilibrium, prey grows unchecked initially (predators are too few to suppress them), producing rapid overshoot — a classic Lotka-Volterra oscillation response to perturbation.",
+  "timestamp": "2026-03-22T16:00:14.315935+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-13",
+  "condition": "B1",
+  "output": "**Applying the RA²R injection — key signals:**\n- **Amplify:** prior distribution weighting, posterior update cycle\n- **Suppress:** ignoring population-level frequency data (base rate neglect)\n\n---\n\n## Solution via Bayes' Theorem\n\n**Prior (base rate):** P(Disease) = 1/1000 = **0.001**\n\n**Likelihoods:**\n- P(Positive | Disease) = 0.99 (sensitivity)\n- P(Positive | No Disease) = 0.05 (1 − specificity)\n\n**Total probability of a positive test:**\n\nP(Positive) = (0.99 × 0.001) + (0.05 × 0.999) = 0.00099 + 0.04995 = **0.05094**\n\n**Posterior:**\n\nP(Disease | Positive) = 0.00099 / 0.05094 ≈ **0.0194 ≈ 1.94%**\n\n## Answer: **(D) Approximately 2%**\n\nThe intuition trap here is base rate neglect — the test looks excellent (99% sensitive, 95% specific), so people jump to answers like 95% or 99%. But with only 1 in 1,000 people actually having the disease, the ~50 false positives per 1,000 tested vastly outnumber the ~1 true positive. Out of every ~51 positive results, only ~1 is a true case — hence roughly 2%.",
+  "timestamp": "2026-03-22T21:44:08.257715+00:00"
+}

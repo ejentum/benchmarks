@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-05",
+  "condition": "A",
+  "output": "**(B)**\n\nAll four are instances of **Goodhart's Law** — \"when a measure becomes a target, it ceases to be a good measure.\"\n\nEach metric counts a **process artifact** (economic transactions, code lines, arrests, publications) rather than the **outcome it's supposed to represent** (wellbeing, working software, public safety, knowledge). This creates perverse incentives:\n\n- **GDP** — rewards activity even if destructive (disasters boost GDP via rebuilding)\n- **Lines of code** — rewards verbosity over elegant, minimal solutions\n- **Arrests** — rewards enforcement volume, not crime reduction or community safety\n- **Papers** — rewards publication count, not replicability or insight\n\nThe structural flaw isn't that they're \"imperfect proxies\" (A is too charitable — the issue is systematic distortion, not noise). It's that optimizing for the artifact **actively undermines** the goal.",
+  "timestamp": "2026-03-20T17:02:06.243321+00:00"
+}

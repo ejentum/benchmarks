@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-02",
+  "condition": "B1",
+  "output": "Looking at this step-by-step:\n\n**Given facts:**\n1. Ada finished above Eli\n2. Amy finished below Mel\n3. Ada finished second\n4. Mel finished below Eli\n\n**Building the order (1st = best):**\n\n- Ada is **2nd** (fact 3)\n- Ada is above Eli → Eli is 3rd, 4th, or 5th\n- Mel is below Eli → Mel is below Eli\n- Amy is below Mel → Amy is below Mel\n\nSo the chain is: Ada (2nd) > Eli > Mel > Amy\n\nThat puts Eli = 3rd, Mel = 4th, Amy = 5th.\n\nThe only person left for **1st** is **Joe**.\n\nThe answer is **(D) Joe finished first**.",
+  "timestamp": "2026-03-20T09:45:56.002249+00:00"
+}

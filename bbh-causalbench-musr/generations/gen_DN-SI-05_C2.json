@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-05",
+  "condition": "C2",
+  "output": "**The answer is (B).**\n\nThe data describes a classic reinforcing feedback loop:\n\n1. **Suspension → academic decline** (3x more likely to fall behind)\n2. **Academic decline → behavioral issues** (2x more likely)\n3. **Behavioral issues → more suspensions** (completing the loop)\n\nThe suspension rate more than doubles (5% → 12%), feeding more students into this cycle. Each iteration grows the population of academically disengaged students rather than shrinking the pool of \"disruptive\" students.\n\nOption A ignores that removal doesn't fix the underlying causes — it amplifies them. Option C is contradicted by the causal chain in the data. Option D focuses on a real but secondary effect that can't offset a compounding negative cycle across the full student body.",
+  "timestamp": "2026-03-20T17:50:01.973707+00:00"
+}

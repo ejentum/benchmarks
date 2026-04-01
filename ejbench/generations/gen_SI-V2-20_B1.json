@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-20",
+  "condition": "B1",
+  "output": "**Yes — harvesting at half the rate yields a greater cumulative harvest.** The simulation confirms:\n\n| | Company A (80/yr) | Company B (40/yr) |\n|---|---|---|\n| **Cumulative harvest** | 1,608 trees | 2,000 trees |\n| **Forest after 50 years** | 0 (depleted yr 21) | ~3,093 trees |\n\nCompany B harvests **~24% more total trees** despite taking half as many per year.\n\n**One correction to the prompt:** the claim that Company B's forest grows to \"over 27,000 trees\" is significantly overstated. The actual population after 50 years is **~3,093 trees**. The forest does grow indefinitely (since it starts above the 800-tree equilibrium), but 5% compound growth minus 40 fixed harvest produces modest net growth, not explosive growth.\n\nThe core insight holds perfectly: sustainability wins. By staying above the equilibrium point (N=800), Company B lets compound growth work *for* it — each year's 5% growth exceeds the 40-tree harvest, so the base keeps expanding. Company A's aggressive harvesting drives the base below equilibrium, triggering a death spiral where growth can never catch up to the 80-tree cut.",
+  "timestamp": "2026-03-22T21:03:58.899226+00:00"
+}

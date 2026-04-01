@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-23",
+  "condition": "A",
+  "output": "Looking at this, I need to calculate the overall probability of arriving on time using the law of total probability.\n\n**Given:**\n- P(wake up late) = 5%, so P(wake up on time) = 95%\n- P(arrive on time | wake up on time) = 52%\n- P(arrive on time | wake up late) = 87%\n\n**Calculation:**\n\nP(arrive on time) = P(on time | wake on time) × P(wake on time) + P(on time | wake late) × P(wake late)\n\n= 0.52 × 0.95 + 0.87 × 0.05\n= 0.494 + 0.0435\n= **0.5375 (53.75%)**\n\n**Yes**, arriving to school on time (53.75%) is more likely than arriving late (46.25%).\n\nAn interesting detail: waking up late actually *increases* the chance of arriving on time (87% vs 52%) — perhaps the urgency motivates faster preparation. But since waking up late is rare (5%), the overall probability is dominated by the on-time wake-up scenario.",
+  "timestamp": "2026-03-20T09:25:05.321745+00:00"
+}

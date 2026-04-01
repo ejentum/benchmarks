@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-20",
+  "condition": "C1",
+  "output": "## Analysis\n\nThe key here is the distinction between **intervening** on Kwox versus **observing** Kwox.\n\n**Causal structure:**\n- Yupt → Jyka\n- Yupt → Kwox\n- Jyka → Kwox\n\n**The intervention do(Kwox = not occurring)** surgically forces Kwox to a value by cutting all incoming causal arrows to Kwox. This severs both:\n- Yupt → ~~Kwox~~\n- Jyka → ~~Kwox~~\n\nBecause the incoming edges are cut, the forced state of Kwox carries **no diagnostic information** back to its causes. This is fundamentally different from passively *observing* Kwox = 0, which would activate explaining-away (Berkson's collider) reasoning between Yupt and Jyka.\n\n**Therefore:**\n\nP(Jyka | do(Kwox = 0)) = P(Jyka)\n\nThe intervention leaves Jyka's distribution completely unchanged. Jyka's only cause is Yupt, which occurs just 11% of the time. Without any evidence that Jyka has a high base rate independent of its causal mechanism, there is no reason to conclude Jyka is likely present.\n\n**No** — it is not likely that Jyka is present. The intervention on Kwox provides no information about Jyka, and the low probability of Yupt (Jyka's only cause) gives no basis for expecting Jyka to be probable.",
+  "timestamp": "2026-03-20T10:42:26.523078+00:00"
+}

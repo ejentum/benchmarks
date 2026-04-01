@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-01",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: forgetting_curve_simulation; recency_weighting; salient_event_prioritization\nSuppress: uniform_context_retention; stale_history_flooding\nCognitive Style: strategic_memory_decay — apply exponential decay precisely, don't treat all timepoints equally.\n[END REASONING CONTEXT]\n\n**Calculation:**\n\n- **First dose (200mg at 8:00 AM):** Decayed for 12 hours = 2 half-lives\n  `200 × (1/2)² = 200 × 0.25 = 50 mg`\n\n- **Second dose (200mg at 2:00 PM):** Decayed for 6 hours = 1 half-life\n  `200 × (1/2)¹ = 200 × 0.5 = 100 mg`\n\n**Total in system at 8:00 PM, immediately before the third dose:**\n\n`50 + 100 = **150 mg**`",
+  "timestamp": "2026-03-22T21:32:41.826143+00:00"
+}

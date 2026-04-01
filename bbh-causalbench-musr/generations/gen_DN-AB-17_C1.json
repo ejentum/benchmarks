@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-17",
+  "condition": "C1",
+  "output": "**(B).**\n\nEach model subsidizes one side to build a captive base, then extracts from the side with fewer alternatives:\n\n- **Razor-and-blade:** Subsidized razor → proprietary blade fit → captive consumable purchases.\n- **Freemium:** Free tier builds user base and data/workflow lock-in → paying segment has high switching costs.\n- **Academic publishing:** Free submission builds content monopoly → libraries must pay because researchers need access to that specific corpus.\n\nThe common structure is: **subsidize adoption → create switching costs → monetize the captive side.** (A), (C), and (D) each describe a surface feature of one or two of the models but miss the underlying two-sided asymmetry that unifies all three.",
+  "timestamp": "2026-03-20T17:42:40.040937+00:00"
+}

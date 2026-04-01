@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-09",
+  "condition": "B2",
+  "output": "**Yes.**\n\nA typical person would answer **Yes** — Benni's fertilization caused the plants to dry out.\n\nThe reasoning most people would follow: Tom explicitly instructed both gardeners to use only A X200R to avoid mixing chemicals. Alex complied. Benni deviated by using B Y33R. The plants dried out specifically in beds where *both* chemicals were applied. Since Benni's unauthorized use of B Y33R introduced the second chemical — the very condition Tom was trying to prevent — a typical person would see Benni's action as the cause of the damage.\n\nThe key intuition is about **norm violation**: Benni broke the rule, and had he followed instructions (like Alex did), no beds would have received two different chemicals, and no plants would have dried out.",
+  "timestamp": "2026-03-20T09:54:28.277918+00:00"
+}

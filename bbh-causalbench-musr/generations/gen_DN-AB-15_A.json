@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-15",
+  "condition": "A",
+  "output": "**(B).**\n\nThe three scenarios are isomorphic: each takes the form **\"excels at X → promoted into Y → fails, because X-skill ≠ Y-skill.\"** The selection signal (past performance) is orthogonal to the demand signal (next-role requirements). That's the structural invariant across all three, not just \"bad HR\" or \"needs training.\"\n\n(A) states a reasonable takeaway but describes a *policy recommendation*, not the shared structure. (C) and (D) are surface-level attributions that miss the mechanism entirely.",
+  "timestamp": "2026-03-20T17:05:14.691429+00:00"
+}

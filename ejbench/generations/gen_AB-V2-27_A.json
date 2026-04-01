@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-27",
+  "condition": "A",
+  "output": "Yes. All three are isomorphic — they are all the **Minimum Spanning Tree (MST)** problem.\n\n- **Problem A** is the textbook definition of MST.\n- **Problem B** maps cities → vertices, distances → edge weights, \"no road is redundant\" → tree (n−1 edges), \"cheapest\" → minimum weight.\n- **Problem C** maps servers → vertices, latencies → edge weights, same objective.\n\nThe \"no redundancy\" / tree constraint is implied in B and C by minimality: a minimum-weight connected subgraph with no redundant edges is exactly a spanning tree. All three reduce to the same combinatorial optimization problem solvable by Kruskal's or Prim's algorithm.",
+  "timestamp": "2026-03-22T16:07:58.914617+00:00"
+}

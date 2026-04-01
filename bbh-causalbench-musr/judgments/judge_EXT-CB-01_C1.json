@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-01",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid Bayesian reasoning; Multi-level analysis tracing both causal pathways and applying Bayes' theorem with the unobserved confounder consideration; Some self-monitoring via labeled suppression/amplification signals and assumption audit but no spontaneous course-correction; Basic verification by checking the confounder doesn't change the conclusion, but no counterfactual or boundary checks; Acknowledges the confounder role and notes the reasoning holds regardless, but doesn't quantify uncertainty; Considers the confounder pathway as a potential alternative explanation but doesn't deeply evaluate competing hypotheses; Full derivation trail from DAG to Bayes' theorem to conclusion, reproducible by a third party",
+  "timestamp": "2026-03-23T12:52:07.149544+00:00"
+}

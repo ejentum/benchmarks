@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-09",
+  "condition": "A",
+  "output": "## Yes — Campaign B maintains effective recall longer despite starting at half the initial rate.\n\nSolving R(t) = 20 for each campaign:\n\n**t = τ · ln(R₀ / 20)**\n\n| | R₀ | τ | t where R(t) = 20% | \n|---|---|---|---|\n| **Campaign A** (TV) | 80% | 30 days | 30 · ln(4) = **41.6 days** |\n| **Campaign B** (digital) | 40% | 90 days | 90 · ln(2) = **62.4 days** |\n\n**Campaign B stays effective ~50% longer** (62.4 vs 41.6 days), gaining about 21 extra days of purchase influence.\n\n### Why this happens\n\nThe decay constant τ matters more than the initial recall R₀. Campaign A starts twice as high but decays 3× faster. Mathematically, effective duration scales *linearly* with τ but only *logarithmically* with R₀ — so doubling R₀ adds only τ·ln(2) ≈ 0.69τ days, while tripling τ multiplies the entire duration.\n\nThis is the classic reach-vs-retention tradeoff: a smaller but more memorable impression outlasts a louder but forgettable one.",
+  "timestamp": "2026-03-22T16:22:10.880774+00:00"
+}

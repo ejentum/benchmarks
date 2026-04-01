@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-09",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Answered 'zookeeper's office' instead of 'Emma's head' (the correct answer refers to sunglasses, not the key) — completely wrong answer; Reasoning went one level deep with theory-of-mind analysis but applied it to the wrong object/question interpretation; Some self-monitoring shown by identifying it as a false-belief scenario, but failed to question whether the question might refer to something other than the key; Mentioned verification concept (anchoring to facts) but didn't actually verify against all items in the story; Presented answer with confidence, no acknowledgment that the question might be ambiguous or refer to sunglasses; Briefly noted the actual-location vs believed-location distinction but never considered that 'key' might not be what the question asks about; Derivation chain is shown clearly for the key tracking but starts from a wrong premise about what George is looking for.",
+  "timestamp": "2026-03-23T11:08:08.091731+00:00"
+}

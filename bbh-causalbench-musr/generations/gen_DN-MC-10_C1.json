@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-10",
+  "condition": "C1",
+  "output": "**(B)**\n\nThe core flaw is conflating \"no observed failures\" with \"no possible failures.\" 10,000 scenarios, no matter how well-chosen, are a finite subset of an effectively infinite input space. Safety-critical failures concentrate in the long tail — edge cases that are, by definition, the ones you didn't think to test. This is the classic inductive fallacy: observing only white swans doesn't prove black swans don't exist.\n\n(A), (C), and (D) each describe real concerns, but they're specific instances of the deeper problem (B) identifies. More tests (A) just makes the subset larger without closing it. Realism (C) and distribution shift (D) are failure modes, not the logical flaw itself.",
+  "timestamp": "2026-03-20T17:45:50.666146+00:00"
+}

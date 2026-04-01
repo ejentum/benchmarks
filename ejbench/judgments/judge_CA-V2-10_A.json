@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-10",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Correctly selects (D) with valid causal mechanism about the sorting signal disappearing; goes one level deep explaining the routing mechanism and acknowledges residual skill-transfer effect, but doesn't trace second-order effects like accident redistribution across route types; no explicit reflection on reasoning process or named biases; no counterfactual checks or boundary tests applied; acknowledges uncertainty by noting some genuine skill transfer may remain, but no structured confidence analysis; does not evaluate or rule out options A, B, or C; the causal chain is followable (dominant confound → mandatory certification → indistinguishable drivers → routing advantage lost → <40% reduction) but some intermediate steps are compressed",
+  "timestamp": "2026-03-23T02:30:41.537881+00:00"
+}

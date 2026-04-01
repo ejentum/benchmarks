@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-14",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the correct 'No' with valid reasoning grounded in the logical fallacy of affirming the consequent; traces second and third-order effects — explains why dropout is predicted by both models, derives what would actually distinguish them, and identifies the cortisol trajectory of completers as the decisive test; does not explicitly monitor its own reasoning process, name potential biases, or course-correct, though the analysis is rigorous; performs an implicit counterfactual check by working out what each model predicts for completers, though doesn't verify from a second independent angle; clearly distinguishes 'consistent with' from 'proves,' names the logical fallacy, and identifies what evidence would change the conclusion; systematically evaluates the forward-causal alternative with specific reasons why the dropout prediction fails to discriminate between models; every conclusion is explicitly derived — the fallacy is named, both models' predictions are worked out, and the distinguishing test is fully articulated so a third party could reproduce the chain.",
+  "timestamp": "2026-03-23T02:33:02.636715+00:00"
+}

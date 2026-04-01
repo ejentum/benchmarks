@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-08",
+  "condition": "B2",
+  "output": "# Answer: **(B) Severely negative — $30M+ in replacement costs**\n\n## The Math\n\n**Top performer attrition:**\n- 200 top performers × 50% increased attrition = **100 additional departures**\n- Replacement cost: 100 × ($150K × 2) = **$30M**\n\n**Regular employee attrition:**\n- 800 regular employees × 30% increased attrition = additional departures\n- Adds further costs on top of the $30M\n\n## Why the other options fail\n\n- **(A)** \"Collaboration benefits\" is speculative and unquantified; $30M+ in hard replacement costs is concrete and immediate.\n- **(C)** Vacated desks don't reduce real estate costs meaningfully — leases are fixed, and you're *trying to fill those seats*, not eliminate them.\n- **(D)** \"Most adapt\" ignores the key asymmetry: top performers don't *need* to adapt — they have the most options on the market. The people who stay are disproportionately those with fewer alternatives.\n\n## The Core Insight\n\nThis is a **selective attrition** problem. RTO doesn't cause uniform departures — it preferentially ejects your most valuable, most mobile employees, while retaining those with fewer outside options. The talent composition shift is actually *worse* than the raw dollar figure suggests.",
+  "timestamp": "2026-03-20T17:29:48.840472+00:00"
+}

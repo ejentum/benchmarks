@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-06",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies exactly 1 fully materialized mechanism (awareness) matching the ground truth, with valid timeline reasoning for each stage; goes beyond surface analysis by evaluating all four mechanisms and adding the meta-observation about assessing a pipeline at stage 1.5; proceeds linearly without naming potential biases or questioning the definition of 'fully materialized'; verifies each mechanism against the day-60 timeline but applies no counterfactual or boundary tests; distinguishes fully/partially/not-yet-materialized but does not state confidence levels or identify what would change the conclusion; does not explore the alternative interpretation that behavior change (already showing 8% lift) could be considered fully active, just labels it partial without argument; every conclusion traces explicitly to timeline constraints and is fully reproducible from the response alone.",
+  "timestamp": "2026-03-23T02:41:29.395803+00:00"
+}

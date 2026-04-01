@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-20",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (shelf) with valid theory-of-mind reasoning; multi-level analysis tracking belief states vs actual locations across time; some self-monitoring via reasoning context framework but no explicit bias checks; basic verification by citing the key passage but no counterfactual testing; distinguishes Simon's belief from reality but doesn't quantify uncertainty; implicitly considers desk as alternative (actual location) but doesn't systematically evaluate other possibilities; excellent audit trail with timestamped table showing object locations and awareness states at each story moment",
+  "timestamp": "2026-03-23T11:16:21.992307+00:00"
+}

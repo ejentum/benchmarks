@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-07",
+  "condition": "B1",
+  "output": "**The answer is (B) 35–40 minutes.**\n\nThe highway gives an initial 20-minute improvement (45→25 min). Here's what happens over 3 years:\n\n- **40% capacity increase → 20-40% increase in VMT** (applying the 5-10% per 10% rule)\n- **15% public transit ridership drop** adds even more cars to the road\n- These combined effects eat back most — but not all — of the initial gain\n\nThe induced demand is substantial but the capacity increase was also large, so a partial erosion to ~35-40 minutes is most realistic. Full negation (C) would require demand to overshoot original levels, which the given parameters don't quite support. And (A)/(D) underestimate how aggressively induced demand compounds when you also factor in the transit mode shift.",
+  "timestamp": "2026-03-20T17:17:54.962352+00:00"
+}

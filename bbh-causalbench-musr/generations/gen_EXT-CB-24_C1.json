@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-24",
+  "condition": "C1",
+  "output": "**Yes, the alarm would ring.**\n\nHere's the causal chain:\n\n1. **Husband sets the alarm** (given intervention).\n2. **Husband setting the alarm causes Wife to set the alarm** (first stated relationship).\n3. **Both Husband and Wife have now set the alarm**, satisfying the joint condition.\n4. **The alarm rings** (second stated relationship: both setting it causes ringing).\n\nSince the husband's action propagates through the graph — directly to the alarm clock *and* indirectly through the wife — both conditions for ringing are met.",
+  "timestamp": "2026-03-20T10:43:34.589004+00:00"
+}

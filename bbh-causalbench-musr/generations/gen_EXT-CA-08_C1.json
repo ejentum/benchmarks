@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-08",
+  "condition": "C1",
+  "output": "A typical person would answer: **No**.\n\nThe repairman's framing highlights that Daniel's login alone was insufficient — the crash required *both* users logged on simultaneously. Since Claire was also logged on, and Daniel's action alone doesn't explain the crash, most people attribute the crash to the joint condition rather than singling out Daniel. Additionally, Claire is the \"normal\" user (it's her computer, she uses it for schoolwork), while Daniel was told not to log on — yet the question is posed after the repairman emphasizes that Daniel's login alone doesn't explain it, which nudges people toward **No**.",
+  "timestamp": "2026-03-20T10:16:50.427104+00:00"
+}

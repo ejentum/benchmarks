@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-17",
+  "condition": "A",
+  "output": "Yes. Method 1 is more likely to accurately determine how jyka affects kwox.\n\nIn this hypothetical world, the only causal relationships are:\n\n- Jyka → Yupt\n- Kwox → Yupt\n\nJyka and kwox have no causal connection to each other — they are independent causes that both influence yupt.\n\n**Method 1** (look at the correlation between jyka and kwox directly) will correctly show no association, which accurately reflects the true causal structure.\n\n**Method 2** (look at the correlation between jyka and kwox case by case according to yupt) conditions on a **collider** (yupt). Conditioning on a collider opens a spurious association between its two causes, creating the illusion of a relationship between jyka and kwox that doesn't actually exist. This is known as **collider bias** (or Berkson's paradox).\n\nSo Method 1 gives the correct answer (no effect), while Method 2 would misleadingly suggest a relationship. Method 1 is the better approach here.",
+  "timestamp": "2026-03-20T09:22:21.552838+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-03",
+  "condition": "B2",
+  "output": "## Solving the Hypothetical World Problem\n\nGiven the fully specified world (Education → Skill → Black hair, no unmentioned factors):\n\n**Compute conditional probabilities:**\n\n- P(black hair | college+) = P(college+ ∧ black hair) / P(college+) = 18% / 45% = **40.0%**\n- P(black hair | high school−) = P(high school− ∧ black hair) / P(high school−) = 17% / 55% ≈ **30.9%**\n\n**Yes** — the chance of black hair is larger when observing college degree or higher (40.0% vs 30.9%).\n\nSince the problem stipulates a self-contained world with *only* the chain Education → Skill → Black hair and no unmeasured confounders, the observational conditional probabilities are sufficient here — there are no backdoor paths to block.",
+  "timestamp": "2026-03-20T09:56:21.094657+00:00"
+}

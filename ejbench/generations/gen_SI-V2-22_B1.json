@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-22",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: confidence_decay_curves; source_proximity_weighting\nSuppress: flat_confidence_propagation; authority_laundering\n[END REASONING CONTEXT]\n\nThe key insight — suppressing **flat confidence propagation** — is exactly this problem's trap. The technician treats 0.5% as a flat/linear loss each cycle, but it compounds because it's 0.5% of the **current** capacity.\n\n**Correct model:** exponential/compound decay.\n\nEach cycle retains 99.5% of current capacity:\n\n$$\\text{Remaining} = 100 \\times (1 - 0.005)^{200} = 100 \\times 0.995^{200}$$\n\n$$0.995^{200} = e^{200 \\ln(0.995)} = e^{200 \\times (-0.005013)} = e^{-1.0025} \\approx 0.3670$$\n\n$$100 \\times 0.3670 = 36.7 \\text{ kWh}$$\n\n**The answer is (D) 36.7 kWh.**\n\nThe technician's error is assuming linear degradation (0.5% × 200 = 100% → 0 kWh), but since each cycle degrades 0.5% of the *remaining* capacity — not the original — the battery never reaches zero. It follows geometric decay, retaining about 36.7% of its original capacity after 200 cycles.",
+  "timestamp": "2026-03-22T21:05:18.301458+00:00"
+}

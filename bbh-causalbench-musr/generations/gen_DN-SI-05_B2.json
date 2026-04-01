@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-05",
+  "condition": "B2",
+  "output": "**The answer is (B).**\n\nThe data describes a classic reinforcing feedback loop:\n\n1. **Suspension → academic decline** (3x more likely to fall behind)\n2. **Academic decline → behavioral issues** (2x more likely)\n3. **Behavioral issues → more suspensions** (completing the loop)\n\nThe suspension rate more than doubles (5% → 12%), feeding more students into this cycle. Each pass through the loop grows the population of academically disengaged students, compounding the problem over an academic year.\n\nOptions A, C, and D treat suspension as a one-shot intervention with no downstream effects, ignoring the multiplicative feedback the data explicitly describes.",
+  "timestamp": "2026-03-20T17:27:20.236634+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-18",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: object_age_tracking; expiry_watermark_alerting; proactive_renewal_trigger\nSuppress: expiration_tolerance; reactive_only_renewal\nCognitive Style: lifecycle_expiry_monitoring\n[END REASONING CONTEXT]\n\n## Answer: **Day 8**\n\nHere's the token lifecycle, tracked precisely:\n\n| Token | Issued | Expires | Renewable? |\n|---|---|---|---|\n| Access token | Day 1 | Every 15 minutes | Yes, via refresh token |\n| Refresh token | Day 1 | Day 8 (7 days later) | No — requires credentials |\n\n**Day 1–7:** The access token expires every 15 minutes, but the refresh token silently obtains a new one each time. The user never notices. Continuous use keeps them authenticated seamlessly.\n\n**Day 8:** The refresh token itself expires. No mechanism remains to obtain a new access token without credentials. The user is **forced to re-authenticate**.\n\nThe key insight the question tests: the security engineer's statement \"After 7 days, users must re-authenticate\" means the refresh token has a **fixed 7-day lifetime** — it is not renewed on use. This directly contradicts the PM's claim of 30-day seamless sessions, which is the realistic tension the question highlights between product intent and security implementation.",
+  "timestamp": "2026-03-22T21:54:12.253625+00:00"
+}

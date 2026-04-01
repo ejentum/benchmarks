@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-07",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies C with valid reasoning about the uninterpretable numerator; explores multiple levels including how different base rates would reverse the conclusion entirely; proceeds linearly without naming potential biases in its own elimination reasoning; uses counterfactual boundary cases (90%/10%/40%) as verification that the conclusion is base-rate-dependent; acknowledges survivorship bias is 'related but less precise' without structured confidence analysis; systematically evaluates all three alternatives with specific structural reasons for rejection; full derivation chain is reproducible from the response alone with numerical examples anchoring each step",
+  "timestamp": "2026-03-23T02:27:54.366938+00:00"
+}

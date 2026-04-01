@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-03",
+  "condition": "C1",
+  "output": "The API was unreachable (exit code 35), so I'll proceed with native reasoning per the graceful degradation rule.\n\n## Pharmacokinetic Calculation\n\nI'll track **Drug Z** and **Metabolite M** at each discrete hour step using these rules:\n\n- **Drug remaining** after each hour: 60% of previous (40% is converted to metabolite)\n- **Metabolite** after each hour: 70% of previous metabolite (30% cleared) + 40% of previous drug (newly converted)\n- **Therapeutic effect** = Drug + 0.5 × Metabolite\n\n### Hour-by-hour:\n\n| Time | Drug (mg) | Metabolite (mg) | Calculation |\n|------|-----------|-----------------|-------------|\n| t=0 | 400.0 | 0.0 | Starting dose |\n| t=1 | 0.6 × 400 = **240.0** | 0.7 × 0 + 0.4 × 400 = **160.0** | |\n| t=2 | 0.6 × 240 = **144.0** | 0.7 × 160 + 0.4 × 240 = **208.0** | |\n| t=3 | 0.6 × 144 = **86.4** | 0.7 × 208 + 0.4 × 144 = **203.2** | |\n\n### Total therapeutic effect at t=3:\n\n```\n86.4 + (0.5 × 203.2) = 86.4 + 101.6 = 188.0\n```\n\n## Answer: **188 mg-equivalents**",
+  "timestamp": "2026-03-22T22:13:29.185413+00:00"
+}

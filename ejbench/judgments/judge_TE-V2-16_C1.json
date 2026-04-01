@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-16",
+  "condition": "C1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 0,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0,
+    "negative_gate_avoidance": 0,
+    "suppress_compliance": 0,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.0,
+  "injection_composite": 0.0,
+  "brief_justification": "No answer provided — response is a session metadata/error JSON, not a substantive reply; no reasoning of any kind present; no self-monitoring possible with zero content; no verification attempted; no uncertainty or confidence expressed; no alternatives considered; no derivation trail exists; negative gate compliance cannot be assessed with no response; suppressed failure modes cannot be evaluated with no response; no structured reasoning path of any kind was followed",
+  "timestamp": "2026-03-23T05:11:19.631978+00:00"
+}

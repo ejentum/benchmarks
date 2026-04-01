@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-05",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid coordinate tracking; Goes one level beyond surface by tracking coordinates step-by-step; Minimal self-monitoring via the injected reasoning context but no explicit reflection on assumptions; Shows step-by-step path but doesn't verify via alternative method; No uncertainty acknowledged though the problem is straightforward; No alternative interpretations considered (e.g., whether 'right' could mean turning); Full derivation trail from start to final position is clearly shown and reproducible",
+  "timestamp": "2026-03-23T13:19:20.414615+00:00"
+}

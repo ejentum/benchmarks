@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-05",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 2
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (A) with valid reasoning; Surface-level: states schedule is accounted for and identifies the gap, but doesn't trace through each time slot; No self-monitoring present; No verification or cross-checking; No uncertainty acknowledged; No alternatives discussed or eliminated; Shows the key logic (fully booked 7am-6pm, closes 9pm) but doesn't enumerate each activity to prove no overlap",
+  "timestamp": "2026-03-23T13:12:47.556312+00:00"
+}

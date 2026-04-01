@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-11",
+  "condition": "B1",
+  "output": "**(B)**.\n\nThese are all instances of **throughput-quality inversion** — optimizing a flow-rate metric while ignoring first-pass resolution quality creates a rework loop that cannibalizes the throughput gain itself.\n\nThe structural pattern:\n\n1. **Proxy metric selected** (throughput/speed) that is decoupled from the actual goal (resolved cases)\n2. **Quality degrades** because speed and depth are in tension\n3. **Return demand generated** — the \"completed\" units re-enter the system (readmissions, repeat calls, regressions)\n4. **Net throughput decreases** — the system processes more units *on paper* while doing more total work\n\nThe key insight is that this isn't just a \"wrong metric\" problem (C) or a process problem (A). It's a **systemic feedback loop**: the optimization itself produces the load that defeats it. Goodhart's Law is the naming, but the mechanism is specifically that incomplete processing creates return flow — a conservation-of-work principle the metric fails to capture.",
+  "timestamp": "2026-03-20T17:17:26.304375+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-25",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid causal reasoning; Multi-level analysis covering DAG structure, backdoor paths, Simpson's paradox, and sign-flipping mechanisms; Some self-monitoring in distinguishing symptom from proof and noting nuance; Basic verification through contrasting Method 1 vs Method 2 and checking consistency; Excellent epistemic honesty distinguishing 'consistent with' from 'proof of' confounding; Mentions alternative manifestations (sign flip, cancellation, spurious association) but doesn't deeply evaluate competing explanations for unclear results; Complete audit trail from DAG to backdoor path to conclusion, fully reproducible",
+  "timestamp": "2026-03-23T11:19:40.983853+00:00"
+}

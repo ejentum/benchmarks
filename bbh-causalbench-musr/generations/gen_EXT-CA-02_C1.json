@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-02",
+  "condition": "C1",
+  "output": "A typical person would answer **Yes**.\n\nThe reasoning most people would apply: Mr. Wallace's involvement in organized crime (\"the crime life\") was the underlying cause that set both lethal chains in motion — Mr. Vincent poisoned him because of his position in organized crime, and Mr. Bruce ran him off the road because he was an associate of a rival in organized crime. Without the crime life, neither the poisoning nor the car attack would have occurred. Most people intuitively treat \"the crime life\" as a distal/background cause that made both proximate causes possible, so they'd say yes, it caused his death.",
+  "timestamp": "2026-03-20T10:15:26.127786+00:00"
+}

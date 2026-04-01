@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-01",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Answered Yes but correct answer is No — the reasoning about necessary conditions was sound but led to wrong conclusion about typical person judgment; Goes beyond surface with counterfactual analysis and conjunctive causation framework; Actively suppresses framing biases and applies inversion test showing metacognitive awareness; Applies counterfactual verification test but reaches wrong conclusion from it; Claims research consistently shows people say Yes without acknowledging the actual empirical finding that people often deny causation in symmetric overdetermination scenarios; Mentions linguistic framing as alternative but dismisses it rather than seriously evaluating the No answer; Shows derivation steps clearly from counterfactual test through to conclusion but the cited research support is inaccurate",
+  "timestamp": "2026-03-23T12:46:15.240017+00:00"
+}

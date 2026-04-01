@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-22",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer (B) with valid causal chain; goes one level beyond surface by identifying the upstream/downstream asymmetry of the cascade, but does not explore second-order effects like what would unblock the developer; uses a structured table implicitly as a tracking mechanism but never reflects on potential reasoning errors or misreads; the state table serves as basic step-by-step verification of each transition without counterfactual or boundary tests; presents conclusion with full confidence and no acknowledgment of ambiguity, appropriate given the deterministic setup but no uncertainty structure offered; implicitly rebuts option (D) by noting the cascade only affects downstream columns but does not name or explicitly reject options (A) or (C); the table provides a complete, reproducible derivation of all column states after each move, sufficient for a third party to reconstruct the full reasoning chain",
+  "timestamp": "2026-03-23T03:05:44.436002+00:00"
+}

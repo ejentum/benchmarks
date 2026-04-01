@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-06",
+  "condition": "B2",
+  "output": "**Yes**, let's trace the chain:\n\n1. **Shalonda lies.** (given)\n2. **Teressa** says Shalonda tells the truth → That's wrong → **Teressa lies.**\n3. **Tamika** says Teressa lies → That's correct → **Tamika tells the truth.**\n4. **Lorine** says Tamika tells the truth → That's correct → **Lorine tells the truth.**\n5. **Jaymie** says Lorine lies → That's wrong → **Jaymie lies.**\n\n**No, Jaymie does not tell the truth.**",
+  "timestamp": "2026-03-20T10:08:40.383542+00:00"
+}

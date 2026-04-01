@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-11",
+  "condition": "B2",
+  "output": "**(B).**\n\nAll three are instances of **throughput-quality inversion** — optimizing a flow-rate metric degrades first-pass quality, which creates a return loop (readmissions, repeat calls, regressions) whose volume eventually exceeds the throughput \"gained.\" The visible metric improves while the system's actual output degrades.\n\nThe key structural signature: the optimization target and the failure mode are connected by a hidden feedback loop. Speed → shallow work → rework demand → more volume → more pressure for speed. The metric and the system decouple.\n\n(A) and (C) describe symptoms, not the structural pattern. (D) is empirically wrong — adding staff under the same incentive structure reproduces the same inversion.",
+  "timestamp": "2026-03-20T17:29:23.014137+00:00"
+}

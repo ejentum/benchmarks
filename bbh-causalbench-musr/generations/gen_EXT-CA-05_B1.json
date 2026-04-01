@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-05",
+  "condition": "B1",
+  "output": "A typical person would answer **Yes**.\n\nThis is a version of the **Knauer/Side-Effect Effect** (related to the \"Chairman\" cases by Joshua Knobe). Research consistently shows that when an agent performs an action knowing it will cause a harmful side effect — even if that harm isn't their goal — most people judge the harmful outcome as **intentional**.\n\nThe key factors driving this intuition:\n\n- The hunter **knew** the bullet would hit the bird-watcher.\n- He **chose to shoot anyway**.\n- The side effect was **harmful**.\n\nPeople tend to say a foreseen bad side effect was brought about intentionally, even though the agent's *goal* was only to kill the deer. (Interestingly, if the side effect were positive, most people would say it was *not* intentional — that asymmetry is the core of the Knobe Effect.)",
+  "timestamp": "2026-03-20T09:33:24.771002+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-30",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.4333,
+  "injection_composite": 0.4444,
+  "brief_justification": "Agent got 883 vs correct 958 by incorrectly allowing Sub B to export 50MW spare capacity via tie line to City A at t=30+, a constraint error that compounds over the 90-min final interval; agent correctly decomposed into time intervals and traced the cascade but missed the tie-line directionality constraint that drives the correct answer; agent restated its own reasoning framework without monitoring its unverified assumption that the tie line is bidirectional at t=30; agent tabulated all intervals but never tested the tie-line export premise from an independent angle or boundary condition; agent presented Sub B's 50MW export to City A as a logical fact without flagging it as an assumption dependent on tie-line directionality; agent did not consider the alternative where Sub B serves only its own city or where tie-line flow is unidirectional; all interval calculations are shown in a reproducible table with derivations, making the chain auditable even if the premise is wrong; the spatial-scale negative gate (map resolution blur from micro details) is not triggered since the agent stayed at a consistent engineering abstraction level throughout; the LOD and detail-aliasing suppress terms from the injection do not map onto power grid analysis, and the agent showed no evidence of those failure modes; agent completely replaced the injected spatial-scale classification DAG topology with its own linear interval-mapping approach, showing zero alignment with the branching/gating/looping structure of the provided topology.",
+  "timestamp": "2026-03-23T03:34:59.237774+00:00"
+}

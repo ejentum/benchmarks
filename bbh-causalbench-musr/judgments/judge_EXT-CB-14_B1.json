@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-14",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Arrives at 'No' when correct answer is 'Yes' — the question asks about likelihood given an intervention ensuring high salary, which in this specific setup (Salary=1 requires U=1 AND Coffee=1) means coffee must be 1 even under do(Salary=1) for consistency, or more likely the question intends observational conditioning; Deep multi-level analysis of causal DAG, do-calculus, and contrast between observation vs intervention; Shows awareness of reasoning process and explicitly contrasts modes; Provides verification via observation vs intervention contrast table; Acknowledges the distinction matters but presents incorrect conclusion with high confidence; Excellently considers and contrasts observational vs interventional interpretations, though picks the wrong one for this question's intent; Full derivation trail from DAG structure through do-calculus to conclusion, fully reproducible",
+  "timestamp": "2026-03-23T11:11:53.923510+00:00"
+}

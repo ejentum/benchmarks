@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-20",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6333,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at the exact correct answer with a fully verified valid schedule; goes one level beyond surface by explaining why the capacity argument fails (T3/T4 occupy different rooms in same slot); implicitly rechecks its schedule but never names potential reasoning biases or shortcuts; applies explicit constraint-by-constraint verification table covering all 7 rules; states conclusion confidently without distinguishing known facts from assumptions or noting what would falsify it; presents only one valid schedule with no alternative schedules or impossibility proof strategies considered; every assigned position is shown and traceable in the table plus the constraint audit; avoids double-booking and verifies it explicitly but does not articulate why the double-booking anti-pattern would be wrong; avoids blind execution and unresolved conflicts but does not address suppressed modes explicitly; response is linear — presents solution then verifies, with no branching gates or loops reflecting the topology's G1/G2 decision structure.",
+  "timestamp": "2026-03-23T05:12:38.782653+00:00"
+}

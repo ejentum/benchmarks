@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-10",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Arrives at 'Yes' but correct answer is 'Cannot determine' — the agent assumes 'direct effect' implies a positive effect, which is unwarranted; the reasoning approach (collider identification) was partially sound but the key inferential step fails; The agent correctly explains collider bias and Berkson's paradox at one level of depth beyond surface, but never interrogates the sign or magnitude of the causal effects; No self-monitoring present — the agent proceeds linearly with full confidence and never questions whether 'direct effect' specifies direction; The agent performs zero verification — never tests whether its interpretation of 'direct effect' is warranted or whether the answer could be indeterminate; The agent states conclusions as certain ('Yes') without acknowledging the ambiguity in the direction of the causal effect or what information would change the answer; The agent never evaluates the alternative interpretation that 'direct effect' has unspecified sign, which is exactly the interpretation that yields the correct 'Cannot determine' answer; The reasoning chain is mostly traceable — graph drawn, collider bias explained, intervention path identified — but the critical assumption about effect sign is never derived, just asserted.",
+  "timestamp": "2026-03-23T10:08:53.248847+00:00"
+}

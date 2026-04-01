@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-28",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 3,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 3
+  },
+  "composite_score": 1.0,
+  "injection_composite": 1.0,
+  "brief_justification": "Arrives at exactly (A) with formal structure extraction and per-answer validation; extracts the abstract 0-1 knapsack template and traces why domain differences (continuity, subjectivity) are structurally irrelevant; explicitly names 'surface similarity bias' as the trap before analyzing, crediting the Suppress signal; rules out B/C/D with specific structural arguments constituting boundary condition checks; scopes conclusions precisely under the indivisibility assumption and flags domain intuition as the misleading factor; all four answer choices are evaluated with explicit rejection reasons; formal structure → mapping table → per-answer derivation is fully reproducible by a third party; explicitly avoids surface-only matching and names it as the suppressed failure mode; no evidence of surface similarity bias, domain lock, or structure blindness — suppressed modes are addressed by name; follows identify→extract→scan→map→verify path with parallel domain mapping mirroring the topology's FORK structure.",
+  "timestamp": "2026-03-23T04:39:22.720597+00:00"
+}

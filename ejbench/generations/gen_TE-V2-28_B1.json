@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-28",
+  "condition": "B1",
+  "output": "**Answer: (C) 358 minutes**\n\nThe exact total is **≈356.5 minutes**, which rounds to ~358. The breakdown:\n\n- **Base training time:** geometric series `60 × (1 - 0.8²⁰) / 0.2 ≈ 296.5 min`\n- **Checkpoint penalties:** epochs 5, 10, 15, 20 → `4 × 15 = 60 min`\n- **Total:** ≈ 356.5 min → **358 minutes** (option C)\n\nThe other options fail because: (A) gets the checkpoint count right but the base sum wrong, (B) omits checkpoints entirely, and (D) uses an invalid linear approximation.",
+  "timestamp": "2026-03-22T22:03:34.961233+00:00"
+}

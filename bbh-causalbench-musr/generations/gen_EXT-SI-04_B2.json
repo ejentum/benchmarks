@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-04",
+  "condition": "B2",
+  "output": "Let me trace through the swaps:\n\n**Start:** Alice=Frankenstein, Bob=Gatsby, Claire=Ulysses\n\n1. **Alice ↔ Bob:** Alice=Gatsby, Bob=Frankenstein, Claire=Ulysses\n2. **Claire ↔ Bob:** Alice=Gatsby, Bob=Ulysses, Claire=Frankenstein\n3. **Bob ↔ Alice:** Alice=Ulysses, Bob=Gatsby, Claire=Frankenstein\n\n**(C) Ulysses**",
+  "timestamp": "2026-03-20T10:00:54.302654+00:00"
+}

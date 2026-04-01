@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-22",
+  "condition": "C1",
+  "output": "API timed out — proceeding with native reasoning per graceful degradation.\n\n---\n\n**Tracking board state step by step:**\n\n**Initial state:**\n| Column | Count | Limit |\n|--------|-------|-------|\n| Backlog | 8 | — |\n| In Progress | 3 | 3 ← AT LIMIT |\n| Review | 1 | 2 |\n| Testing | 2 | 2 ← AT LIMIT |\n| Done | 12 | — |\n\n**Move 1 — Tester moves item from Testing → Done:**\n- Testing: 2 → **1** (space opens)\n- Done: 12 → 13\n\n**Move 2 — Reviewer moves item from Review → Testing:**\n- Review: 1 → **0**\n- Testing: 1 → **2** (back at WIP limit)\n\n**State before developer's pull:**\n| Column | Count | Limit |\n|--------|-------|-------|\n| In Progress | **3** | 3 ← STILL AT LIMIT |\n| Review | 0 | 2 |\n| Testing | 2 | 2 |\n\n**Move 3 — Developer tries to pull Backlog → In Progress:**\n- Would increase In Progress from 3 → 4. Limit is 3. **Blocked.**\n\n---\n\n**Answer: (B) — Blocked. In Progress is still at its WIP limit of 3.**\n\nThe two earlier moves only cycled an item through Testing and cleared Review. They had no effect on In Progress, which never changed from 3/3.",
+  "timestamp": "2026-03-23T04:30:58.371380+00:00"
+}

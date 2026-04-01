@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-13",
+  "condition": "B2",
+  "output": "**(B)**.\n\nThey share the same structural pattern: **open ingestion + layered review-and-revert**. Each system keeps the barrier to *entry* low but applies progressive filtering at higher layers, and critically, the cost of reverting bad input is kept lower than the cost of gatekeeping all input upfront.\n\nThat's the non-obvious insight — it's not just \"collaboration\" (A is too vague), not just \"experts\" (C misses the structural why), and not just motivation (D is irrelevant to structure). The architecture itself is what they share: a permissive write layer backed by an asymmetrically cheap undo/filter layer.",
+  "timestamp": "2026-03-20T17:30:04.106147+00:00"
+}

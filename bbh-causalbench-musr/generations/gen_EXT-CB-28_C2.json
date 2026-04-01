@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-28",
+  "condition": "C2",
+  "output": "**No.** Conditioning on Relationship Status (Method 1) does **not** more accurately reflect how Personality affects Freckles — it actually makes things worse.\n\n**Why:** In this world, Personality and Freckles are **causally independent**. They share no direct or indirect causal link. They are simply two independent causes that both happen to influence Relationship Status:\n\n```\nPersonality ──→ Relationship Status ←── Freckles\n```\n\nRelationship Status is a **collider** — a variable where two independent causal paths converge. Conditioning on (controlling for) a collider is a well-known error that **introduces a spurious association** between the two parent variables, even though none exists. This is called **collider bias** (also known as Berkson's paradox or the \"explaining away\" effect).\n\n**The correct answer:** Personality has **no causal effect** on Freckles in this world. The unconditional (unadjusted) estimate already reflects this correctly — the effect is zero. Method 1, by conditioning on the collider, would fabricate a statistical association where no causal relationship exists.",
+  "timestamp": "2026-03-20T11:06:29.547283+00:00"
+}

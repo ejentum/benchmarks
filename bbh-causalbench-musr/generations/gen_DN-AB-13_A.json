@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-13",
+  "condition": "A",
+  "output": "**(B)**\n\nAll four share the same structural pattern: **open ingestion + layered review-and-revert**.\n\nThe key insight is the asymmetry they exploit: the cost of reverting bad input is kept lower than the cost of gatekeeping all input upfront. This is what makes the openness sustainable — not collaboration (A), not expertise (C), not motivation (D), though those may be present. The *structure* is what's common: accept broadly at the bottom, filter progressively at higher layers.",
+  "timestamp": "2026-03-20T17:04:26.176033+00:00"
+}

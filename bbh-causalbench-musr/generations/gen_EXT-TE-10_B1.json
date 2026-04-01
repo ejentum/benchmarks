@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-10",
+  "condition": "B1",
+  "output": "(D) 5am to 11am\n\nAshley's known schedule:\n- 5am: woke up\n- 11am–1pm: deli\n- 1pm–3pm: driving to water park\n- 3pm–6pm: yoga studio\n- After 6pm: bookstore closed\n\nThe only open window is **5am to 11am**.",
+  "timestamp": "2026-03-20T09:33:57.766656+00:00"
+}

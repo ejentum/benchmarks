@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-12",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (top shelf) with valid reasoning tracing Rachel's perspective; Multi-level analysis tracking the shaker through multiple relocations and considering what Rachel did/didn't observe; Some self-monitoring in carefully considering whether Rachel saw Tyler move it back; Basic verification by checking the final state matches the conclusion; Presents conclusion confidently without acknowledging uncertainty about whether Rachel observed Tyler's actions; Briefly considers the counter as implicit alternative but doesn't formally evaluate it; Full derivation chain from initial state through each move with clear perspective tracking",
+  "timestamp": "2026-03-23T13:23:53.777395+00:00"
+}

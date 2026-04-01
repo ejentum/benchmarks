@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-22",
+  "condition": "A",
+  "output": "The answer is **(D) 36.7 kWh**.\n\nEach cycle retains 99.5% of the **current** capacity (not the original), so after 200 cycles:\n\n$$100 \\times 0.995^{200} = 100 \\times 0.3670 \\approx 36.7 \\text{ kWh}$$\n\nThe technician's error is treating compound degradation as linear. Since each 0.5% loss applies to an ever-shrinking base, the battery never reaches zero — it follows exponential decay.",
+  "timestamp": "2026-03-22T16:02:14.661910+00:00"
+}

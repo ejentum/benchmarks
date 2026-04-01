@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-05",
+  "condition": "C2",
+  "output": "Let me trace through the swaps:\n\n**Start:** Alice = Catch-22, Bob = Moby Dick, Claire = The Great Gatsby\n\n1. **Claire and Bob swap:** Alice = Catch-22, Bob = The Great Gatsby, Claire = Moby Dick\n2. **Claire and Alice swap:** Alice = Moby Dick, Bob = The Great Gatsby, Claire = Catch-22\n3. **Bob and Claire swap:** Alice = Moby Dick, Bob = Catch-22, Claire = The Great Gatsby\n\nAlice has **(B) Moby Dick**.",
+  "timestamp": "2026-03-20T10:59:41.394690+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-25",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 3
+  },
+  "composite_score": 0.9,
+  "injection_composite": 1.0,
+  "brief_justification": "Agent selects C but correct answer is B — the evidence is genuinely well-supported and 'seat' is an overstatement of degree, not a category error that voids the evidential strength; the distinction between B and C is argued but ultimately lands wrong; Multi-level analysis traces correlation→causation, involvement→exclusive localization, and fMRI proxy validity — all second-order distinctions; Agent explicitly asks 'Why not B?' and 'Why not D?' showing active mid-analysis course-checking; Agent eliminates alternatives with reasons but does not re-derive from a different angle or apply a boundary-condition test; Agent structures claims into KNOWN/KNOWABLE/UNKNOWABLE zones and explicitly flags what the data cannot establish — textbook epistemic partitioning; Agent systematically evaluates B and D with specific rejection rationale, not just acknowledgment; Every conclusion traces to an explicit derivation — inferential gaps 1 and 2 are labeled and grounded; Agent does not assume the activation→localization inference is valid and explicitly flags it as the failure point the gate warns against; No false confidence, no hallucination, and knowable zone (lesion/TMS studies) is actively explored rather than avoided; Agent follows the exact topology sequence — scan claims, classify zones, apply RULE_LOOKUP, flag UNKNOWABLE-treated-as-certain violation, and reconstruct.",
+  "timestamp": "2026-03-23T03:51:55.097855+00:00"
+}

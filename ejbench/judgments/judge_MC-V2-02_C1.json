@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-02",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.8667,
+  "injection_composite": 0.8889,
+  "brief_justification": "Correctly identifies B with explicit Cohen's d convention (0.2/0.5/0.8 thresholds) and precise internal contradiction; traces second-order effects including why large n inflates significance without magnifying effect, and notes the report's own hedge ('consistent with other approved antidepressants'); some reflective framing ('critical observation') but no explicit bias naming or assumption auditing; cross-validates using HDRS absolute difference, NNT, and remission rate delta but stops short of boundary-condition testing; calibrated on NNT ('decent, not exceptional') but omits explicit confidence levels or what evidence would shift the conclusion; systematically evaluates all four options with specific rejection reasons for each; every claim traces to a metric in the table with convention-anchored derivations a third party could reproduce; directly identifies and explains the p-value-as-magnitude conflation anti-pattern matching the negative gate's correlation-not-causation failure mode; avoids all suppressed modes (no correlation-based attribution, no single-hypothesis lock, no halo amplification of significance) and explicitly addresses the stat-significance ≠ magnitude suppression; reasoning is structured with tabular branching across metrics and answer options but does not follow the topology's counterfactual factual/control fork-join or SUTVA gate sequence.",
+  "timestamp": "2026-03-23T04:41:48.903235+00:00"
+}

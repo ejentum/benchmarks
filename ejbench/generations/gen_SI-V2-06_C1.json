@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-06",
+  "condition": "C1",
+  "output": "[REASONING CONTEXT]\nAmplify: chronological reconstruction; timestamp challenge protocol; temporal horizon normalization\nSuppress: assumed ordering acceptance; blind execution; anchoring flag\n[END REASONING CONTEXT]\n\nThe key is to strictly follow the sequence: **interest first, then transaction** at each year-end.\n\n| Step | Calculation | Balance |\n|---|---|---|\n| **Start** | | **$10,000.00** |\n| Year 1 interest | $10,000.00 × 1.08 | $10,800.00 |\n| Year 1 withdraw | $10,800.00 − $500 | **$10,300.00** |\n| Year 2 interest | $10,300.00 × 1.08 | $11,124.00 |\n| Year 2 withdraw | $11,124.00 − $800 | **$10,324.00** |\n| Year 3 interest | $10,324.00 × 1.08 | $11,149.92 |\n| Year 3 deposit | $11,149.92 + $300 | **$11,449.92** |\n| Year 4 interest | $11,449.92 × 1.08 | $12,365.9136 |\n| Year 4 withdraw | $12,365.91 − $1,200 | **$11,165.91** |\n\n**The account balance immediately after the Year 4 transaction is $11,166.**",
+  "timestamp": "2026-03-22T22:16:32.714174+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-07",
+  "condition": "C2",
+  "output": "Yes. Here's the chain:\n\n1. **Delfina** tells the truth (given).\n2. **Fletcher** says Delfina lies → Fletcher is **lying** (Delfina does tell the truth).\n3. **Amberly** says Fletcher lies → Amberly is **truthful** (Fletcher does lie).\n4. **Audrie** says Amberly tells the truth → Audrie is **truthful** (Amberly does tell the truth).\n5. **Lorine** says Audrie tells the truth → Lorine is **truthful** (Audrie does tell the truth).\n\n**Lorine tells the truth.**",
+  "timestamp": "2026-03-20T11:06:23.417564+00:00"
+}

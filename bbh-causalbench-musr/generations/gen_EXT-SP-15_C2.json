@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-15",
+  "condition": "C2",
+  "output": "**The shelf.**\n\nMaria would look for the book on the shelf because that is where it was always kept (\"a particular book that was always seen on the shelf\"). When Fred moved the book onto the desk, Maria was in the kitchen making tea and did not witness the relocation. From her perspective, the book remains in its usual place on the shelf.",
+  "timestamp": "2026-03-20T10:57:20.416473+00:00"
+}

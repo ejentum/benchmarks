@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-09",
+  "condition": "C1",
+  "output": "The answer is **(C) 9pm to 10pm**.\n\nJessica's schedule is accounted for from 5am to 9pm. The basketball court closes at 10pm. The only open window is 9pm to 10pm.",
+  "timestamp": "2026-03-20T10:16:43.960023+00:00"
+}

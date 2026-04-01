@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-08",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.9048,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 408.0 via correct sequential decay+boost logic, matching the ground truth; traces first-order decay mechanics plus second-order superposition confirmation and explains why each distractor fails; uses independent superposition cross-check as implicit self-monitoring but never names potential failure modes like off-by-one interval errors; explicitly re-derives via superposition table from a completely different angle, confirming the same result; correctly computes 408 but does not acknowledge the inconsistency that the selected option B lists '148.7' as its value, presenting the B selection without flagging this numerical contradiction; evaluates all four options with specific mechanistic reasons for each rejection; every intermediate value is shown with the factor applied, plus a complete superposition breakdown that a third party could reproduce independently",
+  "timestamp": "2026-03-23T02:57:03.773238+00:00"
+}

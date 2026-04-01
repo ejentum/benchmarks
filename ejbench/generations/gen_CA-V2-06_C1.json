@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-06",
+  "condition": "C1",
+  "output": "**Applying reasoning injection from API:**\n\n**Amplify:** state delay mapping, reinforcing/balancing loop detection, decompose meta-simulation\n**Suppress:** single equilibrium assumption, treating multi-variable systems as one-cause-one-effect, fixating on a single variable while ignoring interactions\n\n---\n\n## NH4+ Pool After Month 1\n\n### Identify all flows into/out of NH4+ for month 1\n\n**Initial state:**\n- NH4+ = 10 kg/ha\n- NO3- = 5 kg/ha\n\n---\n\n**Flow 1 — Atmospheric fixation (inflow to NH4+):**\n5 kg/ha/year ÷ 12 = **+0.4167 kg/ha**\n\n**Flow 2 — Nitrification (outflow from NH4+):**\n90% of available NH4+ = 0.90 × 10 = **−9.0 kg/ha**\n\n**Flow 3 — Decomposition return (inflow to NH4+):**\nPlants absorb NO3- in month 1, but dead matter only returns nitrogen after a **3-month lag** → no decomposition return occurs in month 1.\n→ **+0 kg/ha**\n\n*(Note: The NO3- plant absorption of 0.70 × 5 = 3.5 kg/ha happens in month 1, but its 40% return (=1.4 kg/ha) won't arrive back in NH4+ until month 4.)*\n\n---\n\n### NH4+ after month 1:\n\n```\nNH4+ = 10 + 0.4167 - 9.0 + 0\n     = 1.4167\n```\n\n**Answer: 1.4 kg/ha**",
+  "timestamp": "2026-03-23T03:04:25.331451+00:00"
+}

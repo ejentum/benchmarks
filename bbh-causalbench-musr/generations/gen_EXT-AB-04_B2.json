@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-04",
+  "condition": "B2",
+  "output": "## Solving the Book Order\n\n**Constraints:**\n1. Gray is right of Orange → O … Gr\n2. Green is 2nd from right → position 4\n3. Brown is right of White → W … B\n4. Brown is left of Orange → B … O\n\nChaining 3 + 4 + 1: **W … B … O … Gr**\n\nThat's four books in a fixed relative order. Green is locked at position 4. Placing the chain into 5 slots:\n\n| Pos 1 | Pos 2 | Pos 3 | Pos 4 | Pos 5 |\n|-------|-------|-------|-------|-------|\n| White | Brown | Orange | Green | Gray |\n\nAll constraints check out:\n- Gray (5) right of Orange (3) ✓\n- Green at 2nd from right (4) ✓\n- Brown (2) right of White (1) ✓\n- Brown (2) left of Orange (3) ✓\n\n**The answer is (D) The gray book is the rightmost.**",
+  "timestamp": "2026-03-20T10:08:06.226668+00:00"
+}

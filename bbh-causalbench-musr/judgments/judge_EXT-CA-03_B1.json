@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-03",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid normative reasoning; Multi-level analysis tracing from physical causation to normative attribution patterns with references to Knobe/Hitchcock research; Some self-monitoring via the inversion test and direction confirmation; Basic verification through the inversion/bidirectionality test but no counterfactual exploration; Acknowledges the norm-based framing but doesn't explicitly state uncertainty or assumptions; Mentions the black wire as background condition vs cause but doesn't deeply explore competing frameworks; Clear derivation chain from norm violation principle to conclusion, fully reproducible",
+  "timestamp": "2026-03-23T10:52:28.138054+00:00"
+}

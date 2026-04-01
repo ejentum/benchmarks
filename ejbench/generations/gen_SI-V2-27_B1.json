@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-27",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: cascade_tracing; circuit_breaker_identification\nSuppress: isolated_failure_assumption; cascade_blindness\nCognitive Style: failure_propagation — trace every failure to its full cascade extent.\n[END REASONING CONTEXT]\n\n## Solution\n\n**t = 0:** Cable 1 snaps. 5 cables remain, each bearing **47/5 = 9.4 tons**, capacity = 10 tons. All above the 9-ton fatigue threshold.\n\n**Fatigue degradation:** Each cable's capacity decreases at 0.5 tons/hour:\n\n$$\\text{capacity}(t) = 10 - 0.5t$$\n\n**First fatigue failure** occurs when capacity equals the load:\n\n$$10 - 0.5t = 9.4 \\implies t = 1.2 \\text{ hours} = \\textbf{72 minutes}$$\n\n**Cascade check** (suppressing isolated-failure assumption — must trace downstream):\n\nAt t = 72 min, all 5 cables have degraded identically to 9.4-ton capacity. One fails. Load redistributes to 4 survivors:\n\n$$47 / 4 = 11.75 \\text{ tons per cable}$$\n\nBut those 4 cables only have 9.4-ton capacity → **all fail instantly** → complete cascade → bridge collapses.\n\n### Answer: **72 minutes** after Cable 1 snaps, the bridge collapses.",
+  "timestamp": "2026-03-22T21:07:41.340966+00:00"
+}

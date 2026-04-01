@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-12",
+  "condition": "B1",
+  "output": "\n\nThe background task completed, but I already retrieved the API response via the second (foreground) call and applied it to solve the task. The answer is provided above — **8% revenue increase** predicted from load time alone.",
+  "timestamp": "2026-03-22T21:53:21.643561+00:00"
+}

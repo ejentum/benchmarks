@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-02",
+  "condition": "C1",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 0,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0
+  },
+  "composite_score": 0.0952,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) but no reasoning shown; No analytical depth - just asserts the answer; No self-monitoring of reasoning process; No verification performed or shown; Presents answer as certain with no acknowledgment of assumptions; No alternative considered; No derivation trail - claims prior work but shows nothing",
+  "timestamp": "2026-03-23T13:17:27.449160+00:00"
+}

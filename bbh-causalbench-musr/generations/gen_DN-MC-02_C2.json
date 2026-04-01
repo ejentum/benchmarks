@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-02",
+  "condition": "C2",
+  "output": "(B).\n\nStatements 1 and 2 directly tension each other — \"cut costs by 20%\" and \"invest heavily in R&D\" compete for the same budget. More critically, statement 3 identifies talent loss to higher-paying competitors as the primary risk, yet statement 1 prescribes broad cost cuts that would likely suppress compensation, accelerating that exact risk.\n\nOption C is the common defense, but it assumes a 20% cost reduction can be achieved entirely outside R&D and compensation — unlikely at that scale, and the report doesn't specify such carve-outs. A consistent report would need to explicitly reconcile these tensions.",
+  "timestamp": "2026-03-20T17:54:36.767504+00:00"
+}

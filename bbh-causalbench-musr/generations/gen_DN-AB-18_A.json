@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-18",
+  "condition": "A",
+  "output": "(B).\n\nEach failure is an instance of the same structural pattern: **a foundational assumption was hardcoded as a fixed axiom rather than modeled as a variable with its own failure boundary.**\n\n- The risk model didn't parameterize \"housing prices can decline nationally\" — it excluded that state from the possibility space entirely.\n- The flood model didn't parameterize \"the rainfall distribution itself can shift\" — it treated the historical distribution as stationary.\n- The pandemic model didn't parameterize \"transmission can occur before symptoms\" — it inherited the influenza transmission structure as a given.\n\nIn all three cases the model was internally valid. The failure wasn't calibration (A), data volume (C), or generic overconfidence (D). It was that **the boundary condition under which the model stops being valid was itself invisible to the model**. None included a mechanism to detect when reality had crossed outside their assumption envelope.\n\nThis is the difference between a model being *wrong* and a model being *unaware of the conditions under which it becomes wrong*.",
+  "timestamp": "2026-03-20T17:06:05.211494+00:00"
+}

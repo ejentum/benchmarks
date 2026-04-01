@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-20",
+  "condition": "B1",
+  "output": "**No**, it is not likely that Jyka is present.\n\n**Reasoning:**\n\nThe causal graph is: **Yupt → Jyka → Kwox**, with also **Yupt → Kwox**.\n\nWhen we **intervene** to guarantee Kwox does not occur (do(Kwox=0)), we sever all incoming causal arrows to Kwox. This is distinct from merely *observing* Kwox=0. The intervention on Kwox does not propagate backwards — it does not affect the Yupt→Jyka relationship at all.\n\nTherefore:\n\n**P(Jyka | do(Kwox=0)) = P(Jyka)**\n\nSince Yupt is the **only** cause of Jyka (no unmentioned factors), and P(Yupt) = 11%, the marginal probability of Jyka is bounded by the probability of its sole cause. P(Jyka) ≤ 11%, which is well below the threshold for \"likely.\"\n\nThe intervention on a downstream variable (Kwox) cannot change the probability of an upstream variable (Jyka) — causal influence flows forward, not backward. Intervening on Kwox is not the same as conditioning on Kwox=0, which *would* create an explaining-away effect through the collider structure.",
+  "timestamp": "2026-03-20T09:42:39.310178+00:00"
+}

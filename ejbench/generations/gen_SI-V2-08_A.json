@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-08",
+  "condition": "A",
+  "output": "## Yes — total fuel consumption increases (the \"backfire\" rebound effect)\n\n**Step 1: New kilometers driven**\n\nThe cost per km drops by 33.3%. With elasticity of −1.8:\n\n> % increase in km = 1.8 × 33.3% = **60%**\n\nNew km per truck: 50,000 × 1.60 = **80,000 km/year**\n\n**Step 2: New total fuel consumption**\n\n> 1,000 trucks × 80,000 km × (20 L / 100 km) = **16,000,000 liters**\n\n**Result:** Consumption rises from **15M to 16M liters** — a 6.7% *increase* despite 33% better engines.\n\nThis is a textbook case of **Jevons paradox** (or \"backfire\"): when the elasticity magnitude exceeds 1.0, efficiency gains are more than fully offset by increased usage. Here, the efficiency saved 33% per km, but induced 60% more driving — net effect is *more* fuel burned, not less.",
+  "timestamp": "2026-03-22T15:57:07.001540+00:00"
+}

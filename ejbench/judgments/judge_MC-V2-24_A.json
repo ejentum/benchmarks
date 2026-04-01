@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-24",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.9048,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies the critic's argument as logically sound and accurately names the causal inference failure; analysis goes three levels deep — names the fallacy, explains the underdetermination problem, lists competing explanations, and specifies what better evidence would look like; adds a nuanced 'where the critic stops' section showing balance, but never explicitly names potential biases in its own reasoning or flags where it might be wrong; rechecks by listing what evidence *would* establish effectiveness, but does not apply a counterfactual test to its own conclusion; clearly distinguishes 'consistent with' from 'conclusive proof of' and separates necessary from sufficient conditions throughout; systematically enumerates four alternative explanations for the breach-free period and names specific evidentiary alternatives that would resolve the ambiguity; every claim traces to an explicit premise — logical fallacy name, mechanism, alternative scenarios, and corrective standards — fully reproducible by a third party.",
+  "timestamp": "2026-03-23T02:41:21.007060+00:00"
+}

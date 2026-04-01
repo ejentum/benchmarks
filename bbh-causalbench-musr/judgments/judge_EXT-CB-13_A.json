@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-13",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid reasoning about path blocking; Goes beyond surface by explaining additive causal pressure and do-calculus framing; Shows awareness via the caveat about sign assumptions; Mentions verification need (sign of effect) but doesn't formally verify; Acknowledges the assumption about positive causal influence and what would change the conclusion; Considers the alternative where Pexu could be a negative cause; Full derivation from graph structure through intervention to conclusion is clearly traceable.",
+  "timestamp": "2026-03-23T12:41:46.466610+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-11",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid conditional probability calculations; Goes beyond surface by computing both conditionals and comparing; Minimal self-monitoring despite injected reasoning context mentioning suppression signals; Basic verification through computing both sides and comparing magnitudes; Presents results confidently without acknowledging assumptions about the causal structure or observational vs interventional framing; No alternative approaches considered (e.g., didn't discuss whether causal vs observational distinction matters here); Full derivation trail from given data through intermediate calculations to final answer, fully reproducible.",
+  "timestamp": "2026-03-23T12:57:49.455714+00:00"
+}

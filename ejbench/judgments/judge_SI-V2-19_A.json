@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-19",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Exact correct answer (Month 6 / A) with valid arithmetic at every step; goes one level deeper by deriving the equilibrium threshold (~18,750) to explain why decline is inevitable, but stops there without exploring second-order dynamics; proceeds linearly with no named assumptions, biases, or mid-course reflection; the full table constitutes an implicit row-by-row recheck, and the equilibrium sanity-check adds a second angle, though no counterfactual or boundary test is run; no uncertainty acknowledged and no caveats about rounding or model assumptions; only one interpretation of the problem is considered and no alternatives (e.g., different ordering of growth vs. catch) are raised; every intermediate value is shown explicitly, making the full chain reproducible by a third party.",
+  "timestamp": "2026-03-23T02:27:57.917004+00:00"
+}

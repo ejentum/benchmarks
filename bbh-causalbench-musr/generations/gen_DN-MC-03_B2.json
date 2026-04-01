@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-03",
+  "condition": "B2",
+  "output": "**(B)**\n\nThe correct answer happened to fall out, but the method is unsound. \"About a third of New York\" is an arbitrary anchor with no grounding — it could just as easily have been \"about a quarter\" or \"about half,\" and there's no principled reason to pick one over the other. Apply the same technique to, say, Phoenix or Columbus and the ratio to NYC gives you nonsense.\n\nA correct answer produced by a fragile, unjustified heuristic is coincidence, not evidence of good reasoning. Sound reasoning requires a method that would *reliably* produce correct (or at least directionally correct) answers across cases, not just happen to work on one.",
+  "timestamp": "2026-03-20T17:33:16.341671+00:00"
+}

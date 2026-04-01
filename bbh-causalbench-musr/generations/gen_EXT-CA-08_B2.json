@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-08",
+  "condition": "B2",
+  "output": "A typical person would answer **\"No.\"**\n\nThe repairman's framing sets up the pragmatic context: he already knows Daniel was logged on but says he *still* doesn't see why it crashed — implying Daniel's login alone is insufficient. The missing piece of information is that Claire was *also* logged on. In everyday causal reasoning, people tend to attribute causation to the **abnormal or unexpected** factor. Claire logging on to her own computer is normal and expected; Daniel logging on despite being told not to is norm-violating. However, the question is structured so that the repairman already accounts for Daniel — he's asking what *else* happened. This shifts the \"explanatory gap\" to Claire's simultaneous login, making her the salient cause in most people's intuitive judgment.\n\nMost people would say **No** — Daniel didn't cause the crash — because the conversational context highlights that his login alone was insufficient and the missing causal factor is Claire's login.",
+  "timestamp": "2026-03-20T09:54:12.576717+00:00"
+}

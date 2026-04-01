@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-20",
+  "condition": "C1",
+  "output": "**(B) An engagement trap.**\n\nIt's a textbook reinforcing feedback loop with multiple compounding mechanisms:\n\n1. **Algorithmic selection** — optimizing for engagement discovers outrage as the highest-signal metric\n2. **User self-selection** — moderate users exit, extremes remain, shifting the distribution\n3. **Content producer adaptation** — creators learn what gets surfaced and produce more of it\n4. **Feedback collapse** — the training signal itself becomes corrupted (engagement now measures outrage tolerance, not value)\n\nThe other options misdiagnose it:\n\n- **(A)** treats advertiser pressure as a corrective, but by the time advertisers react, the user base has already shifted — the platform can't undo the selection effect\n- **(C)** frames it as a policy problem, but the loop is structural — moderation patches symptoms while the optimization objective continues generating them\n- **(D)** assumes self-correction, but reinforcing loops don't self-correct — they accelerate until an external constraint breaks them or the system collapses\n\nThe core insight is that the engagement metric itself becomes adversarial to the platform's long-term survival. The algorithm is doing exactly what it was told to do — that's the trap.",
+  "timestamp": "2026-03-20T17:47:27.828904+00:00"
+}

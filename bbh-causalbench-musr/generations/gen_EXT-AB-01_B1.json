@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-01",
+  "condition": "B1",
+  "output": "**The answer is (B) Rob finished last.**\n\nFrom the constraints:\n\n1. Rob below Dan → Dan > Rob\n2. Joe below Ana → Ana > Joe\n3. Joe above Amy → Joe > Amy\n4. Dan below Amy → Amy > Dan\n\nChaining: **Ana > Joe > Amy > Dan > Rob**\n\nRob is in last place.",
+  "timestamp": "2026-03-20T09:45:39.338677+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-06",
+  "condition": "A",
+  "output": "**$11,166**\n\nHere's the year-by-year breakdown:\n\n| | Balance Start | After 8% Interest | Transaction | Balance End |\n|---|---|---|---|---|\n| Year 1 | $10,000.00 | $10,800.00 | −$500 | $10,300.00 |\n| Year 2 | $10,300.00 | $11,124.00 | −$800 | $10,324.00 |\n| Year 3 | $10,324.00 | $11,149.92 | +$300 | $11,449.92 |\n| Year 4 | $11,449.92 | $12,365.91 | −$1,200 | **$11,165.91** |\n\nRounded to the nearest whole dollar: **$11,166**.",
+  "timestamp": "2026-03-22T15:56:23.984430+00:00"
+}

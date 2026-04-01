@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-06",
+  "condition": "A",
+  "output": "**One.**\n\nLet me walk through each designed benefit mechanism:\n\n1. **Awareness spread** — Target was 50% in 30 days; it's at 55% by day 60. **Fully materialized.**\n\n2. **Behavior change (increased purchase frequency)** — Starts 14 days after awareness, and awareness is still spreading. Customers who became aware on day 30+ have only recently begun changing behavior, and new customers are still becoming aware. **Partially materialized** — ongoing, not complete.\n\n3. **Redemption surge** — Occurs 90 days after first qualifying purchases. Day 60 < Day 90. Zero redemptions is exactly what the design predicts. **Not yet materialized at all.**\n\n4. **Post-redemption retention lift (25% higher for 6 months)** — Depends on redemptions happening first. **Not yet materialized at all.**\n\n**The answer is 1.** Only awareness has fully played out.\n\nThe analyst's negative ROI calculation is essentially evaluating a 4-stage pipeline at stage 1.5 — the program is working exactly as designed, and 3 of its 4 benefit mechanisms haven't had time to activate yet. The $800K revenue increase from the 8% purchase frequency lift is just the early leading indicator, not the full return.",
+  "timestamp": "2026-03-22T16:19:16.799870+00:00"
+}

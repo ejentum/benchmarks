@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-29",
+  "condition": "A",
+  "output": "## Counterfactual Analysis\n\n**No** — the patient would **not** have low cholesterol if not taking any assigned drugs.\n\n### Reasoning\n\n**Variables:**\n- U (unobserved confounder): inactive (given)\n- Z (treatment assignment): assigned (given)\n- X (drug taken): intervention variable\n- Y (cholesterol level): outcome\n\n**Structural equations (from the problem):**\n- X = U **AND** Z\n- Y = U **OR** X\n\n**Counterfactual computation** (setting X = 0, holding U = 0 as observed):\n\nY = U OR X = 0 OR 0 = **0** (not low cholesterol)\n\nSince the confounder is **inactive** (U = 0), the only path to low cholesterol is through actually taking the drug (X = 1). Removing the drug (X = 0) eliminates the only active cause, so cholesterol would **not** be low.",
+  "timestamp": "2026-03-20T09:27:00.052258+00:00"
+}

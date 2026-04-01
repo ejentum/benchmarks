@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-24",
+  "condition": "A",
+  "output": "## Solution\n\nHerder *i*'s profit is:\n\n$$\\pi_i = 500 \\, n_i \\left(1 - \\frac{n_i + N_{-i}}{200}\\right)$$\n\nTaking the derivative with respect to $n_i$ and setting it to zero:\n\n$$500\\left(1 - \\frac{2n_i}{200} - \\frac{N_{-i}}{200}\\right) = 0$$\n\nImposing symmetry ($n_i = n$, so $N_{-i} = 4n$):\n\n$$1 - \\frac{2n}{200} - \\frac{4n}{200} = 0 \\implies 1 - \\frac{6n}{200} = 0 \\implies n = \\frac{200}{6} \\approx 33.33$$\n\n**Each herder grazes 33 cattle at Nash Equilibrium.**\n\nThis gives a total of ~167 cattle — far above the optimal 100 — illustrating the Tragedy of the Commons: individual rationality leads to collective overgrazing, dropping per-cow revenue from $250 to ~$83.",
+  "timestamp": "2026-03-22T16:03:01.926351+00:00"
+}

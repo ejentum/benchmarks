@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-04",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (C) with valid reasoning; Goes one level beyond surface by mapping all time slots into a table to identify the gap; No explicit self-monitoring beyond the injected suppression signals; Lists all occupied slots which implicitly verifies no overlap but doesn't explicitly check alternatives against the gap; Presents answer confidently without noting assumptions; Implicitly rejects other options by showing they're occupied but doesn't explicitly evaluate each alternative; Shows the schedule mapping clearly but doesn't narrate the elimination process step by step",
+  "timestamp": "2026-03-23T13:11:57.567621+00:00"
+}

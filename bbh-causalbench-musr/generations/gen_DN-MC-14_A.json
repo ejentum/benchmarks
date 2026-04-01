@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-14",
+  "condition": "A",
+  "output": "**(B)**\n\nThe three claims are mutually contradictory:\n\n- **1 vs 2:** If the model never stores or memorizes personal data, it can't \"improve by learning from user interactions\" — learning *is* a form of retention (in the weights).\n- **2 vs 3:** If user data has influenced model weights through training, \"complete deletion\" would require retraining from scratch without that data — computationally impractical and rarely what companies actually do.\n- **The trilemma:** The system is claimed to simultaneously *not retain* data, *learn from* data, and *un-learn* data on request. No system can satisfy all three.\n\nOptions A and C try to hide behind a \"patterns vs. data\" distinction, but learned patterns *are* derived from data — that's the whole point of training. Option D is too charitable; the inconsistency isn't just about statement 3 being \"aspirational\" — statements 1 and 2 already contradict each other.",
+  "timestamp": "2026-03-20T17:11:11.458571+00:00"
+}

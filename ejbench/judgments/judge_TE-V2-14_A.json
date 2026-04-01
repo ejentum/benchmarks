@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-14",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at correct answer (C) with valid multi-evidence reasoning connecting master code, safe combination, and camera disabling to deliberate zone exclusion; multi-level analysis links three independent evidence strands to a unified insider-knowledge hypothesis and explains the staging logic as a second-order effect; minimal explicit monitoring — briefly notes option A is 'possible but speculative' but never examines own reasoning method or names assumptions being made; falsifies alternatives with evidential grounds (two independent pieces would need to be wrong for D; direct E1 contradiction for B), but never applies a counterfactual or boundary check to option C itself; acknowledges option A is speculative but silently assumes the alarm system supports zone exclusion without flagging that as an unverified premise; systematically evaluates all three alternatives with specific evidential reasons for rejection, strongest on D; clear evidence-to-conclusion chain for C with most derivation steps shown, but the zone-exclusion mechanism is treated as a given rather than derived from stated evidence.",
+  "timestamp": "2026-03-23T03:01:35.811041+00:00"
+}

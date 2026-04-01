@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-20",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6667,
+  "injection_composite": 0.5556,
+  "brief_justification": "Correctly answers Yes with matching numbers (1,608 vs 2,000) and independently catches the 27,000-tree overstatement in the prompt; explains equilibrium mechanism and death-spiral logic one level beyond surface but does not trace second-order compounding effects; actively corrects a factual claim in the prompt by running its own calculation, showing calculation-based self-monitoring; cross-verifies the 27k figure from a different angle in addition to running the simulation, constituting genuine multi-angle verification; flags and corrects the overstated forest size but does not discuss confidence intervals or what assumptions could change the conclusion; no alternative framings or harvest strategies are considered — the analysis simply confirms the framing given; table and equilibrium threshold (N=800) are shown but step-by-step cumulative derivation is absent; correctly models depletion and avoids the unlimited-resource assumption embodied in the negative gate but does not name or explicitly address it; avoids both local_optimization_bias and resource_infinity_assumption throughout the response; response is linear — presents answer then brief explanation — despite the topology specifying branching Nash-equilibrium gates, mechanism-design forks, and M-node self-checks that were never engaged.",
+  "timestamp": "2026-03-23T03:27:20.425466+00:00"
+}

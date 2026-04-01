@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-11",
+  "condition": "C1",
+  "output": "**(B)** is the correct answer.\n\nThis is **post hoc ergo propter hoc** (\"after this, therefore because of this\") — the classic fallacy of inferring causation from temporal sequence alone.\n\nThe PM's reasoning is: feature launched Monday → revenue up Tuesday → feature caused it. But correlation in time doesn't establish causation. Possible confounds include:\n\n- **Weekly seasonality** (Tuesday may always be higher than Monday)\n- **Concurrent changes** (marketing campaign, pricing change, etc.)\n- **Normal variance** (12% may be within daily noise)\n\nOptions A, C, and D raise valid practical concerns, but they describe **measurement limitations**, not the core **logical flaw** in the argument. Even with a large sample, statistical significance, and the \"right\" metric, the reasoning would still be broken if it relies solely on temporal sequence to claim causation.",
+  "timestamp": "2026-03-20T17:46:04.191254+00:00"
+}

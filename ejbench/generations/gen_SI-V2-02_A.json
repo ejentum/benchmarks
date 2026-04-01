@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-02",
+  "condition": "A",
+  "output": "## No — the 4th filter **decreases** total contaminant removed per day.\n\nLet C = contaminant concentration (mg/L) of incoming water.\n\n### Current setup (3 filters, 10,000 L/day)\n\n| Stage | Fraction remaining |\n|---|---|\n| After F1 | 0.10 |\n| After F2 | 0.10 × 0.20 = 0.02 |\n| After F3 | 0.02 × 0.30 = **0.006** |\n\nRemoval rate = 1 − 0.006 = **99.4%**\nMass removed = 0.994 × 10,000 × C = **9,940C mg/day**\n\n### Proposed setup (4 filters, 7,000 L/day)\n\n| Stage | Fraction remaining |\n|---|---|\n| After F1–F3 | 0.006 (same) |\n| After F4 | 0.006 × 0.40 = **0.0024** |\n\nRemoval rate = 1 − 0.0024 = **99.76%**\nMass removed = 0.9976 × 7,000 × C = **6,983C mg/day**\n\n### Result\n\nThe 4th filter improves the *percentage* removed (99.4% → 99.76%), but the 30% flow reduction costs far more throughput than the marginal purity gain recovers:\n\n**9,940C → 6,983C — a 30% drop in total contaminant removed per day.**\n\nThe manager's claim is incorrect. The system was already removing 99.4%, so the 4th filter only captures a tiny additional slice of an already-small residual, while the flow reduction cuts total processing volume by 3,000 liters.",
+  "timestamp": "2026-03-22T15:54:46.967239+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-18",
+  "condition": "A",
+  "output": "**No.** The high salary would not likely be because the person drank coffee.\n\nHere's the reasoning:\n\n**Given facts:**\n- U (confounder) = active\n- Proximity to college = far (0)\n\n**Determine Coffee:**\n- Coffee = U **AND** Proximity = 1 AND 0 = **0 (no coffee)**\n\n**Determine Salary:**\n- Salary = U **OR** Coffee = 1 OR 0 = **1 (high salary)**\n\nThe person already has a high salary entirely because the confounder is active — they don't drink coffee at all (proximity is far, so the AND gate blocks it). Even if we intervene to ensure a high salary, coffee plays no role here; the confounder alone is sufficient to produce the outcome.",
+  "timestamp": "2026-03-20T09:22:42.847439+00:00"
+}

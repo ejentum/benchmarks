@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-05",
+  "condition": "B2",
+  "output": "**(D) The yellow book is the second from the right.**\n\nFrom the constraints:\n\n- Green is rightmost (position 5)\n- Orange < Gray < Purple (from constraints 2 and 4)\n- Purple < Yellow (from constraint 3)\n\nThis gives one ordering: **Orange, Gray, Purple, Yellow, Green** (positions 1–5).\n\nYellow sits at position 4 — second from the right.",
+  "timestamp": "2026-03-20T10:08:22.297578+00:00"
+}

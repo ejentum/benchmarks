@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-04",
+  "condition": "C1",
+  "output": "[REASONING CONTEXT]\nAmplify: probability cone projection; confidence interval modeling; stochastic scenario generation\nSuppress: point estimate future; deterministic forecast bias; single hypothesis commitment\n[END REASONING CONTEXT]\n\n## Solution\n\n**Step 1 — New Part C reliability (backup supplier):**\n\nP(C fails) = P(primary fails) × P(backup fails) = 0.12 × 0.15 = 0.018\nP(C available) = 1 − 0.018 = **0.982**\n\n**Step 2 — New assembly rate (all 5 parts):**\n\nP = 0.95 × 0.92 × 0.982 × 0.97 × 0.90\n\n- 0.95 × 0.92 = 0.8740\n- × 0.982 = 0.85827\n- × 0.97 = 0.83252\n- × 0.90 = **0.74927 ≈ 74.9%**\n\nThe backup supplier boosts Part C from 88% to 98.2%, but adding Part E at 90% claws most of that gain back — the two changes nearly cancel out.\n\n**Answer: (A) 74.9%**",
+  "timestamp": "2026-03-22T22:14:14.245880+00:00"
+}

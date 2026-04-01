@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-22",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Exact correct answer with valid exponential decay formula; explains compound vs linear degradation and ever-shrinking base but stops at one analytical level without exploring further implications; no monitoring of own reasoning process, no bias identification or assumption checking at any point; no verification from an alternative angle, boundary condition, or sanity check performed; uses approximation symbol but presents conclusion with no structured uncertainty analysis or stated assumptions; explicitly addresses and refutes the technician's linear interpretation but does not evaluate the other distractor answer choices; formula and logic chain are clear and reproducible but the key intermediate step 0.995^200 = 0.3670 is asserted rather than derived, requiring trust or independent computation.",
+  "timestamp": "2026-03-23T02:30:44.305720+00:00"
+}

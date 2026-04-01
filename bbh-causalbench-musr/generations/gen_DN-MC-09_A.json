@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-09",
+  "condition": "A",
+  "output": "**(B)** is correct.\n\nRestricting to summer months doesn't eliminate temperature as a confound — it concentrates it. Within summer, hotter days independently drive both more ice cream consumption *and* more swimming activity (the actual proximal cause of drowning). The researcher addressed the coarse-grained confound (season) while missing the fine-grained one (daily/weekly temperature variation and swimming frequency).\n\nTo actually test whether ice cream causes drowning, they'd need to control for **temperature** and **swimming exposure** directly — the variables that causally drive both sides of the spurious correlation.",
+  "timestamp": "2026-03-20T17:09:48.599118+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-01",
+  "condition": "A",
+  "output": "**(B) All four created a separation between the measured interface and the actual system — optimizing the measurement layer while the underlying reality diverged.**\n\nThe structural pattern is **metric-reality decoupling**:\n\n- **Theranos** — the *demo* (measurement interface) showed valid results; the *actual device* (underlying system) couldn't produce them.\n- **Enron** — the *balance sheet* (measurement interface) looked healthy; the *actual debt* (underlying system) was hidden in off-book SPEs.\n- **Volkswagen** — the *emissions test output* (measurement interface) showed compliance; the *real driving emissions* (underlying system) were up to 40x over limits.\n- **WeWork** — the *adjusted metric* (measurement interface) showed profitability; the *actual operating costs* (underlying system) showed deep losses.\n\nEach case is the same move: identify the point where observers take their reading, then optimize *that layer specifically* so it no longer reflects reality.\n\n(A) is technically true but describes the legal conclusion, not the structural mechanism. (C) and (D) are incidental features, not the shared architecture of the deception.",
+  "timestamp": "2026-03-20T17:00:35.898662+00:00"
+}

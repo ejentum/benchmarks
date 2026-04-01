@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-13",
+  "condition": "A",
+  "output": "## Corrected Timestamps\n\n| Event | Server | Logged Time | Skew Correction | Actual Time |\n|-------|--------|-------------|-----------------|-------------|\n| A | S1 | 10:00:00.000 | ±0 (reference) | **10:00:00.000** |\n| B | S2 | 10:00:00.150 | −200ms (ahead) | **09:59:59.950** |\n| C | S3 | 09:59:59.900 | +150ms (behind) | **10:00:00.050** |\n| D | S4 | 10:00:00.300 | −50ms (ahead) | **10:00:00.250** |\n| E | S5 | 10:00:00.050 | +100ms (behind) | **10:00:00.150** |\n\n**Logic:** If a clock is *ahead*, its readings are too high → subtract the skew. If *behind*, readings are too low → add the skew.\n\n## Actual temporal ordering\n\n**B → A → C → E → D**\n\n| Order | Event | Actual Time |\n|-------|-------|-------------|\n| 1st | B | 09:59:59.950 |\n| 2nd | A | 10:00:00.000 |\n| 3rd | C | 10:00:00.050 |\n| 4th | E | 10:00:00.150 |\n| 5th | D | 10:00:00.250 |\n\nNotable: Event C, which appeared earliest by raw timestamp (09:59:59.900), is actually 3rd. Event B, which appeared unremarkable, is actually first.",
+  "timestamp": "2026-03-22T16:25:27.808770+00:00"
+}

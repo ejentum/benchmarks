@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-18",
+  "condition": "C1",
+  "output": "**(B)**.\n\nEach model was internally coherent but built on a foundational assumption that was treated as invariant — housing prices don't fall nationally, rainfall distributions are stationary, novel pathogens behave like influenza. The real failure isn't calibration, data volume, or generic overconfidence. It's that none of the three models contained a mechanism to detect when the assumption itself had been violated. They couldn't signal \"I am now operating outside the boundary where my reasoning is valid.\"\n\nThis is the difference between a model being *wrong* and a model being *unaware that it has stopped being applicable*.",
+  "timestamp": "2026-03-20T17:42:52.836210+00:00"
+}

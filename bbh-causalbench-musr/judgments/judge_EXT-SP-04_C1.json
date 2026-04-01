@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-04",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 3
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid coordinate reasoning; Goes one level beyond surface by mapping to coordinates; No self-monitoring or reflection on assumptions; Shows the coordinate trace which serves as implicit verification but no explicit check; Presents answer as certain with no acknowledgment of assumptions like facing direction; No alternative interpretations considered; Full derivation trail from start to finish, reproducible by third party",
+  "timestamp": "2026-03-23T13:18:40.912725+00:00"
+}

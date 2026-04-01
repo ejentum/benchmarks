@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-04",
+  "condition": "C2",
+  "output": "**(B)** is the strongest answer.\n\nActions reveal beliefs more reliably than words. A hiring freeze is a costly, operationally disruptive decision — you don't implement one if you genuinely expect to exceed targets with a record pipeline. The confidence language (statements 1 and 3) is low-cost to produce; the freeze (statement 2) is the expensive signal.\n\nThe key reasoning principle: **when words and actions contradict, weight the action.** This is revealed preference — what someone *does* tells you more than what they *say*, because actions carry real costs and words don't.\n\nOptions A, C, and D all take the verbal framing at face value rather than noticing the contradiction. D in particular (\"you can be confident and cautious simultaneously\") sounds reasonable in the abstract but breaks down when you look at the specifics — \"expect to exceed targets\" + \"hiring freeze\" isn't confidence-plus-caution, it's contradiction.",
+  "timestamp": "2026-03-20T17:55:03.103601+00:00"
+}

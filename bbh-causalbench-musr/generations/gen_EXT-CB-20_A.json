@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-20",
+  "condition": "A",
+  "output": "## Answer: No, Jyka is probably **not** likely to be present.\n\n**Key reasoning — intervention vs. observation:**\n\nAn **intervention** that guarantees Kwox is not occurring (written as *do(Kwox = 0)*) is fundamentally different from merely *observing* that Kwox didn't occur. An intervention **severs all incoming causal arrows** to Kwox. That means:\n\n- Yupt no longer influences Kwox (cut)\n- Jyka no longer influences Kwox (cut)\n\nBecause the causal links into Kwox are broken by the intervention, forcing Kwox off gives us **zero information** about its upstream causes. The probability of Jyka remains at its **baseline/prior** rate:\n\n> P(Jyka | do(Kwox = 0)) = P(Jyka)\n\n**Why Jyka is unlikely at baseline:**\n\nIn this world, the only stated cause of Jyka is Yupt, and P(Yupt) = 11%. Since Yupt is the sole driver of Jyka and it occurs only 11% of the time, the baseline probability of Jyka is low — almost certainly below 50%.\n\n**Bottom line:** The intervention on Kwox doesn't propagate information backward up the causal graph. Jyka's probability is unchanged from its prior, which is low given the low prevalence of its only cause (Yupt at 11%). So no, it is **not likely** that Jyka is present.",
+  "timestamp": "2026-03-20T09:24:25.802349+00:00"
+}

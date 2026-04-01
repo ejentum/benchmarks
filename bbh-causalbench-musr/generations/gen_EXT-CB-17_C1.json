@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-17",
+  "condition": "C1",
+  "output": "**Yes.** Method 1 is more likely to accurately determine how Jyka affects Kwox.\n\nHere's why:\n\nIn this world, Jyka and Kwox are **independent causes** of Yupt, with **no causal link between each other**:\n\n```\nJyka ──→ Yupt ←── Kwox\n```\n\nYupt is a **collider** — it sits at the junction where two independent causal arrows converge.\n\n- **Method 1** (marginal correlation): Examines Jyka and Kwox without conditioning on anything. Since no causal path connects them, this correctly reveals **no association** — which is the true causal relationship.\n\n- **Method 2** (conditioning on Yupt): Stratifying by the collider **opens a spurious path** between Jyka and Kwox (collider bias / Berkson's paradox). This creates a false association — e.g., knowing Yupt is high and Jyka is low makes Kwox seem high, even though they're causally independent.\n\n**Bottom line:** Jyka has no effect on Kwox. Method 1 gets this right. Method 2 introduces a spurious correlation by conditioning on their shared effect.",
+  "timestamp": "2026-03-20T10:40:50.404282+00:00"
+}

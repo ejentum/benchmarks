@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-06",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (B) with valid reasoning; goes one level beyond surface by constructing a time partition table; implicit self-monitoring via the RA²R injection but no explicit reflection on reasoning process; mentions the constraint 'beach closed after 8pm' but doesn't explicitly verify each option against the schedule; no explicit uncertainty acknowledgment; implicitly rejects alternatives by showing all slots are filled except 7am-9am but doesn't explicitly evaluate other options; full derivation trail with clear time-slot table showing how the gap was identified",
+  "timestamp": "2026-03-23T10:55:37.287615+00:00"
+}

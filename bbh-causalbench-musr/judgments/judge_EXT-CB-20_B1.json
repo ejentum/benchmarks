@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-20",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (No vs Yes) - the agent correctly identified the causal structure and do-calculus intervention but assumed Jyka can only be present when Yupt is present, ignoring that Jyka could have a high base rate independent of Yupt's effect; Reasoning goes one level deep with do-calculus application but misses that P(Jyka=1) is not bounded by P(Yupt=1) since Jyka can have its own baseline probability; Minimal self-monitoring - no checking of the assumption that Jyka requires Yupt; No verification or sanity check against the possibility that Jyka's marginal could exceed 11%; Presents conclusion as fairly certain without acknowledging uncertainty about Jyka's conditional probabilities; No alternative interpretations considered for how Jyka's probability might be high despite low Yupt; Derivation chain is shown clearly but built on an unverified assumption",
+  "timestamp": "2026-03-23T11:16:45.038424+00:00"
+}

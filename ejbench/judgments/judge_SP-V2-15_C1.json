@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-15",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at exactly 3 with valid direct contradictions cited for each; Goes one level beyond surface by explaining why each claim is contradicted (e.g., 503s are by definition downtime) but doesn't trace second-order effects; Notes the third inconsistency is 'softer' showing implicit quality awareness but no explicit bias naming or course-correction; Uses a summary table to cross-check but no counterfactual tests or boundary-condition verification; Acknowledges the third point is 'softer' and 'misleading framing' rather than a hard fact, showing calibrated confidence; Lists one interpretation per inconsistency without evaluating whether 'multiple times per day' could be technically achievable with 45-min cycles or other readings; Every inconsistency maps to explicit quoted evidence from both parties with clear contradiction labels, fully reproducible; Avoids treating the deployment description as a checklist where order doesn't matter, but does not explicitly name or address the negative gate pattern; Response shows no reverse causality, coincidence conflation, or order insensitivity — avoids most suppressed failure modes without explicitly calling them out; Reasoning is essentially linear enumeration of three items without branching, gating, or loop structures visible from the topology",
+  "timestamp": "2026-03-23T05:09:56.238381+00:00"
+}

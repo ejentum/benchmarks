@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-28",
+  "condition": "A",
+  "output": "No. The extraction **cannot** be done without creating cross-boundary dependencies.\n\nAfter extracting M3 (with C5) into Application B:\n\n1. **C3 → C5 (runtime, cross-application):** C3 (in App A, Module M2) creates an instance of C5 (now in App B). This requires either an import/dependency on App B or a runtime protocol to instantiate C5.\n\n2. **C5 → C1 (compile-time + runtime, cross-application):** C5 stores a reference to C1 (in App A, Module M1). To type that reference, App B needs a compile-time dependency on App A (or a shared interface). At runtime, the injected instance is a cross-application reference.\n\nSo the extraction introduces **at minimum 2 cross-boundary dependencies** — one in each direction — forming a **circular cross-application dependency** (A→B for instantiation, B→A for the back-reference). This is the worst-case coupling pattern and is exactly why such extractions typically require introducing an interface/abstraction layer (e.g., a shared contract module) to break the cycle.",
+  "timestamp": "2026-03-22T16:42:18.545929+00:00"
+}

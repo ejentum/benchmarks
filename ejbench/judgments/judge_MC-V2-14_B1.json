@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-14",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.6333,
+  "injection_composite": 0.8889,
+  "brief_justification": "Arrives at exactly 50% with correct Bayes' theorem application; explains the intuition (balanced contributions) but does not trace second-order effects or non-obvious implications; proceeds linearly with no explicit bias checks or assumption questioning; shows clean arithmetic but does not re-derive from a different angle or apply counterfactual tests; presents the answer with appropriate confidence for a deterministic problem and notes the probability shift from 70% to 50%; considers only one approach with no mention of alternatives; every step is explicitly shown and fully reproducible; explicitly notes the prior probability shifts away from 70% to 50%, directly countering the negative gate; avoids both suppressed failure modes — updates the prior and uses population-level frequency data; follows a structured path (prior → total probability → Bayes update) but does not exhibit the topology's branch/gate/loop structure such as M1 midpoint check or G1/G2 gates.",
+  "timestamp": "2026-03-23T03:44:15.323162+00:00"
+}

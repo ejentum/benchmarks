@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-20",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.1429,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (desk instead of shelf) - this is a theory-of-mind question asking where Simon would LOOK, not where the book actually is; Simon was looking at a painting when Fred moved the book, so he'd look at the shelf (original location); Surface-level analysis only, took the literal last location without considering Simon's knowledge state; No self-monitoring or recognition that this is a belief-tracking problem; No verification or sanity check against the theory-of-mind framing; Presented answer as certain with no acknowledgment of the belief-tracking dimension; No consideration of the shelf as an alternative based on Simon's perspective; Shows the textual evidence but fails to trace Simon's observational state",
+  "timestamp": "2026-03-23T10:37:06.195595+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-07",
+  "condition": "C1",
+  "output": "(D) 7am to 11am\n\nAshley's schedule accounts for every slot except 7am–11am, which is the only window free before the bookstore closed at 9pm.",
+  "timestamp": "2026-03-20T10:16:18.395150+00:00"
+}

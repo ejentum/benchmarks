@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-12",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 3
+  },
+  "composite_score": 0.8667,
+  "injection_composite": 1.0,
+  "brief_justification": "Correct answer with valid multi-pronged reasoning; Goes 3+ levels deep across temporal, confound, cherry-pick, and identification-strategy dimensions; No explicit meta-cognitive monitoring of own reasoning process or named biases in the analysis itself; r²=0.42 sanity check and closing verdict table show basic verification but no counterfactual re-derivation; Distinguishes what the correlation proves vs. what it cannot establish, but lacks explicit confidence levels per sub-claim; Systematically evaluates reverse causation and multiple confounders with specific mechanisms and rejection reasons; Every sub-conclusion traces to an explicit derivation reproducible by a third party; Explicitly avoids treating correlation as causation and names the textbook fallacy being committed; Zero evidence of any suppressed failure mode and directly names the correlation-to-causation leap as the core error; Follows topology path — extracts claim, demands mechanism, tests each hop, gates on gaps, scans confounders, rejects with spurious causation classification",
+  "timestamp": "2026-03-23T04:48:31.154440+00:00"
+}

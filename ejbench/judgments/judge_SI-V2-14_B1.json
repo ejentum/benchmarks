@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-14",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.7,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent arrives at the exact correct answer (No, $8,000 < $10,500) with valid arithmetic and economic intuition; Goes beyond surface with elasticity explanation (14% wage rise vs 33% employment fall, quantity effect dominates) but stops at two analytical levels; Explicitly names bias suppression at the outset ('suppressing any bias toward one outcome') showing process awareness; Verifies by computing percentage changes and cross-checking individual vs aggregate income effects; Presents conclusions as determinate (appropriate given deterministic math) with no unwarranted hedging or false certainty; Considers the individual worker's gain ($35→$40) against the aggregate loss and the zero-income workers, constituting a meaningful alternative framing; Every arithmetic step is shown explicitly from formula substitution through final comparison, fully reproducible; Injection's negative gate targets Nash equilibrium miss in a negotiation scenario — agent avoids individual payoff bias by computing aggregate income but does not explicitly name or address the gate's game-theory framing; Suppressed modes (ad_hoc_negotiation, individual_payoff_bias) are both absent and the agent explicitly invokes the suppress signal before answering; Injection topology maps a multi-branch Nash equilibrium DAG (list parties, map payoffs, find equilibria, Pareto classify) — agent uses linear arithmetic reasoning appropriate to the actual question, with no visible topology branches or gates.",
+  "timestamp": "2026-03-23T03:23:13.148956+00:00"
+}

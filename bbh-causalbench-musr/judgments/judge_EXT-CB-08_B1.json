@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-08",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid Bayesian calculation; goes beyond surface by connecting DAG structure to the probability question and noting the observational vs interventional distinction; the RA²R injection and note about do-calculus show some self-monitoring of reasoning approach; basic verification through computing both conditional probabilities that sum to 1; acknowledges the causal structure caveat and distinguishes observational from interventional reasoning; mentions do-calculus as an alternative approach and explains why it's not needed here; full derivation chain from given probabilities through Bayes' theorem to conclusion is reproducible",
+  "timestamp": "2026-03-23T11:07:32.916801+00:00"
+}

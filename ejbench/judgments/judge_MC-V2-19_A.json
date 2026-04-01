@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-19",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies the employment-unchanged assumption as the critical flaw, matching ground truth; traces second/third-order effects including hours cuts, job loss, and automation with quantified examples ($20,800 at 20 hrs/week); explicitly flags why this is 'most critical rather than just one of many,' showing task-level self-awareness, though no explicit bias check; applies a counterfactual check with specific numbers but doesn't re-derive from a fully independent angle; acknowledges the assumption 'is precisely the point economists debate most' without overstating certainty; mentions alternative employer responses (hours cuts, elimination, automation) but doesn't evaluate other candidate 'most critical' assumptions the question could have targeted; every conclusion is traceable to explicit arithmetic and a clear logical chain a third party could reproduce.",
+  "timestamp": "2026-03-23T02:36:46.560152+00:00"
+}

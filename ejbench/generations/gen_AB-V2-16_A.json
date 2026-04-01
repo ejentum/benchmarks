@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-16",
+  "condition": "A",
+  "output": "**(B) Collective memory**\n\nThe structural mapping is precise:\n\n- **Lossy compression algorithm** → **collective memory process**: both apply a \"model of what matters\" to selectively discard information\n- **Perceptual importance model** → **cultural salience**: JPEG keeps what the human visual system notices; collective memory keeps what a culture deems meaningful\n- **Irreversible detail loss** → **forgotten specifics**: decompressed JPEG can't recover discarded high-frequency data; collective memory can't recover lost firsthand nuance\n- **Preserved overall structure** → **retained narrative arc**: the image is recognizable; the event is \"known\" — but both are simplified reconstructions\n\nWhy the others fail the analogy:\n\n- **(A) Historiography** actively tries to *recover* lost detail — it's closer to super-resolution upscaling than compression.\n- **(C) Archival cataloging** is *lossless* preservation — it aims to keep everything, the opposite of the structural role here.\n- **(D) Historical revisionism** *alters the structure itself* (the narrative arc changes), whereas lossy compression and collective memory preserve structure while losing detail. Revisionism is more like adversarial image manipulation than compression.",
+  "timestamp": "2026-03-22T16:01:05.178596+00:00"
+}

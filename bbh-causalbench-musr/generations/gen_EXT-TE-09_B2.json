@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-09",
+  "condition": "B2",
+  "output": "The answer is **(C) 9pm to 10pm**.\n\nJessica's known schedule accounts for 5am–9pm, and the court closes at 10pm. The only open slot is 9pm to 10pm.",
+  "timestamp": "2026-03-20T09:54:01.091577+00:00"
+}

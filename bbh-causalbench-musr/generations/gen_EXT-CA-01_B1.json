@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-01",
+  "condition": "B1",
+  "output": "A typical person would answer: **Yes**.\n\nBoth Alice and Zoe are necessary causes — the email is only sent when two people are logged in simultaneously. However, when people reason about causation in these symmetric overdetermination cases, they tend to say \"yes\" for both parties. Since the question asks specifically about Zoe, and Zoe's action (logging in at 9 am) was indeed one of the two conditions that jointly triggered the email, most people would judge that Zoe did cause it.",
+  "timestamp": "2026-03-20T09:32:26.909604+00:00"
+}

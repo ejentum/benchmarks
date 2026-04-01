@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-08",
+  "condition": "B1",
+  "output": "**Yes**, Shenna tells the truth.\n\nChain of reasoning:\n\n1. **Jerry** lies (given).\n2. **Millicent** says Jerry tells the truth — that's wrong, so Millicent **lies**.\n3. **Sal** says Millicent tells the truth — that's wrong, so Sal **lies**.\n4. **Amberly** says Sal tells the truth — that's wrong, so Amberly **lies**.\n5. **Shenna** says Amberly lies — that's correct, so Shenna **tells the truth**.",
+  "timestamp": "2026-03-20T09:47:36.598039+00:00"
+}

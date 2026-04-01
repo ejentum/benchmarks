@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-01",
+  "condition": "C1",
+  "output": "A typical person would answer: **Yes**.\n\nIn studies of causal judgment, when two agents both contribute necessary conditions to an outcome (joint causation), people tend to attribute causality to **both** agents. Since the email is only sent when *both* are logged in simultaneously, Zoe's action is a necessary part of the sufficient set — without her logging in, no email would have been sent. Most people recognize this and say yes, Zoe (along with Alice) caused the email.",
+  "timestamp": "2026-03-20T10:15:09.525796+00:00"
+}

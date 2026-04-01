@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-02",
+  "condition": "C2",
+  "output": "The longest satisfying substring is the one where Alice ends up with the white present.\n\nLet me trace the swaps:\n\n**Start:** Alice=pink, Bob=white, Claire=blue\n\n1. **Bob ↔ Claire:** Alice=pink, Bob=blue, Claire=white\n2. **Claire ↔ Alice:** Alice=white, Bob=blue, Claire=pink\n3. **Claire ↔ Bob:** Alice=white, Bob=pink, Claire=blue\n\n**Answer: (B) white present**",
+  "timestamp": "2026-03-20T10:59:05.829588+00:00"
+}

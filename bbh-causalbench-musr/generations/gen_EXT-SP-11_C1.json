@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-11",
+  "condition": "C1",
+  "output": "## The Kitchen Drawer\n\nMary would most likely look for the wooden spoon in the **kitchen drawer** — its original location that everyone was aware of at the start.\n\n**Reasoning (theory of mind):**\n\n1. **Original known location:** All three characters knew the wooden spoon was in the kitchen drawer.\n2. **Who moved it?** Emma took the spoon (from the cutlery rack) and placed it on the kitchen counter.\n3. **Was Mary aware of this move?** The story emphasizes that Mary was *\"engrossed, carefully crafting her exotic dish\"* with *\"eyes danced across the vibrant vegetables she was finely chopping\"* — she was deeply focused on her task. Emma's movements through the kitchen were described as quick and silent, specifically *\"not wanting to break the seamless rhythm\"* and *\"not disturbing the duo.\"*\n\nSince Mary was absorbed in her cooking and Emma deliberately moved quietly to avoid disrupting her, Mary most likely **did not register** Emma placing the spoon on the counter. Her last known belief about the spoon's location remains the **kitchen drawer**.",
+  "timestamp": "2026-03-20T10:36:20.147629+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-06",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correctness: Answer is 'nightstand' but correct answer is 'kitchen' — wrong answer though reasoning about Luke's belief state is internally consistent; Reasoning depth: Excellent multi-level belief-state tracking per character across multiple events, traces observation frames carefully; Self-monitoring: Uses explicit reasoning context injection and anchors to observation frames, showing awareness of frame-drift bias; Verification: Checks each event against Luke's location to verify his knowledge state, but doesn't consider that Luke might reason about likely places beyond his last-known state; Epistemic honesty: Presents conclusion with high confidence ('the only location') without acknowledging ambiguity about what 'most likely place to look' means — could mean belief-state or pragmatic search strategy; Alternative consideration: Doesn't consider that the question asks where Luke would 'look' which could factor in practical search behavior or that the kitchen is where the notepad was and where he might check; Audit trail: Every conclusion is explicitly derived from textual evidence with clear per-character tracking — highly reproducible reasoning chain despite wrong answer.",
+  "timestamp": "2026-03-23T11:05:40.794834+00:00"
+}

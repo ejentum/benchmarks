@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-16",
+  "condition": "C2",
+  "output": "**C**\n\nThe question asks which is \"most structurally accurate,\" meaning it's testing whether you can see past the two opposing positions to the deeper structural issue.\n\n- **A and B** each adopt one side's framing as if existing doctrine cleanly resolves it. They don't — courts are actively split on this.\n- **D** sounds reasonable but reduces the structural question to a single empirical test, which sidesteps the core issue.\n- **C** correctly identifies that the fundamental problem is categorical: \"learning from\" a work is a genuinely novel type of use that existing copyright law wasn't designed to address. Fair use doctrine assumed human transformative creation; infringement doctrine assumed copying for distribution. Training a model on text does neither in the traditional sense, which is precisely why these cases are so contested.",
+  "timestamp": "2026-03-20T17:52:59.412531+00:00"
+}

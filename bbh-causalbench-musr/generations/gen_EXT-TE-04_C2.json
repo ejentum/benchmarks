@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-04",
+  "condition": "C2",
+  "output": "Emily's timeline:\n\n- **10am–12pm**: Train station (seen by Linda)\n- **12pm–1pm**: Electronic store (seen by Ashley)\n- **1pm–2pm**: Walking to Statue of Liberty (seen by John)\n- **After 8pm**: Soccer field closed\n\nThe only open window is **2pm to 8pm**.\n\nThe answer is **(C)**.",
+  "timestamp": "2026-03-20T10:52:40.795846+00:00"
+}

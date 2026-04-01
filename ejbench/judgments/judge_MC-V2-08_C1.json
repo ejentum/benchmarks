@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-08",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent names hasty generalization as primary fallacy, not fallacy of composition — wrong answer, though composition is correctly identified as a sub-element of the argument; Multi-level breakdown of each premise with task→job→sector generalization chain and trend extrapolation critique; Agent adopts a CALIBRATE confidence posture and structures analysis carefully but does not explicitly name biases or course-correct mid-analysis; Premise-by-premise table maps actual vs. implied scope, functioning as structured verification of each inductive leap; Acknowledges cherry-picking and benchmark optimization but presents the hasty generalization label with confidence rather than treating composition as a competing candidate; Names composition as a sub-fallacy under the hasty generalization umbrella but never evaluates whether composition should be the primary label, missing the key competing framing; Table with actual/implied scope columns provides a reproducible derivation for each premise, though the meta-conclusion (hasty generalization > composition) is asserted not derived; Agent avoids rushing to conclusion and checks each premise independently, consistent with not pushing through errors, though this wasn't explicitly flagged; Avoids forward momentum bias and pattern completion bias but exhibits mild compositional shortcutting by subordinating the composition frame rather than resolving it against hasty generalization; Reasoning is structured and branching at the premise level but does not follow the loop/gate/interrupt topology — analysis is effectively linear across a table.",
+  "timestamp": "2026-03-23T04:45:47.912015+00:00"
+}

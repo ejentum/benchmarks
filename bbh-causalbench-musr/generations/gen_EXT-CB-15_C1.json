@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-15",
+  "condition": "C1",
+  "output": "In this hypothetical world with the stated structure:\n\n**Causal graph:**\n- Tanning salon → Skin\n- Beach → Skin\n- No relationship between tanning and beach (no confounding)\n\n**Analysis:**\n\nSince tanning and beach are **independent causes** of skin health with no causal link between them, beach is **not a confounder**. This means:\n\n- **Method 1** (marginal correlation) gives an unbiased estimate of tanning's effect, because there's nothing creating a spurious association between tanning and skin.\n- **Method 2** (stratified by beach) is also valid but unnecessary here — stratifying on beach doesn't remove bias because there was none to begin with.\n\n**Answer:** Yes — if skin health varies significantly and correlates with tanning salon treatment, it is likely due to tanning. The two causes are independent, so the observed correlation reflects a genuine causal effect, not confounding. Both methods will agree on this conclusion.\n\nThe only nuance: significant variation in skin health *overall* could be driven by tanning, beach, or both. But if the variation is specifically *associated with tanning* (as both methods would show), then tanning is a true cause of that variation.",
+  "timestamp": "2026-03-20T10:39:54.283333+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-07",
+  "condition": "C1",
+  "output": "## Causal Analysis\n\nLet me map out the structural causal model from your hypothetical world and compute the answer.\n\n**Variables:**\n| Variable | Values |\n|---|---|\n| S (Smoking) | 1 = smoking, 0 = nonsmoking |\n| H (Health) | 1 = good, 0 = poor |\n| B (Birth weight) | 1 = normal, 0 = low |\n| M (Mortality) | 1 = high, 0 = low |\n\n**DAG:** S → B ← H, S → M ← H, B → M\n\n**Structural equations (from your definitions):**\n- B = S OR H\n- M = S OR H OR B\n\n**Given:** H = 0 (poor health)\n\n**Intervention:** do(S = 1)\n\n**Step-by-step evaluation:**\n\n1. Set S = 1, H = 0\n2. **Birth weight:** B = S OR H = 1 OR 0 = **1** (normal)\n3. **Mortality:** M = S OR H OR B = 1 OR 0 OR 1 = **1** (high)\n\n**Yes** — infant mortality would be high if the mother is a smoking mother, given poor health. In fact, S = 1 alone is sufficient to force both B = 1 and M = 1 regardless of H, since every OR gate with at least one true input outputs true.",
+  "timestamp": "2026-03-20T10:37:00.437475+00:00"
+}

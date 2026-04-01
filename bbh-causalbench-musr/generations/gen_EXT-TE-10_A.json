@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-10",
+  "condition": "A",
+  "output": "(D) 5am to 11am\n\nThe only unaccounted window between waking up (5am) and the bookstore closing (6pm) is 5am to 11am.",
+  "timestamp": "2026-03-20T09:16:25.050654+00:00"
+}

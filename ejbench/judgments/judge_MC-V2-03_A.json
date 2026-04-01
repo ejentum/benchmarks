@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-03",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies 3.2% monthly churn and derives ~32.3% annual churn with valid arithmetic and benchmarking; traces three-plus levels from the raw metric through compounding to NRR tension and CAC payback implications; no explicit reflection on reasoning method, bias acknowledgment, or mid-analysis course correction; explicitly shows the compounding formula (1 − 0.968¹²) and cross-validates against the stated NRR as an internal consistency check; uses 'roughly' for the calculation but presents all other conclusions as certain with no structured confidence statements or identification of what would change the conclusion; considers only churn as the undermining metric without examining whether other figures (e.g., 18-month runway at burn, TAM assumptions) merit scrutiny or noting alternative interpretations of the question; every step is shown with explicit derivation and the NRR tension argument is fully traced, making the entire chain reproducible by a third party.",
+  "timestamp": "2026-03-23T02:24:51.226280+00:00"
+}

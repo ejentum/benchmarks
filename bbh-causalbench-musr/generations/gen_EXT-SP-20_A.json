@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-20",
+  "condition": "A",
+  "output": "The longest answer is: **on the desk**.\n\nFred placed the book he wanted to borrow onto the desk. Simon was in the study earlier but became absorbed in a painting on the opposite wall. Since Simon saw Fred in the room and knew Fred came to borrow a book, and the book was moved from the shelf to the desk by Fred, the desk is where Simon would look — he was present in the study when Fred was there and would be aware of Fred's actions with the book.",
+  "timestamp": "2026-03-20T09:21:03.528823+00:00"
+}

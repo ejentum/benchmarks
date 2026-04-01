@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-02",
+  "condition": "C2",
+  "output": "**The answer is (D) Joe finished first.**\n\nFrom the constraints:\n\n1. Ada = 2nd (given)\n2. Ada above Eli → Eli is 3rd, 4th, or 5th\n3. Mel below Eli → Mel is below Eli\n4. Amy below Mel → Amy is below Mel\n\nThis gives the chain: **Ada (2) > Eli > Mel > Amy**, filling positions 2, 3, 4, 5.\n\nThat leaves **Joe in 1st place**.\n\nFinal order: Joe, Ada, Eli, Mel, Amy.",
+  "timestamp": "2026-03-20T11:05:13.842010+00:00"
+}

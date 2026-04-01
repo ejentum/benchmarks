@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-10",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with accurate minute-by-minute trace peaking at 22°C using the 1.5°C/min net rate the problem specifies; goes beyond the answer to explain the overshoot mechanism and derives a general formula (overshoot = heating rate × delay), tracing second-order effects of the lag; proceeds linearly without flagging assumptions or checking its own approach mid-analysis; the trace table itself constitutes implicit verification but no independent re-derivation or boundary test is applied; the problem contains an internal contradiction (net 2°C/min vs. net 1.5°C/min) which the agent silently resolves without flagging the ambiguity or stating which interpretation was chosen; no alternative interpretations (e.g., using 2°C/min net as stated in the first clause) are mentioned or evaluated; every step is shown in the table with clear causal annotations, making the full chain reproducible by a third party.",
+  "timestamp": "2026-03-23T02:20:10.503951+00:00"
+}

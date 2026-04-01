@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-27",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid reasoning comparing 30% vs 75%; Goes one level beyond surface by laying out causal structure and computing the difference; No self-monitoring or reflection on reasoning process; Mentions the comparison as implicit verification but doesn't check from alternative angles; Presents conclusion confidently without acknowledging assumptions about the counterfactual framework; Acknowledges both actions but doesn't explore alternative interpretations of the counterfactual question; Full derivation trail with causal diagram, probability table, and explicit conclusion",
+  "timestamp": "2026-03-23T10:46:36.130604+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-10",
+  "condition": "B1",
+  "output": "## Results\n\n**Part 1 — Cycles to drop below 4500 mAh: 106 complete cycles**\n\n- Each cycle multiplies capacity by 0.999 (retains 99.9%)\n- After 105 cycles: 4501.39 mAh (still above threshold)\n- After 106 cycles: 4496.88 mAh (below 4500 mAh)\n- Formula: `n = ⌈ln(0.9) / ln(0.999)⌉ = ⌈105.31⌉ = 106`\n\n**Part 2 — Total hours of use: ≈ 1006.23 hours (~41.9 days)**\n\nEach successive cycle provides slightly less runtime because the capacity shrinks. The total is the geometric series:\n\n$$\\text{Total hours} = \\frac{1}{500} \\sum_{i=0}^{105} 5000 \\times 0.999^i = 10 \\times \\frac{1 - 0.999^{106}}{0.001} \\approx 1006.23 \\text{ hours}$$\n\nNote this is less than the naive estimate of 106 × 10 = 1060 hours — the ~54-hour difference is entirely due to the compounding capacity loss across cycles.",
+  "timestamp": "2026-03-22T21:45:39.331769+00:00"
+}

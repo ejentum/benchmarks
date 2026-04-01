@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-26",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (No instead of Yes) — the question asks about guaranteeing a long lifespan, which is ambiguous but the correct answer treats it as observational conditioning, not do-calculus intervention; Deep multi-level analysis with DAG structure, do-calculus formalization, and contrast between observational vs interventional; No explicit self-monitoring of the key interpretive ambiguity — proceeds confidently with the do-calculus reading without questioning whether 'guarantees' might mean conditioning; Basic verification via computing the observational case numerically, which actually supports the correct answer but agent dismisses it; Presents the do-calculus interpretation as definitively correct without acknowledging the ambiguity in 'guarantees a long lifespan'; Considers both interventional and observational interpretations but picks the wrong one; Full derivation trail showing every step from DAG to conclusion, fully reproducible.",
+  "timestamp": "2026-03-23T10:45:36.493407+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-15",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Agent reaches the wrong conclusion (No) despite the correct answer being Yes, though it partially engages the right logical structure; agent goes beyond surface level by distinguishing 'committed before X started' from 'committed before X committed' and traces multi-step chains; agent explicitly flags missing constraints ('Nothing in the constraints says this') showing active monitoring of its own inferences; agent checks each of T1, T4, T7 individually against the T5 property rather than just asserting; agent uses hedging ('could have started') and correctly distinguishes what is vs. is not derivable from the given constraints; agent does not consider alternative interpretations of the question or entertain that its skeptical reading might be the wrong framing; derivation chain is shown step-by-step with constraint numbers cited, making reasoning largely reproducible by a third party.",
+  "timestamp": "2026-03-23T03:02:14.786755+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-06",
+  "condition": "A",
+  "output": "A typical person would answer **No**.\n\nEven though Jake wanted to hit the bull's-eye and took actions aimed at doing so, his hand slipped and the shot \"went wild\" — the bullet hitting the target was lucky, not the result of skilled execution. Most people intuitively distinguish between a desired outcome that occurs *because of* one's intention/skill versus one that occurs *despite* a failure in execution. This is a classic \"deviant causal chain\" case in philosophy: the intention and the outcome match, but the causal path connecting them is not the right kind. Ordinary intuition says that's not \"intentional.\"",
+  "timestamp": "2026-03-20T09:15:58.548348+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-06",
+  "condition": "B2",
+  "output": "## Analysis: Free Returns Policy\n\n**Before free returns (per customer/year):**\n| Metric | Value |\n|---|---|\n| Orders | 4 |\n| Return rate | 8% → 0.32 returns |\n| Kept orders | 3.68 |\n| Margin from kept orders | 3.68 × $13.50 = **$49.68** |\n| Return costs | 0.32 × $7 = **$2.24** |\n| **Net margin** | **$47.44** |\n\n**After free returns (per customer/year):**\n| Metric | Value |\n|---|---|\n| Orders | 5.6 (+40%) |\n| Return rate | 25% → 1.4 returns |\n| Kept orders | 4.2 |\n| Margin from kept orders | 4.2 × $13.50 = **$56.70** |\n| Return costs | 1.4 × $7 = **$9.80** |\n| **Net margin** | **$46.90** |\n\n**Delta: $46.90 − $47.44 = −$0.54 per customer per year**\n\nThe 40% frequency boost only adds **0.52 net kept orders** (4.2 vs 3.68) because the return rate tripled from 8% → 25%. The extra ordering doesn't just create new returns on the incremental orders — it reflects a behavioral shift where customers return more of *all* orders, wiping out most of the frequency gain.\n\n### Answer: **(B)**\n\nThe return costs and lost margin on returned orders slightly exceed the incremental margin from higher order frequency. The policy is marginally unprofitable.",
+  "timestamp": "2026-03-20T17:28:37.625588+00:00"
+}

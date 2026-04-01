@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-17",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (camp table) with valid reasoning about Eli's knowledge state; Multi-level analysis tracking both object movement and character awareness/attention; Some self-monitoring implied by carefully distinguishing what Eli observed vs didn't; Basic verification by confirming no further notebook movement after Emma's; Acknowledges uncertainty about Eli's awareness without explicit confidence levels; Systematically considers both the actual location (relic's shelf) and Eli's believed location (camp table), explaining why the latter is the answer; Full derivation trail from initial placement through Emma's move to Eli's knowledge state, fully reproducible",
+  "timestamp": "2026-03-23T13:27:15.588785+00:00"
+}

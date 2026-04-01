@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-02",
+  "condition": "C2",
+  "output": "## Causal Analysis\n\n**Yes — if Lirg is observed, it is more likely the individual was *not* Jyka.**\n\n### Setup\n\nThe causal graph:\n- **Jyka → Hwax**, **Jyka → Lirg** (direct effects)\n- **Gyzp → Hwax**, **Gyzp → Lirg** (unobserved confounder)\n- **Hwax → Lirg**\n\nGiven:\n- P(Lirg | ¬Jyka) = 0.46\n- P(Lirg | Jyka) = 0.32\n\n### Reasoning (Bayes' Theorem)\n\nThe question is about **P(¬Jyka | Lirg)** — a diagnostic/inverse probability, not a causal intervention. We apply Bayes' theorem.\n\nAssuming no prior information favoring Jyka or ¬Jyka, we use **P(Jyka) = 0.5**:\n\n**P(Lirg)** = P(Lirg|Jyka)·P(Jyka) + P(Lirg|¬Jyka)·P(¬Jyka)\n= 0.32 × 0.5 + 0.46 × 0.5 = **0.39**\n\n**P(¬Jyka | Lirg)** = P(Lirg|¬Jyka) · P(¬Jyka) / P(Lirg)\n= (0.46 × 0.5) / 0.39 = 0.23 / 0.39 ≈ **0.59 (59%)**\n\n### Conclusion\n\nIf Lirg is observed, there is approximately a **59% probability** the individual was not Jyka, versus ~41% that they were. This makes sense intuitively: Jyka *reduces* the probability of Lirg (32% vs 46%), so observing Lirg is evidence *against* Jyka being present.",
+  "timestamp": "2026-03-20T10:55:43.422253+00:00"
+}

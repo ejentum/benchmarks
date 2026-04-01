@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-26",
+  "condition": "C2",
+  "output": "## Causal Analysis\n\n**Causal graph:**\n\n```\nEnglish (E) ──→ Diabetes (D) ──→ Lifespan (L)\n    │                                ↑\n    └────────────────────────────────┘\nSmoking (S, unobserved) ──→ D, L\n```\n\n**The question asks:** P(E=0 | do(L=long)) — under an intervention forcing a long lifespan, is it likely the person doesn't speak English?\n\n**Key reasoning:** An intervention do(L=long) **severs all incoming arrows to L**. That means L is no longer caused by E, D, or S — it is set externally. Once those arrows are cut, L carries **no information** about E.\n\nTherefore:\n\n> P(E=0 | do(L=long)) = P(E=0)\n\nwhich is simply the prior probability of not speaking English — unchanged by the intervention on lifespan.\n\n---\n\n**Answer: No.** We cannot conclude it is likely the person does not speak English. The intervention on lifespan disconnects it from all its causes (English, diabetes, smoking), so a guaranteed long lifespan provides zero evidence about whether someone speaks English. The observational pattern (non-English speakers having higher lifespan probabilities: 71%/46% vs 40%/22%) is irrelevant under intervention, because that association flows *through* causal paths that the intervention destroys.",
+  "timestamp": "2026-03-20T11:05:49.928683+00:00"
+}

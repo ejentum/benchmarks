@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CA-02",
+  "condition": "A",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.1429,
+  "injection_composite": null,
+  "brief_justification": "Agent answers Yes but correct answer is No — folk causal intuition favors proximate causes (the explosion), not distal enabling conditions like 'the crime life'; agent's characterization of folk intuition is superficial and asserted without grounding in causal cognition research; agent never questions whether its model of 'typical person' reasoning is accurate or might be inverted; no sanity check against known patterns of folk causation attribution; agent hedges slightly with 'tend to' but presents its folk-intuition model as straightforwardly valid without flagging the assumption; agent does not consider the No interpretation at all — never asks why a typical person might reject the crime life as a cause; the derivation chain (crime life → both attackers connected to it → enabling condition → folk causation) is sketched but the critical premise that folk causation traces to distal enablers is stated without support.",
+  "timestamp": "2026-03-23T09:31:50.821225+00:00"
+}

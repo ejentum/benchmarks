@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-17",
+  "condition": "A",
+  "output": "**(A) Consistent — 3 replicas at 99.5% each gives system availability of 1 − (0.005)³ = 99.9999875%, which is even better than 99.99%**\n\nThe math:\n\n- Each replica has downtime probability = 0.005\n- System is down only when all 3 fail simultaneously: (0.005)³ = 0.000000125\n- System availability = 1 − 0.000000125 = 99.9999875% ≈ **seven nines**\n\nThis is **better** than the four nines (99.99%) Lead A claims, so the claims are consistent — Lead B's architecture can easily deliver Lead A's stated uptime. Lead A may even be understating the theoretical availability, or real-world factors (correlated failures, deploys, shared dependencies) bring it down from the theoretical ~7 nines to the observed ~4 nines.\n\nOption (D) tries to frame this as a contradiction, but \"we achieve better than X\" doesn't contradict \"we have X.\" Lead A is reporting observed uptime, which can be lower than the theoretical maximum.",
+  "timestamp": "2026-03-22T16:39:07.047081+00:00"
+}

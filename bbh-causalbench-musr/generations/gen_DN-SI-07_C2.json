@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-07",
+  "condition": "C2",
+  "output": "**The answer is (B) 35–40 minutes.**\n\nThe math:\n\n- 40% capacity increase → **20–40% increase in VMT** (using the 5–10% per 10% rule)\n- That alone claws back roughly half to all of the 20-minute improvement\n- The 15% public transit ridership drop adds *more* cars onto the road network, further eroding gains\n- But some net capacity benefit remains because the physical road still exists\n\nFull reversion to 45+ minutes (C) would require VMT growth to *exceed* the capacity addition. The induced demand elasticity (0.5–1.0) makes that possible at the high end, but the midpoint estimate lands at **35–40 minutes** — a real but disappointing improvement over the original 45.\n\nOption A ignores induced demand entirely. Option D underestimates how much the transit ridership drop compounds the effect.",
+  "timestamp": "2026-03-20T17:51:20.471667+00:00"
+}

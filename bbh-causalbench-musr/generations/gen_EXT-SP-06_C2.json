@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-06",
+  "condition": "C2",
+  "output": "## The nightstand.\n\n**Reasoning based on Luke's actual knowledge state:**\n\n1. **Initial state:** All three know the keys are on the nightstand.\n\n2. **Maria moves the keys** from the nightstand to a kitchen drawer. At this moment, Henry is with her and sees it. Luke is elsewhere — patrolling the property boundaries. **Luke does not witness this move.**\n\n3. **Henry later moves the keys** from their current spot to a safety deposit box. At this moment, Luke has been sent outside to secure the house boundaries, and Maria is upstairs on the phone. **Luke does not witness this move either.**\n\n**Luke's knowledge never updated from the initial state.** He was physically separated from both key-moving events — first patrolling the property, then outside securing boundaries. Since the last location he knew about is the **nightstand**, that is where he would look.",
+  "timestamp": "2026-03-20T10:55:16.923659+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-20",
+  "condition": "A",
+  "output": "**No, it is NOT impossible.** A valid assignment exists. Here's one:\n\n| | Room 1 | Room 2 | Room 3 |\n|---|---|---|---|\n| **Slot 1** | T5 | T6 | T7 |\n| **Slot 2** | T8 | T1 | — |\n| **Slot 3** | T3 | *(unavail)* | T4 |\n| **Slot 4** | T2 | — | — |\n\n**Constraint verification:**\n\n1. **Max 1 talk per room per slot** — satisfied (check each cell).\n2. **T1 ≠ T2 same slot** — T1 in slot 2, T2 in slot 4. OK.\n3. **T3 & T4 same slot** — both in slot 3. OK.\n4. **T5 in Room 1** — T5 is R1, S1. OK.\n5. **T6 in slot 1** — T6 is R2, S1. OK.\n6. **T7 immediately before T8** — T7 in slot 1, T8 in slot 2. OK.\n7. **Room 2 unavailable in slot 3** — Room 2, slot 3 is empty. OK.\n\n8 talks placed in 11 available positions with all constraints satisfied.",
+  "timestamp": "2026-03-22T16:40:12.009245+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-02",
+  "condition": "C1",
+  "output": "## Reasoning Through the Problem\n\nThis is a **Bayesian inverse inference** question. We need P(not Jyka | Lirg).\n\n### Given\n\n| Condition | P(Lirg) |\n|-----------|---------|\n| Not Jyka  | 46%     |\n| Jyka      | 32%     |\n\n### Applying Bayes' Theorem\n\nAssuming no prior information favoring Jyka or not Jyka, we use **P(Jyka) = P(not Jyka) = 0.5**.\n\n**Step 1 — Total probability of Lirg:**\n\nP(Lirg) = P(Lirg|Jyka)·P(Jyka) + P(Lirg|¬Jyka)·P(¬Jyka)\n        = 0.32 × 0.5 + 0.46 × 0.5\n        = 0.16 + 0.23 = **0.39**\n\n**Step 2 — Posterior:**\n\nP(¬Jyka | Lirg) = P(Lirg|¬Jyka) · P(¬Jyka) / P(Lirg)\n                 = (0.46 × 0.5) / 0.39\n                 = 0.23 / 0.39\n                 ≈ **0.59 (59%)**\n\n### Answer\n\n**Yes.** If Lirg is observed, it is more likely that the individual was **not Jyka** (~59% probability vs ~41% for Jyka).\n\nThe intuition: Jyka *reduces* the probability of Lirg (32% < 46%), so observing Lirg is **evidence against** Jyka. Bayes' theorem formalizes this — the group where Lirg is more common (not Jyka) contributes a larger share of Lirg-positive cases.",
+  "timestamp": "2026-03-20T10:34:46.369800+00:00"
+}

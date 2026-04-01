@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-16",
+  "condition": "B1",
+  "output": "**B**\n\nThe scenario describes a textbook case of **proxy substitution under constraint**. You remove one SES-correlated filter (test scores) but the operational reality — same staff, 35% more applications — forces reviewers toward heuristics that correlate *more* strongly with wealth:\n\n- **School prestige** → directly tracks zip code/income\n- **Extracurricular breadth** → requires money, transport, free time\n- **Essay polish** → reflects access to coaching/editing\n\nThe key insight: standardized tests, for all their flaws, have a *known and partially correctable* SES bias (fee waivers, prep access, score-optional context). The replacement signals are **less transparent, harder to adjust for, and more tightly coupled to family resources**. The process becomes more opaque while the stratification stays the same or worsens.\n\nThis is a systems-thinking problem about **second-order effects** — the policy's intent (access) is undermined by an operational bottleneck (reviewer capacity) that shifts the filtering mechanism to worse proxies.",
+  "timestamp": "2026-03-20T17:21:58.602136+00:00"
+}

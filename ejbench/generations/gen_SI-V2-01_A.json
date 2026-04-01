@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-01",
+  "condition": "A",
+  "output": "## Solution\n\n**Stage 1:** 1,000 widgets → 100 defective, 900 good (all pass forward)\n\n**Stage 2:** 5% destroyed uniformly:\n- Defective: 100 × 0.95 = **95**\n- Good: 900 × 0.95 = **855**\n\n**Stage 3** (inspection):\n- Defective units passing (10% undetected): 95 × 0.10 = **9.5**\n- Good units passing (98% correctly accepted): 855 × 0.98 = **837.9**\n\n**Total shipped:** 9.5 + 837.9 = **847.4 ≈ 847**\n\nThe answer is **(C) 847**.",
+  "timestamp": "2026-03-22T15:54:24.839471+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-MC-07",
+  "condition": "C2",
+  "output": "# Fred is the most likely murderer.\n\nThe evidence converges on him through three pillars:\n\n**Means:** Fred managed the studio's lost and found, which contained the syringe. The coroner confirmed that exact syringe was the murder weapon. He had direct custody of it.\n\n**Opportunity:** Fred was the night security guard, scheduled to check the property during the time Giselle was practicing alone. He knew she stayed late — \"always the last to leave\" — and had unrestricted access to the studio.\n\n**Motive:** Giselle discovered security lapses and had evidence of his negligence. She threatened to report him to the authorities, which would have cost him his job and reputation.\n\nAll three elements — the weapon he controlled, his presence at the scene during the window of opportunity, and a direct personal threat from the victim — point squarely at Fred.",
+  "timestamp": "2026-03-20T11:09:37.840543+00:00"
+}

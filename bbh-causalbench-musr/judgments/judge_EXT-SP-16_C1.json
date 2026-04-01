@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-16",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 2
+  },
+  "composite_score": 0.2381,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (desk instead of drawer) but reasoning about Lisa's movement is sound; Goes one level beyond surface by tracking object movements and Matthew's perspective; No self-monitoring or questioning of assumptions; No verification against alternative possibilities; Presents conclusion as certain with no uncertainty acknowledgment; Does not consider the drawer as an alternative or evaluate what Matthew actually observed vs missed; Shows the reasoning chain (Lisa moved pen, Matthew saw it) but fails to consider Matthew's knowledge state properly — he was watching a movie with headphones when Lisa moved the pen, so he likely didn't observe the move and would default to the drawer as the pen's known location.",
+  "timestamp": "2026-03-23T13:26:40.599816+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-27",
+  "condition": "A",
+  "output": "## Solution\n\n**At t = 0:** 5 cables remain, each bearing **9.4 tons** with **10-ton capacity**.\n\n**Fatigue:** Each cable's capacity decreases as 10 − 0.5t (where t is in hours).\n\n**Failure condition:** capacity drops to the current load of 9.4 tons.\n\n$$10 - 0.5t = 9.4$$\n$$0.5t = 0.6$$\n$$t = 1.2 \\text{ hours}$$\n\nAll 5 cables are identical and bear the same load, so they all hit the failure threshold **simultaneously**. The moment any one fails, the load redistributes to 4 cables: 47/4 = **11.75 tons each** — far above the survivors' already-degraded 9.4-ton capacity. Instant cascade.\n\n**The bridge collapses 72 minutes after Cable 1 snaps.**",
+  "timestamp": "2026-03-22T16:03:59.145594+00:00"
+}

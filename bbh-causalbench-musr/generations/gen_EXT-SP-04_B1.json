@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-04",
+  "condition": "B1",
+  "output": "No.\n\nStarting at (0,0) facing forward (north):\n\n1. 1 step forward → (0,1)\n2. 10 steps left → (-10,1)\n3. 4 steps forward → (-10,5)\n\nYou end at (-10,5), not the origin. You do not return to the starting point.",
+  "timestamp": "2026-03-20T09:35:00.652786+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-13",
+  "condition": "B1",
+  "output": "**(B)**\n\nAll four share the same structural pattern: **open ingestion with layered review-and-revert**. Specifically:\n\n1. **Low barrier to entry** — anyone can contribute at the lowest layer.\n2. **Progressive filtering** — higher layers apply increasingly selective review (community editors → admins, reviewers → maintainers, peer reviewers → editors, trial courts → appellate courts).\n3. **Revert over prevent** — the system is designed so that undoing bad input is cheaper than gatekeeping all input upfront.\n\nThe other options capture surface features but miss the structural isomorphism. (A) is true but vague. (C) is partially true but misses that the *openness* is load-bearing. (D) is an empirical claim about motivation, not structure.",
+  "timestamp": "2026-03-20T17:17:58.898604+00:00"
+}

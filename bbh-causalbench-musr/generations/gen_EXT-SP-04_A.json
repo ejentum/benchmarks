@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-04",
+  "condition": "A",
+  "output": "No.\n\nYou end up 5 steps forward and 10 steps left from where you started — not back at the starting point.",
+  "timestamp": "2026-03-20T09:17:16.036012+00:00"
+}

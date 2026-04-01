@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-07",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (D) with valid reasoning; goes one level beyond surface by mapping timeline as shared resource; minimal self-monitoring beyond mentioning 'reasoning injection'; verifies by checking each option against confirmed sightings; presents conclusion confidently without noting assumptions like bookstore hours; systematically evaluates all four options with explicit rejection reasons; full derivation trail with table and per-option analysis",
+  "timestamp": "2026-03-23T10:56:31.925258+00:00"
+}

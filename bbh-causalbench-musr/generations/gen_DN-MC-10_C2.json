@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-10",
+  "condition": "C2",
+  "output": "**(B)**\n\nThis is a textbook **induction problem** applied to safety-critical systems. The core flaw:\n\n- **\"No observed failures\" ≠ \"no possible failures.\"** 10,000 tests sample a tiny fraction of the input space. Safety-critical failures cluster in the long tail — edge cases, adversarial inputs, and novel compositions that testers didn't anticipate precisely *because* they're hard to anticipate.\n\nThe other options identify real concerns (sample size, realism, distribution shift), but they're symptoms. Option B names the underlying logical error: **you cannot prove the absence of unsafe behavior by demonstrating the presence of safe behavior across a finite sample.** This is the same reason passing all unit tests doesn't prove a program is bug-free.\n\nIn safety engineering this is well-established — Dijkstra's observation that \"testing shows the presence of bugs, never their absence\" applies directly here.",
+  "timestamp": "2026-03-20T17:56:25.705486+00:00"
+}

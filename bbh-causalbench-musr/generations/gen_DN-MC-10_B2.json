@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-10",
+  "condition": "B2",
+  "output": "**(B)**\n\nThe core flaw is conflating \"no observed failures\" with \"no possible failures.\" 10,000 scenarios, no matter how well-chosen, are a finite subset of an effectively infinite input space. Safety-critical failures concentrate in the long tail — precisely the scenarios that are hardest to anticipate and therefore least likely to appear in a test suite.\n\nThis is a form of inductive fallacy: the conclusion (\"the system is safe\") doesn't follow from the premise (\"it was safe in these cases\"). It's the same error as \"this bridge held up under every load we tried, therefore it cannot collapse.\"\n\nThe other options identify real concerns (sample size, realism, distribution shift), but they're specific instances of the deeper problem that (B) captures: testing for presence of safety cannot prove absence of unsafety.",
+  "timestamp": "2026-03-20T17:35:21.206612+00:00"
+}

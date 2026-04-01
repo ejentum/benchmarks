@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-05",
+  "condition": "B1",
+  "output": "**(B)**\n\nAll four are instances of **Goodhart's Law** — \"when a measure becomes a target, it ceases to be a good measure.\"\n\nEach one counts a **process artifact** (transactions, lines, arrests, papers) rather than the **outcome** it's supposed to represent (wellbeing, valuable software, public safety, knowledge). This creates perverse incentives:\n\n- **GDP** — incentivizes economic activity even if destructive (disasters \"boost\" GDP)\n- **Lines of code** — incentivizes verbosity over elegant, minimal solutions\n- **Arrests** — incentivizes policing easy targets over actually reducing crime\n- **Papers** — incentivizes salami-slicing and p-hacking over genuine discovery\n\n(A) is too charitable — the problem isn't imprecision, it's that optimizing for the proxy actively **undermines** the goal.",
+  "timestamp": "2026-03-20T17:14:58.888242+00:00"
+}

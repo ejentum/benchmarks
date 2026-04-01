@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-23",
+  "condition": "B2",
+  "output": "**Yes**, — arriving to school on time is more likely than arriving late.\n\n**Calculation** (total probability):\n\nP(on time) = P(on time | wake on time) × P(wake on time) + P(on time | wake late) × P(wake late)\n\n= 0.52 × 0.95 + 0.87 × 0.05\n\n= 0.494 + 0.0435\n\n= **0.5375 (53.75%)**\n\nSince 53.75% > 50%, arriving on time is more likely overall. The dominant factor is the 95% of days Alice wakes up on time, where she has a 52% chance of arriving on time — just barely above half, but enough to tip the overall probability above 50%.",
+  "timestamp": "2026-03-20T10:05:51.407784+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-13",
+  "condition": "A",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (bookshelf instead of bell stand) — failed to model Rinchen's false belief about the bell's location mapping to prayer book location; Goes one level deep by considering Rinchen's observational state but misapplies the theory of mind; Implicitly rechecks by noting Rinchen was oblivious but doesn't question whether the 'rightful place' framing is the right lens; Mentions what Rinchen could observe but doesn't verify against all location changes; Presents conclusion with some hedging but no structured uncertainty; Mentions prayer table as alternative but dismisses it without considering bell stand; Shows reasoning chain from premises to conclusion but the premises themselves are wrong.",
+  "timestamp": "2026-03-23T12:43:42.055003+00:00"
+}

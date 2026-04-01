@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-06",
+  "condition": "B1",
+  "output": "**No.** Method 2 is more correct.\n\nIn this world, talent and effort are **independent** — neither causes the other, and no common cause links them. Elite institution admission is a **collider**: a variable caused by both talent and effort.\n\n**Method 1** conditions on the collider (admission status). This opens a spurious path between talent and effort, creating an artificial negative association — e.g., among admitted students, those with less talent must have compensated with more effort. This is **collider bias** (Berkson's paradox). The correlation you'd observe doesn't reflect any real causal or associational relationship between talent and effort.\n\n**Method 2** examines the unconditional relationship between talent and effort, which correctly reveals that they are unrelated in this world.\n\nConditioning on a collider introduces bias; avoiding it preserves the true (null) relationship.",
+  "timestamp": "2026-03-20T09:36:57.765978+00:00"
+}

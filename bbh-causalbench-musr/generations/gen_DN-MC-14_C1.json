@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-14",
+  "condition": "C1",
+  "output": "**(B)**\n\nThe three claims are mutually contradictory:\n\n- **1 vs 2:** If the model \"never stores or memorizes\" personal data, it can't \"improve by learning from user interactions\" — learning *is* a form of retention (in the weights).\n- **2 vs 3:** If user data has influenced model weights through training, \"complete deletion\" would require retraining from scratch without that data — computationally impractical and rarely what companies actually do.\n- **1 vs 3:** If the model truly never stored the data in the first place, there's nothing to delete, making the deletion promise meaningless.\n\nThe system described would need to simultaneously not retain data, learn from data, and un-learn data on request. That's logically impossible.",
+  "timestamp": "2026-03-20T17:46:41.198107+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-07",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly correct answer (B) with valid reasoning about zero surplus capacity; goes one level deeper by naming the 'steady-state trap' pattern and prescribing overprovisioning as the fix, but does not trace second-order effects; no explicit monitoring of own assumptions or named biases, proceeds linearly; implicitly confirms the 500=500 math but performs no counterfactual or boundary-condition check; acknowledges conditions that would change the outcome ('until traffic drops or more capacity is added') without structured confidence analysis; never evaluates or dismisses options A, C, or D; derivation chain is reproducible for the core claim (5×100=500=incoming) but the 2000-request accumulation calculation is asserted rather than shown step-by-step.",
+  "timestamp": "2026-03-23T02:18:45.163587+00:00"
+}

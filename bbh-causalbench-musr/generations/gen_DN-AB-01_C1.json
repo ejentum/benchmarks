@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-01",
+  "condition": "C1",
+  "output": "**The answer is (B).**\n\nEach case engineered a **separation between the measurement interface and the underlying system**, then optimized the measurement layer independently of reality:\n\n- **Theranos** — the demo (measurement interface) was decoupled from the actual device (underlying system)\n- **Enron** — the balance sheet (measurement interface) was decoupled from actual debt obligations (underlying system)\n- **Volkswagen** — the emissions test output (measurement interface) was decoupled from real driving emissions (underlying system)\n- **WeWork** — the profitability metric (measurement interface) was decoupled from actual operating costs (underlying system)\n\nThe structural pattern is identical in all four: **construct a proxy layer that is observable by evaluators, then optimize that layer while the ground truth behind it diverges unchecked.**\n\n(A) is technically true but names the legal conclusion, not the structural mechanism. (C) and (D) are surface correlations that don't describe the shared architecture of the failure.",
+  "timestamp": "2026-03-20T17:38:35.004851+00:00"
+}

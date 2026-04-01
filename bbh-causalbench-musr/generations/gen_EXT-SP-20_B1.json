@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-20",
+  "condition": "B1",
+  "output": "The longest satisfying answer to this question is: **the desk**.\n\nFred placed the book he wanted to borrow onto the desk. Simon was in the study earlier but then became absorbed in a painting on the opposite wall. He wasn't described as observing Fred put the book on the desk. However, the book's original known location was **the shelf**, and Simon would default to looking there first — except Fred moved it to the desk, and the question asks for the *most likely* place Simon would look.\n\nSince Simon was in the study when Fred placed the book on the desk, and the story says Simon was \"engrossed in a painting on the opposite wall\" at that moment while Fred was at the desk, Simon likely **did not notice** Fred moving the book.\n\n**Simon would most likely look on the shelf** — that's where the book has always been kept, and he has no reason to believe it was moved.",
+  "timestamp": "2026-03-20T09:39:25.970239+00:00"
+}

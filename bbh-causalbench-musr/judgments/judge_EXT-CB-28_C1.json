@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-28",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning about collider bias; Multi-level analysis identifying the collider structure, explaining why conditioning opens a spurious path, and contrasting with/without conditioning; Some self-monitoring via suppress/amplify framework but no explicit bias-checking beyond that; Basic verification by comparing conditioned vs unconditioned scenarios but no formal counterfactual test; Acknowledges the key assumption (no unmentioned causal paths) but doesn't quantify uncertainty; Systematically compares Method 1 vs no conditioning and explains why the alternative is superior; Full derivation from DAG structure through collider identification to conclusion, fully reproducible",
+  "timestamp": "2026-03-23T13:07:56.333715+00:00"
+}

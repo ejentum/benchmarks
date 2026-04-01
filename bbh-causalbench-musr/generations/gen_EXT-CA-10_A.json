@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-10",
+  "condition": "A",
+  "output": "A typical person would answer: **Yes**.\n\nMost people attribute causation to the neighbor in this scenario because the neighbor was the proximate (direct) cause — it was the neighbor's car that was involved in the accident, and the child was injured while in the neighbor's care/vehicle. Even though the drunk driver was the most blameworthy party, and Joe's delay set the chain of events in motion, ordinary causal judgment recognizes that the neighbor's act of driving the child (thereby placing the child in that specific time and place) was a direct causal link to the injury.",
+  "timestamp": "2026-03-20T09:16:55.412056+00:00"
+}

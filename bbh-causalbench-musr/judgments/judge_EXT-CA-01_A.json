@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CA-01",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.3333,
+  "injection_composite": null,
+  "brief_justification": "Agent answers 'Yes' but correct answer is 'No' — wrong empirically, though the causal logic is internally coherent; Agent goes one level deep by distinguishing joint causation from overdetermination and explaining why both logins were necessary; No self-monitoring — agent never questions whether its causal theory accurately predicts empirical human responses, nor considers that its intuition may diverge from actual survey data; No verification attempted — agent makes no effort to sanity-check its prediction against known psychology of causal attribution; Agent states 'a typical person would answer Yes' with full confidence, no acknowledgment that this is an empirical claim with uncertainty; Agent mentions overdetermination as a contrasting case but only to reinforce its Yes answer, never genuinely evaluates whether 'No' is the response and why; The reasoning chain (joint necessity → genuine cause → Yes) is traceable step by step, though the empirical premise about typical responses is never sourced or justified.",
+  "timestamp": "2026-03-23T09:29:21.350143+00:00"
+}

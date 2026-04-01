@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-06",
+  "condition": "B2",
+  "output": "**The nightstand.**\n\nLuke's knowledge of the keys' location never changed from the initial state. Here's the information asymmetry trace:\n\n1. **Initial state:** All three know the keys are on the nightstand.\n2. **Maria moves keys** from nightstand → kitchen drawer. Luke is outside doing boundary checks and does not witness this. Henry is with Maria and sees it.\n3. **Henry moves keys** from kitchen drawer → safety deposit box. Luke is outside securing boundaries (Henry just sent him there). Maria is upstairs on the phone. Neither witnesses this.\n\nLuke was never present for either move, so his last known location for the keys remains **the nightstand** — the original spot everyone knew about.",
+  "timestamp": "2026-03-20T09:55:55.315818+00:00"
+}

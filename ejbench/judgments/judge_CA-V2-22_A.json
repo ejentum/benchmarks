@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-22",
+  "condition": "A",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Agent concludes ~85-92% of original accuracy which aligns directionally with 'Yes' but presents a quantitative range rather than confirming the binary correct answer, making it partially correct; analysis is multi-level, tracing feature importance vs unique information, bidirectional redundancy symmetry, and second-order implications of multicollinearity; no explicit self-monitoring or bias-naming, the reasoning proceeds linearly without pausing to question its own framework assumptions; performs a cross-validation sanity check (X3+X4+X5 at 30% importance yields 80% accuracy, so X1 at 45% should do at least that) but does not re-derive from a fully independent angle; acknowledges the range uncertainty and implicitly accepts the redundancy hypothesis as a premise without flagging it as an assumption that could be wrong; the naive importance interpretation is addressed and rejected with specific reasoning, but no other competing models of feature interaction are evaluated; table and step-by-step logic make the chain largely reproducible, though the leap from 'X3+X4+X5 → 80%' to 'X1 alone → 85-92%' skips intermediate justification.",
+  "timestamp": "2026-03-23T02:40:17.712376+00:00"
+}

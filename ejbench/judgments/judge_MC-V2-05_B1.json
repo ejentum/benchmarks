@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-05",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.8,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at exactly correct answer (No) with EU, UNSC, ICC, WTO, R2P as decisive counterexamples and valid chain of reasoning; traces three levels: definitional anchoring → empirical counterexamples → semantic equivocation mechanism, hitting second-order analysis of why the framing misleads; shows process awareness through explicit term anchoring and naming the 'semantic drift problem' but does not name own potential biases or explicitly course-correct mid-analysis; tests claim against multiple operationalizations of 'overridden' and distinguishes what the passage gets right vs. wrong, though no explicit counterfactual or re-derivation from an independent angle; cleanly separates known facts from definitional assumptions, identifies the self-serving narrowing, and distinguishes accurate vs. inaccurate sub-claims in the passage; evaluates five independent counterexamples across different institutional types and addresses the narrow reading that would rescue the claim, with explicit reasons for rejection; every conclusion traces to named cases, dates, and legal citations (Costa v. ENEL 1964, UNSC Chapter VII, WTO DSM) enabling full reproduction; the injected negative gate concerns ecosystem autopoietic intervention — entirely mismatched to the task — so the agent neither falls into it nor addresses it, earning a mid score for avoidance without awareness; the agent substitutes its own reasoning scaffold (semantic_fingerprinting, definition_lineage_tracking) for the injected suppress terms (static_system_assumption, external_control_sufficiency), avoiding those modes but not explicitly; the injected topology maps autopoietic boundary checks and process gates irrelevant to the historical question, and the agent's reasoning follows a linear term-anchor → evidence → verdict chain rather than the branching gate structure in the topology.",
+  "timestamp": "2026-03-23T03:38:18.801670+00:00"
+}

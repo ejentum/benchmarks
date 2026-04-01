@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-02",
+  "condition": "B2",
+  "output": "This is a straightforward question about folk causal intuition — no code or engineering task involved, so I'll answer directly.\n\n**A typical person would answer: Yes.**\n\nMost people would say that Mr. Wallace's involvement in the crime life was a cause of his death. The reasoning is intuitive: his crime lifestyle is what put him in a position where both Mr. Vincent wanted to poison him *and* Mr. Bruce wanted to run him off the road. Without the crime life, neither of these events would have occurred. It functions as a distal/background cause that enabled both proximate causes.\n\nThis aligns with research on folk causal judgments — people tend to recognize background enabling conditions as causes when they are salient and clearly connected to the outcome, especially when the question frames them that way (\"the crime life\"). The crime life is the common cause behind both independent lethal threats.",
+  "timestamp": "2026-03-20T09:52:42.658389+00:00"
+}

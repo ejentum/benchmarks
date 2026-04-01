@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-02",
+  "condition": "B1",
+  "output": "The answer is **(B) 6am to 8am**.\n\nLisa's schedule accounts for every slot except 6am–8am:\n\n- 6am: woke up\n- 8am–10am: airport\n- 10am–1pm: school\n- 1pm–3pm: electronic store\n- 3pm–8pm: cafe\n- 8pm–10pm: mall\n- After 10pm: field closed\n\nThe only open window is **6am to 8am**.",
+  "timestamp": "2026-03-20T09:32:36.653704+00:00"
+}

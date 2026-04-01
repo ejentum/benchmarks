@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-11",
+  "condition": "C2",
+  "output": "**The answer is (B).**\n\nThis is a classic **positive feedback loop** (specifically, a filter bubble / engagement trap):\n\n1. Power users dominate early signals → trending skews niche\n2. Casual users disengage from trending → their signal disappears\n3. Less casual signal → even more power user dominance → even narrower trending\n4. The loop reinforces itself with no self-correcting mechanism\n\nThe other options fail because:\n- **(A)** ignores that 60% of the audience is being alienated — serving 40% well while losing the majority is not a success state\n- **(C)** is wishful thinking; the empirical pattern is disengagement, not conversion\n- **(D)** requires a corrective mechanism that doesn't exist in the described system — the algorithm optimizes on the data it receives, and the data gets progressively more skewed\n\nThe key insight is that **the algorithm's input distribution shifts as a consequence of its own output**, creating a degenerative cycle with no built-in stabilizer.",
+  "timestamp": "2026-03-20T17:52:53.110640+00:00"
+}

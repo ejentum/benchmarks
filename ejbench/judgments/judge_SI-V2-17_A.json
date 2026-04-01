@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-17",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Exact correct answer with valid arithmetic reaching N(4)=218.75 < 220; goes one level beyond computation by noting convergence toward equilibrium from above, but no second-order analysis; no explicit monitoring of reasoning process, biases, or assumptions — proceeds linearly; mentions the equilibrium value of 200 but does not re-derive or sanity-check it from a different angle; states conclusions as certain with no acknowledgment of model assumptions (constant birth rate, discrete time steps, etc.); considers only the direct recurrence approach with no alternative methods or framings; every arithmetic step is shown explicitly and a third party could reproduce the entire chain from the response alone.",
+  "timestamp": "2026-03-23T02:26:23.500483+00:00"
+}

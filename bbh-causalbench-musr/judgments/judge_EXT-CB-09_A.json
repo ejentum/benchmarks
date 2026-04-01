@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-09",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (No) with valid arithmetic using the correct conditional probability formula; goes one level beyond the calculation by briefly noting the causal structure implies a negative education-to-foot-size effect, but does not trace second-order effects or explore confounding implications; no self-monitoring, bias naming, or mid-analysis course correction — proceeds linearly without questioning the approach; implicit verification only — both conditionals are computed which allows comparison, but no sanity check (e.g., confirming total P(large feet) is plausible) or re-derivation; presents the causal interpretation as certain ('direct negative effect') without acknowledging that the observed association could partly reflect the unobserved confounder, and no confidence levels are stated; no alternative approaches or explanations are considered — the only path taken is direct conditional probability calculation; every step is explicitly shown with formulas and given values, making the full reasoning chain fully reproducible by a third party.",
+  "timestamp": "2026-03-23T10:06:11.270672+00:00"
+}

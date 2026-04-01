@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-18",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (mixing console instead of recording booth) but the false-belief reasoning approach was sound; Goes one level beyond surface by tracking belief states and analyzing attention/awareness; Some self-monitoring in questioning whether Austin witnessed Mark's move; Mentions verification need by asking 'did Austin witness step 3?' but doesn't fully verify against all possibilities; Presents conclusion with moderate confidence but doesn't acknowledge uncertainty about the correct answer; Acknowledges the equipment rack as an alternative but doesn't consider recording booth; Shows clear derivation chain for the wrong conclusion with object location trace",
+  "timestamp": "2026-03-23T13:27:55.289102+00:00"
+}

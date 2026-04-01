@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-22",
+  "condition": "B2",
+  "output": "## Causal Analysis\n\n**Causal graph:**\n\n- **X** (Liking spicy food) → Occupation → Salary\n- **X** → Salary (direct)\n- **Skill** (unobserved) → Occupation → Salary\n- **Skill** → Salary (direct)\n\n**Key observation:** Nothing causes X. Liking spicy food has no parents in this graph, so there are **no backdoor paths** from X to Y. Skill is a common cause of Occupation and Salary, but it is *not* a confounder between spicy food and salary because it doesn't cause X.\n\nSince X has no confounders:\n\n$$P(Y{=}\\text{high} \\mid do(X{=}1)) = P(Y{=}\\text{high} \\mid X{=}1) = 0.40$$\n\n**Current overall probability (no intervention):**\n\n$$P(Y{=}\\text{high}) = 0.40 \\times 0.83 + 0.19 \\times 0.17 = 0.332 + 0.0323 = 0.3643$$\n\n**Answer: Yes.** Intervening to make everyone like spicy food would increase the overall probability of a high salary from **~36.4% to 40%** — an increase of roughly 3.6 percentage points.\n\nThe unobserved status of Skill is irrelevant here because Skill never confounds the X→Y relationship. The observational conditional *is* the interventional distribution in this case.",
+  "timestamp": "2026-03-20T10:05:34.254220+00:00"
+}

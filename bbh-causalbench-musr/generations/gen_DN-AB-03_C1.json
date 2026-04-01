@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-03",
+  "condition": "C1",
+  "output": "**(B)**\n\nAll three share the same structural pattern: **a selection pressure that optimizes the measured dimension while displacing the problem to an unmeasured one**.\n\nThe key mechanism in each case:\n\n- **Antibiotics** select *for* resistance by eliminating everything else — the intervention literally breeds what it's trying to destroy.\n- **Speed traps** select *for* route-shifting — enforcement on the measured road pushes the behavior to unmonitored roads.\n- **Exam prep** selects *for* narrow optimization — testing specific material causes effort to drain away from untested (but important) knowledge.\n\nThe shared structure is: **the intervention acts as a filter that rewards the exact evasion pattern it can't see**. It's not just \"unintended consequences\" (A is too vague), not about human resistance (C — bacteria aren't human), and not that interventions don't work (D — they *do* work on the measured axis, which is precisely the problem).\n\nThis is sometimes called **Goodhart's Law** dynamics (\"when a measure becomes a target, it ceases to be a good measure\") or, in evolutionary biology, **selection shadow** — the space the selection pressure can't reach is where the problem migrates to.",
+  "timestamp": "2026-03-20T17:39:10.078067+00:00"
+}

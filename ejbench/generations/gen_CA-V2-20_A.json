@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-20",
+  "condition": "A",
+  "output": "**(B) Incorrect — 80% efficacy means 80% of VACCINATED individuals are protected, but only if 100% of the population is vaccinated, which is unrealistic**\n\nThe official's calculation conflates **vaccine efficacy** with **population-level impact**. The 80% efficacy means that among those *who receive the vaccine*, 80% are protected. The actual reduction in Re depends on both efficacy *and* coverage:\n\n**Re = R0 × (1 - efficacy × coverage)**\n\nFor the official's math to hold (Re = 0.6), you'd need 100% vaccination coverage — every single person vaccinated. In practice, if coverage is, say, 75%:\n\nRe = 3.0 × (1 - 0.80 × 0.75) = 3.0 × 0.40 = **1.2 > 1.0** — outbreak not contained.\n\nTo actually achieve Re < 1.0 with vaccination alone, you'd need coverage > 83.3% (solving 3.0 × (1 - 0.80 × c) < 1.0). That's achievable but far from guaranteed, which is exactly why real containment strategies layer multiple interventions.",
+  "timestamp": "2026-03-22T16:35:53.976831+00:00"
+}

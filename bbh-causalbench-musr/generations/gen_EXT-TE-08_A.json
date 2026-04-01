@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-08",
+  "condition": "A",
+  "output": "(C) 6am to 8am\n\nThe only unaccounted-for window in Sarah's schedule is between waking up at 6am and being seen at the electronic store at 8am. Every other time slot is occupied, and the site was closed after 8pm.",
+  "timestamp": "2026-03-20T09:16:02.067562+00:00"
+}

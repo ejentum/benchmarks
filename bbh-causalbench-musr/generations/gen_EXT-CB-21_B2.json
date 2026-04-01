@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-21",
+  "condition": "B2",
+  "output": "**No.** Method 2 is more correct.\n\nHere's why:\n\n**The causal structure is:**\n\n```\nRespiratory issues ──→ Hospitalization status ←── Broken bones\n```\n\nRespiratory issues and broken bones are **independent** — there is no causal path between them. Hospitalization status is a **collider** (a common effect of both).\n\n**Method 1** conditions on hospitalization status. Conditioning on a collider **opens a spurious path** between respiratory issues and broken bones. This is known as **collider bias** (or Berkson's paradox). Among hospitalized patients, knowing someone doesn't have respiratory issues makes it more likely they're there for broken bones — creating a false negative association that doesn't exist in reality.\n\n**Method 2** examines the unconditional correlation, which correctly reflects the true relationship: **none**. Since no causal or confounding path connects respiratory issues to broken bones, the raw correlation is the accurate measure.\n\n**Bottom line:** Conditioning on a collider introduces bias where none existed. Method 2 gives the correct answer.",
+  "timestamp": "2026-03-20T10:05:02.903095+00:00"
+}

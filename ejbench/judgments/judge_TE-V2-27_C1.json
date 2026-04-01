@@ -1,0 +1,8 @@
+{
+  "task_id": "TE-V2-27",
+  "condition": "C1",
+  "scores": null,
+  "composite_score": null,
+  "error": "timeout_180s",
+  "timestamp": "2026-03-23T05:39:35.721946+00:00"
+}

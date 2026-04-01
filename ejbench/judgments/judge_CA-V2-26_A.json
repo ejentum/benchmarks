@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-26",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the correct answer (Yes) with valid dual-pathway reasoning; multi-level analysis tracing two compounding negative pathways with short/long-term distinction and even/odd trophic level insight; reasoning proceeds linearly with no explicit reflection on method or bias-checking, only implicit structure in the table format; no counterfactual tests, boundary conditions, or alternative-angle derivations are applied; presents compounding conclusion with high confidence and no acknowledgment of assumptions (e.g., proportional fox reduction, absence of carrying capacity limits on mice); briefly contrasts with simple cascade model but does not evaluate competing scenarios like preferential predation or density-dependent mouse limits; logical chain is traceable via the table and prose but lacks quantitative grounding or derivation from population parameters.",
+  "timestamp": "2026-03-23T02:52:03.914929+00:00"
+}

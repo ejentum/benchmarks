@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-08",
+  "condition": "C1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 0,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0,
+    "negative_gate_avoidance": 0,
+    "suppress_compliance": 0,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.0,
+  "injection_composite": 0.0,
+  "brief_justification": "No answer was produced — the response is a raw error/metadata object with no correctness signal; no reasoning of any depth was attempted; no self-monitoring occurred; no verification was performed; no epistemic stance was taken; no alternatives were considered; no derivation trail exists; the negative gate cannot be evaluated because no reasoning was produced; suppressed failure modes cannot be assessed without substantive output; no topology was followed because no reasoning chain was executed at all",
+  "timestamp": "2026-03-23T05:06:03.401139+00:00"
+}

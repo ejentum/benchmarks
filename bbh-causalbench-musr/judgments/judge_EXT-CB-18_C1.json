@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-18",
+  "condition": "C1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0
+  },
+  "composite_score": 0.0476,
+  "injection_composite": null,
+  "brief_justification": "Correctness: answers No but correct answer is Yes; Reasoning depth: minimal analysis, just asserts confounder explains it; Self-monitoring: no reflection on reasoning process; Verification: no verification performed; Epistemic honesty: presents conclusion as certain with no uncertainty; Alternative consideration: does not evaluate the coffee pathway; Audit trail: no derivation shown for the conclusion",
+  "timestamp": "2026-03-23T13:01:40.011332+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-06",
+  "condition": "C1",
+  "output": "(B).\n\nStatement 1 identifies the proprietary AI technology as **the** competitive advantage. Statement 2 then open-sources that same core technology, directly eliminating what statement 1 claims is the advantage. Statement 3's aggressive IP defense becomes incoherent — you can't aggressively defend IP you've voluntarily released to the public.\n\nOptions A and C describe real strategies (e.g., Meta with Llama), but they require statement 1 to say the advantage is in **data, infrastructure, or fine-tuning** — not the AI technology itself. The wording \"our proprietary AI technology\" and \"our core AI models\" refer to the same thing, making the contradiction direct.",
+  "timestamp": "2026-03-20T17:45:00.412328+00:00"
+}

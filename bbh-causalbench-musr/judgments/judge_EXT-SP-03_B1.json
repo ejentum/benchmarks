@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-03",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid coordinate tracking; goes one level deep by setting up a coordinate system and mapping vectors; minimal self-monitoring beyond the injected reasoning context framing; no explicit verification like re-summing axes independently; no uncertainty acknowledged (though the problem is deterministic); no alternative approaches considered; full step-by-step derivation table makes the reasoning fully reproducible.",
+  "timestamp": "2026-03-23T11:02:56.072314+00:00"
+}

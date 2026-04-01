@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-19",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.8667,
+  "injection_composite": 0.7778,
+  "brief_justification": "Arrives at (C) with exact correct reasoning, identifying the P1+P2 combined demand of 450 exceeds 400 level 1-2 positions; goes beyond surface by tracing both P1-first and P2-first allocation orders and their shortfalls, plus noting P3/P4/P5 haven't yet consumed level 1-2 positions; shows meta-awareness by noting option (A) is 'superficially true but misidentifies the reason,' though doesn't name potential reasoning biases explicitly; verifies by exhaustively testing both allocation orderings as counterfactual checks, confirming both fail; distinguishes (A) as superficially correct but structurally wrong, though doesn't formally state confidence levels or what would change the conclusion; systematically evaluates all four options with specific reasons for rejection/acceptance; every conclusion traces to an explicit derivation — table, two scenarios, shortfall calculations, all reproducible; avoids the infinite-space anti-pattern by computing hard capacity limits throughout, but does not name or call out that specific failure mode; shows zero evidence of infinite_space_bias or overflow_ignoring, both suppressed failure modes are cleanly avoided; follows the topology's container→capacity→contents→compare→flag→classify flow, with branching between allocation scenarios, though the topology structure isn't explicitly mirrored.",
+  "timestamp": "2026-03-23T04:09:03.532240+00:00"
+}

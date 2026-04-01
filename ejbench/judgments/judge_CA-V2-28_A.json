@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-28",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correctly calculates A at 31% reduction and B at 3.6%, arriving at answer (B) with valid arithmetic; goes multiple levels deep by identifying coverage gap as dominant factor, explaining why economist is directionally right but conclusively wrong, and projecting long-term ADAS growth; acknowledges the economist's reasoning has merit before disagreeing with the conclusion, but does not explicitly name potential biases or check starting assumptions mid-analysis; performs explicit arithmetic verification for both interventions but does not sanity-check from an alternative derivation angle; clearly distinguishes directional correctness from conclusive correctness and identifies what would change the answer over time (ADAS fleet penetration growth); addresses the economist's alternative framing with specific reasons (coverage gap dominance in year 1) but does not enumerate other possible framings or competing explanations; full derivation with explicit baseline definition, formulas, and numeric steps that a third party could reproduce exactly without external context.",
+  "timestamp": "2026-03-23T02:54:28.326404+00:00"
+}

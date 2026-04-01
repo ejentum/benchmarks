@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-07",
+  "condition": "A",
+  "output": "**The answer is (B).**\n\nAt t=5, you have 5 servers handling exactly 500 req/s — which is exactly the incoming rate. There is zero surplus capacity to drain the queue. Every server-second is consumed by new arrivals.\n\nThe 2,000 queued requests sit there forever (or until traffic drops, or more capacity is added). This is a classic steady-state trap: scaling to match demand isn't enough when there's already a backlog. You need to **overprovision** — scale *past* demand — so surplus capacity can drain the queue.",
+  "timestamp": "2026-03-22T15:56:42.837767+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-29",
+  "condition": "B1",
+  "output": "**Depth of Team-Infra after both changes: 4**\n\nTracing the path after both reorganizations:\n\n1. **CEO** — depth 1\n2. **VP-Engineering** — depth 2\n3. **Director-Platform** (newly created under VP-Engineering) — depth 3\n4. **Team-Infra** (placed under Director-Platform) — depth 4\n\nNote: Team-Infra was *already* at depth 4 in the original hierarchy (CEO → VP-Engineering → Director-Backend → Team-Infra). The intermediate step (reporting directly to VP-Engineering) temporarily moved it to depth 3, but the second change—inserting Director-Platform between VP-Engineering and Team-Infra—restored it to depth **4**.",
+  "timestamp": "2026-03-22T22:04:29.384380+00:00"
+}

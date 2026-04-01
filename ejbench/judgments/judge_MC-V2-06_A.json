@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-06",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.9524,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the correct answer (Yes) with valid and specific statistical reasoning about relative vs absolute measures; goes three levels deep — identifies the core statistical ambiguity, enumerates concrete scenarios, then audits other metrics for analogous weaknesses; some awareness shown by explicitly partitioning the report into stronger vs weaker claims, though no explicit naming of cognitive biases or mid-analysis course-correction; verifies from multiple angles by enumerating three gap-narrowing scenarios and separately stress-testing graduation rates, spending, and special ed claims; clearly distinguishes what the data proves vs implies, never overstating confidence, and notes where ELL data is genuinely stronger; systematically evaluates all three mathematical scenarios for gap narrowing and considers alternative explanations for graduation rates, spending efficiency, and satisfaction surveys; every conclusion traces to an explicit derivation with enough specificity that a third party could fully reproduce the reasoning chain.",
+  "timestamp": "2026-03-23T02:27:11.551654+00:00"
+}

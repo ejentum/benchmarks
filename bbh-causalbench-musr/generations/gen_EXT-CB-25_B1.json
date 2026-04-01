@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-25",
+  "condition": "B1",
+  "output": "Yes. In this world, Method 1 captures **two** sources of association between drug taken and cholesterol level:\n\n1. **The causal path:** Drug taken → Cholesterol level\n2. **The confounding path:** Drug taken ← Unobserved confounders → Cholesterol level\n\nWhen Method 1 yields unclear or contradictory results, it suggests these two paths are producing **opposing effects** that mix together in the raw correlation. For example, the drug might genuinely lower cholesterol (path 1), but the unobserved confounders independently push both drug-taking and cholesterol in the same direction (path 2), partially masking or reversing the apparent effect.\n\nThis is exactly what confounding looks like in practice — the backdoor path through U distorts the observed association, producing ambiguous or paradoxical patterns (a form of Simpson's paradox).\n\nMethod 2 would resolve this by stratifying on U, blocking the backdoor path — but since U is **unobserved**, Method 2 is not actually feasible here. The available remedy in this structure would be to use **treatment assignment** as an instrumental variable, since Z → D → C with no direct Z → C path and no Z ← U path, giving you an unconfounded estimate of the causal effect.",
+  "timestamp": "2026-03-20T09:44:35.958792+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-26",
+  "condition": "A",
+  "output": "## Analysis\n\nLooking at the provided probabilities of a long lifespan:\n\n| | No Diabetes | Diabetes |\n|---|---|---|\n| **No English** | 71% | 46% |\n| **English** | 40% | 22% |\n\nNon-English speakers have a substantially higher probability of a long lifespan in **every** diabetes stratum (71% vs 40%, and 46% vs 22%).\n\nBy Bayes' rule, if we condition on observing a long lifespan, the posterior probability shifts toward the group that is more likely to produce that outcome — which is non-English speakers in both cases.\n\n**Yes**, given a long lifespan, it is more likely that the person does not speak English. The data consistently shows that non-English speakers have roughly 1.7–1.8× the probability of a long lifespan compared to English speakers, regardless of diabetes status. This means long-lived individuals are disproportionately drawn from the non-English-speaking population.",
+  "timestamp": "2026-03-20T09:26:00.848166+00:00"
+}

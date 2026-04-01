@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-07",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "The correct answer is 'Emma's head' (a trick referencing her sunglasses, not the key), but the agent answered 'the box' — wrong answer though the reasoning about the key's movements was logical; Goes one level beyond surface by tracing each character's location and knowledge state through the timeline; Implicit self-monitoring via timeline reconstruction but no explicit reflection on whether the question might be a trick or ambiguous; Mentions tracing locations but doesn't verify against alternative interpretations of what 'key' Emma would look for; Presents conclusion confidently without acknowledging the question's ambiguity or trick nature; Does not consider any alternative interpretation of the question, missing the wordplay entirely; Shows clear derivation of the key's movement timeline and Emma's knowledge state, though the starting assumption was wrong.",
+  "timestamp": "2026-03-23T13:20:42.256759+00:00"
+}

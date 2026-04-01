@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-19",
+  "condition": "A",
+  "output": "**The critical unstated assumption: that the worker will still be employed full-time after the wage increase.**\n\nThe entire argument hinges on the calculation $20 × 2,080 hours = $41,600. That math only works if employers continue offering the same full-time hours (40 hrs/week, 52 weeks/year) at the higher wage. The argument treats the wage rate as the only variable and holds employment constant.\n\nIf employers respond to the nearly 3× wage increase by cutting hours, eliminating positions, or automating roles, the affected workers don't earn $41,600 — they earn less, or nothing. A worker whose hours are cut to 20/week now makes $20,800, barely above the poverty line for a family of two. A worker who loses the job entirely is worse off than before.\n\nThis is what makes it the **most critical** assumption rather than just one of many: it's load-bearing for the conclusion. The argument claims to \"eliminate\" working poverty, but it has no mechanism to guarantee the employment that its own arithmetic requires. Every dollar figure cited depends on full-time status surviving the policy change — and that's precisely the point economists debate most.",
+  "timestamp": "2026-03-22T16:12:34.298190+00:00"
+}

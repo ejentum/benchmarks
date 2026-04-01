@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-30",
+  "condition": "A",
+  "output": "**The answer is (B).**\n\nSplit-horizon DNS decides which view to serve based on **which DNS server the query reaches**, not the client's physical network location. The key facts:\n\n- The contractor's laptop is configured to send DNS queries to the **internal DNS server** through the VPN tunnel.\n- The internal DNS server is authoritative for `internal.example.com` and all its subdomains.\n- Queries arriving at that server get the internal view — it doesn't matter where the client physically sits.\n\nThe VPN tunnel ensures the DNS query never touches the external DNS infrastructure at all. It goes directly to the internal nameserver, which answers authoritatively with the internal IP.\n\n**(D)** is a plausible distractor, but the question states the resolver is already configured to use the internal DNS server *through the tunnel*. Whether the VPN assigns an internal IP affects routing, but the query is already reaching the internal server — that's what matters. No additional condition is needed.",
+  "timestamp": "2026-03-22T16:42:42.420995+00:00"
+}

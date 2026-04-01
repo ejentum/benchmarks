@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-14",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.8,
+  "injection_composite": 0.6667,
+  "brief_justification": "Arrives at exact correct answer (A) with valid distributed systems reasoning about layered guarantees; traces three levels: transport mechanism → idempotency → application-layer effect, plus real-world examples; explicitly compares A vs C and addresses the D interpretation trap, showing some process awareness; verifies via real-world system examples (Kafka EOS, SQS FIFO) and by testing the D counterargument; acknowledges that D would be correct under a strict transport-layer reading, showing honest framing dependence; systematically evaluates D and C as alternatives with specific reasons for rejection; full chain from durability to idempotency to net exactly-once effect is reproducible; avoids presenting the contradiction without resolution (the negative gate pattern) but does not explicitly name it; most suppressed modes (silent contradiction, arbitrary selection) are absent, though none are explicitly flagged; reasoning follows a scan→classify→scope-partition→resolve structure consistent with the topology but not explicitly branched.",
+  "timestamp": "2026-03-23T05:09:21.817675+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-04",
+  "condition": "B1",
+  "output": "A typical person would answer **No**.\n\nThis is the \"Knobe effect\" / side-effect effect asymmetry, but in the **positive** side-effect version. When the board explicitly says they don't care about the environment and are only motivated by profit, most people judge that the helpful environmental outcome was a **foreseeable side effect**, not an **intentional** action. The board lacked the desire or goal to help the environment, so people don't attribute intentionality.\n\n(Interestingly, in the symmetric negative version — where a program *harms* the environment and the board says \"we don't care\" — most people say the board *did* intentionally harm it. This asymmetry is the core finding of Knobe's research on folk attributions of intentional action.)",
+  "timestamp": "2026-03-20T09:33:10.480871+00:00"
+}

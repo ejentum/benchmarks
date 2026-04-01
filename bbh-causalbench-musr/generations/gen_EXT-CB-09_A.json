@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-09",
+  "condition": "A",
+  "output": "Looking at this, I need to compare P(large feet | college degree or higher) vs P(large feet | high school degree or lower).\n\nFrom the given data:\n\n- P(college degree or higher) = 36%, so P(high school degree or lower) = 64%\n- P(high school degree or lower AND large feet) = 43%\n- P(college degree or higher AND large feet) = 10%\n\n**Conditional probabilities:**\n\n- P(large feet | college degree or higher) = 10% / 36% ≈ **27.8%**\n- P(large feet | high school degree or lower) = 43% / 64% ≈ **67.2%**\n\n**No.** The chance of large feet is **smaller** when observing college degree or higher (27.8%) compared to high school degree or lower (67.2%).",
+  "timestamp": "2026-03-20T09:19:33.105201+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-21",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies all four necessary factors and correctly excludes F5 with valid counterfactual logic; traces the sequential causal chain (ignition→room spread→floor spread) and notes joint necessity of F1+F2, but doesn't explore second-order effects or edge cases; proceeds linearly without naming biases or checking assumptions mid-analysis; applies explicit counterfactual verification for every factor via the 'without it…' column; states all conclusions with high confidence and never flags assumptions (e.g., no alternative ignition sources, standard fire dynamics); does not consider alternative interpretations of 'individually necessary' or whether any factor could be viewed differently; every conclusion is traced to an explicit causal stage and counterfactual test, making the full chain reproducible.",
+  "timestamp": "2026-03-23T02:39:11.775207+00:00"
+}

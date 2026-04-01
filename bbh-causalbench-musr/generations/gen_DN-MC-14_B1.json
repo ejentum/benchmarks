@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-14",
+  "condition": "B1",
+  "output": "(B).\n\nThe three claims form a logical contradiction. A model cannot simultaneously never store data, learn from that data, and fully delete it on request. Learning from interactions necessarily means user data influences model weights, which contradicts \"never stores.\" And undoing that influence requires retraining without the data — not a simple deletion.",
+  "timestamp": "2026-03-20T17:23:50.566393+00:00"
+}

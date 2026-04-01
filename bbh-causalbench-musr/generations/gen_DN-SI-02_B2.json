@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-02",
+  "condition": "B2",
+  "output": "**The answer is (B): Net revenue loss because satisfaction-driven reimbursement cuts exceed labor savings.**\n\nHere's the causal chain:\n\n1. **10% staff cut** shifts the nurse-to-patient ratio from 1:4 toward ~1:4.4.\n2. This degrades response times, pushing average wait time well above 22 min and closer to/past 30 min.\n3. **Second-order effects cascade:**\n   - Medication errors rise (approaching the 40% increase threshold as ratio nears 1:5)\n   - More patients leave without being seen (the 20% LWBS trigger at 30 min wait)\n   - Patient satisfaction drops from 78 — errors, longer waits, and rushed care all compress the score toward or below 70\n4. **Crossing the 70 satisfaction threshold** triggers the 15% reimbursement cut, which on hospital-scale revenue dwarfs the 10% nursing labor savings.\n\nThe key insight is that the system has **non-linear tipping points**, not smooth degradation. The staffing cut doesn't just save 10% — it pushes multiple metrics toward thresholds where penalties activate simultaneously, and the reimbursement penalty alone likely exceeds the labor savings.",
+  "timestamp": "2026-03-20T17:26:00.454442+00:00"
+}

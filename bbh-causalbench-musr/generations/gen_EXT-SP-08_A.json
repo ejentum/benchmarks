@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-08",
+  "condition": "A",
+  "output": "The most likely place Tom would look for the safety booklet is **the passenger seating area**.\n\nHere's the reasoning based on the sequence of events:\n\n1. Lisa initially stored the safety booklet **in storage**.\n2. Later, Lisa took safety booklets to the **passenger seating area**, restocking each seat.\n3. Tom was following Richard (not Lisa) and went to the cockpit with the flight manual — he wasn't present for Lisa's restocking.\n4. However, Tom was described early on as \"familiar with the careful locations of the flight manual and safety booklet,\" meaning he knew Lisa kept the safety booklet **in storage** originally.\n\nThe key question is what Tom knows. He knew the original location (storage), but Lisa later moved the booklets to the passenger seating area. There's no indication Tom witnessed that move.\n\n**Tom would most likely look in storage** — the last location he knew about. But since Lisa visibly and routinely restocks seats (a standard procedure any copilot would be aware of), and the passenger seating area is the conventional place for safety booklets on an aircraft, **the passenger seating area** is the most practically likely place he'd look.",
+  "timestamp": "2026-03-20T17:00:06.190248+00:00"
+}

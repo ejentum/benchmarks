@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-18",
+  "condition": "A",
+  "output": "## Solution\n\n**Product X (after 40% price increase):**\n- % quantity change = -1.2 × 40% = -48%\n- New quantity = 1,000 × (1 - 0.48) = **520 units**\n- New revenue = $14 × 520 = **$7,280**\n\n**Product Y (cross-price effect from X's increase):**\n- % quantity change = 0.8 × 40% = +32%\n- New quantity = 600 × (1 + 0.32) = **792 units**\n- New revenue = $15 × 792 = **$11,880**\n\n**New total market revenue = $7,280 + $11,880 = $19,160**\n\nThe market revenue increases by $160 (from $19,000 to $19,160). Product X loses $2,720 in revenue due to elastic demand, but Product Y gains $2,880 as consumers substitute toward it.",
+  "timestamp": "2026-03-22T16:00:53.430177+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-11",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.7667,
+  "injection_composite": 0.6667,
+  "brief_justification": "Correctly identifies multiple comparisons as the exact core problem with sound reasoning; Goes three levels deep: inflated family-wise error rate, Bonferroni failure across all p-values, overlapping samples, and post-hoc segmentation; No explicit self-monitoring or bias-naming, proceeds linearly without questioning own framing; Explicit numerical verification: computes 1-(0.95)^3=14.3% and applies Bonferroni threshold 0.0167 to each p-value showing all fail; Acknowledges the Bonferroni correction is idealized and that the penalty is 'harder to compute' for correlated tests, but no structured confidence levels or what-would-change-conclusion analysis; Lists Bonferroni/Holm/BH alternatives and notes overlapping samples as a complication, but does not consider whether other statistical problems (e.g., p-hacking, SUTVA violations) might compete for 'most concerning'; Every conclusion has a derivation: formula, threshold, per-value check all shown explicitly; Avoids attributing conversion lift to correlated exogenous factors but does not name or explicitly reject that anti-pattern; Zero evidence of correlation-based attribution or shared-variance credit diffusion, and the framing is orthogonal to those failure modes; Response is linear despite the topology specifying a FORK→JOIN→gate structure for counterfactual simulation, no branching or gate logic visible",
+  "timestamp": "2026-03-23T03:42:27.620665+00:00"
+}

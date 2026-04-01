@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-02",
+  "condition": "B2",
+  "output": "## Reasoning Through the Problem\n\n**Causal Structure:**\n- Jyka → Hwax, Jyka → Lirg\n- Gyzp → Hwax, Gyzp → Lirg (Gyzp unobserved)\n- Hwax → Lirg\n\n**Given:**\n- P(Lirg | not Jyka) = 0.46\n- P(Lirg | Jyka) = 0.32\n\n**Question:** P(not Jyka | Lirg) — is this > 0.5?\n\nThis is a Bayesian inverse inference problem. Applying Bayes' theorem with a uniform prior (P(Jyka) = P(not Jyka) = 0.5, since no base rate is given):\n\n**P(Lirg)** = P(Lirg|Jyka)·P(Jyka) + P(Lirg|¬Jyka)·P(¬Jyka)\n= 0.32 × 0.5 + 0.46 × 0.5 = **0.39**\n\n**P(¬Jyka | Lirg)** = P(Lirg|¬Jyka) · P(¬Jyka) / P(Lirg)\n= (0.46 × 0.5) / 0.39 ≈ **0.59**\n\n**Yes.** If Lirg is observed, it is more likely (~59%) that the individual was **not Jyka**.\n\nThe intuition: Jyka *reduces* the probability of Lirg (32% vs 46%), so observing Lirg is evidence *against* the presence of Jyka.",
+  "timestamp": "2026-03-20T09:56:04.218268+00:00"
+}

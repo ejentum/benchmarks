@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-05",
+  "condition": "B2",
+  "output": "The answer is **(A) 6pm to 9pm**.\n\nSusan's day is fully accounted for from 7am to 6pm. The only open window before the coffee shop closes at 9pm is **6pm to 9pm**.",
+  "timestamp": "2026-03-20T09:53:12.260977+00:00"
+}

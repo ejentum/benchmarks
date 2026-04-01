@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-10",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 2
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (D) with valid reasoning; surface-level analysis listing the schedule without deeper exploration; no self-monitoring or reflection on reasoning process; no verification or counterfactual checks; presents answer as certain with no acknowledgment of assumptions; no explicit consideration of why other options are wrong; shows the schedule and identifies the gap but doesn't verify each option against constraints",
+  "timestamp": "2026-03-23T13:16:16.461040+00:00"
+}

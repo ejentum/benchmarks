@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-10",
+  "condition": "C2",
+  "output": "## Causal Analysis\n\n**Causal graph (as stated):**\n\n```\nEnglish ──→ Fame ←── Talent\n```\n\nNo edge between English and Talent. Fame is a **collider**.\n\n**The -0.25 correlation is collider bias (Berkson's paradox).** When you condition on Fame (look only at famous people), English and Talent become spuriously negatively associated — even though they are causally independent. This tells us nothing about the causal effect of English on Fame.\n\n**Interventional answer: Yes, it increases their fame.**\n\nEnglish has a direct causal effect on Fame. Talent has a direct causal effect on Fame. These are the only two relationships in this world. So:\n\n- **do(English = 1)** on talented individuals gives them *both* causal contributors to fame, increasing their fame level.\n- The -0.25 conditional correlation is an artifact of conditioning on the collider and has no bearing on the intervention.\n\nThe intervention does not \"go through\" any confounded path — English and Talent are independent causes that both additively (or however the structural equation combines them) contribute to Fame. Giving talented people English simply adds the English→Fame effect on top of their existing Talent→Fame effect.",
+  "timestamp": "2026-03-20T10:58:33.880395+00:00"
+}

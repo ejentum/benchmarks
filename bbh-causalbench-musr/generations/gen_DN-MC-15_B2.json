@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-15",
+  "condition": "B2",
+  "output": "(B).\n\nThe core flaw is **missing baseline comparison**. \"10% success rate\" is meaningless without knowing what rate you'd expect from random selection within the same deal flow. If the average VC investing in similar-stage companies in that era also hit ~10%, this VC demonstrated zero selection skill — they just participated in the market.\n\nOptions A, C, and D gesture at real statistical concerns (sample size, luck), but they're secondary. The fundamental error is treating an outcome rate as evidence of skill without a counterfactual baseline. Even with 500 startups and a statistically significant result, the claim would still be hollow if you don't compare against the base rate.",
+  "timestamp": "2026-03-20T17:36:30.418152+00:00"
+}

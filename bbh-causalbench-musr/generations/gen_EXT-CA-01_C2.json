@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-01",
+  "condition": "C2",
+  "output": "A typical person would answer: **Yes**.\n\nBoth Alice and Zoe are necessary causes — the email is sent only when two people are logged in simultaneously. However, people tend to treat both parties symmetrically in this scenario. Since Zoe's logging in (together with Alice's) jointly produced the outcome, most people judge that Zoe **did** cause the email to be sent.\n\nResearch on causal judgment (e.g., Knobe & Fraser, Lombrozo) shows that when two agents each perform a normal, independent action that jointly produce an outcome, people typically say **both** caused it — neither is singled out or exonerated.",
+  "timestamp": "2026-03-20T10:52:06.005109+00:00"
+}

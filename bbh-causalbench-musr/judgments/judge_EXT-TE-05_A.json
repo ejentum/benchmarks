@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-TE-05",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2381,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies (A) as the answer with valid core logic; only states the conclusion (schedule full 7am-6pm, window is 6pm-9pm) without deeper analysis of why each slot is blocked; no reflection on reasoning process or potential errors; does not recheck the timeline or test boundary conditions; presents conclusion as certain with no uncertainty acknowledgment; does not explain why options B, C, or D are invalid; mentions the two key constraints (full schedule, 9pm close) but does not enumerate each occupied time slot to show the derivation is exhaustive",
+  "timestamp": "2026-03-23T09:35:55.088798+00:00"
+}

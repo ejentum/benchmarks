@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-11",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer of 3000 with valid N×L derivation; goes three levels deep — per-instance mechanics, general formula, and fix tradeoffs; addresses the misleading framing of the 900 req/min example but does not explicitly name cognitive biases or course-correct mid-analysis; uses 2500 req/min as a boundary condition test but stops short of a full counterfactual derivation; acknowledges the even-distribution assumption breaks under dynamic scaling but presents most conclusions without stated confidence levels; mentions two distinct fix approaches (shared counter vs. L/N per instance) with a tradeoff note, though does not evaluate deeper alternatives like sliding-window algorithms; every conclusion traces directly to an explicit formula with enough detail that a third party could reproduce the full chain.",
+  "timestamp": "2026-03-23T02:58:57.809482+00:00"
+}

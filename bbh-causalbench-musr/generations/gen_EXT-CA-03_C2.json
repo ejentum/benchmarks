@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-03",
+  "condition": "C2",
+  "output": "A typical person would answer: **No**.\n\nThe reasoning behind this common intuitive response is that the black wire was *supposed* to touch the battery — it was doing what it was designated to do. People tend to attribute causation more strongly to the element that violated a norm or expectation. Since the **red wire** was the one that deviated from its expected state (it was supposed to remain elsewhere), a typical person would see the red wire as the cause of the short circuit, not the black wire that was just doing its normal job.\n\nThis reflects a well-documented psychological pattern where people's causal judgments are heavily influenced by **norm violations** — the abnormal or unexpected event gets the causal credit (or blame), even when both factors are equally necessary from a purely mechanical standpoint.",
+  "timestamp": "2026-03-20T10:52:41.395591+00:00"
+}

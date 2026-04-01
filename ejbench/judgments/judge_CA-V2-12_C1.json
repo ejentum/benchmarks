@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-12",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 3
+  },
+  "composite_score": 0.9,
+  "injection_composite": 1.0,
+  "brief_justification": "Correctly computes 8% (0.8s ÷ 0.1s × 1%) and connects it to the 20% observed lift with valid causal framing; goes three levels deep: arithmetic → confound identification → SUTVA violation → actionable decomposition recommendations; explicitly names suppressed signals at the top and applies them throughout the response; rechecks arithmetic and cross-validates against total lift (8/20 = 40%) but does not attempt re-derivation from an independent angle; hedges with 'potentially attributable' and '~12%' but does not formally state confidence levels or enumerate what would change the conclusion; mentions two remediation paths (re-run with normalized CDN or decompose remaining lift) but does not evaluate their tradeoffs or probability of changing the outcome; every step is traceable — setup, calculation, SUTVA check, and contamination flag are all shown with explicit derivations; directly avoids the correlation-only attribution anti-pattern and explicitly names it as the error the product team is making; zero evidence of any suppressed failure modes and explicitly calls out three of them by name in the opening block; follows the topology closely — fork into factual/counterfactual, join to compute causal impact, SUTVA gate flagged as contaminated, concludes with invalid attribution warning matching the OUT:invalid_attribution path.",
+  "timestamp": "2026-03-23T04:48:51.444842+00:00"
+}

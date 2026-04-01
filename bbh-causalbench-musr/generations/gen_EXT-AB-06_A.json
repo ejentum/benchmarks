@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-06",
+  "condition": "A",
+  "output": "Let me work backward through the chain:\n\n- **Shalonda lies.** (given)\n- **Teressa** says Shalonda tells the truth → That's wrong, so **Teressa lies.**\n- **Tamika** says Teressa lies → That's correct, so **Tamika tells the truth.**\n- **Lorine** says Tamika tells the truth → That's correct, so **Lorine tells the truth.**\n- **Jaymie** says Lorine lies → That's wrong, so **Jaymie lies.**\n\n**No, Jaymie does not tell the truth.**",
+  "timestamp": "2026-03-20T09:27:37.536279+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-30",
+  "condition": "A",
+  "output": "**(B) No — an infinite group cannot be isomorphic to a finite group because no bijection exists between them.**\n\nAn isomorphism requires a bijection (one-to-one and onto map) that preserves the group operation. Since ℤ is infinite and ℤ/7ℤ is finite, no such bijection can exist. They're both cyclic, but \"cyclic\" is a family of groups, not a single structure — ℤ and ℤ/nℤ are non-isomorphic members of that family.",
+  "timestamp": "2026-03-22T16:09:14.618904+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-12",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (No) with valid math: 4+4=8 years, not 6; Breaks into two phases and pinpoints the analyst's retroactive-rate error, but does not explore second-order implications (e.g., what happens if the tipping point is fuzzy or delayed); No explicit reflection on own reasoning method or bias checks — just proceeds linearly to the answer; Reconstructs the analyst's erroneous formula (30+10×6=90) to show where it fails, constituting a basic cross-check; Presents the conclusion as certain without flagging assumptions (linearity of growth, sharp tipping-point at exactly 50%, no saturation effects); Considers only one framing — the two-phase split — and does not acknowledge alternative interpretations of the problem; Every derivation step (phase boundaries, time per phase, total) is shown explicitly and a third party could fully reproduce the result",
+  "timestamp": "2026-03-23T02:59:58.772328+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-15",
+  "condition": "A",
+  "output": "## ~9.1%\n\nThis is a direct application of **Bayes' theorem**, and the result is counterintuitively low despite the excellent test performance.\n\n**The math:**\n\n| Group | Size (per 10,000) | Test result |\n|---|---|---|\n| True positives | 1 × 0.999 = **0.999** | Positive |\n| False positives | 9,999 × 0.001 = **9.999** | Positive |\n\n$$P(\\text{disease} \\mid \\text{positive}) = \\frac{0.999}{0.999 + 9.999} \\approx 9.1\\%$$\n\n**Why so low?** The false positives (~10) vastly outnumber the true positives (~1) because the condition is so rare. Even with 99.9% specificity, 0.1% of ~10,000 healthy people is ~10 false alarms — swamping the single true case.\n\n**Clinical implication:** A positive screening result here is meaningful (it raises the prior from 0.01% to 9.1% — a ~900× increase in odds), but it absolutely warrants confirmatory testing before diagnosis. The positive predictive value is only ~9%.",
+  "timestamp": "2026-03-22T16:11:17.237902+00:00"
+}

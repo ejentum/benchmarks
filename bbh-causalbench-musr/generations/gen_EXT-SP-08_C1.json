@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-08",
+  "condition": "C1",
+  "output": "Looking at this step-by-step:\n\n1. **Initial state:** The safety booklet starts in **storage** (Lisa tucked it there).\n\n2. **Lisa's actions:** Lisa later takes safety booklets to the **passenger seating area** to resupply each seat.\n\n3. **Tom's knowledge:** Tom was initially aware the safety booklet was in storage. However, there's no indication Tom witnessed Lisa moving the booklets to the passenger seating area — he was following Richard to the office, then went to the cockpit, and later was discussing flight procedures with Richard in another section of the plane.\n\n**Tom would most likely look in storage**, because that's where he last knew the safety booklet to be, and he had no opportunity to observe Lisa relocating it.",
+  "timestamp": "2026-03-20T10:35:20.090731+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-07",
+  "condition": "C1",
+  "output": "**The answer is (B) 35–40 minutes.**\n\nThe math from the stated parameters:\n\n- 40% capacity increase → 20–40% increase in VMT (applying the 5–10% per 10% rule)\n- That alone claws back roughly half to all of the capacity gain\n- The 15% transit ridership drop adds *more* cars to the road, further eroding the benefit\n\nBut \"fully negates\" (C) overshoots what the numbers support. A 40% capacity increase with 20–40% induced demand still leaves some net capacity gain — just a diminished one. The transit effect is real but not enough to push commute times back to 45+ within 3 years.\n\nSo you get the classic induced demand outcome: a real but partial improvement, landing around **35–40 minutes**.",
+  "timestamp": "2026-03-20T17:42:29.380543+00:00"
+}

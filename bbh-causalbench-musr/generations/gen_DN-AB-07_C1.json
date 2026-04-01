@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-07",
+  "condition": "C1",
+  "output": "**(B)**\n\nAll three share the same structural pattern: **accurate risk information existed at the technical level but was systematically filtered out by organizational hierarchy before it could influence decisions.**\n\nThe key insight is that this isn't about incompetence (A), speed (C), or bad actors (D) — it's about **information flow architecture**. In each case:\n\n- The correct signal was generated\n- The organizational structure attenuated or blocked that signal\n- Decision-makers acted on a filtered, distorted picture of reality\n\n(A) is too shallow — many of these leaders were individually competent. (C) describes a symptom, not the mechanism. (D) misattributes a systemic failure to individuals. Only (B) identifies the **structural** pattern: the gap between where knowledge lives and where decisions are made.",
+  "timestamp": "2026-03-20T17:40:21.040982+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-11",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Agent correctly computes ~294 days but selects (B) 327 days, not the correct answer (D) 244 days — the mathematical work is sound but the final selection is wrong; analysis goes one level deep (compares to initial vaccination duration) but does not explore why the labeled correct answer differs from its own calculation; agent performs a sanity-check table but critically fails to notice that its computed 294 days contradicts its choice of (B) 327 days, a fatal self-monitoring lapse; verification table is executed and confirms the ~294 day result, but the agent does not verify against the 244-day option to understand why (D) is marked correct; agent acknowledges '294 ≠ 327' yet still labels (B) correct without structured uncertainty analysis about which answer to trust; agent dismisses (D) as 'undershoots' with no supporting calculation, and does not seriously interrogate why (D) might be correct; every derivation step is shown with formula, logarithm expansion, and tabular verification — fully reproducible by a third party",
+  "timestamp": "2026-03-23T02:59:26.029198+00:00"
+}

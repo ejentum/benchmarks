@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-13",
+  "condition": "A",
+  "output": "**(B)**\n\nControlling for GDP addresses one specific confound — wealth — but doesn't solve the identification problem. The critic's core objection was about **reverse causality** (low crime → more police spending), and GDP controls don't touch that. You'd still face:\n\n- **Reverse causality** still intact: safer countries may choose to invest more in policing as a public good\n- **Omitted variables**: social cohesion, urbanization patterns, judicial effectiveness, inequality, drug policy, etc.\n- **Simultaneity**: crime levels and police staffing are determined jointly in policy equilibria\n\nAdding controls one at a time is whack-a-mole. The analyst needs an **identification strategy** — an instrumental variable, a natural experiment, or a regression discontinuity — something that isolates exogenous variation in police staffing unrelated to crime. Cross-country regressions with controls, no matter how many, can't establish causation here.",
+  "timestamp": "2026-03-20T17:10:57.787769+00:00"
+}

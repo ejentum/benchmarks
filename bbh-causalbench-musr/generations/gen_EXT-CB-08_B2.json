@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-08",
+  "condition": "B2",
+  "output": "**Yes.** If you observe large feet, it is far more likely that the manager did **not** sign the termination letter.\n\n**Computation:**\n\n| | Large feet |\n|---|---|\n| Manager NOT signing | 59% |\n| Manager signing | 6% |\n| **Total (large feet)** | **65%** |\n\nUsing Bayes' rule:\n\n- **P(not signing | large feet)** = 59% / 65% ≈ **90.8%**\n- **P(signing | large feet)** = 6% / 65% ≈ **9.2%**\n\nGiven the observation of large feet, the probability the manager did not sign the termination letter (~91%) vastly exceeds the probability they did (~9%).",
+  "timestamp": "2026-03-20T09:58:27.350383+00:00"
+}

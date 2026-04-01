@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-05",
+  "condition": "C2",
+  "output": "## Causal Analysis\n\n**Yes**, increasing the vaccination rate decreases the overall probability of smallpox survival in this hypothetical world.\n\n### Reasoning\n\n**Causal structure:** Vaccination is a root node (no parents), so there are no confounders. This means the observational conditionals equal the interventional ones:\n\n> P(Survival | do(Vaccinated)) = P(Survival | Vaccinated) = 33%\n> P(Survival | do(Unvaccinated)) = P(Survival | Unvaccinated) = 42%\n\n**Current overall survival rate** (at 12% vaccination):\n\n```\nP(Survival) = 0.33 × 0.12 + 0.42 × 0.88\n            = 0.0396 + 0.3696\n            = 40.92%\n```\n\nSince vaccinated individuals survive at a **lower rate** (33%) than unvaccinated individuals (42%), any intervention that shifts people from the unvaccinated group into the vaccinated group moves them from a 42% survival probability to a 33% survival probability — **lowering** the overall rate.\n\nFor example, at 50% vaccination:\n\n```\nP(Survival) = 0.33 × 0.50 + 0.42 × 0.50 = 37.5%\n```\n\nwhich is lower than the current 40.92%.\n\n**No confounding to worry about:** Because vaccination is a root node in this DAG, there are no backdoor paths to block. The observed association *is* the causal effect.",
+  "timestamp": "2026-03-20T10:56:56.690316+00:00"
+}

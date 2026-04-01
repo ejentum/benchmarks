@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-25",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 3,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 3
+  },
+  "composite_score": 1.0,
+  "injection_composite": 1.0,
+  "brief_justification": "Arrives at B with precise identification of the correlation-to-causal-primacy gap and unpacks what 'seat' implies (exclusivity, necessity, sufficiency); traces three levels: activation evidence → causal claim structure → what 'seat' logically requires; explicitly names why C and D are tempting and course-corrects with specific structural reasons; rules out each option against the evidence structure, tests whether D is falsification vs overstatement; distinguishes KNOWN/KNOWABLE-violated zones and states clearly what the evidence does and does not establish; evaluates all four options with specific rejection rationale, including partial credit acknowledgment for C; epistemic zone table plus three numbered logical-gap points give full reproducible derivation chain; avoids assuming activation data implies causal sufficiency and explicitly calls out fMRI = blood-flow correlation not causal proof; no false confidence, no vague hedging, no hallucination — uses specific zone classifications throughout; follows the scan→classify→zone-rule→verify→reconstruct topology with the table as the ACC node and systematic option rejection as the strip-and-reconstruct phase",
+  "timestamp": "2026-03-23T04:56:58.775332+00:00"
+}

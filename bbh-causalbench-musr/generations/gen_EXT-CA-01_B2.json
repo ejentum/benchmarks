@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-01",
+  "condition": "B2",
+  "output": "A typical person would answer: **Yes**.\n\nThis is a well-known style of question from experimental philosophy (joint causation / overdetermination). Both Alice and Zoe are necessary conditions — the email is only sent when *two* people are logged in simultaneously. Since Zoe's login (combined with Alice's) completed the sufficient condition for the email, most people judge that Zoe did cause it. The same would be said of Alice.",
+  "timestamp": "2026-03-20T09:52:26.632044+00:00"
+}

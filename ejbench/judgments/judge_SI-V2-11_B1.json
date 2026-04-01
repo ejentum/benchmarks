@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-11",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.5,
+  "injection_composite": 0.4444,
+  "brief_justification": "Agent derives exact correct answer of 14 via valid formula A(n+1)=0.84·A(n) and correct arithmetic through Day 5; Goes one level deep by decomposing deletion and generation into a unified recurrence, but does not explore edge cases or second-order effects like pool depletion dynamics; Custom reasoning context mentions 'not skip steps' but no explicit bias-naming or course-correction in the solution body; Table traces all days correctly but no independent re-derivation or boundary check (e.g., verifying via geometric series formula); Math answer presented as certain with only implicit acknowledgment of rounding via '≈', no structured uncertainty or assumption flags; No alternative interpretations considered (e.g., simultaneous vs sequential deletion/generation, or same-day new share eligibility); Full step-by-step derivation with defined variables, formula derivation, and day-by-day table—fully reproducible by a third party; Injection's negative gate concerns mimetic social belief spread, entirely irrelevant to the math problem; agent ignores it without explicitly flagging the mismatch; Suppressed failure modes (social_consensus_as_evidence, majority_belief_validity) are inapplicable to math and not exhibited, though agent substitutes its own reasoning signals rather than engaging with the provided ones; Topology describes mimetic cascade belief mapping with branching gates—structurally unrelated to a recurrence math problem; agent reasoned linearly as appropriate for the actual task.",
+  "timestamp": "2026-03-23T03:21:14.273503+00:00"
+}

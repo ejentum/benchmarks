@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-10",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.8,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at C (McNamara fallacy) with valid reasoning about single-metric gatekeeping of a complex decision; traces argument structure then expands to second/third-order effects (route geography, averaging masking, mode differences, externalities); explicitly announces 'let me trace the argument's dependency graph carefully before pattern-matching' showing process awareness, though no mid-stream course correction; rechecks all four options before committing, eliminating each with specific reasoning; correctly labels B and D as partial fits rather than false negatives, distinguishing confidence levels throughout; all four alternatives are evaluated with distinct rejection reasons, not merely acknowledged; complete derivation chain from argument premises to fallacy diagnosis is reproducible by a third party; injection's negative gate concerns 'wasting time on outdated reports' — wholly mismatched to the question — agent neither falls into nor explicitly names this anti-pattern but avoids it by staying focused; suppressed modes (sunk_time_reporting, low_value_persistence) are irrelevant to a multiple-choice fallacy question and do not appear in the response, but the agent used a self-generated injection rather than the provided one; provided topology encodes an EV-based opportunity cost comparison graph, which the agent does not follow — its structure is a linear option-evaluation pass rather than the branching EV-computation + rank-sort + gate topology supplied.",
+  "timestamp": "2026-03-23T03:41:47.617511+00:00"
+}

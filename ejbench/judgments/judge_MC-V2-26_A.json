@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-26",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Arrives at 'yes' matching the correct answer with valid supporting reasoning; traces second-order effects including model dependence, Hubble tension implications, and how convergent evidence elevates epistemic status; shows awareness by unpacking definitions of 'fact' before committing, but does not explicitly name cognitive biases or course-correct mid-analysis; cites specific Planck 2018 value (13.797 ± 0.023 Gyr) as a concrete sanity check but does not re-derive or stress-test the figure independently; clearly distinguishes model-mediated inference from direct observation, states what would change the conclusion (ΛCDM revision), and gives explicit uncertainty bounds; considers two competing definitions of 'established fact' and briefly addresses alternative cosmological frameworks, but does not systematically evaluate them with specific rejection criteria; reasoning chain is mostly traceable with specific figures cited, but some steps (how each independent method actually constrains age) are asserted rather than derived.",
+  "timestamp": "2026-03-23T02:42:52.137487+00:00"
+}

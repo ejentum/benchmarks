@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-01",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Correct final answer (No) with correct axis separation but arithmetic errors in Y-axis running totals (−1, then −3 instead of −3, then +3 instead of +3, then +7 instead of +7, then +3 instead of +3 — the running totals are wrong but net Y=+3 is correct); reasoning goes one level beyond surface by separating axes; implicit self-monitoring via the RA²R injection but no explicit reflection on reasoning process; mentions tracking axes separately but doesn't verify final sums against individual steps; presents answer without uncertainty; no alternative approaches considered; most steps shown but running total annotations are incorrect/confusing despite correct final values",
+  "timestamp": "2026-03-23T11:01:10.541592+00:00"
+}

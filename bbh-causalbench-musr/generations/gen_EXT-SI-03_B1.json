@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-03",
+  "condition": "B1",
+  "output": "(C) Lolita\n\n**Tracking the swaps:**\n\n1. **Start:** Alice=Ulysses, Bob=Frankenstein, Claire=Lolita\n2. **Claire ↔ Bob:** Alice=Ulysses, Bob=Lolita, Claire=Frankenstein\n3. **Bob ↔ Alice:** Alice=Lolita, Bob=Ulysses, Claire=Frankenstein\n4. **Claire ↔ Bob:** Alice=Lolita, Bob=Frankenstein, Claire=Ulysses\n\nWait — let me recheck step 4:\n\nAfter step 3: Bob=Ulysses, Claire=Frankenstein. They swap → Bob=Frankenstein, Claire=Ulysses.\n\nSo Bob has **Frankenstein** — answer **(B)**.",
+  "timestamp": "2026-03-20T09:40:00.190476+00:00"
+}

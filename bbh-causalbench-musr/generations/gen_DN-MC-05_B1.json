@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-05",
+  "condition": "B1",
+  "output": "**(B)** is correct.\n\nThis is a textbook confusion of **prediction with causation**. A model that accurately *predicts* churn is not the same as a model that identifies *persuadable* customers — the ones whose behavior you can actually change with an intervention.\n\nThe 95%-accurate model is likely picking up **lagging indicators** — signals that a customer has already mentally churned (e.g., canceled auto-pay, stopped logging in). These people are easy to predict but impossible to save with a discount. What the intervention needs is a model trained on **persuadability**: which customers would churn *without* intervention but stay *with* it. That requires causal inference (e.g., uplift modeling), not just predictive accuracy.\n\n**Why the other options fall short:**\n\n- **(A)** accepts the flawed reasoning at face value.\n- **(C)** is tempting but too charitable — it frames this as a scope limitation rather than a fundamental reasoning error. The data scientist's *conclusion* (\"the model works, the intervention is wrong\") is wrong.\n- **(D)** raises a valid but separate concern (distribution shift). The core issue here isn't deployment drift — it's that prediction ≠ actionability.",
+  "timestamp": "2026-03-20T17:21:42.951641+00:00"
+}

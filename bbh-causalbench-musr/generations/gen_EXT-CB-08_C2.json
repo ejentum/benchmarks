@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-08",
+  "condition": "C2",
+  "output": "**Yes.** If you observe large feet, it is much more likely the manager did **not** sign the termination letter.\n\n**Working:**\n\n- P(large feet) = P(not signing ∧ large feet) + P(signing ∧ large feet) = 59% + 6% = **65%**\n- P(not signing | large feet) = 59% / 65% ≈ **90.8%**\n- P(signing | large feet) = 6% / 65% ≈ **9.2%**\n\nGiven large feet, the posterior probability of not signing (~91%) vastly exceeds the probability of signing (~9%).",
+  "timestamp": "2026-03-20T10:57:50.874426+00:00"
+}

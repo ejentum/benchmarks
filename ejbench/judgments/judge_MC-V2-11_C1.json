@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-11",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.7667,
+  "injection_composite": 0.6667,
+  "brief_justification": "Correctly identifies multiple comparisons as the core problem with exact match to ground truth; Traces three levels deep — FWER math, post-hoc p-hacking, Bonferroni fragility of primary result, and overlapping-segment variance contamination; Shows some awareness of PM's backwards framing and flags confirmation bias but does not reflect on its own reasoning method; Explicitly computes 1-(0.95)³=14.3% and verifies primary p=0.048 fails Bonferroni threshold of 0.0167; Acknowledges uncertainty with 'appear to be' for post-hoc segments and 'we don't know how many segments were tested' but no structured confidence-level analysis; Focuses on one answer (multiple comparisons) without evaluating competing explanations like underpowered test, selection bias, or Hawthorne effect; Full derivation chain visible — setup, math, implication, correction thresholds — reproducible by third party; Avoids correlation-as-confirmation fallacy and implicitly addresses the negative gate's causal-attribution failure mode but never names or refutes it explicitly; Explicitly surfaces confirmation bias and shared-variance contamination, avoids halo-effect amplification and single-hypothesis commitment, demonstrating strong suppress compliance; Reasoning is largely linear (identify → math → table → recommendations) and does not map to the FORK/JOIN/gate topology showing counterfactual simulation branches",
+  "timestamp": "2026-03-23T04:47:53.282653+00:00"
+}

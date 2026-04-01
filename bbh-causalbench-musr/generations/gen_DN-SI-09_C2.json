@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-09",
+  "condition": "C2",
+  "output": "**The answer is (B) — a race to the bottom.**\n\nThis is a classic **reinforcing feedback loop** (positive feedback in systems dynamics terms). The key mechanism:\n\n1. Algorithm rewards lowest price\n2. Sellers cut quality to lower price\n3. Buyers get worse products → negative reviews\n4. Algorithm de-ranks reviewed sellers → pushes toward *even cheaper* options\n5. Premium sellers exit (removing the quality floor)\n6. Repeat — each cycle degrades the ecosystem further\n\nThere's no **balancing mechanism** in the loop. The algorithm lacks a quality signal that could counteract the price pressure, so the system has no natural equilibrium point above \"unacceptable.\" It's the same dynamic behind Gresham's Law (\"bad money drives out good\") — when a system can't distinguish quality, low-quality displaces high-quality.\n\n**(A)** is wrong because self-correction requires a negative feedback loop, which this system doesn't have. **(C)** assumes stabilization, but the premium seller exodus removes the very thing that could anchor quality. **(D)** confuses price with value.",
+  "timestamp": "2026-03-20T17:52:10.214462+00:00"
+}

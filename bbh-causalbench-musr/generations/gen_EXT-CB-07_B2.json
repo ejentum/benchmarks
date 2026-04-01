@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-07",
+  "condition": "B2",
+  "output": "## Causal Analysis\n\nLet me work through this step-by-step using the defined causal structure.\n\n**Variables:**\n- **X** (Smoking): smoking / nonsmoking\n- **H** (Health): poor (observed)\n- **W** (Birth weight): normal / low\n- **Y** (Infant mortality): high / not high\n\n**Causal graph:**\n```\nSmoking ──→ Birth Weight ──→ Infant Mortality\n   │             ↑                  ↑\n   │         Health ────────────────┘\n   └────────────────────────────────┘\n```\n\n**Functional relationships (as given):**\n1. **W = normal** if (Smoking OR GoodHealth), else **low**\n2. **Y = high** if (Smoking OR GoodHealth OR NormalWeight), else **not high**\n\n**Intervention: do(Smoking = yes), Health = poor**\n\n**Step 1 — Determine birth weight:**\nW = Smoking OR GoodHealth = **True** OR False = **True** → **Normal birth weight**\n\n**Step 2 — Determine infant mortality:**\nY = Smoking OR GoodHealth OR NormalWeight = **True** OR False OR **True** = **True** → **High infant mortality**\n\n---\n\n**Yes**, infant mortality would be high if the mother is a smoking mother. Under this intervention, smoking alone is sufficient to produce both normal birth weight and high infant mortality, regardless of the poor health condition.",
+  "timestamp": "2026-03-20T09:58:10.505778+00:00"
+}

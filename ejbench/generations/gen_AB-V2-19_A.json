@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-19",
+  "condition": "A",
+  "output": "(A) E3, E2, E1\n\nE3 is the most abstract — everyday language, no technical mechanism. E2 is intermediate — names the failure mode (metal fatigue) and contributing factors. E1 is the most concrete — specifies the physical mechanism down to crystal lattice structure and crack propagation theory.",
+  "timestamp": "2026-03-22T16:02:10.954997+00:00"
+}

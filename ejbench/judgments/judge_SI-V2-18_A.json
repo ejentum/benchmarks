@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-18",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly $19,160 matching the correct answer with valid application of elasticity formulas; goes one level beyond bare calculation by noting the net revenue shift and individual product contributions, but does not explore second-order effects or model assumptions; proceeds linearly without naming any biases, checking assumptions about elasticity linearity, or reflecting on the reasoning method; performs basic implicit verification by reconciling component revenue changes ($-2,720 and $+2,880) against the net $+160 result; presents conclusions with full confidence and never acknowledges that point-elasticity approximation may not hold over a 40% price change or that constant elasticity is assumed; considers only the direct formula-application path with no mention of arc elasticity, midpoint method, or alternative interpretations; every step is shown explicitly with all inputs traced from the problem data, fully reproducible by a third party.",
+  "timestamp": "2026-03-23T02:27:11.675232+00:00"
+}

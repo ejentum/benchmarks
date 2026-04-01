@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-09",
+  "condition": "B1",
+  "output": "**(B)** is correct.\n\nRestricting to summer months doesn't eliminate temperature as a confound — it concentrates it. Within summer, hotter days independently drive both more ice cream consumption and more swimming activity (the actual drowning mechanism). The researcher addressed the coarse seasonal confound while missing the finer-grained temperature/activity confound operating within that window.\n\nTo properly address this, they'd need to control for **temperature** and **swimming frequency** directly, not just the season label.",
+  "timestamp": "2026-03-20T17:22:37.619477+00:00"
+}

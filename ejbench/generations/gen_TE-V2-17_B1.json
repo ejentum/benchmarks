@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-17",
+  "condition": "B1",
+  "output": "## UTC Conversion & Timeline\n\n| # | Source | Local Time | Timezone | → UTC |\n|---|--------|-----------|----------|-------|\n| 1 | Auth server | 06:28 | UTC-8 (PST) | **14:28** |\n| 2 | DNS server | 14:30 | UTC | **14:30** |\n| 3 | Firewall | 14:32 | UTC | **14:32** |\n| 4 | Web server | 09:35 | UTC-5 (EST) | **14:35** |\n| 5 | Database | 09:38 | UTC-5 (EST) | **14:38** |\n| 6 | Email server | 15:41 | UTC+1 (CET) | **14:41** |\n\n**FIRST:** Auth server — failed login attempts at **14:28 UTC**\n**LAST:** Email server — exfiltration email at **14:41 UTC**\n\nThe full attack played out in just **13 minutes** and follows a textbook kill chain: reconnaissance (DNS lookup) → brute-force auth → firewall breach → web exploit → database access → data exfiltration via email.",
+  "timestamp": "2026-03-22T21:53:42.252406+00:00"
+}

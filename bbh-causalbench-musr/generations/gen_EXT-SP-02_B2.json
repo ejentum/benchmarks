@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-02",
+  "condition": "B2",
+  "output": "**Yes.**\n\nTracing through with a fixed coordinate frame (start at origin, initially facing north):\n\n1. **Take 3 steps** → move to (0, 3), facing north\n2. **Turn around** → now facing south, still at (0, 3)\n3. **Take 5 steps** → move to (0, −2), facing south\n4. **Turn right** → now facing west, still at (0, −2)\n5. **Turn right** → now facing north, still at (0, −2)\n6. **Take 1 step** → move to (0, −1), facing north\n7. **Take 1 step** → move to (0, 0), facing north\n\nYou end at the starting point.",
+  "timestamp": "2026-03-20T09:54:44.146584+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-15",
+  "condition": "B1",
+  "output": "**(B)**.\n\nThe core flaw is the **missing counterfactual baseline**. \"10% of my picks became unicorns\" sounds impressive — but if ~10% of *all* fundable startups in that era/sector became unicorns, the VC performed no better than random selection from the same deal flow. The claim confuses an *outcome* with evidence of *skill*.\n\nOptions A, C, and D gesture at real statistical concerns (sample size, luck), but they miss the fundamental issue: **without knowing the base rate, no success rate — however high — demonstrates selection ability.** The VC needs to show they *beat* the baseline, not just that they have one.",
+  "timestamp": "2026-03-20T17:24:03.286564+00:00"
+}

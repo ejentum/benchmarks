@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-28",
+  "condition": "B2",
+  "output": "**No.** Conditioning on Relationship Status (Method 1) does **not** more accurately reflect how Personality affects Freckles — it actively distorts the picture.\n\n**Why:** In this world, Personality and Freckles are **independent** — there is no causal path between them. They both independently cause Relationship Status, making it a **collider**:\n\n```\nPersonality ──→ Relationship Status ←── Freckles\n```\n\n**Collider bias:** When you condition on (control for) a collider, you open a spurious path between its two causes. This creates an artificial association between Personality and Freckles that doesn't actually exist.\n\nThe true causal effect of Personality on Freckles is **zero**. Method 1 would make it appear non-zero — the opposite of accuracy.",
+  "timestamp": "2026-03-20T10:08:23.557755+00:00"
+}

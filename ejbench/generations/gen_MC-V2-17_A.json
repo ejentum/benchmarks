@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-17",
+  "condition": "A",
+  "output": "**(A) 65.7%**\n\nP(at least one day of rain) = 1 − P(no rain all three days) = 1 − (0.7)³ = 1 − 0.343 = **0.657 = 65.7%**\n\nYour friend's error is adding probabilities directly, which only works as an approximation for very small probabilities and breaks down here. The complement rule for independent events is the correct approach.",
+  "timestamp": "2026-03-22T16:11:59.544572+00:00"
+}

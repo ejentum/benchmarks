@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-25",
+  "condition": "A",
+  "output": "Yes. If Method 1 (the naive correlation between drug taken and cholesterol level) produces unclear or contradictory results, that is exactly what you'd expect when an unobserved confounder is present.\n\n**Why:** The confounder creates a backdoor path: **Confounder → Drug taken → Cholesterol level** and **Confounder → Cholesterol level**. Method 1 captures both the causal effect of the drug *and* the spurious association introduced by the confounder, mixing them together. This mixture can produce results that appear contradictory (e.g., Simpson's paradox-like reversals) or attenuated/amplified effects.\n\nMethod 2 (stratifying by the confounder) would separate the causal effect from the confounding, but since the confounder is unobserved, Method 2 can't actually be performed — which is precisely the problem.\n\nSo yes, unclear or contradictory results from Method 1 are a classic signal that an unobserved confounder is biasing the observed correlation.",
+  "timestamp": "2026-03-20T09:25:30.136778+00:00"
+}

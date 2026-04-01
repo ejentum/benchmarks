@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-07",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (box instead of Emma's head — the correct answer refers to sunglasses on her head, which she might confuse with 'the key'), but the reasoning about tracking object locations and character knowledge was methodical; Goes one level beyond surface by separating narrator vs character knowledge frames; Some self-monitoring via suppression signals and explicit frame separation; Mentions verification need implicitly but doesn't test alternative interpretations of 'key'; Presents conclusion confidently without acknowledging ambiguity in what 'key' Emma might look for; Briefly notes Emma's locations but doesn't consider the sunglasses-on-head alternative interpretation; Shows clear derivation chain for the box conclusion but misses the intended interpretation entirely",
+  "timestamp": "2026-03-23T11:06:32.469282+00:00"
+}

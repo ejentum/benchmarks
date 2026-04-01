@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-14",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 50% with valid Bayes' theorem application matching the correct answer; goes one level beyond surface by explaining the symmetry (0.021 = 0.021) and the intuition that Plant B's higher defect rate offsets its lower volume; proceeds entirely linearly with no reflection on method, biases, or assumption checks; shows intermediate arithmetic explicitly (both components equal 0.021) making the computation easy to verify, though no independent re-derivation is attempted; presents the deterministic result with full certainty, which is technically appropriate here but no assumptions or edge cases are acknowledged; considers only the Bayes' theorem route with no mention of alternative approaches such as simulation or frequency-table methods; every step is explicitly shown — givens, marginal probability, Bayes numerator and denominator — fully reproducible by a third party.",
+  "timestamp": "2026-03-23T02:33:00.243735+00:00"
+}

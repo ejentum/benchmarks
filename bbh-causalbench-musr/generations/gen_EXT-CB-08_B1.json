@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-08",
+  "condition": "B1",
+  "output": "## Answer: Yes\n\nGiven large feet, it is more likely that the manager **did not** sign the termination letter.\n\n**Working:**\n\nFrom the given joint probabilities:\n\n- P(large feet) = P(¬sign ∧ large feet) + P(sign ∧ large feet) = 0.59 + 0.06 = **0.65**\n\nApplying Bayes' theorem:\n\n- P(¬sign | large feet) = 0.59 / 0.65 ≈ **0.908**\n- P(sign | large feet) = 0.06 / 0.65 ≈ **0.092**\n\nSo conditional on observing large feet, there is a ~90.8% probability the manager did **not** sign the termination letter, versus ~9.2% that they did.\n\nThis is also higher than the unconditional prior of P(¬sign) = 0.75, meaning observing large feet makes it *even more likely* the manager didn't sign — consistent with the causal structure where both manager and director influence foot size, and large feet are more associated with the non-signing outcome.",
+  "timestamp": "2026-03-20T09:37:36.735916+00:00"
+}

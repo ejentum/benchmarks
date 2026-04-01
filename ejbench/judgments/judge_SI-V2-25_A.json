@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-25",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Agent arrives at the exact correct answer (C: 0 generators) matching the ground truth; agent merely restates 'exactly as you described' without independently analyzing or extending the cascade logic; no reflection on its own reasoning process or potential pitfalls; agent performs zero independent verification, simply accepting the question's pre-worked arithmetic without re-deriving any step; presents the conclusion as certain with no acknowledgment of assumptions (e.g., proportional load distribution model, instantaneous tripping); no competing scenarios or alternative models considered (e.g., partial load shedding, non-proportional dispatch); agent cites the question's own derivation trail rather than constructing an independent one, offering no reproducible reasoning chain of its own.",
+  "timestamp": "2026-03-23T02:32:30.157555+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-20",
+  "condition": "B2",
+  "output": "**The answer is (B).**\n\nThis is a textbook example of **confirmation bias compounded with selection bias** (sometimes called the \"surviving bullet holes\" problem).\n\nThe critical flaw: the manager never interviewed candidates from non-top-10 schools, so there is no counterfactual. The data only tells you \"people I selected turned out well\" — it tells you nothing about the people you *didn't* select.\n\nThe other options identify real but secondary concerns. (B) identifies the structural reasoning flaw that invalidates the conclusion entirely.",
+  "timestamp": "2026-03-20T17:37:44.056319+00:00"
+}

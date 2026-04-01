@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-25",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies non-isomorphism with valid structural arguments and matching arithmetic (chromatic polynomial, Burnside table, complement graph analysis); analyzes both problems to 3+ levels including Hamiltonian cycles in complement graphs, algebraic object types, and categorical distinctions; proceeds mostly linearly with no explicit bias-naming or mid-reasoning course correction, only implicit rechecking via case splitting; shows Burnside table fully and checks both enemy-graph cases but does not test boundary conditions or derive from an alternative angle; handles the enemy-graph ambiguity (C₆ vs C₃∪C₃) as distinct cases but states neither answer equals 14 without flagging that the problem statement's ambiguity is itself an assumption; considers both 2-regular graph structures and gives three specific reasons why the map fails, though no alternative proof strategy is explored; necklace derivation is fully reproducible from the response, but Problem A yields only 'exhaustive enumeration gives 6' without showing the actual enumeration or fixing-rotation argument in enough detail for full reproduction",
+  "timestamp": "2026-03-23T02:32:52.076053+00:00"
+}

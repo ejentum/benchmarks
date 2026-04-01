@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-10",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 2
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with brief justification citing Tom's action; surface-level analysis only tracking one object movement; no self-monitoring or reflection on reasoning process; no verification or cross-checking against other movements; no uncertainty acknowledged; no alternatives considered (e.g., kit, original location); shows the key derivation step but doesn't trace through all movements or verify nothing else happened to the coin",
+  "timestamp": "2026-03-23T13:22:40.861019+00:00"
+}

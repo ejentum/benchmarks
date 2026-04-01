@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-08",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid norm-violation reasoning; Multi-level analysis covering joint causation structure, norm violation asymmetry, and folk causation research; Some self-monitoring via suppressing framing biases but no explicit bias-checking of own reasoning; Mentions verification concepts but doesn't test alternative conclusions; Acknowledges the symmetric causal structure before explaining why folk judgment diverges; Considers the joint-cause alternative framing but could explore more systematically; Full derivation chain from causal structure to norm violation to folk judgment is traceable",
+  "timestamp": "2026-03-23T12:50:24.097558+00:00"
+}

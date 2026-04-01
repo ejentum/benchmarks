@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-03",
+  "condition": "C1",
+  "output": "The answer is **(A) 2pm to 7pm**.\n\nBetty's day is accounted for during every other window:\n- 8am–10am: buying lunch\n- 10am–1pm: at the electronic store\n- 1pm–2pm: near the Eiffel Tower\n- 7pm–10pm: at the cafe\n\nThe only unaccounted gap is **2pm to 7pm**.",
+  "timestamp": "2026-03-20T10:15:32.216057+00:00"
+}

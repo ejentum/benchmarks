@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-17",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (relic's shelf instead of camp table) but reasoning approach of tracking object movements was sound; Goes one level beyond surface by tracing the notebook through multiple locations; Implicit self-monitoring in methodically stepping through the story but no reflection on whether Eli witnessed the move; Mentions tracing but doesn't verify whether Eli had knowledge of Emma's action; Presents conclusion confidently without acknowledging the key uncertainty about Eli's awareness; Acknowledges the initial camp table location as an alternative but dismisses it without considering Eli's perspective; Shows clear derivation steps with numbered location tracking but misses the critical theory-of-mind analysis",
+  "timestamp": "2026-03-23T11:13:53.614910+00:00"
+}

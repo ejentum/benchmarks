@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-15",
+  "condition": "A",
+  "output": "**(B)**.\n\nThe core flaw is the **missing counterfactual baseline**. \"10% of my picks became unicorns\" sounds impressive — but if ~10% of *all* startups in that era/stage/sector became unicorns anyway, the VC's \"selection\" added nothing over random picking. Skill means outperforming the base rate, and the claim never establishes what the base rate is.\n\nOptions A, C, and D gesture at real statistical concerns (sample size, luck), but they're secondary. The fundamental error is treating an outcome rate as evidence of skill without any comparison to what would have happened absent the supposed skill — that's the missing counterfactual.",
+  "timestamp": "2026-03-20T17:11:23.785257+00:00"
+}

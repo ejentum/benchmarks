@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-07",
+  "condition": "A",
+  "output": "**The answer is (B).**\n\nThe structural pattern is an **information flow failure within organizational hierarchy**. In all three cases:\n\n- **Accurate risk signals were generated** by domain experts (engineers, scientists)\n- **The organizational structure filtered, diluted, or suppressed those signals** before they could influence decisions\n- The problem wasn't missing information — it was that the hierarchy prevented existing information from reaching or being weighted by decision-makers\n\n(A) is too simplistic — the leaders weren't incompetent in general, they were operating within structures that insulated them from ground-truth signals. (C) captures a symptom but not the mechanism — *why* was speed prioritized? Because the structure gave schedule pressure more weight than technical risk signals. (D) misattributes a systemic failure to individuals.\n\nThe key insight: **the information existed but the structure prevented it from influencing decisions.** That's a topology problem, not a people problem.",
+  "timestamp": "2026-03-20T17:02:43.440141+00:00"
+}

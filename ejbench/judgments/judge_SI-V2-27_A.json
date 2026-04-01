@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-27",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 72 minutes with valid algebra and cascade confirmation; goes one level beyond the threshold calculation by explaining why cascade is immediate (11.75 > 9.4), but doesn't explore second-order effects like differential fatigue rates or dynamic load distribution; rechecks arithmetic implicitly but doesn't name any reasoning biases or question the uniform-redistribution assumption; explicitly verifies cascade by computing post-failure load (47/4 = 11.75) against degraded capacity; presents all conclusions as certain without acknowledging that load redistribution is assumed uniform or that fatigue is modeled as perfectly linear; considers no alternative failure sequences (e.g., staggered failure, partial redistribution, or non-simultaneous degradation); every step is shown—capacity formula, failure equation, solution, unit conversion, and cascade check—reproducible by a third party.",
+  "timestamp": "2026-03-23T02:33:30.762393+00:00"
+}

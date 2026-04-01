@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-04",
+  "condition": "C2",
+  "output": "A typical person would answer: **No**.\n\nThis is the well-known **Knobe Effect** (side-effect effect) scenario — but in its *positive* version. Research by Joshua Knobe shows a strong asymmetry in how people judge intentionality for side effects:\n\n- When the side effect is **harmful** (the negative version), most people (~85%) say the chairman **intentionally** harmed the environment.\n- When the side effect is **helpful** (this version), most people (~75-80%) say the chairman did **not** intentionally help the environment.\n\nThe board explicitly stated they don't care about the environment — they only wanted profit. The environmental benefit was a foreseen but undesired side effect. Most people judge that since the board had no *desire* to help the environment, the help wasn't intentional.",
+  "timestamp": "2026-03-20T10:52:55.269479+00:00"
+}

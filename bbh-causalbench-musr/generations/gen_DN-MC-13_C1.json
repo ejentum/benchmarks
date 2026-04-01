@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-13",
+  "condition": "C1",
+  "output": "(B).\n\nControlling for GDP removes one confounder but doesn't solve the identification problem. The correlation could still reflect reverse causality, omitted variables, or simultaneity — none of which are addressed by adding GDP as a control. Establishing causation here requires an exogenous source of variation (instrumental variable, natural experiment, or similar design), not just more covariates.",
+  "timestamp": "2026-03-20T17:46:28.863075+00:00"
+}

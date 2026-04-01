@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-30",
+  "condition": "B2",
+  "output": "## Causal Analysis\n\nLet me trace through this self-contained causal model step by step.\n\n**Variables (binary):**\n- Sister: {yes, no}\n- Blood Pressure: {low, high}\n- Heart Condition: {healthy, unhealthy}\n\n**Causal graph:** Sister → BP, Sister → Heart, BP → Heart\n\n**Structural equations from the given facts:**\n1. Sister = Yes → BP = Low (therefore Sister = No → BP = High)\n2. Sister = Yes ∧ BP = High → Heart = Healthy (only stated combination producing a healthy heart)\n\n**Counterfactual: set Sister = No**\n\n- **BP:** Without a sister, BP = High (inverse of rule 1)\n- **Heart:** We now have Sister = No ∧ BP = High. Rule 2 requires *both* having a sister AND high blood pressure for a healthy heart. The sister condition fails.\n\n**Answer: No.** The person would **not** have a healthy heart without a sister.\n\nThe key insight: even though high blood pressure is present in the counterfactual (which is one ingredient for a healthy heart), the direct effect of having a sister on heart condition is also required. Without a sister, that direct protective pathway is absent, so the heart condition is unhealthy.",
+  "timestamp": "2026-03-20T10:09:44.133347+00:00"
+}

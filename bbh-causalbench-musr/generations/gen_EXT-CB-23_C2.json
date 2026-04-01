@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-23",
+  "condition": "C2",
+  "output": "**Yes**, arriving to school on time is more likely overall.\n\nUsing the law of total probability:\n\nP(on time) = P(on time | wake on time) × P(wake on time) + P(on time | wake late) × P(wake late)\n\nP(on time) = 0.52 × 0.95 + 0.87 × 0.05 = 0.494 + 0.0435 = **0.5375**\n\nThe overall probability of arriving on time is **53.75%**, which exceeds 50%, so arriving on time is more likely than arriving late.",
+  "timestamp": "2026-03-20T11:04:28.873548+00:00"
+}

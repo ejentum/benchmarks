@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-03",
+  "condition": "C1",
+  "output": "## Solution\n\nGiven the self-contained world with **Education → Skill → Black hair**:\n\n**Compute conditional probabilities:**\n\n- P(black hair | college) = P(college ∧ black hair) / P(college) = 18% / 45% = **40.0%**\n- P(black hair | high school) = P(high school ∧ black hair) / P(high school) = 17% / 55% ≈ **30.9%**\n\n**Yes** — the chance of black hair is larger when observing college degree or higher (40.0% vs 30.9%).",
+  "timestamp": "2026-03-20T10:35:05.315238+00:00"
+}

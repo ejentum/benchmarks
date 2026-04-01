@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-21",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact answer (Year 16) with valid phase-by-phase simulation matching ground truth; identifies the positive feedback loop and threshold dynamics, one level beyond surface but doesn't trace second/third-order effects like groundwater-surface interaction implications; no explicit reflection on reasoning method, potential edge cases, or assumption checks during analysis; presents answer confidently without cross-checking via alternate calculation path or boundary condition tests; states conclusions as certain without noting assumptions about when-in-year recharge/withdrawal occurs or threshold boundary behavior; considers only one analytical approach with no mention of alternatives; shows phase-level derivation table allowing reproduction of key transitions but skips individual year-by-year calculations that a third party would need to verify.",
+  "timestamp": "2026-03-23T02:29:38.451160+00:00"
+}

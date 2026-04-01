@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-21",
+  "condition": "B1",
+  "output": "**No.** Method 2 is more correct.\n\nThis is a classic **collider bias** (Berkson's paradox) scenario. In the causal structure you've defined:\n\n- Respiratory issues → Hospitalization\n- Broken bones → Hospitalization\n\nHospitalization is a **collider** — two independent causes both point into it. There is no causal path from respiratory issues to broken bones.\n\n**Method 1** conditions on hospitalization status. Conditioning on a collider *opens* a spurious association between its two independent causes. Among hospitalized patients, knowing someone does *not* have respiratory issues makes it more likely they're there for broken bones (and vice versa) — but this is a selection artifact, not a real causal or correlational relationship.\n\n**Method 2** looks at the unconditional relationship, which correctly reflects that respiratory issues and broken bones are independent — no causal link, no confounding, no association.",
+  "timestamp": "2026-03-20T09:42:57.683468+00:00"
+}

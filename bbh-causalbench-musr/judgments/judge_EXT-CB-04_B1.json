@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-04",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (Yes instead of No) but the causal reasoning approach was partially sound; goes one level deep analyzing pathways but makes an unsupported assumption that vaccination reaction contributes positively to black hair and that smallpox suppression breaks equality asymmetrically; no explicit self-monitoring or bias checking despite the injected suppression signals; mentions Bayes' theorem as verification but doesn't actually compute anything; presents conclusion with confidence despite the equal-probability baseline being a strong hint the answer could be No; doesn't consider that the intervention could reduce BH equally or that VR might not favor BH; shows the DAG and pathway analysis clearly but the critical numeric derivation is hand-waved with inequality signs rather than computed.",
+  "timestamp": "2026-03-23T11:03:59.881849+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-11",
+  "condition": "A",
+  "output": "**(B).**\n\nAll three are instances of **throughput-quality inversion** — optimizing the visible flow rate degrades first-pass quality, which creates a hidden return loop (readmissions, repeat calls, regressions) that feeds demand back into the system's intake. The metric improves while the system's actual output degrades.\n\nThe key structural element is the **rework loop**: the \"completed\" items aren't actually completed, so they re-enter the queue, inflating the very load the optimization was meant to reduce.",
+  "timestamp": "2026-03-20T17:03:54.381174+00:00"
+}

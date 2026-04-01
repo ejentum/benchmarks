@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-13",
+  "condition": "A",
+  "output": "**(D) Approximately 2%**\n\nThis is a classic Bayes' theorem problem where base rate neglect trips people up.\n\n**The math:**\n\n| Group | Size (per 100,000) | Test result |\n|---|---|---|\n| Actually sick | 100 | 99 test positive (sensitivity 99%) |\n| Healthy | 99,900 | 4,995 test positive (specificity 95% → 5% false positive) |\n\nP(disease | positive) = 99 / (99 + 4,995) = 99 / 5,094 ≈ **1.94%**\n\n**Why it's so low:** Even with an excellent test, when the disease is rare (1/1,000), the false positives from the huge healthy population vastly outnumber the true positives. ~98% of positive results are false alarms.",
+  "timestamp": "2026-03-22T16:10:43.245326+00:00"
+}

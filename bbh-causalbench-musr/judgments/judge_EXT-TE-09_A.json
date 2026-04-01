@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-TE-09",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2381,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer (C) with valid final-step logic; only states the last constraint and conclusion without tracing the full timeline or exploring why; no reflection on reasoning process or potential error sources; does not verify by checking other options or confirming all time slots are filled; presents answer with full certainty and no acknowledgment of assumptions; ignores options A/B/D entirely without explaining why they fail; shows only the last leg of the derivation (9pm endpoint + 10pm closure) but omits the full sequential elimination of the earlier time blocks",
+  "timestamp": "2026-03-23T09:42:34.034321+00:00"
+}

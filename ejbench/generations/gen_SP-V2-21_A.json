@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-21",
+  "condition": "A",
+  "output": "**VoIP phones** — the pool .151-.200 provides 50 addresses, but 55 VoIP phones need static IPs.",
+  "timestamp": "2026-03-22T16:40:21.274103+00:00"
+}

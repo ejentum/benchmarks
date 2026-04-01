@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-08",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (storage) with valid theory-of-mind reasoning; Multi-level analysis tracking object locations across 4 scenes and Tom's epistemic state separately; Some self-monitoring via the reasoning context suppression of frame drift; Basic verification through the timeline table serving as a check on each scene; Acknowledges the critical detail about Tom not witnessing the move but doesn't explicitly state confidence levels; Implicitly considers the alternative (passenger seating area) by explaining why Tom wouldn't know about it; Full derivation trail with scene-by-scene table making the reasoning fully reproducible",
+  "timestamp": "2026-03-23T11:07:24.111096+00:00"
+}

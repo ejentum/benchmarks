@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-25",
+  "condition": "A",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Arrives at 'yes' but hedges heavily with caveats about it not being proof, making the answer partially correct rather than a clean 'yes'; Multi-level analysis tracing causal paths, backdoor paths, instrumental variables, and second-order implications; Shows awareness of reasoning limits ('consistent with but not proof of'); Provides verification via instrumental variable comparison and contrasting scenarios in a table; Excellent epistemic honesty distinguishing what the observation tells you vs what it doesn't, with clear confidence gradations; Systematically considers alternatives (noise, heterogeneous effects, measurement error) and explains why IV/RCT comparison is stronger; Full derivation trail from causal graph to backdoor criterion to conclusion, fully reproducible",
+  "timestamp": "2026-03-23T10:44:28.777535+00:00"
+}

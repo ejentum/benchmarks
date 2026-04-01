@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-03",
+  "condition": "A",
+  "output": "**The answer is (A).**\n\nLet me walk through the cumulative timeline from January 1:\n\n| Stage | Lag | Cumulative |\n|---|---|---|\n| Rate → mortgage rate adjustment | 2 weeks | ~0.5 months |\n| Mortgage rates → new applications drop | 4–6 weeks | ~1.5–2 months |\n| Reduced mortgages → housing starts decline | 3 months | ~4.5–5 months |\n| Housing decline → construction employment drop | 2 months | ~6.5–7 months |\n| Employment drop → reduced consumer spending | 1 month | ~7.5–8 months |\n| Reduced spending → GDP contraction | 3 months (1 quarter) | ~10.5–11 months |\n| GDP contraction → inflation reduction | 6 months (2 quarters) | ~16.5–17 months |\n\nBy July 1 (6 months in), the chain has reached roughly the housing-starts-declining stage. Construction employment hasn't meaningfully dropped yet, consumer spending hasn't been affected, GDP hasn't contracted, and inflation reduction is still ~10–11 months away.\n\nSo 6 months have elapsed, and approximately 6–8 months remain before inflation actually falls — the politician is criticizing the policy at roughly the halfway point of a ~17-month transmission chain.",
+  "timestamp": "2026-03-22T16:17:57.194025+00:00"
+}

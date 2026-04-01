@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-17",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: prior_distribution_weighting; posterior_update_cycle; evidential_accumulation\nSuppress: letting_initial_probability_estimate_persist_unchanged_despite_new_contradicting_data; ignoring_population_level_frequency_data_when_evaluating_individual_case_likelihood\n[END REASONING CONTEXT]\n\nThe friend's error is naively adding probabilities. The correct approach uses the **complement rule**:\n\nP(at least one day of rain) = 1 − P(no rain on all three days)\n\n- P(no rain on a single day) = 1 − 0.30 = 0.70\n- P(no rain on all three days) = 0.70 × 0.70 × 0.70 = 0.343\n- P(at least one day of rain) = 1 − 0.343 = **0.657 = 65.7%**\n\nThe answer is **(A) 65.7%**.\n\nThe friend's \"30% × 3 = 90%\" fails because you can't simply add probabilities of independent events — that method double-counts overlapping outcomes (e.g., it raining on day 1 *and* day 2). The complement approach correctly accounts for all combinations.",
+  "timestamp": "2026-03-22T21:47:53.229764+00:00"
+}

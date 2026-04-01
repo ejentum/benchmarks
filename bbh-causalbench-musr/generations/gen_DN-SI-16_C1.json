@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-16",
+  "condition": "C1",
+  "output": "**B**\n\nThe scenario describes a classic second-order effect. Each step in the causal chain matters:\n\n1. **Remove test filter** → application volume rises 35%\n2. **Same staff size** → less time per application\n3. **Time pressure** → reviewers default to quick-to-assess signals\n4. **Those signals** (school name, extracurricular breadth, essay polish) **correlate more strongly with family wealth** than standardized test scores do\n\nThe net result is that the new process substitutes a *visible, quantifiable* filter (test scores) with *opaque* filters that are harder to audit and more SES-dependent. A student from a under-resourced school can study for the SAT; they can't retroactively attend a prestigious high school or access essay coaching.\n\nThis is a systems-thinking question about **compensating feedback loops** — a well-intentioned intervention that, through downstream constraints, produces the opposite of its intended effect.",
+  "timestamp": "2026-03-20T17:46:13.139206+00:00"
+}

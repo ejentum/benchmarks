@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-05",
+  "condition": "A",
+  "output": "**The answer is (C).**\n\nWhen S3 goes offline, the only path from S1 to S4 and S5 is through S2. S3's **demand** disappears (it's offline, not consuming), but S4 and S5 still need power. S2 must now carry:\n\n- S2's own demand: 350MW\n- S4's demand: 500MW (previously fed partly by S3)\n- S5's demand: 250MW (previously fed by S3 and S4's backup)\n\nThat's **1,100MW through or serving the S2 path**, but the key point is S2 must handle at minimum the **750MW of downstream demand (S4+S5)** passing through it, which already exceeds its 400MW capacity — even without any \"rerouted S3 demand.\"\n\nOption (A) incorrectly adds S3's 450MW as rerouted demand — S3 is offline, so its load vanishes. Option (C) correctly identifies that the downstream load alone (750MW) is enough to overload S2's 400MW capacity.",
+  "timestamp": "2026-03-22T16:29:43.314484+00:00"
+}

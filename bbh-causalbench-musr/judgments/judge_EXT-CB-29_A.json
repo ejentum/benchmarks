@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-29",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid reasoning; Multi-level analysis tracing through structural equations, actual world, and counterfactual with clear causal insight; Minimal self-monitoring — no explicit reflection on potential reasoning errors or biases; Basic verification by computing both actual and counterfactual worlds and noting consistency; Presents conclusions confidently without acknowledging assumptions about equation interpretation; Notes the key insight about why the answer holds but doesn't systematically consider alternative interpretations of the structural equations; Complete derivation trail from setup through both steps, fully reproducible",
+  "timestamp": "2026-03-23T10:48:20.187412+00:00"
+}

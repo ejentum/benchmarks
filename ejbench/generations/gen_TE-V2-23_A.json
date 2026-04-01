@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-23",
+  "condition": "A",
+  "output": "Yes. The backup contains uncorrupted data.\n\nThe snapshot was taken at midnight on March 22. The corruption happened at 1:30 AM on March 22. Since the snapshot captures the database state at the moment it begins (midnight), it reflects the database *before* the 1:30 AM corruption event. The 3-hour copy window is irrelevant — the data being copied is from the midnight snapshot, not from the live database that continued receiving writes (and eventually the corruption).",
+  "timestamp": "2026-03-22T16:28:56.223058+00:00"
+}

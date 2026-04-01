@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-05",
+  "condition": "A",
+  "output": "Looking at this as a straightforward causal reasoning problem:\n\n**Given facts:**\n- P(vaccination) = 12%\n- P(survival | unvaccinated) = 42%\n- P(survival | vaccinated) = 33%\n\n**Current overall survival probability:**\n\nP(survival) = P(survival | unvaccinated) × P(unvaccinated) + P(survival | vaccinated) × P(vaccinated)\nP(survival) = 0.42 × 0.88 + 0.33 × 0.12 = 0.3696 + 0.0396 = **40.92%**\n\n**Effect of increasing vaccination rate:**\n\nSince vaccinated individuals have a **lower** survival probability (33%) than unvaccinated individuals (42%), shifting more people into the vaccinated group pulls the weighted average **down**.\n\n**Yes**, increasing the vaccination rate **decreases** the overall probability of smallpox survival in this hypothetical world.\n\nThis is counterintuitive in reality, but within the stated conditions — where vaccinated individuals simply have worse survival odds — the math is direct. The overall survival rate is a weighted average, and increasing the weight on the lower-probability group (33% < 42%) necessarily lowers the total.",
+  "timestamp": "2026-03-20T09:18:29.660191+00:00"
+}

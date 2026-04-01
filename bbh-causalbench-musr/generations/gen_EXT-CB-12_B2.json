@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-12",
+  "condition": "B2",
+  "output": "## Solution\n\n**Yes.** Observing uvzi makes it more likely that zuph occurred.\n\n**Given:**\n- P(zuph) = 0.77\n- P(¬zuph ∧ uvzi) = 0.11\n- P(zuph ∧ uvzi) = 0.46\n\n**Step 1 — Total probability of uvzi:**\n\nP(uvzi) = P(zuph ∧ uvzi) + P(¬zuph ∧ uvzi) = 0.46 + 0.11 = **0.57**\n\n**Step 2 — Posterior via Bayes:**\n\nP(zuph | uvzi) = P(zuph ∧ uvzi) / P(uvzi) = 0.46 / 0.57 ≈ **0.8070**\n\nP(¬zuph | uvzi) = 0.11 / 0.57 ≈ **0.1930**\n\n**Step 3 — Compare posterior to prior:**\n\n| | Probability |\n|---|---|\n| Prior P(zuph) | 0.77 |\n| Posterior P(zuph \\| uvzi) | 0.8070 |\n| Shift | +0.037 |\n\nObserving uvzi raises the probability of zuph from 77% to ~80.7%. The answer is **yes** — if uvzi occurs, zuph is more likely to have occurred (both in absolute terms at ~81%, and relative to the prior of 77%).",
+  "timestamp": "2026-03-20T10:00:03.593044+00:00"
+}

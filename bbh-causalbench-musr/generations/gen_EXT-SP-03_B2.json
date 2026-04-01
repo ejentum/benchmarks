@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-03",
+  "condition": "B2",
+  "output": "**No.**\n\nLet me trace the path with a fixed coordinate frame (facing north, right = east, left = west, forward = north, backward = south):\n\n| Step | Direction | Displacement | Position |\n|------|-----------|-------------|----------|\n| Start | — | — | (0, 0) |\n| 6 right | East | (+6, 0) | (6, 0) |\n| 1 forward | North | (0, +1) | (6, 1) |\n| 10 left | West | (−10, 0) | (−4, 1) |\n| 8 forward | North | (0, +8) | (−4, 9) |\n| 9 backward | South | (0, −9) | (−4, 0) |\n| 4 right | East | (+4, 0) | (0, 0) |\n\nWait — that actually lands on **(0, 0)**.\n\n**Yes**, you return to the starting point.",
+  "timestamp": "2026-03-20T09:54:58.053910+00:00"
+}

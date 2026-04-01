@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-02",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (Yes) via valid Bayesian inference with correct arithmetic; traces second-order causal suppression logic explaining *why* lirg is evidence against jyka, going well beyond surface-level; proceeds linearly without naming potential biases or flagging the uniform-prior assumption as a choice; re-derives P(lirg) as a normalizing constant and confirms posterior exceeds prior, constituting basic verification; assumes uniform prior P(jyka)=0.5 without flagging it as an assumption or noting the conclusion would hold for any prior (since the likelihood ratio favors ¬jyka regardless); never considers alternative priors, alternative causal interpretations, or what the presence of unobserved Gyzp might complicate; every derivation step is shown in full — causal graph, given values, Bayes formula, arithmetic, and conclusion are all explicit and reproducible.",
+  "timestamp": "2026-03-23T09:49:56.565055+00:00"
+}

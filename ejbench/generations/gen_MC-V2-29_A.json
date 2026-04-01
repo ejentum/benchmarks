@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-29",
+  "condition": "A",
+  "output": "**C** — Speculative.\n\nThe argument conflates two different things:\n\n1. **Scaling laws** describe how *training loss on the training distribution* decreases as a power law with compute/data/parameters. This is empirically well-established.\n\n2. **\"Human-level performance on all cognitive benchmarks\"** is a claim about *downstream task capability* across arbitrary evaluation distributions — something scaling laws don't directly predict.\n\nThe leap from (1) to (2) involves multiple unverified assumptions: that loss reduction translates uniformly to capability gains, that all cognitive benchmarks lie on or near the training distribution, that there are no qualitative capability thresholds or emergent bottlenecks, and that \"human-level\" is a single bar rather than a heterogeneous set of targets.\n\nThe premises are real; the conclusion doesn't follow from them. That's speculation dressed in empirical clothing — the most epistemically dangerous kind.",
+  "timestamp": "2026-03-22T16:16:57.237343+00:00"
+}

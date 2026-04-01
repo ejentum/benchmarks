@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-10",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 3,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.9667,
+  "injection_composite": 0.8889,
+  "brief_justification": "Arrives at correct answer (D) with valid causal reasoning about route-assignment mechanism disappearing under mandatory training; traces second-order effects including that the same route distribution must still be covered and that 'dominant' implies non-zero residual causal effect; explicitly course-corrects mid-response ('Wait — let me re-check (B) vs (D)') and names the dominant/sole distinction as a potential reasoning trap; performs explicit counterfactual verification ('if it were the sole effect, B would be correct'); clearly distinguishes between the observational 40% correlation and the interventional causal effect, and notes what would change the conclusion; systematically evaluates option (B) as an alternative and provides specific reasons why 'dominant' versus 'sole' excludes it; every conclusion traces to an explicit derivation of the mechanism (algorithm can no longer differentiate when everyone is certified); explicitly avoids treating the 40% observational gap as a direct causal estimate and instead reasons about the intervention mechanism; shows zero evidence of correlation-to-causation leap or observational causation inference, and explicitly frames the data as observational; follows the topology structure (state claim → classify as observational → analyze confounds → reason about intervention) but does not explicitly walk through each gate node, making the mapping implicit rather than structural.",
+  "timestamp": "2026-03-23T03:42:09.984137+00:00"
+}

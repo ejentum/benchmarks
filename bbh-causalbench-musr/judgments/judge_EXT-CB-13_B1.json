@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-13",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid causal reasoning; Multi-level analysis tracing both causal paths and using do-calculus framing; Some self-monitoring via the injected suppression signals but no explicit bias-checking mid-reasoning; Basic verification through the table comparison and do-calculus confirmation but no counterfactual or boundary checks; Acknowledges assumptions (positive, non-redundant effects) but doesn't deeply explore uncertainty; Notes this is not a backdoor issue, implicitly rejecting an alternative framing; Complete derivation trail from DAG to path enumeration to intervention effect to conclusion",
+  "timestamp": "2026-03-23T11:11:01.492127+00:00"
+}

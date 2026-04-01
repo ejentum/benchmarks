@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-12",
+  "condition": "A",
+  "output": "(B).\n\nThe three claims are internally contradictory:\n\n- **Slide 3** claims a $50B TAM.\n- **Slide 7** says they're targeting a *niche underserved segment no competitor has addressed*.\n- **Slide 12** projects $2B revenue as \"4% market capture\" — i.e., 4% of the $50B TAM.\n\nThe problem: if their actual target is a niche segment within the broader market, then $50B is the **total industry size**, not their addressable market. A truly niche, unaddressed segment is by definition a small fraction of the industry. They're using the large number to make the opportunity look big (Slide 3), using the niche framing to explain why there's no competition (Slide 7), and then calculating revenue against the inflated TAM to make 4% sound modest and achievable (Slide 12).\n\nYou can't have it both ways — either the addressable market is $50B (in which case it's not a niche unaddressed segment) or it's a niche unaddressed segment (in which case the TAM is far smaller than $50B and 4% of $50B is not a meaningful projection).\n\nThis is a common pitch deck pattern: conflating TAM with SAM/SOM to inflate the opportunity while simultaneously claiming niche positioning to hand-wave away the competition question.",
+  "timestamp": "2026-03-20T17:10:41.513585+00:00"
+}

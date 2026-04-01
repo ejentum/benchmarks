@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-11",
+  "condition": "A",
+  "output": "**(B)** — A filter bubble feedback loop.\n\nThe mechanism is a classic positive feedback loop:\n\n1. Power users disproportionately influence trending due to higher watch velocity\n2. Trending skews niche → casual users disengage from trending\n3. Casual user signal drops out of the algorithm's input\n4. Algorithm now runs on even more concentrated power user data\n5. Loop tightens with each cycle\n\nEach iteration removes moderating signal (casual viewers) and amplifies the bias (power user preferences). The algorithm has no self-correcting mechanism — it optimizes on the data it receives, and the data becomes increasingly non-representative of the total audience.\n\nWhy the others fail:\n- **(A)** ignores that 60% of users are being underserved, which is an existential engagement problem\n- **(C)** gets the causality backwards — irrelevant recommendations drive users *away*, not deeper\n- **(D)** assumes the algorithm has a feedback path from engagement drops back to content diversity, but nothing in the design creates that path. Dropping engagement is an *outcome* the algorithm is blind to — it only sees view velocity of what *is* watched.",
+  "timestamp": "2026-03-20T17:06:07.013777+00:00"
+}

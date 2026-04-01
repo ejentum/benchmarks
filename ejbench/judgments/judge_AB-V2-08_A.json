@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-08",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "The correct answer is 'one superorganism' but the agent explicitly lands on 'both are correct at different levels,' which is a different and incorrect conclusion despite strongly presenting the superorganism case; the agent goes three-plus levels deep—evolutionary individuality, physiological autonomy, homology to free-living relatives, cluster-concept philosophy—tracing second and third-order implications; the agent shows process awareness by explicitly naming competing definitional frameworks and acknowledging where 'organism' breaks down as a concept, though it does not explicitly flag its own potential biases; verification takes the form of a structured multi-criteria table and cross-checking against analogous cases like siphonophores, though no explicit counterfactual or falsification test is applied; the agent is maximally transparent about definitional dependence, cites named researchers, and explicitly labels the question as 'genuinely unresolved,' clearly distinguishing frameworks from facts; both the superorganism and individual-polyp views are systematically developed with specific, distinct supporting reasons and each is evaluated on its merits before being compared; every conclusion traces to an explicit criterion or derivation listed in the table or body text, and a third party could reproduce the full reasoning chain from the response alone.",
+  "timestamp": "2026-03-23T02:20:00.999208+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-01",
+  "condition": "A",
+  "output": "**The answer is (B).**\n\nLet me trace each hop:\n\n**Hop 1: Service-A(dev) → Service-B(staging)**\n- Dev can SEND to staging ✅\n\n**Hop 2: Service-B(staging) → Service-C(prod)**\n- Prod can RECEIVE from staging ✅\n\n**Hop 3: Service-C(prod) → Service-D(staging)**\n- Prod can only **RECEIVE** traffic from staging. It **cannot initiate outbound** to any namespace. ✗\n\nThe chain fails at hop 3. Prod initiating a connection to staging violates the directional constraint that prod can only receive, not send.",
+  "timestamp": "2026-03-22T16:32:03.353471+00:00"
+}

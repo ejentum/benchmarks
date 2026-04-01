@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-15",
+  "condition": "B2",
+  "output": "In this closed world with exactly two independent causes of skin health (tanning salon, beach), the answer depends on which method you use:\n\n**Method 1 (raw correlation)** is unreliable for attribution. Even though the two causes have no stated causal link between them, the raw correlation between tanning and skin health doesn't separate tanning's contribution from beach-going's contribution. If people who tan also happen to go to the beach more often in the observed data, the correlation absorbs both effects and you can't tell which cause is driving the variation.\n\n**Method 2 (stratified by beach-going)** isolates tanning's effect. Within each stratum (beach-goers vs. non-beach-goers), beach exposure is held constant. Since the world contains *only* these two causes and no other factors, any remaining skin health variation within a stratum **must** be due to tanning salon treatment.\n\n**Bottom line:** Significant overall variation in skin health is not automatically attributable to tanning — it could be driven by beach-going, tanning, or both. But if you use Method 2 and still observe significant variation within strata, then yes, it is due to tanning, because you've controlled for the only other cause that exists in this world.",
+  "timestamp": "2026-03-20T10:01:45.558311+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-14",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "The correct answer is Yes, but the agent concluded No — it misinterpreted 'assuming an intervention ensures a high salary' as do(Salary=High) with severed arrows, when the phrasing likely means observing/ensuring the outcome holds, making the answer Yes via the structural equation requiring U=1 and Coffee=1; Reasoning depth is excellent with multi-level causal analysis, do-calculus, and structural equations; Self-monitoring shown by distinguishing observation vs intervention explicitly; Verification done by comparing observation and intervention scenarios in a table; Epistemic honesty present — acknowledges dependence on base rates and assumptions about do-operator interpretation; Alternative consideration is strong — explicitly contrasts observation vs intervention and explains both; Audit trail is complete — every step from graph to structural equations to conclusion is fully traceable.",
+  "timestamp": "2026-03-23T12:42:19.796571+00:00"
+}

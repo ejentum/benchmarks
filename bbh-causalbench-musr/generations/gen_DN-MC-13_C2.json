@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-13",
+  "condition": "C2",
+  "output": "(B).\n\nControlling for GDP removes one confounder but doesn't solve the identification problem. The core issues remain:\n\n- **Reverse causality**: Low crime → more budget available for police, not necessarily the other way around.\n- **Omitted variables**: Cultural norms, urbanization patterns, judicial system quality, inequality, education — all correlate with both policing levels and crime rates, and aren't captured by GDP alone.\n- **Simultaneity**: Crime and policing are determined jointly in an equilibrium; you can't disentangle cause from effect with observational controls.\n\nAdding controls one-by-one is whack-a-mole. Each new control addresses one channel but the fundamental problem — that the data is observational and the treatment isn't randomly assigned — persists. You'd need an **instrumental variable** (something that shifts police numbers but has no direct effect on crime except through policing) or a **natural experiment** (e.g., a court order forcing a jurisdiction to hire more officers) to credibly identify the causal effect.",
+  "timestamp": "2026-03-20T17:56:57.833402+00:00"
+}

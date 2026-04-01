@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-15",
+  "condition": "C1",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.7,
+  "injection_composite": 0.6667,
+  "brief_justification": "Agent answers 'description tape' vs correct 'instruction tape' — same component, different label used in some literature, so partially correct; Agent traces dual-role mechanism at multiple levels (DNA strand function → von Neumann component mapping → table comparison), demonstrating deep analysis; Agent explicitly flags suppression of surface similarity bias and applies structural isomorphism framing; Verification via isomorphism table confirms dual-role preservation but doesn't test boundary cases or alternative framings; Conclusions presented confidently with no acknowledgment that 'description tape' vs 'instruction tape' naming varies by source or that uncertainty exists; Agent enumerates all four von Neumann components and implicitly rejects three, though does not deeply argue against each; Full derivation chain from DNA dual-role extraction to component identification to table mapping is reproducible by a third party; Negative gate concerns static graph pattern storage, not directly applicable, but agent avoids surface-only matching without explicitly naming the gate pattern; Agent explicitly names and blocks suppressed modes (surface similarity, instance matching) with zero evidence of suppressed failure modes; Topology describes graph grammar decomposition loops and gates irrelevant to this factual recall task; agent reasons linearly rather than following the branching/gate structure.",
+  "timestamp": "2026-03-23T04:29:51.876717+00:00"
+}

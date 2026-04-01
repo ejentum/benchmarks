@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-12",
+  "condition": "A",
+  "output": "~8% revenue increase from the load time difference alone (0.8s × 1% per 0.1s = 8%).\n\nThis means roughly 40% of the observed 20% lift (8/20) could be attributable to the CDN speed advantage rather than the design itself. The real design effect may be closer to ~12%, or possibly less if speed and design interact non-linearly. The team should rerun the test with matched CDN configurations before attributing the full lift to Design B.",
+  "timestamp": "2026-03-22T16:32:26.449478+00:00"
+}

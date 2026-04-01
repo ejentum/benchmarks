@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-03",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the correct answer (No) with sound reasoning distinguishing cobra effect from compensating feedback; traces second-order distinctions — mechanism, outcome, agent behavior — and names specific sub-types (induced demand, selection pressure, incidence shifting) and theoretical frameworks (Meadows, Le Chatelier); acknowledges nuance ('close, but not quite') and draws careful conceptual distinctions, though no explicit naming of own potential biases; uses a comparison table to test whether the three examples fit cobra effect criteria, functioning as structured verification; presents the cobra effect definition and the 'policy resistance' label with high confidence, without flagging that these taxonomic boundaries are contestable or that reasonable experts might disagree on the cobra effect's scope; systematically evaluates the cobra effect as an alternative, explains why it fails with three specific criteria, and proposes the more precise alternative with reasons; every conclusion traces to an explicit derivation — the colonial Delhi origin story grounds the cobra effect definition, the table formalizes the distinction, and each example is mapped to its specific sub-type label.",
+  "timestamp": "2026-03-23T02:17:24.819837+00:00"
+}

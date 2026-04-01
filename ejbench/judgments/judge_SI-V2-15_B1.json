@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-15",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.6,
+  "injection_composite": 0.4444,
+  "brief_justification": "Arrives at exact correct answer $2,300 via valid algebra; Goes one level beyond the calculation by noting the irony that rent control produces a black market price $300 above free-market equilibrium and flagging supply contraction; Shows arithmetic steps but no explicit reflection on reasoning method or bias check; Basic verification via step-by-step derivation but no cross-check from an alternative angle; States conclusion confidently without noting model assumptions (e.g., linear curves, perfect black market clearing), appropriate for a deterministic math problem but no structured uncertainty; Only one solution path considered, no alternative formulations or approaches mentioned; Every algebraic step is explicit and reproducible by a third party; The injection's negative gate concerns Nash equilibrium miss via individual payoff bias, a game-theory frame irrelevant to this problem — agent avoids it by staying on-topic but never explicitly names the inapplicability; Suppressed terms (ad_hoc_negotiation, individual_payoff_bias) have no footprint in the response, though their irrelevance means avoidance is trivial; The topology is a multi-branch game-theory DAG with Nash equilibrium gates and M-nodes — none of this structure appears in the agent's linear algebraic response.",
+  "timestamp": "2026-03-23T03:23:48.193078+00:00"
+}

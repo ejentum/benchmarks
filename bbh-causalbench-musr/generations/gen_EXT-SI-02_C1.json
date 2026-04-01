@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-02",
+  "condition": "C1",
+  "output": "The longest satisfactory response to this question is the shortest one.\n\nLet me trace the swaps:\n\n**Start:** Alice=pink, Bob=white, Claire=blue\n\n1. **Bob ↔ Claire:** Alice=pink, Bob=blue, Claire=white\n2. **Claire ↔ Alice:** Alice=white, Bob=blue, Claire=pink\n3. **Claire ↔ Bob:** Alice=white, Bob=pink, Claire=blue\n\n**Answer: (B) white present**",
+  "timestamp": "2026-03-20T10:39:08.995740+00:00"
+}

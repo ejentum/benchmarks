@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-18",
+  "condition": "C2",
+  "output": "**No.**\n\nHere's the reasoning over the given causal structure:\n\n**Structural equations:**\n- **Coffee (C)** = Confounder active **AND** Close to college\n- **Salary (S)** = Confounder active **OR** Drinking coffee\n\n**Given observations:** Confounder = active, Proximity = far from college.\n\n**Step 1 — Does the person drink coffee?**\nC = active AND far = 1 AND 0 = **0 (no coffee)**\n\n**Step 2 — Why is salary high?**\nS = active OR coffee = 1 OR 0 = **1 (high salary)**\n\nThe high salary is entirely explained by the confounder being active. The person doesn't drink coffee at all (the AND gate blocks it because they live far from a college), so coffee plays no role in the outcome. The salary would be high regardless of coffee due to the direct path from the confounder to salary.",
+  "timestamp": "2026-03-20T11:02:07.416072+00:00"
+}

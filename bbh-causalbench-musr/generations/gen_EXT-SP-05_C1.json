@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-05",
+  "condition": "C1",
+  "output": "No\n\nAfter following the instructions, you end up 6 steps to the right of where you started, not back at the starting point. The backward and forward steps cancel each other out, but the 6 steps to the right leave you displaced.",
+  "timestamp": "2026-03-20T10:34:24.329238+00:00"
+}

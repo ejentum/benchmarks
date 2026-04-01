@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-17",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid causal reasoning identifying the collider structure; Multi-level analysis covering causal structure, collider bias, Berkson's paradox, and concrete example of how spurious correlation arises; Some self-monitoring implicit in carefully distinguishing why each method works or fails; Basic verification through the concrete example showing how conditioning creates false negative correlation; Acknowledges the key assumption (no unmentioned causal paths) but doesn't explicitly state confidence levels; Systematically evaluates both methods with clear reasons for rejecting Method 2; Complete derivation chain from causal graph to collider identification to bias explanation, fully reproducible",
+  "timestamp": "2026-03-23T10:35:05.238752+00:00"
+}

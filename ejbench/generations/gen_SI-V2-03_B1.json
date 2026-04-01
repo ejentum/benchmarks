@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-03",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: closed_loop_cycle_detection; stability_assessment\nSuppress: loop_blindness; reinforcing_loop_tolerance\n→ Track each discrete time step carefully; don't skip accumulation dynamics of the metabolite.\n[END REASONING CONTEXT]\n\n## Solution\n\nSetting up the recurrence relations for each hourly time step:\n\n- **D(t+1)** = 0.60 × D(t) — drug retains 60% each hour\n- **M(t+1)** = 0.70 × M(t) + 0.40 × D(t) — old metabolite retains 70%, plus new metabolite from drug conversion\n- **Effect** = D + 0.5 × M\n\n### Hour-by-hour calculation\n\n| Hour | Drug (mg) | Metabolite (mg) | Effect (mg-eq) |\n|------|-----------|-----------------|----------------|\n| 0 | 400.0 | 0.0 | 400.0 |\n| 1 | 240.0 | 160.0 | 320.0 |\n| 2 | 144.0 | 208.0 | 248.0 |\n| 3 | **86.4** | **203.2** | **188.0** |\n\n**Hour 3 detail:**\n- Drug: 144 × 0.60 = **86.4 mg**\n- Metabolite: 208 × 0.70 + 144 × 0.40 = 145.6 + 57.6 = **203.2 mg**\n- Effect: 86.4 + 0.5 × 203.2 = 86.4 + 101.6 = **188.0**\n\n### Answer: **188 mg-equivalents**",
+  "timestamp": "2026-03-22T20:53:38.835777+00:00"
+}

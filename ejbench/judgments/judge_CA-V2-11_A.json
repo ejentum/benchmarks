@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-11",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 9 hours with correct arithmetic; Goes one level beyond the calculation by correctly identifying the omitted variable implication for the researcher's causal claim; No self-monitoring — proceeds directly to answer without questioning assumptions or approach; No verification of any kind — no sanity check or re-derivation; Uses 'may simply reflect' which hedges slightly but offers no structured uncertainty analysis or confidence framing; Considers only the one path from calculation to conclusion, no alternative confounds or explanations explored; Shows the full derivation chain (15 min × 36 weeks = 540 min = 9 hrs) but does not trace how the 15 min/week figure itself was derived from the problem's embedded assumptions",
+  "timestamp": "2026-03-23T02:31:31.106295+00:00"
+}

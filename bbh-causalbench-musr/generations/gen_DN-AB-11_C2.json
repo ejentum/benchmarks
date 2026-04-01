@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-11",
+  "condition": "C2",
+  "output": "**(B)**.\n\nThese are all instances of **throughput-quality inversion** — optimizing a rate metric (units processed per time) degrades first-pass quality, which creates a rework loop (readmissions, repeat calls, regressions) that feeds demand back into the system's intake. The measured metric improves while the system's actual throughput of *resolved* work decreases.\n\nThe key structural element is the **hidden feedback loop**: the output of the \"fast\" process re-enters as new input, so the system is partially running in circles while the dashboard says it's speeding up.",
+  "timestamp": "2026-03-20T17:51:47.530725+00:00"
+}

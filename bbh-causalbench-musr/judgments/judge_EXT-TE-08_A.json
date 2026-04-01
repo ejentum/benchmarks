@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-TE-08",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (C) with valid elimination logic; goes one level beyond surface by noting all other slots are occupied by confirmed sightings, but does not trace second-order implications; no explicit monitoring of reasoning process or named assumptions at any point; no counterfactual checks or boundary tests are applied to confirm the answer; presents conclusion as certain with no hedging or acknowledgment of what could change it; acknowledges alternatives are 'accounted for' collectively but does not individually evaluate or reject each option; key derivation step (6am wake-up to 8am sighting = free window) is stated, making the chain partially reproducible, but the elimination of each other option is asserted rather than shown",
+  "timestamp": "2026-03-23T09:40:34.827754+00:00"
+}

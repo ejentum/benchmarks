@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-05",
+  "condition": "B1",
+  "output": "Let me work through this step by step.\n\n**Constraints:**\n1. Green is rightmost (position 5)\n2. Gray is right of Orange: O ... G\n3. Purple is left of Yellow: P ... Y\n4. Purple is right of Gray: G ... P\n\n**Chaining constraints 2 and 4:** Orange < Gray < Purple (from constraints 2, 4)\n\n**Adding constraint 3:** Orange < Gray < Purple < Yellow\n\n**With Green fixed at position 5:**\n\nOrange, Gray, Purple, Yellow fill positions 1–4 in that order.\n\n**Result:** Orange(1), Gray(2), Purple(3), Yellow(4), Green(5)\n\nYellow is second from the right (position 4).\n\n**The answer is (D).**",
+  "timestamp": "2026-03-20T09:46:54.899580+00:00"
+}

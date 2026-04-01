@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CA-05",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer ('Yes') with valid grounding in the Knobe effect; traces second-order mechanisms — foresight, indifference, and moral judgment bleeding into intentionality attribution — going well beyond surface; proceeds linearly without naming potential biases or questioning whether the Knobe framework applies cleanly here; uses the flip-scenario (beneficial side effect) as an implicit counterfactual, which counts as basic verification; hedges with 'would likely answer' but does not quantify confidence or note conditions that would shift the answer; mentions the asymmetric alternative (beneficial side-effect → 'No') and briefly addresses why, though doesn't systematically enumerate other interpretations; every conclusion traces to an explicit derivation (Knobe effect → three key factors → folk intentionality judgment), reproducible without external context.",
+  "timestamp": "2026-03-23T09:36:24.981204+00:00"
+}

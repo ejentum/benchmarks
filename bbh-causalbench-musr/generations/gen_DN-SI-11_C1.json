@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-11",
+  "condition": "C1",
+  "output": "**The answer is (B).**\n\nThis is a classic **feedback loop / filter bubble** dynamic:\n\n1. Power users disproportionately seed the trending algorithm\n2. Trending page becomes niche-skewed\n3. Casual users (60% of the base) disengage from trending\n4. Loss of casual signal further concentrates the algorithm on power users\n5. The loop tightens with each cycle\n\nThe key insight is that the algorithm's input distribution becomes increasingly unrepresentative of the overall user base. It's not self-correcting (D) because the metric it optimizes (view velocity) keeps being satisfied by power users. It doesn't convert casuals to power users (C) because they've already disengaged from the discovery surface. And while it does serve power users (A), calling that a success ignores that you've effectively abandoned 60% of your audience — reducing total platform engagement and long-term viability.\n\nThis is the same structural problem that affects recommendation systems broadly: **optimizing for the most active users creates a degenerative feedback loop that narrows content diversity and alienates the majority.**",
+  "timestamp": "2026-03-20T17:44:25.060368+00:00"
+}

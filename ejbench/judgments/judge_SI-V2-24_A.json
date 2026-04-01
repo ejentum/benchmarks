@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-24",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer of 33 with valid calculus derivation; goes beyond the calculation to discuss second-order effects (Tragedy of the Commons, total herd overshoot, per-cow revenue collapse); proceeds linearly with no reflection on reasoning method or assumption checks; partially verifies by computing implied total cattle and revenue but does not plug n=33 back into the FOC or check second-order conditions; presents the symmetric Nash assumption without naming it as an assumption or noting that integer solutions differ slightly from the continuous optimum; no alternative approaches considered (e.g., best-response iteration, integer programming, or checking asymmetric equilibria); full derivation chain shown step-by-step, fully reproducible by a third party.",
+  "timestamp": "2026-03-23T02:32:02.166316+00:00"
+}

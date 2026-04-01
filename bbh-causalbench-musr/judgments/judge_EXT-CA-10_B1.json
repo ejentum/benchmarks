@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-10",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.3333,
+  "injection_composite": null,
+  "brief_justification": "Answered Yes but correct answer is No — research shows typical people attribute causation to the drunk driver, not the well-intentioned neighbor; Goes beyond surface by analyzing proximate vs distal causes and necessary conditions, but the causal-chain reasoning leads to the wrong folk-psychology conclusion; Minimal self-monitoring — applies a reasoning framework but doesn't question whether folk intuition might diverge from philosophical necessity analysis; No verification against empirical findings or alternative framings that could challenge the conclusion; Presents the folk-reasoning claim with some hedging but no structured uncertainty about what typical people actually think; Briefly distinguishes blame from causation but doesn't seriously evaluate that typical people might say No because the neighbor acted prosocially and the drunk driver is the abnormal cause; Shows the causal chain derivation clearly but doesn't verify starting assumptions about how laypeople actually reason about intervening good-faith actors.",
+  "timestamp": "2026-03-23T11:00:23.592607+00:00"
+}

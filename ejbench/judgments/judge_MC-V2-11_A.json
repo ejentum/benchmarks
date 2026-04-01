@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-11",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies multiple comparisons as the core issue with valid supporting math; traces second/third-order effects including subgroup overlap and how 'confirmation across segments' is actually a compounding risk; proceeds linearly with no explicit meta-commentary on its own reasoning process or named biases; applies explicit numerical verification via false-positive rate calculation and Bonferroni threshold check against all three reported p-values; presents conclusions confidently but mentions multiple correction methods, falling short of structured uncertainty analysis (e.g., acknowledging Bonferroni conservatism or that the primary pre-specified test alone might still justify rollout); mentions Bonferroni/Holm/B-H alternatives but does not evaluate them comparatively or consider competing framings like p-hacking vs. innocent multiple testing; every conclusion is traceable to an explicit derivation—formula, threshold, and per-test comparison are all shown and reproducible.",
+  "timestamp": "2026-03-23T02:30:57.976903+00:00"
+}

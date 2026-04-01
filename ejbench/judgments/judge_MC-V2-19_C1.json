@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-19",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.8,
+  "injection_composite": 0.6667,
+  "brief_justification": "Correctly identifies employment/hours invariance as the critical unstated assumption, exactly matching 'Employment unchanged'; decomposes to premise/inference level, traces employer response mechanisms (layoffs, hours cuts, automation), and distinguishes load-bearing from secondary assumptions at 3+ levels; references suppression signals mid-response but does not explicitly name own reasoning biases or reflect on method choice; tests the assumption's load-bearing nature counterfactually ('if it fails, no poverty reduction') but does not re-derive from an independent angle; distinguishes premises from inferences and identifies what would reverse the conclusion but lacks explicit confidence levels or uncertainty quantification; systematically evaluates household-vs-individual income conflation and price effects as alternative assumptions and explains with specific reasons why each is secondary; full premise/inference decomposition table plus explicit inference gap mapping provides a fully reproducible reasoning chain; avoids accepting the argument's assumptions uncritically but does not explicitly name or engage with the stated negative gate pattern; explicitly flags 'mechanism lock' as a suppressed failure mode but does not systematically address the full suppress list; follows a decompose→classify→reconstruct→compare sequence that loosely maps to the topology's S1→G1→S2→S4 path but without explicit branch or gate labeling",
+  "timestamp": "2026-03-23T04:53:00.167166+00:00"
+}

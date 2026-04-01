@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-08",
+  "condition": "B2",
+  "output": "The answer is **(C) 6am to 8am**.\n\nThat's the only gap in Sarah's schedule before the construction site closed at 8pm. Every other time slot from 8am onward is accounted for by witnessed activities.",
+  "timestamp": "2026-03-20T09:53:49.358548+00:00"
+}

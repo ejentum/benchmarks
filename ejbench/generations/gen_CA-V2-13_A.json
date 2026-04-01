@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-13",
+  "condition": "A",
+  "output": "**D**\n\nThe reverse causal mechanism (profits → diverse pool → diverse team) explains the observed correlation without diversity causing profits. But explaining the correlation away via one mechanism doesn't prove there's *no* forward causal effect. Diversity could simultaneously improve decision-making (a forward effect) while also being easier to achieve at profitable companies (the reverse effect). The observation is consistent with both effects operating at once.\n\nA struggling company forcing diverse hiring might benefit from better decisions, be harmed by other factors, or see no change — the reverse causal story alone can't tell you which. That's what makes it indeterminate.",
+  "timestamp": "2026-03-22T16:32:46.043711+00:00"
+}

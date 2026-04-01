@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-22",
+  "condition": "A",
+  "output": "**Answer: (B) Blocked — In Progress is still at WIP limit (3 items)**\n\nTracing the moves:\n\n| Column | Start | After Testing→Done | After Review→Testing | Dev pull? |\n|---|---|---|---|---|\n| Backlog | 8 | 8 | 8 | — |\n| In Progress (limit 3) | **3** | **3** | **3** | **Still full** |\n| Review (limit 2) | 1 | 1 | 0 | — |\n| Testing (limit 2) | 2 | 1 | 2 | — |\n| Done | 12 | 13 | 13 | — |\n\nThe cascade (Testing→Done, then Review→Testing) only freed and refilled slots **downstream** of In Progress. Nothing ever moved *out* of In Progress, so it remains at its WIP limit of 3, blocking the developer's pull from Backlog.",
+  "timestamp": "2026-03-22T16:40:42.493244+00:00"
+}

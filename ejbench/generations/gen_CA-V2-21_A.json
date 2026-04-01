@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-21",
+  "condition": "A",
+  "output": "## Individually Necessary Factors for Building-Wide Fire\n\nThe causal chain for a **building-wide fire** requires every link to hold. Removing any single factor breaks the chain:\n\n| Factor | Role | Without it… |\n|--------|------|-------------|\n| **F1** (faulty wiring) | Ignition | No fire starts at all |\n| **F2** (accumulated dust) | Fuel | No fire starts at all |\n| **F3** (sprinklers offline) | Spread beyond room | Sprinklers suppress fire at origin |\n| **F4** (propped fire doors) | Spread to other floors | Fire contained to floor of origin |\n\n**Answer:** **F1, F2, F3, and F4** are each individually necessary for the building-wide fire. Remove any one and the outcome changes.\n\n**F5** (working alarm) is **not necessary** for the fire — it affected evacuation/casualties but had no causal role in fire ignition or spread. It's a mitigating factor, not a contributing one.\n\nThe key insight: necessity here is sequential. F1+F2 are jointly necessary for ignition, F3 is necessary for room-to-room spread, and F4 is necessary for floor-to-floor spread. Since the building-wide fire required *all* stages, each factor is individually necessary for the final outcome.",
+  "timestamp": "2026-03-22T16:36:20.055090+00:00"
+}

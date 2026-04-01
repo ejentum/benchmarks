@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-04",
+  "condition": "B2",
+  "output": "A typical person would answer: **No**.\n\nThis is the well-known **Knobe Effect** side-effect scenario (the \"help\" version). When the side effect is *positive* and the agent explicitly states they don't care about it, most people judge that the agent did **not** intentionally bring about that side effect.\n\nThe asymmetry is interesting — in the matched \"harm\" version (where the program hurts the environment and the chairman says \"I don't care\"), most people say the chairman *did* intentionally harm the environment. But for the help case, the typical intuition is that merely foreseeing a positive side effect you don't care about doesn't make it intentional.",
+  "timestamp": "2026-03-20T09:53:12.294455+00:00"
+}

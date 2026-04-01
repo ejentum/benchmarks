@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-16",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "The agent arrives at 'No' when the correct answer is 'Yes', but the do-calculus reasoning is internally coherent and represents a defensible interpretation; Multi-level causal analysis tracing through graph surgery, do-operator semantics, and marginal distributions; Some self-monitoring via the suppress/amplify framework and distinguishing observation from intervention; Verifies by contrasting observational conditioning with interventional do-operator to check consistency; Acknowledges the distinction between observation and intervention as a source of confusion but doesn't flag uncertainty about the question's intent; Explicitly contrasts observing vs intervening as alternative framings; Complete derivation trail from causal graph through edge-severing to final probability equality",
+  "timestamp": "2026-03-23T13:00:42.131167+00:00"
+}

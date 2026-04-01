@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-03",
+  "condition": "B1",
+  "output": "A typical person would answer: **No**.\n\nThe reasoning behind this common intuition is rooted in **norm violation**. People tend to attribute causation more strongly to the factor that behaved *abnormally* — the one that deviated from how things are \"supposed to\" work.\n\n- The **black wire** was *supposed* to touch the battery — it did what it was designed to do. Normal behavior.\n- The **red wire** was *supposed* to remain elsewhere — it deviated from its expected state. Abnormal behavior.\n\nEven though both wires are equally necessary for the short circuit (both are required simultaneously), most people would say the **red wire** caused the short circuit and the black wire did not, because the red wire is the one that \"went wrong.\"\n\nThis is a well-documented pattern in causal cognition research (Hitchcock & Knobe, 2009; Icard et al., 2017) — people's causal judgments are heavily influenced by prescriptive norms (what *should* happen), not just counterfactual dependence.",
+  "timestamp": "2026-03-20T09:32:57.521362+00:00"
+}

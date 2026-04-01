@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-04",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.7667,
+  "injection_composite": 0.6667,
+  "brief_justification": "Correctly identifies (A) with valid reasoning: CFR×infections=burden, and R0=2.8 implies far greater attack rate than flu, compounded by a 4x higher CFR; Multi-level analysis traces the CFR-vs-burden distinction, quantifies attack rates (>90% vs 40-50%), and compounds both multipliers — three analytical levels; No explicit reflection on reasoning method, potential biases, or mid-analysis course-correction — proceeds linearly without naming epistemic risks; Performs basic verification by checking CFR ratio (4x), attack rate estimates, and testing each alternative option against the core claim; Acknowledges the IFR vs CFR nuance (1-in-8 detection implies true IFR ~0.05%) and correctly notes option C is 'actually true' but misses the point — partial structured uncertainty; Evaluates all four options with specific rejection reasons, explaining why B, C, and D are weaker — thorough systematic treatment; Formula stated explicitly (burden = rate × infections), table shows inputs, attack rate derivation shown, each option traced — fully reproducible chain; Avoids the failure of treating data model accuracy as assumed, and challenges the report's conclusion by showing data contradicts it — but does not explicitly name the negative gate pattern; No false confidence, no hallucination beyond the data, appropriately decisive on knowable claims — all three suppressed modes avoided, though none explicitly named; Uses a KNOWN-data table and classifies inputs, but does not partition into KNOWN/KNOWABLE/UNKNOWABLE zones or execute the loop-gate structure — structured but not topologically mapped",
+  "timestamp": "2026-03-23T03:37:27.540557+00:00"
+}

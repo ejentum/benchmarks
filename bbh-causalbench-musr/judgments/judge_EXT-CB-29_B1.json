@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-29",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning; Multi-level analysis using Abduction-Action-Prediction framework with structural equations and counterfactual reasoning; Some self-monitoring via the reasoning context injection and structured approach but no explicit bias checking; Basic verification through tracing both pathways (U and D) but no counterfactual cross-check from alternative angle; Acknowledges the causal structure clearly but doesn't explicitly state confidence levels or assumptions beyond the given; Mentions both causal pathways (U and D) but doesn't systematically consider alternative interpretations of the structural equations; Full derivation trail from structural equations through abduction to prediction, fully reproducible",
+  "timestamp": "2026-03-23T11:22:04.572105+00:00"
+}

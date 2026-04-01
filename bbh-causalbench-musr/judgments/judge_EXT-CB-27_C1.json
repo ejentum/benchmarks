@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-27",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid reasoning comparing 30% vs 75%; Goes one level beyond surface by identifying causal structure and counterfactual framing; No explicit self-monitoring or bias checking; Mentions the comparison but doesn't verify from alternative angle; Presents conclusion confidently without noting assumptions about the closed-world setup; Acknowledges the counterfactual framing but doesn't evaluate alternative interpretations of the question; Shows causal structure and probability comparison but skips formal counterfactual derivation steps",
+  "timestamp": "2026-03-23T13:07:07.046682+00:00"
+}

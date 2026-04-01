@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-24",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.6333,
+  "injection_composite": 0.6667,
+  "brief_justification": "Arrives at the exact correct answer (2) with valid logic tracing seat layout and group distribution; goes beyond surface by computing seat-type breakdown and group split, but stops short of tracing second-order seating constraints; acknowledges the presupposition about minor eligibility and notes 'most cohesive arrangement' without deeper reflection; confirms 6−2=4 and 2 non-window remain, basic but adequate; assumes a 6+2 group split without structuring it as an assumption or stating confidence, other splits like 4+4 are not acknowledged as possible; only one group arrangement considered and alternatives like 4+4 or 3+5 splits (which would change the answer) are not evaluated or dismissed; seat layout, group allocation, and remaining counts are all shown step-by-step, reproducible by a third party; avoids the double-booking anti-pattern by explicitly partitioning seats between group and minor, though does not name the pattern; no evidence of infinite-space or spatial-anomaly-normalization errors, avoids both suppressed modes though doesn't explicitly call them out; reasoning follows a claim-enumeration → overlap-check → allocation path consistent with the topology but remains mostly linear without explicit branching or gate labels.",
+  "timestamp": "2026-03-23T04:12:12.934072+00:00"
+}

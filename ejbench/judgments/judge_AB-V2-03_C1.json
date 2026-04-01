@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-03",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 3
+  },
+  "composite_score": 0.9333,
+  "injection_composite": 1.0,
+  "brief_justification": "Correctly arrives at No with valid structural distinction between cobra effect (perverse incentive + deliberate gaming + worse outcome) and compensating feedback (system adjustment + partial negation); maps all three examples at multiple structural levels — loop type, actor behavior, outcome magnitude — and connects to Senge's archetype and Le Chatelier's Principle; uses 'Let me map the structure precisely' showing some process awareness but does not explicitly name or check for reasoning biases mid-analysis; applies two explicit boundary tests against cobra effect criteria (no deliberate gaming, partial offset not full backfire) confirming the disqualification rigorously; acknowledges cobra effect as 'close' and a 'special case' but omits explicit confidence levels or identification of what evidence would change the conclusion; systematically evaluates cobra effect, rejects it with two specific structural reasons, then names compensating feedback and Fixes that Backfire as better fits with formal definitions; table-based structural mapping plus formal archetype definitions and Le Chatelier analogy allow full reproduction of the reasoning chain; directly counters the individual-failure anti-pattern by finding and naming a common structural pattern across all three examples, showing explicit awareness of why pattern-matching matters here; avoids all suppressed failure modes — no individual blame, no single-cause framing, no from-scratch reasoning, references established archetypes throughout; follows the freeze→extract→classify→match→gate(2+ features)→output topology closely, including the explicit two-feature verification gate before concluding the label doesn't fit.",
+  "timestamp": "2026-03-23T04:20:38.751182+00:00"
+}

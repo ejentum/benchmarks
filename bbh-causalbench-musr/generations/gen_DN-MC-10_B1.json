@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-10",
+  "condition": "B1",
+  "output": "**(B)**\n\nThe core flaw is the **induction problem applied to safety**: \"no observed failures\" ≠ \"no possible failures.\" The 10,000 scenarios are a finite subset of an effectively infinite input space. Safety-critical failures cluster in the long tail — precisely the scenarios least likely to appear in a test suite because they weren't anticipated. This is the same reasoning error as \"this bridge held up every time we tested it with a car, therefore it's safe for trucks.\"\n\n(A), (C), and (D) each identify real practical concerns, but they're symptoms, not the fundamental logical flaw. Even with more tests (A), more realistic scenarios (C), and matched distributions (D), the core inductive fallacy remains: you cannot prove safety by enumerating safe outcomes.",
+  "timestamp": "2026-03-20T17:22:52.465000+00:00"
+}

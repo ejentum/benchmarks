@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-29",
+  "condition": "A",
+  "output": "**Depth of Team-Infra: 4**\n\nAfter both changes:\n\n1. CEO (depth 1)\n2. VP-Engineering (depth 2)\n3. Director-Platform (depth 3)\n4. Team-Infra (depth 4)",
+  "timestamp": "2026-03-22T16:42:27.668375+00:00"
+}

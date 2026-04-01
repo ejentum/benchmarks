@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-30",
+  "condition": "A",
+  "output": "## Cascading Failure Analysis\n\n### Timeline & Unserved Power\n\n**t=0:** Substation A fails → 450 MW hits tie line → only 200 MW passes → Substation B sees 350+200=550 MW > 400 MW capacity → **B trips. Both cities dark.**\n\n| Interval | Duration | City A Unserved | City B Unserved | Total Unserved |\n|---|---|---|---|---|\n| t=0 to t=10 | 10 min | 450 MW | 350 MW | 800 MW |\n| t=10 to t=15 | 5 min | 400 MW (50MW backup) | 350 MW | 750 MW |\n| t=15 to t=30 | 15 min | 400 MW | 250 MW (100MW backup) | 650 MW |\n| t=30 to t=120 | 90 min | 350 MW | 0 MW | 350 MW |\n\n**t=30+ reasoning:** Substation B restarts at 300 MW. City B has 350 MW demand, covered by 250 MW from Sub-B + 100 MW backup. Remaining 50 MW from Sub-B flows via tie line to City A. City A gets 50 MW (tie) + 50 MW (own backup) = 100 MW of its 450 MW demand → 350 MW unserved. (Note: total unserved = 350 MW regardless of dispatch — shifting power to City A just creates equal deficit at City B.)\n\n### Unserved Energy Calculation\n\n$$E = 800 \\times \\frac{10}{60} + 750 \\times \\frac{5}{60} + 650 \\times \\frac{15}{60} + 350 \\times \\frac{90}{60}$$\n\n$$E = 133.33 + 62.50 + 162.50 + 525.00 = 883.33 \\text{ MWh}$$\n\n### **Total unserved energy: 883 MWh**",
+  "timestamp": "2026-03-22T16:05:47.261866+00:00"
+}

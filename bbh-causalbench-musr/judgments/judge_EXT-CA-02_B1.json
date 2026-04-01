@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-02",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Answered Yes but correct answer is No — typical people distinguish proximate physical causes from distal lifestyle factors and do not attribute death to 'crime life' as a cause; Reasoning goes one level beyond surface by tracing the causal chain through multiple hops; Minimal self-monitoring — does not question whether folk causation actually works this way or consider empirical findings on how people judge such scenarios; Mentions mechanism validity checks but doesn't verify against how people actually respond to these vignettes; Presents folk causation claim with some hedging but no structured uncertainty; Briefly acknowledges proximate vs distal cause distinction but dismisses it without serious evaluation; Shows the causal chain derivation clearly but the key inference about typical person judgment is asserted rather than derived.",
+  "timestamp": "2026-03-23T10:51:16.490339+00:00"
+}

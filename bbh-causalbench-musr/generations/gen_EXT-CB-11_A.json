@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-11",
+  "condition": "A",
+  "output": "Looking at this causality problem:\n\n**Given information:**\n- P(visited England) = 49% = 0.49\n- P(not visited England AND fired) = 14% = 0.14\n- P(visited England AND fired) = 37% = 0.37\n\n**Calculate conditional probabilities:**\n\nP(fired | not visited England) = P(not visited AND fired) / P(not visited) = 0.14 / 0.51 ≈ **27.5%**\n\nP(fired | visited England) = P(visited AND fired) / P(visited) = 0.37 / 0.49 ≈ **75.5%**\n\n**No.** The chance of the employee being fired is **larger** when observing having visited England (75.5% vs 27.5%).",
+  "timestamp": "2026-03-20T09:20:06.180542+00:00"
+}

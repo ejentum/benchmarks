@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-14",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (No) with valid arithmetic showing $8,000 < $10,500; only goes one level deep by noting jobs-lost offset the wage gain, without exploring distributional effects or second-order labor market dynamics; no self-monitoring, assumption-checking, or bias identification occurs; implicitly rechecks by restating the multiplication but applies no counterfactual or boundary test; presents conclusion as certain with no acknowledgment of assumptions (e.g., perfectly competitive labor market, no monopsony effects); considers only the direct income calculation with no alternative interpretations of 'total worker income' or alternative policy outcomes; shows the key calculation step and comparison but relies on question-supplied numbers without re-deriving demand or supply values from scratch.",
+  "timestamp": "2026-03-23T02:24:06.334525+00:00"
+}

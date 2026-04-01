@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-24",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid causal reasoning; Goes beyond surface by constructing causal graph and tracing interventional do-calculus; Notes distinction between interventional and observational queries showing some self-monitoring; Mentions verification need via suppression signals but doesn't execute counterfactual check; Presents conclusion confidently without acknowledging assumptions about rule interpretation; Acknowledges interventional vs observational framing but doesn't evaluate alternative interpretations of the causal rules; Full step-by-step derivation table makes reasoning fully reproducible",
+  "timestamp": "2026-03-23T11:18:58.377243+00:00"
+}

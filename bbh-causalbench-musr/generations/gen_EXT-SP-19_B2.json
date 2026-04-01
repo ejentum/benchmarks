@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-19",
+  "condition": "B2",
+  "output": "The chart table.\n\nMike saw the logbook on the chart table and moved it to the cockpit dashboard. But from Mike's perspective of where the logbook *should* be, the chart table is the designated spot — the story explicitly states \"They all knew where the items should be: the logbook on the chart table.\" So if Mike were looking for it, the chart table is where he'd check first.",
+  "timestamp": "2026-03-20T09:59:34.579266+00:00"
+}

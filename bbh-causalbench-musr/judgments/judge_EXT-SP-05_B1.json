@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-05",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid reasoning; Goes one level beyond surface by establishing coordinate frame and tracking positions step-by-step; Implicit self-monitoring via coordinate anchoring signals but no explicit reflection on reasoning process; Basic verification through tabular position tracking showing final ≠ start; Presents conclusion confidently without acknowledging assumptions about direction mapping; No alternative interpretations of 'always face forward' considered; Complete derivation trail with coordinate table showing every step from start to finish",
+  "timestamp": "2026-03-23T11:04:44.238921+00:00"
+}

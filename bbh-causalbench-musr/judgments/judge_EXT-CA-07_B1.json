@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-07",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid reasoning; Multi-level analysis covering responsibility norms, counterfactuals, awareness, and Kate's discounting; Some self-monitoring via causal direction check and bias check in reasoning context; Basic verification through inversion test and counterfactual check; Acknowledges folk vs formal causation distinction but doesn't deeply quantify uncertainty; Systematically considers Kate's omission as alternative cause and explains why it's rejected; Full derivation chain from premises to conclusion is reproducible",
+  "timestamp": "2026-03-23T10:56:34.532021+00:00"
+}

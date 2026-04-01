@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-05",
+  "condition": "A",
+  "output": "**(B)** is correct.\n\nThis is a textbook conflation of **prediction** and **causal actionability**. A model can perfectly predict *who will churn* while capturing zero information about *who can be saved*. If the features driving predictions are symptoms of an already-irreversible decision (e.g., the customer already called to cancel, already switched providers), then the 95% accuracy is real but operationally useless for intervention targeting.\n\nThe key distinction: what you need for effective intervention isn't a churn prediction model — it's a **persuadability model** (or uplift model) that identifies customers whose behavior *changes in response to the discount*. Those are fundamentally different modeling targets.\n\n(C) is tempting but too generous — it frames \"works for prediction\" as a partial success, when the entire business purpose was intervention. (D) is a real concern in general but isn't the core issue here.",
+  "timestamp": "2026-03-20T17:08:37.474635+00:00"
+}

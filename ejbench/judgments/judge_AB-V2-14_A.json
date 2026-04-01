@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-14",
+  "condition": "A",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.3333,
+  "injection_composite": null,
+  "brief_justification": "Agent answers 'connectedness' which captures the core concept but the exact answer is 'complete connectivity' — connectedness alone does not imply density, so partial credit; Agent correctly distinguishes connectedness (reachability) from density (propagation channels) and explains the cascading fragility mechanism, going one level beyond surface; No self-monitoring, assumption-checking, or mid-analysis course correction present; No verification, counterfactual checks, or boundary tests performed; Slight hedging with 'complete or near-complete' but no structured uncertainty or acknowledgment that the answer differs from strict graph-theoretic 'completeness'; No alternative graph-theoretic terms (strong connectivity, k-connectivity, complete graph K_n as distinct from connectedness) are considered or evaluated; Derivation chain from graph property → examples → fragility mechanism is mostly shown, though the mapping between the stated property and the correct answer label is not explicitly bridged.",
+  "timestamp": "2026-03-23T02:24:52.224140+00:00"
+}

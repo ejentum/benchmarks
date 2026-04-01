@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-08",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid norm-based reasoning; Multi-level analysis covering mechanical causation, norm violation, and folk psychology research; Some self-monitoring via role inversion but no explicit bias-checking; Basic verification through bidirectional testing but no counterfactual; Acknowledges both parties are mechanically equal but doesn't quantify confidence; Systematically evaluates Claire-as-cause alternative and explains why rejected; Full derivation chain from premises through norm theory to conclusion",
+  "timestamp": "2026-03-23T10:57:32.603853+00:00"
+}

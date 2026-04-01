@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-11",
+  "condition": "C1",
+  "output": "**(B).**\n\nAll three are instances of **throughput-quality inversion** — optimizing a flow-rate metric degrades first-pass quality, which creates a return loop (readmissions, repeat calls, regressions) whose volume eventually exceeds the throughput \"gained.\" The measured metric improves while the system's actual output degrades.\n\nThe key structural element is the **hidden feedback loop**: the metric is blind to the demand it generates downstream, so local optimization produces global degradation.",
+  "timestamp": "2026-03-20T17:41:24.574116+00:00"
+}

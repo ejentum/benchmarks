@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-11",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid conditional probability calculations; Goes beyond surface by explaining the causal structure and why correlation runs through CEO; Shows awareness of observational vs interventional distinction and notes causal reasoning pitfalls; Verifies by computing both conditional probabilities and comparing them explicitly; Acknowledges that correlation doesn't imply causation and distinguishes observational from interventional; Mentions interventional vs observational framing and explains why do-calculus isn't needed; Full derivation shown in table format with all intermediate steps reproducible.",
+  "timestamp": "2026-03-23T11:09:45.080000+00:00"
+}

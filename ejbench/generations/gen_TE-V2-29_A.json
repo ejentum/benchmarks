@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-29",
+  "condition": "A",
+  "output": "**Phase 1:** 10 hours of work, fully parallelizable across 8 developers → **1.25 hours**\n\n**Phase 2:** 20 hours of work, parallelizable among at most 4 developers → **5 hours**\n\n**Phase 3:** 10 hours of work, strictly serial → **10 hours**\n\n**Minimum completion time: 16.25 hours**\n\nThe manager expected 5 hours but the actual minimum is over 3x that, thanks to the serial bottleneck — a classic illustration of Amdahl's Law and Brooks's \"nine women\" principle.",
+  "timestamp": "2026-03-22T16:30:59.313783+00:00"
+}

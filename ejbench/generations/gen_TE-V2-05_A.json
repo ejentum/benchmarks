@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-05",
+  "condition": "A",
+  "output": "**The answer is (B).**\n\nThe agency is conflating **new emissions** with **existing contamination**. The equipment reduces *emissions* (what enters the river) by 80%. It doesn't remove pollutants already present. The April 1 readings are entirely consistent with the equipment working perfectly:\n\n- **Heavy metals** — permanent, never degrade. Pre-existing levels remain unchanged regardless of emission cuts. New heavy metal input is down 80%, but that won't lower the existing stock.\n- **Organic solvents** — 30-day half-life. After 31 days, ~50% of the pre-existing amount remains. Consistent with natural degradation + reduced new input.\n- **Particulates** — settle in 7 days. Near zero after 31 days is expected.\n- **Nitrates** — consumed in 14–21 days. Near zero after 31 days is expected.\n\nEvery measurement matches what you'd predict if the equipment works exactly as specified. The agency's error is evaluating the equipment against a metric it was never designed to affect (removing already-deposited heavy metals from the river).",
+  "timestamp": "2026-03-22T16:18:59.366514+00:00"
+}

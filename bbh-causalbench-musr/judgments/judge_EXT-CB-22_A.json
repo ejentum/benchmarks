@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-22",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid causal reasoning; Multi-level analysis covering causal structure, confounding assessment, and observational-interventional equivalence; Notes the key structural observation about no backdoor path, showing awareness of potential pitfalls; Computes both baseline and interventional probabilities and compares them; Acknowledges the structural assumption that Skill doesn't affect S, though doesn't deeply explore uncertainty; Implicitly considers whether confounding exists and rules it out with specific reasoning; Full derivation chain from causal graph through computation to conclusion is reproducible",
+  "timestamp": "2026-03-23T10:41:15.883776+00:00"
+}

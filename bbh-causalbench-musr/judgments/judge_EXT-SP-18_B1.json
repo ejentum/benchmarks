@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-18",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (mixing console vs recording booth) but the theory-of-mind reasoning approach was sound and sophisticated; Deep multi-level analysis distinguishing narrator knowledge from character knowledge with explicit event tracing; Excellent self-monitoring with explicit frame-drift suppression and careful perspective-tracking; Basic verification via timeline table but missed re-examining whether Austin could infer Mark's move; Acknowledges uncertainty about Austin's awareness but presents conclusion firmly without exploring edge cases; Considers narrator vs character perspective but doesn't evaluate the recording booth as an alternative; Excellent audit trail with step-by-step timeline table making reasoning fully reproducible",
+  "timestamp": "2026-03-23T11:14:42.537468+00:00"
+}

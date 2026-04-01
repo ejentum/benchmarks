@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-26",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid Bayesian reasoning; Multi-level analysis including DAG structure, backdoor path check, stochastic dominance, and explicit Bayes computation; Some self-monitoring via backdoor path verification and noting interventional=observational equivalence; Strong verification through stochastic dominance check plus numeric Bayes calculation from two angles; Acknowledges uniform prior assumption but doesn't deeply explore sensitivity to other priors; Mentions stochastic dominance as robust argument but doesn't systematically evaluate scenarios where answer could flip; Complete audit trail with every step from DAG to final posterior derivable by a third party",
+  "timestamp": "2026-03-23T11:20:16.253033+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-11",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.4333,
+  "injection_composite": 0.4444,
+  "brief_justification": "Exact correct answer (9 hours) with valid arithmetic derivation; only surface arithmetic performed, no second-order effects explored; no self-monitoring or reflection on reasoning method visible; no verification step attempted, calculation performed once without sanity check; hedges with 'approximately' but no structured uncertainty or confidence analysis; briefly frames result as a confound alternative to sunlight causation but does not evaluate competing explanations; full derivation shown step-by-step (T×W=540 min÷60=9 hrs), reproducible; avoids claiming direct sunlight causation and correctly frames the confound but does not explicitly name or dissect the negative gate pattern; suppressed modes (correlation-to-causation leap) are absent from the response though not explicitly called out; the provided topology is a multi-branch causal DAG with gates and loops, but the response is purely linear arithmetic with no branching or gating structure matching the topology",
+  "timestamp": "2026-03-23T03:42:48.855711+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-15",
+  "condition": "C2",
+  "output": "**(B).**\n\nThe core flaw is the missing counterfactual baseline. \"10% of my picks became unicorns\" is meaningless without knowing: what percentage would have become unicorns if picked at random from the same deal flow?\n\nIf the base rate for startups that reach the stage of receiving VC funding is itself ~10%, then the VC demonstrated zero selection skill — they performed at the rate you'd expect from throwing darts. To claim proven ability, you need to show your hit rate *exceeds* the baseline rate for the pool you selected from.\n\nOptions A, C, and D gesture at real statistical concerns (sample size, luck), but they miss the fundamental issue: **no claimed success rate is interpretable without a comparison class**. Even a 50% hit rate would be uninformative if the baseline were also 50%.",
+  "timestamp": "2026-03-20T17:57:20.023114+00:00"
+}

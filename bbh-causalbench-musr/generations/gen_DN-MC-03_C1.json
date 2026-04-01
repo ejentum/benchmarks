@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-03",
+  "condition": "C1",
+  "output": "**(B)**\n\nThe correct answer doesn't validate the method. \"About a third of New York\" is anchoring bias dressed up as estimation. It happened to land on 2.7M, but the same technique applied to, say, Phoenix (\"feels like a fifth of NYC\" → 1.6M, actual ~1.6M... or maybe \"a sixth\" → 1.3M?) shows the ratio is arbitrary. You'd get a different answer depending on your gut feeling that day.\n\nSound reasoning would involve recalling actual data points about Chicago, using base rates (e.g., knowing it's the 3rd largest US city and reasoning from population distribution patterns), or at minimum acknowledging the uncertainty range of the estimate. Getting the right number by coincidence isn't reasoning — it's luck.",
+  "timestamp": "2026-03-20T17:44:16.219594+00:00"
+}

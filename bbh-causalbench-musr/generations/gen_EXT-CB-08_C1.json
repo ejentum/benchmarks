@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-08",
+  "condition": "C1",
+  "output": "## Solution\n\nUsing the given probabilities directly:\n\n**P(large feet)** = P(not sign ∧ large feet) + P(sign ∧ large feet) = 0.59 + 0.06 = **0.65**\n\nApplying Bayes' rule:\n\n- **P(not sign | large feet)** = 0.59 / 0.65 ≈ **0.908**\n- **P(sign | large feet)** = 0.06 / 0.65 ≈ **0.092**\n\n**Yes.** If observing large feet, it is far more likely that the manager did **not** sign the termination letter (~91% vs ~9%).",
+  "timestamp": "2026-03-20T10:37:15.304211+00:00"
+}

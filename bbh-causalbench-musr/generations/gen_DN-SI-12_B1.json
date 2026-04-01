@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-12",
+  "condition": "B1",
+  "output": "(B) is correct.\n\nThis is a straightforward supply-and-demand analysis of partial rent control:\n\n- **Supply shrinks** — condo conversions remove rental units from the market.\n- **New-tenant prices spike** — landlords cross-subsidize locked-in tenants by overcharging new ones (20% above counterfactual market rates).\n- **Quality deteriorates** — reduced maintenance on controlled units means even the \"affordable\" stock degrades.\n\nAfter 5 years, new residents face fewer units at higher prices. The policy transfers surplus to incumbent tenants at the direct expense of newcomers — a well-documented outcome in the rent control literature (see: San Francisco's experience studied by Diamond, McQuade & Qian 2019).\n\n(D) is tempting but understates the harm to new residents and incorrectly calls it \"net positive\" — the deadweight loss from reduced supply and misallocation makes it net negative overall.",
+  "timestamp": "2026-03-20T17:20:24.441430+00:00"
+}

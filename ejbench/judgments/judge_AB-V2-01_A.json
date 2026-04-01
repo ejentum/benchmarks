@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-01",
+  "condition": "A",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 0,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.0952,
+  "injection_composite": null,
+  "brief_justification": "Correctness=2: 'Wave' captures the right concept but omits the 'mechanical' qualifier present in the ground truth, making it less precise (though the question itself asked for one word, creating ambiguity); Reasoning_depth=0: no analysis of the three examples or explanation of the underlying principle, just a bare assertion; Self_monitoring=0: no reflection on reasoning process, assumptions, or whether the answer is sufficiently precise; Verification=0: no cross-check against the examples given or against alternative physics terms; Epistemic_honesty=0: presents one word as the definitive answer with zero acknowledgment of uncertainty or the mechanical vs. electromagnetic distinction; Alternative_consideration=0: no mention of competing terms such as 'mechanical wave', 'transverse wave', or 'pulse'; Audit_trail=0: no derivation shown — a third party cannot reproduce any reasoning chain from the single-word response.",
+  "timestamp": "2026-03-23T02:16:22.934767+00:00"
+}

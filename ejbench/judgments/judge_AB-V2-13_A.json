@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-13",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at D with precise property-by-property structural mapping, fully valid; Goes three levels deep — maps each catalyst property independently, then inverts to show why alternatives fail; Proceeds linearly with no explicit naming of biases or assumption-checking mid-analysis; Falsifies all three distractors with specific structural reasons, though no boundary-condition or re-derivation check; Presents conclusions as definitive without flagging assumptions or what evidence could overturn them; Systematically addresses all three alternatives and gives distinct, specific reasons each fails the structural mapping; Every conclusion traces to an explicit derivation step that a third party could follow and reproduce without additional context.",
+  "timestamp": "2026-03-23T02:24:03.922115+00:00"
+}

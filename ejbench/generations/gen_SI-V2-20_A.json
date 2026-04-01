@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-20",
+  "condition": "A",
+  "output": "Yes. Over 50 years, harvesting 40/year yields ~2,000 trees cumulative, versus ~1,608 from harvesting 80/year (which depletes the forest around year 21). Half the rate, more total harvest.\n\nThe key insight: 40 trees/year is at or below the sustainable yield threshold (5% × 800 = 40), so the forest never collapses. Company A's higher rate exceeds sustainable yield, causing population decline to zero — cutting off all future harvesting.",
+  "timestamp": "2026-03-22T16:01:24.973297+00:00"
+}

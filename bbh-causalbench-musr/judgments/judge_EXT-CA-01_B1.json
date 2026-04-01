@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-01",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Answered Yes but correct answer is No, so wrong answer with plausible but misapplied reasoning; Goes beyond surface with conjunctive causation analysis and counterfactual reasoning but misreads the folk psychology literature on symmetric joint causation; Applies inversion and bidirectionality checks showing some self-monitoring of reasoning process; Performs counterfactual and structural checks but they led to the wrong conclusion; Presents answer with confidence, only mild hedging about shared causation; Mentions symmetric overdetermination but doesn't seriously evaluate why people might say No (norm violations, abnormality focus); Shows derivation steps clearly but the folk psychology claim is asserted without evidence for the specific symmetric case.",
+  "timestamp": "2026-03-23T10:50:16.608367+00:00"
+}

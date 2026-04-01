@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-03",
+  "condition": "C1",
+  "output": "A typical person would answer: **No**.\n\nThe intuition here is about **norm violation**. Both wires touching the battery are necessary for the short circuit, but the black wire was *supposed* to touch the battery — it was doing what it was designated to do. The red wire, on the other hand, was *not supposed* to be there. People tend to attribute causation to the component that deviated from its expected or prescribed behavior.\n\nSo even though both wires are equally necessary (mechanically), people psychologically assign cause to the **abnormal** condition — the red wire being out of place — and discount the black wire because it was behaving as intended.",
+  "timestamp": "2026-03-20T10:15:40.088602+00:00"
+}

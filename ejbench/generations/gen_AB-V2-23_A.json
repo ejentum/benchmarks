@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-23",
+  "condition": "A",
+  "output": "Description Y is at the higher level of abstraction.\n\nAbstraction level is about **generality of the pattern captured**, not about vocabulary complexity. Description Y (\"things good at making copies of themselves become more common\") abstracts away *all* domain-specific machinery — genes, alleles, populations, biological reproduction — and isolates the bare replicator dynamic. It applies to:\n\n- Biological genes\n- Cultural memes\n- Computer viruses\n- Self-replicating molecules\n- Any substrate that copies with variation and selection\n\nDescription X, despite its technical language, is actually **more concrete** — it's pinned to a specific instantiation of the principle (biological populations, alleles, heritability). Technical jargon often signals domain specificity, not higher abstraction.\n\nThis is a common conflation: **complexity of language ≠ level of abstraction**. In fact, the relationship often runs the other way. The most abstract formulations tend to be expressible in simple terms precisely *because* they've shed all domain-specific detail. Formal terminology accumulates when you're describing the specific mechanisms of a particular implementation.",
+  "timestamp": "2026-03-22T16:03:39.395898+00:00"
+}

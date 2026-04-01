@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-08",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (storage) with valid theory-of-mind reasoning; Multi-level analysis tracing object locations, character knowledge states, and visibility between characters across paragraphs; Some self-monitoring in checking whether Tom witnessed Lisa's actions; Basic verification by confirming Tom had no line-of-sight to Lisa's restocking; Acknowledges the key uncertainty of Tom's knowledge state vs actual location but doesn't explicitly flag confidence levels; Considers the alternative location (passenger seating area) and explains why Tom wouldn't know about it; Full audit trail from initial state through each paragraph with explicit derivation of Tom's belief state",
+  "timestamp": "2026-03-23T13:21:25.527110+00:00"
+}

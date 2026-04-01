@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-TE-06",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.3333,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer (B) with valid gap-identification logic; only surface-level analysis — lists known slots and names the gap without exploring why or tracing second-order constraints; no reflection on reasoning method or assumption checks at any point; no explicit verification step, counterfactual test, or sanity check performed; presents conclusion as certain with no acknowledgment of any ambiguity or assumptions about witness reliability; never addresses options A, C, or D or explains why they are eliminated; the table maps all evidence and the gap is visually derivable, but the response skips explicitly closing each alternative window.",
+  "timestamp": "2026-03-23T09:37:14.686611+00:00"
+}

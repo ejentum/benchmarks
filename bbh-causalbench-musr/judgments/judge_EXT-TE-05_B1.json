@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-05",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (A) with valid reasoning; goes one level beyond surface by mapping all time slots into a table to find the gap; no explicit self-monitoring of reasoning process; verifies by showing all slots are accounted for 7am-6pm leaving only 6pm-9pm; no explicit uncertainty acknowledgment beyond implicit constraint checking; implicitly rejects other options by showing those times are occupied but doesn't explicitly evaluate alternatives; full derivation trail from constraints to conclusion is reproducible.",
+  "timestamp": "2026-03-23T10:54:33.983209+00:00"
+}

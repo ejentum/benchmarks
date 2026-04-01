@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-05",
+  "condition": "B1",
+  "output": "**Initial state:**\n- Alice: Catch-22\n- Bob: Moby Dick\n- Claire: The Great Gatsby\n\n**Swap 1 — Claire ↔ Bob:**\n- Alice: Catch-22\n- Bob: The Great Gatsby\n- Claire: Moby Dick\n\n**Swap 2 — Claire ↔ Alice:**\n- Alice: Moby Dick\n- Bob: The Great Gatsby\n- Claire: Catch-22\n\n**Swap 3 — Bob ↔ Claire:**\n- Alice: Moby Dick\n- Bob: Catch-22\n- Claire: The Great Gatsby\n\nAlice has **(B) Moby Dick**.",
+  "timestamp": "2026-03-20T09:40:23.426216+00:00"
+}

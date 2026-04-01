@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-07",
+  "condition": "B1",
+  "output": "**(B)**\n\nAll three share the same structural pattern: **accurate risk information existed at the domain-expert level but was systematically filtered out by organizational hierarchy before it could influence decisions.**\n\nIt's not about incompetence (A), speed alone (C), or individual villains (D). It's an **information flow architecture problem**:\n\n- The signal was generated (engineers/scientists knew)\n- The structure attenuated it (management layers filtered, reframed, or suppressed)\n- The decision was made without it\n\n(C) is tempting but superficial — it describes a *symptom*, not the *mechanism*. Plenty of organizations prioritize speed without catastrophic failure. What made these three fail is that the corrective feedback loop was structurally broken: the hierarchy didn't just deprioritize safety, it **prevented the information that would have forced the safety conversation from reaching the people making the call**.",
+  "timestamp": "2026-03-20T17:15:53.400787+00:00"
+}

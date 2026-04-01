@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-09",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1
+  },
+  "composite_score": 0.2381,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (C) identified; only surface-level reasoning stating the unaccounted window without systematic elimination; no self-monitoring or bias checking; no verification against other options; no uncertainty acknowledged; no alternatives evaluated; minimal derivation showing only the conclusion with brief justification but not full elimination of each time slot",
+  "timestamp": "2026-03-23T13:15:41.512308+00:00"
+}

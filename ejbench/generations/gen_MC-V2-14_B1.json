@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-14",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: prior_distribution_weighting; posterior_update_cycle; evidential_accumulation\nSuppress: letting_initial_probability_estimate_persist_unchanged_despite_new_contradicting_data; ignoring_population_level_frequency_data_when_evaluating_individual_case_likelihood\n[END REASONING CONTEXT]\n\n## Solution — Bayes' Theorem\n\n**Given:**\n- P(A) = 0.70, P(B) = 0.30 (prior production shares)\n- P(D|A) = 0.03, P(D|B) = 0.07 (defect rates)\n\n**Step 1 — Total probability of a defect:**\n\nP(D) = P(D|A)·P(A) + P(D|B)·P(B)\nP(D) = (0.03)(0.70) + (0.07)(0.30)\nP(D) = 0.021 + 0.021 = **0.042**\n\n**Step 2 — Apply Bayes' Rule:**\n\nP(A|D) = P(D|A)·P(A) / P(D) = 0.021 / 0.042\n\n### **P(A | D) = 0.50 — exactly 50%**\n\n**Key insight:** Although Plant A produces the vast majority of units (70%), its much lower defect rate (3% vs 7%) means it contributes exactly the same number of defective units as Plant B (0.021 each). The two contributions are perfectly balanced, yielding a 50/50 split. The evidence of a defect shifts the probability *away* from the prior of 70% down to 50%, because Plant B's higher defect rate compensates exactly for its smaller volume.",
+  "timestamp": "2026-03-22T21:44:51.976629+00:00"
+}

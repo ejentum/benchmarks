@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-27",
+  "condition": "C2",
+  "output": "**No.** If you had taken the stairs instead, penguin death would be **more** likely, not less.\n\nIn this self-contained world with no unmentioned confounders:\n\n- **Factual** (elevator): P(death) = 30%\n- **Counterfactual** (stairs instead): P(death) = 75%\n\nSince the decision is the only exogenous variable and there are no hidden common causes, the counterfactual for an elevator-taker who had instead taken the stairs is simply the stairs rate: 75%. That's higher than 30%, so switching to stairs would **increase** the probability of penguin death.",
+  "timestamp": "2026-03-20T11:06:08.538182+00:00"
+}

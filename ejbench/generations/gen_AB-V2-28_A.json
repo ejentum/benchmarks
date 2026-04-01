@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-28",
+  "condition": "A",
+  "output": "**The answer is (A).**\n\nAll three problems have identical structure:\n\n- A **capacity constraint** (50 kg / $50,000 / 50 hours)\n- **n = 10 indivisible items** (the problem states all are indivisible)\n- Each item has a **cost** (weight / dollar cost / time) and a **benefit** (value / return / importance score)\n- **Binary decision** per item: take it or don't\n\nThe question itself gives away the key assumption — \"all items/investments/projects are indivisible.\" That's exactly what makes them 0-1 knapsack instances. The distractors try to lure you into questioning the *semantics* of the domains (continuous time, fractional money, subjective scores), but none of that matters. The mathematical structure is:\n\n$$\\max \\sum_{i=1}^{10} v_i x_i \\quad \\text{s.t.} \\quad \\sum_{i=1}^{10} w_i x_i \\leq C, \\quad x_i \\in \\{0, 1\\}$$\n\nThe units on $v_i$, $w_i$, and $C$ are irrelevant to the structure. Whether time \"is continuous\" or importance \"is subjective\" doesn't change the combinatorial optimization problem — what matters is the constraint form and decision space, both of which are identical across all three.",
+  "timestamp": "2026-03-22T16:08:21.234188+00:00"
+}

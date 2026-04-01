@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-07",
+  "condition": "C2",
+  "output": "**(B)** is correct.\n\nThis is a textbook **confounded causal inference**. The manager observed a correlation (Team A uses agile AND ships more) and attributed the entire effect to a single variable (methodology), ignoring every other difference between the teams.\n\nPossible confounds include:\n\n- **Team composition** — seniority, skill mix, headcount\n- **Project complexity** — Team B may work on harder problems\n- **Technical debt** — one codebase may be far harder to ship in\n- **Stakeholder churn** — differing requirement stability\n- **Domain experience** — familiarity with the problem space\n\nA single two-group comparison with no controls is an observational study with n=1 per condition. You can't isolate methodology as the cause without holding the other variables constant (or at least measuring and adjusting for them).",
+  "timestamp": "2026-03-20T17:55:53.376507+00:00"
+}

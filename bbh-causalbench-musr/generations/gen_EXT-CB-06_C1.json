@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-06",
+  "condition": "C1",
+  "output": "**No.** Method 2 is more correct.\n\nIn this world, Talent and Effort are **independent** — there is no causal path between them and no common cause linking them. The true causal effect of Talent on Effort is **zero**.\n\n**Method 1 introduces collider bias.** Elite institution admission is a *collider* — a common effect of both Talent and Effort. Conditioning on a collider (stratifying by admission status) opens a spurious path between its two causes, creating an artificial negative association. Among admitted individuals, lower talent \"explains away\" as higher effort and vice versa — but this correlation is an artifact of the stratification, not a real causal relationship.\n\n**Method 2 examines the unconditional association**, which correctly reflects the true state: Talent and Effort are unrelated. No spurious path is opened because no collider is conditioned on.\n\nThis is known as **Berkson's paradox** (or the explain-away effect). The key structural rule: never condition on a collider (or its descendant) when estimating the causal relationship between its parents, as doing so manufactures a dependency that doesn't exist in the data-generating process.",
+  "timestamp": "2026-03-20T10:36:35.456281+00:00"
+}

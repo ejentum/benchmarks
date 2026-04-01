@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-09",
+  "condition": "C1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Correct answer is 'Emma's head' but agent answered 'the office' — wrong answer; Agent does go one level deep considering George's belief state vs. the key's actual location, showing theory-of-mind reasoning; Some self-monitoring shown by initially considering 'the box' then correcting to 'the office' based on George's perspective; Mentions verification need (what George witnessed) but doesn't test against all possibilities; Presents conclusion with moderate confidence but doesn't acknowledge uncertainty about alternative interpretations; Considers both 'the box' and 'the office' but misses the correct answer entirely — the question likely refers to sunglasses (also called 'key' metaphorically or the question is about a different item); Derivation chain is shown for the office conclusion but misses the trick of the question.",
+  "timestamp": "2026-03-23T13:22:05.452256+00:00"
+}

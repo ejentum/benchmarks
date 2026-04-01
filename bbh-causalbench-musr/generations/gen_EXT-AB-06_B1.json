@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-06",
+  "condition": "B1",
+  "output": "**Yes, Jaymie tells the truth.** Wait — let me re-check.\n\n1. **Shalonda lies.** (given)\n2. **Teressa** says Shalonda tells the truth → Shalonda actually lies, so Teressa is **wrong** → **Teressa lies.**\n3. **Tamika** says Teressa lies → Teressa does lie, so Tamika is **correct** → **Tamika tells the truth.**\n4. **Lorine** says Tamika tells the truth → Tamika does tell the truth, so Lorine is **correct** → **Lorine tells the truth.**\n5. **Jaymie** says Lorine lies → Lorine actually tells the truth, so Jaymie is **wrong** → **Jaymie lies.**\n\n**No, Jaymie does not tell the truth.**",
+  "timestamp": "2026-03-20T09:47:11.617096+00:00"
+}

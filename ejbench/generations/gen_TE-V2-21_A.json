@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-21",
+  "condition": "A",
+  "output": "**(B) 2 nodes — Node 3 at .050 and Node 1 at .100**\n\nChronological order of acknowledgments:\n1. Node 3: 10:00:00.050\n2. Node 1: 10:00:00.100\n3. Node 2: 10:00:00.200 ← majority reached here\n4. Node 5: 10:00:00.250\n5. Node 4: 10:00:00.300\n\nAt T2's start (10:00:00.150), only Node 3 (.050) and Node 1 (.100) have acknowledged. Node 2's ack at .200 hasn't happened yet, so majority (3/5) is **not** reached. T2 cannot safely read T1's committed data at that point.",
+  "timestamp": "2026-03-22T16:28:05.233278+00:00"
+}

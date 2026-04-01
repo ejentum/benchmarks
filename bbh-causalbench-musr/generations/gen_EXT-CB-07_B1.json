@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-07",
+  "condition": "B1",
+  "output": "## Causal Analysis\n\nGiven the fully specified world:\n\n**Variables after intervention do(S = smoking), with H = poor (observed):**\n\n1. **Birth Weight**: BW = normal if (smoking OR good health). Smoking is true → **BW = normal**.\n\n2. **Infant Mortality**: IM = high if (smoking OR good health OR normal BW). Smoking is true → **IM = high**.\n\n**Yes**, infant mortality would be high if the mother is a smoking mother. In fact, the intervention `do(smoking)` alone is sufficient to force both normal birth weight and high infant mortality regardless of health status, since smoking appears as a positive disjunct in both structural equations.",
+  "timestamp": "2026-03-20T09:37:17.925009+00:00"
+}

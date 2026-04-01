@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-14",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (No vs Yes) but the reasoning approach about do-calculus was sophisticated; Deep multi-level analysis of causal structure, structural equations, and interventional distributions; Explicitly applied suppress/amplify framework to monitor reasoning biases; Verified by comparing observational vs interventional semantics; Acknowledged distinction between observation and intervention but was overconfident in the wrong conclusion; Considered observational vs interventional interpretations but committed to wrong one without examining whether the question might mean observation; Complete derivation trail from SCM to structural equations to do-calculus to conclusion, fully reproducible",
+  "timestamp": "2026-03-23T12:59:33.889844+00:00"
+}

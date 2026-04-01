@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-07",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid reasoning; Goes one level beyond surface by setting up DAG and structural equations; Minimal self-monitoring via the injected reasoning context but no active reflection during solving; Mentions intervention framework but doesn't verify via alternative path or counterfactual check; States conclusion confidently without acknowledging assumptions about OR-based equations or edge cases; No alternative approaches considered (e.g., didn't check nonsmoking counterfactual for comparison); Full derivation trail from variables to equations to step-by-step evaluation, fully reproducible",
+  "timestamp": "2026-03-23T12:55:35.174200+00:00"
+}

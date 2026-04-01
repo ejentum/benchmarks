@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-07",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 2
+  },
+  "composite_score": 0.3333,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (D) with valid reasoning; lays out the full schedule to identify the gap, going one level beyond surface; no self-monitoring or reflection on reasoning process; no verification or sanity checks performed; presents conclusion as certain with no caveats; does not discuss why other options are wrong; shows the schedule breakdown but doesn't explicitly walk through eliminating each alternative",
+  "timestamp": "2026-03-23T13:14:18.773483+00:00"
+}

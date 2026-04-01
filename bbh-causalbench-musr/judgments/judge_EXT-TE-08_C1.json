@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-08",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0
+  },
+  "composite_score": 0.1905,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (C) identified; only surface-level mention of 'gap in scheduled day' with no deeper analysis; no self-monitoring or reflection on reasoning; no verification steps shown; no uncertainty acknowledged; no alternatives discussed; no derivation trail—just asserts the answer with a brief label",
+  "timestamp": "2026-03-23T13:15:05.950226+00:00"
+}

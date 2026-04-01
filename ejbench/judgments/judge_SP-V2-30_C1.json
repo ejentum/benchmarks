@@ -1,0 +1,8 @@
+{
+  "task_id": "SP-V2-30",
+  "condition": "C1",
+  "scores": null,
+  "composite_score": null,
+  "error": "timeout_180s",
+  "timestamp": "2026-03-23T05:39:45.659586+00:00"
+}

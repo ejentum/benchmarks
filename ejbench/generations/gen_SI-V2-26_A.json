@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-26",
+  "condition": "A",
+  "output": "**Yes, it exceeds 300 seconds.**\n\nThe total time is **320 seconds**.\n\n- **Service C → D:** 4 attempts × 5s = **20s**\n- **Service B → C:** 4 attempts × 20s = **80s**\n- **Service A → B:** 4 attempts × 80s = **320s**\n\n320 > 300. This is the classic **retry amplification** problem — retries at each layer multiply, causing exponential blowup of total wait time. The fix is typically to use a **global timeout budget** that gets passed down the call chain, or to implement circuit breakers.",
+  "timestamp": "2026-03-22T16:03:36.802658+00:00"
+}

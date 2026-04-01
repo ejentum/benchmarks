@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-18",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Exact correct answer: A→B→D→E→F→H, 105 minutes (1h45m); Lists all three competing chains and traces second-order merge-point effects explaining why each non-critical branch fails to gate; No explicit reflection on reasoning method or named biases, proceeds linearly; Cross-checks both alternative chains at merge points (B 9:30 > G 9:15, E→F gates later than C→F) confirming the critical path; Presents conclusion with full confidence and no acknowledgment of assumptions or edge cases; Systematically evaluates both alternative chains (A→G→D→E→F→H and C→F→H) with specific time-based rejection reasoning; Every node has an explicit timestamp and merge-point logic is fully stated, allowing third-party reproduction.",
+  "timestamp": "2026-03-23T03:05:01.803642+00:00"
+}

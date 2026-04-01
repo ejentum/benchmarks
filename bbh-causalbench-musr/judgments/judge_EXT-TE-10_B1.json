@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-10",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (D) with valid reasoning; goes one level beyond surface by mapping all time slots systematically; no explicit self-monitoring of reasoning process; verifies by confirming all other slots are occupied; presents conclusion confidently without acknowledging assumptions; implicitly rejects alternatives by showing they're occupied but doesn't explicitly evaluate each option; full derivation trail with clear table showing how conclusion was reached",
+  "timestamp": "2026-03-23T11:00:04.698558+00:00"
+}

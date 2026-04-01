@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-19",
+  "condition": "A",
+  "output": "**The answer is (C).**\n\nThe key insight is the overlap conflict between P1 and P2 on level 1:\n\n- **Level 1** has 200 positions (10 rows × 20 columns).\n- **P1** requires 150 of those 200 positions (it can *only* go on level 1).\n- **P2** can go on levels 1–2 (400 total positions), but after P1 takes 150 on level 1, only **50 remain on level 1** plus **200 on level 2** = 250 available for P2.\n- P2 needs **300** positions but only has **250** — a shortfall of 50.\n\nThis constraint conflict makes it impossible regardless of total capacity. Option (A) is a naive count that ignores constraint overlaps. Options (B) and (D) are wrong because no amount of flexibility with P5 resolves the P1/P2 level conflict.",
+  "timestamp": "2026-03-22T16:39:35.803835+00:00"
+}

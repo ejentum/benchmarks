@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-03",
+  "condition": "A",
+  "output": "From the constraints:\n\n- loquats > kiwis\n- pears > peaches\n- apples > loquats → apples > loquats > kiwis\n- apples < peaches → peaches > apples > loquats > kiwis\n\nAnd pears > peaches, so: **pears > peaches > apples > loquats > kiwis**\n\nSecond-cheapest is **loquats**.\n\nThe answer is **(D)**.",
+  "timestamp": "2026-03-20T09:27:01.899037+00:00"
+}

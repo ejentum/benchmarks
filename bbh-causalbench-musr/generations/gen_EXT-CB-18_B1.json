@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-18",
+  "condition": "B1",
+  "output": "**No.** Given the observed conditions, the high salary would **not** likely be because the person drank coffee.\n\nHere's the reasoning:\n\n**Structural equations:**\n- Coffee = U **AND** Proximity\n- Salary = U **OR** Coffee\n\n**Observed values:**\n- U (confounder) = active (1)\n- Proximity = far from college (0)\n\n**Determine Coffee:**\nCoffee = 1 AND 0 = **0** (person does not drink coffee)\n\n**Determine Salary:**\nSalary = 1 OR 0 = **1** (high salary)\n\nThe high salary is entirely explained by the confounder being active. The person doesn't drink coffee at all (because proximity is far, blocking that path despite the confounder being active). Since Coffee = 0, coffee cannot be the cause of the high salary — the confounder alone is sufficient to produce it.",
+  "timestamp": "2026-03-20T09:41:40.729924+00:00"
+}

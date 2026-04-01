@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-01",
+  "condition": "B1",
+  "output": "**The answer is (B).**\n\nEach case engineered a divergence between the **measurement interface** (what observers/regulators/investors saw) and the **actual underlying system**:\n\n- **Theranos** — the demo (measurement layer) showed real results from commercial machines; the actual system (miniaturized device) couldn't produce them.\n- **Enron** — the balance sheet (measurement layer) showed healthy financials; the actual debt was hidden in off-book SPEs.\n- **Volkswagen** — the emissions test (measurement layer) triggered clean mode; actual driving conditions produced far higher emissions.\n- **WeWork** — the profitability metric (measurement layer) excluded core costs; the actual operations were deeply unprofitable.\n\nThe shared structure: **optimize the interface that gets measured, while the real system behind it diverges unchecked.** (A) is technically true but superficial — it names the legal conclusion without identifying the *mechanism*. (C) and (D) are incidental traits, not the structural pattern.\n\nThis is essentially **Goodhart's Law weaponized**: when you control the measurement layer, you can decouple it from reality deliberately rather than just accidentally.",
+  "timestamp": "2026-03-20T17:12:52.488288+00:00"
+}

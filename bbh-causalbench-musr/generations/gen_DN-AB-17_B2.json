@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-17",
+  "condition": "B2",
+  "output": "**(B).**\n\nEach model subsidizes one side to build a captive base, then extracts from the side with fewer alternatives:\n\n- **Razor-and-blade**: cheap razor creates lock-in to a proprietary blade format → captive blade buyers.\n- **Freemium**: free tier builds a user base with invested data/workflows → switching costs drive upgrades.\n- **Academic publishing**: free submission builds the content corpus → libraries *must* pay because researchers depend on that corpus.\n\n(A) is close but shallow — \"loss leader\" describes the tactic without explaining *why* it works (structural asymmetry + switching costs). (C) is factually wrong. (D) describes a surface feature, not the mechanism.",
+  "timestamp": "2026-03-20T17:31:26.042755+00:00"
+}

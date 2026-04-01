@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-13",
+  "condition": "C1",
+  "output": "**(B)**.\n\nThey share an identical structural pattern: **open ingestion + layered retroactive filtering**. Each system keeps the barrier to *entry* low and invests its quality-control budget in *review and reversion* at progressively higher layers, because blocking all bad input upfront would also block good input — and reverting a bad contribution is cheaper than gatekeeping every contribution.",
+  "timestamp": "2026-03-20T17:41:43.471629+00:00"
+}

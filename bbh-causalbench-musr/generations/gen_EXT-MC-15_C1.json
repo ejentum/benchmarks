@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-MC-15",
+  "condition": "C1",
+  "output": "## Karl is the most likely murderer.\n\nThe evidence converges on Karl through three reinforcing pillars:\n\n**Means:** Karl didn't just own a trident — he **took lessons in trident fighting** last summer, meaning he knew how to wield one as a weapon. A trident matching the murder weapon was found at his house.\n\n**Motive:** Johnny possessed **documents proving Karl's illegal insider trading** and had directly **threatened to go to the police**. Federal securities fraud carries severe consequences — Karl's entire career, wealth, and freedom were at stake.\n\n**Timing:** Johnny was murdered **before he could report Karl to the authorities**. This is the critical causal clue — the killing served to prevent the exposure, and only Karl's secret was still unexposed at the time of death.\n\n**Why not Jay?** Jay has surface-level indicators (trident collection, illegal fishery, presence at Times Square), but his relationship with Johnny is described as genuinely loving — \"as deeply as his own blood.\" More importantly, Jay's secret (illegal fishing) carries far less severe consequences than Karl's federal insider trading charges, making Karl's motive significantly stronger. Jay's tridents are display pieces; Karl trained to **fight** with one.",
+  "timestamp": "2026-03-20T10:51:52.274779+00:00"
+}

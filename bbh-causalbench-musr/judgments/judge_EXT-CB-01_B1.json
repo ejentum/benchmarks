@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-01",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid Bayesian reasoning; Multi-level analysis covering the causal chain, Berkson's paradox, and collider bias — going well beyond surface level; Some self-monitoring via the reasoning context injection and careful distinction of observational vs interventional, but no explicit bias-checking mid-analysis; Basic verification through the Berkson's paradox check showing it doesn't reverse the conclusion, but no numerical sanity check or counterfactual re-derivation; Acknowledges the collider bias complication and that it 'does not reverse' the direction but doesn't quantify confidence or state what would change the conclusion; Systematically evaluates the gender-confounder alternative (Berkson's paradox) and explains why it doesn't override the primary signal; Full derivation trail from DAG to Bayes' rule to likelihood comparison to final answer, reproducible by a third party.",
+  "timestamp": "2026-03-23T11:01:20.859726+00:00"
+}

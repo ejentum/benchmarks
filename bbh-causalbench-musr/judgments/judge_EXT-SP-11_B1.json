@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-11",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (kitchen drawer) with valid theory-of-mind reasoning; Multi-level analysis tracking object locations, witness states, and belief updates through timeline; Some self-monitoring via calibration context and careful attention to who observed what; Basic verification through timeline table but no counterfactual check; Acknowledges the belief-state vs actual-location distinction but doesn't explicitly flag uncertainty; Implicitly considers the counter location (actual) vs drawer (believed) but doesn't systematically evaluate other alternatives; Full derivation trail with timeline table showing every move and witness, fully reproducible",
+  "timestamp": "2026-03-23T11:09:36.172923+00:00"
+}

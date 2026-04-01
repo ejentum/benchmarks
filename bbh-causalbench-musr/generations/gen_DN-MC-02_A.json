@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-02",
+  "condition": "A",
+  "output": "**(B)**\n\nThe three statements form a self-undermining triad:\n\n- **1 vs 2:** \"Cut costs by 20%\" and \"invest heavily in R&D\" pull in opposite directions. Heavy R&D investment is a cost. You *can* cut elsewhere to fund R&D, but the report doesn't say that — it says cut costs broadly *and* invest heavily, without acknowledging the tension.\n\n- **1 vs 3:** This is the sharper contradiction. The report identifies talent loss to higher-paying competitors as the *primary risk*, then recommends a 20% cost cut. Compensation is typically the largest cost line. Cutting costs at that scale, while competitors are already outbidding you on pay, directly accelerates the risk the consultant just flagged as most important.\n\nOption (C) is the common dodge — \"just cut costs from other areas\" — but a 20% cut is not surgical. And if such painless cuts existed, the consultant should have specified them rather than leaving a recommendation that reads as self-defeating on its face. A competent report would have reconciled these tensions explicitly.",
+  "timestamp": "2026-03-20T17:07:35.119702+00:00"
+}

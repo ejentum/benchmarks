@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-07",
+  "condition": "A",
+  "output": "**(A) Measurement confound.**\n\nThe critical distinction: engineers aren't necessarily *healthier* — they just don't *record* sick days the same way. When someone works from home while mildly ill under unlimited PTO, that never enters the sick-day tracking system. Other departments formally log every absence.\n\nThis means the dependent variable (\"sick days\") isn't measuring the same thing across the two groups. It's not that department culture causes both desk choice and health (that would be omitted variable bias) — it's that the **measurement instrument itself** is inconsistent. You're comparing apples to oranges before you even get to causal questions.\n\nOption D is tempting but subtly wrong here: the problem isn't that department is an unobserved cause of actual illness, it's that department determines how the outcome is *recorded*. Even if standing desks genuinely reduced illness, you couldn't detect it with this data because the measurement is corrupted.",
+  "timestamp": "2026-03-22T16:30:28.432082+00:00"
+}

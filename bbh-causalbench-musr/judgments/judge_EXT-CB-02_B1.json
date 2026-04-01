@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-02",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid Bayesian reasoning; goes one level beyond surface by computing likelihood ratio and explaining the suppression mechanism; some self-monitoring via the RA²R suppress/amplify context and noting the prior assumption caveat; basic verification through the likelihood ratio calculation confirming it's less than 1; acknowledges the assumption about non-extreme priors but doesn't deeply explore uncertainty; mentions the prior dependency as a caveat but doesn't systematically evaluate alternative scenarios (e.g., what if prior is extreme); full derivation chain from causal structure through Bayes' theorem to conclusion is explicitly shown and reproducible.",
+  "timestamp": "2026-03-23T11:02:20.956633+00:00"
+}

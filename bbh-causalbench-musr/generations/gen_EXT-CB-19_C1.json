@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-19",
+  "condition": "C1",
+  "output": "## Causal Analysis\n\n**Causal graph:**\n- Qwiu → Jyka, Qwiu → Kwox (Qwiu is unobserved)\n- Jyka → Yupt → Kwox\n\n**Key insight:** An *intervention* on Kwox (do(Kwox=0)) severs all incoming arrows to Kwox. Since Kwox has no downstream causal effect on Jyka or Yupt, intervening on Kwox leaves the joint distribution of (Jyka, Yupt) entirely unchanged.\n\n**Computation under do(Kwox=0):**\n\n| | Value |\n|---|---|\n| P(Jyka=1) | 0.88 |\n| P(Yupt=1 \\| Jyka=1) | 0.92 |\n| **P(Jyka=1 ∧ Yupt=1)** | **0.88 × 0.92 = 0.8096** |\n\n**Yes, it is likely (~81%).** Under the intervention do(Kwox=0), Jyka is present and Yupt occurs with probability ≈ 81%. Since Jyka → Yupt is a direct causal edge in the graph, when both are present, Jyka genuinely caused Yupt (it raised Yupt's probability from 51% to 92%).\n\nThe critical reasoning point: because the intervention on Kwox cuts incoming edges (from Qwiu and Yupt), it cannot propagate information backward to Jyka or Yupt. The unobserved confounder Qwiu is irrelevant here — it would matter if we were *conditioning* on Kwox=0 (which would open a collider path), but an *intervention* blocks that entirely.",
+  "timestamp": "2026-03-20T10:41:51.909298+00:00"
+}

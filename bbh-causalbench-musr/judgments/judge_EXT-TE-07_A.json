@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-TE-07",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.3333,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (D) with a valid rationale; only states the surface conclusion ('only window unaccounted for') without tracing second-order effects or exploring the constraint structure in depth; no reflection on the reasoning process, potential pitfalls, or assumption checks at any point; no verification step such as re-checking each option or testing boundary conditions; presents the answer with certainty and no acknowledgment of assumptions or edge cases; mentions that 'all other slots are occupied' as a dismissal but does not individually evaluate each option or explain why each is excluded; shows the conclusion and a brief one-line rationale but skips explicit derivation through each time window, making partial reproduction possible but incomplete.",
+  "timestamp": "2026-03-23T09:38:26.268360+00:00"
+}

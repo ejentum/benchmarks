@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-10",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.8,
+  "injection_composite": 0.5556,
+  "brief_justification": "Correctly identifies McNamara fallacy with valid multi-point reasoning; Traces three levels: the metric used, what it excludes, and why that exclusion is the core error; Acknowledges status quo bias is 'present psychologically' but doesn't formally name its own assumptions; Systematically rules out all three distractors with specific reasons, functioning as counterfactual verification; Uses hedged language ('don't fit as well') but doesn't explicitly state confidence levels or what would change the answer; Evaluates all four options with specific rejection criteria for each; Full dependency table plus systematic alternative elimination allows reproduction of reasoning; The injection's negative gate concerns time-wasting on outdated reports — the agent avoids this framing but substitutes an entirely different injection context rather than engaging with the provided one; Suppressed failure modes (sunk cost anchoring, terminal logic bias) don't appear in the response, but none are explicitly flagged; The provided topology is an EV-calculation branching graph for opportunity cost — the agent's reasoning is structured but linear MCQ elimination, not matching the FORK/JOIN/EV path.",
+  "timestamp": "2026-03-23T04:47:13.970511+00:00"
+}

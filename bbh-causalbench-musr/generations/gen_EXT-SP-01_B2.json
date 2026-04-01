@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-01",
+  "condition": "B2",
+  "output": "**No.**\n\nTracking position on a fixed coordinate grid (facing north throughout):\n\n| Step | Move | Position |\n|---|---|---|\n| Start | — | (0, 0) |\n| 1 step backward | y − 1 | (0, −1) |\n| 9 steps left | x − 9 | (−9, −1) |\n| 2 steps backward | y − 2 | (−9, −3) |\n| 6 steps forward | y + 6 | (−9, 3) |\n| 4 steps forward | y + 4 | (−9, 7) |\n| 4 steps backward | y − 4 | (−9, 3) |\n| 3 steps right | x + 3 | **(−6, 3)** |\n\nYou end at (−6, 3) — 6 steps left and 3 steps forward from the start.",
+  "timestamp": "2026-03-20T09:54:26.853903+00:00"
+}

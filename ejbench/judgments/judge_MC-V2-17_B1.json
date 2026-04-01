@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-17",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.7,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at exactly 65.7% via correct complement rule derivation; Goes one level beyond the answer by explaining double-counting flaw in naive addition, but no deeper exploration; Proceeds linearly with no explicit mid-reasoning checks or bias naming; Verifies arithmetic (0.7³=0.343, 1-0.343=0.657) and confirms it matches the question, but no counterfactual or boundary tests; Presents a deterministic math result appropriately, acknowledges friend's flawed assumption but no formal uncertainty framing; Explicitly evaluates the friend's alternative (30%×3) and names the specific failure mechanism (overlapping outcomes), earning full marks; Every step is shown—P(no rain)=0.70, cubed=0.343, complement=0.657—fully reproducible; Avoids asserting high-confidence probability claims without derivation, consistent with the injection's anti-pattern, but does not explicitly reference or label the gate; Avoids propagating raw logits or skipping base rate comparison, uses 30% correctly throughout, but does not explicitly call out any suppressed mode; Reasoning is entirely linear despite the injection's branching calibration topology with gates for inflation/deflation detection—topology was mismatched to the task type, but no branching structure appears in the response regardless.",
+  "timestamp": "2026-03-23T03:46:21.332727+00:00"
+}

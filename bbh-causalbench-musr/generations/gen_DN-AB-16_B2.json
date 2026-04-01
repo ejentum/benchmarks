@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-16",
+  "condition": "B2",
+  "output": "**C**\n\nThe question asks which is \"most structurally accurate,\" meaning it's testing whether you can see past the two opposing positions to recognize a category error.\n\n- **A and B** each take one side of an existing legal framework and assert it applies cleanly.\n- **D** sounds reasonable but just restates the empirical hinge of the existing debate without addressing the structural mismatch.\n- **C** identifies the actual structural problem: \"learning from\" a work is a fundamentally new type of use that existing copyright doctrine wasn't designed to handle. Fair use doctrine assumes a human transforming a work for a new expressive purpose. Infringement doctrine assumes copying for distribution. AI training does neither cleanly — it extracts statistical regularities at scale for a purpose (parameterized model weights) that has no precedent in the law.\n\nThe key insight is that when two established categories both partially apply but neither fits, the most accurate answer is usually that you need a new category — not that one of the old ones secretly works.",
+  "timestamp": "2026-03-20T17:31:08.570168+00:00"
+}

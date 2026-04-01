@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-24",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 1,
+    "self_monitoring": 1,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2381,
+  "injection_composite": null,
+  "brief_justification": "Agent arrives at 4, not the correct answer of 2 — it correctly identifies non-window seats in a 3-3 layout but fails to account for how 8 passengers distribute across 12 seats (4 per row), leaving only 2 non-window seats in row 9; the analysis stays at surface level, identifying seat types without working through the group distribution math to find how many seats remain in row 9 specifically; the agent notices the contradiction (all 6 seats taken vs. 4 available for minor) but resolves it vaguely without re-examining its own logic error; no verification of the group split (4+4 across rows) or boundary check on how many non-window seats remain after group occupies their share of row 9; the agent presents 4 as the answer with confidence despite an unresolved internal contradiction about seat availability; only one seat-layout interpretation is used and no alternative distributions of the group of 8 (e.g., 5+3, 6+2) are considered; derivation shows seat labeling but the chain from group distribution to available-for-minor count is skipped, making reproduction of the answer from the text alone unreliable.",
+  "timestamp": "2026-03-23T03:07:12.968362+00:00"
+}

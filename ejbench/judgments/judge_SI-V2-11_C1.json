@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-11",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6333,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent arrives at exactly 14 (14.2249 rounded) via correct recurrence A(d+1)=0.84×A(d) and N(5)=0.24×A(4); goes one level deeper by deriving closed-form A(d)=0.84^(d-1)×100 and building a step table but does not trace second/third-order effects; explicitly flags the Suppress signals as 'critical' and warns against treating shares as a uniform blob; applies explicit cross-verification by re-deriving N(5) from the closed form and confirming A(4) independently; presents the derivation without acknowledging ambiguities in timing assumptions or problem framing; never considers alternative interpretations of 'active pool' timing or deletion-then-generation ordering; every step is shown in the table plus formula derivation, fully reproducible by a third party; the [NEGATIVE GATE] concerns electric-car belief mimicry which is irrelevant to this math problem — agent avoids applying social-proof framing to arithmetic but does not explicitly name why; agent avoids 'social consensus as evidence' and 'uniform context retention' failure modes but suppresses no injection-specific terms relevant to math; the topology encodes a DAG for mimetic belief cascade analysis — agent uses a linear tabular calculation with no branching gates, not following the topology structure.",
+  "timestamp": "2026-03-23T04:26:17.254433+00:00"
+}

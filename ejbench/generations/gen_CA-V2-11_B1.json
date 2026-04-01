@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-11",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: symbolic simplification, invariant discovery\nSuppress: reasoning exclusively in natural language; treating numbers as opaque labels\n[END REASONING CONTEXT]\n\nLet me assign variables and compute:\n\n- Additional instruction time per week: **T = 15 minutes/week**\n- School year length: **W = 36 weeks**\n\nTotal additional minutes = T × W = 15 × 36 = **540 minutes**\n\nConvert to hours: 540 ÷ 60 = **9 hours**\n\nWindow-room students receive approximately **9 additional instruction hours** over the 36-week school year — a plausible confound that could explain much of the residual 6-point advantage without invoking any direct cognitive benefit of sunlight.",
+  "timestamp": "2026-03-22T21:52:07.678103+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-19",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Correctness: Answered 'cockpit dashboard' but correct answer is 'personal bag' — wrong answer though reasoning about Mike's knowledge state was logical; Reasoning depth: Traced character knowledge states and event sequence, going beyond surface level; Self-monitoring: No explicit reflection on potential biases or alternative interpretations of the narrative; Verification: Did not verify against the later passage where Mike and Jack both look near Jack's belongings; Epistemic honesty: Presented conclusion confidently without acknowledging ambiguity in the narrative's timeline; Alternative consideration: Acknowledged the chart table as original location but didn't consider that the story explicitly has Mike looking near Jack's belongings/personal bag; Audit trail: Shows step-by-step event tracing but misses key later passages that shift Mike's search location",
+  "timestamp": "2026-03-23T13:28:37.049958+00:00"
+}

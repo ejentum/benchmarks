@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-07",
+  "condition": "A",
+  "output": "Yes. Let me trace the chain:\n\n1. **Delfina** tells the truth (given).\n2. **Fletcher** says Delfina lies → that's false, so Fletcher **lies**.\n3. **Amberly** says Fletcher lies → that's true, so Amberly **tells the truth**.\n4. **Audrie** says Amberly tells the truth → that's true, so Audrie **tells the truth**.\n5. **Lorine** says Audrie tells the truth → that's true, so **Lorine tells the truth**.",
+  "timestamp": "2026-03-20T09:27:48.773059+00:00"
+}

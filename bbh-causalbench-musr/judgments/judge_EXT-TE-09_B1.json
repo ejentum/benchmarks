@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-09",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (C) with valid reasoning; goes one level beyond surface by framing as time-space resource partitioning; no explicit self-monitoring or bias checking; verifies by mapping all time slots and confirming the gap; presents conclusion confidently without noting assumptions; implicitly rejects other options by showing they're occupied but doesn't explicitly evaluate alternatives; full derivation trail with table showing every time partition",
+  "timestamp": "2026-03-23T10:59:03.968585+00:00"
+}

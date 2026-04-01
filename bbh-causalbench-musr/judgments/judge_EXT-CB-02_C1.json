@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-02",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid Bayesian reasoning; Goes beyond surface by applying Bayes' theorem but doesn't explore second-order effects of the unobserved Gyzp; Minimal self-monitoring beyond the injected RA²R context; Mentions the key observation as a check but doesn't verify via alternative derivation; Acknowledges the uniform prior assumption explicitly; Notes Jyka reduces Lirg probability but doesn't systematically consider alternative priors or what would change the conclusion; Full derivation chain from given probabilities to final answer is clearly shown and reproducible",
+  "timestamp": "2026-03-23T12:52:40.919999+00:00"
+}

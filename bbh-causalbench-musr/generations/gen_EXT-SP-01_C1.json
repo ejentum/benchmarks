@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-01",
+  "condition": "C1",
+  "output": "**No**\n\nLet me trace the path using a fixed coordinate frame (facing forward = +Y, right = +X):\n\n- Start: (0, 0)\n- 1 step backward: (0, -1)\n- 9 steps left: (-9, -1)\n- 2 steps backward: (-9, -3)\n- 6 steps forward: (-9, 3)\n- 4 steps forward: (-9, 7)\n- 4 steps backward: (-9, 3)\n- 3 steps right: (-6, 3)\n\nFinal position: **(-6, 3)** — not the origin.",
+  "timestamp": "2026-03-20T10:17:13.228165+00:00"
+}

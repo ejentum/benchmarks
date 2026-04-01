@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-05",
+  "condition": "B2",
+  "output": "**(B)**\n\nAll four are instances of **Goodhart's Law** — \"when a measure becomes a target, it ceases to be a good measure.\"\n\nEach counts a **process artifact** rather than the **outcome** it's supposed to represent:\n\n| Metric | Artifact counted | Actual goal |\n|---|---|---|\n| GDP | Economic transactions | Wellbeing / prosperity |\n| Lines of code | Code volume | Working, valuable software |\n| Arrests | Enforcement actions | Public safety |\n| Papers published | Publications | Knowledge / discovery |\n\nThe structural problem is identical in each case: optimizing for the metric can **actively harm** the goal. You can boost GDP with disasters that require rebuilding, inflate LOC with verbose code, increase arrests by targeting minor offenses, and publish salami-sliced papers that fragment rather than advance understanding.\n\n(A) is tempting but too charitable — the issue isn't imprecision, it's that the incentive gradient points in the wrong direction.",
+  "timestamp": "2026-03-20T17:27:30.652232+00:00"
+}

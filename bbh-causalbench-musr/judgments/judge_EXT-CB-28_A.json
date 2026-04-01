@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-28",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning about collider bias; Multi-level analysis tracing the DAG structure, collider properties, and consequences of conditioning; Some self-monitoring in structuring the before/after comparison but no explicit bias-checking of own reasoning; Basic verification by comparing conditioned vs unconditioned cases, though no formal counterfactual test; Acknowledges the null effect clearly but doesn't explicitly flag assumptions or confidence levels; Systematically compares both approaches (conditioning vs not) and explains why conditioning fails; Complete derivation trail from DAG identification through collider definition to spurious association conclusion",
+  "timestamp": "2026-03-23T10:47:25.772179+00:00"
+}

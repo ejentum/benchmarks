@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-07",
+  "condition": "C1",
+  "output": "**(B)** is correct.\n\nThis is a textbook **confounded causal inference**. The manager observed a correlation (agile team → more features) and jumped to a causal claim (agile → more productivity) without controlling for confounding variables:\n\n- **Team composition** — different skill levels, team size, experience\n- **Project complexity** — Team A might work on simpler features\n- **Technical debt** — Team B's codebase might be harder to ship in\n- **Stakeholder requirements** — different approval processes, scope churn\n- **Domain** — some domains naturally suit iterative delivery more than others\n\nA single A/B observation with uncontrolled variables is not evidence of methodology superiority. To draw a valid conclusion, the manager would need to either control for these factors or run a properly designed comparison (e.g., same team, similar projects, crossover design).",
+  "timestamp": "2026-03-20T17:45:13.240347+00:00"
+}

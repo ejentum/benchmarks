@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-01",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 847 (C) with correct arithmetic through all three stages; only surface-level analysis — applies the math correctly but does not explore second-order effects like effective defect rate in shipped units or pipeline yield implications; no self-monitoring, proceeds entirely linearly without naming assumptions or potential error points; no verification step — does not re-derive from a different angle or sanity-check boundary conditions; presents conclusion confidently with only implicit hedging via the rounding symbol, no structured uncertainty analysis; considers only one computational path with no acknowledgment of alternative problem interpretations; every intermediate value is shown with its derivation, making the full chain reproducible by a third party.",
+  "timestamp": "2026-03-23T02:16:03.485707+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-01",
+  "condition": "B2",
+  "output": "**The answer is (B).**\n\nThe analyst's repeated errors aren't random — they reveal a systematic bias in their framework. They consistently apply traditional profitability metrics to companies pursuing deliberate market-dominance strategies, and this specific failure mode has burned them three times.\n\n- **(A)** is wrong because past failures absolutely *can* invalidate current reasoning — when they reveal a pattern. The reasoning structure is identical each time, which is exactly what should trigger suspicion.\n- **(C)** is too extreme. The framework isn't broken for all companies, just for a specific category it keeps misclassifying.\n- **(D)** is just inverting the bias rather than fixing it.\n\n**(B)** is the calibrated response: keep the analysis, but add a falsification step — \"Does Company X fit the pattern of companies my framework has systematically misjudged?\" If yes, apply a different lens before concluding. If no, the original analysis may stand.\n\nThis is essentially the difference between abandoning judgment and *refining* it.",
+  "timestamp": "2026-03-20T17:32:37.977952+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-13",
+  "condition": "B1",
+  "output": "## Causal Analysis\n\n**Causal graph:**\n\n```\nHwax ──→ Kraz ──→ Rukz\n  │                 ↑\n  └──→ Pexu ───────┘\n```\n\nRukz has **two incoming causal pathways** from Hwax:\n1. Hwax → Kraz → Rukz\n2. Hwax → Pexu → Rukz\n\n**The intervention** (do(Pexu = absent)) severs pathway 2, leaving only pathway 1.\n\n**Answer: Yes — this decreases the likelihood of Rukz.**\n\nSince the problem specifies no unmentioned factors and all stated relationships are direct effects (implying positive contribution), Pexu is a contributing cause of Rukz. Removing it eliminates one of the two channels through which Hwax produces Rukz.\n\nFormally: P(Rukz | do(Pexu = absent)) < P(Rukz), because under natural conditions both Kraz and Pexu contribute to Rukz, but under the intervention only Kraz remains. You've blocked a backdoor-free, direct causal pathway — the total causal effect on Rukz shrinks by exactly the portion attributable to the Pexu channel.",
+  "timestamp": "2026-03-20T09:39:21.747850+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-17",
+  "condition": "C2",
+  "output": "**The answer is (B).**\n\nThis is a textbook case of **survivorship bias** compounded with **non-response bias**. The executive is drawing a conclusion from a sample that systematically excludes the very population most relevant to the claim.\n\nThe 4.2 score is not measuring customer satisfaction — it's measuring *the satisfaction of customers who haven't given up on you yet*. The 40% who churned silently are the signal; the survey is the noise.",
+  "timestamp": "2026-03-20T17:57:39.711727+00:00"
+}

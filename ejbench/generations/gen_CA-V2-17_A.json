@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-17",
+  "condition": "A",
+  "output": "This is **healthy user bias** (also called **healthy adherer bias** or, more precisely in this context, **informative censoring / time-varying confounding with selection bias**).\n\nThe most specific term for pathway (3) is **immortal time bias** combined with **reverse survivorship bias**: people exit the \"pet owner\" group *because* they become sick, so the pet-owner category is progressively enriched with healthier individuals — not because pets made them healthy, but because illness removed the unhealthy ones from that category.\n\nIn epidemiological literature, this particular mechanism — where group membership changes based on the outcome being studied — is often called **collider-stratifier bias** or simply **selection bias due to loss to follow-up**, since conditioning on \"still owns a pet at time T\" is conditioning on a variable influenced by health status.\n\nThe gerontologist's framing (comparing \"people healthy enough to keep pets\" vs. \"everyone else including those who surrendered pets due to illness\") is a textbook example of **sick quitter bias** — the same phenomenon seen in studies where people who quit exercise or medication adherence due to declining health make the \"adherent\" group look artificially healthier.",
+  "timestamp": "2026-03-22T16:34:42.432205+00:00"
+}

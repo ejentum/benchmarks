@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-18",
+  "condition": "B2",
+  "output": "**(B).**\n\nEach model was internally coherent but built on a foundational assumption that was treated as an axiom rather than a falsifiable hypothesis:\n\n- **2008:** \"National housing prices don't decline\" was a fixed parameter, not a variable with a distribution.\n- **Oroville:** \"Historical rainfall patterns are stationary\" was baked in as a constant, ignoring distributional shift.\n- **COVID-19:** \"Pandemic respiratory diseases transmit like influenza\" was the structural prior, excluding the possibility of presymptomatic spread.\n\nThe critical shared defect isn't calibration (A), data volume (C), or generic overconfidence (D) — it's the **absence of a boundary-violation detector**. None of the models had a mechanism to signal \"the assumption I'm built on may no longer hold.\" The model couldn't question its own frame.\n\nThis is essentially an **epistemic blind spot by design**: the assumption that makes the model tractable is the one thing the model can never test.",
+  "timestamp": "2026-03-20T17:31:42.058682+00:00"
+}

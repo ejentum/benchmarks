@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-11",
+  "condition": "A",
+  "output": "## Solution\n\nEach day, the active pool undergoes two steps:\n1. **Deletion:** 40% removed → 60% survive\n2. **Generation:** each survivor produces 0.4 new shares\n\n| Day | Active (start) | Survive deletion (×0.6) | **New shares** (×0.4) | Active (end) |\n|-----|---------------|------------------------|-----------------------|-------------|\n| 1 | 100 | — | — | 100 |\n| 2 | 100 | 60 | **24** | 84 |\n| 3 | 84 | 50.4 | **20.16** | 70.56 |\n| 4 | 70.56 | 42.336 | **16.934** | 59.270 |\n| 5 | 59.270 | 35.562 | **14.225** | 49.787 |\n\n**New shares generated on Day 5: 14**",
+  "timestamp": "2026-03-22T15:58:35.230319+00:00"
+}

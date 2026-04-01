@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-15",
+  "condition": "A",
+  "output": "**Three factual inconsistencies:**\n\n1. **\"Zero downtime\"** — The DevOps lead describes a ~2-minute window where requests may get 503 errors. That's downtime, not zero.\n\n2. **\"Multiple times per day\"** — A 45-minute deployment cycle makes this impractical. Even back-to-back deploys would limit throughput significantly, and with testing/validation windows it's unlikely they're doing \"multiple\" per day.\n\n3. **\"Instantly rollbackable\"** — Rollback requires redeploying the previous version, which takes another 45 minutes. That's not instant.",
+  "timestamp": "2026-03-22T16:38:24.759156+00:00"
+}

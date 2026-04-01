@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-28",
+  "condition": "A",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the correct answer (core claim is consistent with consensus) but hedges extensively, framing it as 'largely consistent but oversimplified' rather than a clean Yes; breaks each sub-claim into multi-level analysis with second-order effects like hyper-responder prevalence, exact guideline language, and dose-response relationships; proceeds linearly through sub-claims without naming its own potential biases or checking whether its critique lens might be over-weighting edge cases; cites specific meta-analyses and verifies the guideline wording to cross-check the claim, though no counterfactual testing is performed; acknowledges individual variation, cherry-picking framing, and that exact figures depend on study choice, but does not assign explicit confidence levels or state what would flip the conclusion; addresses the traditional-concern view vs. revised consensus and briefly evaluates the Keys attribution claim, but doesn't systematically compare Yes vs. No as competing conclusions; traces reasoning through each numbered sub-claim with named sources, allowing partial reproduction, though some intermediate derivations (e.g., how 1-2% was calculated) are asserted rather than shown.",
+  "timestamp": "2026-03-23T02:52:34.181111+00:00"
+}

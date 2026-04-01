@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-06",
+  "condition": "C2",
+  "output": "**A typical person would answer: No.**\n\nMost people judge that Jake did **not** intentionally hit the bull's-eye. Even though he wanted to and tried to, his hand slipped and the successful outcome was due to luck, not skilled execution. The causal chain between his intention and the result was broken — the bullet hit the target *despite* his action going wrong, not *because of* his skilled control.\n\nThis is a well-known case in experimental philosophy (based on work by Knobe and others) testing the \"deviant causal chain\" problem: when the outcome matches the intention but the *path* to that outcome is accidental, people typically deny that the action was intentional.",
+  "timestamp": "2026-03-20T10:53:27.299819+00:00"
+}

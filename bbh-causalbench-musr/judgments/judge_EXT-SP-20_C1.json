@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-20",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (shelf) with valid reasoning tracing Simon's attention state; Multi-level analysis distinguishing physical presence from observational awareness and tracking belief states; Explicit self-monitoring via 'reality drift detection' and suppression of equating presence with awareness; Basic verification by confirming Simon's attention was on the painting during the move, though no counterfactual check; Some epistemic framing but no explicit confidence levels or uncertainty acknowledgment; Mentions the desk as where the book actually is but doesn't formally evaluate it as an alternative answer; Full derivation trail from initial state through each character's observations to Simon's belief state",
+  "timestamp": "2026-03-23T13:44:46.107032+00:00"
+}

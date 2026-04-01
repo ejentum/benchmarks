@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-22",
+  "condition": "B1",
+  "output": "**Yes**, the likelihood of a high salary would increase.\n\n**Causal structure analysis:**\n\nThe causal graph is:\n\n- Spicy → Occupation → Salary\n- Spicy → Salary (direct)\n- Skill → Occupation → Salary\n- Skill → Salary (direct)\n\n**Key identification step:** Is there a backdoor path from Spicy to Salary? No. Skill affects Occupation and Salary, but there is **no arrow from Skill to Spicy**. Skill is therefore not a confounder of the Spicy → Salary relationship — it's an independent cause that happens to share downstream nodes.\n\nBecause there are no backdoor paths, the observational conditional equals the interventional distribution:\n\n**P(High Salary | do(Spicy = 1)) = P(High Salary | Spicy = 1) = 0.40**\n\n**Current baseline (no intervention):**\n\nP(High Salary) = 0.40 × 0.83 + 0.19 × 0.17 = 0.332 + 0.0323 ≈ **0.3643**\n\n**Under intervention (everyone likes spicy food):**\n\nP(High Salary) = **0.40**\n\nThe intervention raises the overall probability of a high salary from ~36.4% to 40%, an increase of ~3.6 percentage points.",
+  "timestamp": "2026-03-20T09:43:28.249909+00:00"
+}

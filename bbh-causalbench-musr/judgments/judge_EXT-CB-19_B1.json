@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-19",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Correct answer is Yes but agent concluded No (~36%), misinterpreting the question as asking for probability of necessary causation rather than whether jyka was present and caused yupt given the high P(J=1)=88% and P(Y=1|J=1)=92%; Reasoning is multi-layered with do-calculus, counterfactual analysis, and monotonicity assumptions showing genuine depth; Some self-monitoring via the RA²R injection and noting backdoor paths but didn't question whether the 50% threshold framing was appropriate; Verification through explicit computation and sanity-checking the collider structure; Acknowledges the baseline rate uncertainty and its impact but presents the wrong conclusion confidently; Considers the counterfactual decomposition as an alternative to simple correlation but doesn't consider that the question may simply ask about P(J=1, Y=1 | do(K=0)); Full derivation chain is reproducible with all steps shown clearly.",
+  "timestamp": "2026-03-23T11:15:54.620183+00:00"
+}

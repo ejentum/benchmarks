@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-07",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.9048,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid Boolean logic derivation; Multi-level analysis including contrast case and connection to birth weight paradox; Some awareness shown in noting counterintuitive results but no explicit bias-checking of own reasoning process; Full verification via counterfactual contrast (S=0,H=0) confirming the causal effect; Notes the structural irony but doesn't explicitly flag assumptions about the OR-gate interpretation; Systematically contrasts smoking vs nonsmoking scenarios and discusses the birth weight paradox as alternative framing; Complete step-by-step derivation from structural equations through substitution to conclusion, fully reproducible",
+  "timestamp": "2026-03-23T12:40:16.794040+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-30",
+  "condition": "B1",
+  "output": "## Causal Analysis\n\nLet me work through this step by step in the closed world you've defined.\n\n**Causal graph:**\n- Sister (S) → Blood Pressure (BP)\n- Sister (S) → Heart Condition (H)\n- Blood Pressure (BP) → Heart Condition (H)\n\n**Given rules:**\n1. Having a sister → low blood pressure\n2. Having a sister **AND** high blood pressure → healthy heart (this is the only combination that produces a healthy heart)\n\n**Factual scenario (has a sister, S=1):**\n- BP = low (by rule 1)\n- Heart = ? → S=1 ∧ BP=low does **not** match the condition for a healthy heart (which requires S=1 ∧ BP=high). So heart is **not healthy**.\n\n**Counterfactual (no sister, S=0):**\n- BP = high (removing the cause of low BP)\n- Heart = ? → S=0 ∧ BP=high does **not** match the condition for a healthy heart (which requires S=1 ∧ BP=high). So heart is **not healthy**.\n\n**Answer: No.** The person would **not** have a healthy heart if not having a sister. Neither scenario produces a healthy heart — the only combination that does (having a sister + high blood pressure) is impossible under normal operation of this system, since having a sister forces blood pressure low.",
+  "timestamp": "2026-03-20T09:46:54.219241+00:00"
+}

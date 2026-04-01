@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-11",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.7333,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent computed ~294 days correctly but selected (B) 327 over the stated correct answer (D) 244 — mathematically (D) is actually wrong (titer at 244 days ≈ 93 AU/mL, still above threshold), so the agent's math is sound but it chose the wrong MC option; Agent traces second-order effects (compressed protection window, half-life count vs initial), builds a discrete half-life table, and evaluates all options individually; Agent runs a sanity-check table and acknowledges the ~294-day result doesn't cleanly map to any option, showing process awareness; Explicit discrete-step verification table cross-checks the continuous formula from a different angle; Agent transparently flags that the exact crossover (~294 days) matches no option and calls (B) only the 'closest plausible' rather than asserting certainty; All four answer options are evaluated with specific titer values explaining rejection; Full derivation shown — setup, equation, algebraic solution, table, option-by-option critique — fully reproducible; Injection's negative gate concerns memory context bloat, not exponential decay; agent avoids that irrelevant pattern but makes no explicit reference to it; Agent avoids flat confidence propagation and authority laundering but does not explicitly name any suppressed failure mode; Injection topology describes a context-pruning DAG with recency gates entirely unrelated to the math problem; agent's reasoning is linear (equation → solve → verify → select) with no branching structure matching the topology.",
+  "timestamp": "2026-03-23T05:08:30.887652+00:00"
+}

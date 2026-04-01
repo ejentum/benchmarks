@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-08",
+  "condition": "C2",
+  "output": "A typical person would answer **No**.\n\nThe repairman's framing highlights that Daniel's login alone was insufficient — the crash required *both* users logged on simultaneously. Since Claire was also logged on, and the crash only happens when two people are on at the same time, most people attribute less causal responsibility to Daniel specifically. The question is designed to elicit the intuition that Daniel's action was not **the** cause, because Claire's concurrent login was equally necessary. People tend to say \"No\" here, influenced by the norm that Claire had a right to be logged on (it's her computer), while Daniel was violating her request — but the repairman's statement reframes it as a joint-causation scenario where Daniel alone doesn't explain the crash.",
+  "timestamp": "2026-03-20T10:53:52.260067+00:00"
+}

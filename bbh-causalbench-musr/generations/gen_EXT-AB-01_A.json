@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-01",
+  "condition": "A",
+  "output": "**（B) Rob finished last**\n\nThe order from first to last:\n\n1. **Ana**\n2. **Joe** (below Ana, above Amy)\n3. **Amy** (above Dan)\n4. **Dan** (above Rob)\n5. **Rob** ← last",
+  "timestamp": "2026-03-20T09:26:37.691976+00:00"
+}

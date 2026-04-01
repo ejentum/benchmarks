@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-29",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 16.25 hours with correct per-phase arithmetic (10/8=1.25, 20/4=5, 10/1=10); goes one level beyond raw calculation by naming Amdahl's Law and Brooks's principle, but does not trace second-order effects like coordination overhead or why serial dominance grows; proceeds linearly with no reflection on assumptions or potential reasoning errors; no counterfactual check, boundary test, or re-derivation from a different angle is performed; uses 'minimum completion time' implicitly but never flags assumptions of perfect parallelism, zero coordination cost, or instantaneous handoff; considers only the stated allocation and never explores whether reassigning developers across phases could improve time; every step is explicit and labeled so a third party can fully reproduce the answer without external context.",
+  "timestamp": "2026-03-23T03:12:32.339035+00:00"
+}

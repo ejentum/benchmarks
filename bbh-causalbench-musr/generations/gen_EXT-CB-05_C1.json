@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-05",
+  "condition": "C1",
+  "output": "## Yes, increasing vaccination decreases overall smallpox survival.\n\n**Causal structure:** Vaccination is a root node with no confounders in this world, so the observational conditionals equal the interventional ones: P(Survival | do(V)) = P(Survival | V).\n\n**Current overall survival:**\n\nP(Survival) = P(S|V=0)·P(V=0) + P(S|V=1)·P(V=1)\n= 0.42 × 0.88 + 0.33 × 0.12\n= 0.3696 + 0.0396\n= **0.4092**\n\nSince P(Survival | V=1) = 0.33 < P(Survival | V=0) = 0.42, any intervention that shifts weight from unvaccinated to vaccinated moves the weighted average downward.\n\nFor example, if vaccination increases to 50%:\nP(Survival) = 0.42 × 0.50 + 0.33 × 0.50 = 0.375 < 0.4092\n\n**Why this makes sense in this hypothetical world:** Vaccination here reduces survival probability (33% vs 42%). This is a constructed scenario — the causal pathway through vaccination reaction apparently harms survival more than the pathway through reduced smallpox incidence helps it. The numbers simply encode that vaccinated individuals fare worse overall in this fictional world.",
+  "timestamp": "2026-03-20T10:36:13.570030+00:00"
+}

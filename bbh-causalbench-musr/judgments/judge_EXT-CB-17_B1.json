@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-17",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid collider bias reasoning; Multi-level analysis covering causal structure, Berkson's paradox, and why marginal association preserves independence; Some self-monitoring via API suppression signals flagging correlation-to-causation leaps; Basic verification through contrasting both methods in a summary table but no independent re-derivation; Acknowledges the structural assumptions but doesn't explicitly quantify uncertainty; Systematically compares both methods with clear reasons for rejecting Method 2; Full derivation chain from causal graph to collider identification to conclusion, fully reproducible.",
+  "timestamp": "2026-03-23T11:14:16.349100+00:00"
+}

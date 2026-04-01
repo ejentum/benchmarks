@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-06",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (B) with valid reasoning; Goes one level beyond surface by constructing a complete timeline table showing all slots; Minimal self-monitoring, no explicit reflection on reasoning process; Basic verification via exhaustive time-slot mapping confirms no other gap exists; Presents conclusion confidently without acknowledging assumptions; Implicitly rejects alternatives by showing all slots are occupied but doesn't explicitly discuss why other options fail; Full derivation trail with clear table showing every time window, making reasoning fully reproducible",
+  "timestamp": "2026-03-23T13:13:27.045501+00:00"
+}

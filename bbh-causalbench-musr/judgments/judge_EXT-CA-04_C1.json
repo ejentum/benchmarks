@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-04",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid reasoning; Deep analysis referencing Knobe Effect asymmetry and tracing second-order implications of intentionality judgments; Some self-monitoring via suppress signal application but no explicit bias-checking of own reasoning process; Basic verification by checking answer against the board's stated words, but no counterfactual or boundary testing; Acknowledges the asymmetry phenomenon but doesn't explicitly state confidence levels or assumptions; Systematically contrasts the positive vs negative side-effect versions and explains why people judge them differently; Full derivation chain from board's words to intention analysis to philosophical framework, fully reproducible.",
+  "timestamp": "2026-03-23T12:47:55.834565+00:00"
+}

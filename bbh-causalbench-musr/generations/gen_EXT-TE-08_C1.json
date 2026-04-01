@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-08",
+  "condition": "C1",
+  "output": "The answer is **(C) 6am to 8am**.\n\nSarah's schedule accounts for every slot from 8am onward through 8pm, and the site closed after 8pm. The only free window is between waking up at 6am and being seen at the electronic store at 8am.",
+  "timestamp": "2026-03-20T10:16:31.799910+00:00"
+}

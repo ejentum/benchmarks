@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-28",
+  "condition": "A",
+  "output": "## Calculation\n\n**Base durations (geometric series):** Epoch 1 = 60 min, each next = 0.8× previous.\n\n| Epoch | Duration | Epoch | Duration |\n|-------|----------|-------|----------|\n| 1 | 60.000 | 11 | 6.442 |\n| 2 | 48.000 | 12 | 5.153 |\n| 3 | 38.400 | 13 | 4.123 |\n| 4 | 30.720 | 14 | 3.298 |\n| 5 | 24.576 | 15 | 2.639 |\n| 6 | 19.661 | 16 | 2.111 |\n| 7 | 15.729 | 17 | 1.689 |\n| 8 | 12.583 | 18 | 1.351 |\n| 9 | 10.066 | 19 | 1.081 |\n| 10 | 8.053 | 20 | 0.865 |\n\n**Geometric sum:** 60 × (1 − 0.8²⁰) / (1 − 0.8) = 60 × 0.9885 / 0.2 ≈ **296.5 min** (~298 rounded)\n\n**Checkpoint penalties:** Every 5th epoch → epochs **5, 10, 15, 20** = 4 × 15 = **60 min**\n\n**Total:** 298 + 60 = **358 minutes**\n\nThe answer is **(C)**.",
+  "timestamp": "2026-03-22T16:30:44.375276+00:00"
+}

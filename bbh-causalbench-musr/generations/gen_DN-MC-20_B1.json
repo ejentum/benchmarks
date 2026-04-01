@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-20",
+  "condition": "B1",
+  "output": "**The answer is (B).**\n\nThis is a textbook case of **confirmation bias compounded with selection bias** (sometimes called the \"missing counterfactual\" problem).\n\nThe critical flaw: the manager never interviewed candidates from non-top-10 schools, so there is no comparison group. The 5 excellent hires don't prove top-10 graduates are better — they only prove that the manager's pre-filtered pool contained good candidates. Had they interviewed 20 non-top-10 graduates, those hires might have performed equally well.\n\nThe manager is treating their own biased selection as evidence, then using that \"evidence\" to justify the bias going forward — a self-reinforcing loop.",
+  "timestamp": "2026-03-20T17:25:07.521974+00:00"
+}

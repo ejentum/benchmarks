@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-06",
+  "condition": "B1",
+  "output": "\n\nThe background task completed, but I already retrieved the API response via the second (non-background) curl call and used it to solve the problem. The answer is above — **1** mechanism has fully materialized by Day 60.",
+  "timestamp": "2026-03-22T21:39:37.998603+00:00"
+}

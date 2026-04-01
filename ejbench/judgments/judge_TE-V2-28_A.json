@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-28",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5714,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the correct answer (C) 358 via geometric series + 4 checkpoint penalties, though there is a minor inconsistency (computed ~296.5 but used 298 in the final sum, which happens to match the intended rounding); goes one level beyond surface by showing the formula and a full epoch-by-epoch table but does not explore boundary conditions or second-order effects; proceeds linearly without naming assumptions or reflecting on the reasoning method, only implicitly self-checking via the table; shows the formula, the full table, and the sum — constituting basic verification but not a cross-check from a different angle; presents the ~296.5→298 rounding without acknowledgment and treats all values as certain; no competing approaches or answer choices are evaluated or rejected with reasons; every step — formula derivation, epoch table, checkpoint identification, and final addition — is shown explicitly and reproducible by a third party.",
+  "timestamp": "2026-03-23T03:11:53.019424+00:00"
+}

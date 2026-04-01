@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-13",
+  "condition": "B1",
+  "output": "**(B)**\n\nControlling for GDP addresses one confounder but doesn't solve the identification problem. The critic's core objection — reverse causality — survives the GDP control entirely. Low-crime countries may invest more in police *because* they have the fiscal and political space to do so, independent of GDP (e.g., through prioritization choices, cultural attitudes toward public safety, or institutional capacity).\n\nBeyond reverse causality, there are omitted variables (social cohesion, urbanization patterns, judicial effectiveness, inequality) and simultaneity (crime levels and policing are co-determined in policy equilibria) that no amount of \"controlling for X\" resolves.\n\nThe fundamental issue: adding controls to an observational regression doesn't establish a causal direction. To credibly claim \"more police → less crime,\" you need exogenous variation in police levels — an instrumental variable (e.g., electoral cycles that shift police funding for political rather than crime-related reasons) or a natural experiment (e.g., a terror alert that temporarily surges police presence in some areas but not others, as in the classic Klick & Tabarrok study). These designs break the simultaneity that observational controls cannot.",
+  "timestamp": "2026-03-20T17:23:40.936435+00:00"
+}

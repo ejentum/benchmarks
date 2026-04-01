@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-02",
+  "condition": "C2",
+  "output": "**Yes.**\n\nA typical person would answer **Yes** — the crime life caused Mr. Wallace's death.\n\nThe reasoning most people would follow: Mr. Wallace's involvement in organized crime is the overarching reason both lethal threats existed. Mr. Vincent poisoned him *because* of their criminal association, and Mr. Bruce ran him off the road *because* of rivalry in the crime world. Without the crime life, neither killer would have had motive or opportunity. A typical person sees \"the crime life\" as the common upstream cause that made his death (by one means or another) practically inevitable.\n\nThis is a case of **causal overdetermination** — two independently sufficient causes were both in play — but the question isn't asking about which specific mechanism killed him. It's asking about the broader causal role of the criminal lifestyle, which most people readily identify as the root cause.",
+  "timestamp": "2026-03-20T10:52:25.629981+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-08",
+  "condition": "C2",
+  "output": "The most likely place Tom would look for the safety booklet is **the passenger seating area**.\n\nHere's why: Tom was established early on as someone \"familiar with the careful locations of the flight manual and safety booklet.\" He knew Lisa originally kept the safety booklet \"in storage.\" However, the story later describes Lisa taking the safety booklets and resupplying them to the passenger seating area. Since Tom is aware of the crew's actions and locations of key items, and the last known placement of the safety booklets was Lisa distributing them to the passenger seats, that's where he'd look.",
+  "timestamp": "2026-03-20T17:48:26.383703+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-24",
+  "condition": "A",
+  "output": "Yes, the alarm would ring the next morning.\n\nHere's the reasoning through the causal chain:\n\n1. **Husband sets the alarm** (given).\n2. **Husband → Wife**: Husband setting the alarm causes wife to set the alarm. So wife also sets the alarm.\n3. **Husband + Wife → Alarm clock**: Husband setting the alarm AND wife setting the alarm causes the alarm to ring.\n\nSince both conditions for the alarm ringing are met (husband set it, and wife set it as a consequence), the alarm rings.",
+  "timestamp": "2026-03-20T09:25:15.570002+00:00"
+}

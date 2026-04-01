@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-16",
+  "condition": "A",
+  "output": "**The answer is (C).**\n\nP1's carbon date is 1200 BCE ±50 years, meaning it could actually date anywhere from ~1250 to ~1150 BCE. P5 uses a pigment available only after 1150 BCE, so P5 dates to 1150 BCE or later.\n\nIf P1 falls on the older end of its range (closer to 1250 BCE), then P5 (≥1150 BCE) being deposited later but in a lower stratum would indicate disturbance. **But** if P1 falls on the younger end (closer to 1150 BCE), the two could be nearly contemporaneous — P5 at ~1150 BCE deposited slightly before P1 at ~1150 BCE — consistent with undisturbed stratigraphy where P5 is below P1.\n\nThe ±50 year uncertainty is the key. Option (C) correctly recognizes that the overlap in dating ranges means no disturbance is necessarily implied — P5 can be slightly younger in absolute date than P1's central estimate while still being deposited first (or nearly simultaneously) in an undisturbed sequence.\n\nWhy the others fail:\n- **(A)** says P5 dates 1200–1150 BCE, but the pigment constraint means P5 must be ≥1150 BCE, not older.\n- **(B)** jumps to disturbance without accounting for P1's error margin.\n- **(D)** is a false general rule — neither dating method automatically overrides the other.",
+  "timestamp": "2026-03-22T16:26:32.551908+00:00"
+}

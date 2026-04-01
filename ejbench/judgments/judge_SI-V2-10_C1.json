@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-10",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.8333,
+  "injection_composite": 0.8889,
+  "brief_justification": "Correct answer (Yes) with exact peak of 22.0°C confirmed via valid minute-by-minute trace; identifies second-order delay effect causing overshoot and classifies feedback loop correctly as balancing, tracing why lag undermines correction signal; explicitly applies injection context and notes continuous vs discrete distinction, but doesn't deeply interrogate its own assumptions mid-analysis; performs verification via systematic table but doesn't re-derive from an alternate angle; acknowledges discrete vs continuous ambiguity with ~21.5°C estimate but doesn't enumerate all modeling assumptions; mentions both discrete and continuous models with different results, briefly addresses both; complete minute-by-minute state table with event annotations allows full reproduction; explicitly labels loop as 'negative/balancing feedback' and correctly avoids the anti-pattern of treating it as reinforcing; exhibits none of the suppressed failure modes (loop blindness, momentum ignoring, linear extrapolation, reinforcing loop tolerance) and explicitly notes the balancing loop and delay-driven overshoot; follows S1→S2→S3→CLASSIFY→G1(yes→FLAG) arc but doesn't explicitly name topology stages or explore M-node branches.",
+  "timestamp": "2026-03-23T04:25:36.145009+00:00"
+}

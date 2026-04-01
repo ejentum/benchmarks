@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-05",
+  "condition": "A",
+  "output": "**The answer is (A).**\n\nContent X is stored **only on O1**. The caches have expired. O1 is partitioned from all edge servers. No edge server can retrieve Content X:\n\n- **E1, E2** — fall back to O1, which is unreachable.\n- **E3, E4** — fall back to O2, which doesn't have Content X.\n- **E5** — can reach O2, but O2 doesn't have Content X. O1 is unreachable.\n\nOption (D) is a good distractor but it only addresses E5. The correct answer is (A) because **no** edge server can serve expired Content X when O1 is partitioned and O2 never had it.",
+  "timestamp": "2026-03-22T16:33:35.022820+00:00"
+}

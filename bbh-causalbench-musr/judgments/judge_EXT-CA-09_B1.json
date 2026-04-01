@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-09",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid reasoning; Multi-level analysis covering norm violation, counterfactual dependence, and folk causal judgment literature; Some self-monitoring via the inversion test framework but limited explicit bias-checking; Strong verification through counterfactual test, temporal inversion check, and causal sufficiency analysis; Acknowledges Alex's mechanical contribution but doesn't deeply quantify uncertainty; Mentions Alex as alternative causal agent and explains why typical people discount him but doesn't systematically evaluate other alternatives; Clear step-by-step derivation from premises to conclusion that is fully reproducible",
+  "timestamp": "2026-03-23T10:59:11.569440+00:00"
+}

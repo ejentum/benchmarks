@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-16",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (drawer) with valid reasoning tracing the pen's movements and Matthew's obliviousness; Goes one level beyond surface by analyzing Matthew's awareness state during Lisa's action; Implicit self-monitoring through step-by-step tracing but no explicit reflection on reasoning method; Basic verification by checking Matthew's state (headphones, movie) against Lisa's action timing; Presents conclusion confidently with 'most likely' hedging but no structured uncertainty; Acknowledges the desk as where the pen actually is but doesn't explicitly evaluate it as an alternative Matthew might consider; Full derivation trail from initial placement through Lisa's move to Matthew's unawareness, fully reproducible",
+  "timestamp": "2026-03-23T11:13:09.663007+00:00"
+}

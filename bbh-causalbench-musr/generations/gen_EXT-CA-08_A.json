@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-08",
+  "condition": "A",
+  "output": "A typical person would answer: **No**.\n\nThe repairman's framing highlights that Daniel's login alone was insufficient — the crash required *both* Claire and Daniel to be logged on simultaneously. Since Claire was also logged on, and the repairman specifically notes that Daniel's login alone doesn't explain the crash, most people would say Daniel didn't cause it (or at least wasn't the primary cause). Claire's logging on was equally necessary.\n\nThat said, there's a normative twist: Daniel was told *not* to log on, which makes his action the \"abnormal\" or norm-violating one. In causal cognition research, people tend to assign more causation to norm-violating actions. So some people would say **Yes** — Daniel caused it because he violated Claire's explicit request.\n\nBut given the way the question is framed (through the repairman emphasizing Daniel's login alone is insufficient), the modal typical answer is **No**.",
+  "timestamp": "2026-03-20T09:16:26.700545+00:00"
+}

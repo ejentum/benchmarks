@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-21",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies VoIP (.151-.200 = 50 addresses < 55 phones) matching the ground truth; only states the conclusion with a single arithmetic check, no exploration of why other pools pass or fail; no reflection on reasoning method or bias; performs basic arithmetic verification by counting the range and comparing to device count; presents the answer as certain with no hedging or acknowledgment that other pools might also be tight; never checks other pools (servers need 45 but have 40 addresses, DHCP needs 120 but has 100, IoT needs 60 but has 54 — all also insufficient); shows the range and the count but skips showing the subtraction setup explicitly",
+  "timestamp": "2026-03-23T03:05:08.845680+00:00"
+}

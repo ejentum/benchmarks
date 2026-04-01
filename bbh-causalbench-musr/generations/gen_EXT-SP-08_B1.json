@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-08",
+  "condition": "B1",
+  "output": "Looking at this step-by-step by tracking the safety booklet's location throughout the story:\n\n1. **Initial state:** Lisa tucks the safety booklet in **storage**.\n2. Lisa later carries safety booklets to the **passenger seating area** to resupply each seat.\n\nNow, what does **Tom** know?\n\n- Tom was initially aware the safety booklet was in **storage** (the story states he was \"familiar with the careful locations of the flight manual and safety booklet\").\n- Tom then followed Richard to the office, then went to the cockpit with the flight manual. During Lisa's move of the booklets to the seating area, Tom was **not present** — he was navigating lesser-trodden areas back to the cockpit, away from Lisa.\n- There's no indication Tom ever witnessed or was told about Lisa restocking the seating area.\n\n**Answer: Storage.**\n\nFrom Tom's perspective, the safety booklet is still where Lisa originally put it — in **storage**. He has no reason to believe it moved, since he never observed Lisa redistributing the booklets to the passenger seating area.",
+  "timestamp": "2026-03-20T09:36:03.525645+00:00"
+}

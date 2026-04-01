@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-14",
+  "condition": "A",
+  "output": "**Connectedness** (specifically, **complete or near-complete connectedness**).\n\nThe graph-theoretic property is that the graph is **connected** — there exists a path between every pair of nodes. In all three examples, you have connected graphs with high edge density (approaching the **complete graph** K_n), meaning the system is not just connected but *densely* connected. This combination — connectedness + high edge density — means local perturbations propagate globally because there is no partition or modularity to contain failures.\n\nThe fragility arises precisely because connectedness ensures reachability (every node can affect every other) while density ensures there are many channels for that effect to propagate through, making cascades both inevitable and unpredictable.",
+  "timestamp": "2026-03-22T16:00:16.967026+00:00"
+}

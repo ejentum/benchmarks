@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-07",
+  "condition": "C1",
+  "output": "A typical person would answer: **Yes**.\n\nJanet had the responsibility to oil the machine, she knew she forgot, and her failure to act led to the breakdown. Most people naturally assign causation to the person whose duty it was to act and who failed to do so.",
+  "timestamp": "2026-03-20T10:16:37.261143+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-23",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Directly identifies self-selection as the critical flaw and explains why the 18-point effect likely doesn't transfer to mandated use — exactly matching the ground truth; traces second and third-order effects (unmeasured confounders → mandate removes selection mechanism → displaced instructional time), going well beyond the surface claim; proceeds linearly with no explicit reflection on its own reasoning method or bias checks; mentions RCT as the corrective design but does not apply verification to its own claims or test boundary conditions of the self-selection argument; uses 'likely,' 'probably,' and 'possibly' throughout but does not structure the uncertainty or identify what evidence would change the conclusion; identifies only the self-selection assumption without evaluating competing critical assumptions (e.g., effect homogeneity across demographics, platform content quality, displacement effects on other learning); every conclusion traces clearly to prior premises, and a third party could reproduce the full argument chain from the response alone.",
+  "timestamp": "2026-03-23T02:40:41.465035+00:00"
+}

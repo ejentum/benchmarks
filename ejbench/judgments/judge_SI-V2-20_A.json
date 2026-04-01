@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-20",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.3333,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer (Yes) with valid reasoning about sustainable yield threshold; goes one level beyond surface by explaining the collapse mechanism but does not trace second-order compounding dynamics or time-value tradeoffs; proceeds linearly with no reflection on assumptions or potential reasoning biases; no counterfactual checks, boundary tests, or re-derivation from a different angle; uses approximate notation (~) appropriately but presents conclusions without structured uncertainty analysis or distinguishing stated facts from model assumptions; considers only the framing provided in the question with no alternative interpretations or edge cases explored; shows the sustainable yield threshold derivation (5% × 800 = 40) but does not show how the cumulative harvest totals or forest trajectory were computed step by step",
+  "timestamp": "2026-03-23T02:28:58.163357+00:00"
+}

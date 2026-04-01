@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-04",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 74.9% (answer A) with correct arithmetic for both the backup-supplier and new-component changes; only surface-level calculation shown with no exploration of why the method works or second-order implications; no reflection on reasoning process, assumptions, or potential pitfalls at any point; shows step-by-step multiplication which constitutes implicit arithmetic checking but no independent cross-check or sanity test; presents the answer as certain with no acknowledgment of the independence assumption between suppliers or other modeling assumptions; considers only one computational approach with no mention of alternatives; every multiplication step is written out explicitly so a third party could fully reproduce the derivation.",
+  "timestamp": "2026-03-23T02:17:20.777565+00:00"
+}

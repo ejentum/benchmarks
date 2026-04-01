@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-05",
+  "condition": "B2",
+  "output": "**(B) Moby Dick**\n\nTracking each swap:\n\n| | Alice | Bob | Claire |\n|---|---|---|---|\n| **Start** | Catch-22 | Moby Dick | The Great Gatsby |\n| **Claire ↔ Bob** | Catch-22 | The Great Gatsby | Moby Dick |\n| **Claire ↔ Alice** | Moby Dick | The Great Gatsby | Catch-22 |\n| **Bob ↔ Claire** | **Moby Dick** | Catch-22 | The Great Gatsby |\n\nAlice ends with **Moby Dick**.",
+  "timestamp": "2026-03-20T10:01:08.396977+00:00"
+}

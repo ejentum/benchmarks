@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-18",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (No vs Yes) but the reasoning methodology was sound and systematic; Multi-level causal analysis tracing structural equations, backdoor paths, and interventional semantics; Some self-monitoring via reasoning injection and explicit suppression of correlation-causation leaps; Verified by computing C and S step-by-step from structural equations; Presents conclusion with certainty without acknowledging the ambiguity in interpreting 'assuming an intervention ensures a high salary' as a counterfactual query; Doesn't consider the probability-of-sufficiency interpretation where coffee could be the explanation under intervention; Full derivation trail from structural equations through variable computation to conclusion is clearly documented",
+  "timestamp": "2026-03-23T11:15:09.539749+00:00"
+}

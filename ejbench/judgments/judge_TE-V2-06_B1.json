@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-06",
+  "condition": "B1",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 0,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 0,
+    "negative_gate_avoidance": 1,
+    "suppress_compliance": 2,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.2,
+  "injection_composite": 0.3333,
+  "brief_justification": "Correct answer (1) is stated but without any visible derivation, so full credit withheld; No analytical depth is present in the visible output — reasoning is entirely absent from what was returned; No self-monitoring language or meta-cognitive reflection of any kind appears in the response; No verification, counterfactual check, or re-derivation is shown; Answer is asserted flatly with no confidence framing or acknowledgment of assumptions; No alternative interpretations or competing hypotheses are considered or mentioned; No derivation trail exists — a third party could not reproduce how '1' was reached from the response alone; The negative gate warns against first-order-only analysis, and the response shows zero multi-order analysis, partially enacting that failure; Suppressed modes (short_term_bias, immediate_result_anchoring) are not evidenced in the visible text, but neither are they explicitly addressed; The topology prescribes a branching gate-loop structure and the response shows no structured traversal of any kind.",
+  "timestamp": "2026-03-23T04:00:02.158859+00:00"
+}

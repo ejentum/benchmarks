@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-06",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.5,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent gets 1.4 vs correct 5.4 — arithmetic within its own framework is consistent but misses whatever mechanism yields 5.4, so approach was sound but answer is wrong; agent enumerates all three flows and explains the decomposition lag with the month-4 projection, going one level past surface; agent explicitly reasons about the 3-month lag and notes its future impact, showing some process awareness; agent restates the lag logic but performs no independent verification from a different angle or sanity check; agent presents 1.4 with confidence and no flagged assumptions about interpretation of rates or initial conditions; agent does not consider alternative interpretations of the 90%-per-month rate (e.g., first-order decay, annual not monthly, or different ordering of operations); every flow is labeled with source, magnitude, and direction — a third party could reproduce the full calculation; the negative gate concerns employee turnover/pay, a completely different domain — agent neither falls into nor explicitly addresses this irrelevant pattern; agent considers all three flows (not single-cause), avoids fixation on one variable, matching most suppressed modes; agent's reasoning is linear (list flows, sum) despite the topology calling for stock/flow enumeration, directed-edge mapping, and loop classification.",
+  "timestamp": "2026-03-23T04:45:01.652669+00:00"
+}

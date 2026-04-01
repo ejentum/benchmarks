@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-22",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 3,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.9333,
+  "injection_composite": 0.7778,
+  "brief_justification": "Agent correctly identifies D with valid reasoning about unverified baseline assumptions, plus correctly notes C as a secondary valid refutation; response traces second and third-order effects including upstream bias laundering and industry pipeline suppression; agent explicitly names halo effect and anchoring as operating biases with specific distorted steps identified; agent calculates exact expected (250) vs actual (220) women hired and runs counterfactual under best-case scenario; agent clearly distinguishes why C is empirically true but D is the logically stronger refutation, showing calibrated confidence; agent systematically evaluates C vs D, rejects neither, explains why D defeats the argument even under the most favorable reading of the data; full table with stage-by-stage counts, arithmetic derivation, and counterfactual construction allow complete reproduction; agent avoids treating 'consistent ratio' as positive evidence and flags the halo effect, but does not explicitly name the marketing-feedback-loop framing of the negative gate or articulate why that specific pattern is wrong; agent suppresses halo effect amplification, company framing confirmation bias, and compositional shortcutting across all three steps; response follows a scan-gate-interrupt-debiasing path but does not exhibit the M1 metacognitive watchdog loop or ABANDON_GRAPH/RE-ENTER meta-nodes specified in the topology.",
+  "timestamp": "2026-03-23T04:55:04.260096+00:00"
+}

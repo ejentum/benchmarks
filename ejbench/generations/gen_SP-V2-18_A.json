@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-18",
+  "condition": "A",
+  "output": "**Day 8.**\n\nAccording to the security engineer's description:\n\n- Access tokens expire every 15 minutes (silently refreshed using the refresh token)\n- Refresh tokens expire every 7 days\n- After the refresh token expires, the user **must** re-authenticate\n\nThe user logs in on Day 1. Their refresh token expires after 7 days. On **Day 8**, when their access token expires and the system attempts to use the refresh token, it will have expired — forcing the user to re-enter their credentials.\n\n(The PM's description of \"30 days, no re-auth\" directly contradicts the security engineer's implementation. This is a common real-world disconnect between product intent and actual security controls.)",
+  "timestamp": "2026-03-22T16:39:20.022168+00:00"
+}

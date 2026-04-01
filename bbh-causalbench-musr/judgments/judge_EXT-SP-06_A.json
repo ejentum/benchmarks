@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-06",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Agent arrives at 'nightstand' while the correct answer is 'kitchen' — wrong conclusion despite internally consistent logic about Luke's absence during both key moves; Agent goes one level deeper than surface by explicitly tracking each character's epistemic state across the timeline rather than just describing physical events; Agent structures reasoning linearly without naming potential biases or questioning whether 'last known location' is the right interpretive frame for the question; No counterfactual checks, boundary tests, or re-derivation from a different angle are attempted; Agent presents the nightstand conclusion with full confidence and no acknowledgment that the question might invite a different interpretive frame (e.g., 'most likely to find' vs. 'first place to look'); Agent implicitly rules out kitchen and safety deposit box as unknown to Luke but never explicitly names them as candidate answers and explains the rejection; Every inference step — initial shared knowledge, Maria's move with Luke absent, Henry's move with Luke absent, therefore last known location — is laid out so a third party could fully reproduce the reasoning chain.",
+  "timestamp": "2026-03-23T09:56:20.369329+00:00"
+}

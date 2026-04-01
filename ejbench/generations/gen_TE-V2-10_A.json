@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-10",
+  "condition": "A",
+  "output": "## Solution\n\n### Part 1: Number of cycles\n\nEach cycle reduces capacity by 0.1%, so after *n* cycles:\n\n$$\\text{Capacity}(n) = 5000 \\times 0.999^n$$\n\nWe need $5000 \\times 0.999^n < 4500$, i.e., $0.999^n < 0.9$:\n\n$$n > \\frac{\\ln(0.9)}{\\ln(0.999)} = \\frac{-0.10536}{-0.0010005} \\approx 105.31$$\n\n**After 106 complete cycles**, capacity drops below 4500 mAh.\n\nVerification: 5000 × 0.999¹⁰⁵ ≈ 4501.5 mAh (still above) and 5000 × 0.999¹⁰⁶ ≈ 4497.0 mAh (below).\n\n### Part 2: Total hours of use\n\nEach cycle *i* (from 0 to 105) provides:\n\n$$\\text{Hours}_i = \\frac{5000 \\times 0.999^i}{500} = 10 \\times 0.999^i$$\n\nTotal hours is the geometric series:\n\n$$\\text{Total} = 10 \\sum_{i=0}^{105} 0.999^i = 10 \\times \\frac{1 - 0.999^{106}}{1 - 0.999} = \\frac{10 \\times (1 - 0.999^{106})}{0.001}$$\n\n$$= 10{,}000 \\times (1 - 0.89941) \\approx \\boxed{1005.9 \\text{ hours}}$$\n\n### Summary\n\n| Metric | Value |\n|---|---|\n| Cycles to drop below 4500 mAh | **106** |\n| Final capacity (at cycle 106) | ~4497 mAh |\n| Total usable hours across all 106 cycles | **~1,005.9 hours** |\n\nNote how the total is slightly less than the naive estimate of 106 × 10h = 1,060h — that ~54-hour gap is the cumulative effect of degradation.",
+  "timestamp": "2026-03-22T16:22:40.034721+00:00"
+}

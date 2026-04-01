@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-03",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 188 with correct step-by-step pharmacokinetic math; goes one level beyond surface by tracing each hour's interplay between drug conversion and metabolite clearance, but doesn't explore non-obvious implications; proceeds linearly without questioning its own approach or naming potential biases; shows each arithmetic step clearly but never re-derives or sanity-checks the final result from a different angle; presents the discrete-hourly interpretation without acknowledging that timing assumptions (e.g., simultaneous vs. sequential clearance and conversion) affect the answer; never considers whether metabolite clearance precedes or follows new metabolite addition, or whether a continuous model would differ; every intermediate value is explicitly derived and a third party could fully reproduce the chain.",
+  "timestamp": "2026-03-23T02:16:55.689769+00:00"
+}

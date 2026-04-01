@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-30",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning; Multi-level analysis tracing through SCM with interventional semantics and comparison of factual vs counterfactual worlds; Some self-monitoring via RA²R suppress/amplify signals but no explicit bias-checking mid-reasoning; Strong verification by computing both factual (S=1) and counterfactual (S=0) scenarios and comparing; Acknowledges the structural assumptions but doesn't explicitly flag uncertainty about the AND interpretation; Implicitly considers the factual scenario as an alternative comparison point but doesn't systematically evaluate other possible interpretations of the heart equation; Complete derivation trail from problem statement through variable encoding, structural equations, intervention, to conclusion — fully reproducible",
+  "timestamp": "2026-03-23T13:09:28.415006+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-TE-04",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer (C) 2pm to 8pm; only surface reasoning — states conclusion without tracing why each constraint eliminates other windows; no reflection on reasoning process or potential errors; no verification of eliminated options or boundary conditions; presents conclusion without uncertainty or acknowledgment of assumptions; does not evaluate or reject options A, B, or D; cites 'accounted for until 2pm' as the key fact but skips tracing each individual sighting (Linda, Ashley, John) that establishes this bound",
+  "timestamp": "2026-03-23T09:34:52.536801+00:00"
+}

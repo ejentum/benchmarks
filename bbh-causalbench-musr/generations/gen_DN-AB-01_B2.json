@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-01",
+  "condition": "B2",
+  "output": "**The answer is (B).**\n\nEach case engineered a **separation between the measurement interface and the underlying system**, then optimized the measurement layer independently of reality:\n\n- **Theranos** — the demo (measurement interface) was decoupled from the actual device (underlying system)\n- **Enron** — the balance sheet (measurement interface) was decoupled from actual debt obligations (underlying system)\n- **Volkswagen** — the emissions test output (measurement interface) was decoupled from real driving emissions (underlying system)\n- **WeWork** — the profitability metric (measurement interface) was decoupled from actual operating costs (underlying system)\n\nThe structural pattern is the same in all four: **the metric-producing layer was made to pass inspection while the thing being measured diverged unchecked.** This is more precise than \"fraud\" (A), which names the legal conclusion but not the mechanism. (C) and (D) are surface correlations, not the shared structure.\n\nThis pattern generalizes beyond corporate scandals — it appears anywhere a system is optimized against a proxy measure rather than the underlying reality (Goodhart's Law taken to its deliberate extreme).",
+  "timestamp": "2026-03-20T17:26:03.309901+00:00"
+}

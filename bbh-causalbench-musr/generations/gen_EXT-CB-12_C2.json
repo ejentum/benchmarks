@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-12",
+  "condition": "C2",
+  "output": "## Solution\n\n**Yes.** If uvzi occurs, it is more likely that zuph occurred.\n\n### Step-by-step\n\n**Given:**\n- P(zuph) = 0.77, so P(not zuph) = 0.23\n- P(not zuph ∧ uvzi) = 0.11\n- P(zuph ∧ uvzi) = 0.46\n\n**Total probability of uvzi:**\n\nP(uvzi) = P(zuph ∧ uvzi) + P(not zuph ∧ uvzi) = 0.46 + 0.11 = **0.57**\n\n**Posterior via Bayes' rule:**\n\nP(zuph | uvzi) = P(zuph ∧ uvzi) / P(uvzi) = 0.46 / 0.57 ≈ **0.8070** (80.7%)\n\nP(not zuph | uvzi) = 0.11 / 0.57 ≈ **0.1930** (19.3%)\n\n### Comparison\n\n| | Probability |\n|---|---|\n| P(zuph \\| uvzi) | **80.7%** |\n| P(not zuph \\| uvzi) | 19.3% |\n| Prior P(zuph) | 77.0% |\n\nObserving uvzi makes zuph more likely than not (80.7% vs 19.3%), and also slightly increases the probability of zuph relative to its prior (80.7% vs 77.0%). This makes sense because uvzi is more likely to occur when zuph is present — P(uvzi | zuph) ≈ 59.7% vs P(uvzi | not zuph) ≈ 47.8%.",
+  "timestamp": "2026-03-20T10:59:10.647456+00:00"
+}

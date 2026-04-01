@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-18",
+  "condition": "A",
+  "output": "## Answer: **(D) 12.9%**\n\nThe analyst commits the **base rate neglect** fallacy. Here's the correct calculation using **Bayes' theorem**:\n\n**Given:**\n- P(unicorn) = 20/200 = 0.10\n- P(tech co-founder | unicorn) = 0.80\n- P(tech co-founder | non-unicorn) = 108/180 = 0.60\n\n**Find P(unicorn | tech co-founder):**\n\nFirst, total probability of having a tech co-founder:\n\nP(tech) = (0.80 × 0.10) + (0.60 × 0.90) = 0.08 + 0.54 = **0.62**\n\nThen apply Bayes:\n\nP(unicorn | tech) = (0.80 × 0.10) / 0.62 = 0.08 / 0.62 ≈ **12.9%**\n\n**Why the analyst is wrong:** They confused P(tech | unicorn) = 80% with P(unicorn | tech) ≈ 12.9%. Having a tech co-founder is common among *all* investments (62%), so it's only a weak signal — lifting the base rate from 10% to ~13%, not to 80%.",
+  "timestamp": "2026-03-22T16:12:14.971716+00:00"
+}

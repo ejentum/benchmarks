@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-28",
+  "condition": "A",
+  "output": "At hour 6, the queue has 18 patients.\n\nFrom hour 6 onward, the queue grows at 4 patients/hour.\n\nWe need: 18 + 4(t - 6) > 50\n\n4(t - 6) > 32 → t - 6 > 8 → t > 14\n\nAt hour 14: queue = 18 + 4(8) = 50 (not exceeding)\nAt hour 14+: queue exceeds 50\n\nThe queue first **exceeds** 50 just after hour 14, meaning at hour 14 it equals exactly 50. Since the question asks when it first **exceeds** 50, and the options include hour 14:\n\n**(A) Hour 14**\n\nAt hour 14 the queue hits exactly 50, and since arrivals are continuous, it crosses 50 during that hour — making hour 14 the first hour where the queue exceeds 50.",
+  "timestamp": "2026-03-22T16:04:12.617977+00:00"
+}

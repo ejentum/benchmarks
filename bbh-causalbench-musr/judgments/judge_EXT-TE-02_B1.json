@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-02",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (B) with valid reasoning; goes one level beyond surface by constructing a complete timeline table to identify the gap; suppress/amplify context shows awareness of potential reasoning pitfalls; verifies by checking every option against confirmed sightings; minimal epistemic hedging or uncertainty acknowledgment; implicitly considers all alternatives by showing every other window is occupied; full derivation trail with timeline table making reasoning fully reproducible.",
+  "timestamp": "2026-03-23T10:51:14.936722+00:00"
+}

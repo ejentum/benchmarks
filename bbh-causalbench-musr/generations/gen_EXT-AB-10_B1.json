@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-10",
+  "condition": "B1",
+  "output": "**No, Ka lies.**\n\nChain of reasoning:\n\n1. **Vina** tells the truth (given).\n2. **Helene** says Vina lies → Helene **lies** (Vina actually tells the truth).\n3. **Kandi** says Helene tells the truth → Kandi **lies** (Helene actually lies).\n4. **Jamey** says Kandi lies → Jamey **tells the truth** (Kandi actually lies).\n5. **Ka** says Jamey lies → Ka **lies** (Jamey actually tells the truth).",
+  "timestamp": "2026-03-20T09:48:02.053081+00:00"
+}

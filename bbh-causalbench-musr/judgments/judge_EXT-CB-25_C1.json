@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-25",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid causal reasoning; Multi-level analysis tracing backdoor paths, Simpson's paradox, and why Method 2 would block confounding; Reasoning injection shows awareness of biases to suppress (correlation-causation leap); Verifies by contrasting Method 1 vs Method 2 and explaining why contradictory results arise; Acknowledges Method 2 is impossible in practice due to unobservability; Contrasts both methods as alternative approaches; Full derivation from DAG structure through backdoor path to conclusion is reproducible",
+  "timestamp": "2026-03-23T13:05:51.463732+00:00"
+}

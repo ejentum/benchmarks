@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-16",
+  "condition": "B2",
+  "output": "(B) is correct.\n\nThe contradiction is structural: statement 3 identifies *human interaction* as the competitive advantage, while statement 2 eliminates the humans who deliver it. Statement 1 demands *more* attentive service, compounding the conflict.\n\nOptions A, C, and D attempt to resolve the tension by adding assumptions not present in the recommendations (back-office vs. front-office distinction, sequencing, technology augmentation). Taking the three statements at face value, they are internally inconsistent.",
+  "timestamp": "2026-03-20T17:36:42.320281+00:00"
+}

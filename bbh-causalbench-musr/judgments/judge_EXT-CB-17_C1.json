@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-17",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 1
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (yes) with valid reasoning about collider bias; Goes one level beyond surface by identifying the collider bias mechanism; Minimal self-monitoring evident in the truncated response; Mentions the reason but doesn't verify with formal causal analysis; Presents conclusion without acknowledging assumptions about the causal structure; Implicitly compares both methods and explains why Method 2 fails; States the conclusion and names collider bias but doesn't show the full derivation of the causal graph or explain why Yupt is a collider",
+  "timestamp": "2026-03-23T13:01:08.761695+00:00"
+}

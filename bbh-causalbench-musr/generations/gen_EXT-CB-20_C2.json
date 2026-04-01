@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-20",
+  "condition": "C2",
+  "output": "## Analysis\n\n**Causal structure:**\n- Yupt → Jyka\n- Yupt → Kwox\n- Jyka → Kwox\n\n**Key distinction: intervention vs. observation.** \"An intervention guarantees Kwox is not occurring\" means **do(Kwox = 0)**, not observing Kwox = 0. An intervention severs all incoming causal arrows to the intervened variable (Kwox), so it does **not** propagate information backward to Jyka or Yupt.\n\nTherefore:\n\n**P(Jyka | do(Kwox = 0)) = P(Jyka)**\n\nThe intervention on Kwox leaves the Yupt → Jyka relationship completely untouched. Since Yupt is the **only** cause of Jyka (no unmentioned factors), and P(Yupt) = 11%, the marginal probability of Jyka is anchored to that low base rate. Regardless of how strongly Yupt causes Jyka, P(Jyka) cannot exceed 11%.\n\n**No, it is not likely that Jyka is present.** With P(Yupt) at only 11% and no other causes of Jyka, the probability of Jyka remains well below 50%.",
+  "timestamp": "2026-03-20T11:03:26.706748+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-01",
+  "condition": "A",
+  "output": "0\n\nCycle 3: B_new = 2*A = 2*0 = **0**. (A was floored to 0 in cycle 2, so B collapses.)",
+  "timestamp": "2026-03-22T16:09:29.077663+00:00"
+}

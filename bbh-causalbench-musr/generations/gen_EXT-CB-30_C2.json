@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-30",
+  "condition": "C2",
+  "output": "## Counterfactual Analysis\n\n**No** — the person would **not** have a healthy heart if not having a sister.\n\n### Reasoning\n\n**Causal structure** (given):\n- Sister → Blood Pressure\n- Sister → Heart Condition\n- Blood Pressure → Heart Condition\n\n**Structural equations from the stated facts:**\n\n| Variable | Rule |\n|---|---|\n| Blood Pressure | Having a sister → low BP; therefore no sister → high BP |\n| Heart Condition | Healthy **only if** both having a sister **and** high blood pressure |\n\n**Factual world** (has a sister):\n1. Sister = Yes → Blood Pressure = **Low**\n2. Heart Condition requires (Sister=Yes **∧** BP=High) → condition not met → **Not healthy**\n\n**Counterfactual world** (no sister):\n1. Sister = No → Blood Pressure = **High**\n2. Heart Condition requires (Sister=Yes **∧** BP=High) → Sister=No, so condition not met → **Not healthy**\n\nThe person doesn't have a healthy heart in either world. Having a sister causes low blood pressure, which blocks the only path to a healthy heart (which requires *both* having a sister *and* high blood pressure). Removing the sister gives high blood pressure but removes the sister condition. The two required causes never co-occur naturally.",
+  "timestamp": "2026-03-20T11:07:35.000385+00:00"
+}

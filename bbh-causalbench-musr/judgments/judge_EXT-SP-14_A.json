@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-14",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.1429,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (cabin instead of main deck) but reasoning about the cabin as default location was partially sound; surface-level analysis only considering the general storage location without tracking the timeline of events; no self-monitoring or questioning of assumptions; no verification against the story's sequence of events; presented answer as certain with no acknowledgment of competing possibilities; did not consider the main deck as an alternative despite Alex moving charts there; showed some derivation from the text but failed to account for Dean's knowledge state and the sequence of movements",
+  "timestamp": "2026-03-23T12:44:30.985889+00:00"
+}

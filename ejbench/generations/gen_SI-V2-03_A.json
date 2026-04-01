@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-03",
+  "condition": "A",
+  "output": "## Pharmacokinetic Calculation\n\nI'll track Drug Z and Metabolite M hour by hour.\n\n**Rules each hour:**\n- 40% of remaining Drug → converted to Metabolite M\n- Existing Metabolite M → cleared by 30% (retains 70%)\n- New M from conversion is then added\n\n---\n\n### t = 0 (initial)\n| | mg |\n|---|---|\n| **Drug** | 400.0 |\n| **Metabolite** | 0.0 |\n\n### t = 1 hour\n- Drug metabolized: 400 × 0.40 = **160 mg → becomes M**\n- Drug remaining: 400 − 160 = **240.0 mg**\n- Metabolite: (0 × 0.70) + 160 = **160.0 mg**\n\n### t = 2 hours\n- Drug metabolized: 240 × 0.40 = **96 mg → becomes M**\n- Drug remaining: 240 − 96 = **144.0 mg**\n- Metabolite: (160 × 0.70) + 96 = 112 + 96 = **208.0 mg**\n\n### t = 3 hours\n- Drug metabolized: 144 × 0.40 = **57.6 mg → becomes M**\n- Drug remaining: 144 − 57.6 = **86.4 mg**\n- Metabolite: (208 × 0.70) + 57.6 = 145.6 + 57.6 = **203.2 mg**\n\n---\n\n### Total Therapeutic Effect at t = 3\n\n$$\\text{Effect} = D + 0.5 \\times M = 86.4 + 0.5 \\times 203.2 = 86.4 + 101.6 = 188.0$$\n\n### **Answer: 188 mg-equivalents**",
+  "timestamp": "2026-03-22T15:55:18.473200+00:00"
+}

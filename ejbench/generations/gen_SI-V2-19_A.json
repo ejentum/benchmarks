@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-19",
+  "condition": "A",
+  "output": "## Working it out month by month\n\n| Month | Start | After +8% growth | After −1,500 catch |\n|-------|------:|------------------:|--------------------:|\n| 1 | 10,000 | 10,800 | **9,300** |\n| 2 | 9,300 | 10,044 | **8,544** |\n| 3 | 8,544 | 9,227.5 | **7,727.5** |\n| 4 | 7,727.5 | 8,345.7 | **6,845.7** |\n| 5 | 6,845.7 | 7,393.4 | **5,893.4** |\n| 6 | 5,893.4 | 6,364.8 | **4,864.8** ← below 5,000 |\n\nThe population first drops below 5,000 at the end of **Month 6**.\n\n**Answer: (A) Month 6**\n\nThe key insight: at 8% growth, the population needs to be ~18,750 for the 8% gain to exactly offset the 1,500 catch (since 18,750 × 0.08 = 1,500). Starting at 10,000—well below that equilibrium—the population shrinks every month, crossing the 5,000 threshold in Month 6.",
+  "timestamp": "2026-03-22T16:01:12.608012+00:00"
+}

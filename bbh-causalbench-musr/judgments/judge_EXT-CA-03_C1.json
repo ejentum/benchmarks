@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-03",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid reasoning; Multi-level analysis tracing normative expectations, norm-violation asymmetry, and background condition framing; Some self-monitoring via the RA²R injection context but no explicit bias-checking during reasoning; Mentions the experimental philosophy literature but doesn't verify against alternative interpretations; Acknowledges the norm-based framing driving intuition but doesn't quantify uncertainty; Implicitly considers the alternative (both wires equally causal) but focuses on why people reject it rather than systematically evaluating; Full derivation chain from physical setup through normative expectations to causal attribution is clearly traceable",
+  "timestamp": "2026-03-23T12:47:28.091610+00:00"
+}

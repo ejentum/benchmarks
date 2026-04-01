@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-17",
+  "condition": "B1",
+  "output": "**(B)**.\n\nThe common structure is **subsidize one side, monetize the captive side**:\n\n- **Razor-and-blade:** Subsidize the handle (adoption) → proprietary blade fit creates switching costs → extract margin on blades.\n- **Freemium:** Subsidize basic users (adoption) → data/workflow lock-in raises switching costs → extract from power users who can't easily leave.\n- **Academic publishing:** Subsidize author submission (adoption) → prestige/tenure incentives lock in content supply → extract from libraries who must provide access.\n\nEach exploits a two-sided asymmetry where one side is subsidized to build a base, and the other side — with fewer alternatives — pays disproportionately.",
+  "timestamp": "2026-03-20T17:19:23.880821+00:00"
+}

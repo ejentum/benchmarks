@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-06",
+  "condition": "A",
+  "output": "(B).\n\nStatement 1 identifies the proprietary AI technology as **the** competitive advantage. Statement 2 gives that exact thing away. Statement 3 then promises aggressive IP defense of something that's been voluntarily released. The three together are incoherent.\n\nOptions A and C describe real strategies (proprietary data/infra, dual licensing), but they require redefining what the \"competitive advantage\" actually is — the document as written doesn't do that. Option D is wrong because statement 3's object (the IP) is the same technology being open-sourced, so it doesn't stand independently either.",
+  "timestamp": "2026-03-20T17:09:01.581285+00:00"
+}

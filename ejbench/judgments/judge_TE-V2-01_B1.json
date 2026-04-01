@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-01",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.3667,
+  "injection_composite": 0.4444,
+  "brief_justification": "Exact correct answer of 150mg with valid arithmetic; Only surface-level application of the given formula, no exploration of pharmacokinetic assumptions or second-order effects; No reflection on reasoning method or bias checking at any point; No verification step attempted — no cross-check, boundary test, or re-derivation from a different angle; Presents result as certain with no acknowledgment of simplifying assumptions (first-order kinetics, no absorption delay, etc.); Only one computational approach considered, no alternatives mentioned or rejected; Step-by-step derivation is shown for both doses and summed clearly, reproducible by a third party; Agent avoids treating the dose accumulation as a static snapshot (correctly computes decay per dose independently) but does not explicitly name or address the anti-pattern; Agent substituted its own injection context with different Suppress terms, but still avoided the provided suppression targets of static_snapshot_bias and independent_projection_fallacy; Response is fully linear — no branching, gates, or loops despite the FORK/JOIN topology, and no interaction-detection step between doses was executed",
+  "timestamp": "2026-03-23T03:56:25.423321+00:00"
+}

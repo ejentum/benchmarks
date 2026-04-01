@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-05",
+  "condition": "C2",
+  "output": "A typical person would answer **Yes**.\n\nThis is a well-known scenario in experimental philosophy (a variant of the \"Knobe effect\" or \"Side-Effect Effect\"). Research consistently shows that when an agent knowingly causes a harmful side effect — even though it wasn't their goal — most people judge the action as intentional.\n\nThe key factors driving this intuition:\n\n- The hunter **knew** the bullet would hit a bird-watcher.\n- He **chose to shoot anyway**.\n- The harm was **foreseen**, even though it wasn't desired.\n\nPeople tend to judge foreseen harmful side effects as intentional, even when the agent's goal was something else entirely. (Interestingly, the asymmetry is that foreseen *positive* side effects are typically judged as *not* intentional — that's the core of the Knobe effect.)",
+  "timestamp": "2026-03-20T10:53:10.205323+00:00"
+}

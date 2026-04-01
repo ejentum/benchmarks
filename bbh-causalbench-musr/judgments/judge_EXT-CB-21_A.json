@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-21",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning about collider bias; Multi-level analysis tracing the causal DAG, explaining Berkson's Paradox, and providing intuition for why conditioning on a collider induces spurious associations; Some self-monitoring implicit in the structured approach but no explicit bias-checking or assumption-questioning; Basic verification through the intuitive explanation and summary table confirming the conclusion, but no formal counterfactual or alternative derivation; Acknowledges the specific conditions of the hypothetical world but doesn't explicitly discuss confidence levels or what would change the conclusion; Systematically evaluates both methods with clear reasons for rejecting Method 1 and accepting Method 2; Complete audit trail from causal graph to collider identification to bias explanation to conclusion, fully reproducible by a third party.",
+  "timestamp": "2026-03-23T10:40:09.784211+00:00"
+}

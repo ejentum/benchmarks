@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-09",
+  "condition": "B1",
+  "output": "The box.\n\nFrom George's perspective, he personally moved the key from the box to the office. He never witnessed David retrieve it from the office and return it to the box. So George should believe the key is still in the **office**.\n\nHowever, the question asks where George would **look** to find it. George last placed it in the office, so he would look there first — **the zookeeper's office**.",
+  "timestamp": "2026-03-20T09:36:13.288259+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-14",
+  "condition": "C1",
+  "output": "**(C)** is the most structurally accurate.\n\nThe key insight is that the *same mathematical object* changes category depending on its instantiation:\n\n- **Source code published in a textbook or journal** — functions as expression. It communicates ideas, can be read, critiqued, taught. This is why the 9th Circuit in *Bernstein v. United States* ruled that source code is protected speech.\n- **Compiled binary deployed in an operational system** — functions as a tool. It encrypts real traffic, enables real secrecy, has real military/intelligence utility. Export-controlling a shipping product is regulating capability, not expression.\n\nOptions (A) and (B) each collapse a genuine duality into one side. (A) ignores that publishing a paper on RSA is plainly academic speech. (B) ignores that a hardened encryption suite integrated into a weapons system is plainly not \"just math.\" (D) dodges the question entirely.\n\nThe historical resolution tracked this same line — the US eventually loosened controls on published source code and open-source encryption while maintaining controls on certain operational exports to specific destinations, implicitly acknowledging that form and context determine the category.",
+  "timestamp": "2026-03-20T17:42:01.284546+00:00"
+}

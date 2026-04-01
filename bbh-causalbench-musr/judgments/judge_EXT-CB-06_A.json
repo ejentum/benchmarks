@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-06",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (No) with valid collider bias reasoning and correct DAG identification; multi-level analysis tracing the collider mechanism, direction of spurious correlation, and why the unconditional estimate is correct; proceeds linearly with no explicit reflection on its own reasoning process or named failure modes; verifies by checking both methods independently and providing a comparative summary table, but does not re-derive from an alternative angle or test boundary conditions; presents conclusions with high confidence appropriate to the hypothetical framing but never states assumptions or what would alter the conclusion; identifies two methods but treats Method 2 as obviously correct without considering alternative causal framings or whether talent/effort independence could be violated in other ways; every conclusion traces to an explicit DAG, collider definition, and mechanistic explanation a third party could fully reproduce.",
+  "timestamp": "2026-03-23T09:58:20.050398+00:00"
+}

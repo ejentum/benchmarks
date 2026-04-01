@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-16",
+  "condition": "A",
+  "output": "## 40 seconds\n\nFrom Engineer N's description, the worst case is:\n\n1. A record arrives **just after** a batch window opens\n2. It waits nearly **30 seconds** for the window to close\n3. Then **10 seconds** of batch processing\n\n**30s (wait) + 10s (processing) = 40 seconds maximum latency**\n\nEngineer M's \"50 milliseconds\" claim describes the **best case** — a record arriving just before a batch window closes, where the \"query availability\" delay is essentially just the tail-end processing. M is either rounding aggressively, describing the system aspirationally, or measuring only the processing hop (not the wait time).\n\nThe key insight: when two people describe the same system differently, the **more specific, mechanistic description** (Engineer N) reveals the true worst-case behavior, while the **marketing-friendly description** (Engineer M) reflects the best-case or average-case. The maximum latency is governed by the batch window architecture, not the optimistic claim.",
+  "timestamp": "2026-03-22T16:38:51.718591+00:00"
+}

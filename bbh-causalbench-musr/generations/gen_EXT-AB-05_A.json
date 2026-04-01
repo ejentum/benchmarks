@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-05",
+  "condition": "A",
+  "output": "This is a logic puzzle. Let me work through it:\n\n1. Green is rightmost (position 5)\n2. Gray is right of Orange: O ... G\n3. Purple is left of Yellow: P ... Y\n4. Purple is right of Gray: G ... P\n\nSo: Orange → Gray → Purple → Yellow, and Green is at position 5.\n\nThat gives us: **Orange, Gray, Purple, Yellow, Green** (positions 1-5)\n\nThe second from the right (position 4) is **Yellow**.\n\nThe answer is **(D)**.",
+  "timestamp": "2026-03-20T09:27:26.125660+00:00"
+}

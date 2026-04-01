@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-06",
+  "condition": "A",
+  "output": "Looking at this step by step for month 1:\n\n**Starting pools:**\n- NH4⁺ = 10 kg/ha\n- NO3⁻ = 5 kg/ha\n\n**During month 1:**\n\n1. **N₂ fixation adds NH4⁺:** 5 kg/ha/year = 5/12 ≈ 0.4167 kg/ha/month\n\n2. **Nitrification converts NH4⁺ to NO3⁻:** 90% of available NH4⁺ is converted out\n\n3. **Decomposition return:** There's a 3-month lag, and we're only at month 1 with no prior plant absorption history, so **no return yet**.\n\n**Calculating NH4⁺ after month 1:**\n\nNH4⁺ = Starting NH4⁺ + Fixation − Nitrification loss\n\n- Available NH4⁺ before nitrification = 10 + 5/12 = 10.4167 kg/ha\n- Nitrification removes 90%: 0.90 × 10.4167 = 9.375 kg/ha\n- NH4⁺ remaining = 10.4167 − 9.375 = 1.0417 kg/ha\n\n**NH4⁺ after 1 month = 1.0 kg/ha**",
+  "timestamp": "2026-03-22T16:30:05.865841+00:00"
+}

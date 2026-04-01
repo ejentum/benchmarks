@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-16",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (No instead of Yes) but the causal reasoning framework applied was sophisticated and internally consistent; Multi-level analysis tracing do-calculus, DAG structure, and distinguishing intervention from observation; Some self-monitoring via the do vs observe distinction and suppression signals; Verified by contrasting interventional vs observational distributions; Acknowledged the distinction matters but was overly confident in the wrong interpretation; Explicitly compared do(W) vs observe(W) scenarios with reasons for rejecting the observational interpretation; Full derivation chain from DAG to do-calculus to conclusion is reproducible, though the premise that do() is the right formalization may be debatable given the question's phrasing",
+  "timestamp": "2026-03-23T11:13:25.888064+00:00"
+}

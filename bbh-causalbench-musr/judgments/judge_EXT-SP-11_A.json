@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-11",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Agent identifies kitchen counter as last physical location, which is factually accurate per the story, but the correct answer is kitchen drawer — the agent fails to reason about Mary's *subjective awareness*, not just objective location; agent traces the spoon through 3 location changes (drawer→cutlery rack→counter) showing multi-step reasoning but stops at physical tracking rather than perspective-taking; agent does not pause to ask whether Mary actually witnessed Emma's final placement, missing a key epistemic gap; agent checks the story for spoon movements but does not verify whether Mary was present or observing when Emma placed it on the counter; agent says 'most likely' without acknowledging the core uncertainty — whether Mary saw Emma's action — which is central to the question; agent considers only the objective last-known location and never entertains the kitchen drawer as an alternative based on Mary's prior knowledge; every claim traces to a specific story event, making the derivation fully reproducible even though the framing question is about belief not location.",
+  "timestamp": "2026-03-23T10:06:48.052780+00:00"
+}

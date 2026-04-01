@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-17",
+  "condition": "B1",
+  "output": "Looking at this carefully:\n\n**Yes — Method 1 is more likely to accurately determine how Jyka affects Kwox.**\n\nHere's why:\n\nIn this world, the causal structure is:\n\n```\nJyka → Yupt ← Kwox\n```\n\nJyka and Kwox are **independent** — neither causes the other, and they share no common cause. They are only connected through their shared effect, Yupt.\n\n- **Method 1** (look at the correlation directly) correctly reveals that Jyka and Kwox have **no causal relationship** — which is the ground truth.\n\n- **Method 2** (condition on Yupt) introduces **collider bias**. Yupt is a collider between Jyka and Kwox. Conditioning on a collider opens a spurious association between its causes, making Jyka and Kwox appear related when they are not.\n\nSo Method 1 preserves the true independence, while Method 2 creates a misleading association.",
+  "timestamp": "2026-03-20T09:41:19.351577+00:00"
+}

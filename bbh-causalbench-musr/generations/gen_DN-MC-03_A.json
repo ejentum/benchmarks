@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-03",
+  "condition": "A",
+  "output": "**(B)**\n\nThe correct answer happened to fall out, but the method is unsound. \"About a third of New York\" is an arbitrary anchor with no grounding — it would fail for most other cities. A correct answer from a flawed process is coincidence, not evidence of good reasoning.",
+  "timestamp": "2026-03-20T17:07:50.090837+00:00"
+}

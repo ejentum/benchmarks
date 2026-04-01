@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-07",
+  "condition": "A",
+  "output": "**The answer is (B) 35–40 minutes.**\n\nThe math:\n\n- 40% capacity increase → **20–40% increase in VMT** (using the 5–10% per 10% rule)\n- That's roughly half to all of the original congestion returning\n- The 15% public transit ridership drop adds even more cars, pushing demand further\n\nBut it doesn't quite reach full negation (option C) because:\n\n- The induced demand elasticity cited (0.5–1.0) means the midpoint ~30% VMT increase doesn't fully consume a 40% capacity gain within just 3 years\n- Full equilibrium (where C might apply) typically takes 5–10+ years\n\nOption A ignores induced demand entirely. Option D underestimates the combined effect of induced demand + transit mode shift. Option C would require either a longer timeframe or a higher elasticity than the problem states.",
+  "timestamp": "2026-03-20T17:04:00.717088+00:00"
+}

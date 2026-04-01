@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-05",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (Yes) with valid weighted-average calculation and correct causal inference; identifies two causal pathways (smallpox protection vs. vaccination reaction harm) and explains the net mechanism, going well beyond surface; proactively notes that vaccination is the root node so observational probabilities equal interventional ones, showing awareness of a key confounding pitfall; provides a concrete numerical sanity check at 50% vaccination rate but does not test boundary conditions or re-derive from an alternate angle; frames conclusions as holding 'in this hypothetical world' but does not articulate what assumption changes would flip the result; identifies the two competing pathways and explains why the net effect is negative but does not consider alternative interpretations of the causal structure; every numerical step is shown with full arithmetic and the reasoning chain is fully reproducible by a third party.",
+  "timestamp": "2026-03-23T09:56:50.129935+00:00"
+}

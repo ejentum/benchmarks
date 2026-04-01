@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-07",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Agent answered 'the box' but the correct answer is 'Emma's head,' missing the trick element of the question entirely; agent went one level deeper by tracking Emma's movements and her ignorance of key transfers, but never explored what 'key' might metaphorically or trickily reference; agent rechecked Emma's locations throughout the story but never questioned whether its own framing of the problem was correct; basic verification was performed by cross-referencing Emma's position against key events, though no boundary or alternative checks were made; agent used 'most likely' hedging but presented no structured uncertainty analysis or acknowledgment that the question might be a riddle; no alternative interpretations of 'key' or alternative locations were considered — the agent committed to one answer without exploring other possibilities; the reasoning chain is clear and reproducible — Emma's ignorance → default to known location → the box — though the setup condition (that this is a trick question) was never identified.",
+  "timestamp": "2026-03-23T09:57:54.741399+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-28",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Arrives at correct answer (A) with valid arithmetic and correctly identifies the boundary condition; goes one level beyond surface by distinguishing 'equals 50' from 'exceeds 50' but doesn't explore second-order effects; explicitly catches and addresses the equals-vs-exceeds ambiguity mid-response; checks the exact boundary value at hour 14 and confirms the queue equals 50 there; acknowledges the continuous-arrival nuance that resolves the boundary ambiguity without full uncertainty framing; does not evaluate other answer choices or alternative problem setups; every step is shown and derivation is fully reproducible from the response alone.",
+  "timestamp": "2026-03-23T02:34:41.031695+00:00"
+}

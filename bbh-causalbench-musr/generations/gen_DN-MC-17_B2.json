@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-17",
+  "condition": "B2",
+  "output": "**(B).**\n\nThis is textbook **survivorship bias**. The executive is treating a biased sample as representative. The measurement system is structurally blind to the most dissatisfied customers — they've already disengaged before the survey reaches them. So the 4.2 doesn't describe customer satisfaction; it describes *the satisfaction of customers who haven't yet given up on the company*.\n\nThe other options miss the core problem:\n\n- **(A)** understates it — this isn't a minor adjustment, it's a fundamentally compromised sample.\n- **(C)** treats a structural bias as a logistics problem. More reminders won't reach customers who've already churned.\n- **(D)** accepts the number at face value and hand-waves the bias away.\n\nThe deeper lesson: **metrics that feel reassuring are the most dangerous ones to leave unexamined**, precisely because no one is motivated to question them.",
+  "timestamp": "2026-03-20T17:36:57.303759+00:00"
+}

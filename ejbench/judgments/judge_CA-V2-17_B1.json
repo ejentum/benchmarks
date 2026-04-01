@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-17",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 2,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent mentions 'healthy user bias' but pivots to 'immortal time bias' as its primary conclusion, landing on the wrong answer despite touching the correct term; goes beyond surface level to explain mechanism of pet-owner category contamination but doesn't trace third-order effects; shows some self-awareness by hedging with 'also known as' but does not reflect on why it changed its primary answer; checks the question against multiple candidate terms but never explicitly verifies which is most appropriate to the described mechanism; acknowledges multiple possible labels but presents immortal time bias with high confidence without clear uncertainty structure; systematically surfaces healthy user bias, healthy survivor bias, immortal time bias, and informative censoring, comparing several; most derivation steps are shown but the jump from healthy user bias to immortal time bias as the 'single most precise' term lacks explicit justification; correctly avoids treating the pet-longevity correlation as established causation, consistent with the negative gate directive; avoids causation-from-observation and correlation-to-causation leaps throughout; reasoning is largely linear — introduces multiple terms sequentially rather than branching and gating as the topology suggests.",
+  "timestamp": "2026-03-23T03:46:44.702255+00:00"
+}

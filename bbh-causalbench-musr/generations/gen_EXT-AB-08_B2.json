@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-08",
+  "condition": "B2",
+  "output": "Yes. Here's the chain:\n\n1. **Jerry lies** (given).\n2. **Millicent** says Jerry tells the truth → that's wrong → **Millicent lies**.\n3. **Sal** says Millicent tells the truth → that's wrong → **Sal lies**.\n4. **Amberly** says Sal tells the truth → that's wrong → **Amberly lies**.\n5. **Shenna** says Amberly lies → that's correct → **Shenna tells the truth**.",
+  "timestamp": "2026-03-20T10:09:09.733797+00:00"
+}

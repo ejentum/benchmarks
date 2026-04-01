@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-24",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: extract_priority_resolution; extract_territory_partition\nSuppress: infinite_space; spatial_anomaly_normalization\n\nPartition claims on row 9 seats carefully. Do not normalize away seat-type distinctions or assume unbounded availability.\n[END REASONING CONTEXT]\n\n## Solution\n\n**Economy row layout (6 seats):** A (window) | B (middle) | C (aisle) || D (aisle) | E (middle) | F (window)\n\n**Non-window seats in row 9:** B, C, D, E → **4 total**\n\n**Group of 8 across rows 9–10:**\n- 12 seats available (6 per row), 8 occupied → **4 seats free** across both rows\n- The group wants to sit \"together,\" so the most cohesive arrangement is to fill one row completely (6) and place 2 in the adjacent row\n- Since the problem presupposes the minor *can* sit in row 9, the group must have only 2 members in row 9 (with 6 filling row 10)\n- Those 2 group members in row 9, sitting together as part of the group, occupy 2 adjacent non-window seats (e.g., D and E, near the aisle connecting to their row-10 companions)\n\n**Remaining free seats in row 9:** 6 − 2 = 4, of which:\n- 2 are window (A, F)\n- 2 are non-window\n\n### Answer: **2** non-window seats in row 9 are available for the unaccompanied minor.",
+  "timestamp": "2026-03-22T22:00:36.006117+00:00"
+}

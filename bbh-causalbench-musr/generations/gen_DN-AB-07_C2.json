@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-07",
+  "condition": "C2",
+  "output": "**The answer is (B).**\n\nThe common structural pattern is an **information flow failure within organizational hierarchy**. In all three cases:\n\n- **Accurate risk signals were generated** by domain experts closest to the problem\n- **The organizational structure filtered, attenuated, or suppressed those signals** before they could influence the actual decisions\n- The failure wasn't a lack of knowledge — it was a structural inability to route knowledge to where it mattered\n\n(A) is reductive — the leaders weren't necessarily incompetent in general, they were operating in structures that insulated them from critical information. (C) captures a symptom but not the mechanism — *why* was speed prioritized? Because the structure rewarded schedule adherence and penalized dissent. (D) is the \"bad apple\" fallacy — it misses that the failure is systemic, not individual.\n\nThe key insight: **the information existed but the structure prevented it from influencing decisions.** That's a topology problem, not a personnel problem.",
+  "timestamp": "2026-03-20T17:50:44.395113+00:00"
+}

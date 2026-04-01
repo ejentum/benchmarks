@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-18",
+  "condition": "A",
+  "output": "**The answer is (B) Negative.**\n\nUnder the reverse-causal model, prolific posters produce more content but each additional post dilutes quality/attention. So as posting frequency increases, likes-per-post should **decrease** — a negative relationship.\n\nThis is exactly what the data scientist is pointing out: the observed correlation between total likes and posting frequency is driven by volume, not by each post being more liked. When you normalize by post count, the relationship inverts.",
+  "timestamp": "2026-03-22T16:35:03.224283+00:00"
+}

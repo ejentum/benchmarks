@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-15",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer is Yes but agent concluded No/not without isolation, so wrong answer despite sound causal reasoning approach; Multi-level analysis with DAG construction, counterfactual reasoning, and method comparison across multiple dimensions; Some self-monitoring via suppression signals and awareness of attribution pitfalls, but overcorrected away from the correct answer; Verified via counterfactual test and compared both methods systematically; Excellent epistemic honesty distinguishing correlation from causation and noting what would be needed for attribution; Systematically evaluated both methods, considered multiple sources of variation, and explained why alternatives were rejected; Full derivation trail from DAG structure through method evaluation to final verdict, fully reproducible",
+  "timestamp": "2026-03-23T11:12:37.033493+00:00"
+}

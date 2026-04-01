@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-03",
+  "condition": "A",
+  "output": "**The 3.2% monthly churn rate.**\n\nThat figure compounds to roughly **32–33% annual churn** (1 − 0.968¹² ≈ 0.323). For enterprise SaaS, best-in-class annual gross churn is **< 5–7%**. Losing a third of your customers every year is a severe problem that directly contradicts the \"outstanding fundamentals\" framing.\n\nIt also creates a **logical tension with the 135% NRR**. Net Revenue Retention includes expansion revenue from surviving customers. To achieve 135% NRR while churning ~33% of logos annually, the remaining accounts would need to expand aggressively — meaning growth is heavily dependent on upselling a shrinking customer base rather than durable retention. That's a leaky bucket: the $8M→$22M ARR trajectory is being fueled by new bookings and expansion papering over massive logo losses.\n\nAt 32% annual churn, the company is essentially replacing a third of its revenue base every year just to stay flat — making the 14-month CAC payback period far less \"efficient\" than it appears, since many customers won't survive long enough to generate meaningful lifetime value.",
+  "timestamp": "2026-03-22T16:06:38.344730+00:00"
+}

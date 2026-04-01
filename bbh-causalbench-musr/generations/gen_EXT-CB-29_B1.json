@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-29",
+  "condition": "B1",
+  "output": "## Causal Analysis\n\nLet me work through this step by step using the structural causal model defined by the problem.\n\n**Variables:**\n- **U** (Unobserved confounders): active or inactive\n- **Z** (Treatment assignment): assigned or not\n- **X** (Drug taken): all or none\n- **Y** (Cholesterol level): low or not\n\n**Structural equations (given):**\n- **X = U AND Z** — \"confounder active *and* assignment of drug treatment causes taking of all assigned drugs\"\n- **Y = U OR X** — \"confounder active *or* taking of all assigned drugs causes low cholesterol\"\n\n**Observations:** Z = 1 (assigned treatment), U = 0 (confounder inactive)\n\n**Counterfactual query:** Y_{X=0} — would cholesterol be low if the patient takes no drugs?\n\nSince U is fixed at 0 (observed), and we intervene to set X = 0:\n\n> Y = U OR X = 0 OR 0 = **0**\n\n**No.** The patient would **not** have low cholesterol if not taking any assigned drugs. With the confounder inactive, the only pathway to low cholesterol is through taking the drug — remove that, and cholesterol stays high.",
+  "timestamp": "2026-03-20T09:46:16.572366+00:00"
+}

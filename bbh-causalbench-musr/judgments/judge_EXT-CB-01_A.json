@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-01",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the correct answer 'Yes' with valid probabilistic reasoning via the causal chain S→T→LC; goes three levels deep: causal chain inference, Bayesian update P(S=1|LC=0)<P(S=1), and collider activation from conditioning on LC with gender as confounder; shows awareness of the gender complication and explicitly addresses it as a diluting but non-reversing factor, though no named biases or mid-stream course corrections; restates conclusions in a summary table but does not re-derive from an independent angle or apply boundary/counterfactual tests; acknowledges that the gender confounder complicates inference without stating explicit confidence levels or specifying what parameter values would flip the conclusion; identifies and evaluates the gender-as-protective-factor alternative explanation and explains why it doesn't reverse the main inference; causal graph, probabilistic inequality, and confounder interaction are all shown so a third party could reproduce the reasoning chain without external context.",
+  "timestamp": "2026-03-23T09:47:34.368637+00:00"
+}

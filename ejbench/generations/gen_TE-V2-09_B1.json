@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-09",
+  "condition": "B1",
+  "output": "**Yes, Campaign B maintains effective recall significantly longer.**\n\nSolving R(t) = 20% for each campaign:\n\n**Campaign A** (R₀=80%, τ=30):\n```\n0.20 = 0.80 · e^(-t/30)\ne^(-t/30) = 0.25\nt = -30 · ln(0.25) = 30 · ln(4) ≈ 41.6 days\n```\n\n**Campaign B** (R₀=40%, τ=90):\n```\n0.20 = 0.40 · e^(-t/90)\ne^(-t/90) = 0.50\nt = -90 · ln(0.50) = 90 · ln(2) ≈ 62.4 days\n```\n\n**Campaign B stays above 20% for ~62 days vs. Campaign A's ~42 days — roughly 21 days longer.**\n\nThe intuition: τ (the decay constant) matters more than R₀ for long-term effectiveness. Campaign A starts at 80% but decays fast (τ=30), losing half its recall every ~21 days. Campaign B starts at just 40% but decays three times slower (τ=90), losing half every ~62 days. The slower decay more than compensates for the lower starting point.\n\nThis is a common pattern in marketing — high-reach campaigns create a spike that fades quickly, while sustained/targeted campaigns build slower but more durable brand memory.",
+  "timestamp": "2026-03-22T21:44:40.032961+00:00"
+}

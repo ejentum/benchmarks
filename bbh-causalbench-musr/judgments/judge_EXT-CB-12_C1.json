@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-12",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid Bayesian calculation; Goes beyond surface by connecting result to causal structure (zuph→uvzi pathway); RA²R signals show awareness of potential biases like correlation-causation leaps; Basic verification via comparison table and sanity check that result aligns with causal structure; Presents conclusion confidently with only hedging language ('makes sense'), no structured uncertainty; Mentions causal pathway as explanation but doesn't consider alternative interpretations or why the lift is modest; Every step fully derived with explicit arithmetic, fully reproducible",
+  "timestamp": "2026-03-23T12:58:24.341418+00:00"
+}

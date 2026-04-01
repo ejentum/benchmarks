@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-04",
+  "condition": "B2",
+  "output": "The answer is **(C) 2pm to 8pm**.\n\nEmily's confirmed schedule fills 10am–2pm (train station, electronic store, Statue of Liberty walk). The soccer field closes at 8pm. The only open window is 2pm to 8pm.",
+  "timestamp": "2026-03-20T09:52:59.884054+00:00"
+}

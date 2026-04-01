@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-15",
+  "condition": "A",
+  "output": "This is a causal inference question about confounding and stratification.\n\n**Setup:** Two independent causes affect skin health — tanning salon and beach. No causal link exists between tanning and beach themselves.\n\n**Method 1** (raw correlation) captures the overall association between tanning and skin, but any variation you observe could be driven by beach-going, tanning, or both. You can't distinguish the sources.\n\n**Method 2** (stratify by beach) holds beach-going constant within each subgroup, so any remaining correlation between tanning and skin within those subgroups is attributable to tanning itself.\n\n**Answer:** If skin health varies significantly, it is **not necessarily** due to tanning salon treatment. Beach-going is an alternative explanation for the variation. Method 2 is the more reliable approach — if the tanning-skin correlation persists *within* each beach subgroup, then yes, tanning is likely a real cause. If the correlation disappears after stratifying, the variation was driven by beach-going, not tanning.\n\nIn short: **Method 2 is needed to make that attribution.** Method 1 alone cannot tell you whether tanning is the cause.",
+  "timestamp": "2026-03-20T09:21:36.504239+00:00"
+}

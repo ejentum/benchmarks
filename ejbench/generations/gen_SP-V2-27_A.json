@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-27",
+  "condition": "A",
+  "output": "`Others` have **read** permission on `/data/public/secret.txt`.\n\n`secret.txt` has no explicit permissions, so it inherits from its parent `/data/public`, which explicitly sets `Others=read`.",
+  "timestamp": "2026-03-22T16:42:04.218222+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-06",
+  "condition": "C2",
+  "output": "No — Method 2 is more correct.\n\n**Why:** This is a classic **collider bias** (Berkson's paradox) scenario.\n\nIn your world, the causal structure is:\n\n```\nTalent ──→ Admission ←── Effort\n```\n\nTalent and Effort have **no causal relationship** and **no common cause**. They are independent.\n\n- **Method 1** conditions on admission status (the collider). This **opens a spurious path** between Talent and Effort. Among admitted students, you'd see a negative correlation — high-talent admits needed less effort, and high-effort admits needed less talent — but this association is entirely an artifact of conditioning on their shared effect. It does not reflect any causal (or even unconditional) relationship.\n\n- **Method 2** looks at the unconditional correlation between Talent and Effort, which correctly reflects the true state of the world: **no association**, since neither causes the other and nothing causes both.\n\nTo understand how Talent affects Effort, Method 2 is the correct approach. Method 1 would mislead you into thinking Talent and Effort are related when they are not.",
+  "timestamp": "2026-03-20T10:57:20.308278+00:00"
+}

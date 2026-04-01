@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-19",
+  "condition": "B1",
+  "output": "## Causal Analysis\n\n**Causal graph:**\n\n```\nQwiu (unobserved) → Jyka → Yupt → Kwox\nQwiu ─────────────────────────────→ Kwox\n```\n\n**Key insight:** Intervening on Kwox (do(Kwox=0)) severs all incoming arrows to Kwox. Since Jyka and Yupt are *upstream* of Kwox, their joint distribution is unaffected by this intervention.\n\nTherefore:\n\n**P(Jyka=1, Yupt=1 | do(Kwox=0)) = P(Jyka=1, Yupt=1)**\n\nComputing:\n\nP(Jyka=1, Yupt=1) = P(Yupt=1 | Jyka=1) × P(Jyka=1) = 0.92 × 0.88 = **0.8096**\n\n**Yes, it is likely (~81%).** Intervening to force Kwox low does not change the upstream causal mechanism. Jyka is present with 88% probability, and when present, it causes Yupt with 92% probability. The intervention on the downstream variable Kwox cannot propagate backwards to alter these upstream relationships.",
+  "timestamp": "2026-03-20T09:42:07.983549+00:00"
+}

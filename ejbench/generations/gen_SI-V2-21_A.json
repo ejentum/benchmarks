@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-21",
+  "condition": "A",
+  "output": "## Aquifer Simulation\n\n**Start:** 1,000,000 m³ | **Total withdrawal:** 100,000 m³/year\n\n| Phase | Years | Recharge | Net change/yr | Level range |\n|-------|-------|----------|---------------|-------------|\n| 1 | 1–10 | 60,000 | −40,000 | 1,000,000 → 600,000 |\n| 2 | 11–14 | 40,000 | −60,000 | 600,000 → 360,000 |\n| 3 | 15–16 | 20,000 | −80,000 | 360,000 → 200,000 |\n\nKey transitions:\n- **Year 10:** Level hits 600,000 — recharge drops to 40,000\n- **Year 14:** Level hits 360,000 (below 400,000) — recharge drops to 20,000\n- **Year 16:** Level reaches exactly **200,000 m³**\n\n**The aquifer first reaches 200,000 m³ in Year 16.**\n\nThe accelerating decline is the critical insight — each recharge threshold crossed makes the problem worse faster (net loss goes from 40k → 60k → 80k per year), a classic positive feedback loop in resource depletion.",
+  "timestamp": "2026-03-22T16:01:55.917191+00:00"
+}

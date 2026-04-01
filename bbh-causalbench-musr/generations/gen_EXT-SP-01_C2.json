@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-01",
+  "condition": "C2",
+  "output": "**No**\n\nLet me trace the movements using a coordinate system (starting at origin, facing \"forward\" = +Y):\n\n| Step | Direction | Δ(X, Y) | Position |\n|---|---|---|---|\n| Start | — | — | (0, 0) |\n| 1 back | −Y | (0, −1) | (0, −1) |\n| 9 left | −X | (−9, 0) | (−9, −1) |\n| 2 back | −Y | (0, −2) | (−9, −3) |\n| 6 forward | +Y | (0, +6) | (−9, 3) |\n| 4 forward | +Y | (0, +4) | (−9, 7) |\n| 4 back | −Y | (0, −4) | (−9, 3) |\n| 3 right | +X | (+3, 0) | **(−6, 3)** |\n\nFinal position is (−6, 3), not (0, 0). You do **not** return to the starting point.",
+  "timestamp": "2026-03-20T10:54:07.563121+00:00"
+}

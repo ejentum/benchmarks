@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-10",
+  "condition": "B2",
+  "output": "A typical person would answer:\n\n**No**\n\nMost people would not consider the neighbor to have caused the injury. The neighbor was doing a favor by driving the child home, and the drunk driver was the direct cause of the accident. People intuitively distinguish between enabling conditions (the neighbor driving) and actual causes (the drunk driver hitting them). The neighbor had no intent to harm and was acting helpfully — ordinary moral judgment wouldn't assign causal responsibility to him.",
+  "timestamp": "2026-03-20T09:54:41.300094+00:00"
+}

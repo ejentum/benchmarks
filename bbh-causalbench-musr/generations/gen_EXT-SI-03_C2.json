@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-03",
+  "condition": "C2",
+  "output": "Let me trace through each swap:\n\n**Start:** Alice=Ulysses, Bob=Frankenstein, Claire=Lolita\n\n1. **Claire and Bob swap:** Alice=Ulysses, Bob=Lolita, Claire=Frankenstein\n2. **Bob and Alice swap:** Alice=Lolita, Bob=Ulysses, Claire=Frankenstein\n3. **Claire and Bob swap:** Alice=Lolita, Bob=Frankenstein, Claire=Ulysses\n\n**Bob has Frankenstein. The answer is (B).**",
+  "timestamp": "2026-03-20T10:59:18.300647+00:00"
+}

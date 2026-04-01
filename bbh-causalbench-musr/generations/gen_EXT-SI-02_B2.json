@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-02",
+  "condition": "B2",
+  "output": "(B) white present.\n\nTracking the swaps:\n\n1. **Bob ↔ Claire:** Bob gets blue, Claire gets white.\n2. **Claire ↔ Alice:** Claire gets pink, Alice gets white.\n3. **Claire ↔ Bob:** Claire gets blue, Bob gets pink.\n\n**Final state:** Alice = white, Bob = pink, Claire = blue.",
+  "timestamp": "2026-03-20T10:00:30.482654+00:00"
+}

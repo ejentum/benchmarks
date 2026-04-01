@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-19",
+  "condition": "B2",
+  "output": "(B).\n\nThe arithmetic is straightforward:\n\n- **Revenue** drops ~20%.\n- **70% of spending** (defense + Social Security + Medicare) is held constant or increases.\n- **Deficit elimination** requires total spending ≤ total revenue.\n\nThat leaves only the remaining **30% of the budget** to absorb the entire revenue shortfall *plus* the existing deficit *plus* the defense spending increase. The cuts required to that 30% slice would exceed 100% — you can't cut spending below zero.\n\nOptions A, C, and D are the rhetorical escape hatches politicians use (growth will pay for it, depends on assumptions, eliminate waste), but none survive the basic constraint math. The four commitments are individually defensible but collectively incoherent.",
+  "timestamp": "2026-03-20T17:37:31.718313+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-04",
+  "condition": "B1",
+  "output": "Working left to right:\n\nFrom constraints 3 & 4: **white → brown → orange**\nFrom constraint 1: **orange → gray**\n\nCombined chain: **white, brown, orange, _, gray**\n\nConstraint 2 says green is second from the right, so green fills position 4:\n\n**white, brown, orange, green, gray**\n\nAll constraints satisfied. The answer is **(D) The gray book is the rightmost**.",
+  "timestamp": "2026-03-20T09:46:35.789877+00:00"
+}

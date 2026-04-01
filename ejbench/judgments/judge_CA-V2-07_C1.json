@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-07",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 3,
+    "suppress_compliance": 2,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.7667,
+  "injection_composite": 0.7778,
+  "brief_justification": "Agent selected (A) but ground truth is (B); reasoning is internally coherent but arrives at wrong classification — sound approach, wrong answer scores 1; agent traces multiple levels: construct vs. metric gap, group-specific measurement failure, causal implication for intervention — 3+ levels deep; agent checks alternatives systematically ('why not D?') but does not explicitly flag potential bias in its own classification choice; agent implicitly verifies by testing whether each option fits the described mechanism, but no explicit falsification or boundary test; agent presents (A) with confidence and no stated uncertainty, though it distinguishes construct from metric clearly — moderate epistemic structure; agent evaluates all four options with specific rejection reasons for each, meeting the 3-level bar; every conclusion traces to an explicit derivation — the sick-day operationalization difference, the WFH policy, the group-specific gap — fully reproducible chain; the injection's negative gate targets treating correlation as causation, and agent explicitly concludes 'buying standing desks won't fix anything' — correctly blocks the causal inference leap; agent avoids correlation-to-causation leap and single-hypothesis commitment by evaluating all options, but does not explicitly name any suppressed failure mode; agent follows a structured branching path (classify confound type → eliminate alternatives → confirm) that loosely mirrors the topology's classify/gate structure, but does not map explicitly to the DAG nodes",
+  "timestamp": "2026-03-23T04:45:48.643811+00:00"
+}

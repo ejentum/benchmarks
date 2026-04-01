@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-19",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.8667,
+  "injection_composite": 0.7778,
+  "brief_justification": "Arrives at (C) with exact correct logic showing P1+P2 need 450 from 400 available positions; traces second-order effects including why (A) is weaker structurally and would dissolve with more warehouse space; shows some reasoning awareness by noting (A) would dissolve but doesn't name biases or course-correct mid-analysis; verifies via two methods — cumulative deficit (450>400) and concrete sequential fill (150+50+200=250<300); distinguishes stronger vs weaker proofs of infeasibility but doesn't formally state confidence levels or what assumptions could change conclusion; explicitly evaluates all four options with specific rejection reasons for each; zone map plus step-by-step fill walkthrough allows full reproduction with no external context needed; avoids infinite-space bias and correctly enforces capacity limits but doesn't explicitly name the anti-pattern; no infinite space bias, no overflow ignoring, concise output with no verbose retention — clean compliance with suppressed modes; follows container→capacity→enumerate→compare→flag topology path reasonably well but doesn't make branches/gates structurally visible in reasoning presentation",
+  "timestamp": "2026-03-23T05:12:07.566084+00:00"
+}

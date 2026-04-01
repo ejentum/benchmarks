@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-13",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: apply_incentive_compatibility; apply_stable_equilibria; apply_cooperative_signals\nSuppress: ad_hoc_negotiation; individual_payoff_bias\nCognitive Style: strategic_game_theory\n[END REASONING CONTEXT]\n\nThe deadweight loss triangle has:\n- **Base** = tax wedge = $25\n- **Height** = change in quantity = 140 - 110 = 30\n\nDWL = ½ × base × height = ½ × 25 × 30 = **$375**\n\nThe answer is **(B) $375**.",
+  "timestamp": "2026-03-22T21:00:34.233544+00:00"
+}

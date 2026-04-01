@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-19",
+  "condition": "C2",
+  "output": "**The cockpit dashboard.**\n\nMike personally moved the logbook from the chart table to the cockpit dashboard so Jack would notice it. From Mike's perspective, that is the last known location of the logbook — he has no reason to know Jack later grabbed it and stuffed it into his personal bag. So if asked to find it, Mike would check the cockpit dashboard, where he placed it.",
+  "timestamp": "2026-03-20T10:58:16.218179+00:00"
+}

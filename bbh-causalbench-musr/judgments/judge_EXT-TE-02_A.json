@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-TE-02",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (B) with valid identification of the 6am-8am gap; only surface-level analysis — states the gap without systematically working through why each time slot is occupied; no self-monitoring, assumption-checking, or mid-analysis course correction; implicitly claims all other times are accounted for but does not verify each slot explicitly; presents conclusion without structured uncertainty or confidence framing, only mild hedging via 'only gap'; acknowledges other times are covered but does not evaluate each wrong option (A/C/D) with specific reasons; shows the key inference but omits the full derivation eliminating each alternative option, leaving partial reproducibility",
+  "timestamp": "2026-03-23T09:31:41.297357+00:00"
+}

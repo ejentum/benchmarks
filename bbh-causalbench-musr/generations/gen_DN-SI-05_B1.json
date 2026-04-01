@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-05",
+  "condition": "B1",
+  "output": "**The answer is (B).**\n\nThe data describes a classic reinforcing feedback loop:\n\n1. **Suspension → academic decline** (3x more likely to fall behind)\n2. **Academic decline → behavioral issues** (2x more likely)\n3. **Behavioral issues → more suspensions** (loop closes)\n\nThe suspension rate more than doubles (5% → 12%), feeding more students into this cycle. Each iteration grows the population of academically disengaged students. The 3-day removal provides marginal short-term relief for classrooms but manufactures the very conditions that produce more disruption long-term.\n\nOptions A, C, and D all ignore this compounding dynamic.",
+  "timestamp": "2026-03-20T17:15:41.200748+00:00"
+}

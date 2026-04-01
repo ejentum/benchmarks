@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-09",
+  "condition": "A",
+  "output": "The box.\n\nFrom George's perspective, he moved the key from the box to the office. He then went to the feed storage area. He never witnessed David retrieve the key from the office and return it to the box. However, George's **original knowledge** is that the key's usual/assigned spot is the box — he took it *from* there. He also knows he brought it to the office.\n\nSo George knows of two candidate locations: the **box** (its designated home) and the **office** (where he left it). The most likely place he'd look first is **the office**, since that's where *he* last put it.\n\nBut if the question asks where the key actually is that George would eventually find it — it's back in **the box**, where David returned it.\n\n**Most likely answer: George would look in the office first** (where he believes he left it), since he's unaware David moved it back to the box.",
+  "timestamp": "2026-03-20T09:18:27.188279+00:00"
+}

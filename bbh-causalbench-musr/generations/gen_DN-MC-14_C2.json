@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-14",
+  "condition": "C2",
+  "output": "(B).\n\nThe three claims are mutually contradictory:\n\n- **1 vs 2:** If the model learns from user interactions, user data has influenced its parameters. Claiming it \"never stores or memorizes\" that data is at best misleading — the data's influence persists in the weights.\n- **3 vs 2:** \"Complete deletion\" after learning would require retraining from scratch without that user's data (machine unlearning), which is computationally impractical at scale and not what any standard training pipeline does.\n\nThe system as described would need to simultaneously not retain data, learn from data, and fully un-learn data on request — that's internally inconsistent.",
+  "timestamp": "2026-03-20T17:57:08.317038+00:00"
+}

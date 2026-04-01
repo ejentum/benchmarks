@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-01",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: reinforcing_loop_detection; balancing_loop_detection; state_delay_mapping\nSuppress: treating multi-variable systems as simple linear cause-effect; fixating on a single variable while ignoring interactions\n[END REASONING CONTEXT]\n\nTracing through the system carefully, noting that B and C are computed from **old** values, while A uses the **newly computed** C:\n\n**Cycle 1** — Start: A=10, B=0, C=0\n- B_new = 2×A = 20\n- C_new = 3×B = 0\n- A_new = A − C_new = 10 − 0 = 10\n- → A=10, B=20, C=0\n\n**Cycle 2** — Start: A=10, B=20, C=0\n- B_new = 2×A = 20\n- C_new = 3×B = 60\n- A_new = A − C_new = 10 − 60 = −50 → **floored to 0**\n- → A=0, B=20, C=60\n\n**Cycle 3** — Start: A=0, B=20, C=60\n- B_new = 2×A = 2×0 = **0**\n- C_new = 3×B = 60\n- A_new = A − C_new = 0 − 60 → floored to 0\n- → A=0, B=0, C=60\n\n**After 3 complete cycles, B = 0.**\n\nThe balancing loop (A→B→C⊣A) dominates: C's inhibition of A drives A to zero by cycle 2, which starves B of input by cycle 3. D's amplification never activates because A never exceeds the threshold T=15. The system collapses to a fixed point at (A=0, B=0, C=60).",
+  "timestamp": "2026-03-22T21:33:14.248409+00:00"
+}

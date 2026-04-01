@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-15",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (shelf) with valid theory-of-mind reasoning; traces three levels: actual location, observation window, belief state; suppression of 'static snapshot bias' shows some meta-cognitive awareness; verifies by checking Maria's location during the move; acknowledges belief vs reality distinction but doesn't quantify uncertainty; mentions actual location (desk) but doesn't deeply evaluate why Maria might check there instead; full derivation chain from book trajectory to Maria's knowledge state is explicitly shown and reproducible",
+  "timestamp": "2026-03-23T13:26:01.848219+00:00"
+}

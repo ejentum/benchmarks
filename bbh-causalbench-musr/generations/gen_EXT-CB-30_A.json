@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-30",
+  "condition": "A",
+  "output": "This is a causal reasoning problem. Let me work through it step by step.\n\n**Given:**\n- Having a sister → low blood pressure (direct effect)\n- Having a sister + blood pressure → heart condition (joint effect)\n- Specifically: having a sister AND high blood pressure → healthy heart\n\n**Counterfactual question:** What happens if the person does **not** have a sister?\n\n**Tracing the causal chain:**\n\n1. **No sister → blood pressure:** We're only told \"having a sister causes low blood pressure.\" Without a sister, and with no other factors in this world, blood pressure would be high (the default/opposite).\n\n2. **No sister + high blood pressure → heart condition:** We're told \"having a sister AND high blood pressure causes a healthy heart.\" But the person doesn't have a sister, so this rule doesn't apply.\n\n3. Since the only rule giving a healthy heart requires **both** having a sister **and** high blood pressure, and the person lacks a sister, there is no mechanism in this world to produce a healthy heart.\n\n**Answer: No.** The person would **not** have a healthy heart if not having a sister. The healthy heart condition requires having a sister (combined with high blood pressure), and without a sister, that condition isn't met.",
+  "timestamp": "2026-03-20T09:27:14.958891+00:00"
+}

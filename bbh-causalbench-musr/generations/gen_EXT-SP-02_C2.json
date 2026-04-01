@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-02",
+  "condition": "C2",
+  "output": "Let me work through this step by step.\n\n**Starting point:** (0, 0), facing north (arbitrary).\n\n1. **Take 3 steps** → move to (0, 3), facing north\n2. **Turn around** → now facing south\n3. **Take 5 steps** → move to (0, -2), facing south\n4. **Turn right** → now facing west\n5. **Turn right** → now facing north\n6. **Take 1 step** → move to (0, -1), facing north\n7. **Take 1 step** → move to (0, 0), facing north\n\nFinal position: (0, 0) — back at the starting point.\n\n**Yes**",
+  "timestamp": "2026-03-20T10:54:18.820308+00:00"
+}

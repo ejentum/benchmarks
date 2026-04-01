@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-04",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "The correct answer is self-organization, not emergence — the agent inverts the hierarchy, claiming self-organization is a subtype of emergence when the question maps directly to self-organization as the structural principle; the agent identifies relevant properties (local-only information, no central controller, simple rules, global coherence) which goes one level beyond the surface; the agent never questions its own hierarchy claim or considers that self-organization might be the target term rather than a subtype; no counterfactual check, no boundary testing, and no re-derivation from the examples to validate the emergence-over-self-organization claim; the agent asserts the hierarchy with confidence and no uncertainty markers despite this being a contested taxonomic question in complexity science; self-organization is mentioned but immediately dismissed as a subtype rather than genuinely evaluated as the candidate answer; the claim that self-organization is a subtype of emergence is asserted without citation, derivation, or logical chain, leaving no reproducible audit trail for that key premise.",
+  "timestamp": "2026-03-23T02:18:00.959221+00:00"
+}

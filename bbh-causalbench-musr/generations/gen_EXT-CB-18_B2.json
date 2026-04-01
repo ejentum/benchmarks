@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-18",
+  "condition": "B2",
+  "output": "## Causal Analysis\n\nLet me map out the causal graph and trace through the logic.\n\n**Causal Structure:**\n- U (confounder) → Coffee, U → Salary\n- Proximity → Coffee\n- Coffee → Salary\n\n**Functional Equations:**\n- Coffee = U **AND** Proximity\n- Salary = U **OR** Coffee\n\n**Observed Facts:**\n- U = active (1)\n- Proximity = far (0)\n\n**Deriving values:**\n- Coffee = 1 AND 0 = **0** (no coffee — the AND gate requires both confounder active *and* close to college)\n- Salary = 1 OR 0 = **1** (high salary)\n\n**Answer: No.** The high salary is not because the person drank coffee. The person doesn't drink coffee at all under these conditions (far from college blocks the AND gate). The salary is high entirely because the confounder is active, which has a direct path to salary (U → S) that bypasses coffee completely.\n\nEven if we frame this as an interventional question — \"if we force salary high, was coffee the mechanism?\" — the answer remains no. The only active path producing the high salary is U → S. The path through coffee (U → C → S) is blocked because proximity = far, so C = 0. Coffee plays no role here.",
+  "timestamp": "2026-03-20T10:02:59.114491+00:00"
+}

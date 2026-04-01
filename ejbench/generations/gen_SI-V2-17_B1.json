@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-17",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: apply_equilibrium_awareness\nSuppress: assumed_convergence; convergence_claim_without_stability_proof\nCognitive Style: dynamic_analysis\n[END REASONING CONTEXT]\n\nLet me compute each year explicitly using the recurrence **N(t+1) = N(t) × 0.5 + 100**:\n\n| Year | Population |\n|------|-----------|\n| t=0 | 500 |\n| t=1 | 500 × 0.5 + 100 = **350** |\n| t=2 | 350 × 0.5 + 100 = **275** |\n| t=3 | 275 × 0.5 + 100 = **237.5** |\n| t=4 | 237.5 × 0.5 + 100 = **218.75** |\n\n**Yes — the population drops below 220 during year 4**, reaching 218.75 at t=4.\n\n**Equilibrium verification:** The fixed point N* satisfies N* = 0.5·N* + 100 → N* = 200. The system is stable (the multiplier 0.5 has magnitude < 1), so it converges monotonically toward 200 from above — confirmed by the trajectory above, which decreases each year and approaches 200 without oscillation.",
+  "timestamp": "2026-03-22T21:02:14.781000+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-03",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid conditional probability calculations; Goes one level beyond surface by distinguishing observational from interventional queries; Notes the observational vs intervention distinction showing some reasoning awareness; Mentions suppression of causation leaps but doesn't verify the answer from a different angle; Presents answer confidently without discussing assumptions about the causal model; Briefly acknowledges the observational vs interventional distinction but doesn't evaluate alternative interpretations; Full derivation chain from givens to conditionals is clearly shown and reproducible",
+  "timestamp": "2026-03-23T11:03:11.326555+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-05",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies the claim as false and matches ground truth with valid supporting examples; goes multi-level by providing five distinct institutional counterexamples plus a meta-critique of the Westphalian myth via Osiander, tracing second-order historiographical implications; proceeds linearly without explicitly naming potential biases or checking whether its own framing of 'overriding sovereignty' is consistent across examples; cites specific legal cases and dates (Costa v ENEL 1964, 2005 World Summit) to anchor claims but does not apply counterfactual tests or boundary checks; acknowledges contested reach of the ICC and notes voluntary nature of EU sovereignty transfer, but does not formally distinguish confidence levels or state what evidence would change the conclusion; does not seriously evaluate the strongest counterargument—that voluntary sovereignty cession (EU) or temporary occupation (post-WWII) may not qualify as 'overriding' sovereignty in the sense the passage intends; most conclusions are traceable to named cases and dates, but the historiography point about Osiander is asserted without derivation and some intermediate steps (e.g., how WTO rulings translate to sustained sovereignty override) are skipped.",
+  "timestamp": "2026-03-23T02:26:35.019479+00:00"
+}

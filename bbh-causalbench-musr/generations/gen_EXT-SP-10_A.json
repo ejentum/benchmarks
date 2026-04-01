@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-10",
+  "condition": "A",
+  "output": "The **inspection area**.\n\nHere's the reasoning: The ancient coin was originally discovered at the excavation site. Martha moved it (along with the magnifying glass) to the **inspection area** for examination. Later, Tom also passed the coin to the **inspection area**. The coin is never described as being moved from the inspection area after that point.\n\nJenny was present throughout, observing Martha's work and the flow of artifacts. She would know the coin's last known location is the **inspection area**.",
+  "timestamp": "2026-03-20T09:18:39.082667+00:00"
+}

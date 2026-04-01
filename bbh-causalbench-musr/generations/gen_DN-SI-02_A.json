@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-02",
+  "condition": "A",
+  "output": "**The answer is (B): Net revenue loss because satisfaction-driven reimbursement cuts exceed labor savings.**\n\nHere's the causal chain:\n\n1. **10% staffing cut** shifts the nurse-to-patient ratio from 1:4 to roughly 1:4.4 — dangerously close to the 1:5 threshold where errors spike.\n2. **Wait times increase** — fewer nurses means slower throughput. The current 22-minute average has only 8 minutes of buffer before hitting 30, where 20% of patients leave (lost revenue).\n3. **Patient satisfaction drops** — longer waits, less attentive care, and increased error rates all erode the 78/100 score. It only needs to fall 8 points to breach the 70 threshold.\n4. **Below 70 triggers a 15% reimbursement cut** — this is a structural revenue hit that applies across *all* insured patients, not just the margin saved on nursing labor.\n\nThe 10% labor savings is a linear, first-order effect. The reimbursement penalty is a nonlinear second-order effect that scales with total patient volume and easily dwarfs the staffing savings. This is a classic case where cost-cutting in a system with threshold-based penalties produces a net negative outcome.",
+  "timestamp": "2026-03-20T17:00:46.539550+00:00"
+}

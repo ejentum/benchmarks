@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-30",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies the answer as No with accurate historical detail and named scholars; explores multiple levels including specific objections, Kuhn's own revisions, and field-wide evolution beyond Kuhn; proceeds linearly without naming potential biases or questioning its own framing; cites Kuhn's 1970 postscript as implicit acknowledgment but performs no counterfactual or boundary tests; acknowledges Kuhn's influence while critiquing the universality claim but does not state confidence levels or what would change the conclusion; systematically evaluates Lakatos, Popper, Laudan, and Feyerabend with their specific objections explained; every major claim traces to a named scholar or textual reference, sufficient for third-party reproduction",
+  "timestamp": "2026-03-23T02:54:28.243530+00:00"
+}

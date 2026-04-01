@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-23",
+  "condition": "A",
+  "output": "**No, it does not fit.** You need 47U but only have 42U available — you're 5U short.\n\nHere's the breakdown:\n\n| Equipment | Count | U each | Total U |\n|---|---|---|---|\n| Server Type A | 10 | 1U | 10U |\n| Server Type B | 5 | 2U | 10U |\n| Storage Array | 3 | 4U | 12U |\n| Network Switch | 4 | 1U | 4U |\n| UPS | 1 | 6U | 6U |\n| Patch Panel | 2 | 1U | 2U |\n| Airflow Spacers | 3 | 1U | 3U |\n| **Total** | | | **47U** |\n\nThe constraints make it even worse — position 42 is reserved for cable management, so you really only have **41U** usable, putting you **6U short**.\n\n**Options to make it fit:**\n1. **Reduce Server Type A** from 10 to 4 (saves 6U)\n2. **Remove one Server Type B** and one **Storage Array** (saves 2+4+1 spacer = 7U)\n3. **Use a second rack** and split the load\n4. **Challenge the spacer requirement** — if the storage arrays have front-to-back airflow and the rack has adequate ventilation, you might eliminate the 3U of spacers (still 3U short though)",
+  "timestamp": "2026-03-22T16:40:58.725197+00:00"
+}

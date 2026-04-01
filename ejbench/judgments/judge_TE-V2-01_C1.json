@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-01",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 1,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.4,
+  "injection_composite": 0.4444,
+  "brief_justification": "Agent arrives at exactly 150mg with valid arithmetic; Response merely restates the calculation provided in the problem without deeper exploration of pharmacokinetic implications or compounding effects; A reasoning context block appears but is a different injection fragment — no genuine mid-analysis reflection or assumption checking occurs; No counterfactual check, boundary test, or re-derivation from a different angle is attempted; Answer is presented as fully certain with no acknowledgment of simplifying assumptions (e.g., linear decay, instantaneous absorption); Only one approach is considered and no alternatives are mentioned; Dose-by-dose derivation steps are clearly shown and reproducible, though starting condition validation is absent; Agent correctly computes each dose's decay independently without treating the combined system as a static snapshot, but never explicitly names this avoidance; Agent avoids static snapshot bias and emergence blindness; deterministic point estimate is appropriate given the question's 'EXACT' framing, so only minor suppress-mode exposure; Response is entirely linear with no branching, gating, or looping structure that maps to the fork-join-gate topology provided in the injection.",
+  "timestamp": "2026-03-23T05:01:18.427441+00:00"
+}

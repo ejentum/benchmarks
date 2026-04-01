@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-09",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid conditional probability calculations; goes one level beyond surface by computing both conditional probabilities for comparison; minimal self-monitoring via the injected suppression signals but no explicit reflection on reasoning process; mentions the computation steps but doesn't verify from a different angle; presents conclusion confidently without discussing assumptions about the causal structure or why conditional probability suffices here; no alternative approaches considered (e.g., causal vs observational framing); full derivation trail from given probabilities to final answer is clearly shown and reproducible.",
+  "timestamp": "2026-03-23T12:56:44.107512+00:00"
+}

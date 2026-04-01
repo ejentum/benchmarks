@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-11",
+  "condition": "B1",
+  "output": "**(B) A filter bubble feedback loop where the trending algorithm converges on a narrow content niche, alienating the majority audience and reducing overall platform engagement despite serving power users well.**\n\nThis is a classic positive feedback loop / death spiral:\n\n1. **Seed bias** — Power users generate disproportionate signal (40% of users, but ~67% of views due to 3x rate).\n2. **Amplification** — Trending promotes what they watch, making niche content more visible.\n3. **Withdrawal** — Casual users (the majority) disengage from trending, removing their signal.\n4. **Reinforcement** — Less casual signal → even more power-user skew → more casual disengagement.\n\nEach cycle narrows the content distribution further. The system has no negative feedback mechanism to counteract this — it's a self-reinforcing loop.\n\nWhy the other options fail:\n\n- **(A)** Serving 40% well while losing 60% is a net engagement loss, not a success.\n- **(C)** Casual users don't convert when the content feels irrelevant — they leave.\n- **(D)** The algorithm optimizes on the data it receives. Dropping engagement from users who *stopped providing data* is invisible to it. It doesn't self-correct; it doubles down.",
+  "timestamp": "2026-03-20T17:20:06.194201+00:00"
+}

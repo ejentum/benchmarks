@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-08",
+  "condition": "C2",
+  "output": "Looking at Sarah's schedule, I need to find the gap where she had no observed activity.\n\n- **6am**: Woke up\n- **8am–2pm**: Electronic store\n- **2pm–3pm**: Driving to water park\n- **3pm–4pm**: Mall\n- **4pm–6pm**: Bakery\n- **6pm–8pm**: School\n- **After 8pm**: Construction site closed\n\nThe only unaccounted window is **6am to 8am**.\n\nThe answer is **(C) 6am to 8am**.",
+  "timestamp": "2026-03-20T10:53:28.650958+00:00"
+}

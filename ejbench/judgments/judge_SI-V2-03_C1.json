@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-03",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 1,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.5,
+  "injection_composite": 0.3333,
+  "brief_justification": "Arrives at exactly 188 mg-equivalents with valid step-by-step kinetic reasoning; explicitly tracks both drug and metabolite compartments separately showing one level beyond surface but no second-order effects or deeper analysis; proceeds linearly through arithmetic without reflecting on the reasoning method or potential misinterpretations of the problem; work is shown in a table enabling implicit verification but no explicit sanity check or re-derivation from an alternative angle; notes API unavailability and graceful degradation but treats the mathematical result as certain without acknowledging discrete vs. continuous metabolization assumptions; considers only one computational approach with no alternatives mentioned or evaluated; every intermediate value is shown in the table with full derivation reproducible by a third party; the Bayesian negative gate is irrelevant to this arithmetic task so the agent neither exhibits nor explicitly addresses it, defaulting to avoidance; the purely deductive single-method calculation falls into the suppressed 'deductive only' and 'single hypothesis lock' failure modes; the injected topology is a Bayesian inference graph with branches and gates that the agent completely ignores, following a flat linear arithmetic path instead.",
+  "timestamp": "2026-03-23T04:20:32.421023+00:00"
+}

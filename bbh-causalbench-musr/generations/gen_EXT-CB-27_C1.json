@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-27",
+  "condition": "C1",
+  "output": "**No.** Taking the stairs would not make penguin death less likely — it would make it *more* likely.\n\nThe counterfactual question is: for someone who took the elevator (30% penguin death), what would have happened had they taken the stairs instead?\n\nIn this self-contained world with no unmentioned confounders, the interventional probabilities are exactly as stated:\n\n- **Elevator:** P(death) = 30%\n- **Stairs:** P(death) = 75%\n\nSwitching from elevator to stairs would increase the probability of penguin death from 30% to 75%. So no, it would not be *less* likely — it would be substantially *more* likely.",
+  "timestamp": "2026-03-20T10:44:59.157676+00:00"
+}

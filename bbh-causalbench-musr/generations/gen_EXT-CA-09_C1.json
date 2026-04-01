@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-09",
+  "condition": "C1",
+  "output": "**Yes.**\n\nA typical person would answer **Yes** — Benni's fertilization caused the plants to dry out.\n\nAlthough the drying required *both* chemicals being applied (making both gardeners' actions necessary for the outcome), people strongly tend to assign causation to the **norm-violating** action. Benni deviated from Tom's explicit instructions by using B Y33R instead of A X200R. Alex followed the rules. This makes Benni's action the \"abnormal\" condition, and extensive research on causal cognition (e.g., Hitchcock & Knobe, Kominsky et al.) shows that people reliably judge norm-violating necessary conditions as *the* cause, while treating the norm-conforming necessary condition as a mere background enabler.",
+  "timestamp": "2026-03-20T10:17:10.145406+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-02",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer (B) with precise citation of Cohen's d benchmarks and clear rejection of the 'large effect' framing; explores three independent lines of evidence (d value, HDRS delta, NNT interpretation) and traces the statistical-vs-clinical significance distinction two levels deep; proceeds linearly without naming potential interpretive biases or questioning its own benchmark application; cross-validates the effect size against the report's own language and multiple metrics, though stops short of a counterfactual or boundary test; correctly separates statistical significance from clinical magnitude but does not identify what threshold or evidence would change the conclusion; implicitly addresses why A and D are tempting but does not name or systematically reject option C; every conclusion maps to a cited number or established benchmark, making the chain fully reproducible by a third party.",
+  "timestamp": "2026-03-23T02:24:02.380898+00:00"
+}

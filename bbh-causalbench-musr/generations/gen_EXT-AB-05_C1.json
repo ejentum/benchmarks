@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-05",
+  "condition": "C1",
+  "output": "Let me work through the constraints:\n\n1. **Green is rightmost** → position 5\n2. **Gray is right of Orange** → Orange ... Gray\n3. **Purple is left of Yellow** → Purple ... Yellow\n4. **Purple is right of Gray** → Gray ... Purple\n\nFrom constraints 2 and 4: **Orange ... Gray ... Purple**\n\nFrom constraint 3: **Purple ... Yellow**\n\nCombined chain: **Orange, Gray, Purple, Yellow, Green**\n\nPositions: 1=Orange, 2=Gray, 3=Purple, 4=Yellow, 5=Green\n\nThe second from the right (position 4) is **Yellow**.\n\nThe answer is **(D)**.",
+  "timestamp": "2026-03-20T10:46:36.952780+00:00"
+}

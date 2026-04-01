@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-20",
+  "condition": "A",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (No vs Yes) - the agent incorrectly assumed no background probability for Jyka and that P(Jyka)≈11%, when the problem states overall probabilities suggesting Jyka is likely present; Reasoning goes one level deep analyzing causal graph structure and interventions but makes a critical assumption error; Implicit self-monitoring in walking through the causal logic but no questioning of the assumption that Jyka has no baseline probability; Mentions verification implicitly by checking intervention semantics but doesn't verify the key assumption; Presents the no-background-cause assumption without fully acknowledging it as uncertain; Briefly considers what the intervention does vs doesn't affect but doesn't consider alternative probability scenarios; Shows derivation steps clearly from graph to intervention to probability calculation, though the starting assumption is flawed.",
+  "timestamp": "2026-03-23T10:39:05.275415+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-25",
+  "condition": "A",
+  "output": "**The answer is (B).**\n\nSCPs act as permission boundaries (guardrails), not grants. For an action to be allowed, it must be permitted by SCPs at **every level** of the hierarchy (Root → OU → Account) **and** by the IAM policy.\n\nHere, the OU-Prod SCP explicitly denies S3 delete operations. Even though the IAM policy grants full S3 access and the Root SCP allows all services, the explicit deny at the OU level overrides everything. No IAM policy within an account can override an SCP — SCPs set the maximum permissions ceiling.",
+  "timestamp": "2026-03-22T16:41:22.651413+00:00"
+}

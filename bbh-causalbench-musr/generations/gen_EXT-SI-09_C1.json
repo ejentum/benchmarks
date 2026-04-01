@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-09",
+  "condition": "C1",
+  "output": "## Crew Assignment\n\n**Alex → Engineer**\n- Holds a Naval Engineering degree\n- Regularly solves complex technical issues on the yacht\n- Passionate about vessel mechanics in his free time\n\n**Donnie → Deckhand**\n- Years of direct experience as a deckhand on other ships\n- Skilled in rigging, safety procedures, and maintenance — core deckhand tasks\n- Mechanical background (car mechanic) supports hands-on deck work\n\n**Emily → Neither role (hospitality/people-facing duties)**\n- She explicitly prefers tasks involving people and hospitality\n- Struggles with complex technical diagrams (rules out engineer)\n- Can handle basic deckhand tasks but lacks enthusiasm and depth\n- Assigning her to either technical role would place her alongside crew members she has friction with, hurting team efficiency\n\nThis also keeps Alex and Donnie — who have strong rapport and proven teamwork under pressure — in the two critical operational roles, maximizing coordination where it matters most.",
+  "timestamp": "2026-03-20T10:41:52.717252+00:00"
+}

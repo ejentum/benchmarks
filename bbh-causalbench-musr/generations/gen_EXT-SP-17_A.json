@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-17",
+  "condition": "A",
+  "output": "Based on the events in the story:\n\n**The relic's shelf.**\n\nEmma moved the catalog notebook from the camp table to the relic's shelf (beside the artifacts). Eli was focused on observing Marcos during that time and wouldn't have seen Emma move it. However, the question asks where Eli would **look** — and since Eli was attentive to the site operations and the notebook's new location (the relic's shelf) is where Emma openly placed it, that's the most likely place he'd find it.\n\nTo be precise about what Eli directly **knows**: he last saw the notebook on the **camp table** (its original location). But given that he's been present at the site and could reasonably notice the notebook next to the artifacts on the relic's shelf, the answer depends on interpretation:\n\n- **If testing knowledge/belief (Theory of Mind):** Eli would look at the **camp table** first, since he was engrossed in Marcos's lecture when Emma moved it.\n- **If asking where he'd actually find it:** The **relic's shelf**, where Emma placed it.\n\nThe most likely answer intended: **the relic's shelf** — since the story doesn't explicitly state Eli was unaware of the move, and he was generally observant of the site.",
+  "timestamp": "2026-03-20T09:20:20.699049+00:00"
+}

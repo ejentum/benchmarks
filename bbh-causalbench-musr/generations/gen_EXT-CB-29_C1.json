@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-29",
+  "condition": "C1",
+  "output": "## Counterfactual Analysis\n\n**Setting up the causal model:**\n\n| Variable | Definition |\n|---|---|\n| U | Unobserved confounder (active/inactive) |\n| Z | Treatment assignment (assigned/not) |\n| X | Drug taken (all/none) |\n| Y | Cholesterol level (low/not low) |\n\n**Structural equations (from the problem):**\n\n- **X = U ∧ Z** — patient takes all drugs only if confounder is active AND assigned treatment\n- **Y = U ∨ X** — patient has low cholesterol if confounder is active OR takes all drugs\n\n**Observed values:** Z = 1 (assigned), U = 0 (inactive)\n\n**Counterfactual query:** Y under do(X = 0)?\n\nFor counterfactuals, we keep the observed value of U fixed (U = 0) and intervene on X:\n\n> Y = U ∨ X = 0 ∨ 0 = **0**\n\n**No.** The patient would **not** have low cholesterol if not taking any assigned drugs. With the confounder inactive, the drug is the only path to low cholesterol — removing it eliminates the effect.",
+  "timestamp": "2026-03-20T10:45:45.798846+00:00"
+}

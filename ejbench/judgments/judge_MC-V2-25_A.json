@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-25",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 3,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.9048,
+  "injection_composite": null,
+  "brief_justification": "Agent chose C over the correct B — plausible but wrong, since B's 'overstates strong evidence' precisely captures the situation; the response traces neuroimaging logic through activation→correlation→localization→distributed-processing across multiple levels; explicitly names the fallacy type, addresses why each option was rejected, and flags the ontological category error; applies counterfactual check (what claim would justify B?) and boundary test (what would activation alone support?); carefully distinguishes what evidence establishes from what the claim asserts, including noting what would shift the classification; systematically evaluates all four options with specific rejection criteria for each; every inference step is made explicit and traceable, including the activation-to-necessity gap and the replication-to-ontology distinction.",
+  "timestamp": "2026-03-23T02:42:10.373205+00:00"
+}

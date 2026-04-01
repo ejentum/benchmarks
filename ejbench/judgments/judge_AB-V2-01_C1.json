@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-01",
+  "condition": "C1",
+  "scores": {
+    "correctness": 2,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.3,
+  "injection_composite": 0.4444,
+  "brief_justification": "Agent answers 'wave' which satisfies the single-word constraint but the canonical answer is 'mechanical wave,' making it partially correct; response only maps examples to label without exploring phase velocity, energy transport theory, or wave mechanics beyond surface identification; no self-monitoring or bias checking present anywhere in the response; no verification step, no counterfactual check, no alternative terms tested; conclusion presented as certain with no acknowledgment that 'wave' vs 'mechanical wave' distinction exists or that confidence is limited; no alternative terms (soliton, pulse, mechanical wave, traveling wave) are considered or rejected; audit trail shows example-to-conclusion mapping but skips derivation of why energy/information transport without matter transport is definitionally a wave; injection's negative gate concerns ecosystem propagation blind spots which are irrelevant to the physics task, so the agent neither falls into nor consciously addresses it; most suppressed failure modes (local-only thinking, mechanism lock) are not visibly exhibited given the task type; the injected topology contains branching gates, M-nodes, loops, and re-entry points but the response is purely linear with no branches or gates reflected.",
+  "timestamp": "2026-03-23T04:19:09.582468+00:00"
+}

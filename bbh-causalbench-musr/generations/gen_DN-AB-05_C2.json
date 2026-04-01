@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-05",
+  "condition": "C2",
+  "output": "**(B)**\n\nAll four are instances of **Goodhart's Law** — \"when a measure becomes a target, it ceases to be a good measure.\"\n\nEach metric counts a **process artifact** (economic transactions, code lines, arrests, publications) rather than the **outcome it's supposed to represent** (wellbeing, working software, public safety, knowledge). This creates perverse incentives:\n\n- **GDP** — incentivizes activity (rebuilding after disasters \"grows\" GDP) over actual welfare\n- **Lines of code** — incentivizes verbosity over elegant, minimal solutions\n- **Arrests** — incentivizes targeting easy cases over reducing crime\n- **Papers** — incentivizes salami-slicing and p-hacking over genuine discovery\n\nThe structural pattern: **surrogate metric ≠ the thing you actually care about**, and optimizing the surrogate degrades the goal.",
+  "timestamp": "2026-03-20T17:50:13.511461+00:00"
+}

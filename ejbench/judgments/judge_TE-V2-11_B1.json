@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-11",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 2,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.5333,
+  "injection_composite": 0.4444,
+  "brief_justification": "Agent correctly computed ~294 days mathematically but selected wrong answer (B) instead of correct (D), making the final answer wrong despite valid derivation; agent explored the exponential decay formula and log conversion but did not probe second-order effects like why options were constructed as they were; agent explicitly re-checked mid-response ('Wait — let me recheck') but ultimately abandoned its own correct math; agent verified by substituting t=244 and t=327 into the formula numerically; agent acknowledged the mismatch between its ~294 day result and all options but committed to an answer that contradicts its own arithmetic without structural uncertainty accounting; agent evaluated options B and D numerically but did not fully explain why each distractor was wrong; derivation chain is fully reproducible — formula, substitution, logarithm steps, and plug-in checks all shown; the [NEGATIVE GATE] concerns stale context retention which is orthogonal to this math problem — agent neither fell into it nor explicitly addressed it; suppressed terms (uniform_context_retention, stale_history_flooding) are inapplicable to a pharmacokinetics calculation and the agent exhibits neither failure mode; the injected topology is a context-pruning DAG with scans/gates/loops unrelated to exponential decay math — agent's reasoning is purely linear arithmetic with no structural mapping to the topology.",
+  "timestamp": "2026-03-23T04:04:34.657159+00:00"
+}

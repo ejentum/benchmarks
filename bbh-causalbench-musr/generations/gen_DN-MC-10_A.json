@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-10",
+  "condition": "A",
+  "output": "**(B).**\n\nThe core flaw is confusing **absence of evidence** with **evidence of absence**. Passing 10,000 tests proves the system is safe *in those 10,000 scenarios* — it says nothing about the unbounded space of untested inputs. Safety-critical failures cluster in the long tail: edge cases, adversarial inputs, and novel compositions that test designers didn't anticipate precisely *because* they're hard to anticipate.\n\nThis is an inductive fallacy — generalizing from a finite sample to a universal claim — and it's especially dangerous in domains where a single failure can be catastrophic.\n\n(A), (C), and (D) each identify real concerns, but they're secondary symptoms. Even with more tests (A), more realistic scenarios (C), and distribution-shift mitigation (D), the fundamental logical error remains: **no finite test suite can prove safety over an infinite input space**.",
+  "timestamp": "2026-03-20T17:10:08.035015+00:00"
+}

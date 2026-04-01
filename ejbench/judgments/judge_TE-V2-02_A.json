@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-02",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exact correct answer (Yes) with precise derivation showing Day 23 as earliest possible sale vs Day 21 evaluation; goes beyond surface to identify what Day 21 data CAN reveal (traffic matured, signups partial) and distinguishes guaranteed-zero from diagnostic-zero; proceeds linearly through the lag chain without naming potential reasoning pitfalls or checking its own assumptions about how lags compound; shows arithmetic explicitly (1+7+14=22) and notes the 2-day gap but does not test boundary conditions or counterfactuals (e.g., what if a sale could bypass the email funnel); frames conclusions as definite using 'minimum lag' without explicitly noting the assumption that the chain is strictly sequential and that no sales bypass the email step; does not evaluate the CMO's perspective with any structured alternative — e.g., whether direct sales (non-email path) could occur sooner — just labels it wrong; every step of the derivation is shown in the table with explicit addition, fully reproducible by a third party.",
+  "timestamp": "2026-03-23T02:38:09.156111+00:00"
+}

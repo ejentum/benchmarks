@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-05",
+  "condition": "C1",
+  "output": "**(B)**\n\nAll four are instances of the same structural error: **substituting a process artifact for the outcome it's supposed to represent.**\n\n- **GDP** counts economic activity, not whether people are actually better off.\n- **Lines of code** counts output volume, not whether valuable software was delivered.\n- **Arrests** count enforcement actions, not whether communities are safer.\n- **Papers** count publications, not whether knowledge actually advanced.\n\nThe deeper problem is that once you optimize for the artifact, you get **Goodhart's Law** — the metric becomes a target, and people game the proxy at the expense of the goal. Countries chase GDP through unsustainable consumption, developers write verbose code, police departments arrest for petty offenses to hit quotas, and academics publish incremental or redundant papers.\n\n(A) is too charitable — the issue isn't that they're \"imperfect but roughly correlated,\" it's that the *structure* of the metric actively creates misaligned incentives. (C) and (D) miss the structural point entirely.",
+  "timestamp": "2026-03-20T17:39:52.342616+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-13",
+  "condition": "C2",
+  "output": "## Causal Analysis\n\n**Causal graph:**\n\n```\nHwax ──→ Kraz ──→ Rukz\n  │                 ↑\n  └──→ Pexu ───────┘\n```\n\nRukz has **two** incoming causal pathways from Hwax:\n1. **Hwax → Kraz → Rukz** (indirect, via Kraz)\n2. **Hwax → Pexu → Rukz** (indirect, via Pexu)\n\n**The intervention** blocks pathway 2 (do(Pexu = absent)), leaving only pathway 1.\n\n**Answer: Yes**, this decreases the likelihood of seeing Rukz.\n\n**Reasoning:** In this closed world with no unmentioned factors, Rukz is produced by two independent causal contributors — Kraz and Pexu. By intervening to remove Pexu's causal role, you eliminate one of the two pathways that positively contribute to Rukz. The total causal effect of Hwax on Rukz is the sum of both mediated paths. Cutting one path strictly reduces the total effect reaching Rukz, lowering its likelihood compared to the unintervened scenario where both pathways are active.\n\n**Counterfactual check:** In the world where both paths are active, Rukz receives causal input from both Kraz and Pexu. In the intervened world, it receives input only from Kraz. Since a positive contributor was removed and nothing was added, P(Rukz | do(remove Pexu path)) < P(Rukz | no intervention).",
+  "timestamp": "2026-03-20T10:59:46.527101+00:00"
+}

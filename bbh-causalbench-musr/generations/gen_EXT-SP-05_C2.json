@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-05",
+  "condition": "C2",
+  "output": "No\n\nAfter following the instructions, you end up 6 steps to the right of where you started — not back at the starting point.\n\n- Start at origin, facing forward.\n- 6 steps backward → 6 units behind the start.\n- 6 steps forward → back to the start.\n- 6 steps right → 6 units to the right of the start.\n\nThe backward and forward cancel out, but the rightward steps leave you displaced.",
+  "timestamp": "2026-03-20T10:54:52.476798+00:00"
+}

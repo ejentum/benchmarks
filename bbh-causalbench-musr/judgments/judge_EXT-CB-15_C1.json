@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-15",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8095,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid causal reasoning; Multi-level analysis covering causal structure, backdoor paths, collider bias, and method comparison across 4 explicit steps; Some self-monitoring via suppression flags and noting the correlation≠causation instinct before overriding it, but no deep bias reflection; Basic verification by checking both methods converge but no counterfactual or boundary-condition test; Acknowledges the correlation-causation distinction and the closed-world assumption but doesn't quantify confidence; Evaluates both methods and explains why each works but doesn't consider alternative causal structures; Complete derivation chain from DAG specification through backdoor criterion to conclusion, fully reproducible.",
+  "timestamp": "2026-03-23T13:00:06.924911+00:00"
+}

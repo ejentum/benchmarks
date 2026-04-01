@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-03",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0
+  },
+  "composite_score": 0.1905,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with mention that both axes net to zero; Surface-level only - states conclusion without showing the step-by-step axis calculations; No self-monitoring or reflection on reasoning process; No verification such as showing the actual arithmetic for each axis; No acknowledgment of uncertainty or assumptions; No alternative approaches considered; No derivation trail - asserts 'both axes net to zero' without showing the actual computation (right 6 + left 10 + right 4 = 0, forward 1 + forward 8 + backward 9 = 0)",
+  "timestamp": "2026-03-23T13:18:06.327297+00:00"
+}

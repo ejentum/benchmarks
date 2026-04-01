@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-02",
+  "condition": "C1",
+  "output": "No.\n\nLet me trace through the steps:\n\n1. **Take 3 steps** — move 3 steps forward.\n2. **Turn around** (180°).\n3. **Take 5 steps** — move 5 steps (now heading back past start, ending 2 steps beyond it).\n4. **Turn right. Turn right.** — two right turns = 180°, now facing back toward start.\n5. **Take 1 step. Take 1 step.** — move 2 steps toward start.\n\nYou end up at the starting point. Wait — let me recheck: 3 forward, then reverse 5 puts you 2 steps behind start. Two rights = face back toward start. 2 more steps = back to start.\n\n**Yes.**",
+  "timestamp": "2026-03-20T17:38:03.739188+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-02",
+  "condition": "C1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 2
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Answered Yes but correct answer is No, with reasoning that misidentifies what typical people consider causal; Goes beyond surface by distinguishing proximate vs distal causes and analyzing both causal chains; Mentions 'distractor resistance' but doesn't genuinely question whether typical people reason about distal causes this way; Claims to apply verification via 'distractor resistance' but doesn't actually test the conclusion against empirical findings on folk causal judgment; Presents conclusion confidently without acknowledging that folk intuitions about causation often favor proximate mechanical causes over background conditions; Considers the proximate vs distal distinction and addresses the preemption framing, but ultimately picks the wrong interpretation; Shows the reasoning chain from crime life to both threats but skips the key step of how ordinary people actually attribute causation to lifestyle vs specific events.",
+  "timestamp": "2026-03-23T12:46:49.497739+00:00"
+}

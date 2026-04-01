@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-28",
+  "condition": "A",
+  "output": "## Analysis\n\nLet baseline fatalities = R × M (risk per vehicle-mile × total vehicle-miles).\n\n**Intervention A** (all drivers, speed limit):\n- Risk drops 40% → 0.6R\n- Miles increase 15% → 1.15M\n- New fatalities = 0.6R × 1.15M = **0.69RM** → **31% reduction**\n\n**Intervention B** (12% of fleet, ADAS):\n- 12% of fleet gets 30% risk reduction, 88% unchanged\n- New fatalities = (0.12 × 0.7 + 0.88) × RM = **0.964RM** → **3.6% reduction**\n\n## Answer: **(B)**\n\nIntervention A still reduces far more fatalities. The 15% compensatory mileage increase erodes the 40% risk reduction to ~31%, but that still dwarfs B's 3.6% reduction because B only covers 12% of the fleet in year 1.\n\nThe economist's reasoning about compensatory behavior is directionally correct (A is less effective than the naive 40% suggests), but her conclusion is wrong — the coverage gap (12% vs 100%) is the dominant factor in year 1. Her argument would strengthen over time as ADAS penetration grows, but in year 1 it doesn't come close.",
+  "timestamp": "2026-03-22T16:40:42.433231+00:00"
+}

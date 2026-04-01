@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-17",
+  "condition": "B1",
+  "output": "(B).\n\nThe executive is committing **survivorship bias**. The 4.2 score is computed from a self-selected sample that systematically excludes the most dissatisfied customers — the ones who disengaged before churning. The metric doesn't measure customer satisfaction; it measures **satisfaction among customers who still bother responding**.\n\nThe 40% non-response rate among dissatisfied customers means the measurement system has a structural blind spot exactly where it matters most. The executive is treating a biased sample as representative.",
+  "timestamp": "2026-03-20T17:24:24.424381+00:00"
+}

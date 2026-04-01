@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-12",
+  "condition": "A",
+  "output": "Looking at this causal inference problem:\n\n**Given structure:** Wibl → Vubr → Uvzi, Wibl → Zuph → Uvzi\n\n**Given data:**\n- P(Zuph) = 0.77\n- P(¬Zuph ∧ Uvzi) = 0.11\n- P(Zuph ∧ Uvzi) = 0.46\n\n**Calculate P(Uvzi):**\nP(Uvzi) = P(¬Zuph ∧ Uvzi) + P(Zuph ∧ Uvzi) = 0.11 + 0.46 = 0.57\n\n**Calculate P(Zuph | Uvzi):**\nP(Zuph | Uvzi) = P(Zuph ∧ Uvzi) / P(Uvzi) = 0.46 / 0.57 ≈ 0.8070\n\n**Compare to the prior:**\nP(Zuph) = 0.77\nP(Zuph | Uvzi) ≈ 0.81\n\n**Yes**, if Uvzi occurs, it is more likely that Zuph occurred. The probability of Zuph increases from 77% to approximately 80.7% when we observe Uvzi, which makes sense since Zuph is a cause of Uvzi.",
+  "timestamp": "2026-03-20T09:20:19.430213+00:00"
+}

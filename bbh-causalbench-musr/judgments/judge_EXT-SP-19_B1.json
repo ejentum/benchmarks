@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-19",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 2
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Incorrect answer (cockpit dashboard instead of personal bag) — Mike was in the cockpit with Jack when they concluded the logbook was not among Jack's belongings, then Jack found it and put it in his personal bag, so Mike would look there; Reasoning goes one level deep with epistemic tracking per character but misreads the later scenes where Mike is present when Jack stashes the logbook; Some self-monitoring via epistemic framing but fails to catch that Mike likely witnessed Jack securing the logbook; Mentions verification need with the epistemic table but doesn't actually verify against later story events; Acknowledges uncertainty about whether Mike witnessed the bag placement but doesn't fully resolve it; Considers chart table as alternative and dismisses it, but never seriously evaluates personal bag; Most steps shown in the table but skips analysis of the final cockpit scenes where Mike and Jack are together near Jack's belongings",
+  "timestamp": "2026-03-23T11:15:32.270582+00:00"
+}

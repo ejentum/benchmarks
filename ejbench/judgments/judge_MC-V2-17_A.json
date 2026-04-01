@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-17",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Arrives at exactly 65.7% via correct complement rule application; goes one level beyond the surface by identifying why the additive approach fails, but no second-order analysis; no explicit monitoring of own reasoning process or assumption-checking at any point; no verification from a different angle or sanity check performed; presents the conclusion with full confidence and no uncertainty framing, though notes a minor caveat about small-probability approximations; addresses the friend's additive alternative and explains its failure mode briefly but does not systematically evaluate other possible approaches; the full derivation chain (1 − (0.7)³ = 1 − 0.343 = 0.657) is explicitly shown and reproducible by a third party",
+  "timestamp": "2026-03-23T02:35:33.190450+00:00"
+}

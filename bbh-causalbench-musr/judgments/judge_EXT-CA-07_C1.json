@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-07",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1
+  },
+  "composite_score": 0.2381,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid reasoning; Surface-level analysis citing responsibility and awareness without exploring deeper causal frameworks; No self-monitoring or reflection on reasoning process; No verification or counterfactual checking; Presents conclusion as certain with no acknowledgment of alternative perspectives; No alternative explanations considered (e.g., Kate's role, omission vs commission distinctions); Minimal derivation trail—states responsibility and awareness as reasons but doesn't trace through causal reasoning systematically",
+  "timestamp": "2026-03-23T12:49:54.976974+00:00"
+}

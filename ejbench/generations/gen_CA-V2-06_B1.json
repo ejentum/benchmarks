@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-06",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: attractor_basin_enumeration; post_perturbation_trajectory — track each pool carefully through discrete flows\nSuppress: single_equilibrium_assumption; linear_perturbation_response — don't shortcut; compute each flow explicitly\n[END REASONING CONTEXT]\n\n## Solving the Nitrogen Cycle\n\n**Initial state:** NH4⁺ = 10 kg/ha, NO3⁻ = 5 kg/ha\n\n**Month 1 flows:**\n\n1. **N₂ fixation** adds to NH4⁺: 5 kg/ha/year ÷ 12 = **0.4167 kg/ha/month**\n   - NH4⁺ available = 10 + 0.4167 = **10.4167 kg/ha**\n\n2. **Nitrification** converts 90% of available NH4⁺ → NO3⁻:\n   - Removed from NH4⁺: 0.90 × 10.4167 = 9.375 kg/ha\n   - NH4⁺ remaining: 10.4167 × 0.10 = **1.0417 kg/ha**\n\n3. **Decomposition return?** 40% of absorbed N returns after a **3-month lag**. At month 1, no plant absorption occurred 3 months ago (we just started), so **return = 0**.\n\n**NH4⁺ after 1 month:**\n\n$$10 + \\frac{5}{12} - 0.9 \\times \\left(10 + \\frac{5}{12}\\right) = 10.4167 \\times 0.10 = 1.0417$$\n\n### **Answer: 1.0 kg/ha**",
+  "timestamp": "2026-03-22T21:46:26.286348+00:00"
+}

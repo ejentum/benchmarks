@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-20",
+  "condition": "C2",
+  "output": "**The answer is (B).**\n\nThis is a textbook case of **confirmation bias compounded with selection bias** (sometimes called the \"surviving bullet holes\" problem).\n\nThe critical flaw: the manager never interviewed candidates from non-top-10 schools, so there is no counterfactual. The data only tells you \"people I selected performed well\" — it tells you nothing about the people you didn't select.\n\nBoth explanations are consistent with the observed data:\n1. Top-10 graduates are genuinely better\n2. The manager filtered on prestige, and the hires succeeded because the whole applicant pool was strong\n\nWithout a comparison group, these are indistinguishable — but the manager treats explanation 1 as proven.\n\nThe other options miss the core issue:\n- **(A)** and **(C)** are about sample size, which is secondary — the reasoning would be flawed even with 10,000 resumes if the selection process was biased.\n- **(D)** is practical advice but doesn't identify the logical error.",
+  "timestamp": "2026-03-20T17:58:21.069908+00:00"
+}

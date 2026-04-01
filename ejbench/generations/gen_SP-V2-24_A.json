@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-24",
+  "condition": "A",
+  "output": "**Row 9 is in Economy, which has 6 seats per row.**\n\nIn a typical 3-3 Economy layout (A-B-C-D-E-F), the non-window seats are B, C, D, E — that's **4 non-window seats** per row.\n\nThe group of 8 occupies rows 9-10 (12 seats total across 2 rows = all 12 seats). So all 6 seats in row 9 are taken by the group.\n\nBut the unaccompanied minor **must** sit in rows 7-10 in a non-window seat — and the constraint says the minor \"needs row 9.\" Since the group wants to sit together but the minor's constraint is a hard safety requirement (unaccompanied minors in crew-visible zone, non-window), the minor displaces one group member.\n\n**The answer is 4.**\n\nThere are 4 non-window seats in row 9 (B, C, D, E) where the minor could be placed, with the displaced group member moved to another seat in rows 9-10 (row 10 has available seats since the group of 8 only fills 8 of the 12 seats across both rows).",
+  "timestamp": "2026-03-22T16:41:12.989516+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-22",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 3
+  },
+  "composite_score": 0.8667,
+  "injection_composite": 0.8889,
+  "brief_justification": "Agent chose C when ground truth is D — valid math but wrong final answer, earns 1 for sound reasoning approach; agent traced 3+ levels (bias scan, stage-by-stage pass rates, compound multiplicative effect, final hire probability differential), earning full depth; explicitly named anchoring, confirmation bias, and scope insensitivity with specific distorted steps identified — strong self-monitoring; computed actual pass rates at each stage and calculated 8.8% vs 10.4% overall hire probability, constituting thorough verification; acknowledged D 'raises a valid concern' but stated confidence in C without epistemic hedging about which answer is definitively correct; explicitly evaluated D as an alternative and gave specific reasons for rejecting it in favor of C; full table, per-stage pass rates, and overall probability derivation allow complete third-party reproduction; avoids halo-effect-driven reasoning but does not explicitly frame why that pattern fails in this context; shows zero halo effect amplification or bias blind spot — explicitly audited its own bias scan for checklist limitations; follows scan→gate→interrupt→debiasing topology structure closely, with visible branches and debiasing actions.",
+  "timestamp": "2026-03-23T03:50:02.219026+00:00"
+}

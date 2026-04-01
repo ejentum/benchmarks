@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-17",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent concluded 'checkpoint' but the correct answer is 'savepoint' — wrong answer with a structurally sound methodology; Agent performed three-requirement structural extraction and cross-domain mapping, going beyond surface level but not deep enough to distinguish checkpoint from savepoint correctly; Agent explicitly flagged savepoint as a related term showing awareness of confusion risk, but did not interrogate its own dismissal of it; Agent tested boundary conditions with 'analogy doesn't break at boundary conditions' but did not re-derive from an independent angle; Agent confidently dismissed the correct answer with no uncertainty hedge about whether its rejection of savepoint might be wrong; Agent explicitly considered savepoint and gave reasons for rejecting it, earning partial credit despite the rejection being incorrect; Structural requirements to mapping to conclusion chain is fully explicit and reproducible; No evidence of treating the session as a first encounter or discarding prior patterns, consistent with injection guidance; Agent avoided most suppressed modes but exhibited surface similarity bias by anchoring on shared vocabulary ('checkpoint' appears in both domains), which likely drove the wrong conclusion; Response is linear extract-map-conclude despite the topology specifying branching gates and meta-monitoring re-entry loops.",
+  "timestamp": "2026-03-23T04:31:25.206997+00:00"
+}

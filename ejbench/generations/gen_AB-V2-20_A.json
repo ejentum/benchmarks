@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-20",
+  "condition": "A",
+  "output": "Higher.\n\nThe engineer's description names **specific components and failure modes** — joint 3, the IK solver, a particular singularity. It's mechanistic: you could use it to debug the problem.\n\nThe third description operates one level up — it reframes the event in terms of **trajectory topology in configuration space**. It doesn't name which joint, which singularity, or which solver. Instead it characterizes the *class* of failure: topological discontinuity in C-space. This is a more general mathematical framing that would encompass the engineer's specific case as one instance.\n\nThe abstraction ladder for all three:\n\n1. **Manager** — observable outcome (\"wrong position\")\n2. **Engineer** — causal mechanism in named components (IK branch, joint 3, singularity)\n3. **Third description** — mathematical property of the trajectory class (topological discontinuity in C-space)\n\nThe third sits higher because it trades specificity and debuggability for generality and formal precision. You could have multiple distinct engineering-level failures (different joints, different singularities, different solvers) that all satisfy the third description's characterization.",
+  "timestamp": "2026-03-22T16:02:33.790102+00:00"
+}

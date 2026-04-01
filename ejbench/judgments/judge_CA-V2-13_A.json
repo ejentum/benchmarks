@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-13",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4762,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies D with valid reasoning that reverse causality doesn't eliminate forward causality; goes one level beyond surface by noting both mechanisms can operate simultaneously but doesn't trace second-order implications or why D is strictly better than B; no explicit reflection on reasoning method or potential biases; no counterfactual checks or sanity checks applied; acknowledges multiple possible outcomes for the struggling company but lacks structured confidence analysis; implicitly references options A and C outcomes but does not systematically evaluate and reject each alternative option; the reasoning chain is mostly traceable but some intermediate steps (why B is wrong specifically) are skipped",
+  "timestamp": "2026-03-23T02:32:33.462338+00:00"
+}

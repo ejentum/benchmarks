@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-25",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.1905,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (24 vs 21) due to misapplying the Testing overage rule as T_overage = Impl_overage − 1 rather than the correct ratio (impl_over/3) validated by the example; analysis is purely surface-level number-plugging with no exploration of why rules work or second-order effects; no self-monitoring or checking of own formula interpretation against the provided example (3 weeks over → 1 week Testing over); no verification attempt, not even a sanity-check against the given example case; the problem statement's ambiguous Testing rule is never flagged as uncertain — conclusions are stated with full confidence; only one interpretation of 'Testing takes 1 week longer than the overage' is considered with no mention of alternatives; most arithmetic steps are shown with explicit labels and the overlap deduction is traced, but the Testing formula is stated without derivation or justification.",
+  "timestamp": "2026-03-23T03:09:34.842335+00:00"
+}

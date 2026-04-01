@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-06",
+  "condition": "C1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Correctness: Answered 'nightstand' but correct answer is 'kitchen' — the key ambiguity is whether 'conspicuous place' in Event 3 refers to nightstand or kitchen drawer, and the agent missed that Henry moved keys from the kitchen drawer (where Maria put them) to the deposit box, so kitchen drawer was the last place visible to anyone besides Henry; Reasoning depth: Traced through events and character knowledge states systematically but missed the critical inference about what 'conspicuous place' referred to; Self-monitoring: No explicit checks on own assumptions about which location Henry moved keys from; Verification: Mentions tracing carefully but doesn't verify the ambiguous reference of 'conspicuous place'; Epistemic honesty: Presents conclusion with certainty despite the ambiguous text; Alternative consideration: Does not consider that Luke might reason about Maria's habits or that the kitchen drawer could be a candidate; Audit trail: Shows clear step-by-step event tracking but the critical derivation step about Event 3's source location is wrong.",
+  "timestamp": "2026-03-23T13:20:01.162548+00:00"
+}

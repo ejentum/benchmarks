@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-14",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "The correct answer is 'main deck' but the agent answered 'captain's cabin' — wrong answer though the reasoning about timeline tracking was methodical; Deep multi-level analysis tracing chart locations through each story moment with a timeline table; Some self-monitoring via the reasoning context suppression signals about frame drift, but didn't question whether the question asks about Dean's knowledge state vs actual location; Basic verification by cross-referencing the final position with Dean's known default, but failed to consider what Dean actually witnessed; Presents conclusion confidently without acknowledging the key ambiguity — Dean was on the main deck area helping Alex and may not have seen Alex return charts to cabin; Briefly acknowledges the default location vs current location distinction but doesn't seriously evaluate that Dean might look at the main deck first since he saw charts there and was busy in the galley when Alex moved them back; Excellent audit trail with explicit timeline table showing each location change with textual evidence",
+  "timestamp": "2026-03-23T11:11:42.830789+00:00"
+}

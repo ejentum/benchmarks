@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-01",
+  "condition": "C1",
+  "output": "**Initial state:**\n- Alice: Frankenstein\n- Bob: The Pearl\n- Claire: The Fellowship of the Ring\n\n**Swap 1 — Bob ↔ Claire:**\n- Bob: The Fellowship of the Ring\n- Claire: The Pearl\n\n**Swap 2 — Bob ↔ Alice:**\n- Bob: Frankenstein\n- Alice: The Fellowship of the Ring\n\n**Swap 3 — Claire ↔ Alice:**\n- Claire: The Fellowship of the Ring\n- Alice: The Pearl\n\n**Final state:**\n- Alice: The Pearl\n- Bob: Frankenstein\n- Claire: The Fellowship of the Ring\n\nThe answer is **(A) Frankenstein**.",
+  "timestamp": "2026-03-20T10:38:57.359304+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-17",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.2381,
+  "injection_composite": null,
+  "brief_justification": "Answer matches exactly — savepoint is the correct term; only surface-level explanation provided, no exploration of why savepoints differ from checkpoints or transaction logs; no reflection on reasoning approach or potential for confusion with related terms; no counterfactual or boundary testing performed; answer presented with full certainty, no acknowledgment that 'checkpoint' is also a database term that could cause confusion; no alternatives (e.g., database checkpoints, snapshots, write-ahead logs) considered or contrasted; states the conclusion with a one-sentence justification but no step-by-step derivation a third party could fully reproduce",
+  "timestamp": "2026-03-23T02:27:21.742186+00:00"
+}

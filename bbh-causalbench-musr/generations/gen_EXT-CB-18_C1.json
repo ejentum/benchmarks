@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-18",
+  "condition": "C1",
+  "output": "## Causal Analysis\n\nLet me define the variables and work through this step by step.\n\n**Variables:**\n- **U** (unobserved confounder): active or inactive\n- **P** (proximity to college): close or far\n- **C** (drinking coffee): yes or no\n- **S** (salary): high or low\n\n**Structural equations (from the problem):**\n- **C = U AND P** — \"confounder active *and* close to a college causes drinking coffee\"\n- **S = U OR C** — \"confounder active *or* drinking coffee causes a high salary\"\n\n**Observed values:** U = active (1), P = far (0)\n\n**Deriving the state:**\n\n| Variable | Computation | Value |\n|----------|------------|-------|\n| C | U AND P = 1 AND 0 | **0 — no coffee** |\n| S | U OR C = 1 OR 0 | **1 — high salary** |\n\n**Answer: No.**\n\nThe person does not drink coffee at all in this scenario. Living far from a college blocks the coffee-drinking mechanism (since both the confounder *and* proximity are required). The high salary is entirely explained by the confounder being active — it alone is sufficient to produce a high salary through the direct U → S path.\n\nSo if an intervention ensures a high salary, it is attributable to the active confounder, not to coffee drinking, which never occurs under these conditions.",
+  "timestamp": "2026-03-20T10:41:15.463632+00:00"
+}

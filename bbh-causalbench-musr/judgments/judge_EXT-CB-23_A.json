@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-23",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes, 53.75%) with valid law of total probability calculation; Multi-level analysis exploring the counterintuitive conditional probabilities and speculating on traffic as the mechanism; Some self-monitoring in noting the counterintuitive detail but no explicit bias-checking or assumption-questioning; Mentions verification implicitly through the table breakdown but doesn't cross-check from a different angle; Acknowledges the counterintuitive nature and offers speculative explanation with appropriate hedging ('likely because'); Considers the role of traffic as an alternative explanation for the surprising conditionals; Full derivation trail with formula, table, and final comparison clearly shown",
+  "timestamp": "2026-03-23T10:42:19.840492+00:00"
+}

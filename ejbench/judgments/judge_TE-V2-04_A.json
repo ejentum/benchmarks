@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-04",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies that complaint increase is expected and consistent with the fix working, with fully valid reasoning; traces second-order effects including complaint distribution shape, ascending vs peak curve position, and distinguishes pre-fix backlog from new damage; proceeds linearly without naming potential biases, questioning the lag-as-average assumption, or reflecting on its own reasoning method; provides explicit falsification criteria (check corruption timestamps post-fix, watch for rise beyond Day 12-14) that a practitioner could execute; acknowledges the 5-day lag is an average and hedges with 'should decline' but doesn't formally separate known facts from assumptions or state confidence levels; considers only the backlog-drainage interpretation without evaluating the alternative hypothesis that the fix was partial or incomplete; timeline table and ASCII curve provide a clear, reproducible derivation chain a third party could follow entirely from the response.",
+  "timestamp": "2026-03-23T02:40:07.801760+00:00"
+}

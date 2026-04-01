@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-07",
+  "condition": "B2",
+  "output": "(B).\n\nThe common structural pattern is **information flow failure through hierarchical filtering**. In all three cases:\n\n- **Accurate risk signals were generated** by domain experts closest to the problem\n- **Organizational structure attenuated those signals** — hierarchy, schedule pressure, and incentive misalignment acted as filters\n- **Decision-makers operated on degraded information** not because it didn't exist, but because the structure prevented it from arriving with sufficient weight\n\n(A) and (D) misattribute a systemic/structural failure to individual competence or malice. (C) identifies a symptom (speed prioritization) but not the mechanism — *why* speed won is that the people who knew the risks couldn't structurally override the people who set the timeline.",
+  "timestamp": "2026-03-20T17:28:08.212729+00:00"
+}

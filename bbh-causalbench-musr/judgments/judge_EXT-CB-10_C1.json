@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-10",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Correctness: The correct answer is 'Cannot determine' but the agent confidently says 'No' — the agent correctly identifies collider bias but fails to recognize that without knowing the structural equations, we cannot determine the quantitative effect of the intervention on fame; Reasoning depth: Excellent multi-level analysis identifying the collider structure, Berkson's paradox, do-calculus notation, and backdoor criterion — genuinely deep causal reasoning; Self-monitoring: Uses suppress/amplify framework to check for correlation-causation leaps, showing some metacognitive awareness, but fails to monitor its own overconfidence in the final answer; Verification: Applies collider bias check and backdoor path analysis as verification, but doesn't verify whether the question can actually be answered with the given information; Epistemic honesty: Presents conclusion with high certainty despite insufficient information to determine the answer — doesn't acknowledge that the structural equations are unspecified; Alternative consideration: Doesn't consider the possibility that the answer is indeterminate or that the causal effect magnitude cannot be computed from the given information; Audit trail: Every step is explicitly derived — DAG construction, collider identification, do-calculus application, and conclusion all follow transparently from stated premises",
+  "timestamp": "2026-03-23T12:57:19.843654+00:00"
+}

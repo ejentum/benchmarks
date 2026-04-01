@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-02",
+  "condition": "C1",
+  "output": "**(B)**\n\nThe three statements form a contradictory set:\n\n- **1 vs 2:** A 20% cost cut and \"heavy\" R&D investment pull the budget in opposite directions. They're not impossible to reconcile, but the report doesn't specify where the cuts come from, so as stated they conflict.\n- **1 vs 3:** This is the sharper contradiction. If the identified primary risk is losing talent to *higher-paying competitors*, then broad cost cutting is the single most likely action to accelerate that exact risk. The consultant is simultaneously diagnosing the disease and prescribing its cause.\n\nOption (C) is the typical defense (\"cut costs elsewhere\"), but the report doesn't say that — and a 20% cut is large enough that it's very difficult to fully exempt both R&D spending and compensation. The burden is on the consultant to show feasibility, not on the reader to assume it.",
+  "timestamp": "2026-03-20T17:44:02.702770+00:00"
+}

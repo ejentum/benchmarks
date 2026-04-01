@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-07",
+  "condition": "B2",
+  "output": "**The answer is (B) 35–40 minutes.**\n\nThe problem gives you the pieces:\n\n1. **40% capacity increase** → induced demand of **20–40% more VMT** (applying the 5–10% per 10% rule).\n2. **15% public transit ridership drop** adds even more cars to the road.\n3. The initial gain was 20 minutes (45→25). Induced demand claws back most but not all of it.\n\nWhy not (C)? The 5–10% elasticity means induced demand doesn't fully reach 1:1 with capacity — it erodes the gain significantly but not completely within 3 years. Full negation (the \"fundamental law of road congestion\") typically takes longer or requires higher elasticities than what's stated here.\n\nWhy not (D)? A mere 5-minute erosion underestimates the combined effect of 20–40% more driving plus the transit ridership loss feeding additional vehicles onto the network.\n\n**(B)** is the scenario where induced demand substantially — but not fully — erodes the initial improvement, which is exactly what the stated elasticities predict.",
+  "timestamp": "2026-03-20T17:28:59.245525+00:00"
+}

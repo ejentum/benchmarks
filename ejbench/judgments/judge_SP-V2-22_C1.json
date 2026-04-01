@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-22",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at exact correct answer (B) with valid step-by-step state tracking; goes one level beyond surface by explicitly tracing each move's effect on all columns, but doesn't explore second-order implications like why the distractor options are wrong; no explicit self-monitoring or bias-naming, just linear progression through states; verification is present via before/after state tables confirming final counts match limits; notes API timeout transparently but presents the board-state analysis with full certainty and no acknowledged assumptions about problem setup; implicitly dismisses options A/C/D through the state trace but never names or evaluates them as competing interpretations; every state transition is shown in table form with counts and limits, fully reproducible by a third party; avoids the 'sequence is just a checklist' anti-pattern by treating each move as causally ordered, but does not name or explicitly flag this; avoids order insensitivity and effect isolation bias, correctly propagates each move's downstream state, though exhibits mild first-order-only thinking by not probing why In Progress was never touched; reasoning is linear sequential state-tracking with no visible branching, gating, or loop structure matching the topology's DAG pattern.",
+  "timestamp": "2026-03-23T05:14:00.966530+00:00"
+}

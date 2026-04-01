@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-05",
+  "condition": "B2",
+  "output": "## Analysis\n\nIn this self-contained world, vaccination has **no parents** in the causal DAG:\n\n```\nVaccination ──→ Vaccination Reaction ──→ Smallpox Survival\n     │                                        ↑\n     └──────→ Getting Smallpox ───────────────┘\n```\n\nSince nothing causes vaccination status, there are **no backdoor paths** to block. The observational conditionals equal the interventional ones:\n\n- P(survival | do(vaccinated)) = **33%**\n- P(survival | do(unvaccinated)) = **42%**\n\n## Current overall survival probability\n\nP(survival) = 0.33 × 0.12 + 0.42 × 0.88 = 0.0396 + 0.3696 = **40.92%**\n\n## Effect of increasing vaccination\n\nIncreasing the vaccination rate shifts population weight from the 42% survival group toward the 33% survival group. Any increase in vaccination rate **decreases** the overall probability of smallpox survival.\n\n**Yes** — intervening to increase vaccination decreases the overall probability of smallpox survival in this hypothetical world, because vaccinated individuals have a lower survival rate (33%) than unvaccinated individuals (42%).",
+  "timestamp": "2026-03-20T09:57:14.007262+00:00"
+}

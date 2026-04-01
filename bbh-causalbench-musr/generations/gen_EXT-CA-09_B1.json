@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-09",
+  "condition": "B1",
+  "output": "A typical person would answer:\n\n**Yes**\n\nThe reasoning most people would follow: Benni deviated from Tom's instructions by using B Y33R instead of the agreed-upon A X200R. The plants dried out specifically in beds where *both* chemicals were applied. Since Alex followed instructions and only used A X200R, the problem arose because Benni introduced the second chemical. If Benni had also used A X200R as instructed, the plants would not have been exposed to multiple chemicals and wouldn't have dried out. Therefore, most people would see Benni's fertilization as the cause of the drying.",
+  "timestamp": "2026-03-20T09:34:15.457355+00:00"
+}

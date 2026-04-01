@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-17",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 1,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.1905,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (relic's shelf instead of camp table) but reasoning approach of tracking object movements was sound; surface-level analysis that only traced Emma's move without considering Eli's knowledge state; no self-monitoring or questioning of assumptions; no verification against what Eli actually observed; slight hedging with 'most likely' but no structured uncertainty; no alternative locations considered despite camp table being the original known location; shows one derivation step (Emma moved it) but doesn't examine whether Eli witnessed that move.",
+  "timestamp": "2026-03-23T10:31:54.275438+00:00"
+}

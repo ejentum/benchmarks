@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-22",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correctly identifies 19:00 UTC and meeting appearing at 4 PM local, matching the ground truth exactly; goes three levels deep — identifies the bug, traces root cause to naive offset arithmetic, and prescribes fixes with specific library references; proceeds linearly without naming assumptions or checking its own reasoning method; cross-verifies by computing both the stored (wrong) and correct UTC values side by side; presents all conclusions as certain with no acknowledgment of edge cases (e.g., what if booking was made before DST began) or stated confidence levels; mentions two fix alternatives (IANA name storage vs. correct UTC resolution at booking) but does not evaluate tradeoffs between them; every conclusion is explicitly derived with offset arithmetic shown step by step, reproducible by a third party.",
+  "timestamp": "2026-03-23T03:07:10.090601+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-01",
+  "condition": "C2",
+  "output": "**The answer is (B).**\n\nThe analyst's repeated misses on Amazon, Netflix, and Tesla aren't random errors — they reveal a **systematic bias** in their framework. Specifically, their model flags \"cash burn + no current profitability + challenging market\" as failure signals, but this exact pattern is also the signature of disruptive companies executing a deliberate land-grab strategy.\n\n**Why the other options fail:**\n\n- **(A)** ignores that the errors aren't independent. Three identical misdiagnoses on the same pattern is evidence of a structural blind spot, not bad luck.\n- **(C)** is defeatist. The analyst doesn't need to quit — they need to **fix the framework**.\n- **(D)** is just the opposite error. Blindly reversing the conclusion is as uncalibrated as the original analysis.\n\nThe right move is **(B)**: add a **disruptive-model filter** before reaching a conclusion. Ask: *Is Company X burning cash because it's failing, or because it's investing in a winner-take-most market?* The same surface symptoms can have very different underlying causes, and the analyst's framework needs to distinguish between them.",
+  "timestamp": "2026-03-20T17:54:23.863930+00:00"
+}

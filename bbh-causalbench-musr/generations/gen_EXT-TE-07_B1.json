@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-07",
+  "condition": "B1",
+  "output": "(D) 7am to 11am\n\nAshley's schedule accounts for every slot except 7am–11am, so that's the only window the bookstore visit could have happened.",
+  "timestamp": "2026-03-20T09:33:27.643660+00:00"
+}

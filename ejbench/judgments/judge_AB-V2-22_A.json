@@ -1,0 +1,20 @@
+{
+  "task_id": "AB-V2-22",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the correct answer (A) with valid reasoning grounding it in the definition of abstraction as compression of particulars; goes three levels deep — identifies the abstraction mechanism, explains why the engine is lower-level, and situates both in the same explanatory hierarchy; flags that (D) is 'tempting but wrong,' showing partial awareness of reasoning pitfalls but no explicit process-monitoring; verifies indirectly by eliminating both C and D with specific structural reasons, though no counterfactual or boundary-condition test is applied; acknowledges the pull of (D) but presents the final conclusion confidently without stating confidence levels or what evidence would shift the answer; explicitly evaluates both distractor options (C and D) and names specific errors in each; every conclusion traces to an explicit derivation — abstraction level is defined, applied to each case, and the relationship between frameworks is derived rather than asserted.",
+  "timestamp": "2026-03-23T02:30:35.842017+00:00"
+}

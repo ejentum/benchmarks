@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-03",
+  "condition": "A",
+  "output": "**No**\n\nA typical person would say the **black wire did not cause the short circuit**.\n\nThis is a well-known scenario from experimental philosophy (based on work by Knobe, Hitchcock, and others on causal judgment). People tend to attribute causation to the element that behaved **abnormally** — the one that violated its expected role.\n\n- The **black wire** was *supposed* to touch the battery (normal/expected behavior).\n- The **red wire** was *not supposed* to touch the battery (abnormal/norm-violating behavior).\n\nEven though both wires were equally necessary for the short circuit, most people judge that the **red wire** caused it, not the black wire, because the red wire is the one that deviated from how things were supposed to be.",
+  "timestamp": "2026-03-20T09:15:11.440742+00:00"
+}

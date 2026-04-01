@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-29",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning; Multi-level analysis setting up full SCM, identifying structural equations, and applying do-calculus intervention; Some self-monitoring via the injected suppress/amplify signals but no explicit mid-reasoning reflection; Basic verification by substituting values but no counterfactual cross-check or alternative derivation; Acknowledges the causal framework constraints but doesn't explicitly state confidence or assumptions; Does not consider alternative interpretations of the structural equations; Complete derivation trail from variable definitions through structural equations to final substitution",
+  "timestamp": "2026-03-23T13:08:56.198495+00:00"
+}

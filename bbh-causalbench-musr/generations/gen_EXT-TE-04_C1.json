@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-04",
+  "condition": "C1",
+  "output": "The answer is **(C) 2pm to 8pm**.\n\nEmily's confirmed schedule:\n- 10am–12pm: train station\n- 12pm–1pm: electronic store\n- 1pm–2pm: walking towards Statue of Liberty\n- Soccer field closes at 8pm\n\nThe only open window is **2pm to 8pm**.",
+  "timestamp": "2026-03-20T10:15:42.724318+00:00"
+}

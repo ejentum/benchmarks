@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-19",
+  "condition": "C1",
+  "output": "**[REASONING CONTEXT]**\nAmplify: minimum assumption selection; parsimony scoring; description length computation; epicycle detection\nSuppress: over-engineering bias; unnecessary hypothesis generation; variable proliferation; ad hoc explanation stacking\n**[END REASONING CONTEXT]**\n\nApplying the ability: rank each explanation by the number and specificity of technical constructs it requires. Fewer/vaguer constructs = more abstract.\n\n**E3** — \"old and heavily used\": zero technical vocabulary, maximum vagueness. No domain knowledge assumed. **Most abstract.**\n\n**E2** — \"metal fatigue after 40 years of cyclic loading\": engineering-level terminology (metal fatigue, cyclic loading), one quantitative data point. **Intermediate.**\n\n**E1** — \"iron atoms... BCC crystal lattice... grain boundaries... critical Griffith length\": atomic/crystallographic resolution, materials science formalism, precise mechanisms. **Most concrete.**\n\nThe answer is **(A) E3, E2, E1**.",
+  "timestamp": "2026-03-23T02:58:02.121339+00:00"
+}

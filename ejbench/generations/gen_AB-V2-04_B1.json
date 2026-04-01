@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-04",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: emergence_awareness; systems_thinking\nSuppress: isolated_actor_analysis; interaction_effect_blindness_in_multi_agent_systems\n[END REASONING CONTEXT]\n\nThe term is **emergence**.\n\nEmergence is the overarching structural principle by which local interactions among agents following simple rules give rise to coherent, global-level patterns that no individual agent controls, intends, or even perceives. The macro-level order is *irreducible* to the properties of any single agent — it exists only as a product of their interactions.\n\nStigmergy (indirect coordination through environment modification — like the campus paths), swarm intelligence (collective problem-solving in biological groups — like the murmuration), and decentralized consensus (like the cryptocurrency network) are all **subtypes or mechanisms** of emergence. Emergence is the umbrella concept that unifies them: bottom-up order from local rules, without top-down control.",
+  "timestamp": "2026-03-22T21:12:46.533694+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-20",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: interventional_distribution_simulation; backdoor_path_blocking; causal_effect_identification\nSuppress: observational_causation_inference; correlation_to_causation_leap\n[END REASONING CONTEXT]\n\nThe answer is **(B)**.\n\nThe health official's calculation conflates **vaccine efficacy** with **population-level transmission reduction**. The formula Re = R0 × (1 − 0.80) = 0.6 is only valid if **100% of the population is vaccinated**, because:\n\n- 80% efficacy means 80% of **vaccinated** individuals are protected\n- The correct formula is: **Re = R0 × (1 − efficacy × coverage)**\n- Re = 3.0 × (1 − 0.8 × c)\n\nFor containment (Re < 1), you'd need coverage **c > 83.3%** — achievable in theory, but never guaranteed in practice due to access barriers, refusal, contraindications, and logistics.\n\nThe official's error is treating an individual-level parameter (vaccine efficacy) as if it automatically applies at the population level — a classic causal sufficiency mistake where a necessary condition (the intervention works) is confused with the full set of conditions required for the population-level effect (the intervention must also reach enough people).",
+  "timestamp": "2026-03-22T22:00:34.559043+00:00"
+}

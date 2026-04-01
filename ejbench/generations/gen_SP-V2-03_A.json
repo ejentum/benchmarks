@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-03",
+  "condition": "A",
+  "output": "**Diameter = 2**\n\nThe diagonal 2-5 cuts the hexagon in half, so no node is ever more than 2 hops from any other. You can verify by checking the \"worst\" pairs:\n\n- **1→3**: 1→2→3 (2 hops)\n- **1→4**: 1→6→5→4 or 1→2→5→4 (3 hops? Let's check more carefully)\n\nActually, let me enumerate properly:\n\nAdjacency:\n- 1: {2, 6}\n- 2: {1, 3, 5}\n- 3: {2, 4}\n- 4: {3, 5}\n- 5: {2, 4, 6}\n- 6: {1, 5}\n\nShortest paths from node 1:\n- 1→2: 1\n- 1→3: 1→2→3 = 2\n- 1→4: 1→2→5→4 or 1→6→5→4 = **3**\n- 1→5: 1→2→5 or 1→6→5 = 2\n- 1→6: 1\n\nShortest paths from node 3:\n- 3→6: 3→2→5→6 or 3→2→1→6 = **3**\n\nAll other pairs are ≤ 3. Let me confirm 1→4 and 3→6 can't be done in 2:\n- 1→4: neighbors of 1 are {2,6}, neighbors of 4 are {3,5}. No overlap → not 2 hops. Minimum is 3.\n- 3→6: neighbors of 3 are {2,4}, neighbors of 6 are {1,5}. No overlap → not 2 hops. Minimum is 3.\n\nNo pair requires 4 hops (the diagonal prevents that).\n\n**The diameter is 3.**",
+  "timestamp": "2026-03-22T16:32:47.608289+00:00"
+}

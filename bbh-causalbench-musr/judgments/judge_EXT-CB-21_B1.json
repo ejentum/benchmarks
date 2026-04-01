@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-21",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (No) with valid causal reasoning; Multi-level analysis identifying collider bias, explaining the mechanism of spurious correlation, and tracing the causal structure; Some self-monitoring via the injected reasoning context suppressing correlation-to-causation leaps; Verification through explaining what each method would show and why; Acknowledges the hypothetical constraints but presents conclusions fairly confidently; Systematically evaluates both methods with explicit reasons for rejecting Method 1; Complete derivation from causal graph to collider identification to bias explanation, fully reproducible",
+  "timestamp": "2026-03-23T11:17:16.979015+00:00"
+}

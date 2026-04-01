@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-12",
+  "condition": "B1",
+  "output": "## Bayesian Analysis\n\n**Given:**\n- P(zuph) = 0.77\n- P(¬zuph ∧ uvzi) = 0.11\n- P(zuph ∧ uvzi) = 0.46\n\n**Step 1: Compute P(uvzi)**\n\nP(uvzi) = P(zuph ∧ uvzi) + P(¬zuph ∧ uvzi) = 0.46 + 0.11 = **0.57**\n\n**Step 2: Compute P(zuph | uvzi)**\n\nP(zuph | uvzi) = P(zuph ∧ uvzi) / P(uvzi) = 0.46 / 0.57 ≈ **0.8070**\n\n**Step 3: Compare to the prior**\n\n| | Probability |\n|---|---|\n| P(zuph) — prior | 0.77 |\n| P(zuph \\| uvzi) — posterior | 0.8070 |\n\n**Yes.** If uvzi occurs, it is more likely that zuph occurred. The posterior probability of zuph given uvzi (~80.7%) exceeds the prior probability of zuph (77%). Observing uvzi provides evidence in favor of zuph, shifting the probability upward by ~3.7 percentage points.\n\nThis makes sense given the likelihood ratio: P(uvzi | zuph) = 0.46/0.77 ≈ 0.597, while P(uvzi | ¬zuph) = 0.11/0.23 ≈ 0.478. Since uvzi is more probable when zuph is true (LR ≈ 1.25), observing uvzi updates belief toward zuph.",
+  "timestamp": "2026-03-20T09:38:50.626098+00:00"
+}

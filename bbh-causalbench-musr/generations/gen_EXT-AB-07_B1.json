@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-07",
+  "condition": "B1",
+  "output": "**Yes**, Lorine tells the truth.\n\nChain: Delfina tells the truth → Fletcher lies (he claims she lies) → Amberly tells the truth (she claims Fletcher lies) → Audrie tells the truth (she claims Amberly is truthful) → Lorine tells the truth (she claims Audrie is truthful).",
+  "timestamp": "2026-03-20T09:47:22.988247+00:00"
+}

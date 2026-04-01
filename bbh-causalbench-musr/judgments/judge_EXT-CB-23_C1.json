@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-23",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid calculation; Goes one level beyond surface by identifying the law of total probability and applying it; Mentions RA²R suppress signals but doesn't actively question own reasoning process; States the calculation clearly but doesn't verify via alternative method or sanity check; Presents result confidently with minimal uncertainty acknowledgment; No alternative approaches considered; Full derivation chain from givens to conclusion is explicit and reproducible.",
+  "timestamp": "2026-03-23T13:04:29.146615+00:00"
+}

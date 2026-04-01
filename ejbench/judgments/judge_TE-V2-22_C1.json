@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-22",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.6667,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent correctly identifies 3:00 PM post-DST = 19:00 UTC and that the stored 20:00 UTC renders as 4:00 PM EDT, matching the ground truth exactly; Agent traces the DST transition timeline, performs UTC arithmetic, renders the meeting display time, and identifies the root cause as a static offset error vs IANA resolution — three analytical levels; Agent proceeds linearly without naming potential pitfalls in its own reasoning or checking whether it might be making the same category of error as the faulty system; Agent shows arithmetic in a comparison table and confirms 20:00-4=16:00 but doesn't apply counterfactual or boundary condition tests; Agent acknowledges API unreachability and distinguishes the system's incorrect calculation from the correct one, but presents the corrected conclusion without structured confidence levels; Agent considers only the UTC-5 vs UTC-4 framing and does not explore alternative interpretations such as whether the meeting was intentionally booked in wall-clock time or whether ambiguous DST edge cases apply; Every step is shown — transition timeline, offset table, rendering formula, root cause — sufficient for full reproduction; The injection's negative gate targets spatial double-booking anomalies; the agent avoids treating the problem as a spatial conflict but doesn't explicitly articulate why that framing would be wrong; Agent avoids spatial anomaly normalization, blind execution, and unresolved conflict continuation, but does not explicitly name any suppressed failure mode; The topology encodes a branch-gated spatial claims graph (overlap detection, priority enforcement, ambiguous claim halt) — the agent's reasoning is purely linear UTC arithmetic with no branching gates or loops visible.",
+  "timestamp": "2026-03-23T05:15:22.116851+00:00"
+}

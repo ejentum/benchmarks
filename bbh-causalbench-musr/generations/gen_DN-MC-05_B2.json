@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-05",
+  "condition": "B2",
+  "output": "(B).\n\nThe model predicts *who will churn*, not *who can be saved*. Those are different questions. A customer flagged at 95% accuracy may have already mentally left — the discount arrives too late to change anything. High predictive accuracy says nothing about whether the predicted group is *persuadable*.\n\nThe core error is treating a predictive model as if it were a causal one. To drive retention, you need a model that identifies customers whose behavior *changes in response to intervention* — an uplift/causal model — not one that simply spots the most obvious churn signals.",
+  "timestamp": "2026-03-20T17:33:58.532319+00:00"
+}

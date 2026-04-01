@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-24",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: apply_threshold_monitoring; apply_breach_projection\nSuppress: limit_blindness; gradual_overload_normalization\n— Do NOT normalize values that are close-but-below a threshold as \"meeting\" the condition. Check each value strictly against its defined threshold.\n[END REASONING CONTEXT]\n\nNow evaluating each condition strictly:\n\n| Condition | Threshold | Actual | Met? |\n|-----------|-----------|--------|------|\n| N1 | ≥ 40% | 42% | **Yes** |\n| N2 | TAM > $1B | $3.2B | **Yes** |\n| N3 | LTV:CAC > 3:1 | 2.8:1 | **No** — 2.8 < 3.0 |\n| N4 | k > 0.5 or CAC < $50 | k = 0.7 | **Yes** |\n| N5 | Shipping velocity | Weekly releases | **Yes** |\n\n**The startup meets 4 out of 5 conditions.** The investor is wrong.\n\nN3 is the one that fails: an LTV:CAC ratio of 2.8:1 does **not** exceed the required 3:1 threshold. It's close — which is exactly the kind of \"approaching the limit\" value that gets casually rounded up — but 2.8 < 3.0, so the condition is not satisfied.",
+  "timestamp": "2026-03-22T22:04:39.587899+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-22",
+  "condition": "A",
+  "output": "## The DST Bug\n\n**On March 9 after the spring-forward, 3:00 PM local time = 19:00 UTC** (3:00 PM + 4 hours, since the offset is now UTC−4).\n\n**The meeting will display at the wrong time.** Here's why:\n\n1. The system stored **20:00 UTC**, computed using the pre-DST offset (UTC−5).\n2. On March 9 after 2:00 AM, the user is in **EDT (UTC−4)**.\n3. 20:00 UTC converted to EDT = **4:00 PM local time**, not 3:00 PM.\n\nThe meeting shows up **one hour late**.\n\n## The Root Cause\n\nThe system applied the **EST (UTC−5) offset** to a time that will actually be experienced in **EDT (UTC−4)**. March 9 at 3:00 PM is *after* the 2:00 AM spring-forward, so the correct conversion is:\n\n- 3:00 PM EDT + 4 hours = **19:00 UTC** (correct)\n- 3:00 PM EST + 5 hours = **20:00 UTC** (what was stored — wrong)\n\n## The Fix\n\nStore one of these instead of doing naive offset arithmetic:\n\n- **The IANA timezone name** (e.g., `America/New_York`) alongside the local time, and resolve to UTC at display/query time.\n- **The correct UTC time** by checking which offset is in effect on the target date (libraries like `pytz`, `java.time.ZonedDateTime`, or JS `Intl`/`Temporal` handle this).",
+  "timestamp": "2026-03-22T16:28:37.014797+00:00"
+}

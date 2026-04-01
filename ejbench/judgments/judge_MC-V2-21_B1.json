@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-21",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 3,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 3,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.8667,
+  "injection_composite": 0.7778,
+  "brief_justification": "Correctly concludes No with valid, multi-layered reasoning across 7 distinct assumption failures; traces second-order effects like sequence risk and real vs nominal confusion at three levels of depth; injects its own reasoning context and flags assumption categories but does not explicitly name biases it might hold; verifies arithmetic independently ($3.16M check) and sanity-checks via inflation conversion to $1.2M real; clearly distinguishes axioms from derived beliefs using category labels (Unverified, False, Misleading) and confidence distinctions; identifies failure modes of the projection but does not present or reject alternative retirement planning frameworks; every conclusion has an explicit derivation a third party could reproduce, including the real-return recalculation; avoids the anti-pattern of accepting inherited beliefs but does not explicitly name the negative gate pattern or explain why it fails; zero evidence of hidden_assumption_acceptance or model_confidence_inflation, and explicitly injects suppress signals from the payload; follows S1 decompose, G1 axiom-or-derived gate, and FLAG steps from the topology but does not show explicit graph branching or loop/gate labeling in the prose.",
+  "timestamp": "2026-03-23T03:49:11.720259+00:00"
+}

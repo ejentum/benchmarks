@@ -1,0 +1,6 @@
+{
+  "task_id": "SP-V2-10",
+  "condition": "A",
+  "output": "**The answer is (C).**\n\nThe boundary rule explicitly states that Auth and Payment **cannot depend on each other, even through interfaces**. By having `PaymentService` accept an `IAuthService` parameter, the Payment module must reference/import the `IAuthService` type defined in the Auth module. This is a **direct, compile-time dependency** from Payment → Auth, regardless of DI.\n\nWhy the other options are wrong:\n\n- **(A)** Correctly identifies the dependency exists but wrongly concludes \"no violation.\" The rule prohibits exactly this.\n- **(B)** Incorrect — DI eliminates the dependency on the *concrete* `AuthService`, but Payment still has a compile-time dependency on the `IAuthService` interface. The module must import/reference that type to declare the parameter.\n- **(D)** Identifies a violation but for the wrong reason. The problem isn't \"runtime coupling\" — it's a **compile-time structural dependency**. Payment's source code directly references a type owned by Auth.\n\nThe correct fix would be to define `IAuthService` (or a re-authentication interface) in a **shared abstractions layer** that both modules can depend on without depending on each other, preserving the acyclic dependency graph.",
+  "timestamp": "2026-03-22T16:36:21.548950+00:00"
+}

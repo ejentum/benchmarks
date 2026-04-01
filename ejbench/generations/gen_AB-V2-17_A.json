@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-17",
+  "condition": "A",
+  "output": "**Savepoint.**\n\nIn database transaction processing, a **savepoint** captures the complete transaction state at a specific point so that upon failure, the system can roll back to exactly that state and continue from there — structurally identical to a video game checkpoint.",
+  "timestamp": "2026-03-22T16:01:15.552946+00:00"
+}

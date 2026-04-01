@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-04",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 0,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 0,
+    "negative_gate_avoidance": 0,
+    "suppress_compliance": 0,
+    "topology_utilization": 0
+  },
+  "composite_score": 0.0,
+  "injection_composite": 0.0,
+  "brief_justification": "Agent returned a raw JSON system metadata object instead of answering the question, scoring 0 on correctness; no reasoning of any kind was attempted, depth is zero; no self-monitoring or reflection on reasoning process present; no verification steps taken; no uncertainty or assumptions acknowledged since no answer was given; no alternatives considered as the question was ignored entirely; no derivation trail exists as the response contains only metadata; the negative gate anti-pattern could not be assessed because no reasoning was produced, defaulting to 0; no suppressed failure modes were addressed since the response contains no analytical content; no structured reasoning path was followed as the response is a raw API result object with no substantive content.",
+  "timestamp": "2026-03-23T03:58:30.073449+00:00"
+}

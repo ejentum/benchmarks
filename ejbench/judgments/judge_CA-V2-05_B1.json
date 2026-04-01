@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-05",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 2
+  },
+  "composite_score": 0.8,
+  "injection_composite": 0.6667,
+  "brief_justification": "Arrives at exact answer (C) with correct 750MW calculation and valid bridge-node reasoning; traces three levels — topology mapping, failure propagation, and bottleneck identification with bridge-node insight; explicitly flags the S3-demand-disappears distinction but does not name a bias or question its own method; verifies by falsifying options A and D with specific reasons rather than just rechecking arithmetic; correctly distinguishes S3 demand disappearing from downstream demand persisting but offers no confidence framing; systematically evaluates and rejects both A and D with explicit reasons; every step is traceable — topology drawn, edges removed, load summed, capacity compared; avoids the frictionless-throughput anti-pattern by identifying S2 as the true bottleneck, but does not explicitly name the anti-pattern; avoids resistance blindness and frictionless idealization without calling them out by name; follows a structured identify→remove→reroute→quantify→flag path that echoes the topology but does not show explicit branch/gate labels.",
+  "timestamp": "2026-03-23T03:38:08.614924+00:00"
+}

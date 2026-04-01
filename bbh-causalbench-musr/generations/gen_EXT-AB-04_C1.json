@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-04",
+  "condition": "C1",
+  "output": "**(D) The gray book is the rightmost.**\n\nFrom the constraints:\n- Brown is right of white, and left of orange → **white … brown … orange**\n- Gray is right of orange → **white … brown … orange … gray**\n- Green is second from the right → position 4\n\nThis gives: **white, brown, orange, green, gray** (positions 1–5).",
+  "timestamp": "2026-03-20T10:46:24.495081+00:00"
+}

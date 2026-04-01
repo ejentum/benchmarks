@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-03",
+  "condition": "C2",
+  "output": "Let me work through this step-by-step, tracking position as (x, y) starting at (0, 0), facing forward (north).\n\n- **Start:** (0, 0)\n- **6 steps right:** (6, 0)\n- **1 step forward:** (6, 1)\n- **10 steps left:** (-4, 1)\n- **8 steps forward:** (-4, 9)\n- **9 steps backward:** (-4, 0)\n- **4 steps right:** (0, 0)\n\nFinal position: **(0, 0)** — back at the starting point.\n\n**Yes**",
+  "timestamp": "2026-03-20T10:54:31.552636+00:00"
+}

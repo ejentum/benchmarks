@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-06",
+  "condition": "C2",
+  "output": "**Yes, Jaymie tells the truth.** Let me trace the chain:\n\n1. **Shalonda lies.** (given)\n2. **Teressa says Shalonda tells the truth.** — That's wrong, so **Teressa lies.**\n3. **Tamika says Teressa lies.** — That's correct, so **Tamika tells the truth.**\n4. **Lorine says Tamika tells the truth.** — That's correct, so **Lorine tells the truth.**\n5. **Jaymie says Lorine lies.** — Lorine tells the truth, so this is wrong. **Jaymie lies.**\n\n**No, Jaymie does not tell the truth.** Jaymie lies.\n\n(Correcting myself — I initially wrote \"yes\" but the chain clearly shows Jaymie's claim is false.)",
+  "timestamp": "2026-03-20T11:06:10.514216+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-15",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at 9.1% matching the ~9% correct answer with valid Bayes' theorem application; traces multiple levels — raw arithmetic, intuitive explanation of why false positives dominate, and clinical prior-odds lift (~900×); notes 'counterintuitively low' suggesting awareness of cognitive bias risk but does not explicitly name assumptions or check own reasoning method mid-analysis; presents the calculation clearly but does not re-derive from a different angle or apply a boundary/sanity check; acknowledges uncertainty implicitly via 'warrants confirmatory testing' and positive predictive value framing but does not enumerate assumptions or state confidence intervals; considers no alternative approaches or interpretations (e.g., different population priors, likelihood ratio framing); table plus formula plus narrative provide a complete derivation any third party could reproduce step-by-step.",
+  "timestamp": "2026-03-23T02:33:52.267256+00:00"
+}

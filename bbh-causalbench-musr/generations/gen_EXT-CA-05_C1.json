@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-05",
+  "condition": "C1",
+  "output": "A typical person would answer **Yes**.\n\nThis is a well-known scenario in experimental philosophy (based on Knobe's \"side-effect effect\"). Research consistently shows that most people judge harmful side effects as intentional even when the agent didn't desire them, as long as the agent knew the harm would occur and acted anyway. The hunter knew the bullet would hit the bird-watcher, didn't care, and shot anyway — most people consider that intentional.",
+  "timestamp": "2026-03-20T10:16:10.086579+00:00"
+}

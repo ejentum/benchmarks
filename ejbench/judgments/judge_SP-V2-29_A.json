@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-29",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.1905,
+  "injection_composite": null,
+  "brief_justification": "Agent answers 4 but ground truth is 5, so marked wrong despite the chain CEO→VP-Eng→Dir-Platform→Team-Infra appearing internally consistent; agent lists the final hierarchy but does not explore why the depth changed or trace second-order effects of the two-step reorganization; no reflection on the counting method or assumptions about depth-1 anchor; no sanity check applied, such as verifying against original depth or re-deriving from a different angle; conclusion is stated with full certainty and no acknowledgment that depth-counting conventions could vary; no alternative counting schemes or reorganization interpretations are raised or dismissed; the audit trail shows the final chain enumeration clearly enough to be reproduced, but the intermediate reorganization steps are not derived explicitly.",
+  "timestamp": "2026-03-23T03:09:53.094553+00:00"
+}

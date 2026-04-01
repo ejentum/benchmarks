@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-17",
+  "condition": "C2",
+  "output": "Yes. Method 1 is more likely to give the correct answer.\n\n**Why:** In this world, Jyka and Kwox are independent — neither causes the other. They both independently cause Yupt, making Yupt a **collider**.\n\n- **Method 1** (marginal correlation) correctly reveals no association between Jyka and Kwox, which accurately reflects the true causal structure: there is no effect of Jyka on Kwox.\n\n- **Method 2** (conditioning on Yupt) introduces **collider bias**. When you stratify by a common effect (Yupt), you artificially open a spurious association between its two independent causes. Knowing Yupt's value makes Jyka and Kwox appear related (\"explaining away\"), even though they are not.\n\nSo Method 1 gives the accurate conclusion (no causal effect), while Method 2 creates a misleading spurious correlation.",
+  "timestamp": "2026-03-20T11:01:42.912400+00:00"
+}

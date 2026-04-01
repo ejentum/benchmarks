@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-12",
+  "condition": "C1",
+  "output": "**(B)** — Worsens significantly.\n\nThe mechanism is straightforward:\n\n1. **Supply shrinks** — Condo conversions remove rental units from the market, tightening supply for new renters.\n2. **New-tenant pricing overshoots** — Landlords cross-subsidize locked-in below-market rents by charging new tenants a premium (20% above counterfactual market rates), so new residents face *worse* prices than they would have without rent control.\n3. **Quality degrades** — Reduced maintenance on controlled units means the \"affordable\" units that do exist are deteriorating, so the effective value proposition worsens even for protected tenants.\n\nAfter 5 years, new residents face fewer available units at higher prices — the classic rent control paradox where the policy protects incumbents at the direct expense of newcomers. This is well-documented empirically (e.g., Stanford's 2019 study of San Francisco rent control found a 15% reduction in rental supply from landlord responses).\n\nOption (D) is tempting but understates the effect — \"worsens slightly\" doesn't capture the compounding of supply removal + price inflation over 5 years.",
+  "timestamp": "2026-03-20T17:44:46.791672+00:00"
+}

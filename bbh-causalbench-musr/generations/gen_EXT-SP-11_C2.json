@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-11",
+  "condition": "C2",
+  "output": "The kitchen counter.\n\nEmma took the wooden spoon from the cutlery rack and placed it on the kitchen counter. Mary was in the kitchen the entire time and would have seen this happen.",
+  "timestamp": "2026-03-20T10:56:13.513906+00:00"
+}

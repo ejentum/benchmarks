@@ -1,0 +1,6 @@
+{
+  "task_id": "CA-V2-01",
+  "condition": "C1",
+  "output": "[REASONING CONTEXT]\nAmplify: reinforcing loop detection; balancing loop detection; state delay mapping; cause-effect ordering check; temporal reordering protocol\nSuppress: treating multi-variable systems as single cause-effect; mechanism lock; effect-before-cause tolerance\n[END REASONING CONTEXT]\n\nTracing through the system step by step:\n\n**Rules:** B_new = 2·A, C_new = 3·B_old, A_new = max(0, A − C_new). D_boost only if A > 15.\n\n| Cycle | A_start | B_start | B_new = 2·A | C_new = 3·B_old | A_new = A − C_new (floor 0) |\n|-------|---------|---------|-------------|-----------------|------------------------------|\n| 1     | 10      | 0       | 20          | 0               | 10                           |\n| 2     | 10      | 20      | 20          | 60              | 0                            |\n| 3     | 0       | 20      | **0**       | 60              | 0                            |\n\n- **Cycle 3:** A=0 (no D_boost), so B_new = 2·0 = **0**. C_new = 3·20 = 60. A_new = 0 − 60 → floored to 0.\n\n**After 3 complete cycles, B = 0.**\n\nThe balancing loop (A→B→C⊣A) kills itself: B drives C up, C crushes A to zero, and with A=0 the next cycle zeroes out B. The D_boost amplifier never activates because A never exceeds 15.",
+  "timestamp": "2026-03-22T22:10:15.659938+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-14",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.7333,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at exact correct answer (C) with valid elimination of all alternatives; traces second/third-order effects (D collapsing into C, camera disabling as concealment of re-arm sequence, insider access pattern across 3 evidence types); acknowledges graceful degradation but does not name biases or course-correct mid-analysis; verifies by cross-checking all 6 evidence pieces against C and showing D's logical collapse, but no counterfactual or boundary test; acknowledges uncertainty in neighbor timing and safe combo knowledge but no structured confidence levels; systematically evaluates and rejects A/B/D with specific evidence citations before validating C; every conclusion cites specific evidence codes (E1-E6) and a timeline table a third party could reproduce; avoids reverse causality by building timeline before reasoning, but never names the anti-pattern explicitly; avoids coincidence conflation, order insensitivity, and correlation-to-causation leaps but does not explicitly call out any suppressed mode; constructs temporal sequence first (S1/S2 alignment) but reasoning proceeds as linear option evaluation, not following the G1/G2/G3 gate branching structure of the topology.",
+  "timestamp": "2026-03-23T05:10:40.547559+00:00"
+}

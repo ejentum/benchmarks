@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CA-06",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.381,
+  "injection_composite": null,
+  "brief_justification": "Correct answer 'No' with valid reasoning about accidental vs. intentional outcomes; goes one level beyond surface by articulating that intentional action requires purposeful control, not just desired outcomes; no self-monitoring, bias-naming, or mid-analysis course correction; no counterfactual checks or boundary condition tests performed; hedges implicitly via 'typical person' framing but offers no structured confidence levels or enumeration of what would change the conclusion; does not consider why someone might answer 'Yes' (e.g., intent to fire existed) or weigh that alternative; derivation chain is brief but traceable: slip → wild shot → accidental landing → lack of control → not intentional, though intermediate steps are compressed",
+  "timestamp": "2026-03-23T09:37:53.296958+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-10",
+  "condition": "C1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Answered Yes but correct answer is No, with flawed prediction of typical intuition; Goes beyond surface by analyzing causal chain and distinguishing causation from blame; No self-monitoring or questioning of own approach; No verification against psychological research on causation judgments; Hedging language present but no structured uncertainty; Mentions blame vs causation distinction but doesn't consider that people discount unintentional/helpful intermediate actors; Shows reasoning chain from neighbor's driving to accident but misapplies the causal attribution framework",
+  "timestamp": "2026-03-23T12:51:33.535149+00:00"
+}

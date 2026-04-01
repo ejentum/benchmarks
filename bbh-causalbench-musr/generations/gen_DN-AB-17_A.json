@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-17",
+  "condition": "A",
+  "output": "**(B).**\n\nEach model subsidizes one side to build a captive base, then extracts from the side with fewer alternatives:\n\n- **Razor-and-blade:** Subsidize the handle (adoption) → proprietary blade fit creates switching costs → captive consumable purchases.\n- **Freemium:** Subsidize basic users (adoption) → data/workflow lock-in raises switching costs → extract from power users who can't easily leave.\n- **Academic publishing:** Subsidize author submission (adoption) → prestige/citation lock-in means libraries *must* carry the journal → extract via subscription fees.\n\nThe common structure is: **subsidize adoption → create switching costs → monetize the captive side.** It's a two-sided market exploit, not merely \"loss leaders\" (A is too narrow) or \"subscriptions\" (C is factually wrong for razors) or \"free tiers\" (D describes a tactic, not the underlying mechanism).",
+  "timestamp": "2026-03-20T17:05:46.983044+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-09",
+  "condition": "C2",
+  "output": "The box.\n\nFrom George's perspective, he is the one who moved the key from the box to the zookeeper's office. He was then away at the feed storage and later at the aquarium. He never witnessed David retrieve the key from the office and return it to the box.\n\nHowever, George knows two possible locations for the key: the **box** (its original/usual spot) and the **office** (where he personally brought it). Since he took it from the box and placed it in the office, he would most likely check the **office** first — that's where he left it.\n\nBut the question asks for the **most likely place**, and given that:\n\n1. George knows the key's **designated home** is the box.\n2. If he's looking for it in a general sense (not remembering his own action specifically), the box is the default location everyone associates with the key.\n3. The office was a temporary destination for his review task, which he may have already considered complete.\n\nThe most likely answer is **the zookeeper's office** — because that is where George himself last placed it, and he has no knowledge that David moved it back to the box.",
+  "timestamp": "2026-03-20T17:48:43.047910+00:00"
+}

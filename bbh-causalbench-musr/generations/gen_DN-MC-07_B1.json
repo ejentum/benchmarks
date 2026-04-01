@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-07",
+  "condition": "B1",
+  "output": "**(B)** is correct.\n\nThis is a textbook **confounded causal inference**. The manager observed a correlation (agile team → more features) and jumped to a causal claim (agile *causes* more productivity). But Teams A and B differ in potentially many ways beyond methodology — team size, seniority, domain complexity, tech debt, stakeholder churn, etc. Any of those could explain the 40% gap, partially or entirely.\n\nTo justify the conclusion, you'd need to control for confounding variables — e.g., compare similar teams that differ only in methodology, or track the same team before and after switching. A single uncontrolled comparison between two teams tells you almost nothing about which methodology is better.",
+  "timestamp": "2026-03-20T17:22:14.534023+00:00"
+}

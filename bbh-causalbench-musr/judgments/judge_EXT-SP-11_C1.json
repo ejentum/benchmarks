@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-SP-11",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 2
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (kitchen counter instead of kitchen drawer) but reasoning approach of tracing object movements and mental states was sound; Goes beyond surface by considering Mary's attention state and what she could observe; Acknowledges ambiguity and considers whether Mary was aware of Emma's move, showing some self-monitoring; Performs verification by tracing the spoon's location history and checking Mary's position/attention; Acknowledges ambiguity in Mary's awareness but ultimately picks the wrong interpretation; Considers the alternative that Mary might not have seen Emma's move but rejects it without sufficient justification; Shows derivation steps clearly but makes a judgment error in the final inference about Mary's likely belief state.",
+  "timestamp": "2026-03-23T13:23:12.676535+00:00"
+}

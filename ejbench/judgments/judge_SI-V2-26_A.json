@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-26",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Correctly calculates 320s > 300s with valid arithmetic matching the ground truth; goes one level beyond the calculation by naming the retry amplification pattern and suggesting mitigations, but does not trace second-order effects; no reflection on reasoning process, assumptions, or potential errors at any point; no cross-check or alternative derivation is attempted; states the answer with full confidence without acknowledging assumptions such as strictly sequential retries and zero inter-retry delay; no alternative interpretations of the problem (e.g., concurrent retries, overlapping timeouts) are considered; every derivation step is explicitly shown and reproducible by a third party",
+  "timestamp": "2026-03-23T02:32:57.740807+00:00"
+}

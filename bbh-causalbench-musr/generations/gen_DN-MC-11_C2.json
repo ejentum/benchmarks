@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-11",
+  "condition": "C2",
+  "output": "**(B)** — Post hoc ergo propter hoc.\n\nThe core flaw is assuming that because the revenue increase *followed* the feature launch, the feature *caused* it. Temporal sequence alone doesn't establish causation. Tuesday's revenue could be explained by weekly seasonality, a concurrent marketing campaign, normal variance, or any number of confounds that weren't controlled for.\n\nOptions A and C touch on real concerns (small sample, significance), but they're subordinate to the fundamental causal reasoning error. Option D is a strategic opinion, not a logic flaw.",
+  "timestamp": "2026-03-20T17:56:36.448468+00:00"
+}

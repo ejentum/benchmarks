@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-09",
+  "condition": "C2",
+  "output": "**(B)** is correct.\n\nRestricting to summer months doesn't eliminate temperature as a confounder — it just narrows the window. Within summer, hotter days still independently drive both ice cream sales and swimming activity (the actual proximal cause of drowning). The researcher addressed the coarse confounder (season) while missing the fine-grained one (daily temperature/heat variation within summer).\n\nTo actually isolate the effect, they'd need to control for **temperature directly** and ideally **swimming frequency** — the variable that actually mediates the drowning risk.",
+  "timestamp": "2026-03-20T17:56:12.619841+00:00"
+}

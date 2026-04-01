@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-TE-03",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 1,
+    "self_monitoring": 0,
+    "verification": 0,
+    "epistemic_honesty": 0,
+    "alternative_consideration": 0,
+    "audit_trail": 2
+  },
+  "composite_score": 0.2857,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (A) with valid reasoning; Surface-level analysis listing the schedule and identifying the gap without deeper exploration; No self-monitoring or reflection on reasoning process; No verification or sanity checks performed; No acknowledgment of assumptions or uncertainty; No consideration of alternative answers or why they fail; Shows the schedule breakdown and gap identification but doesn't explicitly verify other options are ruled out",
+  "timestamp": "2026-03-23T13:11:27.094917+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-25",
+  "condition": "A",
+  "output": "**Pessimistic scenario calculation:**\n\n- **D** = 2 weeks\n- **I** = 6 + 100% overage = 6 + 6 = 12 weeks (overage = 6 weeks)\n- **T** = 3 + (overage - 1) = 3 + (6 - 1) = 3 + 5 = 8 weeks\n- **Dep** = 1 week (fixed)\n- **M** = 2 weeks, but starts 1 week before Deployment completes (1 week overlap with Dep)\n\n**Timeline:**\n\nSequential: D → I → T → Dep → M, with M overlapping Dep by 1 week.\n\nTotal = 2 + 12 + 8 + 1 + 2 - 1 (overlap) = **24 weeks**",
+  "timestamp": "2026-03-22T16:29:31.351254+00:00"
+}

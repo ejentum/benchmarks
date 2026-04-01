@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-07",
+  "condition": "A",
+  "output": "## Day 11\n\nWorking through the recurrence:\n\n| Day | After Decay (×0.917) | Use 50 | End of Day |\n|-----|---------------------|--------|------------|\n| 0 | 1000.00 | 50 | 950.00 |\n| 1 | 871.15 | 50 | 821.15 |\n| 2 | 753.00 | 50 | 703.00 |\n| 3 | 644.65 | 50 | 594.65 |\n| 4 | 545.49 | 50 | 495.49 |\n| 5 | 454.37 | 50 | 404.37 |\n| 6 | 370.81 | 50 | 320.81 |\n| 7 | 294.18 | 50 | 244.18 |\n| 8 | 223.91 | 50 | 173.91 |\n| 9 | 159.46 | 50 | 109.46 |\n| 10 | 100.37 | 50 | 50.37 |\n| **11** | **46.19** | — | **Insufficient** |\n\nOn **Day 11**, the inventory after decay is ~46.19 units, which is less than the 50-unit dose required. That's the first day the facility cannot provide the full treatment.",
+  "timestamp": "2026-03-22T16:19:35.129118+00:00"
+}

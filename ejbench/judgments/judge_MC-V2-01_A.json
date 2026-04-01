@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-01",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Correctly pinpoints the contradiction between the recommendation's 'overall national emissions' success claim and the 1.7% national increase; distinguishes regulated-sector success from national-level success and traces the offset mechanism, showing multi-level analysis; no explicit naming of potential reasoning biases or mid-analysis course-correction, though adds a nuanced caveat; confirms the cited numbers align with the text but runs no counterfactual or boundary check; separates what the data proves (sector-level decline) from what was claimed (national reduction) and notes the recommendation might still be defensible on different grounds; briefly entertains the alternative that expansion could still be a valid policy even if the stated justification is wrong, without full systematic treatment; every inferential step is shown and traceable from the quoted claim to the contradicting data point to the logical gap identified.",
+  "timestamp": "2026-03-23T02:23:26.443887+00:00"
+}

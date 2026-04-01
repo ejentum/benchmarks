@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-03",
+  "condition": "A",
+  "output": "Looking at this as a straightforward probability problem:\n\n**Given:**\n- P(College+) = 45%, so P(HighSchool−) = 55%\n- P(HighSchool− and BlackHair) = 17%\n- P(College+ and BlackHair) = 18%\n\n**Conditional probabilities:**\n- P(BlackHair | HighSchool−) = 17% / 55% ≈ **30.9%**\n- P(BlackHair | College+) = 18% / 45% = **40.0%**\n\n**Yes** — the chance of black hair is larger when observing college degree or higher (40.0% vs 30.9%).",
+  "timestamp": "2026-03-20T09:17:53.761716+00:00"
+}

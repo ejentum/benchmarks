@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-01",
+  "condition": "C1",
+  "output": "[REASONING CONTEXT]\nAmplify: inflow/outflow tracking; balance verification; step conclusion consistency check; intermediate result verification\nSuppress: conservation violation tolerance; unbalanced acceptance; post hoc rationalization\n[END REASONING CONTEXT]\n\n## Solution\n\nTracking units through each stage with strict conservation:\n\n**Stage 1** — 1,000 widgets/hr, 10% defective (all pass forward):\n- Good: 900 | Defective: 100 | Total out: 1,000 ✓\n\n**Stage 2** — 5% of all incoming destroyed:\n- Destroyed: 1,000 × 0.05 = 50\n- Good surviving: 900 × 0.95 = **855**\n- Defective surviving: 100 × 0.95 = **95**\n- Balance check: 855 + 95 + 50 = 1,000 ✓\n\n**Stage 3** — Inspection (reject/pass):\n- Defective: 90% correctly rejected → 95 × 0.10 = **9.5 pass**\n- Good: 2% falsely rejected → 855 × 0.98 = **837.9 pass**\n- Balance check: (85.5 rejected) + (17.1 rejected) + 847.4 passed = 950 ✓\n\n**Total passing inspection: 837.9 + 9.5 ≈ 847**\n\nThe answer is **(C) 847**.",
+  "timestamp": "2026-03-22T22:09:52.581020+00:00"
+}

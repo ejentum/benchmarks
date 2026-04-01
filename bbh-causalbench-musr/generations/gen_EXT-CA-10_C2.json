@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-10",
+  "condition": "C2",
+  "output": "A typical person would answer:\n\n**No**\n\nMost people would not consider the neighbor to have caused the injury to Joe's son. The neighbor was doing a favor by picking up the child after Joe failed to show up, and the drunk driver struck them — the neighbor had no control over that. People intuitively attribute causation to the abnormal or blameworthy element in the chain (the drunk driver, or arguably Joe's delay), not to someone who was acting helpfully and driving normally.",
+  "timestamp": "2026-03-20T10:54:28.146973+00:00"
+}

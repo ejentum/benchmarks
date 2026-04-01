@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-02",
+  "condition": "B1",
+  "output": "**Yes**\n\nYou end up back at the starting point. Here's the trace:\n\n1. **Take 3 steps** → 3 units forward (North)\n2. **Turn around** → now facing South\n3. **Take 5 steps** → 5 units South → net position: **2 units South** of start\n4. **Turn right** → now facing West\n5. **Turn right** → now facing North\n6. **Take 1 step** → 1 unit North → **1 unit South** of start\n7. **Take 1 step** → 1 unit North → **back at start**",
+  "timestamp": "2026-03-20T09:34:33.458125+00:00"
+}

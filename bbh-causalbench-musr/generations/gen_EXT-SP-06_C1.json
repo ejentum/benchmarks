@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-06",
+  "condition": "C1",
+  "output": "## The Nightstand\n\nLuke would look for the keys on the **nightstand** — their original location that all three knew about.\n\n**Here's the information asymmetry breakdown:**\n\n1. **Starting state:** All three know the keys are on the nightstand.\n\n2. **Maria moves the keys** from the nightstand to a kitchen drawer. Henry sees this (they're together in the cellar, and it's done \"well within Henry's view\"). But Luke is **elsewhere**, patrolling the property boundaries. No one informs him.\n\n3. **Henry moves the keys** from the kitchen drawer to a safety deposit box. He is **alone** in the cellar. Maria is **upstairs** on the phone. Luke is **outside** securing boundaries. Neither witnesses this.\n\n**Each person's final belief about key location:**\n\n| Person | Believes keys are in | Actual location |\n|--------|---------------------|-----------------|\n| Henry | Safety deposit box | Safety deposit box |\n| Maria | Kitchen drawer | Safety deposit box |\n| Luke | **Nightstand** | Safety deposit box |\n\nLuke never witnessed either transfer. No one communicated the changes to him. From his perspective, the keys have been on the nightstand the entire time — the last (and only) location he was ever aware of.",
+  "timestamp": "2026-03-20T10:34:51.807367+00:00"
+}

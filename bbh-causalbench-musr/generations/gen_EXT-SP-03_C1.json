@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-03",
+  "condition": "C1",
+  "output": "**No**\n\nLet me trace the path using a fixed coordinate frame (starting at origin (0,0), facing forward = +Y, right = +X):\n\n1. Start: (0, 0)\n2. 6 steps right: (6, 0)\n3. 1 step forward: (6, 1)\n4. 10 steps left: (-4, 1)\n5. 8 steps forward: (-4, 9)\n6. 9 steps backward: (-4, 0)\n7. 4 steps right: (0, 0)\n\nWait — that actually returns to (0, 0).\n\n**Yes** — you return to the starting point.",
+  "timestamp": "2026-03-20T10:33:58.575868+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "MC-V2-04",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.9048,
+  "injection_composite": null,
+  "brief_justification": "Arrives at correct answer (A) with valid multi-step reasoning distinguishing CFR from population mortality burden; traces second-order effects of R0=2.8 on total infected population vs seasonal flu, and derives quantitative infection rate estimates (60-80% naive population); shows some awareness of reasoning traps, notably identifying option C as a 'tempting distractor' and explaining why it argues the wrong direction, though doesn't explicitly name own biases; verifies by testing each option's logic against the actual question, correctly computing that option C's lower IFR still yields high total mortality under high R0; acknowledges uncertainty with hedged estimates ('roughly 5-15%', '60-80%+') but doesn't structure confidence levels or identify what would change the conclusion; systematically evaluates all four alternatives with specific rejection reasons for each; derivation chain is explicit and reproducible — CFR formula, R0 comparison, infection fraction estimation, and per-option analysis are all traceable.",
+  "timestamp": "2026-03-23T02:25:43.582114+00:00"
+}

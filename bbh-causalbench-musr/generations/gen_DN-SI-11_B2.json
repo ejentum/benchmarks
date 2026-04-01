@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-SI-11",
+  "condition": "B2",
+  "output": "**The answer is (B).**\n\nThis is a classic **degenerative feedback loop**:\n\n1. Power users dominate early signals → algorithm promotes niche content\n2. Casual majority finds trending irrelevant → disengages from it\n3. Loss of casual data removes the counterbalance → algorithm doubles down\n4. The loop tightens with each cycle\n\nThe trending page converges on an increasingly narrow niche, effectively becoming invisible to 60% of the audience. Overall platform engagement drops even though the power user segment is well-served — you're optimizing for the minority while starving the system of the signal diversity it needs to stay broadly relevant.\n\nThe other options fail because:\n- **(A)** ignores that \"most engaged\" is only 40% — losing the majority is not a success state for a platform\n- **(C)** assumes casual users will seek out content they've already signaled disinterest in\n- **(D)** assumes a self-correction mechanism that doesn't exist — the algorithm has no incentive to re-weight absent users",
+  "timestamp": "2026-03-20T17:31:08.099498+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CA-05",
+  "condition": "B1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Arrives at correct answer 'Yes' with valid reasoning grounded in Knobe's side-effect effect; Multi-level analysis tracing folk psychology, philosophical framework, and the knowing+not-caring+proceeding chain; Explicitly self-corrects mid-response from an initial 'No' to 'Yes' after re-examining the research, demonstrating active monitoring; Verifies by mapping the scenario onto Knobe's established paradigm but doesn't test alternative framings rigorously; Acknowledges the nuance between goal vs foreseen-and-accepted but doesn't explicitly state confidence levels or what would change the conclusion; Mentions the beneficial side-effect contrast case but doesn't deeply evaluate alternative folk judgments like 'No' being defensible; Full derivation chain from scenario structure to Knobe framework to folk reasoning principle to final answer is traceable",
+  "timestamp": "2026-03-23T10:54:37.240577+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-05",
+  "condition": "B1",
+  "output": "**Yes**, increasing the vaccination rate decreases the overall probability of smallpox survival.\n\n**Reasoning:**\n\nSince vaccination is a root node (no parents in the causal graph), there are no backdoor paths or confounders to block. The observational conditionals equal the interventional ones:\n\n- P(survival | do(vaccinated)) = 33%\n- P(survival | do(unvaccinated)) = 42%\n\nCurrent overall survival probability:\n\nP(survival) = 0.12 × 0.33 + 0.88 × 0.42 = 0.0396 + 0.3696 = **40.92%**\n\nBecause vaccinated individuals have a **lower** survival probability (33%) than unvaccinated individuals (42%), shifting more of the population into the vaccinated group moves the weighted average downward. Any increase in the vaccination rate transfers weight from the 42% group to the 33% group, reducing overall survival probability.",
+  "timestamp": "2026-03-20T09:36:37.827132+00:00"
+}

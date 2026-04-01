@@ -1,0 +1,20 @@
+{
+  "task_id": "CA-V2-07",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Agent selected (A) instead of the keyed answer (B), though the argument for (A) is substantively compelling — still scored 1 for wrong answer per key; agent traces the mechanism through multiple levels (measurement instrument → data corruption → causal inference breakdown), going well beyond surface identification; agent explicitly flags that D is 'tempting but subtly wrong,' showing active self-monitoring of plausible errors without naming its own epistemic biases more formally; agent tests a counterfactual ('even if desks genuinely reduced illness, you couldn't detect it') as a boundary check, but does not re-derive from a second independent angle; agent presents the conclusion with high confidence and never states a confidence level or identifies what evidence would overturn the analysis; agent systematically evaluates (A) vs (D) with specific mechanistic reasons for rejecting D, earning full marks for alternative consideration; the full reasoning chain — from observed difference → measurement mechanism → why D fails → why A fits — is explicit and reproducible by a third party.",
+  "timestamp": "2026-03-23T02:28:57.249041+00:00"
+}

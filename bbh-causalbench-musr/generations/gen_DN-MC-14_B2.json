@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-14",
+  "condition": "B2",
+  "output": "**(B)** is correct.\n\nThe three claims form a logical contradiction:\n\n- **1 vs 2:** If the model never stores/memorizes personal data, it can't \"improve by learning from user interactions\" — learning *is* a form of retention (in the weights).\n- **2 vs 3:** If user data has influenced model weights through training, \"complete deletion\" would require retraining from scratch without that data — computationally impractical and rarely what companies actually do.\n- **All three together:** The system is claimed to simultaneously not retain data, learn from data, and fully un-learn data. That's incoherent.\n\nOptions A and C conflate \"patterns vs. specific data\" — but even abstract pattern extraction from personal data means that data *influenced* the model, making claim 1 misleading and claim 3 effectively impossible without full retraining. Option D is too generous — the conflict isn't just about statement 3 being \"aspirational,\" statements 1 and 2 are already in tension.",
+  "timestamp": "2026-03-20T17:36:16.307805+00:00"
+}

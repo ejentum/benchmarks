@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SI-07",
+  "condition": "A",
+  "output": "**Emily → Surgery | Zoey → Post-Op Care | David → Neither (reassign or remediate)**\n\nHere's the reasoning:\n\n**Emily for Surgery:**\n- Years of surgical training, comfortable in the OR\n- Modern techniques, track record of successful minor surgeries\n- Her weaknesses (blunt communication, poor bedside manner) matter less in surgery than in post-op care\n\n**Zoey for Post-Op Care:**\n- Personal motivation (grandmother's care) and additional training in the field\n- Serene, patient demeanor — exactly what recovering patients need\n- Her weaknesses (nervousness around surgery, intimidation by Emily) are removed when she's working independently in the post-op room\n\n**David for Neither (or support/supervision only):**\n- Shaking hands rule him out of surgery\n- Medication errors, impatience with anxious patients, and conflict with Zoey rule him out of post-op care\n- He's a liability in both roles as described — the responsible move is to not assign him to either patient-facing task until his issues are addressed\n\nThis allocation plays to each person's demonstrated strengths, isolates Emily and Zoey from their interpersonal friction, and protects patients from David's documented pattern of errors in both domains.",
+  "timestamp": "2026-03-20T09:22:33.287090+00:00"
+}

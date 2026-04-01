@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-24",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3
+  },
+  "composite_score": 0.5238,
+  "injection_composite": null,
+  "brief_justification": "Correct answer with valid causal reasoning; Goes one level beyond surface by tracing the causal graph step-by-step with do-calculus framing; Implicit self-monitoring via RA²R injection but no explicit reflection on reasoning pitfalls; Mentions verification framework (suppress/amplify) but doesn't execute counterfactual or boundary checks; Presents conclusion confidently without acknowledging assumptions about the AND vs OR interpretation; No alternative interpretations considered (e.g., whether alarm rings with only one setter); Full derivation chain from intervention to conclusion is explicitly shown and reproducible",
+  "timestamp": "2026-03-23T13:05:17.926752+00:00"
+}

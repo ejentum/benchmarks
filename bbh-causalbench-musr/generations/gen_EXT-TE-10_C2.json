@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-10",
+  "condition": "C2",
+  "output": "(D) 5am to 11am\n\nAshley's schedule accounts for every slot from 11am onward (deli 11‑1, water park 1‑3, yoga 3‑6, bookstore closed after 6). The only open window is between waking up at 5am and being seen at the deli at 11am.",
+  "timestamp": "2026-03-20T10:53:53.639051+00:00"
+}

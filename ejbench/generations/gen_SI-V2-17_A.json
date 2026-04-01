@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-17",
+  "condition": "A",
+  "output": "**Yes.** Let me just compute it directly:\n\n- N(0) = 500\n- N(1) = 500 × 0.5 + 100 = **350**\n- N(2) = 350 × 0.5 + 100 = **275**\n- N(3) = 275 × 0.5 + 100 = **237.5**\n- N(4) = 237.5 × 0.5 + 100 = **218.75**\n\n**Yes — the population drops below 220 in year 4** (N(4) = 218.75). It converges toward the equilibrium of 200 from above, crossing the 220 threshold between year 3 and year 4.",
+  "timestamp": "2026-03-22T16:00:31.325708+00:00"
+}

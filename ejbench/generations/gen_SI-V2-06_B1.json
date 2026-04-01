@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-06",
+  "condition": "B1",
+  "output": "**[REASONING CONTEXT]**\nAmplify: temporal_horizon_normalization — track each period independently without compounding errors.\nSuppress: single_discount_rate_assumption — don't skip intermediate balances or lump transactions together.\n**[END REASONING CONTEXT]**\n\nWorking through each year sequentially:\n\n| Year | Start Balance | After 8% Interest | Transaction | End Balance |\n|------|--------------|-------------------|-------------|-------------|\n| 1 | $10,000.00 | $10,800.00 | −$500 | **$10,300.00** |\n| 2 | $10,300.00 | $11,124.00 | −$800 | **$10,324.00** |\n| 3 | $10,324.00 | $11,149.92 | +$300 | **$11,449.92** |\n| 4 | $11,449.92 | $12,365.91 | −$1,200 | **$11,165.91** |\n\n**The account balance after the Year 4 transaction is $11,166.**",
+  "timestamp": "2026-03-22T20:55:34.325720+00:00"
+}

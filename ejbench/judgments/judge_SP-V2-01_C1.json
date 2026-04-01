@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-01",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 3,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 3,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.8333,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at exact answer (B) with correct directional policy analysis at each hop; builds a policy table and traces three levels of implication (policy text → directional constraint → initiator vs receiver distinction); explicitly names and suppresses halo effect and direct communication assumption biases mid-analysis; verifies by forward-tracing all hops AND falsifying options A and D with specific policy contradictions; distinguishes sourced facts from interpretation but does not assign explicit confidence levels or state what would change the conclusion; evaluates and rejects options A and D with named failure modes, covering all plausible alternatives; every hop links to an explicit policy clause, fully reproducible; injection's negative gate concerns thundering herd restart clustering, which the agent avoids but never explicitly references or names; agent declares its own Suppress list that differs from the injection's (thundering herd terms), so compliance with the actual injected suppression signals is partial; injection topology is temporal-distribution-focused (scan→cluster→gate→redistribute), while agent uses a linear hop-by-hop trace with PASS/FAIL gates — loosely maps to gate nodes but does not follow the branching/redistribution structure.",
+  "timestamp": "2026-03-23T05:01:59.336017+00:00"
+}

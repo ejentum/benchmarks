@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-20",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 0,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer with a valid concrete counterexample schedule; goes one level beyond stating the answer by constructing and checking a solution, but does not explore constraint interactions or why the problem is non-trivial; no explicit reflection on reasoning process, potential pitfalls, or assumptions — just executes the construction linearly; systematically verifies all 7 constraints against the proposed schedule in a structured checklist; presents the conclusion confidently without acknowledging whether the solution is unique, whether assumptions were made, or what would invalidate it; only one solution is constructed with no mention of alternatives or exploration of the solution space; every cell in the schedule and every constraint check is fully shown, enabling complete reproduction by a third party.",
+  "timestamp": "2026-03-23T03:04:30.725528+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "SP-V2-29",
+  "condition": "B1",
+  "scores": {
+    "correctness": 0,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.5,
+  "injection_composite": 0.5556,
+  "brief_justification": "Agent answered 4, correct answer is 5, so correctness is 0 despite plausible logic; Agent traces the intermediate step and compares to original depth, going one level beyond surface; Agent implicitly rechecks by noting original depth but does not reflect on reasoning method; Agent verifies by tracing the full path step-by-step and confirming the intermediate state; Agent presents conclusion as certain with no acknowledgment of ambiguity or alternative interpretations of depth counting; Agent acknowledges original depth for comparison but does not evaluate alternate interpretations of the org structure; Every step is explicitly shown from CEO to Team-Infra with depth labels, fully reproducible; Agent stays focused on concrete structural tracing and avoids over-theorizing, but does not explicitly name the anti-pattern; Response shows no depth_mismatch or uncalibrated depth selection, maintaining appropriate analytical level throughout; Agent reasons linearly through the path without branching, gating, or looping as the topology suggests",
+  "timestamp": "2026-03-23T04:15:38.368285+00:00"
+}

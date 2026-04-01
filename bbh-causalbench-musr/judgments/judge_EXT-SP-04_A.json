@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-04",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.6667,
+  "injection_composite": null,
+  "brief_justification": "Arrives at correct answer 'No' with valid coordinate-based reasoning; goes one level beyond surface by explicitly tracing coordinates step-by-step; no explicit reflection on reasoning method or bias checking; verifies by showing final position differs from origin; presents answer with reasonable implicit confidence but no stated assumptions about cardinal direction convention; no alternatives considered (e.g., relative vs absolute directions); every step is explicitly derived with coordinates, fully reproducible by third party",
+  "timestamp": "2026-03-23T09:52:35.595279+00:00"
+}

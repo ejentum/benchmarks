@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-21",
+  "condition": "C1",
+  "output": "The API is timing out. Per the graceful degradation rule in CLAUDE.md, I'll proceed with native reasoning.\n\n---\n\n[REASONING CONTEXT]\nApplying careful chronological ordering: enumerate all events, sort strictly by timestamp, then evaluate state at a precise query point. Suppress: jumping to majority-commit as the answer without asking what the question actually is (T2's start time ≠ T1's commit time).\n[END REASONING CONTEXT]\n\n**Sort acknowledgments chronologically:**\n\n| Order | Node | Timestamp |\n|-------|------|-----------|\n| 1st | Node 3 | 10:00:00.050 |\n| 2nd | Node 1 | 10:00:00.100 |\n| 3rd | Node 2 | 10:00:00.200 |\n| 4th | Node 5 | 10:00:00.250 |\n| 5th | Node 4 | 10:00:00.300 |\n\n**T2 starts at 10:00:00.150.**\n\nAt that moment, only acknowledgments with timestamps **≤ 10:00:00.150** have occurred:\n- Node 3 @ .050 ✓\n- Node 1 @ .100 ✓\n- Node 2 @ .200 ✗ (hasn't happened yet)\n\n**The answer is (B) — 2 nodes** (Node 3 at .050 and Node 1 at .100).\n\nThe majority (3rd acknowledgment) isn't reached until .200, which is *after* T2 starts. This is the key distributed systems nuance: T2 starts before T1 is committed, so T2 cannot safely read T1's data at its start time.",
+  "timestamp": "2026-03-23T04:23:52.687042+00:00"
+}

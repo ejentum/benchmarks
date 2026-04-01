@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-10",
+  "condition": "B2",
+  "output": "**No, Ka lies.**\n\nChain:\n1. **Vina** tells the truth (given).\n2. **Helene** says Vina lies → Helene **lies**.\n3. **Kandi** says Helene tells the truth → Kandi **lies**.\n4. **Jamey** says Kandi lies → Jamey **tells the truth**.\n5. **Ka** says Jamey lies → Ka **lies**.",
+  "timestamp": "2026-03-20T10:09:39.219580+00:00"
+}

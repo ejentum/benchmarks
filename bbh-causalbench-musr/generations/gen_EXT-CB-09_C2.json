@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-09",
+  "condition": "C2",
+  "output": "**No.** The chance of large feet is **smaller** when observing college degree or higher.\n\n**Computation:**\n\n- P(large feet | college degree or higher) = 10% / 36% ≈ **27.78%**\n- P(large feet | high school or lower) = 43% / 64% ≈ **67.19%**\n\nObserving a college degree or higher is associated with a **lower** probability of large feet, not a higher one.",
+  "timestamp": "2026-03-20T10:58:06.457736+00:00"
+}

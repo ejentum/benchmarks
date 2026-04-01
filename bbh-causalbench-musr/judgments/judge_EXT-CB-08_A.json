@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-CB-08",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 1,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7143,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (Yes, ~90.77%) via valid Bayes' theorem application; goes one level beyond surface by explicitly decomposing P(large feet) and noting the causal vs observational distinction, but does not explore second-order implications; shows awareness of the causal structure question and consciously decides it does not apply here, which is genuine process reflection; performs the calculation once without cross-checking via a different derivation path or boundary test; correctly flags the causal/observational distinction as something that could change the approach, showing structured awareness of assumptions; mentions and explicitly resolves the causal intervention alternative, explaining why standard Bayes applies; every intermediate step is labeled and shown, making the full derivation reproducible from the response alone.",
+  "timestamp": "2026-03-23T10:03:47.409914+00:00"
+}

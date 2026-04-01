@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-03",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid computation; goes one level beyond surface by distinguishing observational vs causal interpretation; explicitly monitors reasoning via suppress/amplify signals and notes association vs causation distinction; verifies marginals sum correctly and joint probabilities are consistent; acknowledges this is conditional probability not causal claim but doesn't deeply quantify uncertainty; mentions causal vs associational distinction but doesn't systematically evaluate alternative interpretations; full derivation chain from joint probabilities to conditionals to comparison is clearly shown and reproducible.",
+  "timestamp": "2026-03-23T12:53:14.695528+00:00"
+}

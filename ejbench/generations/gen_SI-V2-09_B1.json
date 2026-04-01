@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-09",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: discount_rate_auditing; temporal_horizon_normalization; present_bias_flagging\nSuppress: single_discount_rate_assumption; time_consistent_preference_default\nCognitive Style: intertemporal_simulation — track each month sequentially, no shortcuts\n[END REASONING CONTEXT]\n\nWorking through this month by month. The order each month is: **interest → check fee → add fee → subtract payment**.\n\n| Month | Start Balance | After 2% Interest | Late Fee | After Fee | After $150 Payment |\n|-------|--------------|-------------------|----------|-----------|-------------------|\n| 1 | $5,000.00 | $5,100.00 | $75 (>5k) | $5,175.00 | **$5,025.00** |\n| 2 | $5,025.00 | $5,125.50 | $75 | $5,200.50 | **$5,050.50** |\n| 3 | $5,050.50 | $5,151.51 | $75 | $5,226.51 | **$5,076.51** |\n| 4 | $5,076.51 | $5,178.04 | $75 | $5,253.04 | **$5,103.04** |\n| 5 | $5,103.04 | $5,205.10 | $75 | $5,280.10 | **$5,130.10** |\n| 6 | $5,130.10 | $5,232.70 | $75 | $5,307.70 | **$5,157.70** |\n\nEvery month the post-interest balance exceeds $5,000, so the $75 fee applies all 6 months. The $150 payment never overcomes the combined interest + fee (~$175/month), so the balance grows.\n\n**After 6 months, the loan balance is $5,158.**",
+  "timestamp": "2026-03-22T20:57:35.479595+00:00"
+}

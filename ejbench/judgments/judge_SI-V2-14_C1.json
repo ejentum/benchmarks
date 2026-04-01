@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-14",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 2,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.7,
+  "injection_composite": 0.5556,
+  "brief_justification": "Correctness: agent correctly computes $8,000 < $10,500 and concludes No with valid arithmetic; Reasoning_depth: traces wage elasticity, computes % changes in wage vs employment, derives general inelastic-demand rule — three analytical layers; Self_monitoring: no explicit reflection on reasoning method or bias checks, just proceeds linearly through the arithmetic; Verification: table cross-checks equilibrium vs minimum-wage scenarios but no counterfactual or boundary-condition test (e.g., what wage would leave income unchanged); Epistemic_honesty: general rule at end introduces conditional framing but no confidence levels or stated assumptions about the demand curve's validity; Alternative_consideration: addresses the inelastic-demand alternative and explains when the council's policy would work, but does not enumerate other mechanisms (e.g., monopsony, long-run supply shifts); Audit_trail: every numerical step is shown and a third party could reproduce the full derivation from the response alone; Negative_gate_avoidance: avoids individual-payoff bias (accounts for job losers, not just wage gainers) but does not explicitly name or address the negative gate pattern; Suppress_compliance: avoids individual payoff bias and false dichotomy lock, but the analysis is slightly deterministic with no stochastic scenario framing called for by suppress signals; Topology_utilization: response is linear (arithmetic → elasticity → general rule) with no branching gates or loop-back nodes visible from the game-theoretic DAG topology provided.",
+  "timestamp": "2026-03-23T04:28:20.414967+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-AB-16",
+  "condition": "B1",
+  "output": "**(C)** is the most structurally accurate.\n\nOptions A and B each adopt one side's framing as though existing categories cleanly apply. Option D reduces the structural question to an empirical test (can it reproduce passages?) without addressing the underlying categorical gap.\n\nThe core issue is that copyright law's existing framework was built around two activities: **copying for distribution** and **transformative use by humans**. AI training does something that doesn't map neatly onto either:\n\n- It ingests the full work (unlike fair use cases where only portions are used for commentary/criticism)\n- But it doesn't distribute copies (unlike traditional infringement)\n- The \"transformation\" isn't a human creative act — it's a statistical compression into weights\n- The output may or may not reproduce the original, but the *training process itself* is the contested use\n\nOption C identifies this correctly: the real question is whether **learning-from** is a category of use that copyright should govern at all, and existing doctrine wasn't designed to answer that. Courts applying fair use's four-factor test to AI training are fitting a new phenomenon into an old framework — which is why rulings keep going in contradictory directions.",
+  "timestamp": "2026-03-20T17:19:01.733079+00:00"
+}

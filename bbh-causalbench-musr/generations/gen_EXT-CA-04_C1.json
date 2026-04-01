@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CA-04",
+  "condition": "C1",
+  "output": "A typical person would answer: **No**.\n\nThis is the well-known Knobe effect (side-effect effect) asymmetry case — but this is the **positive** version. When the side effect is positive (helping the environment) and the agent explicitly disavows caring about it (\"We don't care at all about helping the environment\"), most people judge the outcome as **not intentional**.\n\nThe board's goal was profit; the environmental benefit was a foreseen but uncared-about side effect. People typically don't attribute intentionality to positive side effects the agent didn't care about.",
+  "timestamp": "2026-03-20T10:15:55.646262+00:00"
+}

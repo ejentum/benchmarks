@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-22",
+  "condition": "C2",
+  "output": "## Causal Analysis\n\n**Yes, the likelihood of a high salary would increase.**\n\n**Causal structure:**\n- Spicy food (X) → Occupation (M) → Salary (Y)\n- Spicy food (X) → Salary (Y) directly\n- Skill (U, unobserved) → Occupation (M) and Salary (Y)\n\n**Key observation:** Nothing in this world *causes* liking spicy food — it has no parents in the causal graph. That means there are no backdoor paths from X to Y, so the observational conditional **equals** the interventional distribution:\n\n$$P(Y|do(X)) = P(Y|X)$$\n\nSkill confounds Occupation → Salary, but it does **not** confound Spicy Food → Salary because Skill has no causal effect on Spicy Food.\n\n**Current overall probability of high salary:**\n\nP(Y=1) = P(Y=1|X=1)·P(X=1) + P(Y=1|X=0)·P(X=0)\n       = 0.40 × 0.83 + 0.19 × 0.17\n       = 0.332 + 0.0323\n       = **0.3643 (≈36.4%)**\n\n**Under intervention do(X=1) for everyone:**\n\nP(Y=1|do(X=1)) = P(Y=1|X=1) = **0.40 (40%)**\n\n**Result:** The intervention would raise the probability of high salary from ~36.4% to 40%, an increase of ~3.6 percentage points. The gain comes from converting the 17% of people who don't like spicy food (and have only a 19% chance of high salary) to the 40% rate.",
+  "timestamp": "2026-03-20T11:04:11.761242+00:00"
+}

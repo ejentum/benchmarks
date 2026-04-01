@@ -1,0 +1,6 @@
+{
+  "task_id": "MC-V2-01",
+  "condition": "A",
+  "output": "The recommendation claims the program has \"demonstrated success at reducing **overall national emissions**,\" but the data shows the opposite: total national emissions **increased by 1.7%** during the same period. The program successfully reduced emissions *within the regulated sectors* (23% decline), but that's not the same as reducing overall national emissions. The growth in unregulated sectors more than offset the regulated gains.\n\nThe expansion recommendation may still be reasonable — applying the tax to more sectors could address the unregulated growth — but the justification mischaracterizes what the data actually demonstrates.",
+  "timestamp": "2026-03-22T16:06:01.367527+00:00"
+}

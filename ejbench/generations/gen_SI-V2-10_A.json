@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-10",
+  "condition": "A",
+  "output": "## Yes, the room exceeds 21°C.\n\nHere's the minute-by-minute trace:\n\n| Time | Temp (°C) | Heater | Event |\n|------|-----------|--------|-------|\n| t=0 | 15.0 | OFF | 15 < 20 detected → heater ON at t=1 |\n| t=1 | 14.5 | ON | (cooled 0.5 while waiting) |\n| t=2 | 16.0 | ON | +1.5/min |\n| t=3 | 17.5 | ON | |\n| t=4 | 19.0 | ON | still < 20, no trigger |\n| t=5 | 20.5 | ON | **20.5 ≥ 20 detected → heater OFF at t=6** |\n| t=6 | **22.0** | OFF | heater was still on during t=5→6 |\n| t=7 | 21.5 | OFF | cooling at -0.5/min |\n\nThe key: when the temperature first reaches/exceeds 20°C at t=5 (20.5°C), the 1-minute delay means the heater keeps running until t=6, adding another 1.5°C of overshoot. The room peaks at **22.0°C** — exceeding 21°C by a full degree.\n\nThe overshoot is inherent to the delay. Any system with a response lag will overshoot its setpoint, and the amount of overshoot equals the heating rate × the delay time (1.5 × 1 = 1.5°C beyond the ~20.5°C trigger point).",
+  "timestamp": "2026-03-22T15:58:18.115924+00:00"
+}

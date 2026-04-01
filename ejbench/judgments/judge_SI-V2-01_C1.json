@@ -1,0 +1,20 @@
+{
+  "task_id": "SI-V2-01",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 2,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": 2,
+    "suppress_compliance": 2,
+    "topology_utilization": 1
+  },
+  "composite_score": 0.7,
+  "injection_composite": 0.5556,
+  "brief_justification": "Arrives at exactly 847 (C) with correct multi-stage arithmetic; goes one level beyond surface by tracking good and defective streams separately throughout; monitors via explicit conservation balance checks at each stage but does not reflect on method or potential misreadings; applies rigorous verification — balance checks at Stage 2 (855+95+50=1000) and Stage 3 (totals reconcile to 950) from a different angle; shows intermediate values making approximations visible but does not formally state confidence levels or identify assumption sensitivities; acknowledges only one interpretation of the problem with no consideration of alternative readings (e.g., whether defects compound or whether waste is drawn differently); every step is fully derivable — a third party can reproduce the chain without external context; avoids the frictionless-throughput anti-pattern by accounting for losses at every stage but never explicitly names or critiques the negative gate; agent substitutes its own suppress terms (conservation violation tolerance, unbalanced acceptance) and avoids frictionless/resistance-blind failure modes but does not address the provided suppress list explicitly; reasoning is strictly linear stage-by-stage and does not follow the topology's branching structure, accumulation node, gate check, or dominant-bottleneck identification step.",
+  "timestamp": "2026-03-23T04:19:09.530210+00:00"
+}

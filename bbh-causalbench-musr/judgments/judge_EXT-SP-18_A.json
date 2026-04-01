@@ -1,0 +1,20 @@
+{
+  "task_id": "EXT-SP-18",
+  "condition": "A",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 2,
+    "self_monitoring": 1,
+    "verification": 1,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 2,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.4286,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (mixing console instead of recording booth) but applied sound theory-of-mind reasoning about Austin's knowledge state; Goes one level beyond surface by tracking Austin's mental model of headphone location; Implicit self-monitoring by tracing what Austin knows vs what happened; Mentions verification need by noting no confirmed knowledge transfer but doesn't check alternative possibilities; Presents conclusion confidently without acknowledging uncertainty about what Austin might have noticed; Acknowledges Mark's move but doesn't consider other locations Austin might check; Shows reasoning chain from headphone movements to Austin's knowledge state but misses the correct answer's derivation.",
+  "timestamp": "2026-03-23T10:34:11.750693+00:00"
+}

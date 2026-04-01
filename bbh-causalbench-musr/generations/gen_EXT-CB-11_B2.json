@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-11",
+  "condition": "B2",
+  "output": "## Analysis\n\nGiven:\n- P(visited England) = 49%, so P(not visited England) = 51%\n- P(not visited England ∧ fired) = 14%\n- P(visited England ∧ fired) = 37%\n\n**Conditional probabilities:**\n\n- P(fired | not visited England) = 0.14 / 0.51 ≈ **27.45%**\n- P(fired | visited England) = 0.37 / 0.49 ≈ **75.51%**\n\n**No.** The chance of the employee being fired is *larger* when observing having visited England (≈75.5%) compared to not having visited England (≈27.5%).",
+  "timestamp": "2026-03-20T09:59:38.721498+00:00"
+}

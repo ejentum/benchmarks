@@ -1,0 +1,6 @@
+{
+  "task_id": "SI-V2-21",
+  "condition": "B1",
+  "output": "[REASONING CONTEXT]\nAmplify: apply_threshold_monitoring; apply_breach_projection\nSuppress: limit_blindness; gradual_overload_normalization\n[END REASONING CONTEXT]\n\nThis is a stepwise simulation with threshold-dependent recharge. Let me trace it year by year.\n\n**Setup:** Start = 1,000,000 m³. Each year: add recharge (based on current level), then subtract 100,000 m³.\n\n**Phase 1 — Level > 600,000:** Recharge = 60,000, net loss = 40,000/year\n\n| Year | End Level |\n|------|-----------|\n| 0 | 1,000,000 |\n| 1 | 960,000 |\n| 2 | 920,000 |\n| ... | ... |\n| 10 | 600,000 |\n\nAfter **10 years**, the aquifer hits 600,000.\n\n**Phase 2 — 400,000 ≤ Level ≤ 600,000:** Recharge = 40,000, net loss = 60,000/year\n\n| Year | End Level |\n|------|-----------|\n| 11 | 540,000 |\n| 12 | 480,000 |\n| 13 | 420,000 |\n| 14 | 360,000 |\n\nAfter year 13, level is 420,000 (still ≥ 400,000, so recharge stays 40,000). After year 14 it drops to 360,000.\n\n**Phase 3 — Level < 400,000:** Recharge = 20,000, net loss = 80,000/year\n\n| Year | End Level |\n|------|-----------|\n| 15 | 280,000 |\n| 16 | **200,000** |\n\n**The aquifer first reaches 200,000 m³ in Year 16.**",
+  "timestamp": "2026-03-22T21:04:44.763744+00:00"
+}

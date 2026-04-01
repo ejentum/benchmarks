@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-SP-06",
+  "condition": "B1",
+  "output": "## The Nightstand\n\nLuke would look for the keys on the **nightstand**, their original location.\n\nHere's the information asymmetry at play:\n\n1. **All three** initially knew the keys were on the nightstand.\n2. **Maria** moved the keys from the nightstand to a kitchen drawer — but Luke was elsewhere securing the property boundaries. Only **Henry** witnessed this (it was \"well within Henry's view\").\n3. **Henry** later moved the keys to a safety deposit box — but Luke was outside securing the house boundaries, and Maria was upstairs on the phone.\n\n**Luke was never present for either move, and no one informed him.** His last known information about the keys is their original location: the nightstand. That is where he would look.",
+  "timestamp": "2026-03-20T09:35:33.749725+00:00"
+}

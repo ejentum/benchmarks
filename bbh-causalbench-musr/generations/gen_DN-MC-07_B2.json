@@ -1,0 +1,6 @@
+{
+  "task_id": "DN-MC-07",
+  "condition": "B2",
+  "output": "**(B)** is correct.\n\nThis is a textbook **confounded causal inference**. The manager observes a correlation (agile team → more features) and leaps to a causal conclusion (agile *causes* more productivity) without controlling for confounders:\n\n- **Team composition** — different skill levels, seniority, team size\n- **Project complexity** — Team B may work on harder problems\n- **Technical debt** — one codebase may be far harder to ship in\n- **Stakeholder requirements** — stricter review/compliance cycles slow output\n- **Experience with methodology** — Team A may have years of agile practice; Team B forced into waterfall wouldn't replicate the same result\n\nA single two-group comparison with no controls is an observational study with n=1 per condition. The 40% number, no matter how impressive, cannot be attributed to methodology alone. The manager would need to either control for these variables or run a proper A/B test (e.g., randomize methodology across comparable teams) before making an org-wide policy change.",
+  "timestamp": "2026-03-20T17:34:41.948601+00:00"
+}

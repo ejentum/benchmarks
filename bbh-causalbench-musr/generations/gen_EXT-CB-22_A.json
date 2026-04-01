@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-22",
+  "condition": "A",
+  "output": "Looking at this as a straightforward causal inference question:\n\n**Yes, the likelihood of a high salary would increase overall.**\n\n**Current overall probability of high salary:**\nP(high salary) = P(high salary | not spicy) × P(not spicy) + P(high salary | spicy) × P(spicy)\n= 0.19 × 0.17 + 0.40 × 0.83\n= 0.0323 + 0.332\n= **0.3643 (36.4%)**\n\n**Under intervention (everyone likes spicy food):**\nP(high salary | do(spicy)) = **40%**\n\nSince 40% > 36.4%, the likelihood of a high salary would increase from approximately 36.4% to 40%.\n\n**Important caveat:** The observational conditional P(high salary | spicy) = 40% may differ from the interventional P(high salary | do(spicy)) because Skill is an unobserved confounder affecting both occupation and salary. However, in this problem, Skill does **not** cause liking spicy food — the causal structure has no backdoor path between spicy food preference and salary through Skill. Skill independently affects occupation and salary, but doesn't confound the spicy→salary relationship. So the observational and interventional probabilities coincide here, and the answer holds.",
+  "timestamp": "2026-03-20T09:24:51.792279+00:00"
+}

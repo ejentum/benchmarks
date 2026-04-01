@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-10",
+  "condition": "B1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Incorrect answer (Yes) vs correct (Cannot determine) - the problem doesn't specify the direction/magnitude of English's effect on fame, only that a direct effect exists, so the intervention's impact cannot be determined from given info; Deep multi-level analysis of collider bias, do-calculus, and causal DAGs shows strong analytical depth; Some self-monitoring via the injected suppression signals and recognition of collider bias, but failed to monitor the key assumption about effect direction; Verified the collider bias interpretation and applied do-calculus correctly but didn't verify whether the problem gives enough info to determine the intervention's effect; Presents conclusion with certainty ('Yes, will raise their fame') without acknowledging the assumption that English positively affects fame; Mentions observational vs interventional distinction but doesn't consider the alternative that the effect direction/magnitude is unspecified; Excellent derivation trail with DAG, do-calculus application, and structured table making reasoning fully reproducible.",
+  "timestamp": "2026-03-23T11:08:58.486329+00:00"
+}

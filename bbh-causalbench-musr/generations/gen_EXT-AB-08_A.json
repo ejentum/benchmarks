@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-AB-08",
+  "condition": "A",
+  "output": "Yes, Shenna tells the truth.\n\nChain: Jerry lies → Millicent lies (wrong about Jerry) → Sal lies (wrong about Millicent) → Amberly lies (wrong about Sal) → Shenna tells the truth (correct about Amberly).",
+  "timestamp": "2026-03-20T09:28:00.277421+00:00"
+}

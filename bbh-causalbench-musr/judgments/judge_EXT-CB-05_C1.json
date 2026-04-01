@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-05",
+  "condition": "C1",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 2,
+    "audit_trail": 3
+  },
+  "composite_score": 0.8571,
+  "injection_composite": null,
+  "brief_justification": "Correct answer (Yes) with valid causal reasoning; Multi-level analysis covering causal graph structure, root node insight (do-calculus equivalence), and algebraic derivation; Suppress/Amplify framing shows some metacognitive awareness but no mid-stream course correction; Strong verification via algebraic generalization showing coefficient is negative for any increased p; Acknowledges interventional vs observational distinction but doesn't discuss uncertainty about the survival rates themselves; Notes the root-node property makes interventional equal to observational but doesn't explore what would happen if vaccination weren't a root node; Complete derivation trail from DAG to formula to conclusion, fully reproducible",
+  "timestamp": "2026-03-23T12:54:27.122201+00:00"
+}

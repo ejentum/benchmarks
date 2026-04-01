@@ -1,0 +1,6 @@
+{
+  "task_id": "AB-V2-22",
+  "condition": "A",
+  "output": "**The answer is (A).**\n\nThe grandmaster's explanation operates at a higher level of abstraction. \"The knight belongs on f6 in this pawn structure\" compresses thousands of concrete variations into a single structural principle. It abstracts *away from* the specific move sequences and evaluations, referring instead to a pattern class that generalizes across many positions.\n\nThe engine's explanation is lower-level: it reports a specific numerical score, a specific search depth, a specific node count, and a concrete principal variation (a sequence of actual moves). Every element is particular, not general.\n\nThe fact that they arrive at the same move is irrelevant to the abstraction level of the *explanation* — (C) confuses output equivalence with explanatory equivalence. And (D) is tempting but wrong: the two frameworks aren't incommensurable, they're related by abstraction. The grandmaster's pattern recognition is what you get when you compress the engine-level details into higher-order regularities. One sits above the other in the same explanatory hierarchy.",
+  "timestamp": "2026-03-22T16:03:19.703319+00:00"
+}

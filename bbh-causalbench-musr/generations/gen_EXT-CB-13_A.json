@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-CB-13",
+  "condition": "A",
+  "output": "**Yes, it decreases the likelihood of Rukz.**\n\nHere's the causal graph:\n\n```\nHwax ──→ Kraz ──→ Rukz\n  │                 ↑\n  └──→ Pexu ───────┘\n```\n\nHwax influences Rukz through **two independent paths**:\n\n1. **Hwax → Kraz → Rukz**\n2. **Hwax → Pexu → Rukz**\n\nThe intervention removes path 2 by eliminating Pexu as a mediator. Since Pexu has a direct (positive) effect on Rukz, cutting that channel removes one of the two causal contributions to Rukz. Only the Kraz pathway remains, so Rukz loses a source of influence that was previously promoting it.\n\nIn short: fewer active causes → lower likelihood of the effect.",
+  "timestamp": "2026-03-20T09:20:41.614315+00:00"
+}

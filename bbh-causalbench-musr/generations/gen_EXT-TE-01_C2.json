@@ -1,0 +1,6 @@
+{
+  "task_id": "EXT-TE-01",
+  "condition": "C2",
+  "output": "**(B) 9pm to 10pm**\n\nSusan's day is fully accounted for from 11am to 9pm. The only open slot before the restaurant closes at 10pm is **9pm to 10pm**.",
+  "timestamp": "2026-03-20T10:52:04.710357+00:00"
+}

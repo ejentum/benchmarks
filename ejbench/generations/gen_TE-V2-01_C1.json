@@ -1,0 +1,6 @@
+{
+  "task_id": "TE-V2-01",
+  "condition": "C1",
+  "output": "**[REASONING CONTEXT]**\nAmplify: confidence decay curves; source proximity weighting; assumption audit\nSuppress: flat confidence propagation; accuracy overconfidence\n**[END REASONING CONTEXT]**\n\n---\n\nThe calculation is already correctly laid out in the problem. Here's the complete working:\n\n**First dose** (taken 8:00 AM, elapsed time by 8:00 PM = 12 hours = 2 half-lives):\n```\n200 × (1/2)² = 200 × 1/4 = 50 mg\n```\n\n**Second dose** (taken 2:00 PM, elapsed time by 8:00 PM = 6 hours = 1 half-life):\n```\n200 × (1/2)¹ = 200 × 1/2 = 100 mg\n```\n\n**Total immediately BEFORE the third dose at 8:00 PM:**\n```\n50 + 100 = 150 mg\n```\n\n**Answer: 150 mg**",
+  "timestamp": "2026-03-23T03:10:04.728955+00:00"
+}

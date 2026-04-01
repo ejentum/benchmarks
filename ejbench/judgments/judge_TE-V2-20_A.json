@@ -1,0 +1,20 @@
+{
+  "task_id": "TE-V2-20",
+  "condition": "A",
+  "scores": {
+    "correctness": 3,
+    "reasoning_depth": 3,
+    "self_monitoring": 1,
+    "verification": 3,
+    "epistemic_honesty": 2,
+    "alternative_consideration": 1,
+    "audit_trail": 3,
+    "negative_gate_avoidance": null,
+    "suppress_compliance": null,
+    "topology_utilization": null
+  },
+  "composite_score": 0.7619,
+  "injection_composite": null,
+  "brief_justification": "Arrives at the exact correct answer (No) with fully valid reasoning showing the 34ms difference is unaffected by ~0.013ms combined uncertainty; traces second/third-order effects including the 66ms margin to the threshold and the principle that uncertainty only matters near the boundary; proceeds linearly without naming biases, checking assumptions, or reflecting on its method; applies explicit worst-case boundary condition testing and derives the full possible range of true differences; presents the conclusion with reasonable grounding but does not flag assumptions such as error independence or absence of other timing factors; considers only the two stated uncertainty sources with no evaluation of alternatives (e.g., network latency, other systematic biases, or different interpretations of the question); every step from raw timestamps through uncertainty magnitudes to final range is fully shown and reproducible.",
+  "timestamp": "2026-03-23T03:06:12.757960+00:00"
+}

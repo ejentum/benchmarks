@@ -1,0 +1,17 @@
+{
+  "task_id": "EXT-CB-20",
+  "condition": "C1",
+  "scores": {
+    "correctness": 1,
+    "reasoning_depth": 3,
+    "self_monitoring": 2,
+    "verification": 2,
+    "epistemic_honesty": 1,
+    "alternative_consideration": 1,
+    "audit_trail": 3
+  },
+  "composite_score": 0.619,
+  "injection_composite": null,
+  "brief_justification": "Wrong answer (No instead of Yes) but the do-calculus reasoning approach was formally sound — the error is assuming P(Jyka) must be low because P(Yupt)=11%, ignoring that Yupt→Jyka could have a strong positive effect making P(Jyka|Yupt=0) high too; Deep multi-level causal analysis with DAG manipulation, do-calculus, and marginal distribution reasoning; Some self-monitoring via Amplify/Suppress framework and noting the observation-vs-intervention distinction; Verified via do-calculus rules and checked the mutilated graph, but failed to verify the actual marginal P(Jyka) computation; Presents conclusion as fairly certain without acknowledging that P(Jyka) depends on unknown conditional probabilities; Mentions observation vs intervention distinction but doesn't consider that P(Jyka) could be high even with low P(Yupt); Full derivation chain from DAG to mutilated graph to do-calculus identity, clearly traceable",
+  "timestamp": "2026-03-23T13:02:51.388028+00:00"
+}
