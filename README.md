@@ -99,7 +99,7 @@ We have not yet tested conditions 1 or 2. Condition 3 is partially addressed by 
 ## Limitations
 
 - **One model family.** All results are on Claude (Opus 4.6 for single-turn, Sonnet 4.6 for ARC-AGI-3). Generalization to other model families is expected but not tested.
-- **LLM-as-judge.** Claude evaluated Claude's output. Human evaluation would provide stronger validation.
+- **LLM-as-judge.** Two-stage blind protocol: generation and evaluation are separate stages. The evaluator never saw which condition produced which output. Human evaluation on a subset would strengthen the evidence.
 - **Custom task design bias.** EjBench tasks were designed by Ejentum. The BBH/CausalBench/MuSR benchmark addresses this with externally designed tasks.
 - **Single evaluation run.** EjBench and ARC-AGI-3 have each been run once. BBH correctness was replicated across two runs.
 - **Small samples on sub-analyses.** Spatial navigation regression rests on 5 tasks. ARC-AGI-3 is n=1 per condition.
@@ -115,18 +115,27 @@ benchmarks/
   ejbench/
     README.md
     REPORT.md
+    generations/              # 540 cleaned model outputs (A/B1/C1 per task)
+    judgments/                # 538 rubric scores (7 factors per output)
+    results/                  # Aggregated multifactor results, retrieval precision
   bbh-causalbench-musr/
     README.md
     REPORT.md
+    generations/              # 850 cleaned model outputs
+    judgments/                # 209 rubric scores
+    results/                  # Aggregated multifactor results
   arc-agi-3/
     README.md
     SCIENTIFIC_REPORT.md
     BENCHMARK.md
     COMPLIANCE_AUDIT.md
     STUDY_PROTOCOL.md
+    SYSTEM_PROMPTS.md
     RESEARCH.md
     results/
       all_metrics.json
+      A_baseline__ls20.json   # Full 25-step action log with reasoning text
+      B_augmented__ls20.json  # Full 25-step action log with RA2R queries
       REPORT.md
   research/
     COGNITIVE_SCAFFOLDING_THESIS.md
@@ -142,6 +151,7 @@ benchmarks/
 - **Blog:** [ejentum.com/blog](https://ejentum.com/blog)
 - **29 benchmark tasks with outputs:** [ejentum.com/use-cases/tasks](https://ejentum.com/use-cases/tasks)
 - **ARC-AGI-3 trace study:** [ejentum.com/tasks/ARC-LS20-TRACE](https://ejentum.com/tasks/ARC-LS20-TRACE)
+- **Integration examples:** [github.com/ejentum/examples](https://github.com/ejentum/examples)
 
 ---
 
