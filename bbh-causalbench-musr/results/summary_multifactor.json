@@ -1,0 +1,259 @@
+{
+  "benchmark": "BBH/CausalBench/MuSR -- External Correctness + Quality",
+  "date": "2026-03-23T13:44:47.307866+00:00",
+  "factors": [
+    "correctness",
+    "reasoning_depth",
+    "self_monitoring",
+    "verification",
+    "epistemic_honesty",
+    "alternative_consideration",
+    "audit_trail"
+  ],
+  "total_judgments": 209,
+  "valid_judgments": 209,
+  "by_condition": {
+    "A": {
+      "composite_mean": 0.4762,
+      "count": 69,
+      "correctness_mean": 2.1884,
+      "reasoning_depth_mean": 1.8696,
+      "self_monitoring_mean": 0.7391,
+      "verification_mean": 0.9565,
+      "epistemic_honesty_mean": 1.1594,
+      "alternative_consideration_mean": 0.9275,
+      "audit_trail_mean": 2.1594
+    },
+    "B1": {
+      "composite_mean": 0.6843,
+      "count": 70,
+      "correctness_mean": 2.3286,
+      "reasoning_depth_mean": 2.5429,
+      "self_monitoring_mean": 1.7286,
+      "verification_mean": 1.7714,
+      "epistemic_honesty_mean": 1.6,
+      "alternative_consideration_mean": 1.5714,
+      "audit_trail_mean": 2.8286
+    },
+    "C1": {
+      "composite_mean": 0.5619,
+      "count": 70,
+      "correctness_mean": 2.3429,
+      "reasoning_depth_mean": 2.2,
+      "self_monitoring_mean": 1.2714,
+      "verification_mean": 1.2857,
+      "epistemic_honesty_mean": 1.1857,
+      "alternative_consideration_mean": 1.1571,
+      "audit_trail_mean": 2.3571
+    }
+  },
+  "by_domain": {
+    "Causal": {
+      "A": {
+        "composite_mean": 0.5643,
+        "count": 40,
+        "correctness_mean": 2.25,
+        "reasoning_depth_mean": 2.225,
+        "self_monitoring_mean": 0.975,
+        "verification_mean": 1.15,
+        "epistemic_honesty_mean": 1.4,
+        "alternative_consideration_mean": 1.375,
+        "audit_trail_mean": 2.475
+      },
+      "B1": {
+        "composite_mean": 0.7321,
+        "count": 40,
+        "correctness_mean": 2.3,
+        "reasoning_depth_mean": 2.725,
+        "self_monitoring_mean": 1.875,
+        "verification_mean": 1.85,
+        "epistemic_honesty_mean": 1.875,
+        "alternative_consideration_mean": 1.9,
+        "audit_trail_mean": 2.85
+      },
+      "C1": {
+        "composite_mean": 0.6464,
+        "count": 40,
+        "correctness_mean": 2.4,
+        "reasoning_depth_mean": 2.5,
+        "self_monitoring_mean": 1.55,
+        "verification_mean": 1.55,
+        "epistemic_honesty_mean": 1.5,
+        "alternative_consideration_mean": 1.475,
+        "audit_trail_mean": 2.6
+      }
+    },
+    "Spatial": {
+      "A": {
+        "composite_mean": 0.386,
+        "count": 19,
+        "correctness_mean": 1.6316,
+        "reasoning_depth_mean": 1.5789,
+        "self_monitoring_mean": 0.6316,
+        "verification_mean": 1.0,
+        "epistemic_honesty_mean": 0.8947,
+        "alternative_consideration_mean": 0.3158,
+        "audit_trail_mean": 2.0526
+      },
+      "B1": {
+        "composite_mean": 0.6167,
+        "count": 20,
+        "correctness_mean": 2.05,
+        "reasoning_depth_mean": 2.45,
+        "self_monitoring_mean": 1.75,
+        "verification_mean": 1.65,
+        "epistemic_honesty_mean": 1.35,
+        "alternative_consideration_mean": 1.0,
+        "audit_trail_mean": 2.7
+      },
+      "C1": {
+        "composite_mean": 0.4738,
+        "count": 20,
+        "correctness_mean": 1.9,
+        "reasoning_depth_mean": 1.95,
+        "self_monitoring_mean": 1.15,
+        "verification_mean": 1.05,
+        "epistemic_honesty_mean": 0.95,
+        "alternative_consideration_mean": 0.9,
+        "audit_trail_mean": 2.05
+      }
+    },
+    "Temporal": {
+      "A": {
+        "composite_mean": 0.2952,
+        "count": 10,
+        "correctness_mean": 3.0,
+        "reasoning_depth_mean": 1.0,
+        "self_monitoring_mean": 0.0,
+        "verification_mean": 0.1,
+        "epistemic_honesty_mean": 0.7,
+        "alternative_consideration_mean": 0.3,
+        "audit_trail_mean": 1.1
+      },
+      "B1": {
+        "composite_mean": 0.6285,
+        "count": 10,
+        "correctness_mean": 3.0,
+        "reasoning_depth_mean": 2.0,
+        "self_monitoring_mean": 1.1,
+        "verification_mean": 1.7,
+        "epistemic_honesty_mean": 1.0,
+        "alternative_consideration_mean": 1.4,
+        "audit_trail_mean": 3.0
+      },
+      "C1": {
+        "composite_mean": 0.4,
+        "count": 10,
+        "correctness_mean": 3.0,
+        "reasoning_depth_mean": 1.5,
+        "self_monitoring_mean": 0.4,
+        "verification_mean": 0.7,
+        "epistemic_honesty_mean": 0.4,
+        "alternative_consideration_mean": 0.4,
+        "audit_trail_mean": 2.0
+      }
+    }
+  },
+  "deltas_from_baseline": {
+    "B1": {
+      "correctness": 0.1402,
+      "reasoning_depth": 0.6733,
+      "self_monitoring": 0.9895,
+      "verification": 0.8149,
+      "epistemic_honesty": 0.4406,
+      "alternative_consideration": 0.6439,
+      "audit_trail": 0.6692,
+      "composite": 0.2081
+    },
+    "C1": {
+      "correctness": 0.1545,
+      "reasoning_depth": 0.3304,
+      "self_monitoring": 0.5323,
+      "verification": 0.3292,
+      "epistemic_honesty": 0.0263,
+      "alternative_consideration": 0.2296,
+      "audit_trail": 0.1977,
+      "composite": 0.0857
+    }
+  },
+  "flip_analysis": {
+    "B1": {
+      "improved": 40,
+      "degraded": 2,
+      "neutral": 27,
+      "total_compared": 69,
+      "net_flip": 38,
+      "net_flip_rate": 0.5507
+    },
+    "C1": {
+      "improved": 29,
+      "degraded": 14,
+      "neutral": 26,
+      "total_compared": 69,
+      "net_flip": 15,
+      "net_flip_rate": 0.2174
+    }
+  },
+  "factor_lift_ranking": {
+    "B1": [
+      {
+        "factor": "self_monitoring",
+        "delta": 0.9895
+      },
+      {
+        "factor": "verification",
+        "delta": 0.8149
+      },
+      {
+        "factor": "reasoning_depth",
+        "delta": 0.6733
+      },
+      {
+        "factor": "audit_trail",
+        "delta": 0.6692
+      },
+      {
+        "factor": "alternative_consideration",
+        "delta": 0.6439
+      },
+      {
+        "factor": "epistemic_honesty",
+        "delta": 0.4406
+      },
+      {
+        "factor": "correctness",
+        "delta": 0.1402
+      }
+    ],
+    "C1": [
+      {
+        "factor": "self_monitoring",
+        "delta": 0.5323
+      },
+      {
+        "factor": "reasoning_depth",
+        "delta": 0.3304
+      },
+      {
+        "factor": "verification",
+        "delta": 0.3292
+      },
+      {
+        "factor": "alternative_consideration",
+        "delta": 0.2296
+      },
+      {
+        "factor": "audit_trail",
+        "delta": 0.1977
+      },
+      {
+        "factor": "correctness",
+        "delta": 0.1545
+      },
+      {
+        "factor": "epistemic_honesty",
+        "delta": 0.0263
+      }
+    ]
+  }
+}

@@ -1,0 +1,1486 @@
+{
+  "total_tasks": 180,
+  "domain_match": 69,
+  "domain_mismatch": 111,
+  "precision": 0.3833,
+  "by_domain": {
+    "Simulation": {
+      "code": "SI",
+      "total": 30,
+      "match": 11,
+      "precision": 0.3667
+    },
+    "Abstract": {
+      "code": "AB",
+      "total": 30,
+      "match": 5,
+      "precision": 0.1667
+    },
+    "Metacognitive": {
+      "code": "MC",
+      "total": 30,
+      "match": 0,
+      "precision": 0.0
+    },
+    "Causal": {
+      "code": "CA",
+      "total": 30,
+      "match": 23,
+      "precision": 0.7667
+    },
+    "Temporal": {
+      "code": "TE",
+      "total": 30,
+      "match": 14,
+      "precision": 0.4667
+    },
+    "Spatial": {
+      "code": "SP",
+      "total": 30,
+      "match": 16,
+      "precision": 0.5333
+    }
+  },
+  "details": [
+    {
+      "task_id": "SI-V2-01",
+      "expected": "SI",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-02",
+      "expected": "SI",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-03",
+      "expected": "SI",
+      "detected": "TE",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-04",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-05",
+      "expected": "SI",
+      "detected": "SP",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-06",
+      "expected": "SI",
+      "detected": "TE",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-07",
+      "expected": "SI",
+      "detected": "TE",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-08",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-09",
+      "expected": "SI",
+      "detected": "AB",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-10",
+      "expected": "SI",
+      "detected": "CA",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-11",
+      "expected": "SI",
+      "detected": "SP",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-12",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-13",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-14",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-15",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-16",
+      "expected": "SI",
+      "detected": "SP",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-17",
+      "expected": "SI",
+      "detected": "SP",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-18",
+      "expected": "SI",
+      "detected": "CA",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-19",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-20",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-21",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-22",
+      "expected": "SI",
+      "detected": "TE",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-23",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-24",
+      "expected": "SI",
+      "detected": "SI",
+      "match": true,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-25",
+      "expected": "SI",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-26",
+      "expected": "SI",
+      "detected": "CA",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-27",
+      "expected": "SI",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-28",
+      "expected": "SI",
+      "detected": "TE",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-29",
+      "expected": "SI",
+      "detected": "TE",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SI-V2-30",
+      "expected": "SI",
+      "detected": "SP",
+      "match": false,
+      "domain": "Simulation",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-01",
+      "expected": "AB",
+      "detected": "SP",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-02",
+      "expected": "AB",
+      "detected": "SP",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-03",
+      "expected": "AB",
+      "detected": "SI",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-04",
+      "expected": "AB",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-05",
+      "expected": "AB",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-06",
+      "expected": "AB",
+      "detected": "SI",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-07",
+      "expected": "AB",
+      "detected": "AB",
+      "match": true,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-08",
+      "expected": "AB",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-09",
+      "expected": "AB",
+      "detected": "TE",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-10",
+      "expected": "AB",
+      "detected": "CA",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-11",
+      "expected": "AB",
+      "detected": "SP",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-12",
+      "expected": "AB",
+      "detected": "AB",
+      "match": true,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-13",
+      "expected": "AB",
+      "detected": "SI",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-14",
+      "expected": "AB",
+      "detected": "SP",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-15",
+      "expected": "AB",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-16",
+      "expected": "AB",
+      "detected": "CA",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-17",
+      "expected": "AB",
+      "detected": "CA",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-18",
+      "expected": "AB",
+      "detected": "TE",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-19",
+      "expected": "AB",
+      "detected": "AB",
+      "match": true,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-20",
+      "expected": "AB",
+      "detected": "TE",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-21",
+      "expected": "AB",
+      "detected": "AB",
+      "match": true,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-22",
+      "expected": "AB",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-23",
+      "expected": "AB",
+      "detected": "AB",
+      "match": true,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-24",
+      "expected": "AB",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-25",
+      "expected": "AB",
+      "detected": "CA",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-26",
+      "expected": "AB",
+      "detected": "CA",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-27",
+      "expected": "AB",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-28",
+      "expected": "AB",
+      "detected": "CA",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-29",
+      "expected": "AB",
+      "detected": "TE",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "AB-V2-30",
+      "expected": "AB",
+      "detected": "CA",
+      "match": false,
+      "domain": "Abstract",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-01",
+      "expected": "MC",
+      "detected": "CA",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-02",
+      "expected": "MC",
+      "detected": "CA",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-03",
+      "expected": "MC",
+      "detected": "TE",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-04",
+      "expected": "MC",
+      "detected": "SP",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-05",
+      "expected": "MC",
+      "detected": "SP",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-06",
+      "expected": "MC",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-07",
+      "expected": "MC",
+      "detected": "SI",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-08",
+      "expected": "MC",
+      "detected": "TE",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-09",
+      "expected": "MC",
+      "detected": "CA",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-10",
+      "expected": "MC",
+      "detected": "TE",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-11",
+      "expected": "MC",
+      "detected": "CA",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-12",
+      "expected": "MC",
+      "detected": "CA",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-13",
+      "expected": "MC",
+      "detected": "TE",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-14",
+      "expected": "MC",
+      "detected": "TE",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-15",
+      "expected": "MC",
+      "detected": "TE",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-16",
+      "expected": "MC",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-17",
+      "expected": "MC",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-18",
+      "expected": "MC",
+      "detected": "TE",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-19",
+      "expected": "MC",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-20",
+      "expected": "MC",
+      "detected": "SP",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-21",
+      "expected": "MC",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-22",
+      "expected": "MC",
+      "detected": "SI",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-23",
+      "expected": "MC",
+      "detected": "CA",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-24",
+      "expected": "MC",
+      "detected": "SI",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-25",
+      "expected": "MC",
+      "detected": "SP",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-26",
+      "expected": "MC",
+      "detected": "SP",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-27",
+      "expected": "MC",
+      "detected": "CA",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-28",
+      "expected": "MC",
+      "detected": "CA",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-29",
+      "expected": "MC",
+      "detected": "SP",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "MC-V2-30",
+      "expected": "MC",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Metacognitive",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-01",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-02",
+      "expected": "CA",
+      "detected": "SP",
+      "match": false,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-03",
+      "expected": "CA",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-04",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-05",
+      "expected": "CA",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-06",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-07",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-08",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-09",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-10",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-11",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-12",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-13",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-14",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-15",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-16",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-17",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-18",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-19",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-20",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-21",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-22",
+      "expected": "CA",
+      "detected": "UNKNOWN",
+      "match": false,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-23",
+      "expected": "CA",
+      "detected": "TE",
+      "match": false,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-24",
+      "expected": "CA",
+      "detected": "TE",
+      "match": false,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-25",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-26",
+      "expected": "CA",
+      "detected": "SP",
+      "match": false,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-27",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-28",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-29",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "CA-V2-30",
+      "expected": "CA",
+      "detected": "CA",
+      "match": true,
+      "domain": "Causal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-01",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-02",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-03",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-04",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-05",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-06",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-07",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-08",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-09",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-10",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-11",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-12",
+      "expected": "TE",
+      "detected": "SP",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-13",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-14",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-15",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-16",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-17",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-18",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-19",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-20",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-21",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-22",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-23",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-24",
+      "expected": "TE",
+      "detected": "CA",
+      "match": false,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-25",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-26",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-27",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-28",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-29",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "TE-V2-30",
+      "expected": "TE",
+      "detected": "TE",
+      "match": true,
+      "domain": "Temporal",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-01",
+      "expected": "SP",
+      "detected": "TE",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-02",
+      "expected": "SP",
+      "detected": "TE",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-03",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-04",
+      "expected": "SP",
+      "detected": "TE",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-05",
+      "expected": "SP",
+      "detected": "TE",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-06",
+      "expected": "SP",
+      "detected": "CA",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-07",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-08",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-09",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-10",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-11",
+      "expected": "SP",
+      "detected": "TE",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-12",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-13",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-14",
+      "expected": "SP",
+      "detected": "TE",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-15",
+      "expected": "SP",
+      "detected": "CA",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-16",
+      "expected": "SP",
+      "detected": "CA",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-17",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-18",
+      "expected": "SP",
+      "detected": "TE",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-19",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-20",
+      "expected": "SP",
+      "detected": "TE",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-21",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-22",
+      "expected": "SP",
+      "detected": "CA",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-23",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-24",
+      "expected": "SP",
+      "detected": "TE",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-25",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-26",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-27",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-28",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-29",
+      "expected": "SP",
+      "detected": "SI",
+      "match": false,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    },
+    {
+      "task_id": "SP-V2-30",
+      "expected": "SP",
+      "detected": "SP",
+      "match": true,
+      "domain": "Spatial",
+      "source": "Ejentum"
+    }
+  ]
+}

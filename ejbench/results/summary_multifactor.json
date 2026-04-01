@@ -1,0 +1,364 @@
+{
+  "benchmark": "EjBench -- Multi-Factor Reasoning Evaluation",
+  "date": "2026-03-23T05:44:36.149063+00:00",
+  "factors": [
+    "correctness",
+    "reasoning_depth",
+    "self_monitoring",
+    "verification",
+    "epistemic_honesty",
+    "alternative_consideration",
+    "audit_trail"
+  ],
+  "total_judgments": 538,
+  "valid_judgments": 536,
+  "by_condition": {
+    "A": {
+      "composite_mean": 0.6209,
+      "count": 179,
+      "correctness_mean": 2.6034,
+      "reasoning_depth_mean": 2.4358,
+      "self_monitoring_mean": 0.9441,
+      "verification_mean": 1.4972,
+      "epistemic_honesty_mean": 1.5419,
+      "alternative_consideration_mean": 1.3743,
+      "audit_trail_mean": 2.6425
+    },
+    "B1": {
+      "composite_mean": 0.7107,
+      "count": 180,
+      "correctness_mean": 2.5722,
+      "reasoning_depth_mean": 2.5389,
+      "self_monitoring_mean": 1.7,
+      "verification_mean": 2.0111,
+      "epistemic_honesty_mean": 1.9,
+      "alternative_consideration_mean": 1.7722,
+      "audit_trail_mean": 2.75
+    },
+    "C1": {
+      "composite_mean": 0.7217,
+      "count": 177,
+      "correctness_mean": 2.4915,
+      "reasoning_depth_mean": 2.5706,
+      "self_monitoring_mean": 1.8079,
+      "verification_mean": 2.1638,
+      "epistemic_honesty_mean": 1.9435,
+      "alternative_consideration_mean": 1.8475,
+      "audit_trail_mean": 2.7627
+    }
+  },
+  "by_domain": {
+    "Abstract": {
+      "A": {
+        "composite_mean": 0.627,
+        "count": 30,
+        "correctness_mean": 2.7333,
+        "reasoning_depth_mean": 2.5,
+        "self_monitoring_mean": 0.9333,
+        "verification_mean": 1.3333,
+        "epistemic_honesty_mean": 1.5,
+        "alternative_consideration_mean": 1.7333,
+        "audit_trail_mean": 2.4333
+      },
+      "B1": {
+        "composite_mean": 0.7533,
+        "count": 30,
+        "correctness_mean": 2.7333,
+        "reasoning_depth_mean": 2.7333,
+        "self_monitoring_mean": 1.8667,
+        "verification_mean": 1.9667,
+        "epistemic_honesty_mean": 2.0667,
+        "alternative_consideration_mean": 2.2,
+        "audit_trail_mean": 2.7333
+      },
+      "C1": {
+        "composite_mean": 0.82,
+        "count": 30,
+        "correctness_mean": 2.7,
+        "reasoning_depth_mean": 2.8,
+        "self_monitoring_mean": 2.2333,
+        "verification_mean": 2.4,
+        "epistemic_honesty_mean": 2.3,
+        "alternative_consideration_mean": 2.4333,
+        "audit_trail_mean": 2.7667
+      }
+    },
+    "Causal": {
+      "A": {
+        "composite_mean": 0.6371,
+        "count": 29,
+        "correctness_mean": 2.5172,
+        "reasoning_depth_mean": 2.5862,
+        "self_monitoring_mean": 1.069,
+        "verification_mean": 1.4483,
+        "epistemic_honesty_mean": 1.7931,
+        "alternative_consideration_mean": 1.4828,
+        "audit_trail_mean": 2.4828
+      },
+      "B1": {
+        "composite_mean": 0.7322,
+        "count": 30,
+        "correctness_mean": 2.5,
+        "reasoning_depth_mean": 2.5667,
+        "self_monitoring_mean": 1.7667,
+        "verification_mean": 1.9,
+        "epistemic_honesty_mean": 2.0,
+        "alternative_consideration_mean": 1.9333,
+        "audit_trail_mean": 2.5667
+      },
+      "C1": {
+        "composite_mean": 0.7782,
+        "count": 29,
+        "correctness_mean": 2.3793,
+        "reasoning_depth_mean": 2.6897,
+        "self_monitoring_mean": 2.0,
+        "verification_mean": 2.2414,
+        "epistemic_honesty_mean": 2.2069,
+        "alternative_consideration_mean": 2.1379,
+        "audit_trail_mean": 2.7931
+      }
+    },
+    "Metacognitive": {
+      "A": {
+        "composite_mean": 0.7429,
+        "count": 30,
+        "correctness_mean": 2.6667,
+        "reasoning_depth_mean": 2.9,
+        "self_monitoring_mean": 1.2667,
+        "verification_mean": 1.9,
+        "epistemic_honesty_mean": 2.1,
+        "alternative_consideration_mean": 1.9667,
+        "audit_trail_mean": 2.8
+      },
+      "B1": {
+        "composite_mean": 0.8011,
+        "count": 30,
+        "correctness_mean": 2.7,
+        "reasoning_depth_mean": 2.8667,
+        "self_monitoring_mean": 1.7,
+        "verification_mean": 2.2333,
+        "epistemic_honesty_mean": 2.3667,
+        "alternative_consideration_mean": 2.3,
+        "audit_trail_mean": 2.9
+      },
+      "C1": {
+        "composite_mean": 0.8278,
+        "count": 30,
+        "correctness_mean": 2.7333,
+        "reasoning_depth_mean": 2.9,
+        "self_monitoring_mean": 2.0333,
+        "verification_mean": 2.4667,
+        "epistemic_honesty_mean": 2.4333,
+        "alternative_consideration_mean": 2.3333,
+        "audit_trail_mean": 2.9
+      }
+    },
+    "Simulation": {
+      "A": {
+        "composite_mean": 0.5127,
+        "count": 30,
+        "correctness_mean": 2.9333,
+        "reasoning_depth_mean": 2.0,
+        "self_monitoring_mean": 0.5667,
+        "verification_mean": 1.1333,
+        "epistemic_honesty_mean": 1.1,
+        "alternative_consideration_mean": 0.3667,
+        "audit_trail_mean": 2.6667
+      },
+      "B1": {
+        "composite_mean": 0.6767,
+        "count": 30,
+        "correctness_mean": 2.9,
+        "reasoning_depth_mean": 2.3,
+        "self_monitoring_mean": 1.8333,
+        "verification_mean": 2.1333,
+        "epistemic_honesty_mean": 1.7333,
+        "alternative_consideration_mean": 1.0333,
+        "audit_trail_mean": 2.8667
+      },
+      "C1": {
+        "composite_mean": 0.6989,
+        "count": 30,
+        "correctness_mean": 2.9333,
+        "reasoning_depth_mean": 2.5,
+        "self_monitoring_mean": 1.8333,
+        "verification_mean": 2.2,
+        "epistemic_honesty_mean": 1.7,
+        "alternative_consideration_mean": 1.2,
+        "audit_trail_mean": 2.9667
+      }
+    },
+    "Spatial": {
+      "A": {
+        "composite_mean": 0.619,
+        "count": 30,
+        "correctness_mean": 2.6667,
+        "reasoning_depth_mean": 2.3333,
+        "self_monitoring_mean": 0.8667,
+        "verification_mean": 1.4333,
+        "epistemic_honesty_mean": 1.4,
+        "alternative_consideration_mean": 1.5667,
+        "audit_trail_mean": 2.7333
+      },
+      "B1": {
+        "composite_mean": 0.6933,
+        "count": 30,
+        "correctness_mean": 2.4667,
+        "reasoning_depth_mean": 2.5,
+        "self_monitoring_mean": 1.6667,
+        "verification_mean": 2.0,
+        "epistemic_honesty_mean": 1.6333,
+        "alternative_consideration_mean": 1.8333,
+        "audit_trail_mean": 2.7667
+      },
+      "C1": {
+        "composite_mean": 0.5908,
+        "count": 29,
+        "correctness_mean": 2.1034,
+        "reasoning_depth_mean": 2.2069,
+        "self_monitoring_mean": 1.3448,
+        "verification_mean": 1.7241,
+        "epistemic_honesty_mean": 1.4483,
+        "alternative_consideration_mean": 1.6207,
+        "audit_trail_mean": 2.5172
+      }
+    },
+    "Temporal": {
+      "A": {
+        "composite_mean": 0.5873,
+        "count": 30,
+        "correctness_mean": 2.1,
+        "reasoning_depth_mean": 2.3,
+        "self_monitoring_mean": 0.9667,
+        "verification_mean": 1.7333,
+        "epistemic_honesty_mean": 1.3667,
+        "alternative_consideration_mean": 1.1333,
+        "audit_trail_mean": 2.7333
+      },
+      "B1": {
+        "composite_mean": 0.6078,
+        "count": 30,
+        "correctness_mean": 2.1333,
+        "reasoning_depth_mean": 2.2667,
+        "self_monitoring_mean": 1.3667,
+        "verification_mean": 1.8333,
+        "epistemic_honesty_mean": 1.6,
+        "alternative_consideration_mean": 1.3333,
+        "audit_trail_mean": 2.6667
+      },
+      "C1": {
+        "composite_mean": 0.608,
+        "count": 29,
+        "correctness_mean": 2.069,
+        "reasoning_depth_mean": 2.3103,
+        "self_monitoring_mean": 1.3793,
+        "verification_mean": 1.931,
+        "epistemic_honesty_mean": 1.5517,
+        "alternative_consideration_mean": 1.3448,
+        "audit_trail_mean": 2.6207
+      }
+    }
+  },
+  "deltas_from_baseline": {
+    "B1": {
+      "correctness": -0.0312,
+      "reasoning_depth": 0.1031,
+      "self_monitoring": 0.7559,
+      "verification": 0.5139,
+      "epistemic_honesty": 0.3581,
+      "alternative_consideration": 0.3979,
+      "audit_trail": 0.1075,
+      "composite": 0.0898
+    },
+    "C1": {
+      "correctness": -0.1119,
+      "reasoning_depth": 0.1348,
+      "self_monitoring": 0.8638,
+      "verification": 0.6666,
+      "epistemic_honesty": 0.4016,
+      "alternative_consideration": 0.4732,
+      "audit_trail": 0.1202,
+      "composite": 0.1008
+    }
+  },
+  "flip_analysis": {
+    "B1": {
+      "improved": 88,
+      "degraded": 21,
+      "neutral": 70,
+      "total_compared": 179,
+      "net_flip": 67,
+      "net_flip_rate": 0.3743
+    },
+    "C1": {
+      "improved": 92,
+      "degraded": 16,
+      "neutral": 69,
+      "total_compared": 177,
+      "net_flip": 76,
+      "net_flip_rate": 0.4294
+    }
+  },
+  "factor_lift_ranking": {
+    "B1": [
+      {
+        "factor": "self_monitoring",
+        "delta": 0.7559
+      },
+      {
+        "factor": "verification",
+        "delta": 0.5139
+      },
+      {
+        "factor": "alternative_consideration",
+        "delta": 0.3979
+      },
+      {
+        "factor": "epistemic_honesty",
+        "delta": 0.3581
+      },
+      {
+        "factor": "audit_trail",
+        "delta": 0.1075
+      },
+      {
+        "factor": "reasoning_depth",
+        "delta": 0.1031
+      },
+      {
+        "factor": "correctness",
+        "delta": -0.0312
+      }
+    ],
+    "C1": [
+      {
+        "factor": "self_monitoring",
+        "delta": 0.8638
+      },
+      {
+        "factor": "verification",
+        "delta": 0.6666
+      },
+      {
+        "factor": "alternative_consideration",
+        "delta": 0.4732
+      },
+      {
+        "factor": "epistemic_honesty",
+        "delta": 0.4016
+      },
+      {
+        "factor": "reasoning_depth",
+        "delta": 0.1348
+      },
+      {
+        "factor": "audit_trail",
+        "delta": 0.1202
+      },
+      {
+        "factor": "correctness",
+        "delta": -0.1119
+      }
+    ]
+  }
+}
