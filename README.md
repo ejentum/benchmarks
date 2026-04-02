@@ -15,7 +15,9 @@ Franko Luci, Ejentum. April 2026.
 This paper synthesizes all benchmark findings into a unified thesis: suppression is pressure, and emergence is the model's response. 25 pages, 9 figures, all negative findings reported.
 
 - **[Download PDF](research/paper/under_pressure.pdf)**
-- **arXiv:** Pending endorsement (cs.AI)
+- **Zenodo:** [10.5281/zenodo.19392715](https://doi.org/10.5281/zenodo.19392715)
+- **SSRN:** [Abstract ID 6512038](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6512038)
+- **ORCID:** [0009-0000-7086-6991](https://orcid.org/0009-0000-7086-6991)
 - **Blog post:** [ejentum.com/blog/under-pressure-research-paper](https://ejentum.com/blog/under-pressure-research-paper)
 
 ---
