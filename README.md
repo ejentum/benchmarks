@@ -6,6 +6,20 @@ The Logic API retrieves engineered cognitive operations (not information) and in
 
 ---
 
+## Research Paper
+
+**Under Pressure: RA²R and the Emergence of Uninstructed Reasoning Behaviors in Scaffold-Augmented Language Models**
+
+Franko Luci, Ejentum. April 2026.
+
+This paper synthesizes all benchmark findings into a unified thesis: suppression is pressure, and emergence is the model's response. 25 pages, 9 figures, all negative findings reported.
+
+- **[Download PDF](research/paper/under_pressure.pdf)**
+- **arXiv:** Pending endorsement (cs.AI)
+- **Blog post:** [ejentum.com/blog/under-pressure-research-paper](https://ejentum.com/blog/under-pressure-research-paper)
+
+---
+
 ## What Was Tested
 
 | Benchmark | Tasks | Type | Model | Primary Finding |
