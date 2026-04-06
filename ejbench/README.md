@@ -35,3 +35,9 @@ Custom benchmark measuring the effect of Ejentum's Logic API on reasoning qualit
 
 - [Blog post](https://ejentum.com/blog/ejbench-180-tasks)
 - [Response Examples](https://ejentum.com/docs/response_examples)
+
+## Related Benchmarks
+
+- [BBH / CausalBench / MuSR](../bbh-causalbench-musr/) -- 70 published academic tasks, +20.8pp composite
+- [ARC-AGI-3](../arc-agi-3/) -- Interactive multi-step reasoning, scaffold persistence
+- [LiveCodeBench Hard](../lcb-hard/) -- 28 hard competitive programming, 85.7% to 100%

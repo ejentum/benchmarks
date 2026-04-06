@@ -29,3 +29,9 @@ Ki dominated on focused tasks. Haki correctness dropped -0.12. Spatial navigatio
 ## Links
 
 - [Blog post](https://ejentum.com/blog/bbh-causalbench-musr-benchmark)
+
+## Related Benchmarks
+
+- [EjBench](../ejbench/) -- 180 custom professional tasks, +10.1pp composite
+- [ARC-AGI-3](../arc-agi-3/) -- Interactive multi-step reasoning, scaffold persistence
+- [LiveCodeBench Hard](../lcb-hard/) -- 28 hard competitive programming, 85.7% to 100%

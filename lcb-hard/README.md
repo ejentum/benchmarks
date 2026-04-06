@@ -67,3 +67,9 @@ python run_lcb.py --condition augmented --run-id my_run
 Requires: Python 3.11+, `httpx`, Claude CLI (`claude`), Ejentum API key ([get one free](https://ejentum.com/pricing)).
 
 **Note:** Task data (`lcb_tasks.json`) is not included in this repository — tasks are sourced from [LiveCodeBench](https://livecodebench.github.io/) and are their intellectual property. To reproduce, download hard tasks from the LiveCodeBench HuggingFace dataset (`livecodebench/code_generation`) and save as `lcb_tasks.json`. The [skill file](https://ejentum.com/docs/agent_skill) (`skill.md`) is available from Ejentum's documentation.
+
+## Related Benchmarks
+
+- [EjBench](../ejbench/) -- 180 custom professional tasks, +10.1pp reasoning quality
+- [BBH / CausalBench / MuSR](../bbh-causalbench-musr/) -- 70 published academic tasks, +20.8pp composite
+- [ARC-AGI-3](../arc-agi-3/) -- Interactive multi-step reasoning, scaffold persistence over 24 steps

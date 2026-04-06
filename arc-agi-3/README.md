@@ -42,3 +42,9 @@ RHAE 0.0 = 0.0. Neither condition cleared Level 0. The evidence is in the reason
 - [Blog: Full report](https://ejentum.com/blog/arc-agi-3-benchmark-report)
 - [Blog: Emergent behaviors](https://ejentum.com/blog/arc-agi-3-emergent-behaviors)
 - [Live trace study](https://ejentum.com/tasks/ARC-LS20-TRACE)
+
+## Related Benchmarks
+
+- [EjBench](../ejbench/) -- 180 custom professional tasks, +10.1pp composite
+- [BBH / CausalBench / MuSR](../bbh-causalbench-musr/) -- 70 published academic tasks, +20.8pp composite
+- [LiveCodeBench Hard](../lcb-hard/) -- 28 hard competitive programming, 85.7% to 100%

@@ -165,9 +165,12 @@ benchmarks/
 
 - **Product:** [ejentum.com](https://ejentum.com)
 - **Documentation:** [ejentum.com/docs](https://ejentum.com/docs)
+- **Skill file (tool-use doc):** [ejentum.com/docs/agent_skill](https://ejentum.com/docs/agent_skill)
 - **Blog:** [ejentum.com/blog](https://ejentum.com/blog)
 - **29 benchmark tasks with outputs:** [ejentum.com/use-cases/tasks](https://ejentum.com/use-cases/tasks)
 - **ARC-AGI-3 trace study:** [ejentum.com/tasks/ARC-LS20-TRACE](https://ejentum.com/tasks/ARC-LS20-TRACE)
+- **LiveCodeBench Hard report:** [ejentum.com/blog/livecodebench-hard-28-tasks](https://ejentum.com/blog/livecodebench-hard-28-tasks)
+- **LiveCodeBench Hard observations:** [ejentum.com/blog/what-we-saw-when-opus-thought-harder](https://ejentum.com/blog/what-we-saw-when-opus-thought-harder)
 - **Integration examples:** [github.com/ejentum/examples](https://github.com/ejentum/examples)
 
 ---
