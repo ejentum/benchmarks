@@ -2,7 +2,7 @@
 
 Benchmark methodology, evaluation results, and raw data for [Ejentum's Logic API](https://ejentum.com) -- reasoning infrastructure for AI agents.
 
-The Logic API retrieves engineered cognitive operations (not information) and injects them into an LLM's context at inference time. These benchmarks measure the behavioral effect of that injection across three independent evaluation frameworks.
+The Logic API retrieves engineered cognitive operations (not information) and injects them into an LLM's context at inference time. These benchmarks measure the behavioral effect of that injection across four independent evaluation frameworks.
 
 ---
 
@@ -47,6 +47,8 @@ All benchmarks follow the same protocol:
 
 4. **Negative findings reported.** Correctness dips, domain regressions, and unexpected contradiction increases are in the reports. We do not omit results that challenge the thesis.
 
+5. **LiveCodeBench Hard protocol.** Two conditions: baseline (Opus max effort) vs augmented ([skill file](https://ejentum.com/docs/agent_skill) with forced Logic API call). Evaluation is exact-match pass/fail on public test cases. The skill file gives the agent the same tool-use document available to all subscribers.
+
 ---
 
 ## Key Terms
@@ -87,6 +89,17 @@ All benchmarks follow the same protocol:
 | Scaffold half-life | 0 | 24 steps |
 | Reasoning depth trend | 0.86 | 10.50 (12.2x) |
 | Stuck episodes | 2 | 1 (50% fewer) |
+
+### LiveCodeBench Hard (Competitive Programming Correctness)
+
+| Metric | Baseline | Augmented |
+|--------|----------|-----------|
+| Pass rate (28 hard AtCoder tasks) | 24/28 (85.7%) | **28/28 (100.0%)** |
+| Tasks gained (fail -> pass) | — | 4 |
+| Tasks lost (pass -> fail) | — | 0 |
+| Code conciseness (shared tasks) | — | -2.0% (more concise) |
+| Inline comments | — | -33% (deliberate coding shift) |
+| Code similarity (Jaccard) | — | 0.689 (genuinely different solutions) |
 
 ---
 
@@ -154,6 +167,13 @@ benchmarks/
       A_baseline__ls20.json   # Full 25-step action log with reasoning text
       B_augmented__ls20.json  # Full 25-step action log with RA2R queries
       REPORT.md
+  lcb-hard/
+    README.md
+    REPORT.md                 # Full research report (22 evidence claims)
+    run_lcb.py                # Benchmark runner (Skill File v2 architecture)
+    results/
+      baseline/results.json   # 28 task results (metadata, no code)
+      augmented/results.json  # 28 task results + scaffold stats
   research/
     COGNITIVE_SCAFFOLDING_THESIS.md
     VALIDATED_CLAIMS.md
