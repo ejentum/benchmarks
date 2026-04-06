@@ -1,0 +1,480 @@
+[
+  {
+    "title": "Pac",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 2994,
+    "elapsed_seconds": 3946.3,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2193,
+    "scaffold_received": true
+  },
+  {
+    "title": "Merge Set",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 785,
+    "elapsed_seconds": 122.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 4,
+      "tests_passed": 4
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3082,
+    "scaffold_received": true
+  },
+  {
+    "title": "Isolation",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 913,
+    "elapsed_seconds": 50.7,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2193,
+    "scaffold_received": true
+  },
+  {
+    "title": "A Gift From the Stars",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 630,
+    "elapsed_seconds": 517.2,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3952,
+    "scaffold_received": true
+  },
+  {
+    "title": "Good Graph",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1437,
+    "elapsed_seconds": 104.6,
+    "eval": {
+      "pass": true,
+      "tests_run": 1,
+      "tests_passed": 1
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2882,
+    "scaffold_received": true
+  },
+  {
+    "title": "Sleep Log",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1171,
+    "elapsed_seconds": 26.7,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 1966,
+    "scaffold_received": true
+  },
+  {
+    "title": "Art Gallery on Graph",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1166,
+    "elapsed_seconds": 32.4,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3224,
+    "scaffold_received": true
+  },
+  {
+    "title": "Best Performances",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1315,
+    "elapsed_seconds": 649.4,
+    "eval": {
+      "pass": true,
+      "tests_run": 1,
+      "tests_passed": 1
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3952,
+    "scaffold_received": true
+  },
+  {
+    "title": "Distinct Adjacent",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 222,
+    "elapsed_seconds": 41.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2193,
+    "scaffold_received": true
+  },
+  {
+    "title": "MEX",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1092,
+    "elapsed_seconds": 148.4,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 1981,
+    "scaffold_received": true
+  },
+  {
+    "title": "Family and Insurance",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 696,
+    "elapsed_seconds": 90.5,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3952,
+    "scaffold_received": true
+  },
+  {
+    "title": "Make 10 Again",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1034,
+    "elapsed_seconds": 365.1,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2399,
+    "scaffold_received": true
+  },
+  {
+    "title": "NAND repeatedly",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 295,
+    "elapsed_seconds": 64.7,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2193,
+    "scaffold_received": true
+  },
+  {
+    "title": "Defect",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 807,
+    "elapsed_seconds": 374.1,
+    "eval": {
+      "pass": true,
+      "tests_run": 4,
+      "tests_passed": 4
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3952,
+    "scaffold_received": true
+  },
+  {
+    "title": "Tangency of Cuboids",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1129,
+    "elapsed_seconds": 1252.3,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2105,
+    "scaffold_received": true
+  },
+  {
+    "title": "Cans and Openers",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1278,
+    "elapsed_seconds": 811.7,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3179,
+    "scaffold_received": true
+  },
+  {
+    "title": "Roulettes",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 830,
+    "elapsed_seconds": 317.0,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 0,
+      "corrected": "precision_only"
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2399,
+    "scaffold_received": true
+  },
+  {
+    "title": "A Certain Game",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1423,
+    "elapsed_seconds": 548.4,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3952,
+    "scaffold_received": true
+  },
+  {
+    "title": "Sandwiches",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 473,
+    "elapsed_seconds": 56.3,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3952,
+    "scaffold_received": true
+  },
+  {
+    "title": "Bus Stops",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 0,
+    "elapsed_seconds": 820.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 0,
+      "tests_passed": 0,
+      "corrected": "retry_1200s"
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3179,
+    "scaffold_received": true
+  },
+  {
+    "title": "Somen Nagashi",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 754,
+    "elapsed_seconds": 44.2,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3952,
+    "scaffold_received": true
+  },
+  {
+    "title": "Complete Binary Tree",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 796,
+    "elapsed_seconds": 542.5,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2718,
+    "scaffold_received": true
+  },
+  {
+    "title": "Product Development",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 1252,
+    "elapsed_seconds": 55.7,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3952,
+    "scaffold_received": true
+  },
+  {
+    "title": "Playlist",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 526,
+    "elapsed_seconds": 146.2,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 3179,
+    "scaffold_received": true
+  },
+  {
+    "title": "Merge Slimes",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 813,
+    "elapsed_seconds": 169.5,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2193,
+    "scaffold_received": true
+  },
+  {
+    "title": "Joint Two Strings",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 863,
+    "elapsed_seconds": 182.9,
+    "eval": {
+      "pass": true,
+      "tests_run": 4,
+      "tests_passed": 4
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2193,
+    "scaffold_received": true
+  },
+  {
+    "title": "Beautiful Path",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 881,
+    "elapsed_seconds": 81.2,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 1992,
+    "scaffold_received": true
+  },
+  {
+    "title": "Square Permutation",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "augmented",
+    "code_length": 451,
+    "elapsed_seconds": 117.6,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    },
+    "api_called": true,
+    "api_mode": "single",
+    "scaffold_length": 2399,
+    "scaffold_received": true
+  }
+]

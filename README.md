@@ -29,8 +29,9 @@ This paper synthesizes all benchmark findings into a unified thesis: suppression
 | [EjBench](ejbench/) | 180 custom professional | Single-turn, 7-factor blind rubric | Claude Opus 4.6 | +10.1pp composite quality lift. Self-monitoring nearly doubled. Correctness flat. |
 | [BBH / CausalBench / MuSR](bbh-causalbench-musr/) | 70 published academic | Single-turn, 7-factor blind rubric | Claude Opus 4.6 | +20.8pp composite lift on focused tasks. Correctness improved +7.1pp. |
 | [ARC-AGI-3](arc-agi-3/) | 25 steps x 2 conditions | Interactive multi-step reasoning | Claude Sonnet 4.6 | RHAE 0.0 = 0.0 (both failed). Scaffold persisted 24 steps. Memory decay reversed. |
+| [LiveCodeBench Hard](lcb-hard/) | 28 hard competitive programming | Code generation + correctness | Claude Opus 4.6 (max effort) | **85.7% -> 100%. +14.3pp. 4 tasks gained, 0 lost. Zero regressions.** |
 
-**Total: 250 single-turn tasks + 50 interactive reasoning steps across three independent benchmarks.**
+**Total: 250 single-turn tasks + 50 interactive reasoning steps + 28 competitive programming tasks across four independent benchmarks.**
 
 ---
 
