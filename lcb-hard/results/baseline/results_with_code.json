@@ -1,0 +1,394 @@
+[
+  {
+    "title": "Pac",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\nfrom collections import deque\n\ndef solve():\n    data = sys.stdin.buffer.read().split()\n    ptr = 0\n    H = int(data[ptr]); ptr += 1\n    W = int(data[ptr]); ptr += 1\n    T = int(data[ptr]); ptr += 1\n    \n    grid = []\n    for i in range(H):\n        grid.append(data[ptr].decode()); ptr += 1\n    \n    start = goal = None\n    candies = []\n    for i in range(H):\n        row = grid[i]\n        for j in range(W):\n            c = row[j]\n            if c == 'S': start = (i, j)\n            elif c == 'G': goal = (i, j)\n            elif c == 'o': candies.append((i, j))\n    \n    n = len(candies)\n    nodes = [start, goal] + candies\n    K = len(nodes)\n    INF = 10**9\n    dist_all = [[INF] * K for _ in range(K)]\n    \n    for a in range(K):\n        si, sj = nodes[a]\n        d = [[-1] * W for _ in range(H)]\n        d[si][sj] = 0\n        q = deque([(si, sj)])\n        while q:\n            ci, cj = q.popleft()\n            nd = d[ci][cj] + 1\n            if ci > 0 and d[ci-1][cj] < 0 and grid[ci-1][cj] != '#':\n                d[ci-1][cj] = nd; q.append((ci-1, cj))\n            if ci < H-1 and d[ci+1][cj] < 0 and grid[ci+1][cj] != '#':\n                d[ci+1][cj] = nd; q.append((ci+1, cj))\n            if cj > 0 and d[ci][cj-1] < 0 and grid[ci][cj-1] != '#':\n                d[ci][cj-1] = nd; q.append((ci, cj-1))\n            if cj < W-1 and d[ci][cj+1] < 0 and grid[ci][cj+1] != '#':\n                d[ci][cj+1] = nd; q.append((ci, cj+1))\n        for b in range(K):\n            ti, tj = nodes[b]\n            if d[ti][tj] >= 0:\n                dist_all[a][b] = d[ti][tj]\n    \n    if dist_all[0][1] > T:\n        print(-1); return\n    if n == 0:\n        print(0); return\n    \n    dist_s = [dist_all[0][i+2] for i in range(n)]\n    dist_g = [dist_all[i+2][1] for i in range(n)]\n    cc = [[dist_all[i+2][j+2] for j in range(n)] for i in range(n)]\n    \n    SIZE = 1 << n\n    dp = [[INF] * n for _ in range(SIZE)]\n    for i in range(n):\n        dp[1 << i][i] = dist_s[i]\n    \n    for mask in range(1, SIZE):\n        dpm = dp[mask]\n        for i in range(n):\n            if not (mask >> i & 1): continue\n            vi = dpm[i]\n            if vi >= T: continue\n            cci = cc[i]\n            for j in range(n):\n                if mask >> j & 1: continue\n                nv = vi + cci[j]\n                if nv >= T: continue\n                nmask = mask | (1 << j)\n                if nv < dp[nmask][j]:\n                    dp[nmask][j] = nv\n    \n    ans = 0\n    for mask in range(1, SIZE):\n        cnt = bin(mask).count('1')\n        if cnt <= ans: continue\n        dpm = dp[mask]\n        for i in range(n):\n            if (mask >> i & 1) and dpm[i] + dist_g[i] <= T:\n                ans = cnt; break\n        if ans == n: break\n    print(ans)\n\nsolve()",
+    "code_length": 2749,
+    "elapsed_seconds": 380.1,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "Merge Set",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\nfrom collections import deque\n\ndef solve():\n    data = sys.stdin.buffer.read().split()\n    ptr = 0\n    N = int(data[ptr]); ptr += 1\n    M = int(data[ptr]); ptr += 1\n\n    adj = [[] for _ in range(M + N + 1)]\n\n    for i in range(N):\n        A = int(data[ptr]); ptr += 1\n        s = M + 1 + i\n        for j in range(A):\n            e = int(data[ptr]); ptr += 1\n            adj[e].append(s)\n            adj[s].append(e)\n\n    dist = [-1] * (M + N + 1)\n    dist[1] = 0\n    q = deque([1])\n    target = M\n\n    while q:\n        u = q.popleft()\n        d = dist[u] + 1\n        for v in adj[u]:\n            if dist[v] < 0:\n                dist[v] = d\n                if v == target:\n                    print(d // 2 - 1)\n                    return\n                q.append(v)\n\n    print(-1)\n\nsolve()",
+    "code_length": 799,
+    "elapsed_seconds": 121.2,
+    "eval": {
+      "pass": true,
+      "tests_run": 4,
+      "tests_passed": 4
+    }
+  },
+  {
+    "title": "Isolation",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef main():\n    data = sys.stdin.buffer.read().split()\n    idx = 0\n    N = int(data[idx]); idx += 1\n    Q = int(data[idx]); idx += 1\n\n    adj = [set() for _ in range(N + 1)]\n    isolated = N\n    out = []\n\n    for _ in range(Q):\n        t = int(data[idx]); idx += 1\n        if t == 1:\n            u = int(data[idx]); idx += 1\n            v = int(data[idx]); idx += 1\n            if not adj[u]:\n                isolated -= 1\n            if not adj[v]:\n                isolated -= 1\n            adj[u].add(v)\n            adj[v].add(u)\n        else:\n            v = int(data[idx]); idx += 1\n            if adj[v]:\n                for w in adj[v]:\n                    adj[w].discard(v)\n                    if not adj[w]:\n                        isolated += 1\n                adj[v].clear()\n                isolated += 1\n        out.append(str(isolated))\n\n    sys.stdout.write('\\n'.join(out) + '\\n')\n\nmain()",
+    "code_length": 913,
+    "elapsed_seconds": 37.7,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    }
+  },
+  {
+    "title": "A Gift From the Stars",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef main():\n    data = sys.stdin.buffer.read().split()\n    n = int(data[0])\n    deg = [0] * (n + 1)\n    idx = 1\n    for _ in range(n - 1):\n        u = int(data[idx]); v = int(data[idx + 1])\n        deg[u] += 1\n        deg[v] += 1\n        idx += 2\n    \n    result = []\n    s = 0\n    h = 0\n    for i in range(1, n + 1):\n        if deg[i] >= 3:\n            result.append(deg[i])\n            s += deg[i]\n            h += 1\n    \n    m = (n - s - h) // 3\n    result.extend([2] * m)\n    result.sort()\n    print(' '.join(map(str, result)))\n\nmain()",
+    "code_length": 551,
+    "elapsed_seconds": 183.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "Good Graph",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef main():\n    data = sys.stdin.buffer.read().split()\n    idx = 0\n    N = int(data[idx]); idx += 1\n    M = int(data[idx]); idx += 1\n\n    parent = list(range(N + 1))\n    rank = [0] * (N + 1)\n\n    def find(x):\n        while parent[x] != x:\n            parent[x] = parent[parent[x]]\n            x = parent[x]\n        return x\n\n    def union(x, y):\n        rx, ry = find(x), find(y)\n        if rx == ry:\n            return\n        if rank[rx] < rank[ry]:\n            rx, ry = ry, rx\n        parent[ry] = rx\n        if rank[rx] == rank[ry]:\n            rank[rx] += 1\n\n    for _ in range(M):\n        u = int(data[idx]); idx += 1\n        v = int(data[idx]); idx += 1\n        union(u, v)\n\n    K = int(data[idx]); idx += 1\n    forbidden = set()\n    for _ in range(K):\n        x = int(data[idx]); idx += 1\n        y = int(data[idx]); idx += 1\n        cx, cy = find(x), find(y)\n        if cx > cy:\n            cx, cy = cy, cx\n        forbidden.add((cx, cy))\n\n    Q = int(data[idx]); idx += 1\n    out = []\n    for _ in range(Q):\n        p = int(data[idx]); idx += 1\n        q = int(data[idx]); idx += 1\n        cp, cq = find(p), find(q)\n        if cp == cq:\n            out.append(\"Yes\")\n        else:\n            if cp > cq:\n                cp, cq = cq, cp\n            out.append(\"No\" if (cp, cq) in forbidden else \"Yes\")\n\n    sys.stdout.write('\\n'.join(out) + '\\n')\n\nmain()",
+    "code_length": 1376,
+    "elapsed_seconds": 40.9,
+    "eval": {
+      "pass": true,
+      "tests_run": 1,
+      "tests_passed": 1
+    }
+  },
+  {
+    "title": "Sleep Log",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\nfrom bisect import bisect_right\n\ndef main():\n    input = sys.stdin.buffer.read().split()\n    idx = 0\n    N = int(input[idx]); idx += 1\n    A = [int(input[idx+i]) for i in range(N)]; idx += N\n    \n    # prefix[i] = total sleep time from 0 to A[i]\n    # Sleep intervals are [A[1],A[2]), [A[3],A[4]), ...\n    # i.e. [A[2k], A[2k+1]) for k=1,...,(N-1)/2\n    # Even-indexed (0-based) A[1],A[3],... are bed times\n    # Odd-indexed (0-based) A[2],A[4],... are wake times\n    \n    # Build prefix sum over A array entries\n    prefix = [0] * N\n    for i in range(1, N):\n        prefix[i] = prefix[i-1]\n        if i % 2 == 0:  # i is even (0-based), so this is A_{i+1} (1-based odd) = wake up\n            prefix[i] += A[i] - A[i-1]\n    \n    # Function to get total sleep from 0 to time t\n    def sleep_until(t):\n        # Find where t falls in A\n        pos = bisect_right(A, t) - 1  # largest index with A[pos] <= t\n        ans = prefix[pos]\n        # If pos is odd (0-based), we're in a sleep interval [A[pos], A[pos+1])\n        if pos % 2 == 1:\n            ans += t - A[pos]\n        return ans\n    \n    Q = int(input[idx]); idx += 1\n    out = []\n    for _ in range(Q):\n        l = int(input[idx]); idx += 1\n        r = int(input[idx]); idx += 1\n        out.append(str(sleep_until(r) - sleep_until(l)))\n    \n    sys.stdout.write('\\n'.join(out))\n\nmain()",
+    "code_length": 1354,
+    "elapsed_seconds": 14.3,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    }
+  },
+  {
+    "title": "Art Gallery on Graph",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\nfrom collections import deque\n\ndef main():\n    input = sys.stdin.buffer.read().split()\n    idx = 0\n    N = int(input[idx]); idx += 1\n    M = int(input[idx]); idx += 1\n    K = int(input[idx]); idx += 1\n\n    adj = [[] for _ in range(N + 1)]\n    for _ in range(M):\n        a = int(input[idx]); idx += 1\n        b = int(input[idx]); idx += 1\n        adj[a].append(b)\n        adj[b].append(a)\n\n    # Multi-source BFS with remaining stamina\n    # For each vertex, track the max remaining stamina when reached\n    best = [0] * (N + 1)  # best remaining stamina at each vertex\n    dq = deque()\n\n    for _ in range(K):\n        p = int(input[idx]); idx += 1\n        h = int(input[idx]); idx += 1\n        if h > best[p]:\n            best[p] = h\n            dq.append((p, h))\n\n    # BFS: propagate stamina\n    while dq:\n        v, rem = dq.popleft()\n        if rem < best[v]:\n            continue\n        if rem == 0:\n            continue\n        for u in adj[v]:\n            nr = rem - 1\n            if nr > best[u]:\n                best[u] = nr\n                dq.append((u, nr))\n\n    guarded = [i for i in range(1, N + 1) if best[i] > 0]\n    print(len(guarded))\n    print(*guarded)\n\nmain()",
+    "code_length": 1191,
+    "elapsed_seconds": 11.0,
+    "eval": {
+      "pass": false,
+      "tests_run": 3,
+      "tests_passed": 1
+    }
+  },
+  {
+    "title": "Best Performances",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "",
+    "code_length": 0,
+    "elapsed_seconds": 610.2,
+    "eval": {
+      "pass": false,
+      "tests_run": 0,
+      "tests_passed": 0
+    }
+  },
+  {
+    "title": "Distinct Adjacent",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef main():\n    N, M = map(int, sys.stdin.readline().split())\n    MOD = 998244353\n    m1 = (M - 1) % MOD\n    ans = (pow(m1, N, MOD) + (m1 if N % 2 == 0 else -m1)) % MOD\n    print(ans)\n\nmain()",
+    "code_length": 203,
+    "elapsed_seconds": 13.2,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "MEX",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef solve():\n    data = sys.stdin.read().split()\n    N = int(data[0])\n    A = list(map(int, data[1:N+1]))\n    S = data[N+1]\n\n    # Precompute mex table\n    mex_table = [[[0]*3 for _ in range(3)] for _ in range(3)]\n    for a in range(3):\n        for b in range(3):\n            for c in range(3):\n                s = {a, b, c}\n                for v in range(4):\n                    if v not in s:\n                        mex_table[a][b][c] = v\n                        break\n\n    # Suffix counts of X positions with each value\n    suffix_x = [[0]*3 for _ in range(N+1)]\n    for i in range(N-1, -1, -1):\n        for c in range(3):\n            suffix_x[i][c] = suffix_x[i+1][c]\n        if S[i] == 'X':\n            suffix_x[i][A[i]] += 1\n\n    prefix_m = [0, 0, 0]\n    total = 0\n\n    for j in range(N):\n        if S[j] == 'E':\n            b = A[j]\n            sx = suffix_x[j+1]\n            for a in range(3):\n                pm = prefix_m[a]\n                if pm == 0:\n                    continue\n                for c in range(3):\n                    m = mex_table[a][b][c]\n                    if m > 0 and sx[c] > 0:\n                        total += pm * sx[c] * m\n        if S[j] == 'M':\n            prefix_m[A[j]] += 1\n\n    print(total)\n\nsolve()",
+    "code_length": 1257,
+    "elapsed_seconds": 49.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "Family and Insurance",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef main():\n    data = sys.stdin.buffer.read().split()\n    idx = 0\n    N = int(data[idx]); idx += 1\n    M = int(data[idx]); idx += 1\n\n    children = [[] for _ in range(N + 1)]\n    for i in range(2, N + 1):\n        p = int(data[idx]); idx += 1\n        children[p].append(i)\n\n    cov = [-1] * (N + 1)\n\n    for _ in range(M):\n        x = int(data[idx]); idx += 1\n        y = int(data[idx]); idx += 1\n        if y > cov[x]:\n            cov[x] = y\n\n    for i in range(1, N + 1):\n        if cov[i] > 0:\n            for c in children[i]:\n                v = cov[i] - 1\n                if v > cov[c]:\n                    cov[c] = v\n\n    ans = 0\n    for i in range(1, N + 1):\n        if cov[i] >= 0:\n            ans += 1\n    print(ans)\n\nmain()",
+    "code_length": 746,
+    "elapsed_seconds": 44.9,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    }
+  },
+  {
+    "title": "Make 10 Again",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\ninput = sys.stdin.readline\n\nMOD = 998244353\n\ndef solve():\n    N = int(input())\n    A = list(map(int, input().split()))\n\n    dp = [0] * 1024\n    dp[1] = 1\n\n    for a in A:\n        inv_a = pow(a, MOD - 2, MOD)\n        new_dp = [0] * 1024\n        upper = min(a, 9)\n        cnt_gt10 = max(0, a - 10)\n\n        for S in range(1, 1024, 2):\n            if not dp[S]:\n                continue\n            prob = dp[S]\n\n            if cnt_gt10:\n                new_dp[S] = (new_dp[S] + prob * cnt_gt10 % MOD * inv_a) % MOD\n\n            for v in range(1, upper + 1):\n                shifted = S << v\n                if shifted & (1 << 10):\n                    continue\n                new_S = (S | shifted) & 0x3FF\n                new_dp[new_S] = (new_dp[new_S] + prob * inv_a) % MOD\n\n        dp = new_dp\n\n    p_bad = sum(dp) % MOD\n    print((1 - p_bad) % MOD)\n\nsolve()",
+    "code_length": 869,
+    "elapsed_seconds": 311.9,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    }
+  },
+  {
+    "title": "NAND repeatedly",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef main():\n    data = sys.stdin.read().split()\n    S = data[1]\n    \n    ones = 0\n    zeros = 0\n    ans = 0\n    \n    for c in S:\n        if c == '0':\n            ones = ones + zeros\n            zeros = 1\n        else:\n            new_ones = zeros + 1\n            zeros = ones\n            ones = new_ones\n        ans += ones\n    \n    print(ans)\n\nmain()",
+    "code_length": 363,
+    "elapsed_seconds": 42.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    }
+  },
+  {
+    "title": "Defect",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef main():\n    inp = sys.stdin.buffer.read().split()\n    ptr = 0\n    H = int(inp[ptr]); ptr += 1\n    W = int(inp[ptr]); ptr += 1\n    N = int(inp[ptr]); ptr += 1\n\n    S = W + 2\n    hole = bytearray(S * (H + 2))\n    row_has_hole = bytearray(H + 2)\n    for _ in range(N):\n        a = int(inp[ptr]); ptr += 1\n        b = int(inp[ptr]); ptr += 1\n        hole[a * S + b] = 1\n        row_has_hole[a] = 1\n\n    nxt = [0] * S\n    ans = 0\n\n    for i in range(H, 0, -1):\n        cur = [0] * S\n        if row_has_hole[i]:\n            off = i * S\n            for j in range(W, 0, -1):\n                if not hole[off + j]:\n                    a = cur[j + 1]\n                    b = nxt[j]\n                    c = nxt[j + 1]\n                    if b < a: a = b\n                    if c < a: a = c\n                    cur[j] = a + 1\n        else:\n            for j in range(W, 0, -1):\n                a = cur[j + 1]\n                b = nxt[j]\n                c = nxt[j + 1]\n                if b < a: a = b\n                if c < a: a = c\n                cur[j] = a + 1\n        ans += sum(cur)\n        nxt = cur\n\n    print(ans)\n\nmain()",
+    "code_length": 1131,
+    "elapsed_seconds": 514.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 4,
+      "tests_passed": 4
+    }
+  },
+  {
+    "title": "Tangency of Cuboids",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "",
+    "code_length": 0,
+    "elapsed_seconds": 1189.7,
+    "eval": {
+      "pass": false,
+      "tests_run": 0,
+      "tests_passed": 0
+    }
+  },
+  {
+    "title": "Cans and Openers",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\nfrom itertools import accumulate\n\ndef solve():\n    data = sys.stdin.buffer.read().split()\n    idx = 0\n    N = int(data[idx]); idx += 1\n    M = int(data[idx]); idx += 1\n    pull = []\n    reg = []\n    op = []\n    for _ in range(N):\n        t = int(data[idx]); idx += 1\n        x = int(data[idx]); idx += 1\n        if t == 0:\n            pull.append(x)\n        elif t == 1:\n            reg.append(x)\n        else:\n            op.append(x)\n    pull.sort(reverse=True)\n    reg.sort(reverse=True)\n    op.sort(reverse=True)\n    pp = [0] + list(accumulate(pull))\n    pr = [0] + list(accumulate(reg))\n    po = [0] + list(accumulate(op))\n    lp = len(pull)\n    lr = len(reg)\n    nop = len(op)\n    best = 0\n    for k in range(min(M, nop) + 1):\n        rem = M - k\n        if rem > lp + lr:\n            continue\n        cap = min(po[k], lr)\n        b_lo = max(0, rem - lp)\n        b_hi = min(rem, lr, cap)\n        if b_hi < b_lo:\n            val = pr[cap] + pp[rem - b_lo]\n        else:\n            lo, hi = b_lo, b_hi\n            while hi - lo > 2:\n                m1 = lo + (hi - lo) // 3\n                m2 = hi - (hi - lo) // 3\n                if pr[m1] + pp[rem - m1] < pr[m2] + pp[rem - m2]:\n                    lo = m1 + 1\n                else:\n                    hi = m2 - 1\n            val = max(pr[b] + pp[rem - b] for b in range(lo, hi + 1))\n        best = max(best, val)\n    print(best)\n\nsolve()",
+    "code_length": 1407,
+    "elapsed_seconds": 404.5,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "Roulettes",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef solve():\n    data = sys.stdin.read().split()\n    idx = 0\n    N, M = int(data[idx]), int(data[idx+1])\n    idx += 2\n    \n    wheels = []\n    for i in range(N):\n        C = int(data[idx])\n        P = int(data[idx+1])\n        S = [int(data[idx+2+j]) for j in range(P)]\n        idx += 2 + P\n        wheels.append((C, P, S))\n    \n    dp = [0.0] * (M + 1)\n    \n    for j in range(M - 1, -1, -1):\n        best = float('inf')\n        for C, P, S in wheels:\n            zero_count = 0\n            non_zero_sum = 0.0\n            for s in S:\n                if s == 0:\n                    zero_count += 1\n                else:\n                    non_zero_sum += dp[min(j + s, M)]\n            val = (C + non_zero_sum / P) / (1.0 - zero_count / P)\n            if val < best:\n                best = val\n        dp[j] = best\n    \n    print(f\"{dp[0]:.15f}\")\n\nsolve()",
+    "code_length": 866,
+    "elapsed_seconds": 187.6,
+    "eval": {
+      "pass": false,
+      "tests_run": 3,
+      "tests_passed": 0
+    }
+  },
+  {
+    "title": "A Certain Game",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef main():\n    data = sys.stdin.buffer.read().split()\n    idx = 0\n    N = int(data[idx]); idx += 1\n    MOD = 998244353\n    parent = list(range(N + 1))\n    rnk = [0] * (N + 1)\n    sz = [1] * (N + 1)\n    delta = [0] * (N + 1)\n\n    def find(x):\n        path = []\n        while parent[x] != x:\n            path.append(x)\n            x = parent[x]\n        root = x\n        cumulative = 0\n        for node in reversed(path):\n            cumulative = (cumulative + delta[node]) % MOD\n            delta[node] = cumulative\n            parent[node] = root\n        return root\n\n    for _ in range(N - 1):\n        p = int(data[idx]); idx += 1\n        q = int(data[idx]); idx += 1\n        rp = find(p)\n        rq = find(q)\n        a = sz[rp]\n        b = sz[rq]\n        inv_ab = pow(a + b, MOD - 2, MOD)\n        delta[rp] = (delta[rp] + a * inv_ab) % MOD\n        delta[rq] = (delta[rq] + b * inv_ab) % MOD\n        if rnk[rp] < rnk[rq]:\n            parent[rp] = rq\n            delta[rp] = (delta[rp] - delta[rq]) % MOD\n            sz[rq] += sz[rp]\n        elif rnk[rp] > rnk[rq]:\n            parent[rq] = rp\n            delta[rq] = (delta[rq] - delta[rp]) % MOD\n            sz[rp] += sz[rq]\n        else:\n            parent[rq] = rp\n            delta[rq] = (delta[rq] - delta[rp]) % MOD\n            sz[rp] += sz[rq]\n            rnk[rp] += 1\n\n    out = []\n    for i in range(1, N + 1):\n        root = find(i)\n        if i == root:\n            out.append(str(delta[i] % MOD))\n        else:\n            out.append(str((delta[i] + delta[root]) % MOD))\n    sys.stdout.write(' '.join(out) + '\\n')\n\nmain()",
+    "code_length": 1596,
+    "elapsed_seconds": 468.7,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    }
+  },
+  {
+    "title": "Sandwiches",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\nfrom collections import defaultdict\n\ndef main():\n    data = sys.stdin.buffer.read().split()\n    n = int(data[0])\n    positions = defaultdict(list)\n    for i in range(n):\n        positions[int(data[i + 1])].append(i + 1)\n    ans = 0\n    for pos in positions.values():\n        prefix_sum = 0\n        for t in range(len(pos)):\n            if t > 0:\n                ans += t * pos[t] - prefix_sum - t * (t + 1) // 2\n            prefix_sum += pos[t]\n    print(ans)\n\nmain()",
+    "code_length": 478,
+    "elapsed_seconds": 42.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "Bus Stops",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\nimport numpy as np\n\ndef main():\n    data = sys.stdin.buffer.read().split()\n    ptr = 0\n    N = int(data[ptr]); ptr += 1\n    X = int(data[ptr]); ptr += 1\n    Y = int(data[ptr]); ptr += 1\n\n    L = 840  # lcm(1, 2, ..., 8)\n    res = np.arange(L, dtype=np.int64)\n    delta = np.zeros(L, dtype=np.int64)\n\n    for _ in range(N - 1):\n        p = int(data[ptr]); ptr += 1\n        t = int(data[ptr]); ptr += 1\n        wait = (-res) % p\n        delta += wait + t\n        res = (res + wait + t) % L\n\n    Q = int(data[ptr]); ptr += 1\n    out = []\n    for _ in range(Q):\n        q = int(data[ptr]); ptr += 1\n        s = q + X\n        r = s % L\n        out.append(str(s + int(delta[r]) + Y))\n\n    sys.stdout.write('\\n'.join(out) + '\\n')\n\nmain()",
+    "code_length": 741,
+    "elapsed_seconds": 139.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 1,
+      "tests_passed": 1
+    }
+  },
+  {
+    "title": "Somen Nagashi",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import heapq\nimport sys\ninput = sys.stdin.readline\n\ndef main():\n    N, M = map(int, input().split())\n    noodles = [0] * N\n    # Min-heap of available people (by index)\n    available = list(range(N))\n    heapq.heapify(available)\n    # Min-heap of (return_time, person_index)\n    returning = []\n\n    for _ in range(M):\n        T, W, S = map(int, input().split())\n        # Return people whose return time <= T\n        while returning and returning[0][0] <= T:\n            _, person = heapq.heappop(returning)\n            heapq.heappush(available, person)\n        if available:\n            person = heapq.heappop(available)\n            noodles[person] += W\n            heapq.heappush(returning, (T + S, person))\n\n    for i in range(N):\n        print(noodles[i])\n\nmain()",
+    "code_length": 767,
+    "elapsed_seconds": 10.2,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "Complete Binary Tree",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef main():\n    data = sys.stdin.buffer.read().split()\n    pos = 0\n    T = int(data[pos]); pos += 1\n    out = []\n\n    for _ in range(T):\n        N = int(data[pos]); pos += 1\n        X = int(data[pos]); pos += 1\n        K = int(data[pos]); pos += 1\n\n        ans = 0\n\n        if K <= 60:\n            lo = X << K\n            if lo <= N:\n                ans = min(lo + (1 << K) - 1, N) - lo + 1\n\n        c = X\n        a = X >> 1\n        up = 1\n        while a and up <= K:\n            down = K - up\n            if down <= 60:\n                lo = a << down\n                if lo <= N:\n                    ans += min(lo + (1 << down) - 1, N) - lo + 1\n            dm = down - 1\n            if 0 <= dm <= 60:\n                lo = c << dm\n                if lo <= N:\n                    ans -= min(lo + (1 << dm) - 1, N) - lo + 1\n            c = a\n            a >>= 1\n            up += 1\n\n        out.append(str(ans))\n\n    sys.stdout.write('\\n'.join(out) + '\\n')\n\nmain()",
+    "code_length": 974,
+    "elapsed_seconds": 227.7,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    }
+  },
+  {
+    "title": "Product Development",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef solve():\n    data = sys.stdin.read().split()\n    idx = 0\n    N = int(data[idx]); idx += 1\n    K = int(data[idx]); idx += 1\n    P = int(data[idx]); idx += 1\n\n    plans = []\n    for i in range(N):\n        C = int(data[idx]); idx += 1\n        A = []\n        for j in range(K):\n            A.append(int(data[idx])); idx += 1\n        plans.append((C, A))\n\n    base = P + 1\n    total_states = base ** K\n\n    target = 0\n    for j in range(K):\n        target = target * base + P\n\n    INF = float('inf')\n    dp = [INF] * total_states\n    dp[0] = 0\n\n    for C, A in plans:\n        new_dp = dp[:]\n        for state in range(total_states):\n            if dp[state] == INF:\n                continue\n            s = state\n            vals = [0] * K\n            for j in range(K - 1, -1, -1):\n                vals[j] = s % base\n                s //= base\n            new_state = 0\n            for j in range(K):\n                new_state = new_state * base + min(vals[j] + A[j], P)\n            cost = dp[state] + C\n            if cost < new_dp[new_state]:\n                new_dp[new_state] = cost\n        dp = new_dp\n\n    print(dp[target] if dp[target] != INF else -1)\n\nsolve()",
+    "code_length": 1178,
+    "elapsed_seconds": 23.8,
+    "eval": {
+      "pass": true,
+      "tests_run": 2,
+      "tests_passed": 2
+    }
+  },
+  {
+    "title": "Playlist",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\ninput = sys.stdin.readline\n\ndef main():\n    MOD = 998244353\n    N, X = map(int, input().split())\n    T = list(map(int, input().split()))\n\n    inv_N = pow(N, MOD - 2, MOD)\n\n    dp = [0] * (X + 1)\n    dp[0] = 1\n\n    for t in range(1, X + 1):\n        s = 0\n        for ti in T:\n            if t >= ti:\n                s += dp[t - ti]\n        dp[t] = s % MOD * inv_N % MOD\n\n    ans = 0\n    lo = max(0, X - T[0] + 1)\n    for s in range(lo, X + 1):\n        ans += dp[s]\n    ans = ans % MOD * inv_N % MOD\n\n    print(ans)\n\nmain()",
+    "code_length": 532,
+    "elapsed_seconds": 34.3,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "Merge Slimes",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\nimport heapq\n\ndef solve():\n    data = sys.stdin.buffer.read().split()\n    idx = 0\n    N = int(data[idx]); idx += 1\n\n    counts = {}\n    heap = []\n\n    for _ in range(N):\n        s = int(data[idx]); idx += 1\n        c = int(data[idx]); idx += 1\n        counts[s] = c\n        heap.append(s)\n\n    heapq.heapify(heap)\n\n    answer = 0\n    while heap:\n        size = heapq.heappop(heap)\n        if size not in counts:\n            continue\n        c = counts.pop(size)\n        answer += c & 1\n        carry = c >> 1\n        if carry > 0:\n            new_size = size * 2\n            if new_size in counts:\n                counts[new_size] += carry\n            else:\n                counts[new_size] = carry\n                heapq.heappush(heap, new_size)\n\n    print(answer)\n\nsolve()",
+    "code_length": 784,
+    "elapsed_seconds": 165.3,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "Joint Two Strings",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\nfrom bisect import bisect_left\n\ndef main():\n    data = sys.stdin.buffer.read().decode().split()\n    idx = 0\n    N = int(data[idx]); idx += 1\n    T = data[idx]; idx += 1\n    lenT = len(T)\n\n    strings = []\n    for i in range(N):\n        strings.append(data[idx]); idx += 1\n\n    pre = []\n    for s in strings:\n        k = 0\n        for c in s:\n            if k < lenT and c == T[k]:\n                k += 1\n        pre.append(k)\n\n    suf = []\n    for s in strings:\n        k = lenT - 1\n        for c in reversed(s):\n            if k >= 0 and c == T[k]:\n                k -= 1\n        suf.append(lenT - 1 - k)\n\n    suf.sort()\n\n    ans = 0\n    for p in pre:\n        need = lenT - p\n        ans += N - bisect_left(suf, need)\n\n    print(ans)\n\nmain()",
+    "code_length": 753,
+    "elapsed_seconds": 51.5,
+    "eval": {
+      "pass": true,
+      "tests_run": 4,
+      "tests_passed": 4
+    }
+  },
+  {
+    "title": "Beautiful Path",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import sys\n\ndef solve():\n    data = sys.stdin.buffer.read().split()\n    idx = 0\n    N = int(data[idx]); idx += 1\n    M = int(data[idx]); idx += 1\n\n    adj = [[] for _ in range(N + 1)]\n    for _ in range(M):\n        u = int(data[idx]); idx += 1\n        v = int(data[idx]); idx += 1\n        b = int(data[idx]); idx += 1\n        c = int(data[idx]); idx += 1\n        adj[u].append((v, b, c))\n\n    INF = float('inf')\n\n    def check(r):\n        dp = [-INF] * (N + 1)\n        dp[1] = 0.0\n        for u in range(1, N + 1):\n            if dp[u] == -INF:\n                continue\n            for v, b, c in adj[u]:\n                val = dp[u] + b - r * c\n                if val > dp[v]:\n                    dp[v] = val\n        return dp[N] >= 0\n\n    lo, hi = 0.0, 10001.0\n    for _ in range(100):\n        mid = (lo + hi) * 0.5\n        if check(mid):\n            lo = mid\n        else:\n            hi = mid\n\n    print(f\"{lo:.16f}\")\n\nsolve()",
+    "code_length": 929,
+    "elapsed_seconds": 24.3,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  },
+  {
+    "title": "Square Permutation",
+    "difficulty": "hard",
+    "platform": "atcoder",
+    "condition": "baseline",
+    "code": "import math\n\ndef solve():\n    N = int(input())\n    S = input().strip()\n    \n    target = sorted(S)\n    max_root = math.isqrt(10**N - 1)\n    \n    count = 0\n    for i in range(max_root + 1):\n        if sorted(str(i * i).zfill(N)) == target:\n            count += 1\n    \n    print(count)\n\nsolve()",
+    "code_length": 292,
+    "elapsed_seconds": 52.3,
+    "eval": {
+      "pass": true,
+      "tests_run": 3,
+      "tests_passed": 3
+    }
+  }
+]
