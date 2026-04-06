@@ -40,12 +40,13 @@ LiveCodeBench continuously collects competitive programming problems from AtCode
 
 **Condition A — Baseline:** Standard competitive programming system prompt. Single CLI call per task. No reasoning augmentation.
 
-**Condition B — Augmented:** Two-pass architecture per task:
-- **Pass 1 (Decision):** Model reads the task + RA²R skill file documentation. Generates a reasoning query describing what it might get wrong. (If timeout: fallback query from task title.)
-- **API Call:** Query sent to Logic API, single mode. Scaffold (1,966-3,952 chars) returned.
-- **Pass 2 (Code):** Scaffold prepended to task prompt. Model generates solution.
+**Condition B — Augmented:** Two-pass architecture using the [Ejentum Logic API skill file](https://ejentum.com/docs/agent_skill) — a structured tool-use document that teaches the model when and how to call the Logic API, how to craft queries, and how to absorb the returned scaffold into its reasoning.
 
-Hard tasks received forced API calls. The model did not have the option to skip.
+- **Pass 1 (Decision):** Model reads the task + the full skill file documentation. Generates a reasoning query describing what it might get wrong. (If timeout: fallback query from task title.)
+- **API Call:** Query sent to Logic API, single mode. Scaffold (1,966-3,952 chars) returned. The scaffold contains a negative gate (failure trap to avoid), reasoning topology (decision structure), suppression signals (reasoning shortcuts to block), and a falsification test (verification criterion).
+- **Pass 2 (Code):** Scaffold prepended to task prompt. Model generates solution with the scaffold active.
+
+Hard tasks received forced API calls. The model did not have the option to skip. The skill file used is the same one available to all Ejentum subscribers at [ejentum.com/docs/agent_skill](https://ejentum.com/docs/agent_skill).
 
 ### 1.4 Scale
 
