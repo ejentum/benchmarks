@@ -294,3 +294,12 @@ The scaffold does not tell the model what to code. It calibrates when the model 
 ---
 
 *This report documents 12 evidence-backed claims from 56 code evaluations across 28 hard competitive programming tasks. Every gained task has a documented failure mode, every mechanism has independent verification, and every claim maps to specific evidence. The scaffold's primary contribution is convergence calibration: preventing the model from committing too early or too late. A mechanism that produces its largest effects precisely where frontier models already perform well but not perfectly.*
+
+---
+
+## Links
+
+- [Benchmark report (blog)](https://ejentum.com/blog/livecodebench-hard-28-tasks)
+- [Observations: What We Saw When Opus Thought Harder](https://ejentum.com/blog/what-we-saw-when-opus-thought-harder)
+- [Logic API skill file](https://ejentum.com/docs/agent_skill)
+- [Ejentum](https://ejentum.com)
