@@ -1,75 +1,62 @@
-# LiveCodeBench Hard: 28 Hard Competitive Programming Tasks
+# LiveCodeBench Hard: RA2R Logic API on Competitive Programming
 
-Evaluation of Ejentum's Logic API on 28 hard competitive programming tasks from [LiveCodeBench](https://livecodebench.github.io/), all sourced from AtCoder.
-
-## Overview
-
-**Model:** Claude Opus 4.6 with maximum-effort extended thinking.
-
-**Two conditions:**
-- **Baseline:** Standard competitive programming prompt. No augmentation.
-- **Augmented:** Ejentum Logic API [skill file](https://ejentum.com/docs/agent_skill) with forced API call on all hard tasks. Decision pass generates query, scaffold injected before code generation.
-
-**Evaluation:** Exact string match on public test cases (2-4 per task). Pass = all tests pass.
+Claude Opus 4.6 with maximum-effort extended thinking solves 85.7% of 28 hard AtCoder problems. With one Ejentum Logic API call per task, it solves **100%**.
 
 ## Results
 
 | Condition | Passed | Rate |
 |-----------|--------|------|
-| Baseline | 24/28 | 85.7% |
-| **Augmented** | **28/28** | **100.0%** |
+| Baseline (Opus 4.6 max effort) | 24/28 | 85.7% |
+| + Logic API scaffold | 28/28 | **100.0%** |
 | **Delta** | **+4** | **+14.3pp** |
 
-**Zero regressions.** Every task baseline passes, augmented also passes.
+**Zero regressions.** Every task that passed baseline also passed augmented.
 
-## Tasks Gained (fail -> pass)
+## Blind Evaluation
 
-| Task | Baseline Failure | Scaffold Fix |
-|------|-----------------|--------------|
-| Art Gallery on Graph | Wrong answer (1/3 tests) | Suppression prevented premature graph traversal |
-| Best Performances | Reasoning spiral (610s, zero code) | Topology provided convergence structure |
-| Tangency of Cuboids | Reasoning spiral (1190s, zero code) | Structured 3D spatial reasoning |
-| Roulettes | Precision mismatch | Algorithm correct, formatting corrected |
+A blind evaluator scored both solutions per task without knowing which used the scaffold:
 
-## Key Findings
+- **3.5x magnitude asymmetry.** Average scaffold win: +5.7 points. Average baseline win: -1.6 points.
+- **Never loses on correctness (2-0) or robustness (4-0).**
+- **Independent bug discovery.** The evaluator traced a fatal sentinel-collision bug in the baseline, scored it 2/10, without knowing which solution used the scaffold.
 
-- **100% rescue rate on reasoning spirals** — 2/2 tasks where baseline thinking spiraled without producing code
-- **Zero identical solutions** — all 24 both-pass tasks produced different code (avg Jaccard similarity 0.689)
-- **2.0% more concise code** across shared tasks
-- **33% fewer inline comments** — deliberate coding shift
-- **Algorithm enrichment** on 4/24 tasks (added BFS, binary search, sorting)
-- **One task faster** — Defect: 515s baseline -> 374s augmented (-27%)
-- **Consistent** across 3 independent batches, zero regressions in any batch
+## Repository Structure
 
-## Files
+```
+README.md           This file
+REPORT.md           Full benchmark report (296 lines, 13 sections)
+skill.md            The Logic API skill file used in the benchmark
+run_lcb.py          Benchmark runner (reproducible)
+results/
+  baseline.json     28 baseline results (metadata, no code)
+  augmented.json    28 augmented results (metadata, no code)
+  blind_eval.json   27 blind evaluation results with full commentary
+  three_way_evals.json   2 three-way blind evaluations
+```
 
-| Path | Description |
-|------|-------------|
-| `REPORT.md` | Full research report with forensic analysis |
-| `run_lcb.py` | Benchmark runner (requires Ejentum API key) |
-| `results/baseline/results.json` | 28 baseline results (metadata, no code) |
-| `results/augmented/results.json` | 28 augmented results (metadata + scaffold stats, no code) |
+## Reproduction
 
-## Methodology
-
-Full methodology documented in [REPORT.md](REPORT.md). Blog posts:
-- [Benchmark Report](https://ejentum.com/blog/livecodebench-hard-28-tasks)
-- [Observations](https://ejentum.com/blog/what-we-saw-when-opus-thought-harder)
-
-## Reproduce
+Requires an Ejentum API key ([ejentum.com](https://ejentum.com)) and Claude CLI.
 
 ```bash
-export EJENTUM_API_KEY="your-api-key"
+# Install dependencies
+pip install httpx
+
+# Set your API key
+export EJENTUM_API_KEY="your-key-here"
+
+# Run baseline
 python run_lcb.py --condition baseline --run-id my_run
+
+# Run augmented
 python run_lcb.py --condition augmented --run-id my_run
 ```
 
-Requires: Python 3.11+, `httpx`, Claude CLI (`claude`), Ejentum API key ([get one free](https://ejentum.com/pricing)).
+Task data is not included (LiveCodeBench IP). Download from the [LiveCodeBench HuggingFace dataset](https://huggingface.co/datasets/livecodebench/code_generation) and place batch files in the same directory.
 
-**Note:** Task data (`lcb_tasks.json`) is not included in this repository — tasks are sourced from [LiveCodeBench](https://livecodebench.github.io/) and are their intellectual property. To reproduce, download hard tasks from the LiveCodeBench HuggingFace dataset (`livecodebench/code_generation`) and save as `lcb_tasks.json`. The [skill file](https://ejentum.com/docs/agent_skill) (`skill.md`) is available from Ejentum's documentation.
+## Links
 
-## Related Benchmarks
-
-- [EjBench](../ejbench/) -- 180 custom professional tasks, +10.1pp reasoning quality
-- [BBH / CausalBench / MuSR](../bbh-causalbench-musr/) -- 70 published academic tasks, +20.8pp composite
-- [ARC-AGI-3](../arc-agi-3/) -- Interactive multi-step reasoning, scaffold persistence over 24 steps
+- [Benchmark report (blog)](https://ejentum.com/blog/livecodebench-hard-28-tasks)
+- [Observations post](https://ejentum.com/blog/what-we-saw-when-opus-thought-harder)
+- [Logic API skill file documentation](https://ejentum.com/docs/agent_skill)
+- [Ejentum](https://ejentum.com)

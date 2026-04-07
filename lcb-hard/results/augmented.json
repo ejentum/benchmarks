@@ -105,9 +105,9 @@
     "title": "Art Gallery on Graph",
     "difficulty": "hard",
     "platform": "atcoder",
-    "condition": "augmented",
-    "code_length": 1166,
-    "elapsed_seconds": 32.4,
+    "condition": "augmented_v3",
+    "code_length": 1282,
+    "elapsed_seconds": 125.2,
     "eval": {
       "pass": true,
       "tests_run": 3,
@@ -115,16 +115,16 @@
     },
     "api_called": true,
     "api_mode": "single",
-    "scaffold_length": 3224,
+    "scaffold_length": 3081,
     "scaffold_received": true
   },
   {
     "title": "Best Performances",
     "difficulty": "hard",
     "platform": "atcoder",
-    "condition": "augmented",
-    "code_length": 1315,
-    "elapsed_seconds": 649.4,
+    "condition": "augmented_v3",
+    "code_length": 1464,
+    "elapsed_seconds": 495.0,
     "eval": {
       "pass": true,
       "tests_run": 1,
@@ -132,7 +132,7 @@
     },
     "api_called": true,
     "api_mode": "single",
-    "scaffold_length": 3952,
+    "scaffold_length": 2414,
     "scaffold_received": true
   },
   {
@@ -224,9 +224,9 @@
     "title": "Defect",
     "difficulty": "hard",
     "platform": "atcoder",
-    "condition": "augmented",
-    "code_length": 807,
-    "elapsed_seconds": 374.1,
+    "condition": "augmented_v3",
+    "code_length": 906,
+    "elapsed_seconds": 156.8,
     "eval": {
       "pass": true,
       "tests_run": 4,
@@ -234,7 +234,7 @@
     },
     "api_called": true,
     "api_mode": "single",
-    "scaffold_length": 3952,
+    "scaffold_length": 2356,
     "scaffold_received": true
   },
   {
@@ -258,9 +258,9 @@
     "title": "Cans and Openers",
     "difficulty": "hard",
     "platform": "atcoder",
-    "condition": "augmented",
-    "code_length": 1278,
-    "elapsed_seconds": 811.7,
+    "condition": "augmented_v3",
+    "code_length": 1352,
+    "elapsed_seconds": 269.4,
     "eval": {
       "pass": true,
       "tests_run": 3,
@@ -268,7 +268,7 @@
     },
     "api_called": true,
     "api_mode": "single",
-    "scaffold_length": 3179,
+    "scaffold_length": 2185,
     "scaffold_received": true
   },
   {

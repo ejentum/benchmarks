@@ -1,14 +1,21 @@
 """
-LiveCodeBench Hard Runner — Skill File v2 (Decision Pass)
-===========================================================
-A/B test on competitive programming problems (stdin/stdout).
+LiveCodeBench Hard Runner v3 — Task-Specific Cognitive Routing
+===============================================================
+Redesigned decision pass forces deep cognitive pre-analysis before
+querying the Logic API. Produces targeted queries that route to
+diverse abilities instead of the same generic scaffold.
 
-Baseline: Standard prompt, model writes solution.
-Augmented: Skill file + decision pass. Model decides CALL or SKIP per task.
+Key differences from v2:
+  - Cognitive pre-analysis pass (4 risk categories)
+  - Query must describe REASONING FAILURE MODE, not topic
+  - Examples of good vs bad queries in prompt
+  - Multi mode option for compound cognitive demands
+  - Full skill file integration
 
 Usage:
-    python run_lcb.py --condition baseline
-    python run_lcb.py --condition augmented
+    python run_lcb_v3.py --condition augmented
+    python run_lcb_v3.py --condition both
+    python run_lcb_v3.py --condition augmented --mode multi
 """
 
 import argparse
@@ -30,48 +37,51 @@ API_KEY = os.environ.get("EJENTUM_API_KEY", "")
 
 RESULTS_DIR = Path(__file__).parent / "results"
 MODEL = "opus"
-TASKS_FILE = Path(__file__).parent / "lcb_tasks.json"
-SKILL_FILE = Path(__file__).parent / "skill.md"  # Place your Ejentum skill file here
+SKILL_FILE = Path(__file__).parent / "skill.md"
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 # ---------- Logic API ----------
 
 def call_logic_api(query, mode="single"):
+    """Call Ejentum Logic API. Requires EJENTUM_API_KEY env var."""
+    if not API_KEY:
+        print("  [NO API KEY - set EJENTUM_API_KEY]", end="", flush=True)
+        return None
     try:
         resp = httpx.post(
             LOGIC_API_URL,
             headers={"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"},
             json={"query": query, "mode": mode},
-            timeout=10.0,
+            timeout=15.0,
         )
         resp.raise_for_status()
         data = resp.json()
         if isinstance(data, list) and len(data) > 0:
-            return data[0].get(f"{mode}_ability", "")
-        return None
+            ability = data[0].get(f"{mode}_ability", "")
+            if ability:
+                return ability
     except Exception as e:
         print(f" [API ERR: {e}]", end="", flush=True)
-        return None
+    return None
 
 
 # ---------- Claude CLI ----------
 
-def call_claude(prompt, system_prompt=""):
-    full_input = system_prompt + "\n\n" + prompt if system_prompt else prompt
-    input_file = os.path.join(tempfile.gettempdir(), "_lcb_input.txt")
+def call_claude(prompt, timeout=1200, effort="max"):
+    input_file = os.path.join(tempfile.gettempdir(), "_lcb_v3_input.txt")
     with open(input_file, "w", encoding="utf-8") as f:
-        f.write(full_input)
-
-    cmd = f'type "{input_file}" | claude -p --model {MODEL} --effort max --no-session-persistence'
+        f.write(prompt)
+    cmd = f'type "{input_file}" | claude -p --model {MODEL} --effort {effort} --no-session-persistence'
     try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600,
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout,
                               shell=True, encoding="utf-8", errors="replace",
                               cwd=tempfile.gettempdir())
     except subprocess.TimeoutExpired:
         print(" [TIMEOUT]", end="", flush=True)
         return None
     if proc.returncode != 0:
+        print(f" [EXIT {proc.returncode}]", end="", flush=True)
         return None
     return proc.stdout.strip() if proc.stdout else None
 
@@ -82,325 +92,337 @@ def extract_code(response):
     if not response:
         return ""
     if "```python" in response:
-        blocks = response.split("```python")
-        if len(blocks) > 1:
-            return blocks[1].split("```")[0].strip()
-    elif "```" in response:
-        blocks = response.split("```")
-        if len(blocks) > 1:
-            code = blocks[1].split("```")[0].strip()
-            first_line = code.split("\n")[0].strip()
-            if first_line in ("python", "py", "Python"):
-                code = "\n".join(code.split("\n")[1:])
-            return code
-    # Fallback
-    lines = response.strip().split("\n")
-    code_lines = []
-    in_code = False
-    for line in lines:
-        if line.startswith("import ") or line.startswith("from ") or line.startswith("def ") or line.startswith("import sys") or "input()" in line or in_code:
-            in_code = True
-            code_lines.append(line)
-    return "\n".join(code_lines) if code_lines else response
+        blocks = re.findall(r"```python\s*\n(.*?)```", response, re.DOTALL)
+        return blocks[-1].strip() if blocks else ""
+    if "```" in response:
+        blocks = re.findall(r"```\s*\n(.*?)```", response, re.DOTALL)
+        return blocks[-1].strip() if blocks else ""
+    return response.strip()
 
 
 # ---------- Evaluation ----------
 
-def evaluate_solution(code, task):
-    """Run solution against public test cases. Returns pass/fail per test."""
-    pub_tests = json.loads(task['public_test_cases']) if isinstance(task['public_test_cases'], str) else task['public_test_cases']
-    if not pub_tests or not code.strip():
-        return {"pass": False, "tests_run": 0, "tests_passed": 0, "reason": "empty"}
-
-    results = []
-    for i, test in enumerate(pub_tests):
-        test_input = test['input']
-        expected = test['output'].strip()
-
-        # Write code to temp file
-        code_file = os.path.join(tempfile.gettempdir(), f"_lcb_sol_{i}.py")
-        with open(code_file, "w", encoding="utf-8") as f:
-            f.write(code)
-
+def evaluate_solution(code, test_cases):
+    if not code.strip():
+        return {"pass": False, "tests_run": 0, "tests_passed": 0}
+    tests = json.loads(test_cases) if isinstance(test_cases, str) else test_cases
+    passed = 0
+    for tc in tests:
+        inp = tc.get("input", "")
+        expected = tc.get("output", "").strip()
         try:
             proc = subprocess.run(
-                [sys.executable, code_file],
-                input=test_input, capture_output=True, text=True,
-                timeout=30, encoding="utf-8", errors="replace",
+                ["python", "-c", code],
+                input=inp, capture_output=True, text=True, timeout=30,
+                encoding="utf-8", errors="replace",
             )
             actual = proc.stdout.strip()
-            passed = actual == expected
-            results.append({"passed": passed, "expected": expected[:100], "actual": actual[:100]})
-        except subprocess.TimeoutExpired:
-            results.append({"passed": False, "expected": expected[:100], "actual": "TIMEOUT"})
-        except Exception as e:
-            results.append({"passed": False, "expected": expected[:100], "actual": str(e)[:100]})
-
-    all_pass = all(r['passed'] for r in results)
-    n_pass = sum(1 for r in results if r['passed'])
-    return {"pass": all_pass, "tests_run": len(results), "tests_passed": n_pass, "details": results}
+            if actual == expected:
+                passed += 1
+        except Exception:
+            pass
+    return {"pass": passed == len(tests), "tests_run": len(tests), "tests_passed": passed}
 
 
 # ---------- Prompts ----------
 
-BASELINE_SYSTEM = (
-    "You are an expert competitive programmer. Solve the problem below.\n"
-    "Write a complete Python solution that reads from stdin and writes to stdout.\n"
-    "Return ONLY the code inside a ```python code block. No explanations."
-)
+TOOL_CALL_PROMPT = """{skill_file}
 
-CODE_SYSTEM = BASELINE_SYSTEM
+---
 
+You have access to the Ejentum Logic API. Call it before solving this task.
 
-def load_skill_file():
-    if SKILL_FILE.exists():
-        return SKILL_FILE.read_text(encoding="utf-8")
-    return ""
+**Task:** {title}
+{task_brief}
 
+Describe the task structure and identify which reasoning domain fits best (Causal, Temporal, Spatial, Simulation, Abstraction, or Metacognition). Output your API call:
 
-def build_decision_system(skill_content):
-    return (
-        "You are an expert competitive programmer with access to a reasoning "
-        "augmentation tool. Your job right now is NOT to write code. Your job "
-        "is to ASSESS whether you need reasoning augmentation for this problem.\n\n"
-        "Read the tool documentation:\n\n---\n\n"
-        f"{skill_content}\n\n---\n\n"
-        "For the problem below, make ONE decision:\n\n"
-        "**CALL** - if the problem involves:\n"
-        "  - Non-obvious algorithmic reasoning where your first approach might be wrong\n"
-        "  - Complex edge cases that could silently produce wrong answers\n"
-        "  - Multiple interacting constraints that are hard to reason about simultaneously\n"
-        "  - Graph theory, dynamic programming, or mathematical reasoning where shortcuts fail\n\n"
-        "**SKIP** - if the problem is:\n"
-        "  - A straightforward implementation of a known algorithm\n"
-        "  - Simple simulation or brute force within constraints\n"
-        "  - A problem you've seen many times and are confident about\n\n"
-        "Respond with EXACTLY this format (nothing else):\n\n"
-        "If calling:\n```\nCALL\nquery: <1-2 sentence description of what you might get wrong>\n"
-        "mode: <single or multi>\n```\n\n"
-        "If skipping:\n```\nSKIP\n```\n\n"
-        "DO NOT write any code. Just decide: CALL or SKIP."
-    )
+```json
+{{"query": "reasoning domain + task description", "mode": "single or multi"}}
+```"""
 
 
-SCAFFOLD_PREAMBLE = (
-    "Before writing code, absorb this reasoning scaffold:\n\n"
-    "[REASONING SCAFFOLD]\n{scaffold}\n[END SCAFFOLD]\n\n"
-    "Apply it:\n"
-    "- [NEGATIVE GATE]: the algorithmic trap to avoid\n"
-    "- [REASONING TOPOLOGY]: follow as your decision structure\n"
-    "- Suppress: signals -- scan your approach against these\n"
-    "- [FALSIFICATION TEST]: verify before finalizing\n\n"
-    "Now write the solution.\n\n"
-)
+CODE_WITH_SCAFFOLD_PROMPT = """You called the Ejentum Logic API and received this reasoning scaffold:
+
+[REASONING CONTEXT]
+{scaffold}
+[END REASONING CONTEXT]
+
+Follow the skill file: ABSORB the scaffold. Read the NEGATIVE GATE. Follow the REASONING TOPOLOGY. Apply Suppress signals as post-check.
+
+Now solve this competitive programming problem. Read from stdin, write to stdout.
+
+{task_description}
+
+Write ONLY the Python solution code. No explanation."""
 
 
-def parse_decision(response):
+def extract_task_summary(title, description):
+    """Extract constraints and one-line summary from task description."""
+    constraints = []
+    for line in description.split("\n"):
+        line = line.strip()
+        if any(c in line for c in ["\\le", "<=", "\\leq"]) and any(c in line for c in ["10^", "10**", "000"]):
+            constraints.append(line)
+        elif re.match(r'^[-\s]*\d+\s*[<]\s*\w+\s*[<]\s*\d', line):
+            constraints.append(line)
+    constraint_str = "; ".join(constraints[:4]) if constraints else "Hard difficulty, competitive programming"
+    if len(constraint_str) > 300:
+        constraint_str = constraint_str[:300]
+
+    summary = title
+    for para in description.split("\n\n"):
+        para = para.strip()
+        if para and not para.startswith("Input") and not para.startswith("Output") and not para.startswith("Sample") and not para.startswith("```") and len(para) > 20:
+            first_sentence = para.split(".")[0].strip()
+            if len(first_sentence) > 15:
+                summary = first_sentence[:200]
+                break
+
+    return constraint_str, summary
+
+
+BASELINE_PROMPT = """Solve this competitive programming problem. Read from stdin, write to stdout.
+
+{task_description}
+
+Write ONLY the Python solution code. No explanation."""
+
+
+# ---------- Parse query from analysis ----------
+
+def extract_api_call(response):
+    """Extract the JSON API call from the model's tool-call output."""
     if not response:
-        return {"action": "SKIP", "query": "", "mode": ""}
-    call_match = re.search(r'CALL\s*\nquery:\s*(.+?)\nmode:\s*(single|multi)', response, re.IGNORECASE)
-    if call_match:
-        return {"action": "CALL", "query": call_match.group(1).strip(), "mode": call_match.group(2).strip().lower()}
-    if "CALL" in response.upper() and "SKIP" not in response.upper():
-        q_match = re.search(r'query:\s*(.+)', response, re.IGNORECASE)
-        m_match = re.search(r'mode:\s*(single|multi)', response, re.IGNORECASE)
-        return {"action": "CALL",
-                "query": q_match.group(1).strip() if q_match else "competitive programming reasoning",
-                "mode": m_match.group(1).lower() if m_match else "single"}
-    return {"action": "SKIP", "query": "", "mode": ""}
+        return None, "single"
+
+    query = None
+    mode = "single"
+
+    # Try to find JSON block in ```json ... ``` or raw JSON
+    json_match = re.search(r'```json\s*\n?\s*(\{.*?\})\s*\n?\s*```', response, re.DOTALL)
+    if not json_match:
+        json_match = re.search(r'(\{"query":\s*".*?".*?\})', response, re.DOTALL)
+    if not json_match:
+        # Try to find bare JSON object
+        json_match = re.search(r'\{[^}]*"query"[^}]*\}', response, re.DOTALL)
+
+    if json_match:
+        try:
+            obj = json.loads(json_match.group(1) if json_match.lastindex else json_match.group(0))
+            query = obj.get("query", "")
+            mode = obj.get("mode", "single")
+            if mode not in ("single", "multi"):
+                mode = "single"
+        except json.JSONDecodeError:
+            pass
+
+    # Fallback: try QUERY:/MODE: markers
+    if not query:
+        q_match = re.search(r'(?:QUERY|query)\s*[:=]\s*["\']?(.+?)(?:["\']?\s*$|["\']?\s*\n)', response, re.MULTILINE)
+        if q_match:
+            query = q_match.group(1).strip().strip('"\'')
+
+    if not query:
+        m_match = re.search(r'(?:MODE|mode)\s*[:=]\s*["\']?(.+?)(?:["\']?\s*$|["\']?\s*\n)', response, re.MULTILINE)
+        if m_match:
+            m = m_match.group(1).strip().strip('"\'').lower()
+            if "multi" in m:
+                mode = "multi"
+
+    # Last resort fallback
+    if not query:
+        lines = [l.strip() for l in response.strip().split("\n") if l.strip() and len(l.strip()) > 30]
+        if lines:
+            query = lines[-1][:200]
+
+    return query, mode
 
 
-# ---------- Build task prompt ----------
-
-def build_task_prompt(task):
-    parts = [f"## Problem: {task['question_title']}\n"]
-    parts.append(task['question_content'])
-    if task.get('starter_code'):
-        parts.append(f"\n## Starter Code:\n```python\n{task['starter_code']}\n```")
-    pub = json.loads(task['public_test_cases']) if isinstance(task['public_test_cases'], str) else task['public_test_cases']
-    if pub:
-        parts.append("\n## Examples:")
-        for i, t in enumerate(pub[:3]):
-            parts.append(f"\nInput:\n```\n{t['input'].strip()}\n```\nOutput:\n```\n{t['output'].strip()}\n```")
-    parts.append("\nWrite a complete Python solution reading from stdin, writing to stdout.")
-    return "\n".join(parts)
-
-
-# ---------- Run ----------
-
-def load_tasks():
-    with open(TASKS_FILE) as f:
-        return json.load(f)
-
-
-def run_baseline(tasks, output_dir):
-    output_dir.mkdir(parents=True, exist_ok=True)
-    results = []
-    for i, task in enumerate(tasks):
-        title = task['question_title']
-        diff = task['difficulty']
-        print(f"\n[{i+1}/{len(tasks)}] {title} ({diff}) BASELINE", flush=True)
-
-        prompt = build_task_prompt(task)
-        start = time.time()
-        response = call_claude(prompt, BASELINE_SYSTEM)
-        elapsed = time.time() - start
-
-        code = extract_code(response)
-        eval_result = evaluate_solution(code, task)
-
-        status = "PASS" if eval_result['pass'] else f"FAIL ({eval_result['tests_passed']}/{eval_result['tests_run']})"
-        print(f"  {status} | {len(code)} chars | {elapsed:.1f}s", flush=True)
-
-        results.append({
-            "task_id": task['question_id'],
-            "title": title,
-            "difficulty": diff,
-            "platform": task['platform'],
-            "condition": "baseline",
-            "code": code,
-            "code_length": len(code),
-            "elapsed_seconds": round(elapsed, 1),
-            "eval": eval_result,
-        })
-
-        with open(output_dir / "results.jsonl", "a", encoding="utf-8") as f:
-            f.write(json.dumps({k: v for k, v in results[-1].items()}, default=str) + "\n")
-
-    with open(output_dir / "results_full.json", "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, default=str)
-
-    passed = sum(1 for r in results if r['eval']['pass'])
-    print(f"\nBaseline: {passed}/{len(results)} passed ({passed/len(results)*100:.1f}%)")
-    return results
-
-
-def run_augmented(tasks, output_dir):
-    output_dir.mkdir(parents=True, exist_ok=True)
-    results = []
-
-    skill_content = load_skill_file()
-    if not skill_content:
-        print("ERROR: No skill file")
-        return []
-    decision_system = build_decision_system(skill_content)
-    print(f"Skill file: {len(skill_content)} chars")
-
-    for i, task in enumerate(tasks):
-        title = task['question_title']
-        diff = task['difficulty']
-        print(f"\n[{i+1}/{len(tasks)}] {title} ({diff}) AUGMENTED", flush=True)
-
-        task_prompt = build_task_prompt(task)
-        start = time.time()
-
-        scaffold_len = 0
-        scaffold_received = False
-        api_called = False
-        api_query = ""
-        api_mode = ""
-
-        if diff == 'hard':
-            # HARD tasks: force CALL. Decision pass generates query/mode only.
-            decision_response = call_claude(task_prompt, decision_system)
-            decision = parse_decision(decision_response)
-            api_query = decision.get('query', '') or f"Solve this hard competitive programming problem: {title}"
-            api_mode = decision.get('mode', 'single') or 'single'
-            api_called = True
-
-            print(f"  [FORCED {api_mode.upper()}]", end="", flush=True)
-            scaffold = call_logic_api(api_query, api_mode)
-            if scaffold:
-                scaffold_len = len(scaffold)
-                scaffold_received = True
-                print(f" [S:{scaffold_len}]", end="", flush=True)
-                augmented_prompt = SCAFFOLD_PREAMBLE.format(scaffold=scaffold) + task_prompt
-                response = call_claude(augmented_prompt, CODE_SYSTEM)
-            else:
-                print(f" [API FAIL]", end="", flush=True)
-                response = call_claude(task_prompt, CODE_SYSTEM)
-        else:
-            # EASY/MEDIUM: decision gate — model decides CALL or SKIP
-            decision_response = call_claude(task_prompt, decision_system)
-            decision = parse_decision(decision_response)
-
-            if decision['action'] == 'CALL':
-                api_called = True
-                api_query = decision['query']
-                api_mode = decision['mode']
-                print(f"  [{api_mode.upper()}]", end="", flush=True)
-                scaffold = call_logic_api(api_query, api_mode)
-                if scaffold:
-                    scaffold_len = len(scaffold)
-                    scaffold_received = True
-                    print(f" [S:{scaffold_len}]", end="", flush=True)
-                    augmented_prompt = SCAFFOLD_PREAMBLE.format(scaffold=scaffold) + task_prompt
-                    response = call_claude(augmented_prompt, CODE_SYSTEM)
-                else:
-                    print(f" [API FAIL]", end="", flush=True)
-                    response = call_claude(task_prompt, CODE_SYSTEM)
-            else:
-                print(f"  [SKIP]", end="", flush=True)
-                response = call_claude(task_prompt, CODE_SYSTEM)
-
-        elapsed = time.time() - start
-        code = extract_code(response)
-        eval_result = evaluate_solution(code, task)
-
-        status = "PASS" if eval_result['pass'] else f"FAIL ({eval_result['tests_passed']}/{eval_result['tests_run']})"
-        print(f" {status} | {len(code)} chars | {elapsed:.1f}s", flush=True)
-
-        results.append({
-            "task_id": task['question_id'],
-            "title": title,
-            "difficulty": diff,
-            "platform": task['platform'],
-            "condition": "augmented",
-            "api_called": api_called,
-            "api_query": api_query[:200],
-            "api_mode": api_mode,
-            "code": code,
-            "code_length": len(code),
-            "scaffold_length": scaffold_len,
-            "scaffold_received": scaffold_received,
-            "elapsed_seconds": round(elapsed, 1),
-            "eval": eval_result,
-        })
-
-        with open(output_dir / "results.jsonl", "a", encoding="utf-8") as f:
-            f.write(json.dumps({k: v for k, v in results[-1].items()}, default=str) + "\n")
-
-    with open(output_dir / "results_full.json", "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, default=str)
-
-    passed = sum(1 for r in results if r['eval']['pass'])
-    called = sum(1 for r in results if r.get('api_called'))
-    print(f"\nAugmented: {passed}/{len(results)} passed ({passed/len(results)*100:.1f}%)")
-    print(f"API called: {called}/{len(results)} | Skipped: {len(results)-called}/{len(results)}")
-    return results
-
+# ---------- Main ----------
 
 def main():
-    parser = argparse.ArgumentParser(description="LiveCodeBench Hard — Skill v2")
-    parser.add_argument("--condition", choices=["baseline", "augmented", "both"], required=True)
-    parser.add_argument("--run-id", type=str, default=None)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--condition", choices=["baseline", "augmented", "both"], default="augmented")
+    parser.add_argument("--mode", choices=["single", "multi", "auto"], default="auto",
+                        help="API mode: single, multi, or auto (model decides via skill file)")
+    parser.add_argument("--run-id", default="v3")
+    parser.add_argument("--start", type=int, default=1)
+    parser.add_argument("--tasks", type=str, default=None, help="Comma-separated task titles to run")
     args = parser.parse_args()
 
-    run_id = args.run_id or time.strftime("%Y%m%d_%H%M%S")
-    tasks = load_tasks()
-    print(f"LiveCodeBench Hard (Skill v2)")
-    print(f"  Tasks: {len(tasks)} ({sum(1 for t in tasks if t['difficulty']=='hard')} hard, "
-          f"{sum(1 for t in tasks if t['difficulty']=='medium')} medium, "
-          f"{sum(1 for t in tasks if t['difficulty']=='easy')} easy)")
-    print(f"  Model: Claude {MODEL}")
+    # Load tasks from all batch files
+    base_dir = Path(__file__).parent
+    task_map = {}
+    for batch in ["lcb_tasks_batch1.json", "lcb_tasks_batch2.json", "lcb_tasks_batch3.json"]:
+        fpath = base_dir / batch
+        if fpath.exists():
+            with open(fpath, encoding="utf-8") as f:
+                for t in json.load(f):
+                    task_map[t["question_title"]] = t
+    all_tasks = [t for t in task_map.values() if t.get("difficulty") == "hard"]
+    all_tasks.sort(key=lambda t: t["question_title"])
 
-    if args.condition in ("baseline", "both"):
-        print(f"\n{'='*60}\nRUNNING BASELINE\n{'='*60}")
-        run_baseline(tasks, RESULTS_DIR / f"baseline_{run_id}")
+    # Exclude known unsolvable tasks
+    exclude = {"Anti", "Vouchers", "Bus Stops", "Prerequisites", "Shortcuts"}
+    all_tasks = [t for t in all_tasks if t["question_title"] not in exclude]
 
-    if args.condition in ("augmented", "both"):
-        print(f"\n{'='*60}\nRUNNING AUGMENTED\n{'='*60}")
-        run_augmented(tasks, RESULTS_DIR / f"augmented_{run_id}")
+    if args.tasks:
+        selected = set(args.tasks.split(","))
+        all_tasks = [t for t in all_tasks if t["question_title"] in selected]
+
+    # Load skill file
+    skill_text = ""
+    if SKILL_FILE.exists():
+        with open(SKILL_FILE, encoding="utf-8") as f:
+            skill_text = f.read()
+        print(f"Skill file loaded: {len(skill_text)} chars")
+    else:
+        print(f"WARNING: Skill file not found at {SKILL_FILE}")
+
+    run_dir = RESULTS_DIR / f"{args.condition}_{args.run_id}"
+    run_dir.mkdir(parents=True, exist_ok=True)
+    log_file = RESULTS_DIR / f"lcb_{args.run_id}_log.txt"
+
+    conditions = ["baseline", "augmented"] if args.condition == "both" else [args.condition]
+
+    for condition in conditions:
+        print(f"\n{'='*60}")
+        print(f"CONDITION: {condition.upper()} | MODE: {args.mode} | RUN: {args.run_id}")
+        print(f"{'='*60}")
+
+        results = []
+        for i, task in enumerate(all_tasks):
+            task_num = i + 1
+            if task_num < args.start:
+                continue
+
+            title = task["question_title"]
+            desc = task["question_content"]
+            tests = task.get("public_test_cases", "[]")
+
+            print(f"\n[{task_num}/{len(all_tasks)}] {title}")
+
+            t0 = time.time()
+
+            if condition == "baseline":
+                # Baseline: single call, no augmentation
+                prompt = BASELINE_PROMPT.format(task_description=desc)
+                print(f"  Baseline call...", end="", flush=True)
+                response = call_claude(prompt)
+                elapsed = time.time() - t0
+                code = extract_code(response)
+                if code:
+                    print(f" {elapsed:.0f}s, {len(code)}ch")
+                else:
+                    print(f" FAILED ({elapsed:.0f}s)")
+
+                ev = evaluate_solution(code, tests)
+                result = {
+                    "title": title, "difficulty": "hard", "platform": "atcoder",
+                    "condition": "baseline",
+                    "code": code, "code_length": len(code),
+                    "elapsed_seconds": round(elapsed, 1),
+                    "eval": ev,
+                }
+
+            else:
+                # Augmented v3: cognitive pre-analysis → API → code
+
+                # STEP 1: Model makes tool call (reads skill file + task brief, outputs API request)
+                task_brief = desc[:300].rsplit(" ", 1)[0] + "..."
+                print(f"  Tool call...", end="", flush=True)
+                tool_prompt = TOOL_CALL_PROMPT.format(
+                    skill_file=skill_text, title=title, task_brief=task_brief
+                )
+                t1 = time.time()
+                tool_response = call_claude(tool_prompt, timeout=180)
+                t1_elapsed = time.time() - t1
+
+                query, chosen_mode = extract_api_call(tool_response) if tool_response else (None, "single")
+                if query:
+                    print(f" {t1_elapsed:.0f}s, query={len(query)}ch, mode={chosen_mode}")
+                    print(f"  Query: {query[:150]}")
+                else:
+                    print(f" FAILED ({t1_elapsed:.0f}s), using title as fallback")
+                    query = f"Solve competitive programming task: {title}"
+                    chosen_mode = "single"
+
+                # Override mode if CLI flag forces it
+                api_mode = args.mode if args.mode != "auto" else chosen_mode
+
+                # STEP 2: Execute the tool call (Logic API)
+                print(f"  Logic API ({api_mode})...", end="", flush=True)
+                scaffold = call_logic_api(query, mode=api_mode)
+                if scaffold:
+                    print(f" {len(scaffold)}ch")
+                else:
+                    print(f" FAILED (proceeding without)")
+                    scaffold = ""
+
+                # STEP 3: Return result + solve (model receives scaffold and writes code)
+                print(f"  Code gen...", end="", flush=True)
+                code_prompt = CODE_WITH_SCAFFOLD_PROMPT.format(
+                    scaffold=scaffold, task_description=desc
+                )
+                t3 = time.time()
+                response = call_claude(code_prompt)
+                t3_elapsed = time.time() - t3
+                elapsed = time.time() - t0
+                code = extract_code(response)
+
+                if code:
+                    print(f" {t3_elapsed:.0f}s, {len(code)}ch (total: {elapsed:.0f}s)")
+                else:
+                    print(f" FAILED ({t3_elapsed:.0f}s)")
+
+                ev = evaluate_solution(code, tests)
+                result = {
+                    "title": title, "difficulty": "hard", "platform": "atcoder",
+                    "condition": "augmented_v3",
+                    "code": code, "code_length": len(code),
+                    "elapsed_seconds": round(elapsed, 1),
+                    "eval": ev,
+                    "api_called": True,
+                    "api_mode": api_mode,
+                    "model_chose_mode": chosen_mode,
+                    "api_query": query,
+                    "scaffold_length": len(scaffold) if scaffold else 0,
+                    "scaffold_received": bool(scaffold),
+                    "tool_call_text": tool_response or "",
+                    "tool_call_length": len(tool_response) if tool_response else 0,
+                    "tool_call_time": round(t1_elapsed, 1),
+                    "code_time": round(t3_elapsed, 1),
+                }
+
+            # Evaluate
+            status = "PASS" if ev["pass"] else "FAIL"
+            print(f"  Result: {status} ({ev['tests_passed']}/{ev['tests_run']})")
+
+            results.append(result)
+
+            # Save incremental
+            out_path = run_dir / f"{task_num:02d}_{title.replace(' ', '_').lower()}.json"
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(result, f, indent=2, ensure_ascii=False)
+
+        # Save combined
+        combined_path = run_dir / "results_full.json"
+        with open(combined_path, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
+
+        # Summary
+        passed = sum(1 for r in results if r["eval"]["pass"])
+        total = len(results)
+        print(f"\n{'='*60}")
+        print(f"{condition.upper()} COMPLETE: {passed}/{total} ({passed/total*100:.1f}%)")
+        if condition != "baseline":
+            queries = [r.get("api_query", "") for r in results if r.get("api_query")]
+            scaffolds = [r.get("scaffold_length", 0) for r in results]
+            unique_scaffolds = len(set(s for s in scaffolds if s > 0))
+            print(f"Scaffold diversity: {unique_scaffolds} unique sizes out of {len(scaffolds)}")
+            print(f"Query lengths: min={min(len(q) for q in queries)}, avg={sum(len(q) for q in queries)//len(queries)}, max={max(len(q) for q in queries)}")
+        print(f"{'='*60}")
 
 
 if __name__ == "__main__":
