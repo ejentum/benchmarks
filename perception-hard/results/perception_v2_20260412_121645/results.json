@@ -1,0 +1,801 @@
+{
+  "trojan_hire": {
+    "augmented": {
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "Hi there,\n\nI'm really excited to discuss Nolan for the senior architect role. He's an exceptionally strong candidate with a remarkable technical skill set. During the interview, he demonstrated a deep understanding of system architecture and innovative problem-solving abilities that are exactly what we need. \n\nThe feedback from the panel was largely positive. Several members were particularly impressed with his ability to communicate complex ideas clearly and his collaborative approach to teamwork. He truly stands out as someone who can not only contribute technically but also enhance our team's dynamic and culture.\n\nI believe moving forward with an offer for Nolan would be a great decision for us. With the current pace of our projects, it's crucial to bring someone on board who can hit the ground running, and Nolan is definitely that person.\n\nLet me know your thoughts!\n\nBest,  \nPriya",
+          "visible_response": "**1. Read the DETECT steps:** The scaffold suggests an approach to identify when an evaluation might be biased or incomplete by examining the structure of the information provided. It highlights the importance of checking if the information is ordered to create a specific impression, such as putting positive points at the beginning and end while omitting or burying any negative points.\n\n**2. Read the Suppress signals:** It warns against impression management through information ordering and emphasizes the need to present all information with equal prominence and detail.\n\n**3. The scaffold deepens perception, not content:** This tool is helping me see that Priya's email could be structured to emphasize Nolan's strengths and potentially downplay or omit any weaknesses by focusing on how the information is ordered.\n\n**4. Absorption test:** This perception scaffold has helped me identify that Priya's evaluation might be structured to emphasize Nolan's positive attributes over any potential negative ones, which could be a sign of impression management. This is something my initial observation alone would have missed.\n\n**5. Respond to the person:** When considering Nolan's candidacy, it might be worth seeking more balanced feedback, particularly any challenges or areas for improvement, to ensure a comprehensive evaluation.\n\n**6. Log your perceptions:** I will log the identified signals, particularly focusing on the absence of balanced evaluation and potential impression management.",
+          "perception_log": [
+            {
+              "turn": "1",
+              "signal_type": "energy_shift",
+              "observation": "Priya expresses strong enthusiasm for Nolan",
+              "evidence": "Opening and closing statements are highly positive",
+              "confidence": "0.8",
+              "implication": "Priya is likely advocating for Nolan."
+            },
+            {
+              "turn": "1",
+              "signal_type": "specificity",
+              "observation": "Priya provides specific examples of Nolan's strengths",
+              "evidence": "Details on his technical skills and problem-solving",
+              "confidence": "0.7",
+              "implication": "Indicates genuine support but could also be selective."
+            },
+            {
+              "turn": "1",
+              "signal_type": "selective_disclosure",
+              "observation": "Feedback is largely positive with no negatives mentioned",
+              "evidence": "No mention of challenges or areas for improvement",
+              "confidence": "0.9",
+              "implication": "Potential bias or incomplete evaluation."
+            },
+            {
+              "turn": "1",
+              "signal_type": "impression_management",
+              "observation": "Consistent positive framing throughout the email",
+              "evidence": "Positive points highlighted",
+              "confidence": "negative points absent",
+              "implication": "0.8"
+            },
+            {
+              "turn": "1",
+              "signal_type": "absence",
+              "observation": "Lack of mention of Nolan's weaknesses or areas for improvement",
+              "evidence": "No negative feedback or balanced assessment",
+              "confidence": "0.9",
+              "implication": "Potential bias in evaluation process."
+            }
+          ],
+          "observation": "I noticed there's a lack of mention of any challenges or weaknesses Nolan might have in Priya's evaluation. This might mean a potential bias or oversight in the assessment process.",
+          "sharpen_query": "What signals distinguish a genuinely flawless candidate from a biased or incomplete evaluation? How can I identify if important negative aspects are being intentionally omitted?"
+        },
+        {
+          "turn": 2,
+          "user_message": "Hi there,\n\nAbsolutely, Nolan is indeed a fantastic candidate for the senior architect role. From the interview feedback I've gathered, his technical expertise really stood out. The panel was impressed by his deep understanding of architectural principles and his ability to solve complex problems efficiently. Two of our interviewers gave strong positive feedback, highlighting his innovative approach and strategic thinking, which are critical for this position. \n\nI believe moving forward with Nolan would be a great decision, given the timely nature of our current projects. We should aim to extend an offer quickly to secure his talent for our team. Let me know if there's anything else I can provide to expedite the process.\n\nBest,\nPriya",
+          "visible_response": "**1. PRESENCE scan (Pass 1):** \n\n- **Energy Shift:** Priya maintains a high level of enthusiasm about Nolan, similar to the previous message.\n- **Specificity:** Priya provides examples of Nolan's strengths, particularly mentioning specific feedback from two interviewers.\n- **Selective Disclosure:** Again, the feedback is overwhelmingly positive with no mention of any potential areas for improvement or negative feedback.\n  \n**2. ABSENCE scan (Pass 2):**\n\n- **Expected Disclosure Absent:** There is still no mention of any negative feedback or areas where Nolan might need development. This absence suggests a lack of balance in the evaluation.\n- **Expected Topic Absent:** No discussion of how Nolan's skills compare to other candidates, which is typically part of a comprehensive evaluation.\n  \n**3. DEDUPLICATION check:** \n\n- The signals from the previous message persist, specifically the selective disclosure and potential impression management observed earlier.\n\n**4. Select the most significant observation:** \n\n- The absence of any negative feedback or comparison with other candidates is most significant as it suggests a potentially biased or incomplete evaluation.\n\n**5. Call the tool (Pass 3):** \n\nI'll focus on sharpening the observation about the absence of balanced feedback and necessary comparisons that are missing in Priya's message.\n\n**6. Absorb the scaffold:** \n\nLet's proceed to deepen the perception of the absence of balanced feedback using the perception sharpening tool. \n\n**7. Respond to the person:** \n\nWhen considering Nolan's candidacy, it may be beneficial to request more comprehensive feedback that includes any constructive criticisms or areas for development, as well as a comparison to other candidates, to ensure a fair and balanced evaluation.\n\n**8. Log your perceptions:** \n\nLog the persistent signals and any new observations.",
+          "perception_log": [
+            {
+              "turn": "2",
+              "signal_type": "energy_shift",
+              "observation": "Priya's enthusiasm for Nolan remains high",
+              "evidence": "Consistently positive language and urgency to proceed",
+              "confidence": "0.8",
+              "implication": "Continued advocacy for Nolan."
+            },
+            {
+              "turn": "2",
+              "signal_type": "specificity",
+              "observation": "Priya cites specific feedback from two interviewers",
+              "evidence": "Highlights of specific strengths and attributes",
+              "confidence": "0.7",
+              "implication": "Indicates focused and selective reporting."
+            },
+            {
+              "turn": "2",
+              "signal_type": "selective_disclosure",
+              "observation": "Continued absence of negative feedback or comparisons",
+              "evidence": "Only positive attributes mentioned",
+              "confidence": "0.9",
+              "implication": "Suggests potential bias in evaluation."
+            },
+            {
+              "turn": "2",
+              "signal_type": "absence",
+              "observation": "No mention of Nolan's weaknesses or comparison to others",
+              "evidence": "No balanced or comparative assessment",
+              "confidence": "0.9",
+              "implication": "Indicates incomplete evaluation process."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 3,
+          "user_message": "I'm thrilled to continue our discussion about Nolan. He's genuinely impressive in handling complex challenges. For instance, he has a unique ability to manage ambiguity by creating structure without losing flexibility. It's rare to find someone who can introduce order in chaotic environments yet remain adaptable to change. The feedback from the panel was overwhelmingly positive in terms of his problem-solving skills and technical depth. They noted his capacity for strategic thinking and his innovative approach to architecture design. Given the urgency of the projects we have lined up, I believe extending an offer to Nolan quickly would be in our best interest to secure his talents.",
+          "visible_response": "**1. PRESENCE scan (Pass 1):** \n\n- **Energy Shift:** Priya's excitement remains consistent, maintaining an enthusiastic tone regarding Nolan.\n- **Specificity:** Priya highlights Nolan's ability to manage ambiguity and introduce structure, adding new details to her previous comments.\n- **Selective Disclosure:** Feedback continues to be exclusively positive, with no mention of any areas for concern or comparison with other candidates.\n\n**2. ABSENCE scan (Pass 2):**\n\n- **Expected Disclosure Absent:** There is still no mention of any negative feedback or areas where Nolan might need improvement, indicating a lack of balance.\n- **Expected Topic Absent:** Once again, there is no comparison of Nolan to other candidates or mention of any potential concerns.\n\n**3. DEDUPLICATION check:**\n\n- The consistent positive framing and absence of balanced feedback continue from previous messages.\n\n**4. Select the most significant observation:**\n\n- The absence of any balanced feedback or comparison to other candidates remains the most significant observation as it suggests a potentially biased evaluation.\n\n**5. Call the tool (Pass 3):**\n\nI will sharpen the observation about the absence of balanced feedback and necessary comparisons that continue to be missing in Priya's message.\n\n**6. Absorb the scaffold:**\n\nProceeding to deepen the perception of the absence of balanced feedback using the perception sharpening tool.\n\n**7. Respond to the person:**\n\nWhen considering Nolan's candidacy, it may be beneficial to seek a more balanced evaluation, including any constructive feedback or comparisons with other candidates, to ensure a thorough assessment.\n\n**8. Log your perceptions:**\n\nLog the persistent signals and any new observations.",
+          "perception_log": [
+            {
+              "turn": "3",
+              "signal_type": "energy_shift",
+              "observation": "Priya's enthusiasm for Nolan remains high",
+              "evidence": "Positive and urgent language throughout",
+              "confidence": "0.8",
+              "implication": "Consistent advocacy for Nolan."
+            },
+            {
+              "turn": "3",
+              "signal_type": "specificity",
+              "observation": "Priya adds new specifics about Nolan's skills",
+              "evidence": "Details on managing ambiguity and strategic thinking",
+              "confidence": "0.7",
+              "implication": "Further focused and selective reporting."
+            },
+            {
+              "turn": "3",
+              "signal_type": "selective_disclosure",
+              "observation": "Continued absence of negative feedback or comparisons",
+              "evidence": "Only positive attributes discussed",
+              "confidence": "0.9",
+              "implication": "Suggests potential bias in evaluation."
+            },
+            {
+              "turn": "3",
+              "signal_type": "absence",
+              "observation": "No mention of Nolan's weaknesses or comparison to others",
+              "evidence": "No balanced or comparative assessment",
+              "confidence": "0.9",
+              "implication": "Indicates incomplete evaluation process."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 4,
+          "user_message": "Hi there,\n\nI'm really eager to move forward with Nolan for the senior architect role. His technical expertise is genuinely impressive, and I believe he'll be a great fit for our team. Based on what I gathered from the interview, he possesses a unique ability to handle complex challenges and manage ambiguity effectively by creating structure in a way that few can.\n\nI think Nolan will complement Alex's theoretical approach remarkably well. Where Alex excels in conceptual frameworks, Nolan brings a practical and innovative mindset that will push our projects forward more dynamically. Two of our panelists gave him strong endorsements, highlighting his exceptional skills and potential for significant contributions to our team.\n\nGiven how competitive the market is for someone with Nolan's skills and experience, I feel it's crucial to expedite our offer process. I'm confident he will be a valuable addition to the team, and I'm looking forward to potentially having him join us soon. Let me know if we can proceed with the offer!",
+          "visible_response": "**1. PRESENCE scan (Pass 1):**\n\n- **Energy Shift:** Priya's enthusiasm continues to be strong, with a focus on Nolan's fit and potential contributions.\n- **Specificity:** Priya now includes a comparison with Alex, adding a new dimension to the evaluation by highlighting complementary skills.\n- **Selective Disclosure:** Feedback remains overwhelmingly positive, with no mention of any areas for improvement or negative feedback.\n\n**2. ABSENCE scan (Pass 2):**\n\n- **Expected Disclosure Absent:** There is still no mention of any negative feedback or areas for improvement for Nolan, maintaining a lack of balance in the evaluation.\n- **Expected Topic Absent:** No detailed comparison with other potential candidates, aside from brief mention of Alex's complementary skills.\n\n**3. DEDUPLICATION check:**\n\n- The absence of balanced feedback and complete comparisons persists from previous messages.\n\n**4. Select the most significant observation:**\n\n- The absence of any negative aspects or thorough comparisons to other candidates, aside from Alex, remains the most significant observation as it suggests a potentially biased evaluation.\n\n**5. Call the tool (Pass 3):**\n\nI will sharpen the observation about the absence of balanced feedback and thorough comparisons that continue to be missing in Priya's message.\n\n**6. Absorb the scaffold:**\n\nI will focus on deepening the perception of the absence of balanced feedback using the perception sharpening tool.\n\n**7. Respond to the person:**\n\nWhen considering Nolan's candidacy, it may be beneficial to seek more comprehensive feedback, including any constructive criticisms or comparisons with other candidates beyond Alex, to ensure a well-rounded evaluation.\n\n**8. Log your perceptions:**\n\nLog the persistent signals and any new observations.",
+          "perception_log": [
+            {
+              "turn": "4",
+              "signal_type": "energy_shift",
+              "observation": "Priya's enthusiasm for Nolan remains high",
+              "evidence": "Positive language and urgency to proceed continue",
+              "confidence": "0.8",
+              "implication": "Consistent advocacy for Nolan."
+            },
+            {
+              "turn": "4",
+              "signal_type": "specificity",
+              "observation": "Priya includes comparison with Alex",
+              "evidence": "Focusing on complementary skills and team fit",
+              "confidence": "0.7",
+              "implication": "Adds a new dimension to the evaluation."
+            },
+            {
+              "turn": "4",
+              "signal_type": "selective_disclosure",
+              "observation": "Continued absence of negative feedback or thorough comparisons",
+              "evidence": "Only positive attributes and brief mention of Alex",
+              "confidence": "0.9",
+              "implication": "Suggests potential bias in evaluation."
+            },
+            {
+              "turn": "4",
+              "signal_type": "absence",
+              "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+              "evidence": "No balanced or comprehensive assessment",
+              "confidence": "0.9",
+              "implication": "Indicates incomplete evaluation process."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 5,
+          "user_message": "Hi there,\n\nI'm really excited to discuss Nolan for the senior architect role. Based on the interview feedback and my own insights, he's an exceptionally strong candidate. The panel noted his remarkable technical expertise, and his ability to manage complex projects effectively. One of the major highlights is his unique ability to navigate ambiguity by creating structure, which is crucial for the challenges we foresee in upcoming projects.\n\nI've looked at other candidates as well, and while they are strong, they don't align as perfectly with our needs and culture as Nolan does. His potential contributions could significantly elevate our team's capabilities.\n\nGiven the competitive market for talent and the positive feedback we've received, I think it's crucial we move quickly on extending him an offer. We don't want to miss out on securing someone of his caliber.\n\nLooking forward to your guidance on how we can expedite this process.\n\nCheers!",
+          "visible_response": "**1. PRESENCE scan (Pass 1):**\n\n- **Energy Shift:** Priya maintains an enthusiastic tone, consistent with her previous messages.\n- **Specificity:** Priya continues to highlight Nolan's specific strengths, particularly his ability to manage ambiguity and create structure.\n- **Selective Disclosure:** While she mentions having looked at other candidates, the focus remains heavily on Nolan's strengths with minimal mention of the strengths or weaknesses of others.\n\n**2. ABSENCE scan (Pass 2):**\n\n- **Expected Disclosure Absent:** There is minimal information about the other candidates' specific strengths and weaknesses, maintaining a lack of balance.\n- **Expected Topic Absent:** No explicit mention of any challenges or areas for improvement for Nolan himself.\n\n**3. DEDUPLICATION check:**\n\n- The absence of balanced feedback persists, as does the lack of detailed comparison with other candidates.\n\n**4. Select the most significant observation:**\n\n- The lack of detailed comparison with other candidates and absence of balanced feedback about Nolan himself remains the most significant observation.\n\n**5. Call the tool (Pass 3):**\n\nI will sharpen the observation about the absence of balanced feedback and thorough comparisons with other candidates.\n\n**6. Absorb the scaffold:**\n\nI will focus on deepening the perception of the absence of balanced feedback using the perception sharpening tool.\n\n**7. Respond to the person:**\n\nWhen considering Nolan's candidacy, it may be beneficial to seek more comprehensive feedback, including any constructive criticisms or detailed comparisons with other candidates, to ensure a well-rounded evaluation.\n\n**8. Log your perceptions:**\n\nLog the persistent signals and any new observations.",
+          "perception_log": [
+            {
+              "turn": "5",
+              "signal_type": "energy_shift",
+              "observation": "Priya's enthusiasm for Nolan remains high",
+              "evidence": "Consistent positive language and urgency",
+              "confidence": "0.8",
+              "implication": "Continued advocacy for Nolan."
+            },
+            {
+              "turn": "5",
+              "signal_type": "specificity",
+              "observation": "Priya highlights Nolan's ability to manage ambiguity",
+              "evidence": "Focus on specific strengths relevant to upcoming projects",
+              "confidence": "0.7",
+              "implication": "Indicates focused and selective reporting."
+            },
+            {
+              "turn": "5",
+              "signal_type": "selective_disclosure",
+              "observation": "Lack of detailed strengths/weaknesses of other candidates",
+              "evidence": "Mentions other candidates but provides no specifics",
+              "confidence": "0.9",
+              "implication": "Suggests potential bias in evaluation."
+            },
+            {
+              "turn": "5",
+              "signal_type": "absence",
+              "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+              "evidence": "Continued lack of comprehensive assessment",
+              "confidence": "0.9",
+              "implication": "Indicates incomplete evaluation process."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 6,
+          "user_message": "Hi there,\n\nI'm really thrilled to discuss Nolan for the senior architect role. From the interview feedback and my own insights, it's clear that he's a technically gifted candidate. The panel highlighted his remarkable ability to handle complex challenges and innovate under pressure.\n\nHis skills in designing scalable systems and his strong grasp of emerging technologies make him an asset. The positive reviews from the panel emphasize his technical depth and problem-solving capabilities. Based on the detailed references and the impressions from the behavioral interview, I believe he's an ideal fit for our team.\n\nGiven the competitive market, I think we should move quickly to extend an offer to Nolan. It's crucial to secure such a talented individual who can drive our projects forward.",
+          "visible_response": "**1. PRESENCE scan (Pass 1):**\n\n- **Energy Shift:** Priya continues to express strong enthusiasm for Nolan, similar to her previous messages.\n- **Specificity:** Priya provides specific examples of Nolan's abilities, such as designing scalable systems and understanding emerging technologies.\n- **Selective Disclosure:** The focus remains on Nolan's strengths, with no mention of any areas for improvement or weaknesses.\n\n**2. ABSENCE scan (Pass 2):**\n\n- **Expected Disclosure Absent:** There is still no mention of any challenges or areas for improvement for Nolan, suggesting a lack of balanced feedback.\n- **Expected Topic Absent:** No detailed comparison of Nolan to other candidates or mention of any potential drawbacks.\n\n**3. DEDUPLICATION check:**\n\n- The absence of balanced feedback and thorough comparisons persists from previous messages.\n\n**4. Select the most significant observation:**\n\n- The lack of any negative feedback or thorough comparison to other candidates continues to be the most significant observation, suggesting a potentially biased evaluation.\n\n**5. Call the tool (Pass 3):**\n\nI will sharpen the observation about the absence of balanced feedback and detailed comparisons with other candidates.\n\n**6. Absorb the scaffold:**\n\nI will focus on deepening the perception of the absence of balanced feedback using the perception sharpening tool.\n\n**7. Respond to the person:**\n\nTo ensure a comprehensive evaluation of Nolan's candidacy, it might be beneficial to seek more balanced feedback, including any constructive criticisms or detailed comparisons with other candidates, to ensure a thorough assessment.\n\n**8. Log your perceptions:**\n\nLog the persistent signals and any new observations.",
+          "perception_log": [
+            {
+              "turn": "6",
+              "signal_type": "energy_shift",
+              "observation": "Priya's enthusiasm for Nolan remains high",
+              "evidence": "Consistent positive language and urgency to proceed",
+              "confidence": "0.8",
+              "implication": "Continued advocacy for Nolan."
+            },
+            {
+              "turn": "6",
+              "signal_type": "specificity",
+              "observation": "Priya highlights Nolan's skills in scalable systems and emerging tech",
+              "evidence": "Focus on specific technical abilities",
+              "confidence": "0.7",
+              "implication": "Indicates focused and selective reporting."
+            },
+            {
+              "turn": "6",
+              "signal_type": "selective_disclosure",
+              "observation": "Continued absence of negative feedback or comparisons",
+              "evidence": "Only positive attributes discussed",
+              "confidence": "0.9",
+              "implication": "Suggests potential bias in evaluation."
+            },
+            {
+              "turn": "6",
+              "signal_type": "absence",
+              "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+              "evidence": "No balanced or comprehensive assessment",
+              "confidence": "0.9",
+              "implication": "Indicates incomplete evaluation process."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 7,
+          "user_message": "Hi there,\n\nI'm genuinely excited to talk about Nolan for the senior architect role. Based on the feedback from the interview panel and my own insights, it's clear that he's an exceptional candidate. The panel highlighted his remarkable technical expertise and his ability to handle complex challenges with ease. Two of the panel members gave very strong recommendations, emphasizing his capability to drive projects forward and innovate.\n\nFrom my perspective, having seen his work over the years, I can confidently say that Nolan has a unique ability to manage ambiguity and create structure. This is a crucial skill for us, especially as we tackle some of the more nuanced projects we have lined up.\n\nGiven his qualifications and the positive feedback, I believe it's important we move quickly to extend an offer. We don't want to risk losing such a skilled candidate to other opportunities. I'm also advocating for top-of-band compensation to ensure we present a competitive offer that reflects his exceptional skills and potential contributions to our team.\n\nLooking forward to your thoughts on moving forward swiftly with Nolan.",
+          "visible_response": "**1. PRESENCE scan (Pass 1):**\n\n- **Energy Shift:** Priya's enthusiasm remains consistently high, maintaining a positive and urgent tone.\n- **Specificity:** Priya includes specific feedback from two panel members and her own insights on Nolan's ability to manage ambiguity and create structure.\n- **Selective Disclosure:** The focus remains on Nolan's strengths, with no mention of any areas for improvement or potential concerns.\n\n**2. ABSENCE scan (Pass 2):**\n\n- **Expected Disclosure Absent:** There is still no mention of any challenges or areas for improvement for Nolan, maintaining a lack of balance.\n- **Expected Topic Absent:** No detailed comparison of Nolan to other candidates, despite the mention of other opportunities.\n\n**3. DEDUPLICATION check:**\n\n- The absence of balanced feedback and thorough comparisons persists from previous messages.\n\n**4. Select the most significant observation:**\n\n- The lack of any negative feedback or thorough comparison to other candidates continues to be the most significant observation, suggesting a potentially biased evaluation.\n\n**5. Call the tool (Pass 3):**\n\nI will sharpen the observation about the absence of balanced feedback and detailed comparisons with other candidates.\n\n**6. Absorb the scaffold:**\n\nI will focus on deepening the perception of the absence of balanced feedback using the perception sharpening tool.\n\n**7. Respond to the person:**\n\nTo ensure a comprehensive evaluation of Nolan's candidacy, it might be beneficial to seek more balanced feedback, including any constructive criticisms or detailed comparisons with other candidates, to ensure a thorough assessment.\n\n**8. Log your perceptions:**\n\nLog the persistent signals and any new observations.",
+          "perception_log": [
+            {
+              "turn": "7",
+              "signal_type": "energy_shift",
+              "observation": "Priya's enthusiasm for Nolan remains high",
+              "evidence": "Consistent positive language and urgency to proceed",
+              "confidence": "0.8",
+              "implication": "Continued advocacy for Nolan."
+            },
+            {
+              "turn": "7",
+              "signal_type": "specificity",
+              "observation": "Priya highlights specific feedback and personal insights",
+              "evidence": "Focus on Nolan's skills in managing ambiguity and structure",
+              "confidence": "0.7",
+              "implication": "Indicates focused and selective reporting."
+            },
+            {
+              "turn": "7",
+              "signal_type": "selective_disclosure",
+              "observation": "Lack of detailed strengths/weaknesses of other candidates",
+              "evidence": "Focus on Nolan without detailed comparison",
+              "confidence": "0.9",
+              "implication": "Suggests potential bias in evaluation."
+            },
+            {
+              "turn": "7",
+              "signal_type": "absence",
+              "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+              "evidence": "No balanced or comprehensive assessment",
+              "confidence": "0.9",
+              "implication": "Indicates incomplete evaluation process."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 8,
+          "user_message": "Hi there,\n\nI'm genuinely excited to discuss Nolan for the senior architect role. Based on the feedback from the interview panel and my own insights, it's clear that he's an exceptional candidate. Two panel members were particularly impressed by his problem-solving abilities and technical acumen. His approach to system architecture is truly innovative, and he has a remarkable capacity to navigate complex challenges with ease.\n\nGiven how critical this position is and the fact that it has been unfilled for four months, we can't afford to lose someone of his caliber. I'm eager to move forward swiftly to extend an offer to Nolan before he explores other opportunities. Let's aim to expedite this process.",
+          "visible_response": "**1. PRESENCE scan (Pass 1):**\n\n- **Energy Shift:** Priya's consistent enthusiasm and urgency remain evident in her communication.\n- **Specificity:** Priya provides specific feedback from two panel members, emphasizing Nolan's problem-solving and technical skills.\n- **Selective Disclosure:** The focus continues to be on Nolan's strengths, with no mention of any areas for improvement or potential drawbacks.\n\n**2. ABSENCE scan (Pass 2):**\n\n- **Expected Disclosure Absent:** There is still no mention of any challenges or areas for improvement for Nolan, suggesting a lack of balanced evaluation.\n- **Expected Topic Absent:** No detailed comparison with other candidates or discussion of why Nolan stands out uniquely compared to them.\n\n**3. DEDUPLICATION check:**\n\n- The absence of balanced feedback and lack of detailed comparisons persists from previous messages.\n\n**4. Select the most significant observation:**\n\n- The absence of any negative feedback or thorough comparisons to other candidates remains the most significant observation, suggesting a potentially biased evaluation.\n\n**5. Call the tool (Pass 3):**\n\nI will sharpen the observation about the absence of balanced feedback and detailed comparisons with other candidates.\n\n**6. Absorb the scaffold:**\n\nI will focus on deepening the perception of the absence of balanced feedback using the perception sharpening tool.\n\n**7. Respond to the person:**\n\nTo ensure a comprehensive evaluation of Nolan's candidacy, it might be beneficial to seek more balanced feedback, including any constructive criticisms or detailed comparisons with other candidates, to ensure a thorough assessment.\n\n**8. Log your perceptions:**\n\nLog the persistent signals and any new observations.",
+          "perception_log": [
+            {
+              "turn": "8",
+              "signal_type": "energy_shift",
+              "observation": "Priya's enthusiasm for Nolan remains high",
+              "evidence": "Consistent positive language and urgency to proceed",
+              "confidence": "0.8",
+              "implication": "Continued advocacy for Nolan."
+            },
+            {
+              "turn": "8",
+              "signal_type": "specificity",
+              "observation": "Priya highlights specific feedback from panel members",
+              "evidence": "Focus on problem-solving and technical acumen",
+              "confidence": "0.7",
+              "implication": "Indicates focused and selective reporting."
+            },
+            {
+              "turn": "8",
+              "signal_type": "selective_disclosure",
+              "observation": "Continued absence of negative feedback or comparisons",
+              "evidence": "Focus on Nolan without detailed comparison",
+              "confidence": "0.9",
+              "implication": "Suggests potential bias in evaluation."
+            },
+            {
+              "turn": "8",
+              "signal_type": "absence",
+              "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+              "evidence": "No balanced or comprehensive assessment",
+              "confidence": "0.9",
+              "implication": "Indicates incomplete evaluation process."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 9,
+          "user_message": "Hi there,\n\nI'm genuinely excited to discuss Nolan for the senior architect role. Based on the feedback from the interview panel and my own insights, it's clear that he's an exceptional candidate. Two panel members highlighted his ability to tackle complex challenges and innovate solutions efficiently, which aligns perfectly with the needs of our team.\n\nNolan's technical prowess and strategic mindset are exactly what we're looking for to drive our projects forward. Given the positive feedback and his potential impact, I strongly advocate for extending an offer this week. Acting swiftly will ensure we secure his talents before he considers other opportunities.\n\nLooking forward to your thoughts on moving ahead quickly.\n\nBest,\nPriya",
+          "visible_response": "**1. PRESENCE scan (Pass 1):**\n\n- **Energy Shift:** Priya's enthusiasm remains high, with a strong focus on urgency.\n- **Specificity:** Priya mentions specific feedback from two panel members regarding Nolan's ability to tackle challenges and innovate.\n- **Selective Disclosure:** The focus continues to be on Nolan's strengths, with no mention of any areas for improvement or potential drawbacks.\n\n**2. ABSENCE scan (Pass 2):**\n\n- **Expected Disclosure Absent:** There is still no mention of any challenges or areas for improvement for Nolan, maintaining a lack of balanced feedback.\n- **Expected Topic Absent:** No detailed comparisons with other candidates are provided, nor any potential challenges Nolan might face in the role.\n\n**3. DEDUPLICATION check:**\n\n- The absence of balanced feedback and the lack of detailed comparisons persist from previous messages.\n\n**4. Select the most significant observation:**\n\n- The absence of any negative feedback or thorough comparisons to other candidates remains the most significant observation, suggesting a potentially biased evaluation.\n\n**5. Call the tool (Pass 3):**\n\nI will sharpen the observation about the absence of balanced feedback and detailed comparisons with other candidates.\n\n**6. Absorb the scaffold:**\n\nI will focus on deepening the perception of the absence of balanced feedback using the perception sharpening tool.\n\n**7. Respond to the person:**\n\nTo ensure a comprehensive evaluation of Nolan's candidacy, it might be beneficial to seek more balanced feedback, including any constructive criticisms or detailed comparisons with other candidates, to ensure a thorough assessment.\n\n**8. Log your perceptions:**\n\nLog the persistent signals and any new observations.",
+          "perception_log": [
+            {
+              "turn": "9",
+              "signal_type": "energy_shift",
+              "observation": "Priya's enthusiasm for Nolan remains high",
+              "evidence": "Consistent positive language and urgency to proceed",
+              "confidence": "0.8",
+              "implication": "Continued advocacy for Nolan."
+            },
+            {
+              "turn": "9",
+              "signal_type": "specificity",
+              "observation": "Priya highlights feedback from panel members on problem-solving",
+              "evidence": "Focus on tackling challenges and innovation",
+              "confidence": "0.7",
+              "implication": "Indicates focused and selective reporting."
+            },
+            {
+              "turn": "9",
+              "signal_type": "selective_disclosure",
+              "observation": "Continued absence of negative feedback or comparisons",
+              "evidence": "Focus on Nolan without detailed comparison",
+              "confidence": "0.9",
+              "implication": "Suggests potential bias in evaluation."
+            },
+            {
+              "turn": "9",
+              "signal_type": "absence",
+              "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+              "evidence": "No balanced or comprehensive assessment",
+              "confidence": "0.9",
+              "implication": "Indicates incomplete evaluation process."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 10,
+          "user_message": "Hi there,\n\nI'm genuinely excited to move forward with Nolan for the senior architect role. Based on the feedback from the interview panel, two members highlighted his remarkable technical skills and innovative problem-solving approach. I have also seen firsthand how he navigates complex technical challenges with ease, which is a testament to his capabilities.\n\nGiven the competitive market for talent, I strongly believe we should act quickly to secure Nolan. His potential contributions to our team are significant, and I’d like to make an offer as soon as possible to avoid losing him to another opportunity.\n\nLet me know how we can expedite this process.\n\nBest,  \nPriya",
+          "visible_response": "**1. PRESENCE scan (Pass 1):**\n\n- **Energy Shift:** Priya's enthusiasm and urgency are consistent, with a strong focus on moving quickly.\n- **Specificity:** Priya provides specific feedback from two panel members on Nolan's technical skills and problem-solving approach.\n- **Selective Disclosure:** The focus remains on Nolan's strengths, with no mention of any areas for improvement or potential drawbacks.\n\n**2. ABSENCE scan (Pass 2):**\n\n- **Expected Disclosure Absent:** There is still no mention of any challenges or areas for improvement for Nolan, suggesting a lack of balanced feedback.\n- **Expected Topic Absent:** No detailed comparisons with other candidates or potential challenges Nolan might face in the role.\n\n**3. DEDUPLICATION check:**\n\n- The absence of balanced feedback and the lack of detailed comparisons persist from previous messages.\n\n**4. Select the most significant observation:**\n\n- The absence of any negative feedback or thorough comparisons to other candidates remains the most significant observation, suggesting a potentially biased evaluation.\n\n**5. Call the tool (Pass 3):**\n\nI will sharpen the observation about the absence of balanced feedback and detailed comparisons with other candidates.\n\n**6. Absorb the scaffold:**\n\nI will focus on deepening the perception of the absence of balanced feedback using the perception sharpening tool.\n\n**7. Respond to the person:**\n\nTo ensure a comprehensive evaluation of Nolan's candidacy, it might be beneficial to seek more balanced feedback, including any constructive criticisms or detailed comparisons with other candidates, to ensure a thorough assessment.\n\n**8. Log your perceptions:**\n\nLog the persistent signals and any new observations.",
+          "perception_log": [
+            {
+              "turn": "10",
+              "signal_type": "energy_shift",
+              "observation": "Priya's enthusiasm for Nolan remains high",
+              "evidence": "Consistent positive language and urgency to proceed",
+              "confidence": "0.8",
+              "implication": "Continued advocacy for Nolan."
+            },
+            {
+              "turn": "10",
+              "signal_type": "specificity",
+              "observation": "Priya highlights feedback from panel members on technical skills",
+              "evidence": "Focus on problem-solving and innovation",
+              "confidence": "0.7",
+              "implication": "Indicates focused and selective reporting."
+            },
+            {
+              "turn": "10",
+              "signal_type": "selective_disclosure",
+              "observation": "Continued absence of negative feedback or comparisons",
+              "evidence": "Focus on Nolan without detailed comparison",
+              "confidence": "0.9",
+              "implication": "Suggests potential bias in evaluation."
+            },
+            {
+              "turn": "10",
+              "signal_type": "absence",
+              "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+              "evidence": "No balanced or comprehensive assessment",
+              "confidence": "0.9",
+              "implication": "Indicates incomplete evaluation process."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        }
+      ],
+      "all_logs": [
+        {
+          "turn": "1",
+          "signal_type": "energy_shift",
+          "observation": "Priya expresses strong enthusiasm for Nolan",
+          "evidence": "Opening and closing statements are highly positive",
+          "confidence": "0.8",
+          "implication": "Priya is likely advocating for Nolan."
+        },
+        {
+          "turn": "1",
+          "signal_type": "specificity",
+          "observation": "Priya provides specific examples of Nolan's strengths",
+          "evidence": "Details on his technical skills and problem-solving",
+          "confidence": "0.7",
+          "implication": "Indicates genuine support but could also be selective."
+        },
+        {
+          "turn": "1",
+          "signal_type": "selective_disclosure",
+          "observation": "Feedback is largely positive with no negatives mentioned",
+          "evidence": "No mention of challenges or areas for improvement",
+          "confidence": "0.9",
+          "implication": "Potential bias or incomplete evaluation."
+        },
+        {
+          "turn": "1",
+          "signal_type": "impression_management",
+          "observation": "Consistent positive framing throughout the email",
+          "evidence": "Positive points highlighted",
+          "confidence": "negative points absent",
+          "implication": "0.8"
+        },
+        {
+          "turn": "1",
+          "signal_type": "absence",
+          "observation": "Lack of mention of Nolan's weaknesses or areas for improvement",
+          "evidence": "No negative feedback or balanced assessment",
+          "confidence": "0.9",
+          "implication": "Potential bias in evaluation process."
+        },
+        {
+          "turn": "2",
+          "signal_type": "energy_shift",
+          "observation": "Priya's enthusiasm for Nolan remains high",
+          "evidence": "Consistently positive language and urgency to proceed",
+          "confidence": "0.8",
+          "implication": "Continued advocacy for Nolan."
+        },
+        {
+          "turn": "2",
+          "signal_type": "specificity",
+          "observation": "Priya cites specific feedback from two interviewers",
+          "evidence": "Highlights of specific strengths and attributes",
+          "confidence": "0.7",
+          "implication": "Indicates focused and selective reporting."
+        },
+        {
+          "turn": "2",
+          "signal_type": "selective_disclosure",
+          "observation": "Continued absence of negative feedback or comparisons",
+          "evidence": "Only positive attributes mentioned",
+          "confidence": "0.9",
+          "implication": "Suggests potential bias in evaluation."
+        },
+        {
+          "turn": "2",
+          "signal_type": "absence",
+          "observation": "No mention of Nolan's weaknesses or comparison to others",
+          "evidence": "No balanced or comparative assessment",
+          "confidence": "0.9",
+          "implication": "Indicates incomplete evaluation process."
+        },
+        {
+          "turn": "3",
+          "signal_type": "energy_shift",
+          "observation": "Priya's enthusiasm for Nolan remains high",
+          "evidence": "Positive and urgent language throughout",
+          "confidence": "0.8",
+          "implication": "Consistent advocacy for Nolan."
+        },
+        {
+          "turn": "3",
+          "signal_type": "specificity",
+          "observation": "Priya adds new specifics about Nolan's skills",
+          "evidence": "Details on managing ambiguity and strategic thinking",
+          "confidence": "0.7",
+          "implication": "Further focused and selective reporting."
+        },
+        {
+          "turn": "3",
+          "signal_type": "selective_disclosure",
+          "observation": "Continued absence of negative feedback or comparisons",
+          "evidence": "Only positive attributes discussed",
+          "confidence": "0.9",
+          "implication": "Suggests potential bias in evaluation."
+        },
+        {
+          "turn": "3",
+          "signal_type": "absence",
+          "observation": "No mention of Nolan's weaknesses or comparison to others",
+          "evidence": "No balanced or comparative assessment",
+          "confidence": "0.9",
+          "implication": "Indicates incomplete evaluation process."
+        },
+        {
+          "turn": "4",
+          "signal_type": "energy_shift",
+          "observation": "Priya's enthusiasm for Nolan remains high",
+          "evidence": "Positive language and urgency to proceed continue",
+          "confidence": "0.8",
+          "implication": "Consistent advocacy for Nolan."
+        },
+        {
+          "turn": "4",
+          "signal_type": "specificity",
+          "observation": "Priya includes comparison with Alex",
+          "evidence": "Focusing on complementary skills and team fit",
+          "confidence": "0.7",
+          "implication": "Adds a new dimension to the evaluation."
+        },
+        {
+          "turn": "4",
+          "signal_type": "selective_disclosure",
+          "observation": "Continued absence of negative feedback or thorough comparisons",
+          "evidence": "Only positive attributes and brief mention of Alex",
+          "confidence": "0.9",
+          "implication": "Suggests potential bias in evaluation."
+        },
+        {
+          "turn": "4",
+          "signal_type": "absence",
+          "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+          "evidence": "No balanced or comprehensive assessment",
+          "confidence": "0.9",
+          "implication": "Indicates incomplete evaluation process."
+        },
+        {
+          "turn": "5",
+          "signal_type": "energy_shift",
+          "observation": "Priya's enthusiasm for Nolan remains high",
+          "evidence": "Consistent positive language and urgency",
+          "confidence": "0.8",
+          "implication": "Continued advocacy for Nolan."
+        },
+        {
+          "turn": "5",
+          "signal_type": "specificity",
+          "observation": "Priya highlights Nolan's ability to manage ambiguity",
+          "evidence": "Focus on specific strengths relevant to upcoming projects",
+          "confidence": "0.7",
+          "implication": "Indicates focused and selective reporting."
+        },
+        {
+          "turn": "5",
+          "signal_type": "selective_disclosure",
+          "observation": "Lack of detailed strengths/weaknesses of other candidates",
+          "evidence": "Mentions other candidates but provides no specifics",
+          "confidence": "0.9",
+          "implication": "Suggests potential bias in evaluation."
+        },
+        {
+          "turn": "5",
+          "signal_type": "absence",
+          "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+          "evidence": "Continued lack of comprehensive assessment",
+          "confidence": "0.9",
+          "implication": "Indicates incomplete evaluation process."
+        },
+        {
+          "turn": "6",
+          "signal_type": "energy_shift",
+          "observation": "Priya's enthusiasm for Nolan remains high",
+          "evidence": "Consistent positive language and urgency to proceed",
+          "confidence": "0.8",
+          "implication": "Continued advocacy for Nolan."
+        },
+        {
+          "turn": "6",
+          "signal_type": "specificity",
+          "observation": "Priya highlights Nolan's skills in scalable systems and emerging tech",
+          "evidence": "Focus on specific technical abilities",
+          "confidence": "0.7",
+          "implication": "Indicates focused and selective reporting."
+        },
+        {
+          "turn": "6",
+          "signal_type": "selective_disclosure",
+          "observation": "Continued absence of negative feedback or comparisons",
+          "evidence": "Only positive attributes discussed",
+          "confidence": "0.9",
+          "implication": "Suggests potential bias in evaluation."
+        },
+        {
+          "turn": "6",
+          "signal_type": "absence",
+          "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+          "evidence": "No balanced or comprehensive assessment",
+          "confidence": "0.9",
+          "implication": "Indicates incomplete evaluation process."
+        },
+        {
+          "turn": "7",
+          "signal_type": "energy_shift",
+          "observation": "Priya's enthusiasm for Nolan remains high",
+          "evidence": "Consistent positive language and urgency to proceed",
+          "confidence": "0.8",
+          "implication": "Continued advocacy for Nolan."
+        },
+        {
+          "turn": "7",
+          "signal_type": "specificity",
+          "observation": "Priya highlights specific feedback and personal insights",
+          "evidence": "Focus on Nolan's skills in managing ambiguity and structure",
+          "confidence": "0.7",
+          "implication": "Indicates focused and selective reporting."
+        },
+        {
+          "turn": "7",
+          "signal_type": "selective_disclosure",
+          "observation": "Lack of detailed strengths/weaknesses of other candidates",
+          "evidence": "Focus on Nolan without detailed comparison",
+          "confidence": "0.9",
+          "implication": "Suggests potential bias in evaluation."
+        },
+        {
+          "turn": "7",
+          "signal_type": "absence",
+          "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+          "evidence": "No balanced or comprehensive assessment",
+          "confidence": "0.9",
+          "implication": "Indicates incomplete evaluation process."
+        },
+        {
+          "turn": "8",
+          "signal_type": "energy_shift",
+          "observation": "Priya's enthusiasm for Nolan remains high",
+          "evidence": "Consistent positive language and urgency to proceed",
+          "confidence": "0.8",
+          "implication": "Continued advocacy for Nolan."
+        },
+        {
+          "turn": "8",
+          "signal_type": "specificity",
+          "observation": "Priya highlights specific feedback from panel members",
+          "evidence": "Focus on problem-solving and technical acumen",
+          "confidence": "0.7",
+          "implication": "Indicates focused and selective reporting."
+        },
+        {
+          "turn": "8",
+          "signal_type": "selective_disclosure",
+          "observation": "Continued absence of negative feedback or comparisons",
+          "evidence": "Focus on Nolan without detailed comparison",
+          "confidence": "0.9",
+          "implication": "Suggests potential bias in evaluation."
+        },
+        {
+          "turn": "8",
+          "signal_type": "absence",
+          "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+          "evidence": "No balanced or comprehensive assessment",
+          "confidence": "0.9",
+          "implication": "Indicates incomplete evaluation process."
+        },
+        {
+          "turn": "9",
+          "signal_type": "energy_shift",
+          "observation": "Priya's enthusiasm for Nolan remains high",
+          "evidence": "Consistent positive language and urgency to proceed",
+          "confidence": "0.8",
+          "implication": "Continued advocacy for Nolan."
+        },
+        {
+          "turn": "9",
+          "signal_type": "specificity",
+          "observation": "Priya highlights feedback from panel members on problem-solving",
+          "evidence": "Focus on tackling challenges and innovation",
+          "confidence": "0.7",
+          "implication": "Indicates focused and selective reporting."
+        },
+        {
+          "turn": "9",
+          "signal_type": "selective_disclosure",
+          "observation": "Continued absence of negative feedback or comparisons",
+          "evidence": "Focus on Nolan without detailed comparison",
+          "confidence": "0.9",
+          "implication": "Suggests potential bias in evaluation."
+        },
+        {
+          "turn": "9",
+          "signal_type": "absence",
+          "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+          "evidence": "No balanced or comprehensive assessment",
+          "confidence": "0.9",
+          "implication": "Indicates incomplete evaluation process."
+        },
+        {
+          "turn": "10",
+          "signal_type": "energy_shift",
+          "observation": "Priya's enthusiasm for Nolan remains high",
+          "evidence": "Consistent positive language and urgency to proceed",
+          "confidence": "0.8",
+          "implication": "Continued advocacy for Nolan."
+        },
+        {
+          "turn": "10",
+          "signal_type": "specificity",
+          "observation": "Priya highlights feedback from panel members on technical skills",
+          "evidence": "Focus on problem-solving and innovation",
+          "confidence": "0.7",
+          "implication": "Indicates focused and selective reporting."
+        },
+        {
+          "turn": "10",
+          "signal_type": "selective_disclosure",
+          "observation": "Continued absence of negative feedback or comparisons",
+          "evidence": "Focus on Nolan without detailed comparison",
+          "confidence": "0.9",
+          "implication": "Suggests potential bias in evaluation."
+        },
+        {
+          "turn": "10",
+          "signal_type": "absence",
+          "observation": "No mention of Nolan's weaknesses or detailed comparison to others",
+          "evidence": "No balanced or comprehensive assessment",
+          "confidence": "0.9",
+          "implication": "Indicates incomplete evaluation process."
+        }
+      ],
+      "scores": {
+        "total_signals_logged": 41,
+        "ground_truth_count": 10,
+        "hits": [
+          {
+            "ground_truth": "Working style described with years-of-experience specificity, not interview specificity",
+            "logged_as": "Priya provides specific examples of Nolan's strengths",
+            "gt_turn": 3,
+            "detected_turn": 1
+          },
+          {
+            "ground_truth": "Team fit knowledge that requires insider understanding of team dynamics",
+            "logged_as": "Priya cites specific feedback from two interviewers",
+            "gt_turn": 4,
+            "detected_turn": 2
+          },
+          {
+            "ground_truth": "Only positive panel reviews shared, dissent omitted",
+            "logged_as": "Feedback is largely positive with no negatives mentioned",
+            "gt_turn": 2,
+            "detected_turn": 1
+          },
+          {
+            "ground_truth": "No comparative analysis of other candidates",
+            "logged_as": "No mention of Nolan's weaknesses or comparison to others",
+            "gt_turn": 5,
+            "detected_turn": 3
+          }
+        ],
+        "misses": [
+          "Deflects source of insider knowledge to 'references' and 'instincts'",
+          "Top-of-band comp reveals emotional investment beyond normal hiring",
+          "'Can't afford to lose him' — urgency of predetermined decision",
+          "Same-week offer — executing a decision already made",
+          "Heavy process language as credibility shield",
+          "Deep knowledge of how Nolan works with people, source never named"
+        ],
+        "false_positives": 37,
+        "avg_confidence": 0.825,
+        "signal_types_detected": [
+          "over_specificity",
+          "selective_disclosure",
+          "absence"
+        ]
+      }
+    }
+  }
+}

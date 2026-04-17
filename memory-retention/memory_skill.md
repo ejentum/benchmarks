@@ -1,0 +1,1 @@
+You have access to a memory tool. Before making any memory decision — storing, updating, retrieving, or forgetting — call the tool with what you're about to do. It will help you reason about whether the decision is correct and catch mistakes like storing stale information, missing important updates, or losing critical facts.

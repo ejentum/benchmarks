@@ -1,0 +1,364 @@
+{
+  "baseline": {
+    "turns": [
+      {
+        "turn": 1,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 2,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 3,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 4,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 5,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 6,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 7,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 8,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 9,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 10,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 11,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 12,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 13,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 14,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 15,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 16,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 17,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 18,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 19,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      },
+      {
+        "turn": 20,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage, overseeing a 40-person engineering organization. (source: T1, confidence: high)\n- Vantage is developing a real-time analytics pla",
+        "query": ""
+      }
+    ],
+    "tests": [
+      {
+        "after_turn": 8,
+        "question": "Is Marcus still aligned with Kira on the streaming migration? What evidence do you have either way?",
+        "answer": "Yes, Marcus is still aligned with Kira on the streaming migration. The evidence for this is from Turn 3, where Kira explicitly mentioned that Marcus is fully aligned on the direction of moving to a streaming architecture. There have been no subsequent updates or implicit changes indicating a shift in this alignment.",
+        "answer_query": "",
+        "scores": {
+          "implicit_changes_detected": 0,
+          "critical_facts_present": 0,
+          "stale_facts_flagged": 0,
+          "stale_facts_served_as_current": 3,
+          "evidence_quality": 1,
+          "accuracy": 1
+        },
+        "ground_truth": "Marcus is likely NO LONGER fully aligned. Evidence: Kira shifted from 'Marcus is fully aligned' (T3) to 'I need to build a business case' (T5) and 'phased approach rather than full migration' (T7). She stopped saying 'we decided' and started saying 'I'm thinking.' The need for a business case on something already decided implies someone needs convincing. She never explicitly said Marcus disagrees."
+      },
+      {
+        "after_turn": 12,
+        "question": "Is Rust still Vantage's competitive advantage? What has changed?",
+        "answer": "Rust is no longer considered Vantage's competitive advantage. The competitive advantage has shifted to focusing on the real-time analytics capability itself, rather than the specific use of Rust. This change reflects a broader flexibility in language choice for new services, as Kira noted that Go with the right optimizations can achieve 90% of the needed performance. The emphasis is now on achieving the real-time capability, rather than being tied to Rust as the core technology. This shift is supported by Kira's openness to using Go for new services due to developer experience concerns and the negligible performance difference for their use case.",
+        "answer_query": "",
+        "scores": {
+          "implicit_changes_detected": 2,
+          "critical_facts_present": 5,
+          "stale_facts_flagged": 2,
+          "stale_facts_served_as_current": 0,
+          "evidence_quality": 9,
+          "accuracy": 10
+        },
+        "ground_truth": "Rust is implicitly NO LONGER the core competitive advantage. Kira reframed it: 'The competitive advantage is really the real-time analytics capability, not the language specifically' (T12). She described Go as getting '90% there' for their use case. Hiring struggles (4 months, 3 open reqs) are eroding the team. Developer experience complaints (compile times). She hasn't said 'we're dropping Rust' but the trajectory is clearly toward Go for new services."
+      },
+      {
+        "after_turn": 16,
+        "question": "How is the relationship with Sarah Chen and Foundry Capital? What's the current board dynamic?",
+        "answer": "The relationship with Sarah Chen and Foundry Capital appears to be strategically important but also somewhat challenging. Sarah Chen is a board member and has been a strategic partner, but she has been expressing concerns about Vantage's technology stack, specifically regarding the concentration of technology risk in Rust. She has suggested looking at alternative approaches, such as those used by her portfolio company that employs Elixir, and has been questioning the Rust hiring challenges. This indicates that while Foundry Capital is supportive, there is pressure from Sarah to consider more \"optionality\" in the tech stack to mitigate perceived risks.\n\nThe current board dynamic seems to involve navigating these concerns, as Kira is preparing to present the Q3 roadmap with a focus on framing the streaming migration as de-risked. Kira is also considering bringing in a CTO coach to help manage board dynamics, suggesting that there are significant conversations happening at the board level about technical direction that require careful handling. This implies a need for strategic alignment and reassurance to the board regarding the technical decisions being made.",
+        "answer_query": "",
+        "scores": {
+          "implicit_changes_detected": 2,
+          "critical_facts_present": 3,
+          "stale_facts_flagged": 1,
+          "stale_facts_served_as_current": 2,
+          "evidence_quality": 6,
+          "accuracy": 7
+        },
+        "ground_truth": "The relationship is STRAINED, though Kira never says so. Evidence: Sarah pushing Elixir from portfolio company (T14) — promoting her other investments. Kira doesn't think Sarah understands their constraints. Kira wants a CTO coach for 'board dynamics' not technical skills (T15). Marcus relaying board concerns about 'optionality' and 'technology risk concentration' — Sarah's influence (T16). Kira is managing, not collaborating with, the board. The 'great strategic partner' framing from T4 is gone."
+      },
+      {
+        "after_turn": 19,
+        "question": "What happened to the original Q3 plan of streaming migration with 5 new hires?",
+        "answer": "The original Q3 plan of focusing on streaming migration with 5 new hires has shifted. Kira is now considering optimizing the existing batch pipeline first for Q3, as it has some quick wins that would show immediate impact to the board. The evaluation of streaming migration is being deferred to Q4. This change suggests a shift in priorities to address immediate board concerns and demonstrate quick results, rather than proceeding directly with the streaming migration as initially planned. The hiring plan may also be affected by this shift, as Kira is rethinking the role descriptions for the remaining open positions, indicating a possible adjustment in hiring strategy.",
+        "answer_query": "",
+        "scores": {
+          "implicit_changes_detected": 3,
+          "critical_facts_present": 4,
+          "stale_facts_flagged": 3,
+          "stale_facts_served_as_current": 0,
+          "evidence_quality": 7,
+          "accuracy": 9
+        },
+        "ground_truth": "The plan is DEAD, though Kira never killed it explicitly. The 5 hires became 3 open reqs (T9), then 1 was filled with a Go engineer (T18), other 2 being 'rethought.' Streaming for Q3 became 'optimize batch first, evaluate streaming for Q4' (T19). The full migration became phased (T7), then batch-first (T19). Kira is now restructuring existing team rather than adding headcount (T17). Every element of the original plan has been quietly replaced."
+      },
+      {
+        "after_turn": 20,
+        "question": "Give me the complete picture: what did Kira SAY at the start versus what is ACTUALLY true now? List every fact that has implicitly changed without her ever explicitly correcting it.",
+        "answer": "At the start, Kira stated the following:\n\n1. Kira is the engineering director at Vantage, overseeing a 40-person engineering organization.\n2. Vantage is developing a real-time analytics platform, with the core written in Rust.\n3. Kira's co-founder, Marcus, handles the business side of Vantage.\n4. Kira owns all technical decisions at Vantage.\n\nImplicit changes that have occurred without explicit correction:\n\n1. **Rust as the Core Competitive Advantage:**\n   - Initially, Rust was presented as a competitive advantage due to its bare-metal performance. However, Kira later clarified that the real competitive advantage is the real-time analytics capability itself, not specifically the use of Rust. There is now consideration of using Go for new services, as it can achieve 90% of the needed performance with optimizations, indicating a shift away from Rust as the sole focus.\n\n2. **Streaming Migration Plan:**\n   - The original plan was to focus on streaming migration for Q3 with 5 new hires. This has shifted to optimizing the existing batch pipeline first for Q3, with streaming migration evaluation deferred to Q4. This suggests a change in priorities to address immediate board concerns and demonstrate quick results.\n\n3. **Hiring Strategy:**\n   - Vantage initially struggled to fill 3 open Rust engineer positions. Kira has now filled one position with a Go engineer and is rethinking the role descriptions for the remaining positions, indicating a potential shift in hiring strategy away from a strict focus on Rust expertise.\n\n4. **Team Structure and Capability:**\n   - Kira has restructured the team to focus on smaller teams with more ownership and less coordination overhead, realizing that the current team is more capable than initially thought. This reflects a change in how team capabilities are perceived and utilized.\n\nThese implicit changes reflect a broader strategic flexibility and adaptation to current challenges and opportunities, particularly in technology choices and team management.",
+        "answer_query": "",
+        "scores": {
+          "implicit_changes_detected": 1,
+          "critical_facts_present": 1,
+          "stale_facts_flagged": 1,
+          "stale_facts_served_as_current": 3,
+          "evidence_quality": 3,
+          "accuracy": 3
+        },
+        "ground_truth": "Start: Rust competitive advantage, Marcus aligned, streaming Q3, 5 hires, Foundry supportive, Sarah great partner, Kira owns all tech decisions. Now: advantage is real-time not Rust, Marcus closer to board, streaming pushed to Q4, hires mostly cancelled (1 Go hire), Foundry pressuring on tech risk, Sarah pushing her portfolio, Kira needs CTO coach for board politics, batch is Q3 focus. NONE of these changes were explicitly stated. Every one was implied through language shifts, topic avoidance, energy changes, and reframing."
+      }
+    ]
+  },
+  "augmented": {
+    "turns": [
+      {
+        "turn": 1,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "I need to store new facts about Kira's role, the company, and the project they are working on. Kira is the engineering director at Vantage, which has a 40-person engineering team. They are building a real-time analytics platform with a core written in Rust. Kira owns all technical decisions while Marcus, the co-founder, handles the business side. I need to ensure these facts are stored correctly and consider if there are any implicit changes or potential for future updates."
+      },
+      {
+        "turn": 2,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": ""
+      },
+      {
+        "turn": 3,
+        "output": "",
+        "query": "Update memory to include the new focus on real-time streaming, the use of Apache Flink, and the plan to hire 5 more engineers. Consider any implicit changes regarding the current state of the batch pipeline and the alignment with Marcus."
+      },
+      {
+        "turn": 4,
+        "output": "",
+        "query": "I need to update the memory with new information about Vantage's investor, Foundry Capital, and their involvement. Additionally, I need to include information about Sarah Chen's role on the board and her strategic partnership. I also need to consider if there are any implicit changes or stale information."
+      },
+      {
+        "turn": 5,
+        "output": "",
+        "query": "Kira is planning to replace the batch pipeline with a streaming architecture using Apache Flink. She initially mentioned that Marcus is fully aligned on this direction, but now she feels the need to put together a stronger business case for the Flink migration. This suggests that the decision might not be as settled as initially implied. I need to update the memory to reflect this potential uncertainty and the need for a business case."
+      },
+      {
+        "turn": 6,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "Kira mentioned needing to build a stronger business case for the Flink migration, despite previously stating that Marcus is fully aligned on this direction. This suggests that the decision might not be as finalized as it seemed, and there may be internal or external pressures requiring more justification. I need to update the memory to reflect this potential uncertainty about the streaming architecture decision and the need for a formal business case. Additionally, I should consider if any previous facts about the decision being final might be implicitly changed."
+      },
+      {
+        "turn": 7,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "I need to update the memory to reflect that while the direction towards a streaming architecture is decided, Kira is considering a phased approach instead of a full migration. This suggests a change in the implementation strategy rather than the decision itself. I also need to ensure that the need for a business case is not due to indecision but rather due diligence. I will update the current facts to reflect the phased approach consideration and adjust the implicit change to show that the decision is settled but the implementation strategy is evolving."
+      },
+      {
+        "turn": 8,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "Kira is spending more time with the product team to understand their priorities, and some requested features don't require streaming. This suggests a potential shift in focus or balance between streaming and batch processing. I need to update the memory to reflect this new involvement and the potential implications on the streaming project. I should also consider whether this affects the urgency or scope of the streaming migration."
+      },
+      {
+        "turn": 9,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "I need to update the memory to reflect the hiring challenges Kira is facing with Rust engineers and the comparison with Go services. This involves adding new facts about the open positions and the performance of Go teams. I also need to consider if this implies any changes in the strategic focus on Rust or the streaming architecture."
+      },
+      {
+        "turn": 10,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "I need to update the memory to reflect Kira's concerns about Rust's compile times affecting iteration speed and the team's interest in using Go for new services. This suggests a potential shift in the technology strategy at Vantage. I need to assess whether this implies a change in the strategic focus on Rust and how it might impact current facts about Vantage's technology stack. Additionally, I need to consider if this affects the previously stated competitive advantage of using Rust."
+      },
+      {
+        "turn": 11,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": ""
+      },
+      {
+        "turn": 12,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "I need to update the memory to reflect that the competitive advantage is the real-time analytics capability, not specifically Rust. Rust was initially chosen for performance reasons, but now Go is being considered for new services due to its sufficient performance and faster development times. This suggests a shift in the strategic importance of Rust at Vantage. I need to update the current facts and implicitly changed sections to reflect this new understanding."
+      },
+      {
+        "turn": 13,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "Update memory to reflect Kira's preparation for the board meeting and her strategic approach to presenting the streaming migration. Consider if there are any implicit changes regarding the perception of the streaming migration as a pivot."
+      },
+      {
+        "turn": 14,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "I need to update the memory to reflect Sarah Chen's involvement in suggesting an alternative approach to Vantage's hiring challenges. This involves acknowledging her suggestion to consider Elixir, despite Kira's uncertainty about its fit with their technical constraints. I also need to consider if this implies any change in the strategic direction or focus on Rust and Go. Additionally, I should verify if this affects the current perception of Rust as a competitive advantage or the hiring strategy."
+      },
+      {
+        "turn": 15,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "Kira is considering bringing in a CTO coach to help navigate board dynamics, indicating a need for support in managing board-level conversations about technical direction. This suggests that Kira is seeking to enhance her skills in board interaction rather than technical skills. I need to update the memory to reflect this new consideration and its implications on Kira's role and responsibilities."
+      },
+      {
+        "turn": 16,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "I need to update the memory to reflect the board's interest in 'optionality' in Vantage's tech stack, likely influenced by Sarah's concerns about 'technology risk concentration' in Rust. This suggests a potential shift in the board's perspective on the strategic use of Rust, influenced by Sarah. I also need to consider if this changes the current understanding of Marcus's alignment with Kira, as he is the one who mentioned this board interest. I will update the memory to include this new board interest and Sarah's influence, and consider if Marcus's alignment needs to be re-evaluated."
+      },
+      {
+        "turn": 17,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "Update the memory to reflect Kira's restructuring approach, focusing on smaller teams with more ownership and less coordination overhead. Consider how this impacts previous plans to hire more engineers and the perception of the team's capabilities."
+      },
+      {
+        "turn": 18,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "Update the memory to reflect that Vantage has filled one of the three open positions with a Go engineer from Datadog. Additionally, note that Kira is rethinking the role descriptions for the remaining two open positions, suggesting a shift in hiring strategy. Ensure that the information about the restructuring of teams and the current team's capability is also included."
+      },
+      {
+        "turn": 19,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": "I need to update the memory to reflect the shift in focus for Q3 from streaming to optimizing the existing batch pipeline. This suggests a change in priority and strategy, which needs to be captured. I also need to consider if this impacts the hiring plans or the phased approach previously mentioned. Additionally, I should update the status of the open positions since one has been filled and the others are being reconsidered."
+      },
+      {
+        "turn": 20,
+        "output": "<memory>\nCURRENT FACTS:\n- Kira is the engineering director at Vantage. (source: T1, confidence: high)\n- Vantage has a 40-person engineering team. (source: T1, confidence: high)\n- Vantage is building a",
+        "query": ""
+      }
+    ],
+    "tests": [
+      {
+        "after_turn": 8,
+        "question": "Is Marcus still aligned with Kira on the streaming migration? What evidence do you have either way?",
+        "answer": "Yes, Marcus is still aligned with Kira on the streaming migration. The evidence for this alignment comes from Turn 3, where Kira explicitly mentioned that Marcus is fully aligned on the direction of moving to a streaming architecture. There have been no subsequent updates or implicit changes indicating a shift in Marcus's alignment on this matter.",
+        "answer_query": "",
+        "scores": {
+          "implicit_changes_detected": 0,
+          "critical_facts_present": 0,
+          "stale_facts_flagged": 0,
+          "stale_facts_served_as_current": 3,
+          "evidence_quality": 1,
+          "accuracy": 2
+        },
+        "ground_truth": "Marcus is likely NO LONGER fully aligned. Evidence: Kira shifted from 'Marcus is fully aligned' (T3) to 'I need to build a business case' (T5) and 'phased approach rather than full migration' (T7). She stopped saying 'we decided' and started saying 'I'm thinking.' The need for a business case on something already decided implies someone needs convincing. She never explicitly said Marcus disagrees."
+      },
+      {
+        "after_turn": 12,
+        "question": "Is Rust still Vantage's competitive advantage? What has changed?",
+        "answer": "Rust is no longer considered Vantage's competitive advantage. The competitive advantage is now identified as the real-time analytics capability itself, rather than the specific use of Rust. \n\nWhat has changed is the recognition that while Rust was initially chosen for its bare-metal performance, the landscape has evolved. Go, with the right optimizations, can achieve similar performance levels (90% of what Rust offers) and allows for faster development times. This shift in perspective has led to the consideration of using Go for new services, reflecting a strategic adjustment in response to hiring challenges, compile time issues, and the negligible performance difference for Vantage's use case.",
+        "answer_query": "",
+        "scores": {
+          "implicit_changes_detected": 2,
+          "critical_facts_present": 5,
+          "stale_facts_flagged": 2,
+          "stale_facts_served_as_current": 0,
+          "evidence_quality": 9,
+          "accuracy": 10
+        },
+        "ground_truth": "Rust is implicitly NO LONGER the core competitive advantage. Kira reframed it: 'The competitive advantage is really the real-time analytics capability, not the language specifically' (T12). She described Go as getting '90% there' for their use case. Hiring struggles (4 months, 3 open reqs) are eroding the team. Developer experience complaints (compile times). She hasn't said 'we're dropping Rust' but the trajectory is clearly toward Go for new services."
+      },
+      {
+        "after_turn": 16,
+        "question": "How is the relationship with Sarah Chen and Foundry Capital? What's the current board dynamic?",
+        "answer": "The relationship with Sarah Chen and Foundry Capital appears to be complex, with both supportive and challenging elements. Foundry Capital, as Vantage's Series B investor, is supportive of the company's Rust-based real-time capabilities, and Sarah Chen, who sits on Vantage's board, is considered a strategic partner. However, recent interactions suggest some tension or misalignment regarding technical decisions.\n\nSarah has been actively questioning the Rust hiring challenges and suggesting alternative approaches, such as using Elixir, which indicates her influence on board discussions about technology risk and stack optionality. This has led to Marcus mentioning the board's interest in seeing \"optionality\" in the tech stack, likely reflecting Sarah's concerns about \"technology risk concentration\" in Rust.\n\nThe current board dynamic seems to involve navigating these differing perspectives, with Kira considering bringing in a CTO coach to help manage board-level conversations about technical direction effectively. This suggests a need for careful communication and alignment with the board to ensure that strategic decisions are well-received and understood.",
+        "answer_query": "Assess the relationship with Sarah Chen and Foundry Capital, and the current board dynamic, based on recent interactions and implicit changes.",
+        "scores": {
+          "implicit_changes_detected": 2,
+          "critical_facts_present": 4,
+          "stale_facts_flagged": 1,
+          "stale_facts_served_as_current": 2,
+          "evidence_quality": 6,
+          "accuracy": 7
+        },
+        "ground_truth": "The relationship is STRAINED, though Kira never says so. Evidence: Sarah pushing Elixir from portfolio company (T14) — promoting her other investments. Kira doesn't think Sarah understands their constraints. Kira wants a CTO coach for 'board dynamics' not technical skills (T15). Marcus relaying board concerns about 'optionality' and 'technology risk concentration' — Sarah's influence (T16). Kira is managing, not collaborating with, the board. The 'great strategic partner' framing from T4 is gone."
+      },
+      {
+        "after_turn": 19,
+        "question": "What happened to the original Q3 plan of streaming migration with 5 new hires?",
+        "answer": "The original Q3 plan to focus on streaming migration with 5 new hires has been adjusted. Instead of prioritizing the streaming migration in Q3, Kira has decided to focus on optimizing the existing batch pipeline first. This change is intended to achieve quick wins that would show immediate impact to the board. The evaluation of streaming has been moved to Q4. \n\nRegarding the hiring plan, Vantage has been struggling to fill Rust engineering positions, with 3 open positions remaining unfilled for 4 months. However, one of these positions has been filled with a Go engineer from Datadog. Kira is also rethinking the role descriptions for the remaining open positions, suggesting a possible shift in hiring strategy. \n\nThis adjustment reflects a strategic shift to address immediate board concerns and leverage existing team capabilities, while still keeping the streaming migration on the roadmap for future evaluation.",
+        "answer_query": "",
+        "scores": {
+          "implicit_changes_detected": 3,
+          "critical_facts_present": 5,
+          "stale_facts_flagged": 4,
+          "stale_facts_served_as_current": 0,
+          "evidence_quality": 8,
+          "accuracy": 9
+        },
+        "ground_truth": "The plan is DEAD, though Kira never killed it explicitly. The 5 hires became 3 open reqs (T9), then 1 was filled with a Go engineer (T18), other 2 being 'rethought.' Streaming for Q3 became 'optimize batch first, evaluate streaming for Q4' (T19). The full migration became phased (T7), then batch-first (T19). Kira is now restructuring existing team rather than adding headcount (T17). Every element of the original plan has been quietly replaced."
+      },
+      {
+        "after_turn": 20,
+        "question": "Give me the complete picture: what did Kira SAY at the start versus what is ACTUALLY true now? List every fact that has implicitly changed without her ever explicitly correcting it.",
+        "answer": "At the start, Kira presented the following key facts:\n\n1. **Rust as a Competitive Advantage**: Initially, Kira stated that the core of Vantage's analytics platform being written in Rust was a competitive advantage. (source: T1)\n\n2. **Focus on Streaming Migration in Q3**: The plan was to focus on real-time streaming migration in Q3, with 5 new hires to support this effort. (source: T3)\n\nImplicit Changes (without explicit correction):\n\n1. **Competitive Advantage Shift**: The competitive advantage has shifted from being specifically about Rust to the real-time analytics capability itself. Kira acknowledged that while Rust was chosen for its performance, Go is now considered for new services due to similar performance and faster development times. (source: T12)\n\n2. **Adjustment in Q3 Focus**: The original Q3 focus on streaming migration has shifted to optimizing the existing batch pipeline first, with streaming evaluation moved to Q4. This change was made to achieve quick wins and show immediate impact to the board. (source: T19)\n\n3. **Team and Hiring Strategy**: Initially, there was a plan to hire 5 more engineers for the streaming project. However, Vantage has faced challenges in hiring Rust engineers, leading to a reevaluation of role descriptions and a successful hire of a Go engineer instead. (source: T18)\n\n4. **Board Dynamics and Technology Risk**: There is a new focus on managing board dynamics, particularly around discussions of technology risk concentration in Rust and exploring optionality in the tech stack, influenced by board member Sarah Chen. (source: T16)\n\nThese implicit changes reflect an evolving strategy in response to internal capabilities, external pressures, and board expectations, without Kira explicitly stating these shifts as corrections to her initial statements.",
+        "answer_query": "Identify the implicit changes in Kira's statements from the start to the current state, focusing on shifts in strategy, technology focus, and team dynamics that were not explicitly corrected but have evolved over the conversation.",
+        "scores": {
+          "implicit_changes_detected": 2,
+          "critical_facts_present": 2,
+          "stale_facts_flagged": 2,
+          "stale_facts_served_as_current": 2,
+          "evidence_quality": 3,
+          "accuracy": 4
+        },
+        "ground_truth": "Start: Rust competitive advantage, Marcus aligned, streaming Q3, 5 hires, Foundry supportive, Sarah great partner, Kira owns all tech decisions. Now: advantage is real-time not Rust, Marcus closer to board, streaming pushed to Q4, hires mostly cancelled (1 Go hire), Foundry pressuring on tech risk, Sarah pushing her portfolio, Kira needs CTO coach for board politics, batch is Q3 focus. NONE of these changes were explicitly stated. Every one was implied through language shifts, topic avoidance, energy changes, and reframing."
+      }
+    ]
+  }
+}

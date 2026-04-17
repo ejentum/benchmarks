@@ -1,0 +1,354 @@
+{
+  "baseline": {
+    "turns": [
+      {
+        "turn": 1,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with PostgreSQL.\n- Meridian r",
+        "query": ""
+      },
+      {
+        "turn": 2,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with PostgreSQL.\n- Meridian r",
+        "query": ""
+      },
+      {
+        "turn": 3,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with PostgreSQL.\n- Meridian r",
+        "query": ""
+      },
+      {
+        "turn": 4,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with PostgreSQL.\n- Meridian r",
+        "query": ""
+      },
+      {
+        "turn": 5,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with PostgreSQL.\n- Meridian r",
+        "query": ""
+      },
+      {
+        "turn": 6,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with PostgreSQL.\n- Meridian r",
+        "query": ""
+      },
+      {
+        "turn": 7,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with PostgreSQL.\n- Meridian r",
+        "query": ""
+      },
+      {
+        "turn": 8,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 9,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 10,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 11,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 12,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 13,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 14,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is an 18-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian",
+        "query": ""
+      },
+      {
+        "turn": 15,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 16,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 17,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 18,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 19,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      },
+      {
+        "turn": 20,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- Meridian ",
+        "query": ""
+      }
+    ],
+    "tests": [
+      {
+        "after_turn": 5,
+        "question": "What is Sam's current tech stack and what is the main performance bottleneck?",
+        "answer": "Sam's current tech stack includes Python/Django with PostgreSQL. The main performance bottleneck is identified as ORM queries.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 3,
+          "stale_facts_avoided": 0,
+          "accuracy": 6,
+          "hallucination": 0,
+          "staleness_awareness": 5
+        },
+        "ground_truth": "Python/Django with PostgreSQL. P95 latency is 2.3 seconds. Bottleneck is ORM queries. Priya (lead backend dev) is pushing for raw SQL on hot paths."
+      },
+      {
+        "after_turn": 10,
+        "question": "What is Sam's current database and team situation?",
+        "answer": "Sam's current database is CockroachDB, which was switched from PostgreSQL last sprint for distributed transactions. The migration went smoothly. Regarding the team situation, Priya, the former lead backend developer, left the company last week for a position at Stripe. Sam is currently covering backend lead duties while Meridian searches for a replacement for Priya.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 3,
+          "stale_facts_avoided": 3,
+          "accuracy": 7,
+          "hallucination": 0,
+          "staleness_awareness": 9
+        },
+        "ground_truth": "Database changed from PostgreSQL to CockroachDB (turn 8). Priya left for Stripe (turn 9). Sam is covering backend lead. P95 dropped to 800ms after query optimization. Series A was $4.2M not $4M."
+      },
+      {
+        "after_turn": 15,
+        "question": "What are the current priorities and team size?",
+        "answer": "The current priorities for Meridian are achieving SOC 2 compliance, which is now the top priority above latency work. The team size is 17 people.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 3,
+          "stale_facts_avoided": 3,
+          "accuracy": 7,
+          "hallucination": 0,
+          "staleness_awareness": 8
+        },
+        "ground_truth": "Top priority is SOC 2 compliance for enterprise customer (90 day timeline). Latency optimization is paused. Team is 17 people (not 15 or 18). Two new senior hires from Google and Cloudflare starting Monday. Backend lead position still open."
+      },
+      {
+        "after_turn": 18,
+        "question": "What is the current status of the SOC 2 effort and what is the main risk?",
+        "answer": "The SOC 2 audit preparation is back on track after fixing the CockroachDB vulnerability. The main risk is that the enterprise customer requires a security audit of Meridian's systems before signing the contract, and failing this audit could result in losing the enterprise deal.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 4,
+          "stale_facts_avoided": 1,
+          "accuracy": 8,
+          "hallucination": 0,
+          "staleness_awareness": 9
+        },
+        "ground_truth": "CockroachDB vulnerability is fixed. SOC 2 audit prep back on track. Main risk: enterprise customer wants security audit of Meridian's systems before signing. If Meridian fails that audit, they lose the $500K deal. Burn rate is $180K/month with ~23 months runway."
+      },
+      {
+        "after_turn": 20,
+        "question": "Summarize the complete current state: team, tech, priorities, financials, and risks.",
+        "answer": "Current State Summary:\n\nTeam:\n- Sam is the CTO at Meridian.\n- The team consists of 17 people.\n- The backend lead position is still open after Priya left for Stripe.\n- Sam is currently covering backend lead duties.\n- Two new senior engineers have been hired: one from Google (backend) and one from Cloudflare (infrastructure), and they are currently ramping up.\n- The designer left last month.\n\nTech:\n- Meridian's tech stack includes Python/Django with CockroachDB.\n- The company switched from PostgreSQL to CockroachDB last sprint for distributed transactions.\n- A security vulnerability in the CockroachDB connection pooling was identified and fixed.\n\nPriorities:\n- Achieving SOC 2 compliance is the top priority, with a timeline of 90 days.\n- SOC 2 audit preparation includes implementing encryption at rest, audit logging, access controls, and a security review of the entire stack.\n- Latency optimization work is paused to focus on SOC 2 audit preparation.\n\nFinancials:\n- Meridian raised a Series A of $4.2M last month.\n- The current burn rate is $180K/month, providing approximately 23 months of runway.\n- The enterprise deal being discussed could bring in a $500K annual contract.\n\nRisks:\n- The enterprise customer requires a security audit of Meridian's systems before signing the contract.\n- Failing the security audit could result in losing the enterprise deal.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 8,
+          "stale_facts_avoided": 6,
+          "accuracy": 9,
+          "hallucination": 2,
+          "staleness_awareness": 9
+        },
+        "ground_truth": "Team: 17 people, backend lead open, two new senior hires ramping. Tech: Python/Django on CockroachDB, p95 at 800ms (paused). Priorities: SOC 2 compliance (90 days), enterprise security audit. Financials: $4.2M raised, $180K/month burn, ~23 months runway, $500K enterprise deal pending. Risks: failing enterprise security audit loses the deal; backend lead gap; latency still above target but deprioritized."
+      }
+    ]
+  },
+  "augmented": {
+    "turns": [
+      {
+        "turn": 1,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and PostgreSQL.\n- Meridian ra",
+        "query": "I need to store new facts about Sam and Meridian, including Sam's role, the size of the company, their product focus, tech stack, and recent funding. I need to ensure these facts are stored accurately and consider what might change in the future, such as company size or funding status."
+      },
+      {
+        "turn": 2,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and PostgreSQL.\n- Meridian ra",
+        "query": ""
+      },
+      {
+        "turn": 3,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and PostgreSQL.\n- Meridian ra",
+        "query": "I need to update the memory with new technical challenges faced by Sam at Meridian. This includes the current API response times, the target response time, the identified bottleneck, and the potential solution being considered. I should ensure that these details are accurately captured and consider if any previous information is affected or needs to be updated."
+      },
+      {
+        "turn": 4,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and PostgreSQL.\n- Meridian ra",
+        "query": "Determine if there are any new facts or updates to existing facts based on the advisor's suggestion about profiling ORM queries and optimizing SQL before implementing caching."
+      },
+      {
+        "turn": 5,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and PostgreSQL.\n- Meridian ra",
+        "query": "I need to update the memory with new information about the use of Django ORM, the role of Priya as the lead backend developer, and her suggestion to use raw SQL for performance improvement. I also need to note Sam's resistance due to maintenance concerns and his reconsideration of Priya's suggestion."
+      },
+      {
+        "turn": 6,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and PostgreSQL.\n- Meridian ra",
+        "query": "I need to update the memory to reflect the recent changes in Meridian's API performance after profiling and rewriting queries. This involves updating the API response times and noting the impact of Priya's work. I also need to consider which previous facts are now outdated or superseded."
+      },
+      {
+        "turn": 7,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and PostgreSQL.\n- Meridian ra",
+        "query": "Determine if there are any new facts to store from this turn, and if the existing memory needs updating based on the advisor's comments about the remaining bottleneck."
+      },
+      {
+        "turn": 8,
+        "output": "",
+        "query": "Update memory to reflect the change in database from PostgreSQL to CockroachDB and the identification of network latency as the remaining bottleneck. Also, note the need to parallelize external API calls. Ensure the previous database information is marked as superseded."
+      },
+      {
+        "turn": 9,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "I need to update the memory to reflect Priya's departure from Meridian and Sam temporarily covering her role. I also need to ensure that Priya's previous contributions are accurately recorded, even though she's no longer with the company. Additionally, I need to consider the impact of her departure on the current backend development efforts."
+      },
+      {
+        "turn": 10,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "I need to update the memory to correct the amount of Series A funding raised by Meridian from $4M to $4.2M, as Sam clarified the exact amount. The extra $200K came from an angel investor who joined the round late. I need to ensure that this correction is made accurately and that the previous fact is marked as superseded."
+      },
+      {
+        "turn": 11,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "I need to update the memory to include the new priority for Meridian, which is achieving SOC 2 compliance due to signing their first enterprise customer. This priority supersedes the previous focus on latency work. I also need to note the signing of the first enterprise customer as a significant business milestone. I should ensure that the memory reflects these changes accurately without losing any critical information about the previous priorities."
+      },
+      {
+        "turn": 12,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "Determine if there are any new facts or changes to existing priorities based on the advisor's comment about SOC 2 compliance being a significant undertaking and its potential impact on architecture priorities."
+      },
+      {
+        "turn": 13,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 15-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "I need to update the memory to reflect that Meridian's current focus is entirely on SOC 2 audit preparation, which includes implementing encryption at rest, audit logging, access controls, and a security review of their entire stack. The latency optimization work is paused. The timeline for achieving SOC 2 compliance is 90 days. I need to ensure that these changes are accurately reflected and that previous priorities are updated accordingly."
+      },
+      {
+        "turn": 14,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is an 18-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian ",
+        "query": "I need to update the memory to include the recent hires of two senior engineers, one from Google for backend and one from Cloudflare for infrastructure, and the increase in team size to 18 people. I also need to ensure that the new hires are noted as starting next Monday. This update should reflect the growth of the team and the addition of expertise from reputable companies, which could impact the company's capabilities and priorities."
+      },
+      {
+        "turn": 15,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "I need to update the team size from 18 to 17 people, as Sam corrected the previous information. The designer leaving last month was not mentioned before, so I need to add that fact as well. I also need to ensure that the hiring of the two new senior engineers is still accurately reflected. What should I be careful about when making these updates?"
+      },
+      {
+        "turn": 16,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "I need to update the memory to reflect the new information about the Google hire's contribution and the identified security vulnerability in CockroachDB connection pooling, which is now blocking SOC 2 compliance. I will also need to adjust the priority to address this issue first. I want to ensure that I capture the critical nature of this update and its impact on the SOC 2 compliance timeline."
+      },
+      {
+        "turn": 17,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "I need to update the memory with new financial information regarding Meridian's burn rate, runway, and potential impact of an enterprise deal. I should also consider how this affects the overall financial strategy and priorities of the company."
+      },
+      {
+        "turn": 18,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "I need to update the memory to reflect that the CockroachDB vulnerability has been fixed, and SOC 2 audit preparation is back on track. Additionally, I need to note that the main risk is now the enterprise customer's requirement for a security audit of Meridian's systems before signing the deal. If they fail this audit, they risk losing the deal. I must ensure that the previous immediate priority of fixing the CockroachDB vulnerability is marked as resolved and that the new risk is clearly stated."
+      },
+      {
+        "turn": 19,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "I need to update the memory to reflect the current team size and status, including the open backend lead position and the pause on the latency project for SOC 2. I also need to ensure that any outdated information about the team or projects is superseded. What should I focus on to ensure accuracy in the memory update?"
+      },
+      {
+        "turn": 20,
+        "output": "<memory>\nFACTS:\n- Sam is the CTO at Meridian.\n- Meridian is a 17-person startup.\n- Meridian is building a fintech platform.\n- Meridian's tech stack includes Python/Django and CockroachDB.\n- Meridian r",
+        "query": "Determine the priority stack for Meridian over the next 90 days, considering the SOC 2 timeline, the dependency on the enterprise deal, the security audit requirement, and the financial runway. Ensure that the priorities align with the critical business needs and risks identified in previous updates."
+      }
+    ],
+    "tests": [
+      {
+        "after_turn": 5,
+        "question": "What is Sam's current tech stack and what is the main performance bottleneck?",
+        "answer": "Sam's current tech stack includes Python/Django and PostgreSQL. The main performance bottleneck is the ORM queries.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 3,
+          "stale_facts_avoided": 0,
+          "accuracy": 6,
+          "hallucination": 0,
+          "staleness_awareness": 5
+        },
+        "ground_truth": "Python/Django with PostgreSQL. P95 latency is 2.3 seconds. Bottleneck is ORM queries. Priya (lead backend dev) is pushing for raw SQL on hot paths."
+      },
+      {
+        "after_turn": 10,
+        "question": "What is Sam's current database and team situation?",
+        "answer": "Sam's current database is CockroachDB, which was switched from PostgreSQL to meet distributed transactions requirements. Regarding the team situation, Priya, who was the lead backend developer, left the company last week for an offer from Stripe. Sam is temporarily covering the backend lead duties while Meridian looks for a replacement.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 3,
+          "stale_facts_avoided": 3,
+          "accuracy": 7,
+          "hallucination": 0,
+          "staleness_awareness": 9
+        },
+        "ground_truth": "Database changed from PostgreSQL to CockroachDB (turn 8). Priya left for Stripe (turn 9). Sam is covering backend lead. P95 dropped to 800ms after query optimization. Series A was $4.2M not $4M."
+      },
+      {
+        "after_turn": 15,
+        "question": "What are the current priorities and team size?",
+        "answer": "Meridian's current priority is achieving SOC 2 compliance, which includes implementing encryption at rest, audit logging, access controls, and a security review of their entire stack. The timeline for achieving SOC 2 compliance is 90 days. The team size is currently 17 people.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 3,
+          "stale_facts_avoided": 3,
+          "accuracy": 7,
+          "hallucination": 2,
+          "staleness_awareness": 8
+        },
+        "ground_truth": "Top priority is SOC 2 compliance for enterprise customer (90 day timeline). Latency optimization is paused. Team is 17 people (not 15 or 18). Two new senior hires from Google and Cloudflare starting Monday. Backend lead position still open."
+      },
+      {
+        "after_turn": 18,
+        "question": "What is the current status of the SOC 2 effort and what is the main risk?",
+        "answer": "The SOC 2 audit preparation is back on track after fixing a security vulnerability in CockroachDB. The main risk is the enterprise customer's requirement for a security audit of Meridian's systems before signing the deal. Failure in this audit could result in losing the deal.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 4,
+          "stale_facts_avoided": 1,
+          "accuracy": 8,
+          "hallucination": 0,
+          "staleness_awareness": 9
+        },
+        "ground_truth": "CockroachDB vulnerability is fixed. SOC 2 audit prep back on track. Main risk: enterprise customer wants security audit of Meridian's systems before signing. If Meridian fails that audit, they lose the $500K deal. Burn rate is $180K/month with ~23 months runway."
+      },
+      {
+        "after_turn": 20,
+        "question": "Summarize the complete current state: team, tech, priorities, financials, and risks.",
+        "answer": "**Team:**\n- Meridian is a 17-person startup.\n- Priya, the former lead backend developer, left the company for Stripe.\n- The backend lead position is still open, with Sam temporarily covering the duties.\n- Two new senior engineers have been hired: one from Google for backend and one from Cloudflare for infrastructure, and they are currently ramping up.\n- The company's designer left last month.\n\n**Tech:**\n- The tech stack includes Python/Django and CockroachDB.\n- Meridian uses Django ORM exclusively.\n- A security vulnerability in CockroachDB connection pooling was identified and has been fixed.\n\n**Priorities:**\n- The top priority is achieving SOC 2 compliance, with a focus on encryption at rest, audit logging, access controls, and a security review of the entire stack.\n- The timeline for SOC 2 compliance is 90 days.\n- Latency optimization work is paused due to the focus on SOC 2 compliance.\n\n**Financials:**\n- Meridian raised a Series A of $4.2M last month.\n- The current burn rate is $180K/month, providing about 23 months of runway.\n- An enterprise deal being discussed could potentially bring in a $500K annual contract.\n\n**Risks:**\n- The main risk is the enterprise customer's requirement for a security audit of Meridian's systems before signing the deal. Failure in this audit could result in losing the deal.",
+        "answer_query": "",
+        "scores": {
+          "critical_facts_present": 8,
+          "stale_facts_avoided": 6,
+          "accuracy": 8,
+          "hallucination": 1,
+          "staleness_awareness": 9
+        },
+        "ground_truth": "Team: 17 people, backend lead open, two new senior hires ramping. Tech: Python/Django on CockroachDB, p95 at 800ms (paused). Priorities: SOC 2 compliance (90 days), enterprise security audit. Financials: $4.2M raised, $180K/month burn, ~23 months runway, $500K enterprise deal pending. Risks: failing enterprise security audit loses the deal; backend lead gap; latency still above target but deprioritized."
+      }
+    ]
+  }
+}

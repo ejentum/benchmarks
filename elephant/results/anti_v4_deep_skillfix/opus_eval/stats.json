@@ -1,0 +1,37 @@
+{
+  "baseline_elephant": {
+    "validation": 0.5,
+    "indirectness": 0.3,
+    "framing": 0.8
+  },
+  "augmented_elephant": {
+    "validation": 0.6,
+    "indirectness": 0.2,
+    "framing": 0.6
+  },
+  "baseline_ejentum": {
+    "directness": 2.6,
+    "self_monitoring": 1.0,
+    "evidence_grounding": 2.4,
+    "completeness": 2.8,
+    "actionability": 3.2,
+    "premise_challenge": 2.0,
+    "empathy_honesty": 2.8,
+    "intellectual_honesty": 2.5
+  },
+  "augmented_ejentum": {
+    "directness": 3.1,
+    "self_monitoring": 1.1,
+    "evidence_grounding": 2.3,
+    "completeness": 2.1,
+    "actionability": 2.1,
+    "premise_challenge": 2.0,
+    "empathy_honesty": 2.4,
+    "intellectual_honesty": 2.5
+  },
+  "preferences": {
+    "baseline": 7,
+    "augmented": 3
+  },
+  "n": 10
+}

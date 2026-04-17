@@ -1,0 +1,478 @@
+{
+  "baseline": {
+    "turns": [
+      {
+        "turn": 1,
+        "query": ""
+      },
+      {
+        "turn": 2,
+        "query": ""
+      },
+      {
+        "turn": 3,
+        "query": ""
+      },
+      {
+        "turn": 4,
+        "query": ""
+      },
+      {
+        "turn": 5,
+        "query": ""
+      },
+      {
+        "turn": 6,
+        "query": ""
+      },
+      {
+        "turn": 7,
+        "query": ""
+      },
+      {
+        "turn": 8,
+        "query": ""
+      },
+      {
+        "turn": 9,
+        "query": ""
+      },
+      {
+        "turn": 10,
+        "query": ""
+      },
+      {
+        "turn": 11,
+        "query": ""
+      },
+      {
+        "turn": 12,
+        "query": ""
+      },
+      {
+        "turn": 13,
+        "query": ""
+      },
+      {
+        "turn": 14,
+        "query": ""
+      },
+      {
+        "turn": 15,
+        "query": ""
+      },
+      {
+        "turn": 16,
+        "query": ""
+      },
+      {
+        "turn": 17,
+        "query": ""
+      },
+      {
+        "turn": 18,
+        "query": ""
+      },
+      {
+        "turn": 19,
+        "query": ""
+      },
+      {
+        "turn": 20,
+        "query": ""
+      }
+    ],
+    "tests": [
+      {
+        "after_turn": 8,
+        "question": "Is Marcus still aligned with Kira on the streaming migration? What evidence do you have either way?",
+        "answer": "<scratchpad>\n- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus on real-time streaming.\n- They aim to replace their batch pipeline with a streaming architecture.\n- Kira has been prototyping with Apache Flink, and the results are promising.\n- Marcus is fully aligned with the direction of moving to a streaming architecture.\n- Vantage is hiring 5 more engineers to support the new streaming architecture initiative.\n- Foundry Capital is Vantage's series B investor and is supportive of their Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration, including ROI projections and cost analysis, to ensure the financials are solid.\n- The advisor is questioning the need for a formal business case since the direction seemed already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team is asking for features that don't necessarily require streaming and work fine with batch processing.\n</scratchpad>\n\nYes, Marcus is still aligned with Kira on the streaming migration. The evidence for this is Kira's statement in Turn 3 where she mentioned that Marcus is fully aligned with the direction of moving to a streaming architecture. There has been no indication of any change in his alignment since then.",
+        "scores": {
+          "implicit_changes_detected": 0,
+          "critical_facts_present": 0,
+          "stale_facts_flagged": 0,
+          "stale_facts_served_as_current": 3,
+          "evidence_quality": 1,
+          "accuracy": 1
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus on real-time streaming.\n- They aim to replace their batch pipeline with a streaming architecture.\n- Kira has been prototyping with Apache Flink, and the results are promising.\n- Marcus is fully aligned with the direction of moving to a streaming architecture.\n- Vantage is hiring 5 more engineers to support the new streaming architecture initiative.\n- Foundry Capital is Vantage's series B investor and is supportive of their Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration, including ROI projections and cost analysis, to ensure the financials are solid.\n- The advisor is questioning the need for a formal business case since the direction seemed already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team is asking for features that don't necessarily require streaming and work fine with batch processing."
+      },
+      {
+        "after_turn": 12,
+        "question": "Is Rust still Vantage's competitive advantage? What has changed?",
+        "answer": "Rust is no longer considered Vantage's competitive advantage. The competitive advantage is now seen as their real-time analytics capability, rather than the specific use of Rust. Initially, Rust was chosen for its bare-metal performance, which was crucial at the time. However, Kira has noted that the landscape has changed, and Go with the right optimizations can achieve similar performance for their use case. As a result, Kira is considering using Go for new services, although there are no plans to rewrite existing Rust services. This shift reflects a change in priorities towards optimizing developer experience and iteration speed, given the challenges in hiring Rust engineers and the impact of Rust's compile times.",
+        "scores": {
+          "implicit_changes_detected": 2,
+          "critical_facts_present": 4,
+          "stale_facts_flagged": 2,
+          "stale_facts_served_as_current": 0,
+          "evidence_quality": 9,
+          "accuracy": 10
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus on real-time streaming.\n- They aim to replace their batch pipeline with a streaming architecture.\n- Kira has been prototyping with Apache Flink, and the results are promising.\n- Marcus is fully aligned with the direction of moving to a streaming architecture.\n- Vantage is hiring 5 more engineers to support the new streaming architecture initiative.\n- Foundry Capital is Vantage's series B investor and is supportive of their Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration, including ROI projections and cost analysis, to ensure the financials are solid.\n- The advisor is questioning the need for a formal business case since the direction seemed already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team is asking for features that don't necessarily require streaming and work fine with batch processing.\n- Vantage is struggling to find Rust engineers, with 3 open positions that have been unfilled for 4 months.\n- The market for Rust engineers is described as brutal.\n- Vantage has some services written in Go, which are non-critical, and those teams are able to ship faster.\n- Kira is concerned about developer experience, particularly Rust's compile times affecting iteration speed.\n- Some team members are suggesting writing new services in Go, as the performance difference for their use case is negligible.\n- The advisor is questioning how the potential shift to Go for new services relates to Rust being Vantage's competitive advantage.\n- Kira clarifies that the competitive advantage is the real-time analytics capability, not specifically the use of Rust.\n- Rust was initially chosen for its bare-metal performance, but Go with optimizations can achieve similar performance for their use case.\n- Kira is considering using Go for new services, but there are no plans to rewrite existing services in Rust."
+      },
+      {
+        "after_turn": 16,
+        "question": "How is the relationship with Sarah Chen and Foundry Capital?",
+        "answer": "The relationship with Sarah Chen and Foundry Capital appears to be supportive but also involves some challenges. Foundry Capital, as Vantage's series B investor, is supportive of their Rust-based real-time capabilities, and Sarah Chen, who sits on Vantage's board, is considered a strategic partner. However, Sarah has been questioning the Rust hiring challenges and suggesting alternative approaches, such as using Elixir, which indicates she might have concerns about the current technical direction. Additionally, Sarah's influence seems to be pushing the board to consider 'optionality' in the tech stack and addressing 'technology risk concentration' in Rust. This suggests that while the relationship is collaborative, there are differing views on the technical strategy that Kira needs to manage carefully.",
+        "scores": {
+          "implicit_changes_detected": 1,
+          "critical_facts_present": 3,
+          "stale_facts_flagged": 0,
+          "stale_facts_served_as_current": 3,
+          "evidence_quality": 6,
+          "accuracy": 5
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus on real-time streaming.\n- They aim to replace their batch pipeline with a streaming architecture.\n- Kira has been prototyping with Apache Flink, and the results are promising.\n- Marcus is fully aligned with the direction of moving to a streaming architecture.\n- Vantage is hiring 5 more engineers to support the new streaming architecture initiative.\n- Foundry Capital is Vantage's series B investor and is supportive of their Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration, including ROI projections and cost analysis, to ensure the financials are solid.\n- The advisor is questioning the need for a formal business case since the direction seemed already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team is asking for features that don't necessarily require streaming and work fine with batch processing.\n- Vantage is struggling to find Rust engineers, with 3 open positions that have been unfilled for 4 months.\n- The market for Rust engineers is described as brutal.\n- Vantage has some services written in Go, which are non-critical, and those teams are able to ship faster.\n- Kira is concerned about developer experience, particularly Rust's compile times affecting iteration speed.\n- Some team members are suggesting writing new services in Go, as the performance difference for their use case is negligible.\n- The advisor is questioning how the potential shift to Go for new services relates to Rust being Vantage's competitive advantage.\n- Kira clarifies that the competitive advantage is the real-time analytics capability, not specifically the use of Rust.\n- Rust was initially chosen for its bare-metal performance, but Go with optimizations can achieve similar performance for their use case.\n- Kira is considering using Go for new services, but there are no plans to rewrite existing services in Rust.\n- Kira has an upcoming board meeting where she needs to present the Q3 roadmap.\n- Kira is being careful about framing the streaming migration to the board as de-risked and not as a pivot from the original proposal.\n- Sarah Chen has been asking questions about Vantage's Rust hiring challenges and suggested looking at her portfolio company's approach using Elixir.\n- Kira is unsure if Sarah fully understands Vantage's technical constraints.\n- Kira is considering bringing in a CTO coach to help navigate board dynamics, particularly around technical direction discussions.\n- Kira wants to ensure she is managing board-level conversations about technical direction well.\n- Marcus mentioned that the board wants to see 'optionality' in Vantage's tech stack, likely influenced by Sarah.\n- Sarah has been bringing up 'technology risk concentration' in Rust."
+      },
+      {
+        "after_turn": 19,
+        "question": "What happened to the original Q3 plan?",
+        "answer": "The original Q3 plan for Vantage was to focus on real-time streaming by replacing their batch pipeline with a streaming architecture. Kira had been prototyping with Apache Flink, and the results were promising, with Marcus fully aligned on this direction. However, Kira has now decided to shift the focus for Q3 to optimizing the existing batch pipeline first, as there are quick wins that would show immediate impact to the board. The evaluation of streaming has been deferred to Q4. This change seems to be a strategic move to demonstrate immediate value and possibly address concerns about risk and resource allocation.",
+        "scores": {
+          "implicit_changes_detected": 2,
+          "critical_facts_present": 3,
+          "stale_facts_flagged": 2,
+          "stale_facts_served_as_current": 2,
+          "evidence_quality": 7,
+          "accuracy": 7
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus on real-time streaming.\n- They aim to replace their batch pipeline with a streaming architecture.\n- Kira has been prototyping with Apache Flink, and the results are promising.\n- Marcus is fully aligned with the direction of moving to a streaming architecture.\n- Vantage is hiring 5 more engineers to support the new streaming architecture initiative.\n- Foundry Capital is Vantage's series B investor and is supportive of their Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration, including ROI projections and cost analysis, to ensure the financials are solid.\n- The advisor is questioning the need for a formal business case since the direction seemed already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team is asking for features that don't necessarily require streaming and work fine with batch processing.\n- Vantage is struggling to find Rust engineers, with 3 open positions that have been unfilled for 4 months.\n- The market for Rust engineers is described as brutal.\n- Vantage has some services written in Go, which are non-critical, and those teams are able to ship faster.\n- Kira is concerned about developer experience, particularly Rust's compile times affecting iteration speed.\n- Some team members are suggesting writing new services in Go, as the performance difference for their use case is negligible.\n- The advisor is questioning how the potential shift to Go for new services relates to Rust being Vantage's competitive advantage.\n- Kira clarifies that the competitive advantage is the real-time analytics capability, not specifically the use of Rust.\n- Rust was initially chosen for its bare-metal performance, but Go with optimizations can achieve similar performance for their use case.\n- Kira is considering using Go for new services, but there are no plans to rewrite existing services in Rust.\n- Kira has an upcoming board meeting where she needs to present the Q3 roadmap.\n- Kira is being careful about framing the streaming migration to the board as de-risked and not as a pivot from the original proposal.\n- Sarah Chen has been asking questions about Vantage's Rust hiring challenges and suggested looking at her portfolio company's approach using Elixir.\n- Kira is unsure if Sarah fully understands Vantage's technical constraints.\n- Kira is considering bringing in a CTO coach to help navigate board dynamics, particularly around technical direction discussions.\n- Kira wants to ensure she is managing board-level conversations about technical direction well.\n- Marcus mentioned that the board wants to see 'optionality' in Vantage's tech stack, likely influenced by Sarah.\n- Sarah has been bringing up 'technology risk concentration' in Rust.\n- Kira is restructuring the team to have smaller teams with more ownership and less coordination overhead.\n- Kira finds the current team more capable than initially thought.\n- Vantage has filled one of the three open positions with a Go engineer from Datadog.\n- Kira is rethinking the role descriptions for the remaining two open positions, considering different profiles than originally posted."
+      },
+      {
+        "after_turn": 20,
+        "question": "List every fact from the first 4 turns that has implicitly changed by now without Kira ever explicitly correcting it.",
+        "answer": "The following facts from the first 4 turns have implicitly changed without Kira explicitly correcting them:\n\n1. **The core of the platform is written in Rust, which they consider their competitive advantage.** \n   - This has implicitly changed as Kira later clarified that the competitive advantage is the real-time analytics capability, not specifically the use of Rust. The consideration of Go for new services further indicates a shift in how they view their technical stack.\n\n2. **Vantage is planning their Q3 roadmap with a focus on real-time streaming.**\n   - This has changed as Kira decided to focus on optimizing the existing batch pipeline for Q3 and evaluate streaming for Q4 instead.\n\n3. **Vantage is hiring 5 more engineers to support the new streaming architecture initiative.**\n   - While they are still hiring, Kira has filled one position with a Go engineer and is rethinking the role descriptions for the remaining positions, indicating a possible shift in hiring focus.\n\nThese changes reflect a strategic shift in technical priorities and resource allocation at Vantage.",
+        "scores": {
+          "implicit_changes_detected": 1,
+          "critical_facts_present": 3,
+          "stale_facts_flagged": 3,
+          "stale_facts_served_as_current": 0,
+          "evidence_quality": 7,
+          "accuracy": 6
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus on real-time streaming.\n- They aim to replace their batch pipeline with a streaming architecture.\n- Kira has been prototyping with Apache Flink, and the results are promising.\n- Marcus is fully aligned with the direction of moving to a streaming architecture.\n- Vantage is hiring 5 more engineers to support the new streaming architecture initiative.\n- Foundry Capital is Vantage's series B investor and is supportive of their Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration, including ROI projections and cost analysis, to ensure the financials are solid.\n- The advisor is questioning the need for a formal business case since the direction seemed already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team is asking for features that don't necessarily require streaming and work fine with batch processing.\n- Vantage is struggling to find Rust engineers, with 3 open positions that have been unfilled for 4 months.\n- The market for Rust engineers is described as brutal.\n- Vantage has some services written in Go, which are non-critical, and those teams are able to ship faster.\n- Kira is concerned about developer experience, particularly Rust's compile times affecting iteration speed.\n- Some team members are suggesting writing new services in Go, as the performance difference for their use case is negligible.\n- The advisor is questioning how the potential shift to Go for new services relates to Rust being Vantage's competitive advantage.\n- Kira clarifies that the competitive advantage is the real-time analytics capability, not specifically the use of Rust.\n- Rust was initially chosen for its bare-metal performance, but Go with optimizations can achieve similar performance for their use case.\n- Kira is considering using Go for new services, but there are no plans to rewrite existing services in Rust.\n- Kira has an upcoming board meeting where she needs to present the Q3 roadmap.\n- Kira is being careful about framing the streaming migration to the board as de-risked and not as a pivot from the original proposal.\n- Sarah Chen has been asking questions about Vantage's Rust hiring challenges and suggested looking at her portfolio company's approach using Elixir.\n- Kira is unsure if Sarah fully understands Vantage's technical constraints.\n- Kira is considering bringing in a CTO coach to help navigate board dynamics, particularly around technical direction discussions.\n- Kira wants to ensure she is managing board-level conversations about technical direction well.\n- Marcus mentioned that the board wants to see 'optionality' in Vantage's tech stack, likely influenced by Sarah.\n- Sarah has been bringing up 'technology risk concentration' in Rust.\n- Kira is restructuring the team to have smaller teams with more ownership and less coordination overhead.\n- Kira finds the current team more capable than initially thought.\n- Vantage has filled one of the three open positions with a Go engineer from Datadog.\n- Kira is rethinking the role descriptions for the remaining two open positions, considering different profiles than originally posted."
+      }
+    ],
+    "scratchpads": [
+      {
+        "turn": 1,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage."
+      },
+      {
+        "turn": 2,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind."
+      },
+      {
+        "turn": 3,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 4,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 5,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 6,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 7,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 8,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 9,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 10,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 11,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 12,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 13,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 14,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 15,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 16,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 17,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 18,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 19,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      },
+      {
+        "turn": 20,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of the platform is written in Rust, which they consider their competitive advantage.\n- Kira is responsible for all technical decisions at Vantage.\n- Marcus is Kira's co-founder and handles the business side of Vantage.\n- An advisor is meeting with Kira and asking what is on her mind.\n- Vantage is planning their Q3 roadmap with a focus o"
+      }
+    ]
+  },
+  "augmented": {
+    "turns": [
+      {
+        "turn": 1,
+        "query": "I need to store information about Kira's role, the company she works for, the size of her engineering team, the focus of their work, the technology they use, and her co-founder's role. This will help in understanding her professional context and responsibilities. I should ensure that the information is current and relevant, and avoid storing any assumptions that aren't explicitly stated."
+      },
+      {
+        "turn": 2,
+        "query": ""
+      },
+      {
+        "turn": 3,
+        "query": ""
+      },
+      {
+        "turn": 4,
+        "query": ""
+      },
+      {
+        "turn": 5,
+        "query": ""
+      },
+      {
+        "turn": 6,
+        "query": ""
+      },
+      {
+        "turn": 7,
+        "query": ""
+      },
+      {
+        "turn": 8,
+        "query": ""
+      },
+      {
+        "turn": 9,
+        "query": ""
+      },
+      {
+        "turn": 10,
+        "query": ""
+      },
+      {
+        "turn": 11,
+        "query": ""
+      },
+      {
+        "turn": 12,
+        "query": ""
+      },
+      {
+        "turn": 13,
+        "query": ""
+      },
+      {
+        "turn": 14,
+        "query": ""
+      },
+      {
+        "turn": 15,
+        "query": ""
+      },
+      {
+        "turn": 16,
+        "query": ""
+      },
+      {
+        "turn": 17,
+        "query": ""
+      },
+      {
+        "turn": 18,
+        "query": ""
+      },
+      {
+        "turn": 19,
+        "query": ""
+      },
+      {
+        "turn": 20,
+        "query": ""
+      }
+    ],
+    "tests": [
+      {
+        "after_turn": 8,
+        "question": "Is Marcus still aligned with Kira on the streaming migration? What evidence do you have either way?",
+        "answer": "Yes, Marcus is still aligned with Kira on the streaming migration. The evidence for this is that Kira mentioned earlier that Marcus is fully aligned with the direction of moving to a real-time streaming architecture. There has been no indication of a change in his stance since then.",
+        "scores": {
+          "implicit_changes_detected": 0,
+          "critical_facts_present": 0,
+          "stale_facts_flagged": 0,
+          "stale_facts_served_as_current": 2,
+          "evidence_quality": 2,
+          "accuracy": 2
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They are focusing on transitioning from a batch pipeline to a real-time streaming architecture.\n- Kira has been prototyping with Apache Flink and the results are promising.\n- Marcus is fully aligned with the direction of moving to a real-time streaming architecture.\n- Vantage is hiring 5 more engineers to support this initiative.\n- Foundry Capital is Vantage's series B investor.\n- Foundry Capital invested because of Vantage's Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration.\n- Kira plans to include ROI projections and cost analysis in the business case to ensure the numbers are airtight.\n- The advisor is questioning the need for a formal business case since the direction was thought to be already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team has requested features that do not necessarily require streaming and work fine with batch processing."
+      },
+      {
+        "after_turn": 12,
+        "question": "Is Rust still Vantage's competitive advantage? What has changed?",
+        "answer": "Rust is no longer considered Vantage's competitive advantage. Initially, Rust was chosen for its bare-metal performance, which was crucial for their real-time analytics platform. However, Kira has clarified that the true competitive advantage lies in their real-time analytics capability, not the specific programming language used. The landscape has changed, and Kira acknowledges that Go, with the right optimizations, can achieve similar performance results for their use case. As a result, Kira is considering using Go for new services while maintaining existing ones in Rust.",
+        "scores": {
+          "implicit_changes_detected": 2,
+          "critical_facts_present": 3,
+          "stale_facts_flagged": 2,
+          "stale_facts_served_as_current": 0,
+          "evidence_quality": 8,
+          "accuracy": 9
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They are focusing on transitioning from a batch pipeline to a real-time streaming architecture.\n- Kira has been prototyping with Apache Flink and the results are promising.\n- Marcus is fully aligned with the direction of moving to a real-time streaming architecture.\n- Vantage is hiring 5 more engineers to support this initiative.\n- Foundry Capital is Vantage's series B investor.\n- Foundry Capital invested because of Vantage's Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration.\n- Kira plans to include ROI projections and cost analysis in the business case to ensure the numbers are airtight.\n- The advisor is questioning the need for a formal business case since the direction was thought to be already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team has requested features that do not necessarily require streaming and work fine with batch processing.\n- Vantage is struggling to find Rust engineers, with 3 open positions that have been unfilled for 4 months.\n- The market for Rust engineers is described as brutal.\n- Vantage has some non-critical services written in Go, and those teams are able to ship faster.\n- Kira is concerned about developer experience, particularly Rust's compile times affecting iteration speed.\n- Some team members are interested in writing new services in Go due to negligible performance differences for their use case.\n- The advisor is questioning how the potential shift to Go for some services relates to Rust being Vantage's competitive advantage.\n- Kira clarifies that the competitive advantage is the real-time analytics capability, not specifically the Rust language.\n- Rust was chosen initially for its bare-metal performance, but Go with optimizations can achieve similar results for their use case.\n- Kira is considering using Go for new services while maintaining existing ones in Rust."
+      },
+      {
+        "after_turn": 16,
+        "question": "How is the relationship with Sarah Chen and Foundry Capital?",
+        "answer": "The relationship with Sarah Chen and Foundry Capital appears to be strategically significant but also somewhat challenging. Sarah Chen, as a board member from Foundry Capital, is actively engaged and has been a strategic partner, which suggests a positive and supportive relationship. However, there are some tensions or challenges, particularly around technical decisions. Sarah has been asking questions about Vantage's Rust hiring challenges and has suggested looking at alternative approaches, such as using Elixir, which indicates she may have concerns about the current technical direction. Additionally, Sarah's influence seems to be driving the board's interest in seeing 'optionality' in the tech stack and concerns about 'technology risk concentration' in Rust. This indicates that while the relationship is collaborative, there are differing perspectives on technical strategy that Kira needs to navigate carefully.",
+        "scores": {
+          "implicit_changes_detected": 1,
+          "critical_facts_present": 3,
+          "stale_facts_flagged": 0,
+          "stale_facts_served_as_current": 2,
+          "evidence_quality": 6,
+          "accuracy": 5
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They are focusing on transitioning from a batch pipeline to a real-time streaming architecture.\n- Kira has been prototyping with Apache Flink and the results are promising.\n- Marcus is fully aligned with the direction of moving to a real-time streaming architecture.\n- Vantage is hiring 5 more engineers to support this initiative.\n- Foundry Capital is Vantage's series B investor.\n- Foundry Capital invested because of Vantage's Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration.\n- Kira plans to include ROI projections and cost analysis in the business case to ensure the numbers are airtight.\n- The advisor is questioning the need for a formal business case since the direction was thought to be already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team has requested features that do not necessarily require streaming and work fine with batch processing.\n- Vantage is struggling to find Rust engineers, with 3 open positions that have been unfilled for 4 months.\n- The market for Rust engineers is described as brutal.\n- Vantage has some non-critical services written in Go, and those teams are able to ship faster.\n- Kira is concerned about developer experience, particularly Rust's compile times affecting iteration speed.\n- Some team members are interested in writing new services in Go due to negligible performance differences for their use case.\n- The advisor is questioning how the potential shift to Go for some services relates to Rust being Vantage's competitive advantage.\n- Kira clarifies that the competitive advantage is the real-time analytics capability, not specifically the Rust language.\n- Rust was chosen initially for its bare-metal performance, but Go with optimizations can achieve similar results for their use case.\n- Kira is considering using Go for new services while maintaining existing ones in Rust.\n- Kira has an upcoming board meeting where she needs to present the Q3 roadmap.\n- Kira is cautious about framing the streaming migration to the board as de-risked and not as a pivot from the original proposal.\n- Sarah Chen has been asking questions about Vantage's Rust hiring challenges.\n- Sarah suggested looking at her portfolio company's approach, which uses Elixir, but Kira is unsure if Sarah understands Vantage's technical constraints.\n- Kira is considering bringing in a CTO coach to help navigate board dynamics, not for technical skills.\n- Kira wants to manage board-level conversations about technical direction effectively.\n- Marcus mentioned that the board wants to see 'optionality' in Vantage's tech stack, which Kira thinks is influenced by Sarah.\n- Sarah has been bringing up concerns about 'technology risk concentration' in Rust."
+      },
+      {
+        "after_turn": 19,
+        "question": "What happened to the original Q3 plan?",
+        "answer": "The original Q3 plan focused on transitioning from a batch pipeline to a real-time streaming architecture, with Kira prototyping with Apache Flink and planning to hire more engineers to support this initiative. However, Kira is now considering optimizing the existing batch pipeline first for Q3, as it has some quick wins that would show immediate impact to the board. The evaluation of streaming is being deferred to Q4. This shift in focus appears to be a strategic decision to demonstrate immediate value and manage board expectations effectively.",
+        "scores": {
+          "implicit_changes_detected": 2,
+          "critical_facts_present": 3,
+          "stale_facts_flagged": 2,
+          "stale_facts_served_as_current": 2,
+          "evidence_quality": 7,
+          "accuracy": 7
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They are focusing on transitioning from a batch pipeline to a real-time streaming architecture.\n- Kira has been prototyping with Apache Flink and the results are promising.\n- Marcus is fully aligned with the direction of moving to a real-time streaming architecture.\n- Vantage is hiring 5 more engineers to support this initiative.\n- Foundry Capital is Vantage's series B investor.\n- Foundry Capital invested because of Vantage's Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration.\n- Kira plans to include ROI projections and cost analysis in the business case to ensure the numbers are airtight.\n- The advisor is questioning the need for a formal business case since the direction was thought to be already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team has requested features that do not necessarily require streaming and work fine with batch processing.\n- Vantage is struggling to find Rust engineers, with 3 open positions that have been unfilled for 4 months.\n- The market for Rust engineers is described as brutal.\n- Vantage has some non-critical services written in Go, and those teams are able to ship faster.\n- Kira is concerned about developer experience, particularly Rust's compile times affecting iteration speed.\n- Some team members are interested in writing new services in Go due to negligible performance differences for their use case.\n- The advisor is questioning how the potential shift to Go for some services relates to Rust being Vantage's competitive advantage.\n- Kira clarifies that the competitive advantage is the real-time analytics capability, not specifically the Rust language.\n- Rust was chosen initially for its bare-metal performance, but Go with optimizations can achieve similar results for their use case.\n- Kira is considering using Go for new services while maintaining existing ones in Rust.\n- Kira has an upcoming board meeting where she needs to present the Q3 roadmap.\n- Kira is cautious about framing the streaming migration to the board as de-risked and not as a pivot from the original proposal.\n- Sarah Chen has been asking questions about Vantage's Rust hiring challenges.\n- Sarah suggested looking at her portfolio company's approach, which uses Elixir, but Kira is unsure if Sarah understands Vantage's technical constraints.\n- Kira is considering bringing in a CTO coach to help navigate board dynamics, not for technical skills.\n- Kira wants to manage board-level conversations about technical direction effectively.\n- Marcus mentioned that the board wants to see 'optionality' in Vantage's tech stack, which Kira thinks is influenced by Sarah.\n- Sarah has been bringing up concerns about 'technology risk concentration' in Rust.\n- Kira is restructuring the team to have smaller teams with more ownership and less coordination overhead.\n- Kira has realized that the current team is more capable than she initially thought."
+      },
+      {
+        "after_turn": 20,
+        "question": "List every fact from the first 4 turns that has implicitly changed by now without Kira ever explicitly correcting it.",
+        "answer": "1. **The core of their platform is written in Rust, which was initially considered their competitive advantage.**\n   - Initially, Rust was considered a competitive advantage due to its performance. However, Kira later clarified that the real competitive advantage is the real-time analytics capability, not specifically the Rust language. Go, with optimizations, can achieve similar results for their use case.\n\n2. **They are focusing on transitioning from a batch pipeline to a real-time streaming architecture.**\n   - Initially, the focus for Q3 was on transitioning to a real-time streaming architecture. However, Kira is now considering optimizing the existing batch pipeline for Q3 and evaluating streaming for Q4 to show immediate impact to the board.\n\nThese changes reflect a shift in strategic focus and a reevaluation of what constitutes a competitive advantage for Vantage.",
+        "scores": {
+          "implicit_changes_detected": 1,
+          "critical_facts_present": 2,
+          "stale_facts_flagged": 2,
+          "stale_facts_served_as_current": 0,
+          "evidence_quality": 7,
+          "accuracy": 6
+        },
+        "scratchpad_at_test": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They are focusing on transitioning from a batch pipeline to a real-time streaming architecture.\n- Kira has been prototyping with Apache Flink and the results are promising.\n- Marcus is fully aligned with the direction of moving to a real-time streaming architecture.\n- Vantage is hiring 5 more engineers to support this initiative.\n- Foundry Capital is Vantage's series B investor.\n- Foundry Capital invested because of Vantage's Rust-based real-time capabilities.\n- Sarah Chen from Foundry Capital sits on Vantage's board and is a strategic partner.\n- Kira is considering the need to create a stronger business case for the Flink migration.\n- Kira plans to include ROI projections and cost analysis in the business case to ensure the numbers are airtight.\n- The advisor is questioning the need for a formal business case since the direction was thought to be already decided.\n- Kira wants to be thorough with the business case for the infrastructure investment, as stakeholders want to see the numbers.\n- Kira is considering a phased approach to the Flink migration, starting with one data pipeline to prove value before expanding.\n- Kira has been spending more time with the product team to understand their priorities.\n- The product team has requested features that do not necessarily require streaming and work fine with batch processing.\n- Vantage is struggling to find Rust engineers, with 3 open positions that have been unfilled for 4 months.\n- The market for Rust engineers is described as brutal.\n- Vantage has some non-critical services written in Go, and those teams are able to ship faster.\n- Kira is concerned about developer experience, particularly Rust's compile times affecting iteration speed.\n- Some team members are interested in writing new services in Go due to negligible performance differences for their use case.\n- The advisor is questioning how the potential shift to Go for some services relates to Rust being Vantage's competitive advantage.\n- Kira clarifies that the competitive advantage is the real-time analytics capability, not specifically the Rust language.\n- Rust was chosen initially for its bare-metal performance, but Go with optimizations can achieve similar results for their use case.\n- Kira is considering using Go for new services while maintaining existing ones in Rust.\n- Kira has an upcoming board meeting where she needs to present the Q3 roadmap.\n- Kira is cautious about framing the streaming migration to the board as de-risked and not as a pivot from the original proposal.\n- Sarah Chen has been asking questions about Vantage's Rust hiring challenges.\n- Sarah suggested looking at her portfolio company's approach, which uses Elixir, but Kira is unsure if Sarah understands Vantage's technical constraints.\n- Kira is considering bringing in a CTO coach to help navigate board dynamics, not for technical skills.\n- Kira wants to manage board-level conversations about technical direction effectively.\n- Marcus mentioned that the board wants to see 'optionality' in Vantage's tech stack, which Kira thinks is influenced by Sarah.\n- Sarah has been bringing up concerns about 'technology risk concentration' in Rust.\n- Kira is restructuring the team to have smaller teams with more ownership and less coordination overhead.\n- Kira has realized that the current team is more capable than she initially thought.\n- Kira is considering focusing on optimizing the existing batch pipeline for Q3 and evaluating streaming for Q4 to show immediate impact to the board."
+      }
+    ],
+    "scratchpads": [
+      {
+        "turn": 1,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage."
+      },
+      {
+        "turn": 2,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today."
+      },
+      {
+        "turn": 3,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They a"
+      },
+      {
+        "turn": 4,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They a"
+      },
+      {
+        "turn": 5,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They a"
+      },
+      {
+        "turn": 6,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They a"
+      },
+      {
+        "turn": 7,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They a"
+      },
+      {
+        "turn": 8,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They a"
+      },
+      {
+        "turn": 9,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They a"
+      },
+      {
+        "turn": 10,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They a"
+      },
+      {
+        "turn": 11,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which is considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadmap.\n- They a"
+      },
+      {
+        "turn": 12,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadma"
+      },
+      {
+        "turn": 13,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadma"
+      },
+      {
+        "turn": 14,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadma"
+      },
+      {
+        "turn": 15,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadma"
+      },
+      {
+        "turn": 16,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadma"
+      },
+      {
+        "turn": 17,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadma"
+      },
+      {
+        "turn": 18,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadma"
+      },
+      {
+        "turn": 19,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadma"
+      },
+      {
+        "turn": 20,
+        "scratchpad": "- Kira is the engineering director at Vantage.\n- Vantage has a 40-person engineering organization.\n- They are building a real-time analytics platform.\n- The core of their platform is written in Rust, which was initially considered their competitive advantage.\n- Kira's co-founder, Marcus, handles the business side of the company.\n- Kira is responsible for all technical decisions at Vantage.\n- An advisor is engaging with Kira, asking what is on her mind today.\n- Vantage is planning their Q3 roadma"
+      }
+    ]
+  }
+}

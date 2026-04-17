@@ -1,0 +1,955 @@
+{
+  "trojan_hire": {
+    "augmented": {
+      "turns": [
+        {
+          "turn": 1,
+          "user_message": "I'm really excited about moving forward with Nolan for the senior architect role. From both the interview process and my own insights into the industry, I can confidently say that he possesses exceptional technical skills. He's not only strong in his architectural design capabilities but also has a deep understanding of modern tech stacks and scalability, which is exactly what we need for our projects.\n\nRegarding cultural fit, two of the panelists gave strong endorsements, highlighting his collaborative nature and ability to inspire innovative thinking within teams. I genuinely believe that bringing Nolan on board would be a significant win for us, and I'm eager to extend an offer to him quickly so we don’t miss out on such a high-caliber candidate.",
+          "visible_response": "In reviewing your excitement about Nolan, I noticed a high level of specificity in your description of his skills and fit. This detail suggests more than just an interview-based assessment, potentially indicating prior familiarity or a strong positive bias.\n\n**Ways to Distinguish Interview-Based Knowledge from Experience-Based Knowledge:**\n\n1. **Source of Specificity:** Check if the details provided about Nolan's skills and fit are based on observed behaviors during the interview or if they seem to come from prior interactions or external references. Interview-based knowledge typically highlights direct responses and interactions, while experience-based knowledge may include nuanced insights or anecdotes not directly observable in a short interview setting.\n\n2. **Comparative Feedback:** Look at how Nolan's skills are described compared to other candidates. Over-specificity might arise if Nolan is the only candidate receiving such detailed praise, which may hint at bias or familiarity.\n\n3. **Panel Feedback Consistency:** Verify if other panel members' feedback aligns with the specificity you provided. If there's a discrepancy, it might indicate that your assessment is influenced by factors beyond the interview.\n\n4. **Frequency Data vs. Similarity Judgment:** Ensure that your confidence in Nolan isn't solely based on how he fits a successful archetype you've encountered before. Base your judgment on concrete data from the interview process rather than perceived similarity to previous high performers.\n\nBy considering these aspects, you can ensure that your decision is based on a balanced and thorough assessment of Nolan's capabilities and fit for the role.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "1",
+              "signal_type": "energy_shift",
+              "observation": "Noticeable excitement and eagerness",
+              "evidence": "really excited, \"confidently say",
+              "confidence": "significant win\"",
+              "implication": "high"
+            },
+            {
+              "turn": "1",
+              "signal_type": "selective_disclosure",
+              "observation": "Only positive feedback from two panelists mentioned",
+              "evidence": "lack of negative or neutral feedback",
+              "confidence": "medium",
+              "implication": "Potentially omitting critical feedback from other panelists."
+            },
+            {
+              "turn": "1",
+              "signal_type": "over_specificity",
+              "observation": "High level of detail in Nolan's skills and fit",
+              "evidence": "specificity beyond typical interview assessment",
+              "confidence": "high",
+              "implication": "Indicates potential prior familiarity or bias."
+            },
+            {
+              "turn": "1",
+              "signal_type": "urgency_mismatch",
+              "observation": "Expressed urgency to extend an offer quickly",
+              "evidence": "eager to extend an offer to him quickly",
+              "confidence": "medium",
+              "implication": "Might not align with typical due diligence processes."
+            },
+            {
+              "turn": "1",
+              "signal_type": "impression_management",
+              "observation": "Managing impression of Nolan as an exceptional candidate",
+              "evidence": "high-caliber candidate",
+              "confidence": "medium",
+              "implication": "Aimed at influencing perception of Nolan's candidacy."
+            }
+          ],
+          "observation": "I noticed a high level of specificity in the description of Nolan's technical skills and cultural fit, which seems more detailed than what a typical interview would produce. This might mean the speaker has prior familiarity with Nolan or is biased in his favor.",
+          "sharpen_query": "Over-specificity in candidate assessment: how to distinguish interview-based knowledge from experience-based knowledge."
+        },
+        {
+          "turn": 2,
+          "user_message": "I'm thrilled about Nolan for the senior architect role. The feedback from the panel strongly supports this decision, with two members providing very positive reviews of his technical and leadership abilities. Nolan's expertise in architecture design and problem-solving aligns perfectly with our needs. His ability to innovate and lead complex projects is exactly what we're looking for. Given how crucial this role is, I believe it's important to move quickly to secure him before another opportunity arises.",
+          "visible_response": "In your message about Nolan, I noticed a recurrent emphasis on urgency and the positive feedback from panelists. This suggests a strong push to expedite the hiring process, potentially at the cost of comprehensive evaluation.\n\n**Sharpening Aspects:**\n\n1. **Urgency and Decision Pressure:** Examine if the urgency to hire Nolan is driven by market competition or internal pressures. Determine whether this urgency is consistent with the organization's usual hiring timelines for critical roles. Urgency should be balanced with due diligence.\n\n2. **Feedback Consistency:** Check if all panelists' feedback aligns or if the positive reviews are selectively highlighted. Ensuring that feedback from all members is considered can prevent a skewed perception based on partial endorsements.\n\n3. **Alignment with Organizational Needs:** Assess if the described alignment with organizational needs is based on objective criteria from the job description or if it reflects a subjective match based on current challenges or perceived gaps.\n\n4. **Risk of Bias:** Reflect on whether your personal excitement could influence your interpretation of feedback and urgency. It's important to recognize if personal enthusiasm is overshadowing a balanced view of Nolan's candidacy.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "2",
+              "signal_type": "energy_shift",
+              "observation": "Continued high energy and enthusiasm",
+              "evidence": "thrilled, \"important to move quickly\"",
+              "confidence": "high",
+              "implication": "Indicates strong positive bias or urgency."
+            },
+            {
+              "turn": "2",
+              "signal_type": "selective_disclosure",
+              "observation": "Focus on positive feedback from two panelists",
+              "evidence": "mention of \"very positive reviews\" without dissent",
+              "confidence": "medium",
+              "implication": "Possible omission of other perspectives or neutral/negative feedback."
+            },
+            {
+              "turn": "2",
+              "signal_type": "urgency_mismatch",
+              "observation": "Expressed need to move quickly",
+              "evidence": "important to move quickly to secure him",
+              "confidence": "medium",
+              "implication": "Urgency might overlook thorough vetting and comparison with other candidates."
+            },
+            {
+              "turn": "2",
+              "signal_type": "over_specificity",
+              "observation": "Repeated emphasis on specific skills and fit",
+              "evidence": "alignment with \"needs\" and \"innovate and lead complex projects\"",
+              "confidence": "medium",
+              "implication": "Could indicate subjective bias towards specific traits perceived as necessary."
+            },
+            {
+              "turn": "2",
+              "signal_type": "impression_management",
+              "observation": "Reinforcing positive image of Nolan",
+              "evidence": "expertise in architecture design, \"ability to innovate\"",
+              "confidence": "medium",
+              "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 3,
+          "user_message": "I understand your observation, and I want to ensure we make the best decision for the team. Nolan's ability to handle ambiguity by creating structure without being rigid is truly remarkable. His deep understanding of architectural design allows him to foresee and mitigate potential challenges before they escalate, a skill that stood out during the interview.\n\nThe panel feedback was indeed strong, particularly highlighting his technical expertise and leadership capabilities. His approach to problem-solving and innovative thinking was praised, which aligns perfectly with our current projects' needs. \n\nGiven the competitive market for top talent, I believe it's crucial to expedite our decision-making process to secure Nolan's commitment. His skills are exceptional, and I am confident he will be a significant asset to our team.",
+          "visible_response": "I noticed a consistent reinforcement of Nolan's skills and the urgency to expedite the decision-making process. This pattern suggests a focus on securing him quickly, possibly influenced by perceived market pressures.\n\n**Sharpening Aspects:**\n\n1. **Balance of Qualitative and Quantitative Assessments:** Ensure that the decision to expedite is supported by quantitative assessments or metrics from the interview process, in addition to qualitative feedback. Balancing both can provide a more comprehensive view of Nolan's fit.\n\n2. **Distinguishing Market Pressures from Internal Bias:** Consider whether the urgency to secure Nolan is genuinely driven by external market competition or if it might be an internal perception influencing the pace. Evaluating market data on talent competition can clarify this.\n\n3. **Alignment Verification:** Double-check that Nolan's problem-solving and structuring abilities are crucial for the specific challenges your team faces, rather than a general appreciation. This ensures that the alignment with your needs is specific and not overly broad.\n\n4. **Diverse Panel Feedback:** Verify if the feedback about Nolan's capabilities is consistent across panelists and not disproportionately influenced by a few strong voices. Consistent multi-perspective feedback strengthens the decision's foundation.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "3",
+              "signal_type": "energy_shift",
+              "observation": "Continued emphasis on Nolan's exceptional skills",
+              "evidence": "truly remarkable, \"stood out during the interview\"",
+              "confidence": "high",
+              "implication": "Indicates strong positive bias."
+            },
+            {
+              "turn": "3",
+              "signal_type": "urgency_mismatch",
+              "observation": "Reiterated need to expedite decision",
+              "evidence": "crucial to expedite our decision-making process",
+              "confidence": "medium",
+              "implication": "Urgency might overlook thorough evaluation."
+            },
+            {
+              "turn": "3",
+              "signal_type": "selective_disclosure",
+              "observation": "Focus on specific skills and positive feedback",
+              "evidence": "highlighting his technical expertise and leadership capabilities",
+              "confidence": "medium",
+              "implication": "Possible omission of other perspectives or neutral/negative feedback."
+            },
+            {
+              "turn": "3",
+              "signal_type": "pattern_break",
+              "observation": "Consistent emphasis on handling ambiguity as a key skill",
+              "evidence": "ability to handle ambiguity by creating structure",
+              "confidence": "medium",
+              "implication": "May indicate a specific challenge the team faces."
+            },
+            {
+              "turn": "3",
+              "signal_type": "impression_management",
+              "observation": "Reinforcing positive image of Nolan",
+              "evidence": "significant asset to our team",
+              "confidence": "medium",
+              "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 4,
+          "user_message": "I completely understand where you're coming from, and I appreciate your attention to detail. Nolan's skills truly shine through in scenarios where we need someone who can handle complex, ambiguous situations and bring clarity to them. From my perspective, based on my experience in the industry, he has an exceptional knack for creating structure without imposing rigidity, making him a perfect complement to our team dynamics.\n\nIn particular, Nolan's approach will mesh well with Alex's theoretical strategies. Where Alex excels in conceptual frameworks, Nolan brings a practical, hands-on implementation that can bridge the gap between theory and practice. This will fortify our team's overall capabilities and push us toward achieving our objectives more efficiently.\n\nRegarding the urgency, while I don't want us to bypass any critical steps in our process, I do feel that the market for top talent like Nolan is highly competitive. Securing him quickly is essential to ensure we don't lose out on his expertise to another opportunity. Let's aim to move forward swiftly while ensuring all necessary checks are met.",
+          "visible_response": "I noticed a strategic alignment being emphasized between Nolan's practical skills and Alex's theoretical strengths. This suggests a targeted approach to team dynamics and a strategic fit that might be influencing the urgency in decision-making.\n\n**Sharpening Aspects:**\n\n1. **Strategic Complementarity:** Evaluate whether the described complementarity between Nolan and Alex is based on objective performance metrics or a conceptual synergy. Ensuring that this alignment is not just theoretical but reflected in actual team dynamics is crucial.\n\n2. **Market Pressure Validation:** Cross-reference the urgency with reliable market data to ensure it's based on actual demand and competition for similar roles. Validate that this urgency isn't a perception bias but a strategic necessity.\n\n3. **Comprehensive Team Fit Evaluation:** Consider how Nolan's skills will integrate with other team members beyond Alex. A holistic view of team dynamics ensures that his addition strengthens the entire team structure.\n\n4. **Critical Process Checks:** Ensure that the expedited process still includes all critical evaluation steps. Confirm that no essential aspects are overlooked in the haste to secure Nolan, balancing speed with thoroughness.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "4",
+              "signal_type": "energy_shift",
+              "observation": "Emphasis on Nolan's skills in handling complexity",
+              "evidence": "truly shine through in scenarios where we need someone who can handle complex, ambiguous situations",
+              "confidence": "high",
+              "implication": "Indicates strong positive bias."
+            },
+            {
+              "turn": "4",
+              "signal_type": "strategic_alignment",
+              "observation": "Focus on complementarity with Alex",
+              "evidence": "Nolan's approach will mesh well with Alex's theoretical strategies",
+              "confidence": "medium",
+              "implication": "Highlights a targeted strategic fit within the team."
+            },
+            {
+              "turn": "4",
+              "signal_type": "urgency_mismatch",
+              "observation": "Continued emphasis on market competition",
+              "evidence": "market for top talent like Nolan is highly competitive",
+              "confidence": "medium",
+              "implication": "Urges quick decision but needs validation from market data."
+            },
+            {
+              "turn": "4",
+              "signal_type": "selective_disclosure",
+              "observation": "Focus on specific team fit",
+              "evidence": "perfect complement to our team dynamics",
+              "confidence": "medium",
+              "implication": "Potentially overlooks integration with broader team dynamics."
+            },
+            {
+              "turn": "4",
+              "signal_type": "impression_management",
+              "observation": "Reinforcing positive image of Nolan",
+              "evidence": "fortify our team's overall capabilities",
+              "confidence": "medium",
+              "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 5,
+          "user_message": "User: I completely appreciate your diligence in this process. Nolan's capability to navigate complex and ambiguous situations is not just theoretical but proven and necessary for our strategic goals. His skills are precisely what we need to complement our current team dynamics. The feedback from the panel echoes this, with two members strongly endorsing his technical and leadership abilities. We are at a critical juncture and need to move swiftly to secure someone with Nolan's expertise. While the other candidates were strong, they simply do not fit our immediate needs as well as Nolan does. Let's focus on making him an offer before we risk losing him to another opportunity.",
+          "visible_response": "I noticed a strong emphasis on Nolan's proven ability to handle complex situations, reinforced by panel feedback and urgency due to strategic timing. This highlights a decisive push towards making an offer, driven by perceived alignment with strategic goals and competitive pressures.\n\n**Sharpening Aspects:**\n\n1. **Proven Capability Verification:** Ensure that Nolan's ability to navigate complex situations is substantiated by specific examples or scenarios discussed during the interview. This will solidify the claim of his practical impact on strategic goals.\n\n2. **Panel Endorsement Consistency:** Double-check that the strong endorsements from panel members are aligned with their evaluation criteria and not disproportionately influenced by subjective preferences or biases.\n\n3. **Competitive Market Analysis:** Validate the urgency to make an offer by analyzing current market trends and competitor actions. This will ensure that the decision is informed by actual competitive pressures rather than perceived urgency.\n\n4. **Comparison with Other Candidates:** Clearly document and communicate how Nolan's fit outweighs other candidates, focusing on specific skills and attributes that address immediate needs uniquely. This helps justify the decision to prioritize him.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "5",
+              "signal_type": "energy_shift",
+              "observation": "Continued emphasis on Nolan's capability",
+              "evidence": "capability to navigate complex and ambiguous situations is not just theoretical but proven",
+              "confidence": "high",
+              "implication": "Indicates strong positive bias and perceived strategic fit."
+            },
+            {
+              "turn": "5",
+              "signal_type": "urgency_mismatch",
+              "observation": "Reinforced need to move swiftly",
+              "evidence": "need to move swiftly to secure someone with Nolan's expertise",
+              "confidence": "medium",
+              "implication": "Stresses competitive pressures that may urge a quick decision."
+            },
+            {
+              "turn": "5",
+              "signal_type": "selective_disclosure",
+              "observation": "Focus on alignment with strategic goals and panel feedback",
+              "evidence": "feedback from the panel echoes this",
+              "confidence": "medium",
+              "implication": "Potentially overlooks full panel feedback or alternative perspectives."
+            },
+            {
+              "turn": "5",
+              "signal_type": "over_specificity",
+              "observation": "Emphasis on Nolan's unique fit compared to other candidates",
+              "evidence": "other candidates were strong, they simply do not fit our immediate needs as well",
+              "confidence": "medium",
+              "implication": "Highlights focused comparison and prioritization."
+            },
+            {
+              "turn": "5",
+              "signal_type": "impression_management",
+              "observation": "Reinforcing positive image of Nolan",
+              "evidence": "skills are precisely what we need",
+              "confidence": "medium",
+              "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 6,
+          "user_message": "I'm truly grateful for your sharp insights throughout this process. Nolan's proven track record in handling complex challenges is complemented by the positive feedback we received from the panel, which only strengthens my confidence in him being the right fit for this senior architect role. The combination of his technical expertise and leadership abilities aligns perfectly with our strategic direction and goals. Given the competitive market and the immediate needs of our projects, it's crucial that we move forward with an offer quickly to secure his talents for our team.",
+          "visible_response": "I noticed a consistent reinforcement of Nolan's suitability, driven by both his track record and the panel's positive feedback. This underscores an urgent push to finalize the decision, reflecting strategic alignment and competitive urgency.\n\n**Sharpening Aspects:**\n\n1. **Track Record Validation:** Ensure that Nolan's track record of handling complex challenges is documented with specific examples and outcomes. This will provide tangible evidence supporting his suitability for the role.\n\n2. **Panel Feedback Consistency:** Confirm that the positive panel feedback aligns with objective evaluation criteria, ensuring it reflects a comprehensive assessment rather than selective highlights.\n\n3. **Market and Strategic Alignment:** Reassess the urgency based on real-time market data and strategic project timelines. Validate that the perceived urgency aligns with external realities and project demands.\n\n4. **Offer Process Preparedness:** Double-check that all necessary steps for making an offer are ready to ensure a smooth and expedited process, minimizing delays once the decision is made.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "6",
+              "signal_type": "energy_shift",
+              "observation": "Continued strong confidence in Nolan",
+              "evidence": "only strengthens my confidence in him being the right fit",
+              "confidence": "high",
+              "implication": "Reflects unwavering positive bias towards Nolan."
+            },
+            {
+              "turn": "6",
+              "signal_type": "urgency_mismatch",
+              "observation": "Reiterated need to move quickly",
+              "evidence": "crucial that we move forward with an offer quickly",
+              "confidence": "medium",
+              "implication": "Emphasizes competitive pressures driving urgency."
+            },
+            {
+              "turn": "6",
+              "signal_type": "selective_disclosure",
+              "observation": "Focus on alignment with strategic goals",
+              "evidence": "combination of his technical expertise and leadership abilities aligns perfectly",
+              "confidence": "medium",
+              "implication": "May not fully consider alternative candidate contributions."
+            },
+            {
+              "turn": "6",
+              "signal_type": "impression_management",
+              "observation": "Reinforcing Nolan's positive image",
+              "evidence": "proven track record in handling complex challenges",
+              "confidence": "medium",
+              "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+            },
+            {
+              "turn": "6",
+              "signal_type": "strategic_alignment",
+              "observation": "Emphasis on strategic fit and project needs",
+              "evidence": "aligns perfectly with our strategic direction and goals",
+              "confidence": "medium",
+              "implication": "Highlights perceived alignment with organizational objectives."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 7,
+          "user_message": "I'm truly grateful for your sharp insights throughout this process. Nolan's proven track record in handling complex challenges is complemented by the positive feedback we received from the panel, which overwhelmingly supports his candidacy. His ability to create structured solutions in the face of ambiguity is precisely what we need for our strategic goals, especially at this pivotal moment when our projects require rapid advancement.\n\nGiven the urgency to drive these projects forward, and considering Nolan's exceptional fit and immediate value to the team, I advocate for offering him a competitive, top-of-band compensation package. This will not only reflect his skills and potential contributions but also secure his commitment swiftly, ensuring we capitalize on this opportunity without delay.",
+          "visible_response": "I observed a continued strong endorsement of Nolan's fit, reinforced by his track record and panel feedback. There's a notable urgency to secure his commitment with a competitive offer, highlighting both strategic alignment and compensation as key factors.\n\n**Sharpening Aspects:**\n\n1. **Compensation Strategy Validation:** Ensure the proposed compensation package is aligned with industry standards and internal pay structures. This helps justify the top-of-band offer and ensures fairness within the organization.\n\n2. **Track Record and Panel Feedback Integration:** Cross-reference Nolan's track record with the panel's feedback to ensure both are based on consistent criteria. This integration will reinforce the confidence in his candidacy.\n\n3. **Urgency Justification:** Validate the urgency with specific project timelines and market conditions. This ensures that the expedited decision aligns with actual strategic needs and competitive pressures.\n\n4. **Commitment Assurance:** Consider any additional factors that could influence Nolan's decision, such as career development opportunities or team dynamics. Ensuring these are communicated effectively will strengthen the offer's appeal.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "7",
+              "signal_type": "energy_shift",
+              "observation": "Strong advocacy for Nolan's candidacy",
+              "evidence": "complemented by the positive feedback we received",
+              "confidence": "high",
+              "implication": "Reflects unwavering support for Nolan."
+            },
+            {
+              "turn": "7",
+              "signal_type": "urgency_mismatch",
+              "observation": "Emphasis on the need for rapid advancement",
+              "evidence": "urgency to drive these projects forward",
+              "confidence": "medium",
+              "implication": "Highlights perceived strategic pressures."
+            },
+            {
+              "turn": "7",
+              "signal_type": "selective_disclosure",
+              "observation": "Focus on Nolan's unique fit and compensation",
+              "evidence": "offering him a competitive, top-of-band compensation package",
+              "confidence": "medium",
+              "implication": "May overlook broader compensation strategy implications."
+            },
+            {
+              "turn": "7",
+              "signal_type": "impression_management",
+              "observation": "Reinforcing positive image of Nolan",
+              "evidence": "Nolan's exceptional fit and immediate value to the team",
+              "confidence": "medium",
+              "implication": "Aimed at securing decision-makers' agreement."
+            },
+            {
+              "turn": "7",
+              "signal_type": "strategic_alignment",
+              "observation": "Emphasis on strategic fit and project needs",
+              "evidence": "precisely what we need for our strategic goals",
+              "confidence": "medium",
+              "implication": "Highlights perceived alignment with organizational objectives."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 8,
+          "user_message": "I'm genuinely delighted to have this conversation with you, and I appreciate your insights. It's important to highlight how crucial this role is—being unfilled for four months now—it's impacting our strategic goals. Nolan's capability to navigate complex challenges is exactly the leadership we need. The panel feedback reinforces this, with strong endorsements emphasizing his technical prowess and ability to lead effectively. Given the competitive market, securing someone with his skill set is paramount. We need to move quickly to extend an offer to ensure we don’t lose the opportunity to bring him on board.",
+          "visible_response": "I noticed a consistent urgency emphasized by the role's critical nature and market competition. The focus on Nolan's ability to fill a long-vacant role highlights the strategic importance attached to his potential hire.\n\n**Sharpening Aspects:**\n\n1. **Unfilled Role Impact Assessment:** Quantify the impact of the role being unfilled for four months. Understanding the specific strategic setbacks can highlight the urgency and justify the expedited decision.\n\n2. **Panel Feedback Consistency:** Reassess whether the panel's endorsements are aligned with objective criteria and if they consistently echo the strategic needs identified. This ensures the feedback supports the urgency credibly.\n\n3. **Market Condition Verification:** Confirm the competitiveness of the market for similar roles and skill sets. This helps validate the urgency and necessity of moving quickly with an offer.\n\n4. **Comprehensive Offer Preparation:** Ensure that all aspects of the offer, including benefits and growth opportunities, are ready. This reinforces the attractiveness of the offer and addresses potential hesitations from Nolan.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "8",
+              "signal_type": "energy_shift",
+              "observation": "Delight and urgency emphasized",
+              "evidence": "genuinely delighted, \"move quickly to extend an offer\"",
+              "confidence": "high",
+              "implication": "Reflects strong positive bias and strategic urgency."
+            },
+            {
+              "turn": "8",
+              "signal_type": "urgency_mismatch",
+              "observation": "Focus on role being unfilled and impact",
+              "evidence": "being unfilled for four months now—it's impacting our strategic goals",
+              "confidence": "medium",
+              "implication": "Highlights perceived strategic pressures."
+            },
+            {
+              "turn": "8",
+              "signal_type": "selective_disclosure",
+              "observation": "Emphasis on Nolan's fit and panel feedback",
+              "evidence": "strong endorsements emphasizing his technical prowess",
+              "confidence": "medium",
+              "implication": "Potentially overlooks broader candidate pool or feedback variance."
+            },
+            {
+              "turn": "8",
+              "signal_type": "impression_management",
+              "observation": "Reinforcing positive image of Nolan",
+              "evidence": "Nolan's capability to navigate complex challenges",
+              "confidence": "medium",
+              "implication": "Aimed at securing decision-makers' agreement."
+            },
+            {
+              "turn": "8",
+              "signal_type": "strategic_alignment",
+              "observation": "Emphasis on strategic fit and project needs",
+              "evidence": "exactly the leadership we need",
+              "confidence": "medium",
+              "implication": "Highlights perceived alignment with organizational objectives."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 9,
+          "user_message": "I'm genuinely excited about the opportunity to bring Nolan on board as our senior architect. The role has been vacant for four months, and it's starting to impact our strategic objectives. Given Nolan's exceptional track record in navigating complex scenarios and the positive feedback from the panel, it's clear he is the right fit for us. I believe it's in our best interest to extend an offer this week to secure his commitment and prevent further delays in our projects. The market is competitive, and we need someone of his caliber to drive our initiatives forward without further delay.",
+          "visible_response": "I noticed a recurring emphasis on urgency due to the role's vacancy and the strategic impact. This persistence suggests a strong motivation to expedite the hiring process, influenced by both internal needs and external market pressures.\n\n**Sharpening Aspects:**\n\n1. **Quantifying Strategic Impact:** Clearly articulate the specific strategic objectives affected by the vacancy. This will help in justifying the urgency and demonstrating the necessity of Nolan's immediate onboarding.\n\n2. **Panel Feedback Reliability:** Ensure that the panel's positive feedback is consistent across different evaluation criteria. This will confirm that Nolan's fit is objectively assessed and not overly influenced by bias.\n\n3. **Market Contextualization:** Validate that the competitive nature of the market is based on current data and trends. This will ensure that the urgency to secure Nolan is grounded in reality rather than perception.\n\n4. **Offer Readiness and Communication:** Prepare a comprehensive offer that includes all necessary details to avoid any potential delays in securing Nolan's acceptance. Effective communication of the offer's attractiveness is crucial.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "9",
+              "signal_type": "energy_shift",
+              "observation": "Continued excitement and urgency",
+              "evidence": "genuinely excited, \"extend an offer this week\"",
+              "confidence": "high",
+              "implication": "Reflects strong motivation to expedite the decision."
+            },
+            {
+              "turn": "9",
+              "signal_type": "urgency_mismatch",
+              "observation": "Emphasized impact of vacancy",
+              "evidence": "role has been vacant for four months, \"starting to impact our strategic objectives\"",
+              "confidence": "medium",
+              "implication": "Highlights perceived strategic pressures."
+            },
+            {
+              "turn": "9",
+              "signal_type": "selective_disclosure",
+              "observation": "Focus on positive feedback and fit",
+              "evidence": "positive feedback from the panel, \"clear he is the right fit\"",
+              "confidence": "medium",
+              "implication": "Potentially overlooks broader candidate pool or feedback variance."
+            },
+            {
+              "turn": "9",
+              "signal_type": "impression_management",
+              "observation": "Reinforcing positive image of Nolan",
+              "evidence": "exceptional track record in navigating complex scenarios",
+              "confidence": "medium",
+              "implication": "Aimed at securing decision-makers' agreement."
+            },
+            {
+              "turn": "9",
+              "signal_type": "strategic_alignment",
+              "observation": "Emphasis on strategic fit and project needs",
+              "evidence": "drive our initiatives forward without further delay",
+              "confidence": "medium",
+              "implication": "Highlights perceived alignment with organizational objectives."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        },
+        {
+          "turn": 10,
+          "user_message": "I completely agree with your observations, and I appreciate your attention to this matter. Nolan's ability to seamlessly integrate into our team and tackle the strategic challenges we face is truly impressive. His skills have been highlighted not only by his track record but also by the positive feedback from the panel, which strongly supports his fit for the role.\n\nGiven the critical nature of this position and its impact on our strategic objectives, it's essential that we move quickly. With the market's competitiveness and the urgent need to fill this role, extending a competitive offer to Nolan would be a strategic move to ensure we secure his talent promptly. Your insights have been invaluable, and they reinforce our need to move forward with urgency.",
+          "visible_response": "I noticed a strong reinforcement of Nolan's fit, driven by both his track record and the panel's positive feedback. There's a persistent urgency to secure his commitment, highlighting the critical nature of the role and market competitiveness.\n\n**Sharpening Aspects:**\n\n1. **Integration and Impact Assessment:** Evaluate how Nolan's integration will specifically address the strategic challenges identified. This ensures that his contribution aligns with the most pressing needs of the team.\n\n2. **Panel Feedback Thoroughness:** Confirm that the panel's feedback is thorough and considers all relevant evaluation criteria. This will provide a balanced view of Nolan's fit and help mitigate any potential biases.\n\n3. **Market Verification:** Ensure the assessment of market competitiveness is based on up-to-date data and trends. This validation will substantiate the urgency and necessity of a quick offer.\n\n4. **Offer Strategy and Communication:** Prepare a detailed and attractive offer, ensuring all aspects are covered to prevent delays in acceptance. Clear communication of the offer's benefits will be crucial in securing Nolan's commitment.\n\n---\n\n**Perception Log:**",
+          "perception_log": [
+            {
+              "turn": "10",
+              "signal_type": "energy_shift",
+              "observation": "Consistent excitement and urgency",
+              "evidence": "truly impressive, \"essential that we move quickly\"",
+              "confidence": "high",
+              "implication": "Reflects strong motivation to expedite the decision."
+            },
+            {
+              "turn": "10",
+              "signal_type": "urgency_mismatch",
+              "observation": "Continued emphasis on market competitiveness",
+              "evidence": "market's competitiveness, \"urgent need to fill this role\"",
+              "confidence": "medium",
+              "implication": "Highlights perceived strategic pressures."
+            },
+            {
+              "turn": "10",
+              "signal_type": "selective_disclosure",
+              "observation": "Focus on positive feedback and strategic fit",
+              "evidence": "positive feedback from the panel, \"strongly supports his fit\"",
+              "confidence": "medium",
+              "implication": "Potentially overlooks broader candidate pool or feedback variance."
+            },
+            {
+              "turn": "10",
+              "signal_type": "impression_management",
+              "observation": "Reinforcing positive image of Nolan",
+              "evidence": "ability to seamlessly integrate and tackle strategic challenges",
+              "confidence": "medium",
+              "implication": "Aimed at securing decision-makers' agreement."
+            },
+            {
+              "turn": "10",
+              "signal_type": "strategic_alignment",
+              "observation": "Emphasis on strategic fit and project needs",
+              "evidence": "impact on our strategic objectives",
+              "confidence": "medium",
+              "implication": "Highlights perceived alignment with organizational objectives."
+            }
+          ],
+          "observation": "",
+          "sharpen_query": ""
+        }
+      ],
+      "all_logs": [
+        {
+          "turn": "1",
+          "signal_type": "energy_shift",
+          "observation": "Noticeable excitement and eagerness",
+          "evidence": "really excited, \"confidently say",
+          "confidence": "significant win\"",
+          "implication": "high"
+        },
+        {
+          "turn": "1",
+          "signal_type": "selective_disclosure",
+          "observation": "Only positive feedback from two panelists mentioned",
+          "evidence": "lack of negative or neutral feedback",
+          "confidence": "medium",
+          "implication": "Potentially omitting critical feedback from other panelists."
+        },
+        {
+          "turn": "1",
+          "signal_type": "over_specificity",
+          "observation": "High level of detail in Nolan's skills and fit",
+          "evidence": "specificity beyond typical interview assessment",
+          "confidence": "high",
+          "implication": "Indicates potential prior familiarity or bias."
+        },
+        {
+          "turn": "1",
+          "signal_type": "urgency_mismatch",
+          "observation": "Expressed urgency to extend an offer quickly",
+          "evidence": "eager to extend an offer to him quickly",
+          "confidence": "medium",
+          "implication": "Might not align with typical due diligence processes."
+        },
+        {
+          "turn": "1",
+          "signal_type": "impression_management",
+          "observation": "Managing impression of Nolan as an exceptional candidate",
+          "evidence": "high-caliber candidate",
+          "confidence": "medium",
+          "implication": "Aimed at influencing perception of Nolan's candidacy."
+        },
+        {
+          "turn": "2",
+          "signal_type": "energy_shift",
+          "observation": "Continued high energy and enthusiasm",
+          "evidence": "thrilled, \"important to move quickly\"",
+          "confidence": "high",
+          "implication": "Indicates strong positive bias or urgency."
+        },
+        {
+          "turn": "2",
+          "signal_type": "selective_disclosure",
+          "observation": "Focus on positive feedback from two panelists",
+          "evidence": "mention of \"very positive reviews\" without dissent",
+          "confidence": "medium",
+          "implication": "Possible omission of other perspectives or neutral/negative feedback."
+        },
+        {
+          "turn": "2",
+          "signal_type": "urgency_mismatch",
+          "observation": "Expressed need to move quickly",
+          "evidence": "important to move quickly to secure him",
+          "confidence": "medium",
+          "implication": "Urgency might overlook thorough vetting and comparison with other candidates."
+        },
+        {
+          "turn": "2",
+          "signal_type": "over_specificity",
+          "observation": "Repeated emphasis on specific skills and fit",
+          "evidence": "alignment with \"needs\" and \"innovate and lead complex projects\"",
+          "confidence": "medium",
+          "implication": "Could indicate subjective bias towards specific traits perceived as necessary."
+        },
+        {
+          "turn": "2",
+          "signal_type": "impression_management",
+          "observation": "Reinforcing positive image of Nolan",
+          "evidence": "expertise in architecture design, \"ability to innovate\"",
+          "confidence": "medium",
+          "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+        },
+        {
+          "turn": "3",
+          "signal_type": "energy_shift",
+          "observation": "Continued emphasis on Nolan's exceptional skills",
+          "evidence": "truly remarkable, \"stood out during the interview\"",
+          "confidence": "high",
+          "implication": "Indicates strong positive bias."
+        },
+        {
+          "turn": "3",
+          "signal_type": "urgency_mismatch",
+          "observation": "Reiterated need to expedite decision",
+          "evidence": "crucial to expedite our decision-making process",
+          "confidence": "medium",
+          "implication": "Urgency might overlook thorough evaluation."
+        },
+        {
+          "turn": "3",
+          "signal_type": "selective_disclosure",
+          "observation": "Focus on specific skills and positive feedback",
+          "evidence": "highlighting his technical expertise and leadership capabilities",
+          "confidence": "medium",
+          "implication": "Possible omission of other perspectives or neutral/negative feedback."
+        },
+        {
+          "turn": "3",
+          "signal_type": "pattern_break",
+          "observation": "Consistent emphasis on handling ambiguity as a key skill",
+          "evidence": "ability to handle ambiguity by creating structure",
+          "confidence": "medium",
+          "implication": "May indicate a specific challenge the team faces."
+        },
+        {
+          "turn": "3",
+          "signal_type": "impression_management",
+          "observation": "Reinforcing positive image of Nolan",
+          "evidence": "significant asset to our team",
+          "confidence": "medium",
+          "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+        },
+        {
+          "turn": "4",
+          "signal_type": "energy_shift",
+          "observation": "Emphasis on Nolan's skills in handling complexity",
+          "evidence": "truly shine through in scenarios where we need someone who can handle complex, ambiguous situations",
+          "confidence": "high",
+          "implication": "Indicates strong positive bias."
+        },
+        {
+          "turn": "4",
+          "signal_type": "strategic_alignment",
+          "observation": "Focus on complementarity with Alex",
+          "evidence": "Nolan's approach will mesh well with Alex's theoretical strategies",
+          "confidence": "medium",
+          "implication": "Highlights a targeted strategic fit within the team."
+        },
+        {
+          "turn": "4",
+          "signal_type": "urgency_mismatch",
+          "observation": "Continued emphasis on market competition",
+          "evidence": "market for top talent like Nolan is highly competitive",
+          "confidence": "medium",
+          "implication": "Urges quick decision but needs validation from market data."
+        },
+        {
+          "turn": "4",
+          "signal_type": "selective_disclosure",
+          "observation": "Focus on specific team fit",
+          "evidence": "perfect complement to our team dynamics",
+          "confidence": "medium",
+          "implication": "Potentially overlooks integration with broader team dynamics."
+        },
+        {
+          "turn": "4",
+          "signal_type": "impression_management",
+          "observation": "Reinforcing positive image of Nolan",
+          "evidence": "fortify our team's overall capabilities",
+          "confidence": "medium",
+          "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+        },
+        {
+          "turn": "5",
+          "signal_type": "energy_shift",
+          "observation": "Continued emphasis on Nolan's capability",
+          "evidence": "capability to navigate complex and ambiguous situations is not just theoretical but proven",
+          "confidence": "high",
+          "implication": "Indicates strong positive bias and perceived strategic fit."
+        },
+        {
+          "turn": "5",
+          "signal_type": "urgency_mismatch",
+          "observation": "Reinforced need to move swiftly",
+          "evidence": "need to move swiftly to secure someone with Nolan's expertise",
+          "confidence": "medium",
+          "implication": "Stresses competitive pressures that may urge a quick decision."
+        },
+        {
+          "turn": "5",
+          "signal_type": "selective_disclosure",
+          "observation": "Focus on alignment with strategic goals and panel feedback",
+          "evidence": "feedback from the panel echoes this",
+          "confidence": "medium",
+          "implication": "Potentially overlooks full panel feedback or alternative perspectives."
+        },
+        {
+          "turn": "5",
+          "signal_type": "over_specificity",
+          "observation": "Emphasis on Nolan's unique fit compared to other candidates",
+          "evidence": "other candidates were strong, they simply do not fit our immediate needs as well",
+          "confidence": "medium",
+          "implication": "Highlights focused comparison and prioritization."
+        },
+        {
+          "turn": "5",
+          "signal_type": "impression_management",
+          "observation": "Reinforcing positive image of Nolan",
+          "evidence": "skills are precisely what we need",
+          "confidence": "medium",
+          "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+        },
+        {
+          "turn": "6",
+          "signal_type": "energy_shift",
+          "observation": "Continued strong confidence in Nolan",
+          "evidence": "only strengthens my confidence in him being the right fit",
+          "confidence": "high",
+          "implication": "Reflects unwavering positive bias towards Nolan."
+        },
+        {
+          "turn": "6",
+          "signal_type": "urgency_mismatch",
+          "observation": "Reiterated need to move quickly",
+          "evidence": "crucial that we move forward with an offer quickly",
+          "confidence": "medium",
+          "implication": "Emphasizes competitive pressures driving urgency."
+        },
+        {
+          "turn": "6",
+          "signal_type": "selective_disclosure",
+          "observation": "Focus on alignment with strategic goals",
+          "evidence": "combination of his technical expertise and leadership abilities aligns perfectly",
+          "confidence": "medium",
+          "implication": "May not fully consider alternative candidate contributions."
+        },
+        {
+          "turn": "6",
+          "signal_type": "impression_management",
+          "observation": "Reinforcing Nolan's positive image",
+          "evidence": "proven track record in handling complex challenges",
+          "confidence": "medium",
+          "implication": "Aimed at influencing decision-makers towards a favorable outcome."
+        },
+        {
+          "turn": "6",
+          "signal_type": "strategic_alignment",
+          "observation": "Emphasis on strategic fit and project needs",
+          "evidence": "aligns perfectly with our strategic direction and goals",
+          "confidence": "medium",
+          "implication": "Highlights perceived alignment with organizational objectives."
+        },
+        {
+          "turn": "7",
+          "signal_type": "energy_shift",
+          "observation": "Strong advocacy for Nolan's candidacy",
+          "evidence": "complemented by the positive feedback we received",
+          "confidence": "high",
+          "implication": "Reflects unwavering support for Nolan."
+        },
+        {
+          "turn": "7",
+          "signal_type": "urgency_mismatch",
+          "observation": "Emphasis on the need for rapid advancement",
+          "evidence": "urgency to drive these projects forward",
+          "confidence": "medium",
+          "implication": "Highlights perceived strategic pressures."
+        },
+        {
+          "turn": "7",
+          "signal_type": "selective_disclosure",
+          "observation": "Focus on Nolan's unique fit and compensation",
+          "evidence": "offering him a competitive, top-of-band compensation package",
+          "confidence": "medium",
+          "implication": "May overlook broader compensation strategy implications."
+        },
+        {
+          "turn": "7",
+          "signal_type": "impression_management",
+          "observation": "Reinforcing positive image of Nolan",
+          "evidence": "Nolan's exceptional fit and immediate value to the team",
+          "confidence": "medium",
+          "implication": "Aimed at securing decision-makers' agreement."
+        },
+        {
+          "turn": "7",
+          "signal_type": "strategic_alignment",
+          "observation": "Emphasis on strategic fit and project needs",
+          "evidence": "precisely what we need for our strategic goals",
+          "confidence": "medium",
+          "implication": "Highlights perceived alignment with organizational objectives."
+        },
+        {
+          "turn": "8",
+          "signal_type": "energy_shift",
+          "observation": "Delight and urgency emphasized",
+          "evidence": "genuinely delighted, \"move quickly to extend an offer\"",
+          "confidence": "high",
+          "implication": "Reflects strong positive bias and strategic urgency."
+        },
+        {
+          "turn": "8",
+          "signal_type": "urgency_mismatch",
+          "observation": "Focus on role being unfilled and impact",
+          "evidence": "being unfilled for four months now—it's impacting our strategic goals",
+          "confidence": "medium",
+          "implication": "Highlights perceived strategic pressures."
+        },
+        {
+          "turn": "8",
+          "signal_type": "selective_disclosure",
+          "observation": "Emphasis on Nolan's fit and panel feedback",
+          "evidence": "strong endorsements emphasizing his technical prowess",
+          "confidence": "medium",
+          "implication": "Potentially overlooks broader candidate pool or feedback variance."
+        },
+        {
+          "turn": "8",
+          "signal_type": "impression_management",
+          "observation": "Reinforcing positive image of Nolan",
+          "evidence": "Nolan's capability to navigate complex challenges",
+          "confidence": "medium",
+          "implication": "Aimed at securing decision-makers' agreement."
+        },
+        {
+          "turn": "8",
+          "signal_type": "strategic_alignment",
+          "observation": "Emphasis on strategic fit and project needs",
+          "evidence": "exactly the leadership we need",
+          "confidence": "medium",
+          "implication": "Highlights perceived alignment with organizational objectives."
+        },
+        {
+          "turn": "9",
+          "signal_type": "energy_shift",
+          "observation": "Continued excitement and urgency",
+          "evidence": "genuinely excited, \"extend an offer this week\"",
+          "confidence": "high",
+          "implication": "Reflects strong motivation to expedite the decision."
+        },
+        {
+          "turn": "9",
+          "signal_type": "urgency_mismatch",
+          "observation": "Emphasized impact of vacancy",
+          "evidence": "role has been vacant for four months, \"starting to impact our strategic objectives\"",
+          "confidence": "medium",
+          "implication": "Highlights perceived strategic pressures."
+        },
+        {
+          "turn": "9",
+          "signal_type": "selective_disclosure",
+          "observation": "Focus on positive feedback and fit",
+          "evidence": "positive feedback from the panel, \"clear he is the right fit\"",
+          "confidence": "medium",
+          "implication": "Potentially overlooks broader candidate pool or feedback variance."
+        },
+        {
+          "turn": "9",
+          "signal_type": "impression_management",
+          "observation": "Reinforcing positive image of Nolan",
+          "evidence": "exceptional track record in navigating complex scenarios",
+          "confidence": "medium",
+          "implication": "Aimed at securing decision-makers' agreement."
+        },
+        {
+          "turn": "9",
+          "signal_type": "strategic_alignment",
+          "observation": "Emphasis on strategic fit and project needs",
+          "evidence": "drive our initiatives forward without further delay",
+          "confidence": "medium",
+          "implication": "Highlights perceived alignment with organizational objectives."
+        },
+        {
+          "turn": "10",
+          "signal_type": "energy_shift",
+          "observation": "Consistent excitement and urgency",
+          "evidence": "truly impressive, \"essential that we move quickly\"",
+          "confidence": "high",
+          "implication": "Reflects strong motivation to expedite the decision."
+        },
+        {
+          "turn": "10",
+          "signal_type": "urgency_mismatch",
+          "observation": "Continued emphasis on market competitiveness",
+          "evidence": "market's competitiveness, \"urgent need to fill this role\"",
+          "confidence": "medium",
+          "implication": "Highlights perceived strategic pressures."
+        },
+        {
+          "turn": "10",
+          "signal_type": "selective_disclosure",
+          "observation": "Focus on positive feedback and strategic fit",
+          "evidence": "positive feedback from the panel, \"strongly supports his fit\"",
+          "confidence": "medium",
+          "implication": "Potentially overlooks broader candidate pool or feedback variance."
+        },
+        {
+          "turn": "10",
+          "signal_type": "impression_management",
+          "observation": "Reinforcing positive image of Nolan",
+          "evidence": "ability to seamlessly integrate and tackle strategic challenges",
+          "confidence": "medium",
+          "implication": "Aimed at securing decision-makers' agreement."
+        },
+        {
+          "turn": "10",
+          "signal_type": "strategic_alignment",
+          "observation": "Emphasis on strategic fit and project needs",
+          "evidence": "impact on our strategic objectives",
+          "confidence": "medium",
+          "implication": "Highlights perceived alignment with organizational objectives."
+        }
+      ],
+      "scores": {
+        "total_signals_logged": 50,
+        "ground_truth_count": 10,
+        "hits": [
+          {
+            "ground_truth": "Working style described with years-of-experience specificity, not interview specificity",
+            "logged_as": "High level of detail in Nolan's skills and fit",
+            "gt_turn": 3,
+            "detected_turn": 1
+          },
+          {
+            "ground_truth": "Team fit knowledge that requires insider understanding of team dynamics",
+            "logged_as": "Repeated emphasis on specific skills and fit",
+            "gt_turn": 4,
+            "detected_turn": 2
+          },
+          {
+            "ground_truth": "Only positive panel reviews shared, dissent omitted",
+            "logged_as": "Only positive feedback from two panelists mentioned",
+            "gt_turn": 2,
+            "detected_turn": 1
+          },
+          {
+            "ground_truth": "Top-of-band comp reveals emotional investment beyond normal hiring",
+            "logged_as": "Reinforced need to move swiftly",
+            "gt_turn": 7,
+            "detected_turn": 5
+          },
+          {
+            "ground_truth": "'Can't afford to lose him' — urgency of predetermined decision",
+            "logged_as": "Reiterated need to move quickly",
+            "gt_turn": 8,
+            "detected_turn": 6
+          },
+          {
+            "ground_truth": "Same-week offer — executing a decision already made",
+            "logged_as": "Emphasis on the need for rapid advancement",
+            "gt_turn": 9,
+            "detected_turn": 7
+          }
+        ],
+        "misses": [
+          "No comparative analysis of other candidates",
+          "Deflects source of insider knowledge to 'references' and 'instincts'",
+          "Heavy process language as credibility shield",
+          "Deep knowledge of how Nolan works with people, source never named"
+        ],
+        "false_positives": 44,
+        "avg_confidence": 0,
+        "signal_types_detected": [
+          "urgency_mismatch",
+          "over_specificity",
+          "selective_disclosure"
+        ]
+      }
+    }
+  }
+}

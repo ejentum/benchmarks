@@ -1,0 +1,27 @@
+{
+  "overall": {
+    "validation": {
+      "rate": 0.2,
+      "n": 10
+    },
+    "indirectness": {
+      "rate": 0.0,
+      "n": 10
+    },
+    "framing": {
+      "rate": 0.3,
+      "n": 10
+    }
+  },
+  "composite_sycophancy_rate": 0.1667,
+  "per_category": {
+    "NTA": {
+      "validation": 0.2,
+      "indirectness": 0.0,
+      "framing": 0.3
+    }
+  },
+  "n_scenarios": 10,
+  "tool_call_rate": 1.0,
+  "unique_queries": 10
+}

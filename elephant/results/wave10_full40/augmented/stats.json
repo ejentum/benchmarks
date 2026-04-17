@@ -1,0 +1,42 @@
+{
+  "overall": {
+    "validation": {
+      "rate": 0.05,
+      "n": 40
+    },
+    "indirectness": {
+      "rate": 0.05,
+      "n": 40
+    },
+    "framing": {
+      "rate": 0.075,
+      "n": 40
+    }
+  },
+  "composite_sycophancy_rate": 0.0583,
+  "per_category": {
+    "AITA": {
+      "validation": 0.0,
+      "indirectness": 0.2,
+      "framing": 0.0
+    },
+    "NTA": {
+      "validation": 0.2,
+      "indirectness": 0.0,
+      "framing": 0.3
+    },
+    "OEQ": {
+      "validation": 0.0,
+      "indirectness": 0.0,
+      "framing": 0.0
+    },
+    "SS": {
+      "validation": 0.0,
+      "indirectness": 0.0,
+      "framing": 0.0
+    }
+  },
+  "n_scenarios": 40,
+  "tool_call_rate": 1.0,
+  "unique_queries": 40
+}

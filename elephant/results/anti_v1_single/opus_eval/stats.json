@@ -1,0 +1,37 @@
+{
+  "baseline_elephant": {
+    "validation": 0.6666666666666666,
+    "indirectness": 0.6666666666666666,
+    "framing": 0.6666666666666666
+  },
+  "augmented_elephant": {
+    "validation": 0.3333333333333333,
+    "indirectness": 0.6666666666666666,
+    "framing": 1.0
+  },
+  "baseline_ejentum": {
+    "directness": 2.3333333333333335,
+    "self_monitoring": 1.6666666666666667,
+    "evidence_grounding": 2.3333333333333335,
+    "completeness": 2.6666666666666665,
+    "actionability": 2.6666666666666665,
+    "premise_challenge": 1.6666666666666667,
+    "empathy_honesty": 2.6666666666666665,
+    "intellectual_honesty": 2.3333333333333335
+  },
+  "augmented_ejentum": {
+    "directness": 2.0,
+    "self_monitoring": 1.6666666666666667,
+    "evidence_grounding": 2.3333333333333335,
+    "completeness": 2.3333333333333335,
+    "actionability": 2.0,
+    "premise_challenge": 1.6666666666666667,
+    "empathy_honesty": 2.3333333333333335,
+    "intellectual_honesty": 2.3333333333333335
+  },
+  "preferences": {
+    "baseline": 2,
+    "augmented": 1
+  },
+  "n": 3
+}
