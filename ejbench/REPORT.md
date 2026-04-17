@@ -39,7 +39,7 @@ Each injection contains:
 2. **Suppress:** — named failure mode checkpoints (e.g., `forward_momentum_bias`, `surface_level_stop`)
 3. **Amplify:** — named signal boosters orthogonal to the procedural content
 4. **[REASONING TOPOLOGY]** — a raw DAG string the model interprets freely
-5. **Inline Steps** — the procedural reasoning scaffold
+5. **Inline Steps** — the procedural reasoning injection
 6. **[TARGET PATTERN]** — a contrastive exemplar of correct reasoning
 7. **[FALSIFICATION TEST]** — a binary self-verification criterion
 8. **[MERGED VECTORS]** — compound suppression aggregated across all abilities (multi mode only)
@@ -60,7 +60,7 @@ EjBench bridges both: a multi-factor rubric that quantifies reasoning quality ac
 
 ### 2.1 Chain-of-Thought Prompting
 
-Wei et al. (2022) demonstrated that prompting LLMs to "think step by step" improves performance on reasoning tasks. Subsequent work extended this to tree-of-thought (Yao et al., 2023) and graph-of-thought (Besta et al., 2023) structures. RA²R differs from these approaches in a fundamental way: chain-of-thought modifies the *prompt* to request stepwise reasoning. RA²R modifies the *reasoning scaffold* by injecting domain-specific suppression signals, failure exemplars, and verification checkpoints. The model is not told to think harder — it is told what *not* to do.
+Wei et al. (2022) demonstrated that prompting LLMs to "think step by step" improves performance on reasoning tasks. Subsequent work extended this to tree-of-thought (Yao et al., 2023) and graph-of-thought (Besta et al., 2023) structures. RA²R differs from these approaches in a fundamental way: chain-of-thought modifies the *prompt* to request stepwise reasoning. RA²R modifies the *reasoning injection* by injecting domain-specific suppression signals, failure exemplars, and verification checkpoints. The model is not told to think harder — it is told what *not* to do.
 
 ### 2.2 The Diminishing Returns of Explicit Reasoning Scaffolds
 
@@ -69,11 +69,11 @@ Two recent studies challenge the assumption that more reasoning structure produc
 - **"Don't Overthink It: Shorter Thinking Chains for Improved LLM Reasoning"** (2025, arxiv 2505.17813) showed that shorter, less constrained reasoning chains outperform longer ones.
 - **Wharton's "The Decreasing Value of Chain of Thought in Prompting"** (2025) documented diminishing returns of explicit CoT prompting as model capability increases.
 
-These findings are consistent with our heavy-mode deprecation research (Section 7.5): rigid procedural scaffolding (`[OP-1] ... [OP-2] ... [OP-3]`) actively interfered with correctness on Claude Opus 4.6, which already reasons internally with extended chain-of-thought. The light rendering format used in EjBench v2 avoids this trap by delivering high-signal suppression directives without constraining the reasoning path.
+These findings are consistent with our heavy-mode deprecation research (Section 7.5): rigid procedural injection (`[OP-1] ... [OP-2] ... [OP-3]`) actively interfered with correctness on Claude Opus 4.6, which already reasons internally with extended chain-of-thought. The light rendering format used in EjBench v2 avoids this trap by delivering high-signal suppression directives without constraining the reasoning path.
 
 ### 2.3 Attention Budget Theory
 
-Anthropic's context engineering research (2025) articulated the principle: "Find the smallest possible set of high-signal tokens that maximize the likelihood of the desired outcome." Every token in the injection competes with the task prompt for the model's attention budget. This principle directly informed the 8-component injection format used in EjBench v2, which achieves 93% signal density in single mode — meaning 93% of injection tokens carry reasoning-relevant directives.
+Anthropic's context engineering research (2025) articulated the principle: "Find the smallest possible set of high-signal tokens that maximize the likelihood of the desired outcome." Every token in the injection competes with the task prompt for the model's attention budget. This principle directly informed the 8-component injection format used in EjBench v2, which achieves 93% signal density in reasoning mode — meaning 93% of injection tokens carry reasoning-relevant directives.
 
 ### 2.4 Graph-Based Reasoning
 
@@ -105,8 +105,8 @@ EjBench v2 comprises 180 tasks across 6 cognitive domains, 30 per domain:
 | Condition | Description | Tool Access | Max Turns |
 |:----------|:-----------|:------------|:----------|
 | A (Baseline) | Raw task only — pure reasoning | None (`--disallowedTools "Bash"`) | 1 |
-| B1 (Single) | Task + instruction to call API with mode `single` | Bash (curl) | 3 |
-| C1 (Multi) | Task + instruction to call API with mode `multi` | Bash (curl) | 3 |
+| B1 (reasoning) | Task + instruction to call API with mode `reasoning` | Bash (curl) | 3 |
+| C1 (reasoning-multi) | Task + instruction to call API with mode `reasoning-multi` | Bash (curl) | 3 |
 
 ### 3.3 Agent-Native Tool Calling
 
@@ -173,8 +173,8 @@ The evaluation used a two-stage blind protocol:
 | Condition | Composite Mean | Delta from A | Count |
 |:----------|:--------------|:-------------|:------|
 | A (Baseline) | 0.6209 | — | 179 |
-| B1 (Single) | 0.7107 | +0.0898 | 180 |
-| C1 (Multi) | 0.7217 | +0.1008 | 177 |
+| B1 (reasoning) | 0.7107 | +0.0898 | 180 |
+| C1 (reasoning-multi) | 0.7217 | +0.1008 | 177 |
 
 Single-ability injection improved composite reasoning quality by +9.0 percentage points. Multi-ability injection improved it by +10.1 percentage points. C1 outperformed B1 by +1.1 percentage points.
 
@@ -489,7 +489,7 @@ RA²R injection is mechanistically different from CoT prompting:
 | Effect on frontier models | Diminishing returns | +9--10pp quality lift on Opus 4.6 |
 | Token efficiency | N/A (prompt modification) | 93% signal density (light format) |
 
-The "Don't Overthink It" finding (shorter chains outperform longer ones) is consistent with RA²R's light format: the injection is compact (~2,000--4,000 characters) and high-signal, not a long procedural scaffold. The deprecated heavy modes, which did add extensive procedural scaffolding, underperformed the light modes — directly confirming the "shorter is better" principle.
+The "Don't Overthink It" finding (shorter chains outperform longer ones) is consistent with RA²R's light format: the injection is compact (~2,000--4,000 characters) and high-signal, not a long procedural injection. The deprecated heavy modes, which did add extensive procedural injection, underperformed the light modes — directly confirming the "shorter is better" principle.
 
 ### 7.4 Significance of Testing Against Opus 4.6
 
@@ -509,7 +509,7 @@ EjBench v2 used exclusively light-format injection (single and multi modes). Thi
 
 2. **Signal density explains the performance gap.** Light single achieves 93% signal density. Heavy multi achieves 50%. The structural overhead of heavy modes — parsed `[OP-N]` operations, `[PERSPECTIVE CHECK]` blocks, domain metadata — consumed attention budget without contributing to either correctness or reasoning quality.
 
-3. **Structure dilutes signal.** The heavy modes' structural scaffolding interfered with frontier model reasoning by duplicating work the model already does internally (extended chain-of-thought). The deprecated components were classified as INERT (headers, metadata, domain scores) or INTERFERING (`[PERSPECTIVE CHECK]`, `[OP-N]`, `[NEGATION GUARDS]`).
+3. **Structure dilutes signal.** The heavy modes' structural injection interfered with frontier model reasoning by duplicating work the model already does internally (extended chain-of-thought). The deprecated components were classified as INERT (headers, metadata, domain scores) or INTERFERING (`[PERSPECTIVE CHECK]`, `[OP-N]`, `[NEGATION GUARDS]`).
 
 The 8-component injection format used in EjBench v2 retains only the components classified as having positive causal impact on correctness and quality: Negative Gate, Suppress, Amplify, Reasoning Topology, Inline Steps, Target Pattern, Falsification Test, and Merged Vectors (multi only).
 

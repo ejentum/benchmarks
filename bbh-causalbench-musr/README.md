@@ -17,10 +17,10 @@ External validation of Ejentum's Logic API on published benchmarks designed by i
 | Condition | Composite | Delta |
 |-----------|----------|-------|
 | Baseline | 0.476 | -- |
-| **Ki** | **0.684** | **+20.8pp** |
-| Haki | 0.562 | +8.6pp |
+| **reasoning** | **0.684** | **+20.8pp** |
+| reasoning-multi | 0.562 | +8.6pp |
 
-Ki dominated on focused tasks. Haki correctness dropped -0.12. Spatial navigation regressed -20.0pp under Haki (5 tasks).
+Single mode dominated on focused tasks. Multi correctness dropped -0.12. Spatial navigation regressed -20.0pp under reasoning-multi (5 tasks).
 
 ## Files
 
@@ -33,5 +33,5 @@ Ki dominated on focused tasks. Haki correctness dropped -0.12. Spatial navigatio
 ## Related Benchmarks
 
 - [EjBench](../ejbench/) -- 180 custom professional tasks, +10.1pp composite
-- [ARC-AGI-3](../arc-agi-3/) -- Interactive multi-step reasoning, scaffold persistence
+- [ARC-AGI-3](../arc-agi-3/) -- Interactive multi-step reasoning, injection persistence
 - [LiveCodeBench Hard](../lcb-hard/) -- 28 hard competitive programming, 85.7% to 100%

@@ -7,18 +7,18 @@ Claude Opus 4.6 with maximum-effort extended thinking solves 85.7% of 28 hard At
 | Condition | Passed | Rate |
 |-----------|--------|------|
 | Baseline (Opus 4.6 max effort) | 24/28 | 85.7% |
-| + Logic API scaffold | 28/28 | **100.0%** |
+| + Logic API injection | 28/28 | **100.0%** |
 | **Delta** | **+4** | **+14.3pp** |
 
 **Zero regressions.** Every task that passed baseline also passed augmented.
 
 ## Blind Evaluation
 
-A blind evaluator scored both solutions per task without knowing which used the scaffold:
+A blind evaluator scored both solutions per task without knowing which used the injection:
 
-- **3.5x magnitude asymmetry.** Average scaffold win: +5.7 points. Average baseline win: -1.6 points.
+- **3.5x magnitude asymmetry.** Average injection win: +5.7 points. Average baseline win: -1.6 points.
 - **Never loses on correctness (2-0) or robustness (4-0).**
-- **Independent bug discovery.** The evaluator traced a fatal sentinel-collision bug in the baseline, scored it 2/10, without knowing which solution used the scaffold.
+- **Independent bug discovery.** The evaluator traced a fatal sentinel-collision bug in the baseline, scored it 2/10, without knowing which solution used the injection.
 
 ## Repository Structure
 
@@ -58,5 +58,5 @@ Task data is not included (LiveCodeBench IP). Download from the [LiveCodeBench H
 
 - [Benchmark report (blog)](https://ejentum.com/blog/livecodebench-hard-28-tasks)
 - [Observations post](https://ejentum.com/blog/what-we-saw-when-opus-thought-harder)
-- [Logic API skill file documentation](https://ejentum.com/docs/agent_skill)
+- [Logic API skill files](https://ejentum.com/docs/skill_unified)
 - [Ejentum](https://ejentum.com)

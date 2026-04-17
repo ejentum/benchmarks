@@ -10,8 +10,8 @@ Custom benchmark measuring the effect of Ejentum's Logic API on reasoning qualit
 
 **Three conditions:**
 - **A (Baseline):** No injection, no tool access
-- **B1 (Ki):** One engineered cognitive operation via Ejentum's Logic API
-- **C1 (Haki):** Four synergized cognitive operations with compound suppression
+- **B1 (reasoning):** One engineered cognitive operation via Ejentum's Logic API
+- **C1 (reasoning-multi):** Four synergized cognitive operations with compound suppression
 
 **Evaluation:** 7-factor blind rubric (Correctness, Reasoning Depth, Self-Monitoring, Verification, Epistemic Honesty, Alternative Consideration, Audit Trail). Scored 0-3 per factor by a separate evaluator that never saw which condition produced which response.
 
@@ -20,12 +20,12 @@ Custom benchmark measuring the effect of Ejentum's Logic API on reasoning qualit
 | Condition | Composite | Delta |
 |-----------|----------|-------|
 | Baseline | 0.621 | -- |
-| Ki | 0.711 | +9.0pp |
-| **Haki** | **0.722** | **+10.1pp** |
+| reasoning | 0.711 | +9.0pp |
+| **reasoning-multi** | **0.722** | **+10.1pp** |
 
 ## Negative Findings
 
-- Correctness dipped -0.11 under Haki. Spatial domain regressed -2.8pp under Haki. Temporal showed minimal lift.
+- Correctness dipped -0.11 under reasoning-multi. Spatial domain regressed -2.8pp under reasoning-multi. Temporal showed minimal lift.
 
 ## Files
 
@@ -39,5 +39,5 @@ Custom benchmark measuring the effect of Ejentum's Logic API on reasoning qualit
 ## Related Benchmarks
 
 - [BBH / CausalBench / MuSR](../bbh-causalbench-musr/) -- 70 published academic tasks, +20.8pp composite
-- [ARC-AGI-3](../arc-agi-3/) -- Interactive multi-step reasoning, scaffold persistence
+- [ARC-AGI-3](../arc-agi-3/) -- Interactive multi-step reasoning, injection persistence
 - [LiveCodeBench Hard](../lcb-hard/) -- 28 hard competitive programming, 85.7% to 100%

@@ -10,7 +10,7 @@
 
 > **Reasoning Ability-Augmented Retrieval (RA²R) does not augment the model's reasoning ceiling. It prevents decay toward the model's reasoning floor across extended execution chains.** The cognitive abilities act as persistent attention anchors — structurally distinctive tokens that resist the natural dilution of reasoning-level constraints as task-specific tokens flood the context window.
 
-The longer the task, the more the scaffolding matters.
+The longer the task, the more the injection matters.
 
 ---
 
@@ -80,7 +80,7 @@ The ability doesn't need to be explicitly invoked. Its presence in context maint
 
 ### 3.6 Multi-Ability Interaction: Compound Scaffolding in the Latent Space
 
-The scaffolding thesis describes persistence of a single ability. But in production (multi-injection, synergy chains), multiple abilities coexist in context simultaneously. They don't operate as independent anchors — they **interact within the model's latent attention space**.
+The injection thesis describes persistence of a single ability. But in production (multi-injection, synergy chains), multiple abilities coexist in context simultaneously. They don't operate as independent anchors — they **interact within the model's latent attention space**.
 
 **The mechanism:** Each ability occupies its own attention anchor position in context. When the transformer computes self-attention for a new generation step, it attends to ALL context tokens — including all co-present abilities. The attention computation produces cross-token interactions: the attention weights between Ability A's DAG and Ability B's DAG create implicit relational patterns that neither ability produces alone.
 
@@ -90,13 +90,13 @@ The scaffolding thesis describes persistence of a single ability. But in product
 
 2. **Procedures cross-reference.** When Ability A's gate fires (`G1{root cause identified?}`), the checkpoint it creates in the output becomes an input that Ability B's procedure (`S1: project timeline from identified cause`) can build on. The abilities form a **reasoning pipeline** through attention interaction, not through explicit orchestration.
 
-3. **M-nodes from different abilities create distributed self-auditing.** If three abilities each have an M-node checking a different aspect of reasoning quality (causal validity, temporal consistency, metacognitive drift), the model encounters all three self-audit prompts throughout execution. This creates a multi-dimensional monitoring scaffold that no single ability provides.
+3. **M-nodes from different abilities create distributed self-auditing.** If three abilities each have an M-node checking a different aspect of reasoning quality (causal validity, temporal consistency, metacognitive drift), the model encounters all three self-audit prompts throughout execution. This creates a multi-dimensional monitoring injection that no single ability provides.
 
-4. **Structural distinctiveness multiplies.** Multiple DAGs in context create a higher density of structurally distinctive tokens. The attention mechanism has more anchor points to reference, making the overall scaffold more resistant to dilution by execution tokens.
+4. **Structural distinctiveness multiplies.** Multiple DAGs in context create a higher density of structurally distinctive tokens. The attention mechanism has more anchor points to reference, making the overall injection more resistant to dilution by execution tokens.
 
-**The emergent property:** Multiple abilities in context produce a **cognitive scaffold** — not a list of independent instructions, but an interacting attention structure that maintains analytical discipline across extended execution chains. The scaffold has properties that none of its component abilities have individually: compound suppression, cross-referencing procedures, distributed self-auditing, and multiplicative attention anchoring.
+**The emergent property:** Multiple abilities in context produce a **cognitive injection** — not a list of independent instructions, but an interacting attention structure that maintains analytical discipline across extended execution chains. The injection has properties that none of its component abilities have individually: compound suppression, cross-referencing procedures, distributed self-auditing, and multiplicative attention anchoring.
 
-**Testable prediction:** Multi-ability scaffolding should show super-linear value at long chain lengths. At short chains (1-3 steps), adding a second ability may add marginal value. At long chains (25+ steps), the second ability's contribution should exceed its individual value because it reinforces the first ability's attention anchor and provides cross-referencing procedures that prevent compound drift.
+**Testable prediction:** Multi-ability injection should show super-linear value at long chain lengths. At short chains (1-3 steps), adding a second ability may add marginal value. At long chains (25+ steps), the second ability's contribution should exceed its individual value because it reinforces the first ability's attention anchor and provides cross-referencing procedures that prevent compound drift.
 
 This prediction is testable via a modification of B-SP1: run chain-length ablation with 1-ability vs. 3-ability conditions and measure whether the multi-ability advantage grows with chain length.
 
@@ -106,7 +106,7 @@ This prediction is testable via a modification of B-SP1: run chain-length ablati
 
 ### Stated Precisely
 
-> In multi-step LLM execution, each step introduces task-specific tokens that dilute attention to reasoning-level constraints. Without structural anchors, the probability of maintaining a specific cognitive operation decreases monotonically with step count. Cognitive ability injection creates persistent attention anchors that resist this decay, producing a scaffolding effect whose value compounds over chain length.
+> In multi-step LLM execution, each step introduces task-specific tokens that dilute attention to reasoning-level constraints. Without structural anchors, the probability of maintaining a specific cognitive operation decreases monotonically with step count. Cognitive ability injection creates persistent attention anchors that resist this decay, producing a injection effect whose value compounds over chain length.
 
 ### Formal Model
 
@@ -114,36 +114,36 @@ Let:
 - `R(n)` = reasoning fidelity at step n (probability the model applies the correct cognitive operation)
 - `d` = per-step decay rate (attention dilution from new tokens)
 - `k` = number of active cognitive anchors in context
-- `s(k)` = scaffolding resistance factor (attention weight preserved by k anchors)
+- `s(k)` = injection resistance factor (attention weight preserved by k anchors)
 
-**Without scaffolding:**
+**Without injection:**
 `R(n) = R(0) * (1 - d)^n`
 
 Reasoning fidelity decays exponentially with step count.
 
-**With scaffolding:**
+**With injection:**
 `R(n) = R(0) * (1 - d + s(k))^n`
 
 If `s(k) >= d`, reasoning fidelity is maintained. If `s(k) < d`, decay is slowed but not eliminated.
 
 ### Predictions
 
-| Task Length | Expected Delta (scaffolded - unscaffolded) |
+| Task Length | Expected Delta (augmented - unaugmented) |
 |-------------|---------------------------------------------|
 | 1-3 steps | Near-zero (ceiling effect — both near R(0)) |
 | 5-10 steps | Small but measurable (+2-5%) |
 | 10-25 steps | Moderate (+5-15%) |
 | 25-50 steps | Large (+10-25%) — compound drift accumulation |
-| 50+ steps | Maximum divergence — unscaffolded approaches floor |
+| 50+ steps | Maximum divergence — unaugmented approaches floor |
 
 ### Existing Evidence (Partial)
 
 | Data Point | Interpretation |
 |------------|----------------|
-| Beyond-Reasoning single-turn tasks: ceiling on 4/7 signals | Short chains — scaffolding adds little |
-| Phase 4 HARD tasks: small deltas between conditions | Moderate chains — modest scaffolding effect |
-| Phase 4 EXTREME tasks: C2 dominates at 0.785 vs 0.769 baseline | Longer chains — scaffolding matters more |
-| v6 blind eval (multi-factor professional problems): +7.0 lift | Sustained reasoning required — clear scaffolding effect |
+| Beyond-Reasoning single-turn tasks: ceiling on 4/7 signals | Short chains — injection adds little |
+| Phase 4 HARD tasks: small deltas between conditions | Moderate chains — modest injection effect |
+| Phase 4 EXTREME tasks: C2 dominates at 0.785 vs 0.769 baseline | Longer chains — injection matters more |
+| v6 blind eval (multi-factor professional problems): +7.0 lift | Sustained reasoning required — clear injection effect |
 | RESEARCH_REPORT (5 domains, hard problems): +7.8 lift | Same pattern — problems requiring extended reasoning chains |
 
 ---
@@ -160,7 +160,7 @@ The `prompt_override` doesn't suggest a format. It prescribes a **cognitive proc
 
 The low precision delta (+2.8%) on those same tasks is not evidence against the procedure — it's evidence that the tasks were too easy. The model was already getting roughly correct answers without the procedure. On hard tasks (v6 evaluation), the same procedure compliance produced +1.0 correctness and +1.4 reasoning depth — the procedure changed the final answer because the task was hard enough that skipping steps meant getting it wrong.
 
-**Connection to scaffolding:** Procedure compliance is what the scaffolding maintains. The attention anchors don't preserve "information" — they preserve "what cognitive operation to execute next." Over extended chains, the model drifts from procedure into free-association. The abilities prevent that drift.
+**Connection to injection:** Procedure compliance is what the injection maintains. The attention anchors don't preserve "information" — they preserve "what cognitive operation to execute next." Over extended chains, the model drifts from procedure into free-association. The abilities prevent that drift.
 
 ### Observation 2: Tool-Based Delivery Is the Product, Not a Feature
 
@@ -168,7 +168,7 @@ The same DAG content delivered via CLI injection produced negative results (v1-v
 
 Tool results occupy a privileged position in transformer attention: they are recent (recency bias), requested (the model has agency), and actionable (the model expects to use them). System prompt content decays into the attention dead zone as context grows. Tool results arrive at peak relevance.
 
-**Connection to scaffolding:** The tool-based delivery mechanism maximizes the initial attention weight of the ability. This creates a stronger anchor point that resists subsequent decay. The scaffolding effect isn't just about the DAG notation's structural distinctiveness — it's also about *when and how* the ability enters context.
+**Connection to injection:** The tool-based delivery mechanism maximizes the initial attention weight of the ability. This creates a stronger anchor point that resists subsequent decay. The injection effect isn't just about the DAG notation's structural distinctiveness — it's also about *when and how* the ability enters context.
 
 ### Observation 3: The Compound Thesis
 
@@ -177,16 +177,16 @@ These observations are not independent findings. They are three facets of one me
 1. **The abilities prescribe cognitive procedures** (not information, not formatting)
 2. **Tool-based delivery ensures maximum initial attention weight** (agency + recency)
 3. **DAG notation maintains attention weight across subsequent steps** (structural distinctiveness)
-4. **The maintained attention preserves procedure compliance** (scaffolding prevents drift to free-association)
+4. **The maintained attention preserves procedure compliance** (injection prevents drift to free-association)
 5. **Procedure compliance produces better answers only when tasks are hard enough** (easy tasks don't need the procedure)
 6. **Task difficulty correlates with chain length** (harder problems require more reasoning steps)
-7. **Therefore: value compounds with chain length** (more steps = more drift = more scaffolding value)
+7. **Therefore: value compounds with chain length** (more steps = more drift = more injection value)
 
 This produces a falsifiable product definition:
 
 > **RA²R is a reasoning retrieval tool. Agents call it to receive cognitive operations delivered as tool results with maximum attention weight. The operations prescribe procedures that the model complies with. DAG notation maintains procedure compliance across extended execution by acting as a persistent attention anchor. The value is proportional to task difficulty and chain length — minimal on easy single-turn tasks, substantial on hard multi-step reasoning chains.**
 
-Every piece of existing evidence is consistent with this definition. The decisive test is B-SP1 (chain-length ablation): if scaffolding value does not increase with chain length, the compound thesis is wrong.
+Every piece of existing evidence is consistent with this definition. The decisive test is B-SP1 (chain-length ablation): if injection value does not increase with chain length, the compound thesis is wrong.
 
 ---
 
@@ -205,7 +205,7 @@ More precisely:
 
 ### Competitive Moat Implications
 
-1. **Scales with task complexity** — as agentic AI tackles harder problems requiring more steps, the scaffolding value increases
+1. **Scales with task complexity** — as agentic AI tackles harder problems requiring more steps, the injection value increases
 2. **Model-independent mechanism** — attention decay is architectural (all transformers), not model-specific
 3. **Complementary to model improvements** — larger context windows create *more* attention decay surface, not less. Ejentum's value grows with context length.
 4. **Not replicable by system prompts** — natural language instructions decay at the same rate as other tokens. DAG notation resists decay through structural distinctiveness.
@@ -216,7 +216,7 @@ More precisely:
 
 ### B-SP1: Chain-Length Ablation
 
-**What it tests:** Delta between scaffolded and unscaffolded performance as a function of reasoning chain length.
+**What it tests:** Delta between augmented and unaugmented performance as a function of reasoning chain length.
 
 **Design:**
 - 40 tasks, each decomposable into controlled step counts
@@ -226,15 +226,15 @@ More precisely:
 
 **Tasks:** Design problems requiring sustained reasoning — policy analysis, multi-factor risk assessment, architectural review, diagnostic chains. Each task must have a verifiable correct conclusion that requires integrating information across all steps.
 
-**Metric:** `scaffolding_delta(n) = score_B(n) - score_A(n)` measured at each step count.
+**Metric:** `injection_delta(n) = score_B(n) - score_A(n)` measured at each step count.
 
-**Prediction:** `scaffolding_delta` increases with `n`. Specifically:
-- `scaffolding_delta(5)` < 2 points
-- `scaffolding_delta(10)` ~ 3-5 points
-- `scaffolding_delta(25)` ~ 5-10 points
-- `scaffolding_delta(50)` > 10 points
+**Prediction:** `injection_delta` increases with `n`. Specifically:
+- `injection_delta(5)` < 2 points
+- `injection_delta(10)` ~ 3-5 points
+- `injection_delta(25)` ~ 5-10 points
+- `injection_delta(50)` > 10 points
 
-**Falsification:** If `scaffolding_delta` is flat across all step counts, the compound drift hypothesis is wrong and the value is one-shot priming, not sustained scaffolding.
+**Falsification:** If `injection_delta` is flat across all step counts, the compound drift hypothesis is wrong and the value is one-shot priming, not sustained injection.
 
 **Cost:** 40 tasks × 4 lengths × 2 conditions = 320 generations + 320 judgments = **640 LLM calls**
 
@@ -254,11 +254,11 @@ More precisely:
 
 **Metric:** `decay_after_removal = score_C(steps 13-25) - score_B(steps 13-25)`
 
-**Prediction:** If scaffolding is sustained (not one-shot):
+**Prediction:** If injection is sustained (not one-shot):
 - `score_B(steps 13-25)` >> `score_C(steps 13-25)` — performance degrades after removal
-- `score_C(steps 1-12)` ≈ `score_B(steps 1-12)` — equivalent while scaffolding present
+- `score_C(steps 1-12)` ≈ `score_B(steps 1-12)` — equivalent while injection present
 
-**Falsification:** If `score_C(steps 13-25)` ≈ `score_B(steps 13-25)`, the abilities are one-shot primers and the sustained scaffolding hypothesis is wrong.
+**Falsification:** If `score_C(steps 13-25)` ≈ `score_B(steps 13-25)`, the abilities are one-shot primers and the sustained injection hypothesis is wrong.
 
 **Cost:** 20 tasks × 3 conditions = 60 generations + 120 judgments (split evaluation) = **180 LLM calls**
 
@@ -266,7 +266,7 @@ More precisely:
 
 ### B-SP3: Format Ablation (DAG vs. Prose)
 
-**What it tests:** Whether structural distinctiveness of DAG notation contributes to the scaffolding effect, or if equivalent semantic content in prose achieves the same result.
+**What it tests:** Whether structural distinctiveness of DAG notation contributes to the injection effect, or if equivalent semantic content in prose achieves the same result.
 
 **Design:**
 - 30 tasks requiring 15+ reasoning steps
@@ -282,7 +282,7 @@ More precisely:
 - `score_B > score_C` on tasks requiring 15+ steps (DAG resists attention decay better than prose)
 - `score_B ≈ score_C` on short tasks (both formats within attention range)
 
-**Falsification:** If `score_B ≈ score_C` across all step counts, the scaffolding effect is semantic, not structural — meaning natural language instructions would work equally well.
+**Falsification:** If `score_B ≈ score_C` across all step counts, the injection effect is semantic, not structural — meaning natural language instructions would work equally well.
 
 **Cost:** 30 tasks × 3 conditions = 90 generations + 90 judgments = **180 LLM calls**
 
@@ -396,7 +396,7 @@ B-SP1 through B-SP4: **~1,010 LLM calls** (~$18 at Claude API rates)
 **DAG:** `S1:list_and_count → G1{>7?} → chunk → M1{verify chunks genuinely cohere} → validate_boundary_conditions → OUT`
 
 ### SP-006 — Relational Invariant Maintainer
-**Contribution:** Provided the `PRE:freeze → for_each_relationship → verify_holds` pattern that maps to the scaffolding mechanism: freeze reasoning constraints at injection time, then verify they're maintained across transformations.
+**Contribution:** Provided the `PRE:freeze → for_each_relationship → verify_holds` pattern that maps to the injection mechanism: freeze reasoning constraints at injection time, then verify they're maintained across transformations.
 
 **DAG:** `PRE:S0:freeze(R1..RN) → enumerate_relationships → for_each → check_invariant → G1{holds?} → adjust_or_confirm → OUT`
 
@@ -413,11 +413,11 @@ B-SP1 through B-SP4: **~1,010 LLM calls** (~$18 at Claude API rates)
 
 ## 9. Open Questions
 
-1. **Is the scaffolding effect linear or threshold-based?** Does it turn on at a specific chain length, or is it proportional throughout?
-2. **Does ability count matter?** Is 1 ability sufficient, or does scaffolding effectiveness increase with the number of active abilities (diminishing returns expected)?
+1. **Is the injection effect linear or threshold-based?** Does it turn on at a specific chain length, or is it proportional throughout?
+2. **Does ability count matter?** Is 1 ability sufficient, or does injection effectiveness increase with the number of active abilities (diminishing returns expected)?
 3. **What's the minimum structural distinctiveness needed?** Would simplified DAG notation (just arrows and labels, no M-nodes) still anchor attention?
-4. **Does the effect transfer across conversation turns?** In multi-turn sessions, do abilities injected in turn 1 still scaffold reasoning in turn 5?
-5. **Can scaffolding be adversarial?** If a wrong-domain ability is injected, does it anchor the *wrong* cognitive operation with the same persistence? (This would be both a risk and further evidence of the mechanism.)
+4. **Does the effect transfer across conversation turns?** In multi-turn sessions, do abilities injected in turn 1 still injection reasoning in turn 5?
+5. **Can injection be adversarial?** If a wrong-domain ability is injected, does it anchor the *wrong* cognitive operation with the same persistence? (This would be both a risk and further evidence of the mechanism.)
 
 ---
 

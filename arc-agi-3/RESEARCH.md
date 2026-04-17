@@ -113,7 +113,7 @@ The ARC-AGI-3 technical report explicitly identifies these gaps:
 
 **Metacognition is the highest-leverage domain.** The #1 failure mode is models not recognizing their hypothesis is wrong. If RA2R metacognitive injections help the agent recognize "my current model might be wrong, I should explore differently," this alone could show measurable improvement.
 
-**Multi-ability retrieval is key for harder levels.** Later levels introduce composed mechanics. Single-domain reasoning won't suffice. The augmented condition should use `mode: "multi"` on levels 3+.
+**Multi-ability retrieval is key for harder levels.** Later levels introduce composed mechanics. Single-domain reasoning won't suffice. The augmented condition should use `mode: "reasoning-multi"` on levels 3+.
 
 ---
 
@@ -154,7 +154,7 @@ you want to take. The final action in your reply will be executed next turn.
 Your entire reply will be carried to the next turn.
 ```
 
-Note: Our system prompts are much longer. This is intentional -- we need JSON output, game state parsing, and scaffold absorption instructions. But we should test with the official prompt as a control condition.
+Note: Our system prompts are much longer. This is intentional -- we need JSON output, game state parsing, and injection absorption instructions. But we should test with the official prompt as a control condition.
 
 ---
 
@@ -183,7 +183,7 @@ Note: Our system prompts are much longer. This is intentional -- we need JSON ou
 
 - **Metacognition is our strongest play.** The #1 failure mode (false hypothesis commitment) is exactly what RA2R metacognitive suppression addresses. "Suppress: premature_conclusion, forward_momentum_bias" directly targets this.
 - **RA2R calls are free actions.** They don't count against the action budget. The augmented condition has no action-cost disadvantage.
-- **TR87 shows harness effect is massive.** 97.1% with harness vs 0% without. Even basic scaffolding makes an enormous difference. RA2R is more than basic scaffolding.
+- **TR87 shows harness effect is massive.** 97.1% with harness vs 0% without. Even basic injection makes an enormous difference. RA2R is more than basic injection.
 - **Community leaderboard is our target.** We can't submit to the official leaderboard (no external APIs), but the community leaderboard accepts harness-driven results with self-reported scores.
 
 ### Revised Hypothesis

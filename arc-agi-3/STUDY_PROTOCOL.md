@@ -2,7 +2,7 @@
 
 ## Thesis
 
-RA2R cognitive scaffolding augments LLM interactive reasoning capabilities toward AGI-level performance by preventing the #1 frontier model failure mode on ARC-AGI-3: false hypothesis commitment. The Logic API's metacognitive suppression signals enable the agent to recognize when its game model is wrong, triggering self-correction that raw models cannot achieve.
+RA2R cognitive injection augments LLM interactive reasoning capabilities toward AGI-level performance by preventing the #1 frontier model failure mode on ARC-AGI-3: false hypothesis commitment. The Logic API's metacognitive suppression signals enable the agent to recognize when its game model is wrong, triggering self-correction that raw models cannot achieve.
 
 ## Study Design
 
@@ -34,7 +34,7 @@ LS20 is the most documented ARC-AGI-3 game with community baselines. Random win 
 - Same official prompt + JSON instruction (identical to A)
 - RA2R function calling protocol (the ONLY addition)
 - Agent freely decides when to call RA2R
-- Agent chooses mode: single (focused) or multi (cross-domain)
+- Agent chooses mode: reasoning (focused) or reasoning-multi (cross-domain)
 - Agent writes its own query describing its reasoning challenge
 
 ### Parameters
@@ -102,7 +102,7 @@ Only state-changing actions count. RA2R API calls are free (not counted as actio
 | levels_completed_after | int | Levels cleared so far |
 | rar_called | bool | Whether RA2R was called this turn |
 | rar_query | string | What the agent asked RA2R (B only) |
-| rar_mode | string | single or multi (B only) |
+| rar_mode | string | reasoning or reasoning-multi (B only) |
 | cost_usd | float | Dollar cost of this turn |
 | duration_api_ms | int | API response time |
 | tokens_used | int | Input + output tokens |
@@ -142,7 +142,7 @@ Or double-click `RUN_BENCHMARK.bat`.
 The study produces meaningful data if ANY of these are true:
 1. One condition completes more levels than the other
 2. Exploration waste ratio differs by >10%
-3. Augmented agent's reasoning shows systematic scaffold absorption
+3. Augmented agent's reasoning shows systematic injection absorption
 4. RA2R calls correlate with subsequent progress
 
 ### Ideal Result
@@ -154,7 +154,7 @@ The study produces meaningful data if ANY of these are true:
 ### What Would Falsify Our Thesis
 1. Both conditions perform identically on all metrics
 2. RA2R calls show 0% breakthrough rate AND no qualitative reasoning improvement
-3. Augmented performs WORSE (scaffold confuses the agent)
+3. Augmented performs WORSE (injection confuses the agent)
 
 ## Output Files
 

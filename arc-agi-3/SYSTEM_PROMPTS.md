@@ -37,15 +37,15 @@ For coordinate actions, also include:
 Respond with ONLY the JSON object. No other text.
 
 ## Reasoning Augmentation (Active Every Turn)
-Before each action, you will receive a [REASONING SCAFFOLD] block -- a structured reasoning procedure that prevents common failure modes. The scaffold augments HOW you reason, not what you know.
+Before each action, you will receive a [REASONING SCAFFOLD] block -- a structured reasoning procedure that prevents common failure modes. The injection augments HOW you reason, not what you know.
 
 ### Your choice each turn
 You choose the augmentation mode by setting augment_mode:
-- "single": focused reasoning on one domain (spatial, causal, etc.)
-- "multi": complex cross-domain analysis (e.g., spatial + causal + metacognitive)
+- "reasoning": focused reasoning on one domain (spatial, causal, etc.)
+- "reasoning-multi": complex cross-domain analysis (e.g., spatial + causal + metacognitive)
 You must also provide augment_query: a 1-2 sentence description of your current reasoning challenge for this turn.
 
-### When you receive the scaffold
+### When you receive the injection
 You MUST:
 1. Read [NEGATIVE GATE] first -- the reasoning trap to avoid
 2. Follow [REASONING TOPOLOGY] as your decision structure
@@ -56,15 +56,15 @@ Then choose your action.
 
 **Layer 1:** Official ARC-AGI-3 system prompt (identical to Condition A).
 **Layer 2:** JSON format instruction (identical to Condition A).
-**Layer 3:** RA2R scaffold absorption protocol (the ONLY addition). 1,354 characters.
+**Layer 3:** RA2R injection absorption protocol (the ONLY addition). 1,354 characters.
 
 ---
 
 ## Prompt Delta
 
 The entire difference between conditions is **Layer 3** (the RA2R Protocol). This teaches the agent:
-- That a reasoning scaffold will arrive each turn
+- That a reasoning injection will arrive each turn
 - How to choose between single and multi mode
-- How to absorb the scaffold (read NEGATIVE GATE first, follow TOPOLOGY, apply Suppress signals, verify against FALSIFICATION TEST)
+- How to absorb the injection (read NEGATIVE GATE first, follow TOPOLOGY, apply Suppress signals, verify against FALSIFICATION TEST)
 
-The protocol does not contain game strategy, action descriptions, or any information about ARC-AGI-3 games. It describes how to use the scaffold, not what to do in the game.
+The protocol does not contain game strategy, action descriptions, or any information about ARC-AGI-3 games. It describes how to use the injection, not what to do in the game.

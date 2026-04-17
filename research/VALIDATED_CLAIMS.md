@@ -25,8 +25,8 @@ No other tool produces this effect. Chain-of-thought doesn't create self-monitor
 | Evidence | BBH/CausalBench/MuSR | EjBench |
 |:---------|:---------------------|:--------|
 | Baseline | 0.74/3.0 | 0.94/3.0 |
-| Single mode (Ki) | 1.73/3.0 (+0.99) | 1.70/3.0 (+0.76) |
-| Multi mode (Haki) | 1.27/3.0 (+0.53) | 1.92/3.0 (+0.98) |
+| reasoning mode | 1.73/3.0 (+0.99) | 1.70/3.0 (+0.76) |
+| reasoning-multi mode | 1.27/3.0 (+0.53) | 1.92/3.0 (+0.98) |
 | Tasks | 70 published (BBH, CausalBench, MuSR) | 180 custom domain tasks |
 | Model | Claude Opus 4.6 | Claude Opus 4.6 |
 
@@ -45,8 +45,8 @@ This is the difference between an agent you monitor and an agent you trust. An u
 | Evidence | BBH/CausalBench/MuSR | EjBench |
 |:---------|:---------------------|:--------|
 | Baseline | 0.96/3.0 | 1.50/3.0 |
-| Single mode (Ki) | 1.77/3.0 (+0.81) | 2.01/3.0 (+0.51) |
-| Multi mode (Haki) | 1.29/3.0 (+0.33) | 2.23/3.0 (+0.74) |
+| reasoning mode | 1.77/3.0 (+0.81) | 2.01/3.0 (+0.51) |
+| reasoning-multi mode | 1.29/3.0 (+0.33) | 2.23/3.0 (+0.74) |
 
 ---
 
@@ -63,8 +63,8 @@ This is what stakeholders, compliance officers, and decision-makers need. When a
 | Evidence | BBH/CausalBench/MuSR | EjBench |
 |:---------|:---------------------|:--------|
 | Baseline | 1.16/3.0 | 1.54/3.0 |
-| Single mode (Ki) | 1.60/3.0 (+0.44) | 1.90/3.0 (+0.36) |
-| Multi mode (Haki) | 1.19/3.0 (+0.03) | 2.05/3.0 (+0.51) |
+| reasoning mode | 1.60/3.0 (+0.44) | 1.90/3.0 (+0.36) |
+| reasoning-multi mode | 1.19/3.0 (+0.03) | 2.05/3.0 (+0.51) |
 
 ---
 
@@ -81,8 +81,8 @@ Tunnel vision is the most expensive failure mode in autonomous agents. When an a
 | Evidence | BBH/CausalBench/MuSR | EjBench |
 |:---------|:---------------------|:--------|
 | Baseline | 0.90/3.0 | 1.37/3.0 |
-| Single mode (Ki) | 1.57/3.0 (+0.64) | 1.77/3.0 (+0.40) |
-| Multi mode (Haki) | 1.16/3.0 (+0.23) | 1.93/3.0 (+0.55) |
+| reasoning mode | 1.57/3.0 (+0.64) | 1.77/3.0 (+0.40) |
+| reasoning-multi mode | 1.16/3.0 (+0.23) | 1.93/3.0 (+0.55) |
 
 ---
 
@@ -99,8 +99,8 @@ The difference is between an answer a junior analyst would give and an answer a 
 | Evidence | BBH/CausalBench/MuSR | EjBench |
 |:---------|:---------------------|:--------|
 | Baseline | 1.87/3.0 | 2.44/3.0 |
-| Single mode (Ki) | 2.54/3.0 (+0.67) | 2.54/3.0 (+0.10) |
-| Multi mode (Haki) | 2.20/3.0 (+0.33) | 2.66/3.0 (+0.22) |
+| reasoning mode | 2.54/3.0 (+0.67) | 2.54/3.0 (+0.10) |
+| reasoning-multi mode | 2.20/3.0 (+0.33) | 2.66/3.0 (+0.22) |
 
 ---
 
@@ -117,8 +117,8 @@ This is the compliance and governance layer. When regulators ask "how did your A
 | Evidence | BBH/CausalBench/MuSR | EjBench |
 |:---------|:---------------------|:--------|
 | Baseline | 2.14/3.0 | 2.64/3.0 |
-| Single mode (Ki) | 2.83/3.0 (+0.69) | 2.75/3.0 (+0.11) |
-| Multi mode (Haki) | 2.36/3.0 (+0.20) | 2.82/3.0 (+0.18) |
+| reasoning mode | 2.83/3.0 (+0.69) | 2.75/3.0 (+0.11) |
+| reasoning-multi mode | 2.36/3.0 (+0.20) | 2.82/3.0 (+0.18) |
 
 ---
 
@@ -135,8 +135,8 @@ The product does not trade accuracy for quality. It adds quality on top of exist
 | Evidence | BBH/CausalBench/MuSR | EjBench |
 |:---------|:---------------------|:--------|
 | Baseline | 2.19/3.0 | 2.60/3.0 |
-| Single mode (Ki) | 2.33/3.0 (+0.14) | 2.57/3.0 (-0.03) |
-| Multi mode (Haki) | 2.34/3.0 (+0.15) | 2.56/3.0 (-0.05) |
+| reasoning mode | 2.33/3.0 (+0.14) | 2.57/3.0 (-0.03) |
+| reasoning-multi mode | 2.34/3.0 (+0.15) | 2.56/3.0 (-0.05) |
 
 ---
 
@@ -146,12 +146,12 @@ The product does not trade accuracy for quality. It adds quality on top of exist
 
 This is not a limitation -- it is a product feature. The benchmarks proved that task complexity determines optimal mode:
 
-| Task Type | Single (Ki) | Multi (Haki) | Winner |
+| Task Type | reasoning | reasoning-multi | Winner |
 |:----------|:-----------|:------------|:-------|
-| Focused (one judgment, one answer) | +20.8pp composite | +8.6pp composite | **Ki** |
-| Complex (multi-variable, multi-step) | +9.0pp composite | +12.9pp composite | **Haki** |
+| Focused (one judgment, one answer) | +20.8pp composite | +8.6pp composite | **reasoning** |
+| Complex (multi-variable, multi-step) | +9.0pp composite | +12.9pp composite | **reasoning-multi** |
 
-The recommendation is not "upgrade to Haki for better results." It is "use Ki for debugging, classification, and focused analysis. Use Haki for research, multi-variable reasoning, and cross-domain analysis." Both tiers deliver proven value on different task types.
+The recommendation is not "upgrade to reasoning-multi for better results." It is "use reasoning for debugging, classification, and focused analysis. Use reasoning-multi for research, multi-variable reasoning, and cross-domain analysis." Both tiers deliver proven value on different task types.
 
 Evidence:
 - BBH/CausalBench/MuSR (focused tasks): B1 beats C1 on every factor

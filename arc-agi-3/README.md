@@ -10,7 +10,7 @@ ARC-AGI-3 is the world's only unbeaten AI benchmark. Frontier model performance:
 
 **Model:** Claude Sonnet 4.6 with extended thinking at maximum effort.
 
-**Two conditions:** Baseline (no scaffold) vs Augmented (Logic API as callable tool). 25 steps each. Same game, same seed.
+**Two conditions:** Baseline (no injection) vs Augmented (Logic API as callable tool). 25 steps each. Same game, same seed.
 
 ## Results
 
@@ -19,7 +19,7 @@ RHAE 0.0 = 0.0. Neither condition cleared Level 0. The evidence is in the reason
 | Metric | Baseline | Augmented |
 |--------|----------|-----------|
 | Memory decay slope | -0.005 | +0.014 (reversed) |
-| Scaffold half-life | 0 | 24 steps |
+| Injection half-life | 0 | 24 steps |
 | Reasoning depth trend | 0.86 | 10.50 (12.2x) |
 | Stuck episodes | 2 | 1 (50% fewer) |
 

@@ -6,7 +6,7 @@ An A/B benchmark comparing **raw Claude Opus 4.6** against **Claude Opus 4.6 wit
 
 **ARC-AGI-3** is the world's only unbeaten AI benchmark. It measures an agent's ability to explore, learn, and adapt in novel interactive game environments — without instructions, rules, or stated objectives. Current frontier AI performance: **0.26%**. Human performance: **100%**.
 
-This benchmark tests whether RA²R cognitive scaffolding improves an LLM's interactive reasoning capabilities — exploration strategy, pattern recognition, causal inference, spatial reasoning, and metacognitive adaptation — in a completely unsaturated, externally validated evaluation framework.
+This benchmark tests whether RA²R cognitive injection improves an LLM's interactive reasoning capabilities — exploration strategy, pattern recognition, causal inference, spatial reasoning, and metacognitive adaptation — in a completely unsaturated, externally validated evaluation framework.
 
 ---
 
@@ -43,7 +43,7 @@ This benchmark tests whether RA²R cognitive scaffolding improves an LLM's inter
 │   ├─ Tool 1: take_action (game actions)   │
 │   └─ Tool 2: query_logic_api (RA²R)      │
 │        ↳ Agent-initiated                  │
-│        ↳ Returns cognitive scaffold       │
+│        ↳ Returns cognitive injection       │
 │        ↳ Agent absorbs before deciding    │
 └───────────────────────────────────────────┘
 ```
@@ -122,7 +122,7 @@ arc_benchmark/
 ├── agent_baseline.py     # Condition A: Claude via CLI, game actions only
 │   └── BaselineAgent          Structured JSON output, no augmentation
 ├── agent_augmented.py    # Condition B: Claude via CLI + RA²R
-│   └── AugmentedAgent         Two-pass: augment request → scaffold → action
+│   └── AugmentedAgent         Two-pass: augment request → injection → action
 │                              Agent decides when to call RA²R
 ├── scoring.py            # RHAE calculation and A/B comparison
 │   ├── score_game_result()    Per-game RHAE from result JSON
@@ -242,7 +242,7 @@ Computed from action logs — no LLM judge. These measure capabilities unique to
 
 ## Hypothesis
 
-RA²R cognitive scaffolding will improve interactive reasoning performance because ARC-AGI-3 games require exactly the capabilities RA²R enhances:
+RA²R cognitive injection will improve interactive reasoning performance because ARC-AGI-3 games require exactly the capabilities RA²R enhances:
 
 | ARC-AGI-3 Requirement | RA²R Domain |
 |------------------------|-------------|

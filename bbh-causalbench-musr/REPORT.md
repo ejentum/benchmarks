@@ -15,7 +15,7 @@ We present the BBH/CausalBench/MuSR Benchmark v2, a 70-task evaluation measuring
 
 Results across 209 valid judgments show composite quality improvement of +20.8 percentage points (B1) and +8.6 percentage points (C1) over baseline. Self-monitoring more than doubled from 0.74 (A) to 1.73 (B1, +0.99). Verification increased from 0.96 to 1.77 (B1, +0.81). Unlike EjBench, where correctness remained flat, correctness on external tasks improved from 2.19 (A) to 2.33 (B1, +0.14). B1 outperformed C1 on every measured factor -- the opposite of the EjBench result where C1 consistently outperformed B1.
 
-This reversal constitutes the central finding: single-ability injection (B1) excels on focused, single-domain tasks characteristic of published benchmarks, while multi-ability injection (C1) excels on complex, multi-variable tasks characteristic of EjBench. The product recommendation follows directly: Ki (single mode) for focused reasoning tasks, Haki (multi mode) for complex multi-step analysis.
+This reversal constitutes the central finding: single-ability injection (B1) excels on focused, single-domain tasks characteristic of published benchmarks, while multi-ability injection (C1) excels on complex, multi-variable tasks characteristic of EjBench. The product recommendation follows directly: reasoning (single mode) for focused reasoning tasks, reasoning-multi (multi mode) for complex multi-step analysis.
 
 ---
 
@@ -77,8 +77,8 @@ All 70 tasks have externally verified ground-truth answers. No task was designed
 | Condition | Description | Tool Access | Max Turns |
 |:----------|:-----------|:------------|:----------|
 | A (Baseline) | Raw task only -- pure reasoning | None (`--disallowedTools "Bash"`) | 1 |
-| B1 (Single) | Task + instruction to call API with mode `single` | Bash (curl) | 3 |
-| C1 (Multi) | Task + instruction to call API with mode `multi` | Bash (curl) | 3 |
+| B1 (reasoning) | Task + instruction to call API with mode `reasoning` | Bash (curl) | 3 |
+| C1 (reasoning-multi) | Task + instruction to call API with mode `reasoning-multi` | Bash (curl) | 3 |
 
 ### 2.3 Agent-Native Tool Calling
 
@@ -133,8 +133,8 @@ Two-stage blind protocol identical to EjBench v2:
 | Condition | Composite Mean | Delta from A | Count |
 |:----------|:--------------|:-------------|:------|
 | A (Baseline) | 0.476 | -- | 69 |
-| B1 (Single) | 0.684 | +0.208 | 70 |
-| C1 (Multi) | 0.562 | +0.086 | 70 |
+| B1 (reasoning) | 0.684 | +0.208 | 70 |
+| C1 (reasoning-multi) | 0.562 | +0.086 | 70 |
 
 Single-ability injection improved composite reasoning quality by +20.8 percentage points. Multi-ability injection improved it by +8.6 percentage points. B1 outperformed C1 by +12.2 percentage points.
 
@@ -309,8 +309,8 @@ The data supports a clear product segmentation:
 
 | Product Tier | Mode | Optimal For | Evidence |
 |:-------------|:-----|:-----------|:---------|
-| Ki (single) | `single` | Focused reasoning tasks: legal question answering, medical triage, code review, causal analysis | +20.8pp on external benchmarks, +9.0pp on EjBench |
-| Haki (multi) | `multi` | Complex multi-step tasks: strategic planning, system design, multi-variable optimization | +10.1pp on EjBench, C1 > B1 on every EjBench factor |
+| reasoning (single) | `single` | Focused reasoning tasks: legal question answering, medical triage, code review, causal analysis | +20.8pp on external benchmarks, +9.0pp on EjBench |
+| reasoning-multi (multi) | `multi` | Complex multi-step tasks: strategic planning, system design, multi-variable optimization | +10.1pp on EjBench, C1 > B1 on every EjBench factor |
 
 An auto-routing layer could detect task complexity from the query and select the appropriate mode. Simple heuristics (query length, clause count, presence of multi-step language) could provide initial routing, with learned routing refined from usage data.
 
@@ -539,7 +539,7 @@ A customer deploying RA2R gets agents that are more correct (external evidence),
 
 ### 11.1 Automatic Mode Routing
 
-The focus-complexity finding enables an auto-routing feature: detect task complexity from the query and select single or multi mode accordingly. Initial heuristics (query length, clause count, multi-step indicators) should be validated against a held-out task set.
+The focus-complexity finding enables an auto-routing feature: detect task complexity from the query and select reasoning or reasoning-multi mode accordingly. Initial heuristics (query length, clause count, multi-step indicators) should be validated against a held-out task set.
 
 ### 11.2 Expanded External Benchmark
 

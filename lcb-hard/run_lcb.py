@@ -3,7 +3,7 @@ LiveCodeBench Hard Runner v3 — Task-Specific Cognitive Routing
 ===============================================================
 Redesigned decision pass forces deep cognitive pre-analysis before
 querying the Logic API. Produces targeted queries that route to
-diverse abilities instead of the same generic scaffold.
+diverse abilities instead of the same generic injection.
 
 Key differences from v2:
   - Cognitive pre-analysis pass (4 risk categories)
@@ -43,7 +43,7 @@ sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 # ---------- Logic API ----------
 
-def call_logic_api(query, mode="single"):
+def call_logic_api(query, mode="reasoning"):
     """Call Ejentum Logic API. Requires EJENTUM_API_KEY env var."""
     if not API_KEY:
         print("  [NO API KEY - set EJENTUM_API_KEY]", end="", flush=True)
@@ -142,13 +142,13 @@ Describe the task structure and identify which reasoning domain fits best (Causa
 ```"""
 
 
-CODE_WITH_SCAFFOLD_PROMPT = """You called the Ejentum Logic API and received this reasoning scaffold:
+CODE_WITH_SCAFFOLD_PROMPT = """You called the Ejentum Logic API and received this reasoning injection:
 
 [REASONING CONTEXT]
-{scaffold}
+{injection}
 [END REASONING CONTEXT]
 
-Follow the skill file: ABSORB the scaffold. Read the NEGATIVE GATE. Follow the REASONING TOPOLOGY. Apply Suppress signals as post-check.
+Follow the skill file: ABSORB the injection. Read the NEGATIVE GATE. Follow the REASONING TOPOLOGY. Apply Suppress signals as post-check.
 
 Now solve this competitive programming problem. Read from stdin, write to stdout.
 
@@ -194,10 +194,10 @@ Write ONLY the Python solution code. No explanation."""
 def extract_api_call(response):
     """Extract the JSON API call from the model's tool-call output."""
     if not response:
-        return None, "single"
+        return None, "reasoning"
 
     query = None
-    mode = "single"
+    mode = "reasoning"
 
     # Try to find JSON block in ```json ... ``` or raw JSON
     json_match = re.search(r'```json\s*\n?\s*(\{.*?\})\s*\n?\s*```', response, re.DOTALL)
@@ -211,9 +211,9 @@ def extract_api_call(response):
         try:
             obj = json.loads(json_match.group(1) if json_match.lastindex else json_match.group(0))
             query = obj.get("query", "")
-            mode = obj.get("mode", "single")
-            if mode not in ("single", "multi"):
-                mode = "single"
+            mode = obj.get("mode", "reasoning")
+            if mode not in ("reasoning", "reasoning-multi"):
+                mode = "reasoning"
         except json.JSONDecodeError:
             pass
 
@@ -228,7 +228,7 @@ def extract_api_call(response):
         if m_match:
             m = m_match.group(1).strip().strip('"\'').lower()
             if "multi" in m:
-                mode = "multi"
+                mode = "reasoning-multi"
 
     # Last resort fallback
     if not query:
@@ -244,7 +244,7 @@ def extract_api_call(response):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--condition", choices=["baseline", "augmented", "both"], default="augmented")
-    parser.add_argument("--mode", choices=["single", "multi", "auto"], default="auto",
+    parser.add_argument("--mode", choices=["reasoning", "reasoning-multi", "auto"], default="auto",
                         help="API mode: single, multi, or auto (model decides via skill file)")
     parser.add_argument("--run-id", default="v3")
     parser.add_argument("--start", type=int, default=1)
@@ -339,31 +339,31 @@ def main():
                 tool_response = call_claude(tool_prompt, timeout=180)
                 t1_elapsed = time.time() - t1
 
-                query, chosen_mode = extract_api_call(tool_response) if tool_response else (None, "single")
+                query, chosen_mode = extract_api_call(tool_response) if tool_response else (None, "reasoning")
                 if query:
                     print(f" {t1_elapsed:.0f}s, query={len(query)}ch, mode={chosen_mode}")
                     print(f"  Query: {query[:150]}")
                 else:
                     print(f" FAILED ({t1_elapsed:.0f}s), using title as fallback")
                     query = f"Solve competitive programming task: {title}"
-                    chosen_mode = "single"
+                    chosen_mode = "reasoning"
 
                 # Override mode if CLI flag forces it
                 api_mode = args.mode if args.mode != "auto" else chosen_mode
 
                 # STEP 2: Execute the tool call (Logic API)
                 print(f"  Logic API ({api_mode})...", end="", flush=True)
-                scaffold = call_logic_api(query, mode=api_mode)
-                if scaffold:
-                    print(f" {len(scaffold)}ch")
+                injection = call_logic_api(query, mode=api_mode)
+                if injection:
+                    print(f" {len(injection)}ch")
                 else:
                     print(f" FAILED (proceeding without)")
-                    scaffold = ""
+                    injection = ""
 
-                # STEP 3: Return result + solve (model receives scaffold and writes code)
+                # STEP 3: Return result + solve (model receives injection and writes code)
                 print(f"  Code gen...", end="", flush=True)
                 code_prompt = CODE_WITH_SCAFFOLD_PROMPT.format(
-                    scaffold=scaffold, task_description=desc
+                    injection=injection, task_description=desc
                 )
                 t3 = time.time()
                 response = call_claude(code_prompt)
@@ -387,8 +387,8 @@ def main():
                     "api_mode": api_mode,
                     "model_chose_mode": chosen_mode,
                     "api_query": query,
-                    "scaffold_length": len(scaffold) if scaffold else 0,
-                    "scaffold_received": bool(scaffold),
+                    "injection_length": len(injection) if injection else 0,
+                    "injection_received": bool(injection),
                     "tool_call_text": tool_response or "",
                     "tool_call_length": len(tool_response) if tool_response else 0,
                     "tool_call_time": round(t1_elapsed, 1),
@@ -418,9 +418,9 @@ def main():
         print(f"{condition.upper()} COMPLETE: {passed}/{total} ({passed/total*100:.1f}%)")
         if condition != "baseline":
             queries = [r.get("api_query", "") for r in results if r.get("api_query")]
-            scaffolds = [r.get("scaffold_length", 0) for r in results]
-            unique_scaffolds = len(set(s for s in scaffolds if s > 0))
-            print(f"Scaffold diversity: {unique_scaffolds} unique sizes out of {len(scaffolds)}")
+            injections = [r.get("injection_length", 0) for r in results]
+            unique_injections = len(set(s for s in injections if s > 0))
+            print(f"Injection diversity: {unique_injections} unique sizes out of {len(injections)}")
             print(f"Query lengths: min={min(len(q) for q in queries)}, avg={sum(len(q) for q in queries)//len(queries)}, max={max(len(q) for q in queries)}")
         print(f"{'='*60}")
 

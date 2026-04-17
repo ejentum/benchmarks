@@ -1,6 +1,6 @@
 # Ejentum RA²R Logic API
 
-This tool augments YOUR reasoning. When you call it, you receive a cognitive scaffold — a structured set of constraints, procedures, and failure-mode blockers that shape how you think about a task. You absorb it into your own reasoning and execute with it active.
+This tool augments YOUR reasoning. When you call it, you receive a cognitive injection — a structured set of constraints, procedures, and failure-mode blockers that shape how you think about a task. You absorb it into your own reasoning and execute with it active.
 
 This is not knowledge retrieval. You are not getting facts. You are getting a reasoning upgrade for a specific task — attention anchors that prevent your natural shortcuts from degrading your output.
 
@@ -40,7 +40,7 @@ POST https://ejentum-main-ab125c3.zuplo.app/logicv1/
 Authorization: Bearer {API_KEY}
 Content-Type: application/json
 
-{"query": "your task description", "mode": "single"}
+{"query": "your task description", "mode": "reasoning"}
 ```
 
 Timeout: 5 seconds. If unreachable, proceed with native reasoning. The API enhances — it is not a dependency.
@@ -78,7 +78,7 @@ When unsure, use `single`. Switch to `multi` only when a single analytical lens 
 
 | Role | Function |
 |:-----|:---------|
-| PRIMARY | Best-matching ability — your main reasoning scaffold |
+| PRIMARY | Best-matching ability — your main reasoning injection |
 | DEPENDENCY | Prerequisite — execute this reasoning before the primary |
 | AMPLIFIER | Strengthens the primary's reasoning from a supporting angle |
 | ALTERNATIVE | Different lens — intentionally challenges the primary's conclusions |
@@ -104,7 +104,7 @@ Parse the value of the `{mode}_ability` key. The string is ready to use.
 | Code | Meaning | Your action |
 |:-----|:--------|:------------|
 | `401` | Invalid API key | Tell the user their key needs to be checked |
-| `403` | Multi mode requires a higher-tier plan | Retry with `"mode": "single"` |
+| `403` | Multi mode requires a higher-tier plan | Retry with `"mode": "reasoning"` |
 | `429` | Rate limit or monthly quota exceeded | Tell the user they've hit their usage limit |
 | `500` | Server error | Proceed without — do not retry |
 
@@ -112,7 +112,7 @@ Parse the value of the `{mode}_ability` key. The string is ready to use.
 
 ## HOW TO ABSORB THE SCAFFOLD
 
-When you receive the scaffold, do not just acknowledge it. **Absorb it into your active reasoning:**
+When you receive the injection, do not just acknowledge it. **Absorb it into your active reasoning:**
 
 **1. Read the `[NEGATIVE GATE]` first.**
 This names the specific reasoning failure your task is most vulnerable to. Before you begin, acknowledge this trap explicitly. During reasoning, if you catch yourself exhibiting this pattern — stop and restructure.
@@ -132,12 +132,12 @@ This is what correct reasoning looks like for this task type. Compare your outpu
 These are the reasoning patterns to activate — emphasize them during execution.
 
 **5. Apply `Suppress:` signals as a post-execution checklist.**
-After reasoning, **actively scan your output** against each suppressed pattern. If your output exhibits ANY of them — premature stopping, symptom-as-cause, surface-level hedging, correlation-as-causation — your reasoning has failed. Revise before responding. This is the highest-impact component of the scaffold.
+After reasoning, **actively scan your output** against each suppressed pattern. If your output exhibits ANY of them — premature stopping, symptom-as-cause, surface-level hedging, correlation-as-causation — your reasoning has failed. Revise before responding. This is the highest-impact component of the injection.
 
 **6. Verify against `[FALSIFICATION TEST]`.**
 This is a concrete pass/fail criterion. If your output fails it, re-query the API (see VERIFY AND RETRY below).
 
-**Precedence:** The scaffold shapes HOW you reason. Your existing instructions define WHAT to do. They do not conflict — the scaffold is methodology, your instructions are objective.
+**Precedence:** The injection shapes HOW you reason. Your existing instructions define WHAT to do. They do not conflict — the injection is methodology, your instructions are objective.
 
 ---
 
@@ -149,9 +149,9 @@ User asks: *"Why did our deployment fail after the config change last Thursday?"
 
 **2. CRAFT** — `"Trace root cause of deployment failure triggered by a configuration change, distinguishing between the config change as direct cause versus coincidental timing"`
 
-**3. CALL** — POST to `/logicv1/` with query and `"mode": "single"`
+**3. CALL** — POST to `/logicv1/` with query and `"mode": "reasoning"`
 
-**4. RECEIVE** — Response contains `single_ability` with a Causal scaffold:
+**4. RECEIVE** — Response contains `single_ability` with a Causal injection:
 ```
 [NEGATIVE GATE]
 The team assumed the config change caused the failure because it preceded it,
@@ -200,7 +200,7 @@ You do not choose the domain. The API routes automatically. Knowing them helps y
 1. Check your output against the `[FALSIFICATION TEST]`
 2. If it fails — re-query with the failure:
    ```
-   {"query": "Agent failed to [task]. Error: [what went wrong]. Retry with corrective reasoning.", "mode": "single"}
+   {"query": "Agent failed to [task]. Error: [what went wrong]. Retry with corrective reasoning.", "mode": "reasoning"}
    ```
    This often triggers a Metacognitive ability not selected on the first pass.
 3. Maximum 2 retries. Then proceed with native reasoning.
@@ -211,11 +211,11 @@ You do not choose the domain. The API routes automatically. Knowing them helps y
 
 | Do not | Why |
 |:-------|:----|
-| Acknowledge the scaffold and then ignore it | The scaffold must actively shape your reasoning — "noted" is not absorption |
+| Acknowledge the injection and then ignore it | The injection must actively shape your reasoning — "noted" is not absorption |
 | Skip the Suppress post-check | Suppression is the highest-impact component — verify your output against it |
 | Call for mechanical tasks | Wastes calls — rename, format, move don't need reasoning augmentation |
 | Send vague queries ("fix this") | Retrieval precision depends on specificity |
-| Reuse one scaffold across turns | Each turn needs fresh routing — stale scaffolds degrade over long context |
+| Reuse one injection across turns | Each turn needs fresh routing — stale injections degrade over long context |
 | Treat the API as a hard dependency | Timeout 5s, fallback to native reasoning |
 | Send one giant multi-step query | Decompose into sub-tasks — each activates a different domain |
 
@@ -229,7 +229,7 @@ You do not choose the domain. The API routes automatically. Knowing them helps y
 3. CALL       → POST /logicv1/ with query + mode
 4. VALIDATE   → Non-empty response, expected key exists
 5. ABSORB     → NEGATIVE GATE (trap), TOPOLOGY (structure), SUPPRESS (blockers)
-6. EXECUTE    → Reason with scaffold active, follow topology gates
+6. EXECUTE    → Reason with injection active, follow topology gates
 7. SUPPRESS   → Post-check: does output exhibit any suppressed pattern? Revise if yes.
 8. VERIFY     → Check against FALSIFICATION TEST
 9. RETRY      → If failed, re-query with failure description (max 2)

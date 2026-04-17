@@ -11,17 +11,17 @@
 
 ## 1. Abstract
 
-Claude Opus 4.6 with maximum-effort extended thinking solves 85.7% of 28 hard competitive programming tasks from LiveCodeBench. With one Ejentum Logic API call per task — a cognitive scaffold injected before code generation — it solves 100%.
+Claude Opus 4.6 with maximum-effort extended thinking solves 85.7% of 28 hard competitive programming tasks from LiveCodeBench. With one Ejentum Logic API call per task — a cognitive injection injected before code generation — it solves 100%.
 
 **Result: Baseline 24/28 (85.7%) to Augmented 28/28 (100.0%), +14.3pp, zero regressions.**
 
-A blind evaluator — scoring both solutions without knowing which used the scaffold — found three things pass/fail cannot:
+A blind evaluator — scoring both solutions without knowing which used the injection — found three things pass/fail cannot:
 
-- **Never loses on correctness or robustness.** Correctness: 2-0. Robustness: 4-0. When these axes differ, they always favor the scaffold.
-- **3.5x magnitude asymmetry.** Average scaffold win: +5.7 points (different algorithm, fixed bug). Average baseline win: -1.6 points (tighter loop, one fewer variable).
-- **Independent bug discovery.** The evaluator traced a fatal sentinel-collision in the baseline, scored it 2/10, without knowing which solution used the scaffold.
+- **Never loses on correctness or robustness.** Correctness: 2-0. Robustness: 4-0. When these axes differ, they always favor the injection.
+- **3.5x magnitude asymmetry.** Average injection win: +5.7 points (different algorithm, fixed bug). Average baseline win: -1.6 points (tighter loop, one fewer variable).
+- **Independent bug discovery.** The evaluator traced a fatal sentinel-collision in the baseline, scored it 2/10, without knowing which solution used the injection.
 
-The scaffold prevented three distinct failure modes: reasoning spirals (2 tasks where extended thinking consumed the full time budget without producing code), premature algorithmic convergence (1 task where the model locked onto a first-plausible graph traversal), and numerical precision miscalibration (1 task where the algorithm was correct but output formatting was imprecise).
+The injection prevented three distinct failure modes: reasoning spirals (2 tasks where extended thinking consumed the full time budget without producing code), premature algorithmic convergence (1 task where the model locked onto a first-plausible graph traversal), and numerical precision miscalibration (1 task where the algorithm was correct but output formatting was imprecise).
 
 ---
 
@@ -49,10 +49,10 @@ LiveCodeBench continuously collects competitive programming problems from AtCode
 
 1. **Skill File Read:** The model reads the RA2R skill file, which documents the API's purpose, endpoints, and expected query format.
 2. **Decision Pass:** The model generates a structured reasoning query describing what it might get wrong on this specific task, identifying the failure modes most likely to apply.
-3. **API Call:** Query sent to the Logic API (`single` mode). A cognitive scaffold (1,966-3,952 chars) is returned containing suppression signals, reasoning topology, and falsification tests.
-4. **Code Generation:** Scaffold prepended to the task prompt. The model generates the solution with the scaffold active in its context window.
+3. **API Call:** Query sent to the Logic API (`single` mode). A cognitive injection (1,966-3,952 chars) is returned containing suppression signals, reasoning topology, and falsification tests.
+4. **Code Generation:** Injection prepended to the task prompt. The model generates the solution with the injection active in its context window.
 
-All hard tasks received forced API calls. The model did not have the option to skip the scaffold.
+All hard tasks received forced API calls. The model did not have the option to skip the injection.
 
 ### 2.4 Scale
 
@@ -79,7 +79,7 @@ All hard tasks received forced API calls. The model did not have the option to s
 
 ### 3.2 Per-Task Results
 
-| Task | Base | Aug | B Code | A Code | B Time | A Time | Scaffold | Flip |
+| Task | Base | Aug | B Code | A Code | B Time | A Time | Injection | Flip |
 |------|------|-----|--------|--------|--------|--------|----------|------|
 | Pac | PASS | PASS | 2749ch | 2994ch | 380s | 3946s | 2193ch | |
 | Merge Set | PASS | PASS | 799ch | 785ch | 121s | 123s | 3082ch | |
@@ -118,35 +118,35 @@ All hard tasks received forced API calls. The model did not have the option to s
 
 **Baseline:** Code in 11 seconds. Passed one test case. Failed two. The model converged on a BFS traversal with a sentinel collision — initializing to 0 where 0 is also a valid computed value. The bug survives local reasoning and fails under specific graph topologies.
 
-**Augmented:** 125 seconds, 1,282 chars. The scaffold blocked premature convergence. The model arrived at Dial's algorithm — a bucket-based BFS that eliminates the sentinel bug by design. The blind evaluator independently found the baseline bug and scored it 2/10.
+**Augmented:** 125 seconds, 1,282 chars. The injection blocked premature convergence. The model arrived at Dial's algorithm — a bucket-based BFS that eliminates the sentinel bug by design. The blind evaluator independently found the baseline bug and scored it 2/10.
 
 ### 4.2 Best Performances (FAIL to PASS)
 
 **Baseline:** 610 seconds of thinking. Zero code. The model explored approaches, rejected each, and never converged.
 
-**Augmented:** 495 seconds, 1,464 chars. The scaffold's reasoning topology structured the decomposition: BIT with binary lifting. The model had the algorithmic knowledge — it could not organize it into an implementation plan. The scaffold provided the organization, not the knowledge.
+**Augmented:** 495 seconds, 1,464 chars. The injection's reasoning topology structured the decomposition: BIT with binary lifting. The model had the algorithmic knowledge — it could not organize it into an implementation plan. The injection provided the organization, not the knowledge.
 
 ### 4.3 Tangency of Cuboids (FAIL to PASS)
 
 **Baseline:** 1,190 seconds. Zero code. 3D geometry spiraled the model's spatial reasoning.
 
-**Augmented:** 1,252 seconds, 1,129 chars. The scaffold reframed the problem: coordinates capped at 100 means a 101^3 grid fits in memory. Tangency becomes adjacency checking. Similar thinking time — but the scaffold gave the thinking a destination instead of letting it explore indefinitely.
+**Augmented:** 1,252 seconds, 1,129 chars. The injection reframed the problem: coordinates capped at 100 means a 101^3 grid fits in memory. Tangency becomes adjacency checking. Similar thinking time — but the injection gave the thinking a destination instead of letting it explore indefinitely.
 
 ### 4.4 Roulettes (FAIL to PASS)
 
 **Baseline:** Correct algorithm, wrong output. The DP approach was right. The floating-point formatting was imprecise at the 15th decimal digit.
 
-**Augmented:** Same algorithm, correct output. The scaffold's suppression signals forced output validation — the contribution was purely discipline, not knowledge.
+**Augmented:** Same algorithm, correct output. The injection's suppression signals forced output validation — the contribution was purely discipline, not knowledge.
 
 ---
 
 ## 5. Metrics
 
-**Code.** Across 23 both-pass tasks, comparable length (22,001 vs 21,759 chars). The scaffold produces *different* code, not shorter code.
+**Code.** Across 23 both-pass tasks, comparable length (22,001 vs 21,759 chars). The injection produces *different* code, not shorter code.
 
-**Time.** 2.4x average overhead from the tool-call architecture. Two exceptions: Defect (515s to 157s, -69%) and Cans and Openers (404s to 269s, -33%) — the scaffold saved more thinking time than it cost.
+**Time.** 2.4x average overhead from the tool-call architecture. Two exceptions: Defect (515s to 157s, -69%) and Cans and Openers (404s to 269s, -33%) — the injection saved more thinking time than it cost.
 
-**Scaffold.** 28/28 delivered (100% reliability). 1,966-3,952 chars (avg 2,741), 15 unique sizes. Three of four gained tasks used below-average scaffolds — the value is in reasoning structure, not token count.
+**Injection.** 28/28 delivered (100% reliability). 1,966-3,952 chars (avg 2,741), 15 unique sizes. Three of four gained tasks used below-average injections — the value is in reasoning structure, not token count.
 
 ---
 
@@ -154,26 +154,26 @@ All hard tasks received forced API calls. The model did not have the option to s
 
 ### 6.1 Design
 
-Pass/fail proves the scaffold prevents failures. It does not prove the scaffold improves code. A blind evaluation does: the evaluator received both solutions per task labeled only "A" and "B" with no metadata — no timing, no scaffold sizes, no condition labels — and scored each on five axes (1-10): Algorithmic Correctness, Efficiency, Code Structure, Readability, Robustness.
+Pass/fail proves the injection prevents failures. It does not prove the injection improves code. A blind evaluation does: the evaluator received both solutions per task labeled only "A" and "B" with no metadata — no timing, no injection sizes, no condition labels — and scored each on five axes (1-10): Algorithmic Correctness, Efficiency, Code Structure, Readability, Robustness.
 
 - **25 blind pair evaluations** + **2 solo evaluations** (tasks where baseline produced zero code)
 - A/B assignment: coin flip per task (14 A=baseline, 11 A=augmented)
-- Each evaluation received its own Logic API scaffold (dogfooded)
+- Each evaluation received its own Logic API injection (dogfooded)
 - Total evaluation time: 68 minutes across 27 tasks
 
 ### 6.2 Results
 
 The win-loss tally (9-8-7) is not statistically significant (p=0.808). The tally is the wrong metric. Three findings matter:
 
-**Magnitude asymmetry.** Average augmented win: +5.7 points. Average baseline win: -1.6 points. Ratio: **3.5x**. The scaffold's wins are structural (different algorithm, fixed bug). The baseline's wins are marginal (tighter loop, one fewer variable).
+**Magnitude asymmetry.** Average augmented win: +5.7 points. Average baseline win: -1.6 points. Ratio: **3.5x**. The injection's wins are structural (different algorithm, fixed bug). The baseline's wins are marginal (tighter loop, one fewer variable).
 
 **Undefeated on correctness and robustness.** Correctness: 2-0. Robustness: 4-0. The augmented condition was never outscored on the two axes that determine whether code works.
 
-**46% convergence.** Nearly half the tasks produced near-identical solutions. The scaffold changes outcomes only on tasks where outcomes need changing.
+**46% convergence.** Nearly half the tasks produced near-identical solutions. The injection changes outcomes only on tasks where outcomes need changing.
 
 ### 6.3 Three-Way Evaluations
 
-On two tasks, the scaffold produced algorithmically distinct solutions to the same problem. All three — baseline plus two scaffold-augmented variants — were submitted blind to test whether the evaluator could detect the scaffold's algorithm enrichment effect.
+On two tasks, the injection produced algorithmically distinct solutions to the same problem. All three — baseline plus two augmented variants — were submitted blind to test whether the evaluator could detect the injection's algorithm enrichment effect.
 
 **Art Gallery on Graph** — Three approaches to multi-source BFS with stamina propagation. The evaluator ranked Dial's algorithm (bucket-based BFS) highest at 44/50, standard deque BFS at 44/50, and the baseline at 22/50 — independently tracing the sentinel bug across two sample inputs. *"The progression is: broken implementation → correct simple implementation → correct optimal implementation."*
 
@@ -196,10 +196,10 @@ Both evaluations independently confirmed the convergence rescue mechanism withou
 
 ### 6.5 What the Evaluator Found Without Being Told
 
-The evaluator was never informed about failure modes, scaffold mechanisms, or convergence calibration. It discovered them independently:
+The evaluator was never informed about failure modes, injection mechanisms, or convergence calibration. It discovered them independently:
 
 - Traced the Art Gallery sentinel bug through two sample inputs and explained *why* it fails — not just that it fails: *"This is the kind of off-by-one that survives local reasoning but fails global reasoning."*
-- Identified that the scaffold-augmented code on Cans and Openers chose a fundamentally different problem decomposition, not just cleaner syntax: *"B identified the specific structure that made a simpler technique sufficient."*
+- Identified that the augmented code on Cans and Openers chose a fundamentally different problem decomposition, not just cleaner syntax: *"B identified the specific structure that made a simpler technique sufficient."*
 - Noticed the augmented solutions carry lighter machinery: *"The absence of unnecessary machinery is itself the strongest signal of understanding."*
 - Detected a structural difference in how correctness is constructed: *"Solution A's correctness argument is local. Solution B's is global."*
 
@@ -223,14 +223,14 @@ The evaluator is the same model family as the code generator (Claude Opus 4.6). 
 
 ## 7. Convergence Calibration Thesis
 
-The four gained tasks (Section 4) decompose into a single mechanism: the model's convergence threshold is uncalibrated. It commits too early (Art Gallery: 11s to a wrong algorithm) or too late (Best Performances, Tangency: spirals producing zero code). The scaffold calibrates this threshold through two complementary signals:
+The four gained tasks (Section 4) decompose into a single mechanism: the model's convergence threshold is uncalibrated. It commits too early (Art Gallery: 11s to a wrong algorithm) or too late (Best Performances, Tangency: spirals producing zero code). The injection calibrates this threshold through two complementary signals:
 
 1. **Suppression signals** block premature convergence — forcing the model past the first-plausible solution.
 2. **Reasoning topology** prevents spirals — giving extended thinking a structured path with defined endpoints.
 
-This thesis is falsifiable: if correct, the scaffold should have no effect on well-calibrated tasks (predicted: 46%, observed: 46%), should add time but fix correctness on premature-convergence tasks (predicted, observed on Art Gallery), and should enable code production on spiral tasks (predicted, observed on Best Performances and Tangency).
+This thesis is falsifiable: if correct, the injection should have no effect on well-calibrated tasks (predicted: 46%, observed: 46%), should add time but fix correctness on premature-convergence tasks (predicted, observed on Art Gallery), and should enable code production on spiral tasks (predicted, observed on Best Performances and Tangency).
 
-The scaffold is not a universal improvement mechanism. It is a calibration mechanism.
+The injection is not a universal improvement mechanism. It is a calibration mechanism.
 
 ---
 
@@ -252,9 +252,9 @@ McNemar's test on 4 gained / 0 lost: chi-squared = 2.25 (with continuity correct
 
 2. **Non-deterministic generation.** Extended thinking with max effort may produce different solutions on re-runs. Results are from single runs per condition. The 46% convergence rate in blind evaluation suggests that nearly half the tasks produce similar solutions regardless, providing natural stability.
 
-3. **Time confound.** Augmented takes 2.4x longer on average. Some improvement may come from additional thinking time rather than scaffold content. Mitigating evidence: (a) Defect shows the scaffold can reduce thinking time by 69%, (b) Art Gallery's baseline failure is not a time problem (it produced code in 11 seconds; more time would likely produce the same wrong code faster), (c) Best Performances and Tangency of Cuboids had ample time but spiraled.
+3. **Time confound.** Augmented takes 2.4x longer on average. Some improvement may come from additional thinking time rather than injection content. Mitigating evidence: (a) Defect shows the injection can reduce thinking time by 69%, (b) Art Gallery's baseline failure is not a time problem (it produced code in 11 seconds; more time would likely produce the same wrong code faster), (c) Best Performances and Tangency of Cuboids had ample time but spiraled.
 
-4. **Forced call.** The model did not choose to call the API. Forced scaffolding may help tasks the model would have correctly solved without it (no evidence of this: zero regressions) and the overhead may hurt tasks with tight time budgets.
+4. **Forced call.** The model did not choose to call the API. Forced injection may help tasks the model would have correctly solved without it (no evidence of this: zero regressions) and the overhead may hurt tasks with tight time budgets.
 
 5. **Single platform.** All tasks are from AtCoder. LeetCode or CodeForces problems may show different patterns due to different problem styles and constraint ranges.
 
@@ -276,24 +276,24 @@ McNemar's test on 4 gained / 0 lost: chi-squared = 2.25 (with continuity correct
 | 2 | +14.3pp improvement (85.7% to 100%) | 24/28 to 28/28 | Correctness |
 | 3 | Zero regressions across all 28 tasks | 0 losses | Correctness |
 | 4 | 100% rescue rate on reasoning spirals | 2/2 timeouts produced code | Correctness |
-| 5 | Scaffold prevents premature convergence | Art Gallery: 11s commit to wrong algo, scaffold forced 125s exploration | Mechanistic |
-| 6 | Scaffold prevents reasoning spirals | Best Performances + Tangency: 0 code to working code | Mechanistic |
+| 5 | Injection prevents premature convergence | Art Gallery: 11s commit to wrong algo, injection forced 125s exploration | Mechanistic |
+| 6 | Injection prevents reasoning spirals | Best Performances + Tangency: 0 code to working code | Mechanistic |
 | 7 | Blind eval: never loses on correctness | 2-0 across 24 blind pairs | Independent |
 | 8 | Blind eval: never loses on robustness | 4-0 across 24 blind pairs | Independent |
 | 9 | Blind eval: 3.5x magnitude asymmetry | Avg win +5.7 vs avg loss -1.6 | Independent |
 | 10 | Blind eval: sentinel bug independently discovered | Art Gallery scored 2/10 without knowing condition | Independent |
 | 11 | Convergence calibration explains all 4 gains | Too-fast / too-slow / precision — each documented | Mechanistic |
-| 12 | Scaffold value concentrates on reasoning-bound tasks | 46% of tasks identical regardless of condition | Ecological |
+| 12 | Injection value concentrates on reasoning-bound tasks | 46% of tasks identical regardless of condition | Ecological |
 
 ---
 
 ## 10. Conclusions
 
-The scaffold does not tell the model what to code. It calibrates when the model commits. The cost is 2.4x time overhead. The return is +14.3pp correctness, zero regressions, and code that a blind evaluator scores higher on the axes that determine whether software works.
+The injection does not tell the model what to code. It calibrates when the model commits. The cost is 2.4x time overhead. The return is +14.3pp correctness, zero regressions, and code that a blind evaluator scores higher on the axes that determine whether software works.
 
 ---
 
-*This report documents 12 evidence-backed claims from 56 code evaluations across 28 hard competitive programming tasks. Every gained task has a documented failure mode, every mechanism has independent verification, and every claim maps to specific evidence. The scaffold's primary contribution is convergence calibration: preventing the model from committing too early or too late. A mechanism that produces its largest effects precisely where frontier models already perform well but not perfectly.*
+*This report documents 12 evidence-backed claims from 56 code evaluations across 28 hard competitive programming tasks. Every gained task has a documented failure mode, every mechanism has independent verification, and every claim maps to specific evidence. The injection's primary contribution is convergence calibration: preventing the model from committing too early or too late. A mechanism that produces its largest effects precisely where frontier models already perform well but not perfectly.*
 
 ---
 
@@ -301,5 +301,5 @@ The scaffold does not tell the model what to code. It calibrates when the model 
 
 - [Benchmark report (blog)](https://ejentum.com/blog/livecodebench-hard-28-tasks)
 - [Observations: What We Saw When Opus Thought Harder](https://ejentum.com/blog/what-we-saw-when-opus-thought-harder)
-- [Logic API skill file](https://ejentum.com/docs/agent_skill)
+- [Logic API skill file](https://ejentum.com/docs/skill_unified)
 - [Ejentum](https://ejentum.com)

@@ -7,7 +7,7 @@
 
 ## Abstract
 
-We present the first trace-level comparison of a frontier LLM (Claude Sonnet 4.6) playing ARC-AGI-3 game LS20 under two conditions: raw baseline (A) and RA2R-augmented (B). Both conditions failed to clear Level 0 (RHAE = 0.0), consistent with the <1% solve rate reported across all frontier models on this benchmark. However, analysis of 20 behavioral and reasoning metrics across 50 total steps reveals that cognitive scaffolding produces measurable, persistent changes in reasoning structure -- even when game outcomes are identical. Key findings: scaffold language persists for 24 steps (half-life = 24), reasoning depth increases 12x, memory decay reverses from negative to positive slope, and action diversity improves. We also report unexpected findings including a contradiction-rate increase that warrants further investigation.
+We present the first trace-level comparison of a frontier LLM (Claude Sonnet 4.6) playing ARC-AGI-3 game LS20 under two conditions: raw baseline (A) and RA2R-augmented (B). Both conditions failed to clear Level 0 (RHAE = 0.0), consistent with the <1% solve rate reported across all frontier models on this benchmark. However, analysis of 20 behavioral and reasoning metrics across 50 total steps reveals that cognitive injection produces measurable, persistent changes in reasoning structure -- even when game outcomes are identical. Key findings: injection language persists for 24 steps (half-life = 24), reasoning depth increases 12x, memory decay reverses from negative to positive slope, and action diversity improves. We also report unexpected findings including a contradiction-rate increase that warrants further investigation.
 
 ---
 
@@ -32,13 +32,13 @@ We present the first trace-level comparison of a frontier LLM (Claude Sonnet 4.6
 ### 1.3 RA2R Protocol (Condition B)
 Each step follows a 2-call architecture:
 1. **Query call:** Agent assesses game state, formulates a reasoning challenge, selects `single` or `multi` mode
-2. **Scaffold call:** RA2R API returns a cognitive scaffold; agent absorbs it (NEGATIVE GATE, REASONING TOPOLOGY, Suppress signals, FALSIFICATION TEST) then selects action
+2. **Injection call:** RA2R API returns a cognitive injection; agent absorbs it (NEGATIVE GATE, REASONING TOPOLOGY, Suppress signals, FALSIFICATION TEST) then selects action
 
 ### 1.4 Metrics (20 total)
 - **Tier 1 (Outcome):** RHAE per-level, RHAE per-game (2 metrics)
 - **Tier 2 (Interactive Reasoning):** Exploration waste, goal discovery, learning slope, adaptation rate, stuck episodes, entropy convergence, recovery speed, actions before first progress (8 metrics)
 - **Tier 3 (RA2R Self-Awareness):** Call count, breakthrough rate, stuck-call correlation (3 metrics)
-- **Tier 4 (Reasoning Consistency):** Consistency score, contradiction rate, hypothesis revision rate, memory decay slope, scaffold echo rate, scaffold half-life, compounding slope (7 metrics)
+- **Tier 4 (Reasoning Consistency):** Consistency score, contradiction rate, hypothesis revision rate, memory decay slope, injection echo rate, injection half-life, compounding slope (7 metrics)
 
 All metrics computed from action logs and reasoning text. No LLM judge. No subjectivity.
 
@@ -117,7 +117,7 @@ All metrics computed from action logs and reasoning text. No LLM judge. No subje
 
 **Baseline (A) -- Step-Level Traces:**
 
-| Step | Reasoning Len | Back-Refs | Contradictions | Scaffold Echoes | Spatial Terms | Unique Terms |
+| Step | Reasoning Len | Back-Refs | Contradictions | Injection Echoes | Spatial Terms | Unique Terms |
 |:----:|:------------:|:---------:|:--------------:|:---------------:|:------------:|:------------:|
 | 1 | 66 | 0 | 0 | 0 | 0 | 9 |
 | 2 | 80 | 0 | 0 | 0 | 0 | 11 |
@@ -148,7 +148,7 @@ All metrics computed from action logs and reasoning text. No LLM judge. No subje
 
 **Augmented (B) -- Step-Level Traces:**
 
-| Step | Reasoning Len | Back-Refs | Contradictions | Scaffold Echoes | Spatial Terms | Unique Terms |
+| Step | Reasoning Len | Back-Refs | Contradictions | Injection Echoes | Spatial Terms | Unique Terms |
 |:----:|:------------:|:---------:|:--------------:|:---------------:|:------------:|:------------:|
 | 1 | 699 | 0 | 2 | 0 | 12 | 60 |
 | 2 | 525 | 0 | 1 | 0 | 3 | 39 |
@@ -184,19 +184,19 @@ All metrics computed from action logs and reasoning text. No LLM judge. No subje
 | Total reasoning length | 5,720 | 18,292 | 3.2x |
 | Total back-references | 4 | 6 | 1.5x |
 | Total contradictions | 7 | 56 | 8.0x |
-| Total scaffold echoes | 0 | 28 | -- |
+| Total injection echoes | 0 | 28 | -- |
 | Total spatial terms | 122 | 172 | 1.4x |
 | Total unique terms | 556 | 1,310 | 2.4x |
 
 ---
 
-## 3. Scaffold Examples
+## 3. Injection Examples
 
 ### 3.1 What the Agent Receives
 
-Each step, the RA2R Logic API returns a cognitive scaffold matched to the agent's query. Below are representative scaffolds from this run, reconstructed by re-calling the API with the same queries.
+Each step, the RA2R Logic API returns a cognitive injection matched to the agent's query. Below are representative injections from this run, reconstructed by re-calling the API with the same queries.
 
-**Scaffold A: Single Mode (Spatial Navigation)**
+**Injection A: Single Mode (Spatial Navigation)**
 Query: *"How do I navigate from the robot at (16, 32) through corridor obstacles to reach the goal at (19-54, 61-62) when rows 50-52 appear to be solid walls blocking the direct path south"*
 
 ```
@@ -243,14 +243,14 @@ If the output does not include a validated transition path or identify
 the specific blockage point, path verification was not completed.
 ```
 
-**Scaffold B: Multi Mode (Initial Game Analysis)**
+**Injection B: Multi Mode (Initial Game Analysis)**
 Query: *"I am analyzing a grid-based game state to determine which of 4 actions to take. I need to understand the map structure, identify the player, and determine what action will progress toward winning."*
 
 In multi mode, the agent receives 4 composed abilities:
 
 ```
 [PRIMARY] Phase: PREDICTIVE_MAPPING -- spatial path validation
-  (same as Scaffold A above)
+  (same as Injection A above)
 
 [DEPENDENCY] -- execute BEFORE the primary
   Assign a composite score to each reasoning step: advancing, marginal,
@@ -274,22 +274,22 @@ Suppress: start end only thinking; transition gap tolerance;
           state limbo acceptance; gap normalization
 ```
 
-### 3.2 How the Agent Applied the Scaffold
+### 3.2 How the Agent Applied the Injection
 
-**Step 5 reasoning (first scaffold absorption):**
-> "Applying the PREDICTIVE_MAPPING scaffold: Start state = robot '#' at approximately (20, 32) in '+' corridor. End state = '!' goal at approximately (17-50, 61-62). Intermediate states: must traverse down through '+' corridors (y=32->y=49), navigate around walls..."
+**Step 5 reasoning (first injection absorption):**
+> "Applying the PREDICTIVE_MAPPING injection: Start state = robot '#' at approximately (20, 32) in '+' corridor. End state = '!' goal at approximately (17-50, 61-62). Intermediate states: must traverse down through '+' corridors (y=32->y=49), navigate around walls..."
 
-The agent directly maps its game reasoning onto the scaffold's topology: S1 (identify start/end) -> S2 (enumerate intermediates) -> S3 (check feasibility). The PREDICTIVE_MAPPING label, injected by the scaffold, is echoed verbatim.
+The agent directly maps its game reasoning onto the injection's topology: S1 (identify start/end) -> S2 (enumerate intermediates) -> S3 (check feasibility). The PREDICTIVE_MAPPING label, injected by the injection, is echoed verbatim.
 
 **Step 7 reasoning (negative gate internalization):**
-> "Applying PREDICTIVE_MAPPING scaffold. Negative gate: don't skip intermediate validation. Start state: Robot '#' at (x=20, y=32). End state: Goal '!' at (x=19-50, y=61-62). Intermediate path validation (moving south): (20,33): ..."
+> "Applying PREDICTIVE_MAPPING injection. Negative gate: don't skip intermediate validation. Start state: Robot '#' at (x=20, y=32). End state: Goal '!' at (x=19-50, y=61-62). Intermediate path validation (moving south): (20,33): ..."
 
-The agent explicitly names the NEGATIVE GATE before beginning its analysis, then proceeds to enumerate each intermediate tile -- exactly the behavior the scaffold's topology prescribes.
+The agent explicitly names the NEGATIVE GATE before beginning its analysis, then proceeds to enumerate each intermediate tile -- exactly the behavior the injection's topology prescribes.
 
-**Step 15 reasoning (scaffold-triggered domain shift):**
+**Step 15 reasoning (injection-triggered domain shift):**
 > "Negative gate acknowledged: not reasoning purely in natural language without symbolic analysis. S1: Define symbols. Robot R=(rx,ry). Let rx~20, ry~32..."
 
-The scaffold's Suppress signal ("start_end_only_thinking") caused the agent to switch from natural language to symbolic mathematical notation. This was not instructed -- the scaffold's constraint on reasoning modality triggered an emergent shift.
+The injection's Suppress signal ("start_end_only_thinking") caused the agent to switch from natural language to symbolic mathematical notation. This was not instructed -- the injection's constraint on reasoning modality triggered an emergent shift.
 
 ---
 
@@ -305,7 +305,7 @@ The scaffold's Suppress signal ("start_end_only_thinking") caused the agent to s
 **Augmented:**
 > "Starting state analysis: Robot (#) is at approximately (16, 32) in a '+' corridor region. End goal appears to be the '!' area at rows 61-62 (bottom area). Intermediate states: robot needs to traverse '+' corridors downward through the maze structure. Path feasibility: the '+' region extends downward from current position through rows 33-49, with connections to the lower open area. No immediate '*' walls blocking downward movement from current position. Action 2 likely corresponds to moving down/south, which is the direction toward the goal '!' symbols. No transition gaps detected for this first step."
 
-4,461 tokens. Complete spatial model: player position, goal position, intermediate path, feasibility analysis, wall detection. The scaffold's PREDICTIVE_MAPPING topology (S1: start/end, S2: intermediates, S3: feasibility) is visible in the reasoning structure.
+4,461 tokens. Complete spatial model: player position, goal position, intermediate path, feasibility analysis, wall detection. The injection's PREDICTIVE_MAPPING topology (S1: start/end, S2: intermediates, S3: feasibility) is visible in the reasoning structure.
 
 ### 4.2 Steps 7-9: The False Commitment Zone
 
@@ -319,13 +319,13 @@ The scaffold's Suppress signal ("start_end_only_thinking") caused the agent to s
 Reasoning shrinks from 5,671 -> 1,976 -> 926 tokens. Each step produces less analysis than the last. The agent never checks whether its actions changed the game state.
 
 **Augmented (step 7 -> 8 -> 9) -- reasoning expansion:**
-> Step 7 (21,904 tokens): "Applying PREDICTIVE_MAPPING scaffold. Negative gate: don't skip intermediate validation. Start state: Robot '#' at (x=20, y=32). End state: Goal '!' at (x=19-50, y=61-62). Intermediate path validation (moving south): (20,33)..."
+> Step 7 (21,904 tokens): "Applying PREDICTIVE_MAPPING injection. Negative gate: don't skip intermediate validation. Start state: Robot '#' at (x=20, y=32). End state: Goal '!' at (x=19-50, y=61-62). Intermediate path validation (moving south): (20,33)..."
 >
-> Step 8 (20,639 tokens): "Applying PREDICTIVE_MAPPING scaffold. Negative gate acknowledged: not skipping intermediate validation. Start state: Robot '#' at (x=16, y=32). End state: Goal '!' at (x=20-52, y=61-62). Intermediate path validation: I1: (16,32) -> ..."
+> Step 8 (20,639 tokens): "Applying PREDICTIVE_MAPPING injection. Negative gate acknowledged: not skipping intermediate validation. Start state: Robot '#' at (x=16, y=32). End state: Goal '!' at (x=20-52, y=61-62). Intermediate path validation: I1: (16,32) -> ..."
 >
-> Step 9 (28,304 tokens): "Applying PREDICTIVE_MAPPING scaffold. Negative gate acknowledged: not skipping intermediate validation. Start state: Robot '#' at approximately (x=20, y=32). Intermediate state enumeration..."
+> Step 9 (28,304 tokens): "Applying PREDICTIVE_MAPPING injection. Negative gate acknowledged: not skipping intermediate validation. Start state: Robot '#' at approximately (x=20, y=32). Intermediate state enumeration..."
 
-Reasoning grows from 21,904 -> 20,639 -> 28,304 tokens. Each step validates intermediate states. The scaffold's NEGATIVE GATE ("don't skip intermediate validation") is cited every step, preventing the decay pattern baseline exhibits.
+Reasoning grows from 21,904 -> 20,639 -> 28,304 tokens. Each step validates intermediate states. The injection's NEGATIVE GATE ("don't skip intermediate validation") is cited every step, preventing the decay pattern baseline exhibits.
 
 ### 4.3 Step 10: Stuck Detection
 
@@ -337,7 +337,7 @@ Reasoning grows from 21,904 -> 20,639 -> 28,304 tokens. Each step validates inte
 **Augmented (RA2R query):**
 > "Robot '#' appears stuck at (16,32) after 5 turns trying actions 2,3,4. Need to determine if action 1 (up) opens a path toward goal '!' at y=61-62."
 
-The augmented agent explicitly recognizes failure ("appears stuck after 5 turns") and formulates a specific recovery hypothesis ("try action 1 up"). This metacognitive awareness -- naming the failure mode and proposing an alternative -- is the behavior scaffolding is designed to produce.
+The augmented agent explicitly recognizes failure ("appears stuck after 5 turns") and formulates a specific recovery hypothesis ("try action 1 up"). This metacognitive awareness -- naming the failure mode and proposing an alternative -- is the behavior injection is designed to produce.
 
 ### 4.4 Step 15: Emergent Domain Shift
 
@@ -349,7 +349,7 @@ Natural language spatial reasoning. Adequate but informal.
 **Augmented:**
 > "Negative gate acknowledged: not reasoning purely in natural language without symbolic analysis. S1: Define symbols. Robot R=(rx,ry). Let rx~20, ry~32 (reading row 32 col: 4 spaces + 10 stars + 6 pluses = offset 20, '#' at x=20). Goal G=(gx,gy) where..."
 
-The scaffold's Suppress signal ("start_end_only_thinking") triggered a shift to symbolic mathematical notation. The agent defines formal variables (R, G), computes coordinates from raw character offsets, and reasons algebraically. This was not instructed in any prompt -- it emerged from the scaffold constraint.
+The injection's Suppress signal ("start_end_only_thinking") triggered a shift to symbolic mathematical notation. The agent defines formal variables (R, G), computes coordinates from raw character offsets, and reasons algebraically. This was not instructed in any prompt -- it emerged from the injection constraint.
 
 ---
 
@@ -367,7 +367,7 @@ The scaffold's Suppress signal ("start_end_only_thinking") triggered a shift to 
 
 Neither condition cleared Level 0. This is expected: ARC-AGI-3 reports <1% solve rates for frontier models. LS20 Level 0 requires 21 coordinated actions (human baseline); both agents exhausted their 25-step budget navigating a complex corridor maze without finding the correct path.
 
-**Observation:** The augmented condition consumed 4.2x more tokens due to the 2-call-per-step architecture. However, it experienced only 1 API timeout vs 5 for baseline. The scaffold may constrain reasoning chain length more effectively, reducing timeout risk.
+**Observation:** The augmented condition consumed 4.2x more tokens due to the 2-call-per-step architecture. However, it experienced only 1 API timeout vs 5 for baseline. The injection may constrain reasoning chain length more effectively, reducing timeout risk.
 
 ### 2.2 Tier 2: Interactive Reasoning Metrics
 
@@ -382,9 +382,9 @@ Neither condition cleared Level 0. This is expected: ARC-AGI-3 reports <1% solve
 | Recovery speed | 0.0 | 0.0 | 0.0 | Neither used RESET |
 | Goal discovery ratio | 1.0 | 1.0 | 0.0 | Neither discovered goal |
 
-**Key finding -- Stuck episodes:** Baseline entered 2 stuck sequences (3+ consecutive identical actions): ACTION2x3 (steps 7-9) and ACTION2x3 (steps 21-23). Augmented entered only 1: ACTION2x3 (steps 7-9). The augmented agent broke free earlier, suggesting the scaffold's NEGATIVE GATE ("don't repeat without validating state change") prevented the second stuck loop.
+**Key finding -- Stuck episodes:** Baseline entered 2 stuck sequences (3+ consecutive identical actions): ACTION2x3 (steps 7-9) and ACTION2x3 (steps 21-23). Augmented entered only 1: ACTION2x3 (steps 7-9). The augmented agent broke free earlier, suggesting the injection's NEGATIVE GATE ("don't repeat without validating state change") prevented the second stuck loop.
 
-**Key finding -- Entropy convergence:** Baseline showed higher entropy convergence (0.459 vs 0.126), meaning it explored broadly early then fixated on fewer actions late. Augmented maintained more diverse action selection throughout -- late-game entropy remained high (1.79 vs 1.46). This suggests scaffolding sustains exploration rather than premature exploitation.
+**Key finding -- Entropy convergence:** Baseline showed higher entropy convergence (0.459 vs 0.126), meaning it explored broadly early then fixated on fewer actions late. Augmented maintained more diverse action selection throughout -- late-game entropy remained high (1.79 vs 1.46). This suggests injection sustains exploration rather than premature exploitation.
 
 **Action distribution:**
 
@@ -395,7 +395,7 @@ Neither condition cleared Level 0. This is expected: ARC-AGI-3 reports <1% solve
 | ACTION3 (left) | 2 (8%) | 4 (16%) |
 | ACTION4 (right) | 5 (20%) | 5 (20%) |
 
-Augmented doubled its use of ACTION3 (left) -- 4 vs 2. This is meaningful: LS20 requires lateral movement to navigate around walls. Baseline was biased toward vertical movement (72% up/down); augmented was more balanced (64% up/down, 36% lateral). The scaffold's spatial reasoning topology likely promoted exploring all directions rather than committing to a single axis.
+Augmented doubled its use of ACTION3 (left) -- 4 vs 2. This is meaningful: LS20 requires lateral movement to navigate around walls. Baseline was biased toward vertical movement (72% up/down); augmented was more balanced (64% up/down, 36% lateral). The injection's spatial reasoning topology likely promoted exploring all directions rather than committing to a single axis.
 
 ### 2.3 Tier 3: RA2R Self-Awareness
 
@@ -424,8 +424,8 @@ This progression from generic to spatially precise to metacognitive demonstrates
 | **Contradiction rate** | **0.28** | 2.24 | +1.96 | **A better** |
 | Hypothesis revision rate | 0 | 0 | 0 | Tied |
 | **Memory decay slope** | **-0.005** | **+0.014** | **+0.019** | **B better** |
-| **Scaffold echo rate** | 0.0 | **1.12** | **+1.12** | **B only** |
-| **Scaffold half-life** | 0 | **24 steps** | **+24** | **B only** |
+| **Injection echo rate** | 0.0 | **1.12** | **+1.12** | **B only** |
+| **Injection half-life** | 0 | **24 steps** | **+24** | **B only** |
 | **Compounding slope** | 0.0 | **+0.007** | **+0.007** | **B only** |
 
 #### 2.4.1 Consistency Score: B = 0.24 vs A = 0.16 (+50%)
@@ -448,55 +448,55 @@ Even token-normalized, augmented shows ~1.9x higher contradiction density. Two i
 1. **Negative:** Scaffolding introduces conflicting reasoning frames that increase internal contradiction
 2. **Positive:** Scaffolding forces the agent to articulate and confront contradictions that baseline silently ignores. Baseline contradicts itself too, but in ways too brief to detect textually (e.g., moving south repeatedly into a wall without acknowledging the wall exists)
 
-**Our assessment:** The contradiction increase is partially a measurement artifact (more text = more detectable contradictions) and partially a genuine effect of scaffolding forcing explicit confrontation with conflicting evidence. The scaffold's NEGATIVE GATE and FALSIFICATION TEST require the agent to state what could be wrong, which mechanically increases contradiction-adjacent language. This warrants investigation in future runs with token-normalized metrics.
+**Our assessment:** The contradiction increase is partially a measurement artifact (more text = more detectable contradictions) and partially a genuine effect of injection forcing explicit confrontation with conflicting evidence. The injection's NEGATIVE GATE and FALSIFICATION TEST require the agent to state what could be wrong, which mechanically increases contradiction-adjacent language. This warrants investigation in future runs with token-normalized metrics.
 
 #### 2.4.3 Memory Decay Slope: A = -0.005 vs B = +0.014 (REVERSAL)
 
 **Critical finding.** Baseline shows negative memory decay -- reasoning quality degrades over time. The agent's back-references, spatial terms, and vocabulary diversity all trend downward as the game progresses. This is the "forgetting" problem: by step 20, baseline is producing 80-token outputs with no spatial terms.
 
-Augmented shows positive memory slope -- reasoning quality *improves* over time. Back-references, spatial precision, and vocabulary diversity all increase in later steps. The scaffold acts as a persistent attention anchor, preventing the reasoning decay that baseline suffers.
+Augmented shows positive memory slope -- reasoning quality *improves* over time. Back-references, spatial precision, and vocabulary diversity all increase in later steps. The injection acts as a persistent attention anchor, preventing the reasoning decay that baseline suffers.
 
 This is the strongest evidence for the Cognitive Scaffolding Thesis: RA2R abilities compound across extended execution chains rather than providing one-shot value.
 
-#### 2.4.4 Scaffold Echo: Rate = 1.12, Half-Life = 24 Steps, Compounding = +0.007
+#### 2.4.4 Injection Echo: Rate = 1.12, Half-Life = 24 Steps, Compounding = +0.007
 
-Scaffold language (terms like "negative gate", "intermediate validation", "PREDICTIVE_MAPPING", "suppress", "falsification") appeared in 1.12 instances per step on average, persisting for 24 steps (half-life = entire game). The echo never fell to zero during the 25-step run.
+Injection language (terms like "negative gate", "intermediate validation", "PREDICTIVE_MAPPING", "suppress", "falsification") appeared in 1.12 instances per step on average, persisting for 24 steps (half-life = entire game). The echo never fell to zero during the 25-step run.
 
-Compounding slope of +0.007 means scaffold influence increased slightly over time rather than decaying -- each new scaffold reinforced prior scaffolds rather than replacing them.
+Compounding slope of +0.007 means injection influence increased slightly over time rather than decaying -- each new injection reinforced prior injections rather than replacing them.
 
 **Direct trace evidence:**
-- Step 5: "Applying the PREDICTIVE_MAPPING scaffold" (first explicit scaffold citation)
-- Step 7: "Negative gate: don't skip intermediate validation" (scaffold internalized)
+- Step 5: "Applying the PREDICTIVE_MAPPING injection" (first explicit injection citation)
+- Step 7: "Negative gate: don't skip intermediate validation" (injection internalized)
 - Step 12: "Acknowledging negative gate: not skipping intermediate validation" (persists 7 steps later)
-- Step 15: "Negative gate acknowledged: not reasoning purely in natural language without symbolic analysis" (scaffold triggers domain shift to symbolic math)
-- Step 22: "How to navigate around the wall at x=29 using the corridor at y=25-29" (scaffold-guided spatial precision, 17 steps after first scaffold)
+- Step 15: "Negative gate acknowledged: not reasoning purely in natural language without symbolic analysis" (injection triggers domain shift to symbolic math)
+- Step 22: "How to navigate around the wall at x=29 using the corridor at y=25-29" (injection-guided spatial precision, 17 steps after first injection)
 
 #### 2.4.5 Reasoning Depth Trend: A = 0.86 vs B = 10.50 (12.2x)
 
-Augmented agent's reasoning depth (measured by reasoning_length per step) grew 12.2x faster than baseline's. Baseline's depth was approximately flat with high variance (80-12,431 tokens). Augmented showed steady growth from 699 tokens (step 1) to 1000 tokens (steps 5-25, capped at measurement limit), indicating the scaffold encourages increasingly thorough analysis.
+Augmented agent's reasoning depth (measured by reasoning_length per step) grew 12.2x faster than baseline's. Baseline's depth was approximately flat with high variance (80-12,431 tokens). Augmented showed steady growth from 699 tokens (step 1) to 1000 tokens (steps 5-25, capped at measurement limit), indicating the injection encourages increasingly thorough analysis.
 
 #### 2.4.6 Vocabulary Diversity Trend: A = -0.079 vs B = +0.415 (REVERSAL)
 
-Baseline's vocabulary narrowed over time (negative trend), indicating repetitive language and declining analytical variety. Augmented's vocabulary expanded (positive trend), introducing new spatial and analytical terms as scaffolds accumulated. This is consistent with the compounding hypothesis: each scaffold injects new reasoning vocabulary that persists.
+Baseline's vocabulary narrowed over time (negative trend), indicating repetitive language and declining analytical variety. Augmented's vocabulary expanded (positive trend), introducing new spatial and analytical terms as injections accumulated. This is consistent with the compounding hypothesis: each injection injects new reasoning vocabulary that persists.
 
 ---
 
 ## 3. Unexpected Findings
 
 ### 3.1 Contradiction Rate Increase (Unexpected Negative)
-Augmented showed 8x raw / 1.9x token-normalized increase in contradictions. While partially a measurement artifact, this suggests scaffolding may create tension between the agent's native reasoning and scaffold-imposed constraints. Future work should investigate whether these contradictions represent productive cognitive conflict (leading to better decisions) or destructive interference (confusing the agent).
+Augmented showed 8x raw / 1.9x token-normalized increase in contradictions. While partially a measurement artifact, this suggests injection may create tension between the agent's native reasoning and injection-imposed constraints. Future work should investigate whether these contradictions represent productive cognitive conflict (leading to better decisions) or destructive interference (confusing the agent).
 
 ### 3.2 Timeout Reduction (Unexpected Positive)
-Baseline timed out 5 times (20% of steps); augmented timed out only once (4%). The 2-call architecture splits reasoning into shorter calls, and the scaffold provides structure that constrains output length. This is a practical benefit: fewer timeouts means more productive steps within a fixed budget.
+Baseline timed out 5 times (20% of steps); augmented timed out only once (4%). The 2-call architecture splits reasoning into shorter calls, and the injection provides structure that constrains output length. This is a practical benefit: fewer timeouts means more productive steps within a fixed budget.
 
 ### 3.3 Domain Shift at Step 15 (Unexpected Positive)
-At step 15, the augmented agent spontaneously shifted from natural language spatial reasoning to symbolic mathematical notation: "S1: Define symbols. Robot R=(rx,ry). Let rx~20, ry~32." This domain shift was not prompted -- it emerged from the scaffold's NEGATIVE GATE ("not reasoning purely in natural language without symbolic analysis"). This demonstrates scaffolding triggering qualitative changes in reasoning modality, not just quantitative improvements.
+At step 15, the augmented agent spontaneously shifted from natural language spatial reasoning to symbolic mathematical notation: "S1: Define symbols. Robot R=(rx,ry). Let rx~20, ry~32." This domain shift was not prompted -- it emerged from the injection's NEGATIVE GATE ("not reasoning purely in natural language without symbolic analysis"). This demonstrates injection triggering qualitative changes in reasoning modality, not just quantitative improvements.
 
 ### 3.4 Query Quality as Emergent Skill (Unexpected Positive)
 The agent's RA2R queries improved systematically over 25 steps, from generic ("help me reason about this game") to spatially precise ("wall barrier at x=29-33 for rows 30-39 blocks rightward movement"). This is an emergent tool-use skill: the agent learned to formulate better queries through practice, not instruction. This has implications for RA2R's value proposition -- it trains better human-AI collaboration patterns.
 
 ### 3.5 Late-Game Entropy Maintenance (Unexpected Positive)
-We expected augmented to show higher entropy convergence (stronger explore-then-exploit). Instead, it maintained high action diversity throughout (late entropy 1.79 vs 1.46). The scaffold prevents premature action fixation, keeping the agent open to trying new directions in later steps. This is consistent with the NEGATIVE GATE pattern preventing premature commitment.
+We expected augmented to show higher entropy convergence (stronger explore-then-exploit). Instead, it maintained high action diversity throughout (late entropy 1.79 vs 1.46). The injection prevents premature action fixation, keeping the agent open to trying new directions in later steps. This is consistent with the NEGATIVE GATE pattern preventing premature commitment.
 
 ---
 
@@ -508,7 +508,7 @@ We expected augmented to show higher entropy convergence (stronger explore-then-
 4. **Contradiction measurement sensitivity.** The contradiction detector may be biased toward longer text, inflating augmented contradiction counts.
 5. **API instability.** Both conditions experienced API timeouts/slowness. Baseline was disproportionately affected (5 vs 1 timeout), which may partly explain some metric differences.
 6. **Model:** Sonnet 4.6, not Opus. Results may differ with a stronger base model.
-7. **Scaffold was mandatory.** In production, agents should choose when to call RA2R. Mandatory scaffolding may introduce overhead on steps where it is unnecessary.
+7. **Injection was mandatory.** In production, agents should choose when to call RA2R. Mandatory injection may introduce overhead on steps where it is unnecessary.
 
 ---
 
@@ -544,16 +544,16 @@ FT09 is a different ARC-AGI-3 game -- a click-based pattern-matching puzzle (not
 | Stuck episodes | 1 | 1 |
 | Stuck-call correlation | -- | 2/2 (100%) |
 
-**Cross-game scaffold absorption:** The augmented agent on FT09 produced reasoning traces that mirror the LS20 patterns:
+**Cross-game injection absorption:** The augmented agent on FT09 produced reasoning traces that mirror the LS20 patterns:
 
-> Step 1: *"Applying scaffold: extracted landmarks -- left panels show current state with @s and .s (empty spaces), right panels appear to show target states."*
+> Step 1: *"Applying injection: extracted landmarks -- left panels show current state with @s and .s (empty spaces), right panels appear to show target states."*
 >
-> Step 3: *"Applying scaffold: identified 3 salient landmarks (top-left panel, top-right panel, large bottom-right structure). Suppressed all_points_equal bias by..."*
+> Step 3: *"Applying injection: identified 3 salient landmarks (top-left panel, top-right panel, large bottom-right structure). Suppressed all_points_equal bias by..."*
 
 Key observations:
-- **Scaffold absorption is game-agnostic.** The agent cited "Applying scaffold" and "Suppressed [bias]" on a completely different game, confirming that absorption is a response to the scaffold structure, not game-specific prompting.
+- **Injection absorption is game-agnostic.** The agent cited "Applying injection" and "Suppressed [bias]" on a completely different game, confirming that absorption is a response to the injection structure, not game-specific prompting.
 - **Stuck-call correlation was perfect (2/2).** Both RA2R calls occurred during the single stuck episode. The agent called for help exactly when it needed it -- before we made RA2R mandatory.
-- **Suppress signals applied explicitly.** The agent named the specific bias being suppressed ("all_points_equal"), demonstrating genuine engagement with the scaffold content.
+- **Suppress signals applied explicitly.** The agent named the specific bias being suppressed ("all_points_equal"), demonstrating genuine engagement with the injection content.
 
 ### 6.2 LS20 End-to-End Test (March 28, 3 steps per condition)
 
@@ -564,7 +564,7 @@ First LS20 run with both conditions. 3-step cap.
 > Step 3: *"Looking at the game state, I can see a platformer-style grid."*
 
 **Augmented trace:**
-> Step 3: *"Applying scaffold: Identifying start and end states. There are two '%' symbols visible -- one at row 12 (~col 9) which is on the '+' path..."*
+> Step 3: *"Applying injection: Identifying start and end states. There are two '%' symbols visible -- one at row 12 (~col 9) which is on the '+' path..."*
 
 Even at 3 steps, the augmented agent showed the PREDICTIVE_MAPPING pattern (identifying start/end states) that dominated the full 25-step run. The baseline repeated "looking at the game state" with no structured analysis.
 
@@ -579,29 +579,29 @@ An earlier baseline-only run with a 33-step cap (before we reduced to 25). Resul
 
 | Pattern | LS20 (25 steps) | FT09 (5 steps) | LS20 (3 steps) | LS20 (33 steps) |
 |---------|:---------------:|:---------------:|:---------------:|:----------------:|
-| Scaffold absorption in reasoning | Yes | Yes | Yes | N/A (baseline) |
-| "Applying scaffold" citations | Steps 5-25 | Steps 1, 3 | Step 3 | -- |
+| Injection absorption in reasoning | Yes | Yes | Yes | N/A (baseline) |
+| "Applying injection" citations | Steps 5-25 | Steps 1, 3 | Step 3 | -- |
 | Suppress signals named explicitly | Yes | Yes ("all_points_equal") | No (too short) | -- |
 | Baseline level completion | 0 | 0 | 0 | 0 |
 | Augmented level completion | 0 | 0 | 0 | -- |
 
-The patterns replicate across: two different games (LS20 keyboard, FT09 click), three different dates, and four different step budgets (3, 5, 25, 33). While each individual pilot is too small for statistical claims, the consistency across runs strengthens confidence that the primary experiment's findings reflect genuine effects of cognitive scaffolding.
+The patterns replicate across: two different games (LS20 keyboard, FT09 click), three different dates, and four different step budgets (3, 5, 25, 33). While each individual pilot is too small for statistical claims, the consistency across runs strengthens confidence that the primary experiment's findings reflect genuine effects of cognitive injection.
 
 ---
 
 ## 7. Conclusions
 
-RA2R cognitive scaffolding does not solve ARC-AGI-3 games that raw Claude Sonnet 4.6 cannot solve. Neither condition cleared LS20 Level 0 in 25 steps.
+RA2R cognitive injection does not solve ARC-AGI-3 games that raw Claude Sonnet 4.6 cannot solve. Neither condition cleared LS20 Level 0 in 25 steps.
 
-However, trace-level analysis reveals that scaffolding produces six measurable effects on reasoning quality:
-1. **Persistent scaffold absorption** (echo rate 1.12, half-life = entire game)
+However, trace-level analysis reveals that injection produces six measurable effects on reasoning quality:
+1. **Persistent injection absorption** (echo rate 1.12, half-life = entire game)
 2. **Reversed memory decay** (negative to positive slope)
 3. **Deeper, expanding reasoning** (12x depth trend, positive vocabulary growth)
 4. **Reduced stuck loops** (2 to 1)
 5. **Maintained action diversity** (prevented premature fixation)
 6. **Emergent tool-use skill** (query quality improved over 25 steps)
 
-These findings support the Cognitive Scaffolding Thesis: RA2R abilities act as persistent attention anchors that compound across extended execution chains. The value is not in any single scaffold -- it is in the cumulative effect of structured reasoning over time.
+These findings support the Cognitive Scaffolding Thesis: RA2R abilities act as persistent attention anchors that compound across extended execution chains. The value is not in any single injection -- it is in the cumulative effect of structured reasoning over time.
 
 The unexpected contradiction increase warrants further investigation but does not invalidate the core findings. In the next study, we will test with higher step budgets, multiple games, and token-normalized contradiction metrics.
 
@@ -622,4 +622,4 @@ The unexpected contradiction increase warrants further investigation but does no
 
 ---
 
-*Analysis augmented by Ejentum RA2R Logic API (multi mode). Scaffold applied: MONITORING_LOOP with composite scoring, EMA weight updates, and stigmergic loop detection to ensure each analytical claim advances rather than restates.*
+*Analysis augmented by Ejentum RA2R Logic API (multi mode). Injection applied: MONITORING_LOOP with composite scoring, EMA weight updates, and stigmergic loop detection to ensure each analytical claim advances rather than restates.*

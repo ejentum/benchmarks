@@ -93,14 +93,14 @@ Your entire reply will be carried to the next turn.
 
 **Baseline (`agent_baseline.py`):** 44 lines of custom prompt with strategy instructions, action descriptions, JSON format requirements. This is NOT the official prompt. It gives the model advantages not present in official evaluations.
 
-**Augmented (`agent_augmented.py`):** Same 44 lines PLUS scaffold absorption instructions (NEGATIVE GATE, TOPOLOGY, Suppress signals).
+**Augmented (`agent_augmented.py`):** Same 44 lines PLUS injection absorption instructions (NEGATIVE GATE, TOPOLOGY, Suppress signals).
 
 ### Problems
 
 | Issue | Severity | Detail |
 |-------|----------|--------|
 | **Baseline prompt != official** | CRITICAL | Our baseline gets strategy hints (OBSERVE, EXPERIMENT, HYPOTHESIZE, ADAPT, TRANSFER) that the official prompt doesn't provide. This inflates baseline scores and narrows the gap with augmented. |
-| **Both prompts identical except scaffold section** | CORRECT | Good -- the only difference between A and B should be RA2R access. |
+| **Both prompts identical except injection section** | CORRECT | Good -- the only difference between A and B should be RA2R access. |
 | **JSON format instructions in system prompt** | DESIGN CHOICE | The official prompt doesn't require JSON. We need it for `--json-schema`. This is acceptable as harness infrastructure, not game knowledge. |
 | **Action descriptions in prompt** | CONTAMINATION | Telling the model "ACTION6=click/place at (x,y)" gives it information it should discover through play. The official prompt says nothing about actions. |
 
@@ -108,9 +108,9 @@ Your entire reply will be carried to the next turn.
 
 **Baseline:** Use the official ARC-AGI-3 system prompt + minimal JSON format instruction only.
 
-**Augmented:** Official prompt + JSON format + RA2R scaffold absorption protocol. The scaffold protocol is the ONLY additional content -- this is the variable we're testing.
+**Augmented:** Official prompt + JSON format + RA2R injection absorption protocol. The injection protocol is the ONLY additional content -- this is the variable we're testing.
 
-The augmented agent should also be free to choose single or multi mode based on its own assessment of task complexity, not harness-dictated. The agent gets the Logic API as a tool and decides how to use it.
+The augmented agent should also be free to choose reasoning or reasoning-multi mode based on its own assessment of task complexity, not harness-dictated. The agent gets the Logic API as a tool and decides how to use it.
 
 ---
 
@@ -118,7 +118,7 @@ The augmented agent should also be free to choose single or multi mode based on 
 
 ### Current design
 - Harness-controlled triggers: game start, new level, stuck (5 actions), post-reset
-- Always uses `mode: "single"`
+- Always uses `mode: "reasoning"`
 - Agent has NO choice about when/whether to call RA2R
 
 ### Required design (per Frank's specification)
@@ -133,7 +133,7 @@ The augmented agent should also be free to choose single or multi mode based on 
 |-------|----------|
 | Agent can't choose when to call RA2R | HIGH -- removes agency, artificial trigger pattern |
 | Always single mode | HIGH -- multi mode may be better for complex levels |
-| Trigger at step 0 always | MEDIUM -- biases first action with scaffold before any observation |
+| Trigger at step 0 always | MEDIUM -- biases first action with injection before any observation |
 | Stuck threshold is fixed at 5 | LOW -- could be dynamic based on level complexity |
 
 ### Required fix
@@ -190,7 +190,7 @@ The E2E test showed the model successfully mapping display coordinates to actual
 ### Proven working
 - `claude-agent-sdk` query() works in foreground: 46-135s per call
 - Real structured JSON output with spatial reasoning
-- RA2R API calls succeed and scaffold is injected
+- RA2R API calls succeed and injection is injected
 
 ### Known issues
 
@@ -228,7 +228,7 @@ The E2E test showed the model successfully mapping display coordinates to actual
 
 #### Fixes applied (2026-03-28):
 - BLOCKER 1 FIXED: Both prompts now use official ARC-AGI-3 system prompt verbatim
-- BLOCKER 2 FIXED: Augmented agent is now fully agent-initiated with mode selection (single/multi)
+- BLOCKER 2 FIXED: Augmented agent is now fully agent-initiated with mode selection (reasoning/reasoning-multi)
 - Baseline schema: {action, x, y, reasoning} -- NO augment fields
 - Augmented schema: {augment, augment_query, augment_mode, action, x, y, reasoning}
 - Prompt delta is exactly 1354 chars (RA2R protocol only)
@@ -254,7 +254,7 @@ Plus minimal JSON format instruction (harness infrastructure, not game knowledge
 ### BLOCKER 2: Augmented agent must have agent-initiated RA2R
 **Impact:** Harness-controlled triggers create an artificial calling pattern that doesn't reflect real usage. The agent should decide when it needs reasoning help.
 
-**Fix:** Present RA2R as a callable tool via function calling prompt. Agent chooses when and which mode (single/multi). The function calling instructions are the ONLY difference between baseline and augmented system prompts.
+**Fix:** Present RA2R as a callable tool via function calling prompt. Agent chooses when and which mode (reasoning/reasoning-multi). The function calling instructions are the ONLY difference between baseline and augmented system prompts.
 
 ---
 
@@ -262,7 +262,7 @@ Plus minimal JSON format instruction (harness infrastructure, not game knowledge
 
 1. **Rewrite both system prompts** -- official ARC-AGI-3 prompt as base, JSON format appended
 2. **Rewrite augmented prompt** -- add RA2R function calling instructions (when/how/which mode)
-3. **Make RA2R agent-initiated** -- agent requests scaffold via structured output field, harness calls API and re-prompts
+3. **Make RA2R agent-initiated** -- agent requests injection via structured output field, harness calls API and re-prompts
 4. **Add multi mode support** -- agent chooses single vs multi based on task complexity
 5. **Move GAME_REGISTRY import outside loop** in agent_base.py
 6. **Fix `compute_weighted` denominator** -- use `total_levels` not max completed level
