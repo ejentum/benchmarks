@@ -190,6 +190,7 @@ benchmarks/
 - **Blog:** [ejentum.com/blog](https://ejentum.com/blog)
 - **49 benchmark tasks with outputs:** [ejentum.com/use-cases](https://ejentum.com/use-cases)
 - **Integration examples:** [github.com/ejentum/examples](https://github.com/ejentum/examples)
+- **MCP server (Claude Code, Cursor, Cline, Windsurf, Continue):** [github.com/ejentum/ejentum-mcp](https://github.com/ejentum/ejentum-mcp)
 
 ---
 
