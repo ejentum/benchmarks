@@ -1,6 +1,6 @@
 # Ejentum Benchmarks
 
-Benchmark methodology, evaluation results, and raw data for [Ejentum's Logic API](https://ejentum.com). cognitive infrastructure for AI agents.
+Benchmark methodology, evaluation results, and raw data for [Ejentum's Logic API](https://ejentum.com), the Reasoning Harness for Agentic AI.
 
 The Logic API retrieves engineered cognitive operations (not information) and injects them into an LLM's context at inference time. These benchmarks measure the behavioral effect of that injection across eight independent evaluation frameworks, covering four product layers: Reasoning, Code, Anti-Deception, and Memory.
 
@@ -8,7 +8,7 @@ The Logic API retrieves engineered cognitive operations (not information) and in
 
 ## Research Paper
 
-**Under Pressure: RAÂ²R and the Emergence of Uninstructed Reasoning Behaviors in Scaffold-Augmented Language Models**
+**Under Pressure: RA²R and the Emergence of Uninstructed Reasoning Behaviors in Scaffold-Augmented Language Models**
 
 Franko Luci, Ejentum. April 2026.
 
@@ -185,8 +185,8 @@ benchmarks/
 
 - **Product:** [ejentum.com](https://ejentum.com)
 - **Documentation:** [ejentum.com/docs](https://ejentum.com/docs)
-- **Product layers:** [Reasoning](https://ejentum.com/docs/reasoning_harness) Â· [Code](https://ejentum.com/docs/code_harness) Â· [Anti-Deception](https://ejentum.com/docs/anti_deception) Â· [Memory](https://ejentum.com/docs/memory_harness)
-- **Skill files:** [Ejentum (all modes)](https://ejentum.com/docs/skill_unified) Â· [Reasoning](https://ejentum.com/docs/skill_reasoning) Â· [Code](https://ejentum.com/docs/skill_code) Â· [Anti-Deception](https://ejentum.com/docs/skill_anti_deception) Â· [Memory](https://ejentum.com/docs/skill_memory)
+- **Product layers:** [Reasoning](https://ejentum.com/docs/reasoning_harness) · [Code](https://ejentum.com/docs/code_harness) · [Anti-Deception](https://ejentum.com/docs/anti_deception) · [Memory](https://ejentum.com/docs/memory_harness)
+- **Skill files:** [Ejentum (all modes)](https://ejentum.com/docs/skill_unified) · [Reasoning](https://ejentum.com/docs/skill_reasoning) · [Code](https://ejentum.com/docs/skill_code) · [Anti-Deception](https://ejentum.com/docs/skill_anti_deception) · [Memory](https://ejentum.com/docs/skill_memory)
 - **Blog:** [ejentum.com/blog](https://ejentum.com/blog)
 - **49 benchmark tasks with outputs:** [ejentum.com/use-cases](https://ejentum.com/use-cases)
 - **Integration examples:** [github.com/ejentum/examples](https://github.com/ejentum/examples)
