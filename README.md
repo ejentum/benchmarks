@@ -31,6 +31,7 @@ This paper synthesizes all benchmark findings into a unified thesis: suppression
 | [EjBench](ejbench/) | 180 custom professional | Single-turn, 7-factor blind rubric | Claude Opus 4.6 | +10.1pp composite quality lift. Self-monitoring nearly doubled. Correctness flat. |
 | [BBH / CausalBench / MuSR](bbh-causalbench-musr/) | 70 published academic | Single-turn, 7-factor blind rubric | Claude Opus 4.6 | +20.8pp composite lift on focused tasks. Correctness improved +7.1pp. |
 | [ARC-AGI-3](arc-agi-3/) | 25 steps x 2 conditions | Interactive multi-step reasoning | Claude Sonnet 4.6 | RHAE 0.0 = 0.0 (both failed). Injection persisted 24 steps. Memory decay reversed. |
+| [HLE-15 Ablation](hle-15/) | 15 HLE multiple-choice | B/D/A ablation, reasoning + adaptive-reasoning modes | Claude Opus 4.8 | **B=4/15, D=4/15, A=2/15. Harness did not lift pass rate on a non-saturated benchmark; adaptive arm regressed below bare.** |
 
 ### Code Harness (128 abilities)
 
