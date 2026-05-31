@@ -8,7 +8,7 @@ The Logic API retrieves engineered cognitive operations (not information) and in
 
 ## Research Paper
 
-**Under Pressure: RA²R and the Emergence of Uninstructed Reasoning Behaviors in Scaffold-Augmented Language Models**
+**Under Pressure: RAÂ²R and the Emergence of Uninstructed Reasoning Behaviors in Scaffold-Augmented Language Models**
 
 Franko Luci, Ejentum. April 2026.
 
@@ -38,6 +38,7 @@ This paper synthesizes all benchmark findings into a unified thesis: suppression
 |-----------|-------|------|-------|-----------------|
 | [LiveCodeBench Hard](lcb-hard/) | 28 hard competitive programming | Code generation + correctness | Claude Opus 4.6 (max effort) | **85.7% -> 100%. +14.3pp. 4 tasks gained, 0 lost. Zero regressions.** |
 | [SciCode](coding-benchmark/) | 10 hard scientific computing | Dual injection (reasoning + code) | Claude Opus 4.6 | **7 bugs -> 0 bugs. 10/10 blind evaluation chose injection.** |
+| [MHPP-10 Ablation](mhpp-10/) | 10 hardest MHPP | B/D/A ablation + blind expert review | Claude Opus 4.8 | **Pass rate saturated 9/9/9 (10/10/10 corrected). Blind SWE review converged on A > D > B: 26/19/9 across 9 ballots, 8/9 exact ordering. 21,000x measured speedup on adversarial input.** |
 
 ### Anti-Deception Harness (139 abilities)
 
@@ -185,8 +186,8 @@ benchmarks/
 
 - **Product:** [ejentum.com](https://ejentum.com)
 - **Documentation:** [ejentum.com/docs](https://ejentum.com/docs)
-- **Product layers:** [Reasoning](https://ejentum.com/docs/reasoning_harness) · [Code](https://ejentum.com/docs/code_harness) · [Anti-Deception](https://ejentum.com/docs/anti_deception) · [Memory](https://ejentum.com/docs/memory_harness)
-- **Skill files:** [Ejentum (all modes)](https://ejentum.com/docs/skill_unified) · [Reasoning](https://ejentum.com/docs/skill_reasoning) · [Code](https://ejentum.com/docs/skill_code) · [Anti-Deception](https://ejentum.com/docs/skill_anti_deception) · [Memory](https://ejentum.com/docs/skill_memory)
+- **Product layers:** [Reasoning](https://ejentum.com/docs/reasoning_harness) Â· [Code](https://ejentum.com/docs/code_harness) Â· [Anti-Deception](https://ejentum.com/docs/anti_deception) Â· [Memory](https://ejentum.com/docs/memory_harness)
+- **Skill files:** [Ejentum (all modes)](https://ejentum.com/docs/skill_unified) Â· [Reasoning](https://ejentum.com/docs/skill_reasoning) Â· [Code](https://ejentum.com/docs/skill_code) Â· [Anti-Deception](https://ejentum.com/docs/skill_anti_deception) Â· [Memory](https://ejentum.com/docs/skill_memory)
 - **Blog:** [ejentum.com/blog](https://ejentum.com/blog)
 - **49 benchmark tasks with outputs:** [ejentum.com/use-cases](https://ejentum.com/use-cases)
 - **Integration examples:** [github.com/ejentum/examples](https://github.com/ejentum/examples)
