@@ -1,86 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" width="500" height="250" font-family="-apple-system, system-ui, sans-serif">
-  <rect width="500" height="250" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="500" height="280" fill="#fafafa"/>
+  <text x="250" y="24" text-anchor="middle" font-size="16" font-weight="600" fill="#111">HLE-15 Ablation Results (corrected)</text>
+  <text x="250" y="42" text-anchor="middle" font-size="11" fill="#555">15 hardest text-only exactMatch questions from Humanity's Last Exam, Claude Opus 4.8</text>
 
-  <!-- Title -->
-  <text x="250" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#111">Ejentum harness ablation: Round 1 vs Round 2</text>
+  <!-- Y-axis gridlines and labels -->
+  <line x1="80" y1="240" x2="460" y2="240" stroke="#999" stroke-width="1"/>
+  <line x1="80" y1="200" x2="460" y2="200" stroke="#eee" stroke-width="1"/>
+  <line x1="80" y1="160" x2="460" y2="160" stroke="#eee" stroke-width="1"/>
+  <line x1="80" y1="120" x2="460" y2="120" stroke="#eee" stroke-width="1"/>
+  <line x1="80" y1="80"  x2="460" y2="80"  stroke="#eee" stroke-width="1"/>
 
-  <!-- Panel divider -->
-  <line x1="250" y1="35" x2="250" y2="225" stroke="#d0d0d0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="74" y="244" text-anchor="end" font-size="10" fill="#555">0</text>
+  <text x="74" y="204" text-anchor="end" font-size="10" fill="#555">5</text>
+  <text x="74" y="164" text-anchor="end" font-size="10" fill="#555">10</text>
+  <text x="74" y="124" text-anchor="end" font-size="10" fill="#555">15</text>
 
-  <!-- ============ LEFT PANEL: Round 1 (saturated) ============ -->
-  <text x="125" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#666">Round 1: MHPP-10 (code, saturated)</text>
+  <!-- Y-axis label -->
+  <text x="30" y="160" transform="rotate(-90 30 160)" text-anchor="middle" font-size="11" fill="#333">Questions passed (of 15)</text>
 
-  <!-- Y axis (left) -->
-  <line x1="40" y1="55" x2="40" y2="200" stroke="#888" stroke-width="1"/>
-  <line x1="40" y1="200" x2="240" y2="200" stroke="#888" stroke-width="1"/>
-  <!-- Y ticks left: 0, 25, 50, 75, 100 -->
-  <text x="36" y="203" text-anchor="end" font-size="8" fill="#666">0</text>
-  <text x="36" y="167" text-anchor="end" font-size="8" fill="#666">25</text>
-  <text x="36" y="131" text-anchor="end" font-size="8" fill="#666">50</text>
-  <text x="36" y="95" text-anchor="end" font-size="8" fill="#666">75</text>
-  <text x="36" y="59" text-anchor="end" font-size="8" fill="#666">100</text>
-  <line x1="38" y1="200" x2="40" y2="200" stroke="#888"/>
-  <line x1="38" y1="164" x2="40" y2="164" stroke="#888"/>
-  <line x1="38" y1="128" x2="40" y2="128" stroke="#888"/>
-  <line x1="38" y1="92" x2="40" y2="92" stroke="#888"/>
-  <line x1="38" y1="56" x2="40" y2="56" stroke="#888"/>
+  <!-- Bars: scale is 8px per question (15 questions = 120px tall) -->
+  <!-- B = 4 questions = 32px tall -->
+  <rect x="120" y="208" width="80" height="32" fill="#9ca3af"/>
+  <text x="160" y="200" text-anchor="middle" font-size="14" font-weight="600" fill="#111">4 / 15</text>
+  <text x="160" y="262" text-anchor="middle" font-size="13" fill="#333">B (baseline)</text>
+  <text x="160" y="276" text-anchor="middle" font-size="10" fill="#666">no harness</text>
 
-  <!-- Bars (90% each = 130 px tall from y=200) -->
-  <!-- B -->
-  <rect x="65" y="70" width="40" height="130" fill="#9ca3af" stroke="#6b7280" stroke-width="0.5"/>
-  <text x="85" y="64" text-anchor="middle" font-size="9" fill="#333">9/10</text>
-  <text x="85" y="215" text-anchor="middle" font-size="10" font-weight="600" fill="#444">B</text>
+  <!-- D = 5 questions = 40px tall -->
+  <rect x="220" y="200" width="80" height="40" fill="#60a5fa"/>
+  <text x="260" y="192" text-anchor="middle" font-size="14" font-weight="600" fill="#111">5 / 15</text>
+  <text x="260" y="262" text-anchor="middle" font-size="13" fill="#333">D (dynamic)</text>
+  <text x="260" y="276" text-anchor="middle" font-size="10" fill="#666">mode=reasoning</text>
 
-  <!-- D -->
-  <rect x="120" y="70" width="40" height="130" fill="#9ca3af" stroke="#6b7280" stroke-width="0.5"/>
-  <text x="140" y="64" text-anchor="middle" font-size="9" fill="#333">9/10</text>
-  <text x="140" y="215" text-anchor="middle" font-size="10" font-weight="600" fill="#444">D</text>
+  <!-- A = 5 questions = 40px tall -->
+  <rect x="320" y="200" width="80" height="40" fill="#2563eb"/>
+  <text x="360" y="192" text-anchor="middle" font-size="14" font-weight="600" fill="#111">5 / 15</text>
+  <text x="360" y="262" text-anchor="middle" font-size="13" fill="#333">A (adaptive)</text>
+  <text x="360" y="276" text-anchor="middle" font-size="10" fill="#666">mode=adaptive-reasoning</text>
 
-  <!-- A -->
-  <rect x="175" y="70" width="40" height="130" fill="#9ca3af" stroke="#6b7280" stroke-width="0.5"/>
-  <text x="195" y="64" text-anchor="middle" font-size="9" fill="#333">9/10</text>
-  <text x="195" y="215" text-anchor="middle" font-size="10" font-weight="600" fill="#444">A</text>
-
-  <text x="125" y="234" text-anchor="middle" font-size="9" fill="#888">saturated; blind ballots A &gt; D &gt; B</text>
-
-  <!-- ============ RIGHT PANEL: Round 2 (HLE-15) — VISUAL FOCUS ============ -->
-  <text x="375" y="38" text-anchor="middle" font-size="11" font-weight="700" fill="#111">Round 2: HLE-15 (reasoning, frontier)</text>
-
-  <!-- Subtle focus background -->
-  <rect x="260" y="42" width="230" height="180" fill="#fff8e7" stroke="#f0c040" stroke-width="1" rx="3"/>
-
-  <!-- Y axis (right) -->
-  <line x1="290" y1="55" x2="290" y2="200" stroke="#444" stroke-width="1.2"/>
-  <line x1="290" y1="200" x2="480" y2="200" stroke="#444" stroke-width="1.2"/>
-  <text x="286" y="203" text-anchor="end" font-size="8" fill="#333">0</text>
-  <text x="286" y="167" text-anchor="end" font-size="8" fill="#333">25</text>
-  <text x="286" y="131" text-anchor="end" font-size="8" fill="#333">50</text>
-  <text x="286" y="95" text-anchor="end" font-size="8" fill="#333">75</text>
-  <text x="286" y="59" text-anchor="end" font-size="8" fill="#333">100</text>
-  <line x1="288" y1="200" x2="290" y2="200" stroke="#444"/>
-  <line x1="288" y1="164" x2="290" y2="164" stroke="#444"/>
-  <line x1="288" y1="128" x2="290" y2="128" stroke="#444"/>
-  <line x1="288" y1="92" x2="290" y2="92" stroke="#444"/>
-  <line x1="288" y1="56" x2="290" y2="56" stroke="#444"/>
-
-  <!-- Bars: scale 100% = 144 px (200 - 56) -->
-  <!-- B: 4/15 = 26.67% => 38.4 px -->
-  <rect x="315" y="161.6" width="40" height="38.4" fill="#2563eb" stroke="#1e40af" stroke-width="1"/>
-  <text x="335" y="155" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">4/15</text>
-  <text x="335" y="215" text-anchor="middle" font-size="11" font-weight="700" fill="#111">B</text>
-
-  <!-- D: 4/15 = 26.67% => 38.4 px -->
-  <rect x="370" y="161.6" width="40" height="38.4" fill="#0891b2" stroke="#0e7490" stroke-width="1"/>
-  <text x="390" y="155" text-anchor="middle" font-size="10" font-weight="600" fill="#0e7490">4/15</text>
-  <text x="390" y="215" text-anchor="middle" font-size="11" font-weight="700" fill="#111">D</text>
-
-  <!-- A: 2/15 = 13.33% => 19.2 px -->
-  <rect x="425" y="180.8" width="40" height="19.2" fill="#dc2626" stroke="#991b1b" stroke-width="1"/>
-  <text x="445" y="174" text-anchor="middle" font-size="10" font-weight="600" fill="#991b1b">2/15</text>
-  <text x="445" y="215" text-anchor="middle" font-size="11" font-weight="700" fill="#111">A</text>
-
-  <text x="375" y="234" text-anchor="middle" font-size="9" font-weight="600" fill="#444">B = D &gt; A (H4 inverted on adaptive arm)</text>
-
-  <!-- Y axis label -->
-  <text x="14" y="130" text-anchor="middle" font-size="9" fill="#666" transform="rotate(-90 14 130)">pass rate (%)</text>
+  <!-- Difference annotation -->
+  <text x="250" y="120" text-anchor="middle" font-size="11" fill="#444">+1 question (D, A) vs baseline (B). Adapter ablation (A vs D) shows no separation at n=15.</text>
 </svg>
