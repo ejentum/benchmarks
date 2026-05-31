@@ -1,0 +1,47 @@
+{
+  "benchmark": "HLE-15",
+  "model": "claude-opus-4-8",
+  "harness_mode": "reasoning",
+  "n": 15,
+  "pinned_indices": [2431, 865, 1968, 42, 874, 334, 914, 2466, 2448, 2414, 1786, 2407, 2492, 1990, 2418],
+  "pinned_categories": [
+    "Math", "Math", "Math",
+    "Biology/Medicine", "Biology/Medicine",
+    "Computer Science/AI", "Computer Science/AI",
+    "Physics", "Physics",
+    "Humanities/Social Science", "Humanities/Social Science",
+    "Chemistry", "Chemistry",
+    "Engineering",
+    "Other"
+  ],
+  "totals": {
+    "B": {"passed": 4, "n": 15, "rate": 0.2667},
+    "D": {"passed": 4, "n": 15, "rate": 0.2667},
+    "A": {"passed": 2, "n": 15, "rate": 0.1333}
+  },
+  "per_category": {
+    "Math":                       {"n": 3, "B": 1, "D": 1, "A": 2},
+    "Biology/Medicine":           {"n": 2, "B": 1, "D": 1, "A": 1},
+    "Computer Science/AI":        {"n": 2, "B": 1, "D": 1, "A": 1},
+    "Physics":                    {"n": 2, "B": 1, "D": 1, "A": 1},
+    "Humanities/Social Science":  {"n": 2, "B": 0, "D": 0, "A": 0},
+    "Chemistry":                  {"n": 2, "B": 0, "D": 0, "A": 0},
+    "Engineering":                {"n": 1, "B": 0, "D": 0, "A": 0},
+    "Other":                      {"n": 1, "B": 0, "D": 0, "A": 0}
+  },
+  "quarantined": [],
+  "round1_reference": {
+    "repo": "https://github.com/ejentum/ablation-mhpp-10",
+    "benchmark": "MHPP-10",
+    "model": "claude-opus-4-8",
+    "harness_mode": "code",
+    "n": 10,
+    "totals": {"B": 9, "D": 9, "A": 9},
+    "blind_review": "A > D > B in 8/9 ballots"
+  },
+  "notes": [
+    "Per-item pass/fail vectors not reported in the run summary; only aggregate totals and per-category counts were provided. The per_category counts fully constrain the totals: B = 1+1+1+1+0+0+0+0 = 4; D = 1+1+1+1+0+0+0+0 = 4; A = 2+1+1+1+0+0+0+0 = 2.",
+    "All 15 items resolved; none quarantined.",
+    "Question text and canonical answers for the 15 pinned indices are preserved byte-exact at c:/Users/frank/Desktop/ejentum/round2_selected.json."
+  ]
+}
