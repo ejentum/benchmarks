@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026-06-01: HLE-15 correction
+
+The initial 2026-05-31 publication of `hle-15/` reported pass rates B=4/15, D=4/15, A=2/15 with a narrative framing of adaptive regression below bare baseline. That headline was incorrect.
+
+The judge agent's 45 per-item judgments (preserved in the workflow transcript) produce B=4/15, D=5/15, A=5/15. Both harness arms produced a +1 question lift over baseline. The judge agent's per-item `judgments` array was correct; its emitted `pass_rate_*` aggregate strings were computed inconsistently with its own per-item data, and the downstream writeup phase consumed the wrong field.
+
+### What was patched on 2026-06-01
+
+- `hle-15/RESULTS.md` — corrected headline + per-category + per-question matrix
+- `hle-15/chart.svg` — corrected bar heights
+- `hle-15/raw_scores.json` — full 45-item per-item judge data so aggregates are independently verifiable
+- `hle-15/README.md` — corrected narrative
+- `hle-15/CORRECTION.md` — new file documenting the discrepancy and the root cause
+- Root `README.md` — Reasoning Harness table row updated with corrected numbers
+
+The 2026-05-31 entry below describes the original (now-superseded) publication. It is preserved unmodified for audit-trail transparency. The git history of this repo contains both the incorrect commits and the 2026-06-01 corrections.
+
+### Methodological note
+
+Future workflow runs should compute aggregate pass rates downstream from the per-item judgments array rather than trust agent-emitted aggregate fields, or run a separate verification pass that re-tallies and reports any discrepancy.
+
+---
+
 ## 2026-05-31: HLE-15 ablation added
 
 Round 2 of the Ejentum harness benchmark series added to `hle-15/`. Claude Opus 4.8 on 15 text-only multiple-choice questions from Humanity's Last Exam, three conditions (B raw, D dynamic reasoning, A adaptive reasoning), 45 solve agents, pre-registered before dispatch.
