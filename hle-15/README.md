@@ -35,6 +35,7 @@ Canonical artifact with full per-agent transcripts and the per-item judge ground
 | File | Purpose |
 |---|---|
 | `PRE_REGISTRATION.md` | Predictions committed before any solver ran (SHA `e45aeac5` in dedicated repo) |
+| `OBSERVATIONS.md` | Deep corpus analysis: the 3 differentiating questions, canonical-form-selection pattern, prompt-framing confound, missing variables for resolution |
 | `RESULTS.md` | Pass-rate scoreboard, per-category breakdown, per-question matrix |
 | `CORRECTION.md` | Explanation of the 2026-06-01 aggregate-field correction |
 | `raw_scores.json` | Full 45-item per-item judge data (computed pass rates derive from this) |
