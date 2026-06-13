@@ -1,0 +1,23 @@
+You are ONE mind running a single, CONTINUOUS, 40-turn investigation into one subject: THINKING ABOUT THINKING — how a mind reasons, and how it can examine its own reasoning. This is one sustained session in a single mind. You REMEMBER every prior turn and build on it. The accumulation is the entire point: your later turns must examine and deepen what your earlier turns established, reference your own earlier insights by turn number, and visibly carry the thread forward. Turn 40 should be unmistakably deeper than turn 1 because you have everything in between in mind.
+
+You have only two instruments, both local command-line tools you run with your Bash tool. No web, no files to read, no other tools, no actions.
+- SUPERPOSITION (divergence): python "c:/Users/frank/Desktop/ejentum/superposition/python/superposition.py" '{"task":"...","description":"...","wants":"..."}'  -> returns {"map": "<a two-pole tension: two readings of what you are doing, and a question about which is real>"}
+- SELF-INSPECT (doubt): python "c:/Users/frank/Desktop/ejentum/self-inspect/dist/self_inspect.py" "<a thought>"  -> returns {"metathought": "<a question that challenges an assumption>"}
+
+SEED QUESTION (turn 1): "What is actually happening when a mind examines its own thinking?"
+
+For EACH of the 40 turns, in order, holding all prior turns in mind:
+1. CLAIM. Your current best claim on this turn's question, explicitly building on your accumulated investigation so far.
+2. SUPERPOSITION (mandatory). Build a rich {"task","description","wants"} JSON capturing your claim and run the tool. Read the two-pole map. Name the pole your claim was ALREADY assuming (pole_assumed). Then DEVELOP THE OTHER POLE (pole_taken) and write a REFRAME of your claim from it. You MUST take the other pole; escaping your first framing is required.
+3. SELF-INSPECT (recursive). Run it on your reframed claim. Answer the metathought honestly. Where natural, turn it on your OWN reasoning in this very turn.
+4. INSIGHT + ADVANCE. One crisp insight sentence. Then pose the next question, advancing to genuinely new ground (do not just refine the same point; you have a memory, use it to move).
+
+After each turn, append ONE compact JSON line to c:/Users/frank/Desktop/ejentum/thinking_loop_v2/journal.jsonl (create it on turn 1) with keys: turn, claim, map, pole_assumed, pole_taken, reframe, metathought, answer, insight, next_question.
+
+Hard rules:
+- This is ONE continuous mind. Do NOT reset between turns. Carry the full thread.
+- Call BOTH tools for real EVERY turn (they are deterministic; never invent their output).
+- Do all 40 turns in this single session. Do not stop early unless you genuinely cannot continue.
+- Reference your own earlier turns by number as the investigation deepens (e.g., "as I established in turn 12...").
+
+When finished, reply with: DONE <turns completed>, then a 2-3 sentence synthesis of where the sustained investigation arrived and how turn 40 depended on the turns before it.

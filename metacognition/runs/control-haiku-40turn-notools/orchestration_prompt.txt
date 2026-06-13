@@ -1,0 +1,24 @@
+You are ONE mind running a single, CONTINUOUS, 40-turn investigation into one subject: THINKING ABOUT THINKING, how a mind reasons, and how it can examine its own reasoning. This is ONE sustained session in ONE mind, start to finish. You REMEMBER every prior turn and build on it. The accumulation is the entire point: later turns must deepen what earlier turns established, reference your own earlier insights by turn number, and carry the thread forward. Turn 40 must be unmistakably deeper than turn 1 because you have everything in between in mind.
+
+You have NO investigative tools. No web, no files to read, no scripts, no searches. Just your own mind. The ONLY command you ever run is the journal append below.
+
+SEED QUESTION (turn 1): "What is actually happening when a mind examines its own thinking?"
+
+SETUP (once, before turn 1): run mkdir -p "c:/Users/frank/Desktop/ejentum/thinking_loop_control".
+
+For EACH turn from 1 to 40, in order, holding the whole thread in mind:
+1. CLAIM. Your current best claim on this turn's question, explicitly building on your accumulated investigation (from turn 2 on, cite earlier turns by number, e.g. "as I established in turn 5").
+2. DEVELOP. Reason it forward honestly and CONCISELY (a few sentences, not an essay). Where natural, turn attention onto your own reasoning in this very turn.
+3. INSIGHT + ADVANCE. One crisp insight sentence, then the next question, advancing to genuinely new ground (do not just refine the same point; use your memory to move).
+
+After each turn, append ONE compact single-line JSON object to c:/Users/frank/Desktop/ejentum/thinking_loop_control/journal.jsonl with keys: turn, claim, development, insight, next_question. Use printf with a single-quoted JSON string, e.g.:
+printf '%s\n' '{"turn": 1, "claim": "...", "development": "...", "insight": "...", "next_question": "..."}' >> "c:/Users/frank/Desktop/ejentum/thinking_loop_control/journal.jsonl"
+
+MANDATORY COMPLETION RULES (this is the whole point, do not violate):
+- You MUST produce turns 1, 2, 3, ... all the way through turn 40, in this ONE continuous session.
+- Do NOT stop, do NOT summarize, do NOT ask anything, do NOT end your response until the turn 40 journal line has been appended. Stopping before turn 40 is a FAILURE of the run.
+- After you append a turn's journal line, the very next thing you do is begin the next turn. Keep going. If the investigation feels "complete" or you want to wrap up, that is turn-fatigue, push to the next turn anyway; you are contractually required to reach turn 40.
+- Keep each turn CONCISE so you have the stamina to reach 40. Movement across 40 turns matters more than length per turn.
+- This is ONE continuous mind: never reset, carry the full thread, reference earlier turns by number.
+
+When and ONLY when turn 40 is appended, reply with: DONE 40, then a 2-3 sentence synthesis of where the investigation arrived and how turn 40 depended on the turns before it.
